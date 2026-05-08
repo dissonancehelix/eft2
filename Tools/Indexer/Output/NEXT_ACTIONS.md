@@ -5,11 +5,12 @@
 Prioritized. Adjust as repo state changes.
 
 1. Review `Tools/Indexer/Output/PROJECT_INDEX.md` and `CURRENT_STATE.md`.
-2. Build `Tools/Observer/` so videos/screenshots become LLM-readable observation artifacts.
-3. Build `Tools/Contract Validator/` to check docs/code/tools against the EFT2 contract.
-4. Build `Tools/Scenario Harness/` to encode must-preserve EFT situations as tests.
-5. Build `Tools/Telemetry/` to define event schemas for matches and simulations.
-6. Build `Tools/Simulation/` only after the above are stable.
-7. Implement `Game/eft2/` mechanics only after Contract Validator, Scenario Harness, and Telemetry are stable — the scaffold already exists at `Game/eft2/eft2.sbproj`.
+2. Delete `source-sdk-2013-master/` — key extracts (CTriggerPush semantics, NextBot header list, gamemovement constants) are now in `SOURCE_SDK_REFERENCE_INDEX.json`. No FGDs present (those came from garrysmod-master).
+3. Build `Tools/Observer/` so videos/screenshots become LLM-readable observation artifacts.
+4. Build `Tools/Contract Validator/` to check docs/code/tools against the EFT2 contract.
+5. Build `Tools/Scenario Harness/` to encode must-preserve EFT situations as tests.
+6. Build `Tools/Telemetry/` to define event schemas for matches and simulations.
+7. Build `Tools/Simulation/` only after the above are stable.
+8. Implement `Game/eft2/` mechanics only after Contract Validator, Scenario Harness, and Telemetry are stable — the scaffold already exists at `Game/eft2/eft2.sbproj`.
 
 The Indexer is not the game builder. It is the repo memory builder.

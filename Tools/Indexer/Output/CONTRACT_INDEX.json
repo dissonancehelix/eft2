@@ -1,13 +1,13 @@
 {
   "generated_by": "Tools/Indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T17:46:47.059910+00:00",
+  "generated_at": "2026-05-08T17:58:48.589868+00:00",
   "repo_root": "C:/Users/dissonance/Desktop/EFT2",
   "warnings": [],
   "files": [
     {
       "path": "README.md",
-      "size_bytes": 75674,
+      "size_bytes": 77786,
       "heading_count": 174,
       "headings": [
         {
@@ -774,57 +774,57 @@
       ],
       "todo_markers": [
         {
-          "line": 241,
+          "line": 244,
           "marker": "NEXT",
           "text": "possession event occur within the next 1-2 seconds?"
         },
         {
-          "line": 243,
+          "line": 246,
           "marker": "NEXT",
           "text": "collision, fumble, catch, bounce, or reset that will decide the ball."
         },
         {
-          "line": 267,
+          "line": 270,
           "marker": "NEXT",
           "text": "contested collision to a better location."
         },
         {
-          "line": 330,
+          "line": 333,
           "marker": "NEXT",
           "text": "."
         },
         {
-          "line": 884,
+          "line": 887,
           "marker": "NEXT",
           "text": "possession event occur?"
         },
         {
-          "line": 934,
+          "line": 937,
           "marker": "NEXT",
           "text": "possession event"
         },
         {
-          "line": 1028,
+          "line": 1031,
           "marker": "NEXT",
           "text": ""
         },
         {
-          "line": 1426,
+          "line": 1447,
           "marker": "NEXT",
           "text": "transfer interface."
         },
         {
-          "line": 1440,
+          "line": 1461,
           "marker": "NEXT",
           "text": "conflict"
         },
         {
-          "line": 1779,
+          "line": 1800,
           "marker": "NEXT",
           "text": "possession events"
         },
         {
-          "line": 1783,
+          "line": 1804,
           "marker": "NEXT",
           "text": "seconds"
         }
@@ -832,8 +832,8 @@
     },
     {
       "path": "AGENTS.md",
-      "size_bytes": 6751,
-      "heading_count": 11,
+      "size_bytes": 21398,
+      "heading_count": 20,
       "headings": [
         {
           "level": 1,
@@ -845,6 +845,10 @@
         },
         {
           "level": 2,
+          "text": "Supplemental Director Context"
+        },
+        {
+          "level": 2,
           "text": "Project Mission"
         },
         {
@@ -853,7 +857,19 @@
         },
         {
           "level": 2,
-          "text": "Current Priority: Map Intelligence Pipeline"
+          "text": "Repository Layout"
+        },
+        {
+          "level": 2,
+          "text": "Tool Names And Tool Roles"
+        },
+        {
+          "level": 2,
+          "text": "Current Infrastructure Priority"
+        },
+        {
+          "level": 2,
+          "text": "Map Intelligence Pipeline"
         },
         {
           "level": 2,
@@ -866,6 +882,26 @@
         {
           "level": 2,
           "text": "Generated Output Policy"
+        },
+        {
+          "level": 2,
+          "text": "Workspace-Relative Reference Policy"
+        },
+        {
+          "level": 2,
+          "text": "s&box Workflow Notes"
+        },
+        {
+          "level": 2,
+          "text": "Multiplayer Authority Contract"
+        },
+        {
+          "level": 2,
+          "text": "Physics And Trigger Notes"
+        },
+        {
+          "level": 2,
+          "text": "Likely Future Gameplay Architecture"
         },
         {
           "level": 2,
@@ -883,7 +919,7 @@
       "contract_ids": [],
       "todo_markers": [
         {
-          "line": 194,
+          "line": 504,
           "marker": "NEXT",
           "text": "recommended step"
         }

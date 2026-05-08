@@ -46,6 +46,7 @@ ROOT_DOMAINS: list[tuple[str, str, str, str]] = [
     ("Tools/Indexer/Output/", "generated LLM-readable working memory",         "generated_output",         "regenerate freely"),
     ("garrysmod-master/", "temporary GMod source reference",                   "external_reference",       "temporary reference only; remove after derived indexes are generated"),
     ("FFmpeg-Builds-master/", "temporary upstream FFmpeg cross-build reference", "external_reference",     "temporary reference only; remove after derived indexes are generated"),
+    ("source-sdk-2013-master/", "temporary Source SDK 2013 reference",          "external_reference",       "temporary reference only; remove after SOURCE_SDK_REFERENCE_INDEX.json generated"),
     (".gitignore", "Git ignore rules",                                         "editable_contract",        "do not edit from Indexer; recommend changes only"),
 ]
 
@@ -194,6 +195,7 @@ def render_next_actions(root: Path, summary: dict[str, Any]) -> str:
     ext = summary.get("external", {}) or {}
     gmod = ext.get("gmod")
     ffmpeg = ext.get("ffmpeg")
+    sdk = ext.get("source_sdk")
 
     if gmod and not gmod.get("gitignore_covers"):
         actions.append(
@@ -221,6 +223,12 @@ def render_next_actions(root: Path, summary: dict[str, Any]) -> str:
         actions.append(
             "Extract any usable ffmpeg binaries from `FFmpeg-Builds-master/` to a stable tools "
             "location, then delete the rest of the tree."
+        )
+    if sdk:
+        actions.append(
+            "Delete `source-sdk-2013-master/` — key extracts (CTriggerPush semantics, "
+            "NextBot header list, gamemovement constants) are now in "
+            "`SOURCE_SDK_REFERENCE_INDEX.json`. No FGDs present (those came from garrysmod-master)."
         )
 
     maps = summary.get("maps", {}) or {}
@@ -320,6 +328,8 @@ def main(argv: list[str] | None = None) -> int:
             writer.write_json("SOURCE1_FGD_INDEX.json", external["fgd"])
         if external.get("ffmpeg"):
             writer.write_json("FFMPEG_REFERENCE_INDEX.json", external["ffmpeg"])
+        if external.get("source_sdk"):
+            writer.write_json("SOURCE_SDK_REFERENCE_INDEX.json", external["source_sdk"])
 
     # Refresh warnings after all steps completed.
     summary["warnings"] = list(env.warnings)

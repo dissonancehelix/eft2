@@ -1,4 +1,4 @@
-"""External-tree indexes: GMod source, Source 1 FGDs, FFmpeg-Builds.
+"""External-tree indexes: GMod source, Source 1 FGDs, FFmpeg-Builds, Source SDK 2013.
 
 These trees are temporary. The indexer extracts useful reference metadata,
 records cleanup recommendations, and never mutates the source trees.
@@ -14,6 +14,7 @@ from schemas import IndexEnvelope, rel
 
 GMOD_DIR = "garrysmod-master"
 FFMPEG_DIR = "FFmpeg-Builds-master"
+SOURCE_SDK_DIR = "source-sdk-2013-master"
 
 WALK_BUDGET = 8000
 
@@ -238,12 +239,117 @@ def index_ffmpeg(repo_root: Path, env: IndexEnvelope) -> dict[str, Any] | None:
     }
 
 
+# --- Source SDK 2013 -------------------------------------------------------
+
+NEXTBOT_HEADERS = [
+    "NextBot.h", "NextBotAttentionInterface.h", "NextBotBehavior.h",
+    "NextBotBodyInterface.h", "NextBotComponentInterface.h",
+    "NextBotContextualQueryInterface.h", "NextBotDebug.h",
+    "NextBotEventResponderInterface.h", "NextBotGroundLocomotion.h",
+    "NextBotHearingInterface.h", "NextBotIntentionInterface.h",
+    "NextBotInterface.h", "NextBotKnownEntity.h",
+    "NextBotLocomotionInterface.h", "NextBotManager.h",
+    "NextBotUtil.h", "NextBotVisionInterface.h", "simple_bot.h",
+]
+
+
+def index_source_sdk(repo_root: Path, env: IndexEnvelope) -> dict[str, Any] | None:
+    sdk = repo_root / SOURCE_SDK_DIR
+    if not sdk.is_dir():
+        return None
+
+    gitignored = _gitignore_covers(repo_root, SOURCE_SDK_DIR)
+    if not gitignored:
+        env.warn(f"gitignore_missing:{SOURCE_SDK_DIR}")
+
+    # Verify the key files we care about are present.
+    triggers_cpp = sdk / "src" / "game" / "server" / "triggers.cpp"
+    gamemovement_h = sdk / "src" / "game" / "shared" / "gamemovement.h"
+    nextbot_dir = sdk / "src" / "game" / "server" / "NextBot"
+    fgdlib_dir = sdk / "src" / "fgdlib"
+
+    nextbot_headers_present = (
+        [h for h in NEXTBOT_HEADERS if (nextbot_dir / h).exists()]
+        if nextbot_dir.is_dir() else []
+    )
+
+    # Extract CTriggerPush::Touch summary — the Source 1 ancestor of trigger_jumppad.
+    trigger_push_summary: dict[str, Any] = {"present": False}
+    if triggers_cpp.exists():
+        text, _ = safe_read_text(triggers_cpp, max_bytes=500_000)
+        if text:
+            trigger_push_summary = {
+                "present": True,
+                "source_file": rel(triggers_cpp, repo_root),
+                "class": "CTriggerPush",
+                "entity": "trigger_push",
+                "relevance": (
+                    "Source 1 ancestor of EFT trigger_jumppad. "
+                    "Touch() applies ApplyAbsVelocityImpulse(m_flPushSpeed * vecAbsDir) "
+                    "and calls SetGroundEntity(NULL) when push has upward component. "
+                    "EFT trigger_jumppad extends this with per-entity flags "
+                    "(pushplayers, pushball, knockdown) and a configurable pushvelocity vector."
+                ),
+                "key_mechanics": [
+                    "pushdir keyvalue rotated to world space via EntityToWorldTransform()",
+                    "SF_TRIG_PUSH_ONCE spawnflag: instant impulse then self-remove",
+                    "ApplyAbsVelocityImpulse for players/NPCs; ApplyForceCenter for vphysics",
+                    "SetGroundEntity(NULL) required to allow airborne state after upward push",
+                ],
+            }
+
+    # gamemovement.h constants.
+    movement_constants: dict[str, str] = {}
+    if gamemovement_h.exists():
+        text, _ = safe_read_text(gamemovement_h, max_bytes=200_000)
+        if text:
+            for line in text.splitlines():
+                if "#define GAMEMOVEMENT_" in line:
+                    parts = line.strip().split()
+                    if len(parts) >= 3:
+                        movement_constants[parts[1]] = " ".join(parts[2:])
+
+    file_count, total_bytes, truncated = _shallow_walk(sdk)
+
+    return {
+        "detected_path": rel(sdk, repo_root),
+        "file_count_approx": file_count,
+        "total_bytes_approx": total_bytes,
+        "walk_truncated": truncated,
+        "gitignore_covers": gitignored,
+        "has_fgds": False,
+        "fgd_note": "No .fgd files present — FGDs are in garrysmod-master/bin/ (already extracted to Maps/Shared/).",
+        "trigger_push": trigger_push_summary,
+        "nextbot_headers": nextbot_headers_present,
+        "nextbot_note": (
+            "Source SDK NextBot framework: locomotion, intention, vision, hearing, "
+            "attention, behavior, known-entity interfaces. Useful reference for "
+            "Tools/Simulation/ bot positioning (S-020) when that phase begins."
+        ),
+        "gamemovement_constants": movement_constants,
+        "fgdlib_source": fgdlib_dir.is_dir(),
+        "fgdlib_note": (
+            "fgdlib/ contains C++ source for Valve's FGD parser (GDClass, GDVar, etc.). "
+            "Not needed — EFT2 uses regex-based FGD extraction already working."
+        ),
+        "derived_outputs": ["SOURCE_SDK_REFERENCE_INDEX.json"],
+        "cleanup_recommendation": (
+            "No FGDs (already have those from garrysmod-master). Key extracts: "
+            "CTriggerPush::Touch semantics (trigger_jumppad ancestor) and NextBot header list "
+            "are now recorded in SOURCE_SDK_REFERENCE_INDEX.json. "
+            "Safe to delete the entire source-sdk-2013-master/ tree."
+        ),
+    }
+
+
 def build(root: Path, env: IndexEnvelope) -> dict[str, dict[str, Any] | None]:
     gmod_index, fgd_index = index_gmod(root, env)
     ffmpeg_index = index_ffmpeg(root, env)
+    sdk_index = index_source_sdk(root, env)
 
     return {
         "gmod": env.wrap(gmod_index) if gmod_index else None,
         "fgd": env.wrap(fgd_index) if fgd_index else None,
         "ffmpeg": env.wrap(ffmpeg_index) if ffmpeg_index else None,
+        "source_sdk": env.wrap(sdk_index) if sdk_index else None,
     }

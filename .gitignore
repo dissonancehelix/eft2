@@ -14,15 +14,6 @@
 /SBox/Bootstrap.bat
 /SBox/README.md
 
-# Temporary toolkit source references. These may be inspected to improve
-# project-owned analyzer code but are not durable repo domains.
-/garrysmod-master/
-/garrysmod-master.zip
-/FFmpeg-Builds-master/
-/FFmpeg-Builds-master.zip
-/blender-main/
-/recastnavigation-main/
-
 # Prebuilt tool binaries. Tools/ffmpeg.exe is a holding spot until
 # Tools/Observer/ is built; commit it only if you want it tracked.
 /Tools/ffmpeg.exe

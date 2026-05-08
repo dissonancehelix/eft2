@@ -1,7 +1,7 @@
 {
   "generated_by": "Tools/Indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T17:46:48.308798+00:00",
+  "generated_at": "2026-05-08T17:58:50.235783+00:00",
   "repo_root": "C:/Users/dissonance/Desktop/EFT2",
   "warnings": [
     "sbox_scan_truncated_at:4000"
@@ -72,6 +72,12 @@
       "policy": "external_reference",
       "mutation_rule": "temporary reference only; remove after derived indexes are generated",
       "exists": false
+    },
+    "source-sdk-2013-master/": {
+      "purpose": "temporary Source SDK 2013 reference",
+      "policy": "external_reference",
+      "mutation_rule": "temporary reference only; remove after SOURCE_SDK_REFERENCE_INDEX.json generated",
+      "exists": true
     },
     ".gitignore": {
       "purpose": "Git ignore rules",

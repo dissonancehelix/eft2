@@ -22,6 +22,7 @@ Do not introduce Engine/ or Runtime/ folders or umbrella names.
 - `Tools/Indexer/Output/` — generated LLM-readable working memory [generated_output] (OK)
 - `garrysmod-master/` — temporary GMod source reference [external_reference] (missing)
 - `FFmpeg-Builds-master/` — temporary upstream FFmpeg cross-build reference [external_reference] (missing)
+- `source-sdk-2013-master/` — temporary Source SDK 2013 reference [external_reference] (OK)
 - `.gitignore` — Git ignore rules [editable_contract] (OK)
 
 ## Tools status

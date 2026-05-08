@@ -1,7 +1,7 @@
 {
   "generated_by": "Tools/Indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T17:46:48.209528+00:00",
+  "generated_at": "2026-05-08T17:58:49.765575+00:00",
   "repo_root": "C:/Users/dissonance/Desktop/EFT2",
   "warnings": [
     "sbox_scan_truncated_at:4000"
@@ -82,7 +82,7 @@
         },
         {
           "path": "Tools/Indexer/index_external.py",
-          "first_docstring_line": "External-tree indexes: GMod source, Source 1 FGDs, FFmpeg-Builds."
+          "first_docstring_line": "External-tree indexes: GMod source, Source 1 FGDs, FFmpeg-Builds, Source SDK 2013."
         },
         {
           "path": "Tools/Indexer/index_lua.py",

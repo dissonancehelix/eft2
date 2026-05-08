@@ -1,0 +1,63 @@
+{
+  "generated_by": "Tools/Indexer",
+  "schema_version": 1,
+  "generated_at": "2026-05-08T17:58:50.235460+00:00",
+  "repo_root": "C:/Users/dissonance/Desktop/EFT2",
+  "warnings": [
+    "sbox_scan_truncated_at:4000"
+  ],
+  "detected_path": "source-sdk-2013-master",
+  "file_count_approx": 7431,
+  "total_bytes_approx": 487113029,
+  "walk_truncated": false,
+  "gitignore_covers": true,
+  "has_fgds": false,
+  "fgd_note": "No .fgd files present \u2014 FGDs are in garrysmod-master/bin/ (already extracted to Maps/Shared/).",
+  "trigger_push": {
+    "present": true,
+    "source_file": "source-sdk-2013-master/src/game/server/triggers.cpp",
+    "class": "CTriggerPush",
+    "entity": "trigger_push",
+    "relevance": "Source 1 ancestor of EFT trigger_jumppad. Touch() applies ApplyAbsVelocityImpulse(m_flPushSpeed * vecAbsDir) and calls SetGroundEntity(NULL) when push has upward component. EFT trigger_jumppad extends this with per-entity flags (pushplayers, pushball, knockdown) and a configurable pushvelocity vector.",
+    "key_mechanics": [
+      "pushdir keyvalue rotated to world space via EntityToWorldTransform()",
+      "SF_TRIG_PUSH_ONCE spawnflag: instant impulse then self-remove",
+      "ApplyAbsVelocityImpulse for players/NPCs; ApplyForceCenter for vphysics",
+      "SetGroundEntity(NULL) required to allow airborne state after upward push"
+    ]
+  },
+  "nextbot_headers": [
+    "NextBot.h",
+    "NextBotAttentionInterface.h",
+    "NextBotBehavior.h",
+    "NextBotBodyInterface.h",
+    "NextBotComponentInterface.h",
+    "NextBotContextualQueryInterface.h",
+    "NextBotDebug.h",
+    "NextBotEventResponderInterface.h",
+    "NextBotGroundLocomotion.h",
+    "NextBotHearingInterface.h",
+    "NextBotIntentionInterface.h",
+    "NextBotInterface.h",
+    "NextBotKnownEntity.h",
+    "NextBotLocomotionInterface.h",
+    "NextBotManager.h",
+    "NextBotUtil.h",
+    "NextBotVisionInterface.h",
+    "simple_bot.h"
+  ],
+  "nextbot_note": "Source SDK NextBot framework: locomotion, intention, vision, hearing, attention, behavior, known-entity interfaces. Useful reference for Tools/Simulation/ bot positioning (S-020) when that phase begins.",
+  "gamemovement_constants": {
+    "GAMEMOVEMENT_DUCK_TIME": "1000.0f // ms",
+    "GAMEMOVEMENT_JUMP_TIME": "510.0f // ms approx - based on the 21 unit height jump",
+    "GAMEMOVEMENT_JUMP_HEIGHT": "21.0f // units",
+    "GAMEMOVEMENT_TIME_TO_UNDUCK": "( TIME_TO_UNDUCK * 1000.0f ) // ms",
+    "GAMEMOVEMENT_TIME_TO_UNDUCK_INV": "( GAMEMOVEMENT_DUCK_TIME - GAMEMOVEMENT_TIME_TO_UNDUCK )"
+  },
+  "fgdlib_source": true,
+  "fgdlib_note": "fgdlib/ contains C++ source for Valve's FGD parser (GDClass, GDVar, etc.). Not needed \u2014 EFT2 uses regex-based FGD extraction already working.",
+  "derived_outputs": [
+    "SOURCE_SDK_REFERENCE_INDEX.json"
+  ],
+  "cleanup_recommendation": "No FGDs (already have those from garrysmod-master). Key extracts: CTriggerPush::Touch semantics (trigger_jumppad ancestor) and NextBot header list are now recorded in SOURCE_SDK_REFERENCE_INDEX.json. Safe to delete the entire source-sdk-2013-master/ tree."
+}
