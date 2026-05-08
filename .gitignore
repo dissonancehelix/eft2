@@ -1,0 +1,33 @@
+# Local reference media. Keep the path documented in README; do not push this
+# without Git LFS or a smaller derived clip set.
+/EFT Bloodbowl POV.mp4
+/*.mp4
+/*.mov
+/*.avi
+/*.mkv
+
+# The full s&box checkout and docs are local reference only.
+/sbox-src/
+
+# Local evidence/dev captures. Keep paths documented in README, but do not
+# upload bulk captures unless they become curated fixtures.
+/lua-src/logs/
+/lua-src/backgrounds/
+
+# Common build and editor outputs.
+bin/
+obj/
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# OS files.
+Thumbs.db
+Desktop.ini
+.DS_Store
