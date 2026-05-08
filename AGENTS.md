@@ -6,7 +6,7 @@ The user is the director and domain expert. The agent is the executor, tool-buil
 
 EFT2 is not just a code port. Its infrastructure exists to externalize the user's internal model of EFT into contracts, source indexes, map analysis, visual observation artifacts, telemetry, scenario tests, simulation, validation, and eventual playable s&box code. The goal is for agents to understand EFT's rules, feel, maps, evidence, and failure modes deeply enough to implement and modernize the game without erasing its identity.
 
-Do not introduce a formal umbrella folder/name such as `Engine/` or `Runtime/` for this broader concept. `s&box` / Source 2 is the engine substrate. EFT2's named project spaces are `Tools/`, `Maps/`, `Game/`, `Lua/`, `SBox/`, and `Assets/`.
+`s&box` / Source 2 is the engine substrate. EFT2's named project spaces are `Tools/`, `Maps/`, `Game/`, `Lua/`, `SBox/`, and `Assets/`.
 
 ---
 
@@ -29,7 +29,7 @@ Before changing files, read in this order:
 
 `AGENTS.md` wins on workflow, source hierarchy, mutation policy, local toolkit handling, tool boundaries, and agent behavior unless the user says otherwise.
 
-There should be one root workflow contract. Do not recreate a separate `WORKFLOW.md`; fold durable workflow discoveries into this file.
+There should be one root workflow contract. Fold durable workflow discoveries into this file.
 
 ---
 
@@ -64,7 +64,7 @@ README/AGENTS define EFT2.
 
 EFT2 is a modern s&box / Source 2 remake of the Garry's Mod gamemode **Extreme Football Throwdown**, better known as EFT.
 
-This is not a loose remake and not a GMod maintenance project. The goal is to preserve EFT as a played sport while modernizing visuals, performance, tooling, editor workflow, telemetry, bots, map workflows, presentation, and long-term maintainability.
+This is not a loose remake and not a GMod maintenance project. The goal is to revive EFT as an active community and esport while modernizing visuals, performance, tooling, editor workflow, telemetry, bots, map workflows, presentation, and long-term maintainability.
 
 Do not optimize away the game's soul:
 
@@ -489,6 +489,17 @@ Keep temporary external trees such as `garrysmod-master/`, `FFmpeg-Builds-master
 `Editor.lnk` at the repo root is a local Windows shortcut that opens the s&box editor (`sbox-dev.exe`) for the `Game/eft2/` project. It is gitignored and local-only — do not commit it, do not recreate it, do not reference it as a repo artifact.
 
 The repo should contain durable EFT2 project material, curated map/source references, analysis tooling, generated map-domain outputs, observation artifacts when deliberately generated, validation/scenario/telemetry/simulation tooling, and playable implementation files when those phases begin.
+
+---
+
+## Git Commit Policy
+
+Push to git after every update.
+
+- Commit and push after each discrete unit of work: a new file, a tool build, a patch, a doc update, an output regeneration.
+- Do not batch unrelated changes into one commit unless the user asks for it.
+- Do not wait for the user to ask before pushing. If work is done, push it.
+- Commit messages should describe what changed and why, not just what files were touched.
 
 ---
 
