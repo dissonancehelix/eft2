@@ -1,7 +1,7 @@
 {
   "generated_by": "Tools/Indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T17:05:07.762692+00:00",
+  "generated_at": "2026-05-08T17:30:37.723442+00:00",
   "repo_root": "C:/Users/dissonance/Desktop/EFT2",
   "warnings": [
     "sbox_scan_truncated_at:4000"
@@ -19,10 +19,10 @@
       "mutation_rule": "patch surgically",
       "exists": true
     },
-    "Game/": {
-      "purpose": "future buildable EFT2 s&box game project",
-      "policy": "future_project",
-      "mutation_rule": "do not scaffold yet",
+    "Game/eft2/": {
+      "purpose": "EFT2 s&box game project (eft2.sbproj); initial scaffold exists",
+      "policy": "active_project",
+      "mutation_rule": "implementation guided by infrastructure tools; do not add mechanics until rails are stable",
       "exists": true
     },
     "Maps/": {

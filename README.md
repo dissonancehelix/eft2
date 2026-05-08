@@ -103,7 +103,7 @@ Preserve weird but predictive behavior unless the user deliberately chooses othe
 |---|---|
 | `README.md` | EFT2 game/remake contract |
 | `AGENTS.md` | agent workflow, source hierarchy, mutation and tooling policy |
-| `Game/` | future buildable EFT2 s&box game project |
+| `Game/eft2/` | EFT2 s&box game project (`eft2.sbproj`); initial scaffold exists — implementation guided by infrastructure tools |
 | `Maps/` | canonical map domains, VMF source references, generated map analysis |
 | `Lua/` | original GMod Lua/source reference for behavior extraction |
 | `SBox/` | s&box docs/source/runtime/sample reference material |
@@ -119,13 +119,12 @@ Preserve weird but predictive behavior unless the user deliberately chooses othe
 | Purpose | URL |
 |---|---|
 | Original JetBoom EFT repository/reference lineage | `https://github.com/JetBoom/extremefootballthrowdown` |
-| Current/community EFT source lineage if used by this project | `https://github.com/dissonancehelix/extremefootballthrowdown` |
-| Extreme Football League historical group | `https://steamcommunity.com/groups/ExtremeFootballLeague` |
-| Extreme Football League historical VOD channel | `https://www.youtube.com/@ExtremeFootballLeague` |
+| Current/community EFT source lineage | `https://github.com/dissonancehelix/extremefootballthrowdown` |
+| Extreme Football League (EFL) historical group | `https://steamcommunity.com/groups/ExtremeFootballLeague` |
+| EFL historical VOD channel | `https://www.youtube.com/@ExtremeFootballLeague` |
 | s&box documentation | `https://sbox.game/dev/doc/` |
 | Facepunch s&box docs/source references | `https://github.com/Facepunch/sbox-docs`, `https://github.com/Facepunch/sbox-public` |
 | Recast/Detour reference | `https://github.com/recastnavigation/recastnavigation` |
-| Blender reference, if used as spatial/backend inspiration | `https://github.com/blender/blender` |
 
 External analogies and references are orientation aids. They do not override EFT-specific evidence.
 

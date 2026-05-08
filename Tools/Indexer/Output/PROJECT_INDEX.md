@@ -6,14 +6,14 @@ Repo purpose: modern s&box / Source 2 remake of *Extreme Football Throwdown*.
 
 EFT2 is not just a code port. Its infrastructure exists to make agents understand EFT's rules, feel, maps, evidence, and failure modes deeply enough to implement and modernize the game without erasing its identity.
 
-Phase: infrastructure — indexer first; Game/ not yet scaffolded.
-Structure: Tools/ (infrastructure) and Game/ (future playable s&box project).
+Phase: infrastructure rails — Game/eft2/ scaffold exists; implementation deferred until Contract Validator, Scenario Harness, and Telemetry are stable.
+Structure: Tools/ (infrastructure) and Game/eft2/ (s&box project, eft2.sbproj — scaffold present, mechanics deferred).
 Do not introduce Engine/ or Runtime/ folders or umbrella names.
 
 ## Major folders
 - `README.md` — EFT2 game/remake contract [editable_contract] (OK)
 - `AGENTS.md` — agent workflow and source hierarchy contract [editable_contract] (OK)
-- `Game/` — future buildable EFT2 s&box game project [future_project] (OK)
+- `Game/eft2/` — EFT2 s&box game project (eft2.sbproj); initial scaffold exists [active_project] (OK)
 - `Maps/` — canonical map domains and map analysis outputs [mixed] (OK)
 - `Lua/` — original GMod EFT source evidence [read_only_source_reference] (OK)
 - `SBox/` — s&box docs/source/runtime/sample reference [external_reference] (OK)
@@ -27,9 +27,9 @@ Do not introduce Engine/ or Runtime/ folders or umbrella names.
 ## Tools status
 - Indexer: present
 - Map Analyzer: present
-- Observer: pending
-- Contract Validator: pending
-- Scenario Harness: pending
+- Observer: present
+- Contract Validator: present
+- Scenario Harness: present
 - Telemetry: pending
 - Simulation: pending
 

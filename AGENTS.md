@@ -10,7 +10,6 @@ Before changing files, read in this order:
 
 1. `AGENTS.md`
 2. `README.md`
-3. `WORKFLOW.md`
 4. Relevant source/reference files for the task:
    - Lua/source references
    - VMFs/maps
@@ -18,7 +17,7 @@ Before changing files, read in this order:
    - generated analysis outputs
    - reports or evidence files
 
-If the README and WORKFLOW disagree, README wins on game identity, rules, feel, and map meaning. WORKFLOW wins on engine/tooling/project-structure process unless the user says otherwise.
+If the README and AGENTS disagree, README wins on game identity, rules, feel, and map meaning. AGENTS wins on engine/tooling/project-structure process unless the user says otherwise.
 
 ## Project Mission
 
@@ -99,15 +98,15 @@ Maps/
   Slam Dunk/
     README.md
     Slam Dunk.vmf
-    analysis/
-    virtual_perception/
-    simulation/
+    Analysis/
+    Virtual Perception/
+    Simulation/
   Bloodbowl/
     README.md
     Bloodbowl.vmf
-    analysis/
-    virtual_perception/
-    simulation/
+    Analysis/
+    Virtual Perception/
+    Simulation/
 ```
 
 Old filenames such as `eft_slamdunk_v6.vmf` and `eft_bloodbowl_v5.vmf` are Source 1/BSP-era artifacts. Their provenance should be preserved in `Maps/source_manifest.json`, but the map-domain identity should use canonical names.
@@ -124,9 +123,9 @@ Do not create `SOURCE_LOCK.md`; put the source-reference policy in each map's `R
 
 For map tooling:
 
-- Place analyzer code under `tools/map_analyzer/`.
-- Generated analysis belongs under each map domain's `analysis/` and `virtual_perception/` folders.
-- `simulation/` is placeholder/future work unless the user explicitly starts that phase.
+- Place analyzer code under `Tools/Map Analyzer/`.
+- Generated analysis belongs under each map domain's `Analysis/` and `Virtual Perception/` folders.
+- `Simulation/` is placeholder/future work unless the user explicitly starts that phase.
 - MCP is optional future work and should not be included in the first map-analyzer implementation.
 - s&box editor plugins are optional future work and should not be included in the first map-analyzer implementation.
 - Do not scaffold the s&box game when the current task is map-analysis tooling.
@@ -169,13 +168,11 @@ Every inference should include, when practical:
 
 Patch documents surgically.
 
-Do not rewrite README.md or WORKFLOW.md wholesale. Update the relevant sections only.
+Do not rewrite README.md or AGENTS.md wholesale. Update the relevant sections only.
 
-README.md should remain the game/remaster contract.
+README.md should remain the game contract.
 
-WORKFLOW.md should remain the engine/tooling/workflow contract.
-
-AGENTS.md should remain the first-read agent behavior contract.
+AGENTS.md should remain the agent behavior contract.
 
 ## Git / Repository Boundary
 

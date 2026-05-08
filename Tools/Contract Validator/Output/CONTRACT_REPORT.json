@@ -1,0 +1,1205 @@
+{
+  "generated_by": "Tools/Contract Validator",
+  "schema_version": 1,
+  "generated_at": "2026-05-08T17:27:19.847195+00:00",
+  "repo_root": "C:\\Users\\dissonance\\Desktop\\EFT2",
+  "contract_ids_defined": [
+    "C-001",
+    "C-002",
+    "C-003",
+    "C-004",
+    "C-005",
+    "C-006",
+    "C-007",
+    "C-008",
+    "C-009",
+    "C-010",
+    "C-011",
+    "M-110",
+    "M-120",
+    "M-130",
+    "M-135",
+    "M-140",
+    "M-145",
+    "M-150",
+    "M-160",
+    "M-170",
+    "M-175",
+    "M-178",
+    "M-179",
+    "M-180",
+    "M-190",
+    "M-195",
+    "M-198",
+    "M-199",
+    "P-010",
+    "P-020",
+    "P-030",
+    "P-040",
+    "P-050",
+    "P-060",
+    "P-070",
+    "P-080",
+    "P-090",
+    "P-100",
+    "P-900",
+    "P-910",
+    "P-950",
+    "S-001",
+    "S-002",
+    "S-003",
+    "S-004",
+    "S-005",
+    "S-006",
+    "S-007",
+    "S-008",
+    "S-009",
+    "S-010",
+    "S-011",
+    "S-012",
+    "S-013",
+    "S-014",
+    "S-015",
+    "S-016",
+    "S-017",
+    "S-018",
+    "S-019",
+    "S-020",
+    "S-021",
+    "S-022"
+  ],
+  "finding_count": 73,
+  "error_count": 0,
+  "warning_count": 2,
+  "ok_count": 71,
+  "findings": [
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "C-001",
+      "message": "Contract ID C-001 referenced in 11 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Contract Validator/README.md",
+        "Tools/Contract Validator/validate_contract.py",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_init.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/init.lua",
+        "Lua/gamemode/round_controller.lua",
+        "Lua/gamemode/sh_roundtransitions.lua",
+        "Lua/gamemode/shared.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "C-002",
+      "message": "Contract ID C-002 referenced in 7 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Contract Validator/validate_contract.py",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/states/knockdownrecover.lua",
+        "Lua/gamemode/states/knockeddown.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "C-003",
+      "message": "Contract ID C-003 referenced in 4 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "C-004",
+      "message": "Contract ID C-004 referenced in 6 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/entities/entities/trigger_goal.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/states/divetackle.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "C-005",
+      "message": "Contract ID C-005 referenced in 6 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/obj_bot.lua",
+        "Lua/gamemode/sv_bots.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "C-006",
+      "message": "Contract ID C-006 referenced in 4 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "C-007",
+      "message": "Contract ID C-007 referenced in 7 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Contract Validator/validate_contract.py",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/cl_mapvote.lua",
+        "Lua/gamemode/sv_mapvote.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "C-008",
+      "message": "Contract ID C-008 referenced in 4 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "C-009",
+      "message": "Contract ID C-009 referenced in 19 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Contract Validator/validate_contract.py",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_help.lua",
+        "Lua/gamemode/cl_hud.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/cl_scoreboard.lua",
+        "Lua/gamemode/cl_selectscreen.lua",
+        "Lua/gamemode/cl_splashscreen.lua",
+        "Lua/gamemode/states/powerstruggle.lua",
+        "Lua/gamemode/states/throw.lua",
+        "Lua/gamemode/vgui/dex3dnotification.lua",
+        "Lua/gamemode/vgui/vgui_gamenotice.lua",
+        "Lua/gamemode/vgui/vgui_hudbase.lua",
+        "Lua/gamemode/vgui/vgui_hudcommon.lua",
+        "Lua/gamemode/vgui/vgui_hudelement.lua",
+        "Lua/gamemode/vgui/vgui_hudlayout.lua",
+        "Lua/gamemode/vgui/vgui_vote.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "C-010",
+      "message": "Contract ID C-010 referenced in 6 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_deathnotice.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/obj_gamemanager.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "C-011",
+      "message": "Contract ID C-011 referenced in 4 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Contract Validator/validate_contract.py",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-110",
+      "message": "Contract ID M-110 referenced in 19 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/entities/entities/status__base/cl_init.lua",
+        "Lua/entities/entities/status__base/init.lua",
+        "Lua/entities/entities/status__base/shared.lua",
+        "Lua/entities/entities/status_boozed.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/cl_obj_player_extend.lua",
+        "Lua/gamemode/obj_bot.lua",
+        "Lua/gamemode/obj_player.lua",
+        "Lua/gamemode/player_extension.lua",
+        "Lua/gamemode/sh_obj_player_extend.lua",
+        "Lua/gamemode/states/divetackle.lua",
+        "Lua/gamemode/states/movement.lua",
+        "Lua/gamemode/states/powerstruggle.lua",
+        "Lua/gamemode/states/punch.lua",
+        "Lua/gamemode/sv_bots.lua",
+        "Lua/gamemode/sv_obj_player_extend.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-120",
+      "message": "Contract ID M-120 referenced in 10 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/entities/entities/trigger_knockdown.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/obj_player.lua",
+        "Lua/gamemode/states/divetackle.lua",
+        "Lua/gamemode/states/knockdownrecover.lua",
+        "Lua/gamemode/states/knockeddown.lua",
+        "Lua/gamemode/states/spinnyknockdown.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-130",
+      "message": "Contract ID M-130 referenced in 16 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/entities/entities/point_divetackletrigger.lua",
+        "Lua/entities/entities/projectile_arcanewand/cl_init.lua",
+        "Lua/entities/entities/projectile_arcanewand/init.lua",
+        "Lua/entities/entities/projectile_arcanewand/shared.lua",
+        "Lua/entities/weapons/weapon_eft.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/obj_player.lua",
+        "Lua/gamemode/states/arcanewandattack.lua",
+        "Lua/gamemode/states/beatingstickattack.lua",
+        "Lua/gamemode/states/bigpoleattack.lua",
+        "Lua/gamemode/states/powerstruggle.lua",
+        "Lua/gamemode/states/powerstrugglelose.lua",
+        "Lua/gamemode/states/powerstrugglewin.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-135",
+      "message": "Contract ID M-135 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-140",
+      "message": "Contract ID M-140 referenced in 17 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/entities/entities/prop_ball/init.lua",
+        "Lua/entities/entities/prop_carry_arcanewand.lua",
+        "Lua/entities/entities/prop_carry_barrel.lua",
+        "Lua/entities/entities/prop_carry_base/cl_init.lua",
+        "Lua/entities/entities/prop_carry_base/init.lua",
+        "Lua/entities/entities/prop_carry_base/shared.lua",
+        "Lua/entities/entities/prop_carry_beatingstick.lua",
+        "Lua/entities/entities/prop_carry_bigpole.lua",
+        "Lua/entities/entities/prop_carry_boozebottle.lua",
+        "Lua/entities/entities/prop_carry_car.lua",
+        "Lua/entities/entities/prop_carry_melon.lua",
+        "Lua/entities/entities/prop_carry_melondriver.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/obj_ball.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-145",
+      "message": "Contract ID M-145 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-150",
+      "message": "Contract ID M-150 referenced in 6 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/entities/entities/prop_ball/init.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/obj_ball.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-160",
+      "message": "Contract ID M-160 referenced in 5 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/states/throw.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-170",
+      "message": "Contract ID M-170 referenced in 9 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/entities/entities/env_teamsound.lua",
+        "Lua/entities/entities/trigger_ballreset.lua",
+        "Lua/entities/entities/trigger_goal.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/obj_ball.lua",
+        "Lua/gamemode/obj_gamemanager.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-175",
+      "message": "Contract ID M-175 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-178",
+      "message": "Contract ID M-178 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-179",
+      "message": "Contract ID M-179 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-180",
+      "message": "Contract ID M-180 referenced in 8 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/entities/entities/trigger_goal.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/obj_gamemanager.lua",
+        "Lua/gamemode/round_controller.lua",
+        "Lua/gamemode/sh_roundtransitions.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-190",
+      "message": "Contract ID M-190 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-195",
+      "message": "Contract ID M-195 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-198",
+      "message": "Contract ID M-198 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "M-199",
+      "message": "Contract ID M-199 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "P-010",
+      "message": "Contract ID P-010 referenced in 45 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Contract Validator/validate_contract.py",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/entities/entities/status_jersey/cl_init.lua",
+        "Lua/entities/entities/status_jersey/init.lua",
+        "Lua/entities/entities/status_jersey/shared.lua",
+        "Lua/gamemode/animationsapi/boneanimlib.lua",
+        "Lua/gamemode/animationsapi/cl_boneanimlib.lua",
+        "Lua/gamemode/animationsapi/mocap_controller.lua",
+        "Lua/gamemode/animationsapi/sh_boneanimlib.lua",
+        "Lua/gamemode/animationsapi/sh_mocap.lua",
+        "Lua/gamemode/animationsapi/sv_mocap.lua",
+        "Lua/gamemode/cl_help.lua",
+        "Lua/gamemode/cl_hud.lua",
+        "Lua/gamemode/cl_init.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/cl_scoreboard.lua",
+        "Lua/gamemode/cl_selectscreen.lua",
+        "Lua/gamemode/cl_splashscreen.lua",
+        "Lua/gamemode/class_default.lua",
+        "Lua/gamemode/init.lua",
+        "Lua/gamemode/lib/class.lua",
+        "Lua/gamemode/lib/event.lua",
+        "Lua/gamemode/lib/promise.lua",
+        "Lua/gamemode/lib/SBOX_MAPPING.lua",
+        "Lua/gamemode/obj_network.lua",
+        "Lua/gamemode/player_class.lua",
+        "Lua/gamemode/player_colours.lua",
+        "Lua/gamemode/sh_animations.lua",
+        "Lua/gamemode/sh_globals.lua",
+        "Lua/gamemode/sh_states.lua",
+        "Lua/gamemode/sh_translate.lua",
+        "Lua/gamemode/shared.lua",
+        "Lua/gamemode/states/preround.lua",
+        "Lua/gamemode/sv_bot_pathfinding.lua",
+        "Lua/gamemode/sv_security.lua",
+        "Lua/gamemode/utility.lua",
+        "Lua/gamemode/vgui/dex3dnotification.lua",
+        "Lua/gamemode/vgui/vgui_gamenotice.lua",
+        "Lua/gamemode/vgui/vgui_hudbase.lua",
+        "Lua/gamemode/vgui/vgui_hudcommon.lua",
+        "Lua/gamemode/vgui/vgui_hudelement.lua",
+        "Lua/gamemode/vgui/vgui_hudlayout.lua",
+        "Lua/gamemode/vgui/vgui_vote.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "P-020",
+      "message": "Contract ID P-020 referenced in 9 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/entities/entities/trigger_knockdown.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/obj_gamemanager.lua",
+        "Lua/gamemode/states/knockdownrecover.lua",
+        "Lua/gamemode/states/punch.lua",
+        "Lua/gamemode/states/spinnyknockdown.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "P-030",
+      "message": "Contract ID P-030 referenced in 8 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/cl_obj_player_extend.lua",
+        "Lua/gamemode/player_extension.lua",
+        "Lua/gamemode/sh_obj_player_extend.lua",
+        "Lua/gamemode/sv_obj_player_extend.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "P-040",
+      "message": "Contract ID P-040 referenced in 8 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/entities/entities/info_player_blue.lua",
+        "Lua/entities/entities/info_player_red.lua",
+        "Lua/entities/entities/info_player_spectator.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/states/punch.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "P-050",
+      "message": "Contract ID P-050 referenced in 10 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/cl_obj_player_extend.lua",
+        "Lua/gamemode/obj_player.lua",
+        "Lua/gamemode/player_extension.lua",
+        "Lua/gamemode/sh_obj_player_extend.lua",
+        "Lua/gamemode/states/movement.lua",
+        "Lua/gamemode/sv_obj_player_extend.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "P-060",
+      "message": "Contract ID P-060 referenced in 12 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Contract Validator/validate_contract.py",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/obj_bot.lua",
+        "Lua/gamemode/obj_player.lua",
+        "Lua/gamemode/sh_voice.lua",
+        "Lua/gamemode/states/arcanewandattack.lua",
+        "Lua/gamemode/states/beatingstickattack.lua",
+        "Lua/gamemode/states/bigpoleattack.lua",
+        "Lua/gamemode/sv_bots.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "P-070",
+      "message": "Contract ID P-070 referenced in 6 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/states/powerstruggle.lua",
+        "Lua/gamemode/states/throw.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "P-080",
+      "message": "Contract ID P-080 referenced in 47 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/entities/effects/ballreset.lua",
+        "Lua/entities/effects/blitzballhit.lua",
+        "Lua/entities/effects/bloodstream.lua",
+        "Lua/entities/effects/chargehit.lua",
+        "Lua/entities/effects/exp_boozebottle.lua",
+        "Lua/entities/effects/explosion_arcanewand.lua",
+        "Lua/entities/effects/hit_beatingstick.lua",
+        "Lua/entities/effects/hit_bigpole.lua",
+        "Lua/entities/effects/playergibs.lua",
+        "Lua/entities/effects/powerstrugglehit.lua",
+        "Lua/entities/effects/punchhit.lua",
+        "Lua/entities/effects/wallslam.lua",
+        "Lua/entities/entities/prop_ball/cl_init.lua",
+        "Lua/entities/entities/prop_ball/init.lua",
+        "Lua/entities/entities/prop_carry_arcanewand.lua",
+        "Lua/entities/entities/prop_carry_barrel.lua",
+        "Lua/entities/entities/prop_carry_beatingstick.lua",
+        "Lua/entities/entities/prop_carry_bigpole.lua",
+        "Lua/entities/entities/prop_carry_boozebottle.lua",
+        "Lua/entities/entities/prop_carry_car.lua",
+        "Lua/entities/entities/prop_carry_melon.lua",
+        "Lua/entities/entities/prop_carry_melondriver.lua",
+        "Lua/gamemode/animationsapi/boneanimlib.lua",
+        "Lua/gamemode/animationsapi/cl_animeditor.lua",
+        "Lua/gamemode/animationsapi/sh_boneanimlib.lua",
+        "Lua/gamemode/cl_draw.lua",
+        "Lua/gamemode/cl_gmchanger.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/cl_notify.lua",
+        "Lua/gamemode/cl_obj_entity_extend.lua",
+        "Lua/gamemode/cl_postprocess.lua",
+        "Lua/gamemode/languages/english.lua",
+        "Lua/gamemode/languages/spanish.lua",
+        "Lua/gamemode/obj_ball.lua",
+        "Lua/gamemode/obj_viewmodel_hud.lua",
+        "Lua/gamemode/round_transitions/slide.lua",
+        "Lua/gamemode/server/sv_match_recorder.lua",
+        "Lua/gamemode/sh_obj_entity_extend.lua",
+        "Lua/gamemode/sh_voice.lua",
+        "Lua/gamemode/skin.lua",
+        "Lua/gamemode/states/wave.lua",
+        "Lua/gamemode/sv_emotes.lua",
+        "Lua/gamemode/sv_gmchanger.lua",
+        "Lua/gamemode/sv_spectator.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "P-090",
+      "message": "Contract ID P-090 referenced in 6 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/entities/entities/trigger_ballreset.lua",
+        "Lua/gamemode/cl_deathnotice.lua",
+        "Lua/gamemode/cl_manifest_data.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "P-100",
+      "message": "Contract ID P-100 referenced in 24 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/entities/effects/ballreset.lua",
+        "Lua/entities/effects/blitzballhit.lua",
+        "Lua/entities/effects/bloodstream.lua",
+        "Lua/entities/effects/chargehit.lua",
+        "Lua/entities/effects/exp_boozebottle.lua",
+        "Lua/entities/effects/explosion_arcanewand.lua",
+        "Lua/entities/effects/hit_beatingstick.lua",
+        "Lua/entities/effects/hit_bigpole.lua",
+        "Lua/entities/effects/playergibs.lua",
+        "Lua/entities/effects/powerstrugglehit.lua",
+        "Lua/entities/effects/punchhit.lua",
+        "Lua/entities/effects/wallslam.lua",
+        "Lua/entities/entities/trigger_goal.lua",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/round_controller.lua",
+        "Lua/gamemode/sh_roundtransitions.lua",
+        "Lua/gamemode/sh_voice.lua",
+        "Lua/gamemode/states/divetackle.lua",
+        "Lua/gamemode/states/knockeddown.lua",
+        "Lua/gamemode/states/powerstrugglelose.lua",
+        "Lua/gamemode/sv_emotes.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "P-900",
+      "message": "Contract ID P-900 referenced in 5 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Contract Validator/README.md",
+        "Tools/Contract Validator/validate_contract.py",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "P-910",
+      "message": "Contract ID P-910 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "P-950",
+      "message": "Contract ID P-950 referenced in 7 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Contract Validator/validate_contract.py",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/obj_ball.lua",
+        "Lua/gamemode/obj_player.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-001",
+      "message": "Contract ID S-001 referenced in 5 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Contract Validator/validate_contract.py",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/obj_ball.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-002",
+      "message": "Contract ID S-002 referenced in 4 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/states/throw.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-003",
+      "message": "Contract ID S-003 referenced in 4 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/states/throw.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-004",
+      "message": "Contract ID S-004 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-005",
+      "message": "Contract ID S-005 referenced in 7 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/obj_bot.lua",
+        "Lua/gamemode/obj_player.lua",
+        "Lua/gamemode/states/powerstrugglelose.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-006",
+      "message": "Contract ID S-006 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-007",
+      "message": "Contract ID S-007 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-008",
+      "message": "Contract ID S-008 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-009",
+      "message": "Contract ID S-009 referenced in 5 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/obj_player.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-010",
+      "message": "Contract ID S-010 referenced in 5 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/entities/entities/trigger_goal.lua",
+        "Lua/gamemode/cl_manifest_data.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-011",
+      "message": "Contract ID S-011 referenced in 4 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/obj_ball.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-012",
+      "message": "Contract ID S-012 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-013",
+      "message": "Contract ID S-013 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-014",
+      "message": "Contract ID S-014 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-015",
+      "message": "Contract ID S-015 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-016",
+      "message": "Contract ID S-016 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-017",
+      "message": "Contract ID S-017 referenced in 6 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/obj_ball.lua",
+        "Lua/gamemode/obj_player.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-018",
+      "message": "Contract ID S-018 referenced in 2 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-019",
+      "message": "Contract ID S-019 referenced in 3 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-020",
+      "message": "Contract ID S-020 referenced in 5 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/obj_bot.lua",
+        "Lua/gamemode/sv_bots.lua"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-021",
+      "message": "Contract ID S-021 referenced in 2 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json"
+      ]
+    },
+    {
+      "check": "id_coverage",
+      "severity": "ok",
+      "id": "S-022",
+      "message": "Contract ID S-022 referenced in 2 file(s).",
+      "referenced_in": [
+        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json"
+      ]
+    },
+    {
+      "check": "mechanic_anchor",
+      "severity": "ok",
+      "anchor": "volatile_possession",
+      "contract_refs": [
+        "C-001",
+        "C-002"
+      ],
+      "message": "Mechanic anchor 'volatile_possession' found.",
+      "found_in": [
+        "AGENTS.md",
+        "Tools/Observer/observation_schema.md",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "mechanic_anchor",
+      "severity": "warning",
+      "anchor": "automatic_pickup",
+      "terms": [
+        "automatic",
+        "pickup",
+        "autograb"
+      ],
+      "contract_refs": [
+        "P-950"
+      ],
+      "message": "Mechanic anchor 'automatic_pickup' (terms: ['automatic', 'pickup', 'autograb']) not found in any scanned file. Expected once Game/ is implemented.",
+      "found_in": []
+    },
+    {
+      "check": "mechanic_anchor",
+      "severity": "ok",
+      "anchor": "carrier_danger",
+      "contract_refs": [
+        "C-002"
+      ],
+      "message": "Mechanic anchor 'carrier_danger' found.",
+      "found_in": [
+        "README.md",
+        "AGENTS.md",
+        "Tools/Map Analyzer/analyze_map.py",
+        "Tools/Observer/observation_schema.md",
+        "Lua/EFT.md"
+      ]
+    },
+    {
+      "check": "mechanic_anchor",
+      "severity": "warning",
+      "anchor": "head_on_skill",
+      "terms": [
+        "head.on",
+        "headon",
+        "head_on"
+      ],
+      "contract_refs": [
+        "P-060"
+      ],
+      "message": "Mechanic anchor 'head_on_skill' (terms: ['head.on', 'headon', 'head_on']) not found in any scanned file. Expected once Game/ is implemented.",
+      "found_in": []
+    },
+    {
+      "check": "mechanic_anchor",
+      "severity": "ok",
+      "anchor": "knockdown_recovery",
+      "contract_refs": [
+        "C-011"
+      ],
+      "message": "Mechanic anchor 'knockdown_recovery' found.",
+      "found_in": [
+        "README.md",
+        "AGENTS.md",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Tools/Observer/observation_schema.md",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/states/knockdownrecover.lua",
+        "Lua/gamemode/states/spinnyknockdown.lua"
+      ]
+    },
+    {
+      "check": "mechanic_anchor",
+      "severity": "ok",
+      "anchor": "dive",
+      "contract_refs": [
+        "C-009"
+      ],
+      "message": "Mechanic anchor 'dive' found.",
+      "found_in": [
+        "README.md",
+        "Lua/EFT.md",
+        "Lua/gamemode/shared.lua"
+      ]
+    },
+    {
+      "check": "mechanic_anchor",
+      "severity": "ok",
+      "anchor": "throw_commit",
+      "contract_refs": [
+        "C-009"
+      ],
+      "message": "Mechanic anchor 'throw_commit' found.",
+      "found_in": [
+        "README.md",
+        "AGENTS.md",
+        "Tools/Indexer/Output/CONTRACT_INDEX.json",
+        "Tools/Indexer/Output/LUA_INDEX.json",
+        "Tools/Indexer/Output/SOURCE1_FGD_INDEX.json",
+        "Lua/EFT.md",
+        "Lua/gamemode/cl_manifest_data.lua",
+        "Lua/gamemode/init.lua",
+        "Lua/gamemode/states/powerstruggle.lua",
+        "Lua/gamemode/states/throw.lua"
+      ]
+    },
+    {
+      "check": "mechanic_anchor",
+      "severity": "ok",
+      "anchor": "jumppad",
+      "contract_refs": [],
+      "message": "Mechanic anchor 'jumppad' found.",
+      "found_in": [
+        "README.md",
+        "Tools/Map Analyzer/semantic_groups.py"
+      ]
+    },
+    {
+      "check": "mechanic_anchor",
+      "severity": "ok",
+      "anchor": "ballreset",
+      "contract_refs": [],
+      "message": "Mechanic anchor 'ballreset' found.",
+      "found_in": [
+        "README.md",
+        "Lua/EFT.md",
+        "Lua/gamemode/obj_ball.lua"
+      ]
+    },
+    {
+      "check": "mechanic_anchor",
+      "severity": "ok",
+      "anchor": "scrum",
+      "contract_refs": [
+        "C-007"
+      ],
+      "message": "Mechanic anchor 'scrum' found.",
+      "found_in": [
+        "README.md",
+        "AGENTS.md",
+        "Tools/Map Analyzer/compare_logs.py",
+        "Tools/Map Analyzer/gameflow_sim.py",
+        "Tools/Map Analyzer/log_comparison.json",
+        "Tools/Map Analyzer/README.md",
+        "Tools/Observer/observation_schema.md",
+        "Lua/EFT.md",
+        "Lua/README.md"
+      ]
+    }
+  ]
+}

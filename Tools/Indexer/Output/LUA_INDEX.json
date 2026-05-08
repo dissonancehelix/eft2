@@ -1,7 +1,7 @@
 {
   "generated_by": "Tools/Indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T17:05:00.984129+00:00",
+  "generated_at": "2026-05-08T17:30:36.503097+00:00",
   "repo_root": "C:/Users/dissonance/Desktop/EFT2",
   "warnings": [],
   "present": true,
@@ -27,7 +27,7 @@
   "files": [
     {
       "path": "Lua/entities/effects/ballreset.lua",
-      "size_bytes": 890,
+      "size_bytes": 861,
       "line_count": 30,
       "functions": [
         "EFFECT:Init",
@@ -42,7 +42,7 @@
     },
     {
       "path": "Lua/entities/effects/barrelexplosion.lua",
-      "size_bytes": 3434,
+      "size_bytes": 3333,
       "line_count": 102,
       "functions": [
         "EFFECT:Init",
@@ -59,7 +59,7 @@
     },
     {
       "path": "Lua/entities/effects/blitzballhit.lua",
-      "size_bytes": 1732,
+      "size_bytes": 1678,
       "line_count": 55,
       "functions": [
         "EFFECT:Init",
@@ -76,7 +76,7 @@
     },
     {
       "path": "Lua/entities/effects/bloodstream.lua",
-      "size_bytes": 2890,
+      "size_bytes": 2803,
       "line_count": 88,
       "functions": [
         "CollideCallback",
@@ -95,7 +95,7 @@
     },
     {
       "path": "Lua/entities/effects/chargehit.lua",
-      "size_bytes": 1887,
+      "size_bytes": 1828,
       "line_count": 60,
       "functions": [
         "EFFECT:Init",
@@ -110,7 +110,7 @@
     },
     {
       "path": "Lua/entities/effects/exp_boozebottle.lua",
-      "size_bytes": 1767,
+      "size_bytes": 1706,
       "line_count": 62,
       "functions": [
         "EFFECT:Init",
@@ -127,7 +127,7 @@
     },
     {
       "path": "Lua/entities/effects/explosion_arcanewand.lua",
-      "size_bytes": 1909,
+      "size_bytes": 1843,
       "line_count": 67,
       "functions": [
         "EFFECT:Init",
@@ -143,7 +143,7 @@
     },
     {
       "path": "Lua/entities/effects/hit_beatingstick.lua",
-      "size_bytes": 497,
+      "size_bytes": 472,
       "line_count": 26,
       "functions": [
         "EFFECT:Init",
@@ -156,7 +156,7 @@
     },
     {
       "path": "Lua/entities/effects/hit_bigpole.lua",
-      "size_bytes": 597,
+      "size_bytes": 572,
       "line_count": 26,
       "functions": [
         "EFFECT:Init",
@@ -169,7 +169,7 @@
     },
     {
       "path": "Lua/entities/effects/playergibs.lua",
-      "size_bytes": 2489,
+      "size_bytes": 2410,
       "line_count": 80,
       "functions": [
         "CollideCallback",
@@ -187,7 +187,7 @@
     },
     {
       "path": "Lua/entities/effects/powerstrugglehit.lua",
-      "size_bytes": 1493,
+      "size_bytes": 1441,
       "line_count": 53,
       "functions": [
         "EFFECT:Init",
@@ -200,7 +200,7 @@
     },
     {
       "path": "Lua/entities/effects/punchhit.lua",
-      "size_bytes": 508,
+      "size_bytes": 484,
       "line_count": 25,
       "functions": [
         "EFFECT:Init",
@@ -213,7 +213,7 @@
     },
     {
       "path": "Lua/entities/effects/wallslam.lua",
-      "size_bytes": 1446,
+      "size_bytes": 1402,
       "line_count": 45,
       "functions": [
         "EFFECT:Init",
@@ -228,7 +228,7 @@
     },
     {
       "path": "Lua/entities/entities/env_teamsound.lua",
-      "size_bytes": 921,
+      "size_bytes": 889,
       "line_count": 33,
       "functions": [
         "ENT:AcceptInput"
@@ -243,7 +243,7 @@
     },
     {
       "path": "Lua/entities/entities/info_observer_point/init.lua",
-      "size_bytes": 281,
+      "size_bytes": 273,
       "line_count": 9,
       "functions": [
         "ENT:Initialize"
@@ -259,7 +259,7 @@
     },
     {
       "path": "Lua/entities/entities/info_player_blue.lua",
-      "size_bytes": 73,
+      "size_bytes": 71,
       "line_count": 3,
       "functions": [],
       "hooks": [],
@@ -270,7 +270,7 @@
     },
     {
       "path": "Lua/entities/entities/info_player_red.lua",
-      "size_bytes": 73,
+      "size_bytes": 71,
       "line_count": 3,
       "functions": [],
       "hooks": [],
@@ -281,7 +281,7 @@
     },
     {
       "path": "Lua/entities/entities/info_player_spectator.lua",
-      "size_bytes": 73,
+      "size_bytes": 71,
       "line_count": 3,
       "functions": [],
       "hooks": [],
@@ -292,7 +292,7 @@
     },
     {
       "path": "Lua/entities/entities/logic_norandomweapons.lua",
-      "size_bytes": 73,
+      "size_bytes": 71,
       "line_count": 3,
       "functions": [],
       "hooks": [],
@@ -305,7 +305,7 @@
     },
     {
       "path": "Lua/entities/entities/logic_teamscore.lua",
-      "size_bytes": 840,
+      "size_bytes": 811,
       "line_count": 30,
       "functions": [
         "ENT:AcceptInput",
@@ -323,7 +323,7 @@
     },
     {
       "path": "Lua/entities/entities/point_divetackletrigger.lua",
-      "size_bytes": 4117,
+      "size_bytes": 3995,
       "line_count": 123,
       "functions": [
         "ENT:Initialize",
@@ -354,7 +354,7 @@
     },
     {
       "path": "Lua/entities/entities/projectile_arcanewand/cl_init.lua",
-      "size_bytes": 1361,
+      "size_bytes": 1311,
       "line_count": 51,
       "functions": [
         "ENT:Draw",
@@ -372,7 +372,7 @@
     },
     {
       "path": "Lua/entities/entities/projectile_arcanewand/init.lua",
-      "size_bytes": 1754,
+      "size_bytes": 1685,
       "line_count": 70,
       "functions": [
         "ENT:Explode",
@@ -392,7 +392,7 @@
     },
     {
       "path": "Lua/entities/entities/projectile_arcanewand/shared.lua",
-      "size_bytes": 105,
+      "size_bytes": 100,
       "line_count": 6,
       "functions": [],
       "hooks": [],
@@ -404,7 +404,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_ball/cl_init.lua",
-      "size_bytes": 4528,
+      "size_bytes": 4383,
       "line_count": 146,
       "functions": [
         "ENT:CreateSpeedParticles",
@@ -432,7 +432,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_ball/init.lua",
-      "size_bytes": 9772,
+      "size_bytes": 9445,
       "line_count": 328,
       "functions": [
         "ENT:AcceptInput",
@@ -479,7 +479,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_ball/shared.lua",
-      "size_bytes": 6513,
+      "size_bytes": 6224,
       "line_count": 290,
       "functions": [
         "ENT:AlignToCarrier",
@@ -540,7 +540,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_ball/states/iceball.lua",
-      "size_bytes": 3686,
+      "size_bytes": 3584,
       "line_count": 103,
       "functions": [
         "STATE:End",
@@ -563,7 +563,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_ball/states/scoreball.lua",
-      "size_bytes": 1945,
+      "size_bytes": 1878,
       "line_count": 68,
       "functions": [
         "STATE:End",
@@ -586,7 +586,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_ball/states/speedball.lua",
-      "size_bytes": 2289,
+      "size_bytes": 2212,
       "line_count": 78,
       "functions": [
         "STATE:End",
@@ -609,7 +609,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_ball/states/waterball.lua",
-      "size_bytes": 2406,
+      "size_bytes": 2313,
       "line_count": 94,
       "functions": [
         "STATE:End",
@@ -633,7 +633,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_balltrigger/cl_init.lua",
-      "size_bytes": 250,
+      "size_bytes": 233,
       "line_count": 18,
       "functions": [
         "ENT:Draw",
@@ -649,7 +649,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_balltrigger/init.lua",
-      "size_bytes": 822,
+      "size_bytes": 784,
       "line_count": 39,
       "functions": [
         "ENT:EndTouch",
@@ -666,7 +666,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_balltrigger/shared.lua",
-      "size_bytes": 75,
+      "size_bytes": 72,
       "line_count": 4,
       "functions": [],
       "hooks": [],
@@ -679,7 +679,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_carry_arcanewand.lua",
-      "size_bytes": 3841,
+      "size_bytes": 3696,
       "line_count": 146,
       "functions": [
         "ENT:DoAnimationEvent",
@@ -719,7 +719,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_carry_barrel.lua",
-      "size_bytes": 2785,
+      "size_bytes": 2679,
       "line_count": 107,
       "functions": [
         "ENT:Explode",
@@ -757,7 +757,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_carry_base/cl_init.lua",
-      "size_bytes": 336,
+      "size_bytes": 314,
       "line_count": 23,
       "functions": [
         "ENT:Draw",
@@ -775,7 +775,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_carry_base/init.lua",
-      "size_bytes": 3454,
+      "size_bytes": 3309,
       "line_count": 146,
       "functions": [
         "ENT:AcceptInput",
@@ -805,7 +805,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_carry_base/shared.lua",
-      "size_bytes": 2928,
+      "size_bytes": 2813,
       "line_count": 116,
       "functions": [
         "ENT:AlignToCarrier",
@@ -837,7 +837,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_carry_beatingstick.lua",
-      "size_bytes": 3347,
+      "size_bytes": 3223,
       "line_count": 125,
       "functions": [
         "ENT:GetImpactSpeed",
@@ -878,7 +878,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_carry_bigpole.lua",
-      "size_bytes": 3203,
+      "size_bytes": 3084,
       "line_count": 120,
       "functions": [
         "ENT:CalcMainActivity",
@@ -920,7 +920,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_carry_boozebottle.lua",
-      "size_bytes": 4071,
+      "size_bytes": 3924,
       "line_count": 148,
       "functions": [
         "ENT:Explode",
@@ -960,7 +960,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_carry_car.lua",
-      "size_bytes": 8558,
+      "size_bytes": 8251,
       "line_count": 308,
       "functions": [
         "ENT:Draw",
@@ -1013,7 +1013,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_carry_melon.lua",
-      "size_bytes": 2625,
+      "size_bytes": 2525,
       "line_count": 101,
       "functions": [
         "ENT:Explode",
@@ -1049,7 +1049,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_carry_melondriver.lua",
-      "size_bytes": 6697,
+      "size_bytes": 6461,
       "line_count": 237,
       "functions": [
         "ENT:DrawTranslucent",
@@ -1101,7 +1101,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_goal/cl_init.lua",
-      "size_bytes": 121,
+      "size_bytes": 114,
       "line_count": 8,
       "functions": [
         "ENT:Draw"
@@ -1114,7 +1114,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_goal/init.lua",
-      "size_bytes": 1456,
+      "size_bytes": 1392,
       "line_count": 65,
       "functions": [
         "ENT:GetPoints",
@@ -1138,7 +1138,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_goal/shared.lua",
-      "size_bytes": 70,
+      "size_bytes": 67,
       "line_count": 4,
       "functions": [],
       "hooks": [],
@@ -1151,7 +1151,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_waterballplatform/cl_init.lua",
-      "size_bytes": 140,
+      "size_bytes": 132,
       "line_count": 9,
       "functions": [
         "ENT:Draw"
@@ -1164,7 +1164,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_waterballplatform/init.lua",
-      "size_bytes": 1471,
+      "size_bytes": 1420,
       "line_count": 52,
       "functions": [
         "ENT:AlignToCarrier",
@@ -1182,7 +1182,7 @@
     },
     {
       "path": "Lua/entities/entities/prop_waterballplatform/shared.lua",
-      "size_bytes": 334,
+      "size_bytes": 318,
       "line_count": 17,
       "functions": [
         "ENT:SetPlayer",
@@ -1198,7 +1198,7 @@
     },
     {
       "path": "Lua/entities/entities/status__base/cl_init.lua",
-      "size_bytes": 617,
+      "size_bytes": 589,
       "line_count": 29,
       "functions": [
         "ENT:Draw",
@@ -1215,7 +1215,7 @@
     },
     {
       "path": "Lua/entities/entities/status__base/init.lua",
-      "size_bytes": 1404,
+      "size_bytes": 1331,
       "line_count": 74,
       "functions": [
         "ENT:Initialize",
@@ -1239,7 +1239,7 @@
     },
     {
       "path": "Lua/entities/entities/status__base/shared.lua",
-      "size_bytes": 325,
+      "size_bytes": 305,
       "line_count": 21,
       "functions": [
         "ENT:AcceptInput",
@@ -1260,7 +1260,7 @@
     },
     {
       "path": "Lua/entities/entities/status_boozed.lua",
-      "size_bytes": 2180,
+      "size_bytes": 2092,
       "line_count": 89,
       "functions": [
         "ENT:CreateMove",
@@ -1285,7 +1285,7 @@
     },
     {
       "path": "Lua/entities/entities/status_jersey/cl_init.lua",
-      "size_bytes": 499,
+      "size_bytes": 481,
       "line_count": 19,
       "functions": [
         "ENT:DrawTranslucent"
@@ -1298,7 +1298,7 @@
     },
     {
       "path": "Lua/entities/entities/status_jersey/init.lua",
-      "size_bytes": 1381,
+      "size_bytes": 1329,
       "line_count": 53,
       "functions": [
         "ENT:SetPlayer",
@@ -1318,7 +1318,7 @@
     },
     {
       "path": "Lua/entities/entities/status_jersey/shared.lua",
-      "size_bytes": 500,
+      "size_bytes": 474,
       "line_count": 27,
       "functions": [
         "ENT:GetJerseyName",
@@ -1334,7 +1334,7 @@
     },
     {
       "path": "Lua/entities/entities/trigger_abspush.lua",
-      "size_bytes": 3947,
+      "size_bytes": 3821,
       "line_count": 127,
       "functions": [
         "ENT:AcceptInput",
@@ -1360,7 +1360,7 @@
     },
     {
       "path": "Lua/entities/entities/trigger_ballreset.lua",
-      "size_bytes": 877,
+      "size_bytes": 838,
       "line_count": 40,
       "functions": [
         "ENT:AcceptInput",
@@ -1381,7 +1381,7 @@
     },
     {
       "path": "Lua/entities/entities/trigger_goal.lua",
-      "size_bytes": 2802,
+      "size_bytes": 2703,
       "line_count": 100,
       "functions": [
         "ENT:AcceptInput",
@@ -1413,7 +1413,7 @@
     },
     {
       "path": "Lua/entities/entities/trigger_jumppad.lua",
-      "size_bytes": 3642,
+      "size_bytes": 3520,
       "line_count": 123,
       "functions": [
         "ENT:AcceptInput",
@@ -1438,7 +1438,7 @@
     },
     {
       "path": "Lua/entities/entities/trigger_knockdown.lua",
-      "size_bytes": 1527,
+      "size_bytes": 1476,
       "line_count": 52,
       "functions": [
         "ENT:AcceptInput",
@@ -1460,7 +1460,7 @@
     },
     {
       "path": "Lua/entities/entities/trigger_powerup.lua",
-      "size_bytes": 1344,
+      "size_bytes": 1293,
       "line_count": 52,
       "functions": [
         "ENT:AcceptInput",
@@ -1486,7 +1486,7 @@
     },
     {
       "path": "Lua/entities/weapons/weapon_eft.lua",
-      "size_bytes": 2149,
+      "size_bytes": 2063,
       "line_count": 87,
       "functions": [
         "SWEP:DrawWeaponSelection",
@@ -1516,7 +1516,7 @@
     },
     {
       "path": "Lua/entities/weapons/weapon_eft_nav.lua",
-      "size_bytes": 10491,
+      "size_bytes": 10230,
       "line_count": 262,
       "functions": [
         "NearestNodeTo",
@@ -1554,7 +1554,7 @@
     },
     {
       "path": "Lua/gamemode/animationsapi/boneanimlib.lua",
-      "size_bytes": 1895,
+      "size_bytes": 1829,
       "line_count": 67,
       "functions": [
         "meta:ResetLuaAnimation",
@@ -1573,7 +1573,7 @@
     },
     {
       "path": "Lua/gamemode/animationsapi/cl_animeditor.lua",
-      "size_bytes": 43864,
+      "size_bytes": 42363,
       "line_count": 1502,
       "functions": [
         "AnimationEditorOff",
@@ -1636,7 +1636,7 @@
     },
     {
       "path": "Lua/gamemode/animationsapi/cl_boneanimlib.lua",
-      "size_bytes": 11958,
+      "size_bytes": 11612,
       "line_count": 347,
       "functions": [
         "AdvanceFrame",
@@ -1669,7 +1669,7 @@
     },
     {
       "path": "Lua/gamemode/animationsapi/mocap_controller.lua",
-      "size_bytes": 2006,
+      "size_bytes": 1915,
       "line_count": 92,
       "functions": [
         "ENT:Draw",
@@ -1693,7 +1693,7 @@
     },
     {
       "path": "Lua/gamemode/animationsapi/sh_boneanimlib.lua",
-      "size_bytes": 7507,
+      "size_bytes": 7223,
       "line_count": 285,
       "functions": [
         "Deserialize",
@@ -1711,7 +1711,7 @@
     },
     {
       "path": "Lua/gamemode/animationsapi/sh_mocap.lua",
-      "size_bytes": 715,
+      "size_bytes": 674,
       "line_count": 42,
       "functions": [
         "GetMocapAnimations",
@@ -1725,7 +1725,7 @@
     },
     {
       "path": "Lua/gamemode/animationsapi/sv_mocap.lua",
-      "size_bytes": 2004,
+      "size_bytes": 1929,
       "line_count": 76,
       "functions": [
         "ResetMoCap",
@@ -1746,7 +1746,7 @@
     },
     {
       "path": "Lua/gamemode/cl_deathnotice.lua",
-      "size_bytes": 4414,
+      "size_bytes": 4241,
       "line_count": 174,
       "functions": [
         "CreateDeathNotify",
@@ -1772,7 +1772,7 @@
     },
     {
       "path": "Lua/gamemode/cl_draw.lua",
-      "size_bytes": 753,
+      "size_bytes": 728,
       "line_count": 26,
       "functions": [
         "draw.DrawTextBlurBG",
@@ -1784,7 +1784,7 @@
     },
     {
       "path": "Lua/gamemode/cl_gmchanger.lua",
-      "size_bytes": 2251,
+      "size_bytes": 2156,
       "line_count": 96,
       "functions": [
         "GM:ChangingGamemode",
@@ -1807,7 +1807,7 @@
     },
     {
       "path": "Lua/gamemode/cl_help.lua",
-      "size_bytes": 10757,
+      "size_bytes": 10466,
       "line_count": 292,
       "functions": [
         "GM:ShowHelp",
@@ -1831,7 +1831,7 @@
     },
     {
       "path": "Lua/gamemode/cl_hud.lua",
-      "size_bytes": 1409,
+      "size_bytes": 1353,
       "line_count": 57,
       "functions": [
         "GM:HUDNeedsUpdate",
@@ -1852,7 +1852,7 @@
     },
     {
       "path": "Lua/gamemode/cl_init.lua",
-      "size_bytes": 69000,
+      "size_bytes": 66905,
       "line_count": 2096,
       "functions": [
         "BetterScreenScale",
@@ -1958,7 +1958,7 @@
     },
     {
       "path": "Lua/gamemode/cl_manifest_data.lua",
-      "size_bytes": 3746,
+      "size_bytes": 3659,
       "line_count": 88,
       "functions": [],
       "hooks": [],
@@ -1981,7 +1981,7 @@
     },
     {
       "path": "Lua/gamemode/cl_manifest_debug.lua",
-      "size_bytes": 11358,
+      "size_bytes": 11077,
       "line_count": 282,
       "functions": [
         "DrawManifestBox",
@@ -2005,7 +2005,7 @@
     },
     {
       "path": "Lua/gamemode/cl_mapvote.lua",
-      "size_bytes": 20588,
+      "size_bytes": 19979,
       "line_count": 610,
       "functions": [
         "FindBackgroundForMap",
@@ -2035,7 +2035,7 @@
     },
     {
       "path": "Lua/gamemode/cl_nav_editor.lua",
-      "size_bytes": 5797,
+      "size_bytes": 5643,
       "line_count": 155,
       "functions": [],
       "hooks": [
@@ -2053,7 +2053,7 @@
     },
     {
       "path": "Lua/gamemode/cl_notify.lua",
-      "size_bytes": 749,
+      "size_bytes": 719,
       "line_count": 31,
       "functions": [
         "CreateLeftNotify",
@@ -2069,7 +2069,7 @@
     },
     {
       "path": "Lua/gamemode/cl_obj_entity_extend.lua",
-      "size_bytes": 327,
+      "size_bytes": 318,
       "line_count": 10,
       "functions": [
         "meta:SetRenderBoundsNumber"
@@ -2080,7 +2080,7 @@
     },
     {
       "path": "Lua/gamemode/cl_obj_player_extend.lua",
-      "size_bytes": 1716,
+      "size_bytes": 1658,
       "line_count": 59,
       "functions": [
         "GetController",
@@ -2104,7 +2104,7 @@
     },
     {
       "path": "Lua/gamemode/cl_postprocess.lua",
-      "size_bytes": 1130,
+      "size_bytes": 1093,
       "line_count": 38,
       "functions": [
         "GM:DoPostProcessing"
@@ -2117,7 +2117,7 @@
     },
     {
       "path": "Lua/gamemode/cl_rich_presence.lua",
-      "size_bytes": 3488,
+      "size_bytes": 3391,
       "line_count": 98,
       "functions": [
         "GetScoreString",
@@ -2141,7 +2141,7 @@
     },
     {
       "path": "Lua/gamemode/cl_scoreboard.lua",
-      "size_bytes": 11327,
+      "size_bytes": 10999,
       "line_count": 329,
       "functions": [
         "GM:ScoreboardHide",
@@ -2172,7 +2172,7 @@
     },
     {
       "path": "Lua/gamemode/cl_selectscreen.lua",
-      "size_bytes": 7916,
+      "size_bytes": 7662,
       "line_count": 255,
       "functions": [
         "CreatePlayerRows",
@@ -2193,7 +2193,7 @@
     },
     {
       "path": "Lua/gamemode/cl_splashscreen.lua",
-      "size_bytes": 159,
+      "size_bytes": 154,
       "line_count": 6,
       "functions": [
         "GM:ShowSplash"
@@ -2206,7 +2206,7 @@
     },
     {
       "path": "Lua/gamemode/class_default.lua",
-      "size_bytes": 1606,
+      "size_bytes": 1542,
       "line_count": 65,
       "functions": [
         "CLASS:CalcView",
@@ -2228,7 +2228,7 @@
     },
     {
       "path": "Lua/gamemode/init.lua",
-      "size_bytes": 34845,
+      "size_bytes": 33764,
       "line_count": 1082,
       "functions": [
         "BroadcastLua",
@@ -2326,7 +2326,7 @@
     },
     {
       "path": "Lua/gamemode/languages/english.lua",
-      "size_bytes": 1288,
+      "size_bytes": 1264,
       "line_count": 25,
       "functions": [],
       "hooks": [],
@@ -2335,7 +2335,7 @@
     },
     {
       "path": "Lua/gamemode/languages/spanish.lua",
-      "size_bytes": 145,
+      "size_bytes": 139,
       "line_count": 7,
       "functions": [],
       "hooks": [],
@@ -2344,7 +2344,7 @@
     },
     {
       "path": "Lua/gamemode/lib/class.lua",
-      "size_bytes": 2552,
+      "size_bytes": 2479,
       "line_count": 74,
       "functions": [
         "GetClass",
@@ -2359,7 +2359,7 @@
     },
     {
       "path": "Lua/gamemode/lib/event.lua",
-      "size_bytes": 3179,
+      "size_bytes": 3084,
       "line_count": 96,
       "functions": [
         "Event:Add",
@@ -2379,7 +2379,7 @@
     },
     {
       "path": "Lua/gamemode/lib/promise.lua",
-      "size_bytes": 7749,
+      "size_bytes": 7517,
       "line_count": 233,
       "functions": [
         "Promise.Delay",
@@ -2404,7 +2404,7 @@
     },
     {
       "path": "Lua/gamemode/lib/SBOX_MAPPING.lua",
-      "size_bytes": 6489,
+      "size_bytes": 6372,
       "line_count": 118,
       "functions": [],
       "hooks": [],
@@ -2420,7 +2420,7 @@
     },
     {
       "path": "Lua/gamemode/obj_ball.lua",
-      "size_bytes": 6669,
+      "size_bytes": 6495,
       "line_count": 175,
       "functions": [
         "Ball:CheckScoring",
@@ -2448,7 +2448,7 @@
     },
     {
       "path": "Lua/gamemode/obj_bot.lua",
-      "size_bytes": 84044,
+      "size_bytes": 82195,
       "line_count": 1850,
       "functions": [
         "AreGoalsThrowOnly",
@@ -2507,7 +2507,7 @@
     },
     {
       "path": "Lua/gamemode/obj_gamemanager.lua",
-      "size_bytes": 18853,
+      "size_bytes": 18356,
       "line_count": 498,
       "functions": [
         "GameManager:AddBonusTime",
@@ -2551,7 +2551,7 @@
     },
     {
       "path": "Lua/gamemode/obj_network.lua",
-      "size_bytes": 9844,
+      "size_bytes": 9592,
       "line_count": 253,
       "functions": [
         "EstimateArgSize",
@@ -2585,7 +2585,7 @@
     },
     {
       "path": "Lua/gamemode/obj_player.lua",
-      "size_bytes": 19142,
+      "size_bytes": 18683,
       "line_count": 460,
       "functions": [
         "PlayerController:CanCharge",
@@ -2630,7 +2630,7 @@
     },
     {
       "path": "Lua/gamemode/obj_viewmodel_hud.lua",
-      "size_bytes": 2760,
+      "size_bytes": 2670,
       "line_count": 91,
       "functions": [
         "HUDViewModel:GetRoundTimer",
@@ -2655,7 +2655,7 @@
     },
     {
       "path": "Lua/gamemode/player_class/class_default.lua",
-      "size_bytes": 379,
+      "size_bytes": 360,
       "line_count": 20,
       "functions": [
         "CLASS:Loadout",
@@ -2669,7 +2669,7 @@
     },
     {
       "path": "Lua/gamemode/player_class.lua",
-      "size_bytes": 1028,
+      "size_bytes": 984,
       "line_count": 45,
       "functions": [
         "Get",
@@ -2682,7 +2682,7 @@
     },
     {
       "path": "Lua/gamemode/player_colours.lua",
-      "size_bytes": 639,
+      "size_bytes": 624,
       "line_count": 16,
       "functions": [],
       "hooks": [],
@@ -2691,7 +2691,7 @@
     },
     {
       "path": "Lua/gamemode/player_extension.lua",
-      "size_bytes": 5764,
+      "size_bytes": 5529,
       "line_count": 236,
       "functions": [
         "meta:AddFrags",
@@ -2727,7 +2727,7 @@
     },
     {
       "path": "Lua/gamemode/round_controller.lua",
-      "size_bytes": 8324,
+      "size_bytes": 8032,
       "line_count": 293,
       "functions": [
         "GM:AddRoundTime",
@@ -2776,7 +2776,7 @@
     },
     {
       "path": "Lua/gamemode/round_transitions/slide.lua",
-      "size_bytes": 378,
+      "size_bytes": 365,
       "line_count": 14,
       "functions": [
         "TRANSITION:In",
@@ -2788,7 +2788,7 @@
     },
     {
       "path": "Lua/gamemode/server/sv_downloads.lua",
-      "size_bytes": 1068,
+      "size_bytes": 1036,
       "line_count": 33,
       "functions": [],
       "hooks": [],
@@ -2801,7 +2801,7 @@
     },
     {
       "path": "Lua/gamemode/server/sv_match_recorder.lua",
-      "size_bytes": 10693,
+      "size_bytes": 10383,
       "line_count": 311,
       "functions": [
         "ComputeSummary",
@@ -2833,7 +2833,7 @@
     },
     {
       "path": "Lua/gamemode/server/sv_nav.lua",
-      "size_bytes": 2317,
+      "size_bytes": 2248,
       "line_count": 70,
       "functions": [
         "RunNavGenerate",
@@ -2849,7 +2849,7 @@
     },
     {
       "path": "Lua/gamemode/sh_animations.lua",
-      "size_bytes": 2894,
+      "size_bytes": 2818,
       "line_count": 77,
       "functions": [
         "GM:CalcMainActivity",
@@ -2870,7 +2870,7 @@
     },
     {
       "path": "Lua/gamemode/sh_globals.lua",
-      "size_bytes": 1947,
+      "size_bytes": 1892,
       "line_count": 56,
       "functions": [],
       "hooks": [],
@@ -2884,7 +2884,7 @@
     },
     {
       "path": "Lua/gamemode/sh_nav_graph.lua",
-      "size_bytes": 5360,
+      "size_bytes": 5220,
       "line_count": 141,
       "functions": [
         "EFTNav.Deserialize",
@@ -2903,7 +2903,7 @@
     },
     {
       "path": "Lua/gamemode/sh_obj_entity_extend.lua",
-      "size_bytes": 3522,
+      "size_bytes": 3417,
       "line_count": 106,
       "functions": [
         "meta:AddOnOutput",
@@ -2930,7 +2930,7 @@
     },
     {
       "path": "Lua/gamemode/sh_obj_player_extend.lua",
-      "size_bytes": 12057,
+      "size_bytes": 11585,
       "line_count": 473,
       "functions": [
         "InvalidateCompensatedTrace",
@@ -3013,7 +3013,7 @@
     },
     {
       "path": "Lua/gamemode/sh_roundtransitions.lua",
-      "size_bytes": 1119,
+      "size_bytes": 1070,
       "line_count": 50,
       "functions": [
         "Register"
@@ -3027,7 +3027,7 @@
     },
     {
       "path": "Lua/gamemode/sh_states.lua",
-      "size_bytes": 944,
+      "size_bytes": 901,
       "line_count": 44,
       "functions": [
         "Register"
@@ -3044,7 +3044,7 @@
     },
     {
       "path": "Lua/gamemode/sh_translate.lua",
-      "size_bytes": 2917,
+      "size_bytes": 2811,
       "line_count": 107,
       "functions": [
         "PrintTranslatedMessage",
@@ -3069,7 +3069,7 @@
     },
     {
       "path": "Lua/gamemode/sh_voice.lua",
-      "size_bytes": 8912,
+      "size_bytes": 8759,
       "line_count": 154,
       "functions": [
         "meta:GetVoiceSet",
@@ -3087,7 +3087,7 @@
     },
     {
       "path": "Lua/gamemode/shared.lua",
-      "size_bytes": 23375,
+      "size_bytes": 22623,
       "line_count": 753,
       "functions": [
         "AccessorFuncDT",
@@ -3212,7 +3212,7 @@
     },
     {
       "path": "Lua/gamemode/skin.lua",
-      "size_bytes": 12786,
+      "size_bytes": 12339,
       "line_count": 448,
       "functions": [
         "SKIN:DrawGenericBackground",
@@ -3254,7 +3254,7 @@
     },
     {
       "path": "Lua/gamemode/states/arcanewandattack.lua",
-      "size_bytes": 1987,
+      "size_bytes": 1910,
       "line_count": 78,
       "functions": [
         "STATE:Ended",
@@ -3278,7 +3278,7 @@
     },
     {
       "path": "Lua/gamemode/states/beatingstickattack.lua",
-      "size_bytes": 4020,
+      "size_bytes": 3873,
       "line_count": 148,
       "functions": [
         "STATE:CalcMainActivity",
@@ -3306,7 +3306,7 @@
     },
     {
       "path": "Lua/gamemode/states/bigpoleattack.lua",
-      "size_bytes": 4099,
+      "size_bytes": 3952,
       "line_count": 148,
       "functions": [
         "STATE:CalcMainActivity",
@@ -3334,7 +3334,7 @@
     },
     {
       "path": "Lua/gamemode/states/divetackle.lua",
-      "size_bytes": 4897,
+      "size_bytes": 4728,
       "line_count": 170,
       "functions": [
         "STATE:BuildBonePositions",
@@ -3366,7 +3366,7 @@
     },
     {
       "path": "Lua/gamemode/states/knockdownrecover.lua",
-      "size_bytes": 1033,
+      "size_bytes": 983,
       "line_count": 51,
       "functions": [
         "STATE:Ended",
@@ -3387,7 +3387,7 @@
     },
     {
       "path": "Lua/gamemode/states/knockeddown.lua",
-      "size_bytes": 8436,
+      "size_bytes": 8155,
       "line_count": 282,
       "functions": [
         "STATE:CalcMainActivity",
@@ -3420,7 +3420,7 @@
     },
     {
       "path": "Lua/gamemode/states/movement.lua",
-      "size_bytes": 6557,
+      "size_bytes": 6343,
       "line_count": 215,
       "functions": [
         "STATE:CalcMainActivity",
@@ -3450,7 +3450,7 @@
     },
     {
       "path": "Lua/gamemode/states/powerstruggle.lua",
-      "size_bytes": 16840,
+      "size_bytes": 16292,
       "line_count": 549,
       "functions": [
         "STATE:AddPower",
@@ -3487,7 +3487,7 @@
     },
     {
       "path": "Lua/gamemode/states/powerstrugglelose.lua",
-      "size_bytes": 1583,
+      "size_bytes": 1514,
       "line_count": 70,
       "functions": [
         "STATE:CalcMainActivity",
@@ -3512,7 +3512,7 @@
     },
     {
       "path": "Lua/gamemode/states/powerstrugglewin.lua",
-      "size_bytes": 3029,
+      "size_bytes": 2912,
       "line_count": 118,
       "functions": [
         "STATE:CalcMainActivity",
@@ -3539,7 +3539,7 @@
     },
     {
       "path": "Lua/gamemode/states/preround.lua",
-      "size_bytes": 787,
+      "size_bytes": 749,
       "line_count": 39,
       "functions": [
         "STATE:CalcMainActivity",
@@ -3559,7 +3559,7 @@
     },
     {
       "path": "Lua/gamemode/states/punch.lua",
-      "size_bytes": 2864,
+      "size_bytes": 2752,
       "line_count": 113,
       "functions": [
         "STATE:CalcMainActivity",
@@ -3588,7 +3588,7 @@
     },
     {
       "path": "Lua/gamemode/states/spinnyknockdown.lua",
-      "size_bytes": 1101,
+      "size_bytes": 1055,
       "line_count": 47,
       "functions": [
         "STATE:CalcMainActivity",
@@ -3612,7 +3612,7 @@
     },
     {
       "path": "Lua/gamemode/states/throw.lua",
-      "size_bytes": 6831,
+      "size_bytes": 6603,
       "line_count": 229,
       "functions": [
         "STATE:CalcMainActivity",
@@ -3645,7 +3645,7 @@
     },
     {
       "path": "Lua/gamemode/states/wave.lua",
-      "size_bytes": 969,
+      "size_bytes": 922,
       "line_count": 48,
       "functions": [
         "STATE:CalcMainActivity",
@@ -3668,7 +3668,7 @@
     },
     {
       "path": "Lua/gamemode/sv_bot_pathfinding.lua",
-      "size_bytes": 8373,
+      "size_bytes": 8142,
       "line_count": 232,
       "functions": [
         "BotPathfinder.GetNextWaypoint",
@@ -3688,7 +3688,7 @@
     },
     {
       "path": "Lua/gamemode/sv_bots.lua",
-      "size_bytes": 8813,
+      "size_bytes": 8564,
       "line_count": 250,
       "functions": [
         "BalanceTeams",
@@ -3718,7 +3718,7 @@
     },
     {
       "path": "Lua/gamemode/sv_emotes.lua",
-      "size_bytes": 6471,
+      "size_bytes": 6297,
       "line_count": 175,
       "functions": [],
       "hooks": [
@@ -3736,7 +3736,7 @@
     },
     {
       "path": "Lua/gamemode/sv_gmchanger.lua",
-      "size_bytes": 10784,
+      "size_bytes": 10405,
       "line_count": 380,
       "functions": [
         "GM:ChangeGamemode",
@@ -3773,7 +3773,7 @@
     },
     {
       "path": "Lua/gamemode/sv_mapvote.lua",
-      "size_bytes": 11395,
+      "size_bytes": 11046,
       "line_count": 350,
       "functions": [
         "MapVote.Cancel",
@@ -3799,7 +3799,7 @@
     },
     {
       "path": "Lua/gamemode/sv_nav_editor.lua",
-      "size_bytes": 25372,
+      "size_bytes": 24747,
       "line_count": 626,
       "functions": [
         "BroadcastGraph",
@@ -3828,7 +3828,7 @@
     },
     {
       "path": "Lua/gamemode/sv_obj_player_extend.lua",
-      "size_bytes": 2718,
+      "size_bytes": 2610,
       "line_count": 109,
       "functions": [
         "GetController",
@@ -3868,7 +3868,7 @@
     },
     {
       "path": "Lua/gamemode/sv_security.lua",
-      "size_bytes": 16060,
+      "size_bytes": 15630,
       "line_count": 431,
       "functions": [
         "PrintResults",
@@ -3891,7 +3891,7 @@
     },
     {
       "path": "Lua/gamemode/sv_spectator.lua",
-      "size_bytes": 7636,
+      "size_bytes": 7398,
       "line_count": 239,
       "functions": [
         "GM:BecomeObserver",
@@ -3919,7 +3919,7 @@
     },
     {
       "path": "Lua/gamemode/utility.lua",
-      "size_bytes": 1707,
+      "size_bytes": 1649,
       "line_count": 59,
       "functions": [
         "UTIL_FreezeAllPlayers",
@@ -3935,7 +3935,7 @@
     },
     {
       "path": "Lua/gamemode/vgui/dex3dnotification.lua",
-      "size_bytes": 4241,
+      "size_bytes": 4084,
       "line_count": 158,
       "functions": [
         "PANEL:AddImage",
@@ -3957,7 +3957,7 @@
     },
     {
       "path": "Lua/gamemode/vgui/vgui_gamenotice.lua",
-      "size_bytes": 2890,
+      "size_bytes": 2776,
       "line_count": 115,
       "functions": [
         "PANEL:AddEntityText",
@@ -3977,7 +3977,7 @@
     },
     {
       "path": "Lua/gamemode/vgui/vgui_hudbase.lua",
-      "size_bytes": 1161,
+      "size_bytes": 1112,
       "line_count": 50,
       "functions": [
         "PANEL:ChooseParent",
@@ -3999,7 +3999,7 @@
     },
     {
       "path": "Lua/gamemode/vgui/vgui_hudcommon.lua",
-      "size_bytes": 2774,
+      "size_bytes": 2666,
       "line_count": 109,
       "functions": [
         "PANEL:AddItem",
@@ -4020,7 +4020,7 @@
     },
     {
       "path": "Lua/gamemode/vgui/vgui_hudelement.lua",
-      "size_bytes": 1308,
+      "size_bytes": 1267,
       "line_count": 42,
       "functions": [
         "PANEL:Init",
@@ -4036,7 +4036,7 @@
     },
     {
       "path": "Lua/gamemode/vgui/vgui_hudlayout.lua",
-      "size_bytes": 3932,
+      "size_bytes": 3769,
       "line_count": 164,
       "functions": [
         "PANEL:AddItem",
@@ -4058,7 +4058,7 @@
     },
     {
       "path": "Lua/gamemode/vgui/vgui_vote.lua",
-      "size_bytes": 6760,
+      "size_bytes": 6519,
       "line_count": 242,
       "functions": [
         "PANEL:ChooseGamemode",

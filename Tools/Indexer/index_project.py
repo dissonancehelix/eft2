@@ -37,7 +37,7 @@ import index_external
 ROOT_DOMAINS: list[tuple[str, str, str, str]] = [
     ("README.md",  "EFT2 game/remake contract",                                "editable_contract",        "patch surgically"),
     ("AGENTS.md",  "agent workflow and source hierarchy contract",             "editable_contract",        "patch surgically"),
-    ("Game/",      "future buildable EFT2 s&box game project",                 "future_project",           "do not scaffold yet"),
+    ("Game/eft2/", "EFT2 s&box game project (eft2.sbproj); initial scaffold exists", "active_project", "implementation guided by infrastructure tools; do not add mechanics until rails are stable"),
     ("Maps/",      "canonical map domains and map analysis outputs",           "mixed",                    "VMFs read-only; analysis writable by tools"),
     ("Lua/",       "original GMod EFT source evidence",                        "read_only_source_reference", "do not mutate unless explicitly instructed"),
     ("SBox/",      "s&box docs/source/runtime/sample reference",               "external_reference",       "do not mutate or vendor into Game/"),
@@ -75,8 +75,8 @@ def render_project_index(root: Path, summary: dict[str, Any]) -> str:
         "and modernize the game without erasing its identity."
     )
     lines.append("")
-    lines.append("Phase: infrastructure — indexer first; Game/ not yet scaffolded.")
-    lines.append("Structure: Tools/ (infrastructure) and Game/ (future playable s&box project).")
+    lines.append("Phase: infrastructure rails — Game/eft2/ scaffold exists; implementation deferred until Contract Validator, Scenario Harness, and Telemetry are stable.")
+    lines.append("Structure: Tools/ (infrastructure) and Game/eft2/ (s&box project, eft2.sbproj — scaffold present, mechanics deferred).")
     lines.append("Do not introduce Engine/ or Runtime/ folders or umbrella names.")
     lines.append("")
     lines.append("## Major folders")
@@ -148,7 +148,7 @@ def render_project_index(root: Path, summary: dict[str, Any]) -> str:
 def render_current_state(root: Path, summary: dict[str, Any]) -> str:
     lines = ["# EFT2 Current State", "", "Factual snapshot — not aspirational.", ""]
     checks = [
-        ("Game/ scaffolded", any((root / "Game").rglob("*.sbproj")) if (root / "Game").is_dir() else False),
+        ("Game/eft2/ scaffold present", (root / "Game" / "eft2" / "eft2.sbproj").exists()),
         ("Tools/Indexer/ present", (root / "Tools" / "Indexer").is_dir()),
         ("Tools/Map Analyzer/ present", (root / "Tools" / "Map Analyzer").is_dir()),
         ("Tools/Observer/ present", (root / "Tools" / "Observer").is_dir()),
@@ -233,7 +233,7 @@ def render_next_actions(root: Path, summary: dict[str, Any]) -> str:
         "Build `Tools/Scenario Harness/` to encode must-preserve EFT situations as tests.",
         "Build `Tools/Telemetry/` to define event schemas for matches and simulations.",
         "Build `Tools/Simulation/` only after the above are stable.",
-        "Scaffold `Game/` only after infrastructure is stable enough to guide Codex.",
+        "Implement `Game/eft2/` mechanics only after Contract Validator, Scenario Harness, and Telemetry are stable — the scaffold already exists at `Game/eft2/eft2.sbproj`.",
     ])
 
     for i, a in enumerate(actions, 1):

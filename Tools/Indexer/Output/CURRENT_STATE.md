@@ -4,12 +4,12 @@
 
 Factual snapshot — not aspirational.
 
-- [ ] Game/ scaffolded
+- [x] Game/eft2/ scaffold present
 - [x] Tools/Indexer/ present
 - [x] Tools/Map Analyzer/ present
-- [ ] Tools/Observer/ present
-- [ ] Tools/Contract Validator/ present
-- [ ] Tools/Scenario Harness/ present
+- [x] Tools/Observer/ present
+- [x] Tools/Contract Validator/ present
+- [x] Tools/Scenario Harness/ present
 - [ ] Tools/Telemetry/ present
 - [ ] Tools/Simulation/ present
 - [x] SBox/ reference tree present

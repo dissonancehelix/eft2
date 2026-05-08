@@ -1,13 +1,13 @@
 {
   "generated_by": "Tools/Indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T17:05:00.903724+00:00",
+  "generated_at": "2026-05-08T17:30:36.417788+00:00",
   "repo_root": "C:/Users/dissonance/Desktop/EFT2",
   "warnings": [],
   "files": [
     {
       "path": "README.md",
-      "size_bytes": 75734,
+      "size_bytes": 75674,
       "heading_count": 174,
       "headings": [
         {
@@ -774,57 +774,57 @@
       ],
       "todo_markers": [
         {
-          "line": 242,
+          "line": 241,
           "marker": "NEXT",
           "text": "possession event occur within the next 1-2 seconds?"
         },
         {
-          "line": 244,
+          "line": 243,
           "marker": "NEXT",
           "text": "collision, fumble, catch, bounce, or reset that will decide the ball."
         },
         {
-          "line": 268,
+          "line": 267,
           "marker": "NEXT",
           "text": "contested collision to a better location."
         },
         {
-          "line": 331,
+          "line": 330,
           "marker": "NEXT",
           "text": "."
         },
         {
-          "line": 885,
+          "line": 884,
           "marker": "NEXT",
           "text": "possession event occur?"
         },
         {
-          "line": 935,
+          "line": 934,
           "marker": "NEXT",
           "text": "possession event"
         },
         {
-          "line": 1029,
+          "line": 1028,
           "marker": "NEXT",
           "text": ""
         },
         {
-          "line": 1427,
+          "line": 1426,
           "marker": "NEXT",
           "text": "transfer interface."
         },
         {
-          "line": 1441,
+          "line": 1440,
           "marker": "NEXT",
           "text": "conflict"
         },
         {
-          "line": 1780,
+          "line": 1779,
           "marker": "NEXT",
           "text": "possession events"
         },
         {
-          "line": 1784,
+          "line": 1783,
           "marker": "NEXT",
           "text": "seconds"
         }
@@ -832,8 +832,8 @@
     },
     {
       "path": "AGENTS.md",
-      "size_bytes": 16092,
-      "heading_count": 17,
+      "size_bytes": 6751,
+      "heading_count": 11,
       "headings": [
         {
           "level": 1,
@@ -857,35 +857,11 @@
         },
         {
           "level": 2,
-          "text": "Repository Layout"
-        },
-        {
-          "level": 2,
           "text": "Maps Domain Policy"
         },
         {
           "level": 2,
           "text": "Tooling Rules"
-        },
-        {
-          "level": 2,
-          "text": "Canonical SBox And Toolkit Paths"
-        },
-        {
-          "level": 2,
-          "text": "s&box Workflow Notes"
-        },
-        {
-          "level": 2,
-          "text": "Multiplayer Authority Contract"
-        },
-        {
-          "level": 2,
-          "text": "Physics And Trigger Notes"
-        },
-        {
-          "level": 2,
-          "text": "Runtime Architecture"
         },
         {
           "level": 2,
@@ -907,7 +883,7 @@
       "contract_ids": [],
       "todo_markers": [
         {
-          "line": 341,
+          "line": 194,
           "marker": "NEXT",
           "text": "recommended step"
         }
@@ -915,7 +891,7 @@
     },
     {
       "path": "Maps/README.md",
-      "size_bytes": 826,
+      "size_bytes": 814,
       "heading_count": 1,
       "headings": [
         {
@@ -924,6 +900,62 @@
         }
       ],
       "contract_ids": [],
+      "todo_markers": []
+    },
+    {
+      "path": "Tools/Contract Validator/README.md",
+      "size_bytes": 2489,
+      "heading_count": 11,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Tools/Contract Validator"
+        },
+        {
+          "level": 2,
+          "text": "Purpose"
+        },
+        {
+          "level": 2,
+          "text": "What it checks"
+        },
+        {
+          "level": 3,
+          "text": "1. Contract ID coverage"
+        },
+        {
+          "level": 3,
+          "text": "2. Mechanic anchors"
+        },
+        {
+          "level": 3,
+          "text": "3. Known bad states"
+        },
+        {
+          "level": 3,
+          "text": "4. Required outputs"
+        },
+        {
+          "level": 2,
+          "text": "CLI"
+        },
+        {
+          "level": 2,
+          "text": "Output"
+        },
+        {
+          "level": 2,
+          "text": "Integration"
+        },
+        {
+          "level": 2,
+          "text": "Build order context"
+        }
+      ],
+      "contract_ids": [
+        "C-001",
+        "P-900"
+      ],
       "todo_markers": []
     },
     {
@@ -1019,7 +1051,92 @@
       ],
       "contract_ids": [],
       "todo_markers": []
+    },
+    {
+      "path": "Tools/Observer/README.md",
+      "size_bytes": 1937,
+      "heading_count": 9,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Tools/Observer"
+        },
+        {
+          "level": 2,
+          "text": "Purpose"
+        },
+        {
+          "level": 2,
+          "text": "What Observer will do (when implemented)"
+        },
+        {
+          "level": 2,
+          "text": "What Observer will not do"
+        },
+        {
+          "level": 2,
+          "text": "Output schema"
+        },
+        {
+          "level": 2,
+          "text": "CLI (placeholder)"
+        },
+        {
+          "level": 2,
+          "text": "Integration with the pipeline"
+        },
+        {
+          "level": 2,
+          "text": "Dependency note"
+        },
+        {
+          "level": 2,
+          "text": "Build order context"
+        }
+      ],
+      "contract_ids": [],
+      "todo_markers": []
+    },
+    {
+      "path": "Tools/Scenario Harness/README.md",
+      "size_bytes": 1538,
+      "heading_count": 7,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Tools/Scenario Harness"
+        },
+        {
+          "level": 2,
+          "text": "Purpose"
+        },
+        {
+          "level": 2,
+          "text": "Schema"
+        },
+        {
+          "level": 2,
+          "text": "CLI"
+        },
+        {
+          "level": 2,
+          "text": "Scenario files"
+        },
+        {
+          "level": 2,
+          "text": "Output"
+        },
+        {
+          "level": 2,
+          "text": "Build order context"
+        }
+      ],
+      "contract_ids": [
+        "S-001",
+        "S-022"
+      ],
+      "todo_markers": []
     }
   ],
-  "file_count": 5
+  "file_count": 8
 }

@@ -10,6 +10,6 @@ Prioritized. Adjust as repo state changes.
 4. Build `Tools/Scenario Harness/` to encode must-preserve EFT situations as tests.
 5. Build `Tools/Telemetry/` to define event schemas for matches and simulations.
 6. Build `Tools/Simulation/` only after the above are stable.
-7. Scaffold `Game/` only after infrastructure is stable enough to guide Codex.
+7. Implement `Game/eft2/` mechanics only after Contract Validator, Scenario Harness, and Telemetry are stable — the scaffold already exists at `Game/eft2/eft2.sbproj`.
 
 The Indexer is not the game builder. It is the repo memory builder.

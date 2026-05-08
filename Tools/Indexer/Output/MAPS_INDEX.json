@@ -1,7 +1,7 @@
 {
   "generated_by": "Tools/Indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T17:05:06.763175+00:00",
+  "generated_at": "2026-05-08T17:30:36.842000+00:00",
   "repo_root": "C:/Users/dissonance/Desktop/EFT2",
   "warnings": [],
   "present": true,
@@ -14,7 +14,7 @@
   "custom_eft_fgd_contents": [
     {
       "path": "Maps/Shared/eft.fgd",
-      "size_bytes": 6486,
+      "size_bytes": 6312,
       "includes": [
         "base.fgd",
         "halflife2.fgd",
