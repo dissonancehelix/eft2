@@ -1,8 +1,8 @@
 {
   "generated_by": "Tools/Indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T17:58:49.863956+00:00",
-  "repo_root": "C:/Users/dissonance/Desktop/EFT2",
+  "generated_at": "2026-05-08T18:10:26.533517+00:00",
+  "repo_root": ".",
   "warnings": [
     "sbox_scan_truncated_at:4000"
   ],
@@ -838,8 +838,292 @@
       "path": "Assets/Screenshots",
       "video_count": 0,
       "videos": [],
-      "image_count": 3,
+      "image_count": 74,
       "images": [
+        {
+          "path": "Assets/Screenshots/2015-10-21_00001.jpg",
+          "size_bytes": 268453
+        },
+        {
+          "path": "Assets/Screenshots/2015-10-21_00002.jpg",
+          "size_bytes": 196421
+        },
+        {
+          "path": "Assets/Screenshots/2015-10-21_00003.jpg",
+          "size_bytes": 230270
+        },
+        {
+          "path": "Assets/Screenshots/2015-10-21_00004.jpg",
+          "size_bytes": 178563
+        },
+        {
+          "path": "Assets/Screenshots/2015-11-20_00001.jpg",
+          "size_bytes": 259823
+        },
+        {
+          "path": "Assets/Screenshots/2015-11-25_00001.jpg",
+          "size_bytes": 630829
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-11_00001.jpg",
+          "size_bytes": 482668
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-11_00002.jpg",
+          "size_bytes": 334908
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-11_00003.jpg",
+          "size_bytes": 161778
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-12_00001.jpg",
+          "size_bytes": 782980
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-14_00001.jpg",
+          "size_bytes": 496183
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-17_00003.jpg",
+          "size_bytes": 462869
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-17_00004.jpg",
+          "size_bytes": 455048
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-17_00006.jpg",
+          "size_bytes": 502650
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-19_00001.jpg",
+          "size_bytes": 735537
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-19_00002.jpg",
+          "size_bytes": 874441
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-19_00003.jpg",
+          "size_bytes": 838103
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-21_00009.jpg",
+          "size_bytes": 450497
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-21_00010.jpg",
+          "size_bytes": 437334
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-21_00011.jpg",
+          "size_bytes": 431520
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-21_00012.jpg",
+          "size_bytes": 425042
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-29_00001.jpg",
+          "size_bytes": 222686
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-29_00002.jpg",
+          "size_bytes": 434093
+        },
+        {
+          "path": "Assets/Screenshots/2015-12-29_00003.jpg",
+          "size_bytes": 305001
+        },
+        {
+          "path": "Assets/Screenshots/2016-01-12_00002.jpg",
+          "size_bytes": 300498
+        },
+        {
+          "path": "Assets/Screenshots/2016-01-20_00001.jpg",
+          "size_bytes": 485628
+        },
+        {
+          "path": "Assets/Screenshots/2016-01-20_00002.jpg",
+          "size_bytes": 473144
+        },
+        {
+          "path": "Assets/Screenshots/2016-01-21_00002.jpg",
+          "size_bytes": 497177
+        },
+        {
+          "path": "Assets/Screenshots/2016-01-21_00004.jpg",
+          "size_bytes": 502034
+        },
+        {
+          "path": "Assets/Screenshots/2016-02-04_00001.jpg",
+          "size_bytes": 454004
+        },
+        {
+          "path": "Assets/Screenshots/2016-02-10_00001.jpg",
+          "size_bytes": 742383
+        },
+        {
+          "path": "Assets/Screenshots/20161021195938_1.jpg",
+          "size_bytes": 497147
+        },
+        {
+          "path": "Assets/Screenshots/20161104045440_1.jpg",
+          "size_bytes": 495271
+        },
+        {
+          "path": "Assets/Screenshots/20161104045446_1.jpg",
+          "size_bytes": 527118
+        },
+        {
+          "path": "Assets/Screenshots/20161104045455_1.jpg",
+          "size_bytes": 529105
+        },
+        {
+          "path": "Assets/Screenshots/20161104045519_1.jpg",
+          "size_bytes": 574486
+        },
+        {
+          "path": "Assets/Screenshots/20161104045527_1.jpg",
+          "size_bytes": 452796
+        },
+        {
+          "path": "Assets/Screenshots/20161104045537_1.jpg",
+          "size_bytes": 369393
+        },
+        {
+          "path": "Assets/Screenshots/20161104045548_1.jpg",
+          "size_bytes": 498407
+        },
+        {
+          "path": "Assets/Screenshots/20161104051220_1.jpg",
+          "size_bytes": 939044
+        },
+        {
+          "path": "Assets/Screenshots/20161104051234_1.jpg",
+          "size_bytes": 891129
+        },
+        {
+          "path": "Assets/Screenshots/20161104051243_1.jpg",
+          "size_bytes": 714711
+        },
+        {
+          "path": "Assets/Screenshots/20161104051331_1.jpg",
+          "size_bytes": 803860
+        },
+        {
+          "path": "Assets/Screenshots/20161105191735_1.jpg",
+          "size_bytes": 565180
+        },
+        {
+          "path": "Assets/Screenshots/20161105194244_1.jpg",
+          "size_bytes": 544838
+        },
+        {
+          "path": "Assets/Screenshots/20161105230755_1.jpg",
+          "size_bytes": 475806
+        },
+        {
+          "path": "Assets/Screenshots/20161105231414_1.jpg",
+          "size_bytes": 542476
+        },
+        {
+          "path": "Assets/Screenshots/20161106143424_1.jpg",
+          "size_bytes": 410731
+        },
+        {
+          "path": "Assets/Screenshots/20161106143511_1.jpg",
+          "size_bytes": 490466
+        },
+        {
+          "path": "Assets/Screenshots/20161109220554_1.jpg",
+          "size_bytes": 168738
+        },
+        {
+          "path": "Assets/Screenshots/20161227231025_1.jpg",
+          "size_bytes": 471561
+        },
+        {
+          "path": "Assets/Screenshots/20170127232526_1.jpg",
+          "size_bytes": 738182
+        },
+        {
+          "path": "Assets/Screenshots/20170128203902_1.jpg",
+          "size_bytes": 364036
+        },
+        {
+          "path": "Assets/Screenshots/20170204024133_1.jpg",
+          "size_bytes": 451152
+        },
+        {
+          "path": "Assets/Screenshots/20170212235318_1.jpg",
+          "size_bytes": 729735
+        },
+        {
+          "path": "Assets/Screenshots/20170212235714_1.jpg",
+          "size_bytes": 481310
+        },
+        {
+          "path": "Assets/Screenshots/20170214214533_1.jpg",
+          "size_bytes": 779384
+        },
+        {
+          "path": "Assets/Screenshots/20170217002712_1.jpg",
+          "size_bytes": 468800
+        },
+        {
+          "path": "Assets/Screenshots/20170304161234_1.jpg",
+          "size_bytes": 304588
+        },
+        {
+          "path": "Assets/Screenshots/20170309020955_1.jpg",
+          "size_bytes": 586382
+        },
+        {
+          "path": "Assets/Screenshots/20170320172139_1.jpg",
+          "size_bytes": 478607
+        },
+        {
+          "path": "Assets/Screenshots/20170403234912_1.jpg",
+          "size_bytes": 538079
+        },
+        {
+          "path": "Assets/Screenshots/20170406002807_1.jpg",
+          "size_bytes": 381453
+        },
+        {
+          "path": "Assets/Screenshots/20170409142454_1.jpg",
+          "size_bytes": 344530
+        },
+        {
+          "path": "Assets/Screenshots/20170415231253_1.jpg",
+          "size_bytes": 439793
+        },
+        {
+          "path": "Assets/Screenshots/20170419200147_1.jpg",
+          "size_bytes": 681856
+        },
+        {
+          "path": "Assets/Screenshots/20170424014628_1.jpg",
+          "size_bytes": 789242
+        },
+        {
+          "path": "Assets/Screenshots/20180203183347_1.jpg",
+          "size_bytes": 734918
+        },
+        {
+          "path": "Assets/Screenshots/20180319223533_1.jpg",
+          "size_bytes": 113152
+        },
+        {
+          "path": "Assets/Screenshots/20180519204732_1.jpg",
+          "size_bytes": 1099667
+        },
+        {
+          "path": "Assets/Screenshots/20180520030300_1.jpg",
+          "size_bytes": 861283
+        },
         {
           "path": "Assets/Screenshots/Slam Dunk 1.png",
           "size_bytes": 5434929

@@ -1,13 +1,13 @@
 {
   "generated_by": "Tools/Indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T17:58:48.589868+00:00",
-  "repo_root": "C:/Users/dissonance/Desktop/EFT2",
+  "generated_at": "2026-05-08T18:10:25.293082+00:00",
+  "repo_root": ".",
   "warnings": [],
   "files": [
     {
       "path": "README.md",
-      "size_bytes": 77786,
+      "size_bytes": 77662,
       "heading_count": 174,
       "headings": [
         {
@@ -774,57 +774,57 @@
       ],
       "todo_markers": [
         {
-          "line": 244,
+          "line": 243,
           "marker": "NEXT",
           "text": "possession event occur within the next 1-2 seconds?"
         },
         {
-          "line": 246,
+          "line": 245,
           "marker": "NEXT",
           "text": "collision, fumble, catch, bounce, or reset that will decide the ball."
         },
         {
-          "line": 270,
+          "line": 269,
           "marker": "NEXT",
           "text": "contested collision to a better location."
         },
         {
-          "line": 333,
+          "line": 332,
           "marker": "NEXT",
           "text": "."
         },
         {
-          "line": 887,
+          "line": 886,
           "marker": "NEXT",
           "text": "possession event occur?"
         },
         {
-          "line": 937,
+          "line": 936,
           "marker": "NEXT",
           "text": "possession event"
         },
         {
-          "line": 1031,
+          "line": 1030,
           "marker": "NEXT",
           "text": ""
         },
         {
-          "line": 1447,
+          "line": 1446,
           "marker": "NEXT",
           "text": "transfer interface."
         },
         {
-          "line": 1461,
+          "line": 1460,
           "marker": "NEXT",
           "text": "conflict"
         },
         {
-          "line": 1800,
+          "line": 1799,
           "marker": "NEXT",
           "text": "possession events"
         },
         {
-          "line": 1804,
+          "line": 1803,
           "marker": "NEXT",
           "text": "seconds"
         }
@@ -832,7 +832,7 @@
     },
     {
       "path": "AGENTS.md",
-      "size_bytes": 21398,
+      "size_bytes": 21265,
       "heading_count": 20,
       "headings": [
         {
@@ -996,7 +996,7 @@
     },
     {
       "path": "Tools/Indexer/README.md",
-      "size_bytes": 5108,
+      "size_bytes": 5147,
       "heading_count": 9,
       "headings": [
         {
@@ -1039,19 +1039,9 @@
       "contract_ids": [],
       "todo_markers": [
         {
-          "line": 50,
+          "line": 49,
           "marker": "TODO",
           "text": "markers in contract docs"
-        },
-        {
-          "line": 104,
-          "marker": "NEXT",
-          "text": "task."
-        },
-        {
-          "line": 124,
-          "marker": "NEXT",
-          "text": "."
         }
       ]
     },

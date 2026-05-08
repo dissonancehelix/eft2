@@ -6,7 +6,7 @@ Repo purpose: modern s&box / Source 2 remake of *Extreme Football Throwdown*.
 
 EFT2 is not just a code port. Its infrastructure exists to make agents understand EFT's rules, feel, maps, evidence, and failure modes deeply enough to implement and modernize the game without erasing its identity.
 
-Phase: infrastructure rails — Game/eft2/ scaffold exists; implementation deferred until Contract Validator, Scenario Harness, and Telemetry are stable.
+Phase: infrastructure rails in place — Contract Validator, Scenario Harness, and Telemetry all exist. Game/eft2/ scaffold is present; mechanics are deferred.
 Structure: Tools/ (infrastructure) and Game/eft2/ (s&box project, eft2.sbproj — scaffold present, mechanics deferred).
 Do not introduce Engine/ or Runtime/ folders or umbrella names.
 
@@ -22,7 +22,7 @@ Do not introduce Engine/ or Runtime/ folders or umbrella names.
 - `Tools/Indexer/Output/` — generated LLM-readable working memory [generated_output] (OK)
 - `garrysmod-master/` — temporary GMod source reference [external_reference] (missing)
 - `FFmpeg-Builds-master/` — temporary upstream FFmpeg cross-build reference [external_reference] (missing)
-- `source-sdk-2013-master/` — temporary Source SDK 2013 reference [external_reference] (OK)
+- `source-sdk-2013-master/` — temporary Source SDK 2013 reference [external_reference] (missing)
 - `.gitignore` — Git ignore rules [editable_contract] (OK)
 
 ## Tools status
@@ -53,8 +53,11 @@ Do not introduce Engine/ or Runtime/ folders or umbrella names.
 - gmod: not present
 - ffmpeg: not present
 
-## Strongest next action
-Read `CURRENT_STATE.md` and `NEXT_ACTIONS.md`. Build `Tools/Observer/` next.
+## Current readiness
+- Infrastructure tools (Contract Validator, Scenario Harness, Telemetry): all present
+- Tools/Observer: present
+- Tools/Simulation: not yet built
+- Game/eft2/ mechanics: scaffold present — mechanics deferred pending direction
 
 ## Warnings
 - sbox_scan_truncated_at:4000

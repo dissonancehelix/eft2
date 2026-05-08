@@ -43,9 +43,8 @@ Source material
 
 All outputs go under `Tools/Indexer/Output/`:
 
-- `PROJECT_INDEX.md` — one-screen repo snapshot
+- `PROJECT_INDEX.md` — one-screen repo snapshot (includes current readiness section)
 - `CURRENT_STATE.md` — factual checklist
-- `NEXT_ACTIONS.md` — prioritized, actionable
 - `SOURCE_MAP.json` — domain → policy/mutation rule
 - `CONTRACT_INDEX.json` — headings, contract IDs, TODO markers in contract docs
 - `LUA_INDEX.json` — Lua file classification by mechanic
@@ -78,7 +77,7 @@ The Indexer is read-only **except** for `Tools/Indexer/` and `Tools/Indexer/Outp
 It must not edit:
 
 - `README.md`, `AGENTS.md`, `PLAN.md`
-- `.gitignore` (recommends changes via `NEXT_ACTIONS.md` only)
+- `.gitignore` (reports status only; does not edit)
 - `Game/`, `Maps/`, `Lua/`, `SBox/`, `Assets/`, other `Tools/*`
 - VMFs, Lua, FGDs, raw media
 
@@ -99,9 +98,8 @@ Exit code is non-zero only for catastrophic failures (e.g. invalid `--root`).
 
 ```text
 Run Tools/Indexer/index_project.py.
-Read Tools/Indexer/Output/CURRENT_STATE.md.
-Read Tools/Indexer/Output/NEXT_ACTIONS.md.
-Continue from the next task.
+Read Tools/Indexer/Output/CURRENT_STATE.md and PROJECT_INDEX.md.
+Wait for the user's prompt. The Indexer reports state — it does not prescribe tasks.
 ```
 
 ## Relationship to other tools
@@ -121,7 +119,7 @@ README / AGENTS
 ```
 
 The Indexer does not implement any of those. It only inventories the repo and
-points at what should be built next.
+reports what is present, what is absent, and what is blocked.
 
 ## Implementation notes
 

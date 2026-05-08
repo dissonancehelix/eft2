@@ -39,7 +39,7 @@ class IndexEnvelope:
             "generated_by": GENERATOR,
             "schema_version": SCHEMA_VERSION,
             "generated_at": utc_now(),
-            "repo_root": str(self.repo_root).replace("\\", "/"),
+            "repo_root": ".",
             "warnings": list(self.warnings),
         }
 

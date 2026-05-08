@@ -16,7 +16,7 @@ an LLM agent can learn from it without re-inspecting the raw media.
 ## Screenshots
 - path: `Assets/Screenshots`
 - videos: 0
-- images: 3
+- images: 74
 - observation artifacts: none — raw media only
 
 ## Backgrounds
