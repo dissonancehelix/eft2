@@ -58,8 +58,8 @@ EFT2/
   README.md
   AGENTS.md
   Game/
-  Maps/
-  Lua/
+  maps/
+  lua/
   SBox/
   Tools/
   Assets/
@@ -77,11 +77,11 @@ When implementing, validating, or resolving conflicts, use this order:
 2. This root `README.md` for EFT2 game identity, rules, feel, maps, validation, and project overview.
 3. `AGENTS.md` for workflow, source hierarchy, tooling, mutation policy, and local development boundaries.
 4. The original GMod `EFT.md`/manifest if preserved under this repo, as inherited design/spec reference.
-5. Lua/source copy under `Lua`, as the preferred implementation reference for original behavior.
-6. Original VMF/map sources preserved under `Maps`.
-7. `Maps/Shared/eft.fgd`, if present, as Hammer entity grammar reference.
+5. lua/source copy under `lua`, as the preferred implementation reference for original behavior.
+6. Original VMF/map sources preserved under `maps`.
+7. `maps/Shared/eft.fgd`, if present, as Hammer entity grammar reference.
 8. Real gameplay evidence: Bloodbowl POV video, screenshots, future clips, demos, match logs, and replays.
-9. Generated analyzer outputs under `Maps/<Map Name>/Analysis/` and `Maps/<Map Name>/Virtual Perception/`.
+9. Generated analyzer outputs under `maps/<Map Name>/Analysis/` and `maps/<Map Name>/Virtual Perception/`.
 10. s&box source/docs/examples under `SBox`, as engine reference.
 11. External references listed below.
 
@@ -106,10 +106,10 @@ Preserve weird but predictive behavior unless the user deliberately chooses othe
 | `README.md` | EFT2 game/remake contract |
 | `AGENTS.md` | agent workflow, source hierarchy, mutation and tooling policy |
 | `Game/` | buildable EFT2 s&box game project when scaffolded; playable code and runtime assets belong here |
-| `Maps/` | canonical map subdomains, read-only VMF source references, generated map analysis, Virtual Perception, per-map simulation artifacts, Source 2/s&box porting workbench, and new-map design workspace |
-| `Lua/` | original GMod Lua/source reference for behavior extraction |
+| `maps/` | canonical map subdomains, read-only VMF source references, generated map analysis, Virtual Perception, per-map simulation artifacts, Source 2/s&box porting workbench, and new-map design workspace |
+| `lua/` | original GMod lua/source reference for behavior extraction |
 | `SBox/` | s&box docs/source/runtime/sample reference material |
-| `Tools/` | EFT2-owned infrastructure: `Tools/Indexer/`, `Tools/Map Analyzer/`, and future `Observer`, `Contract Validator`, `Scenario Harness`, `Telemetry`, and `Simulation` |
+| `tools/` | EFT2-owned infrastructure: `Indexer/`, `Map Analyzer/`, `observer`, `contract validator`, `scenario harness`, `telemetry`, and `simulation` |
 | `Assets/` | curated evidence and remake assets: video notes, screenshots, images, audio, references |
 
 `WORKFLOW.md` is not part of the current durable structure unless the user explicitly restores it. Workflow and tooling policy belong in `AGENTS.md`.
@@ -127,7 +127,6 @@ Preserve weird but predictive behavior unless the user deliberately chooses othe
 | s&box documentation | `https://sbox.game/dev/doc/` |
 | Facepunch s&box docs/source references | `https://github.com/Facepunch/sbox-docs`, `https://github.com/Facepunch/sbox-public` |
 | Recast/Detour reference | `https://github.com/recastnavigation/recastnavigation` |
-| Blender reference, if used as spatial/backend inspiration | `https://github.com/blender/blender` |
 
 External analogies and references are orientation aids. They do not override EFT-specific evidence.
 
@@ -1105,7 +1104,7 @@ Expected future architecture:
 | `Hazard` | hurt/death/water/lava/void behavior |
 | `PowerupTrigger` | speedball/waterball/iceball/etc. |
 | `Hud` | score, timer, health, team, minimap, action text |
-| `Telemetry` | match events, replay data, tuning metrics |
+| `telemetry` | match events, replay data, tuning metrics |
 | `BotController` | local-rule pressure scaffolding, not perfect play |
 
 Use plain names unless engine collisions require prefixes. `Ball` is better than `EftBall` if there is no ambiguity.
@@ -1167,9 +1166,9 @@ Map version suffixes are Source 1/BSP-era provenance, not EFT2 identity. EFT2 ma
 
 ## EFT2 Map Domain Structure
 
-`Maps/` contains canonical map domains. Each map domain is both a source-evidence room and a working area for analysis, simulation, porting, and future map design.
+`maps/` contains canonical map domains. Each map domain is both a source-evidence room and a working area for analysis, simulation, porting, and future map design.
 
-This means `Maps/` has four simultaneous roles:
+This means `maps/` has four simultaneous roles:
 
 1. preserve the original Source 1 VMF and provenance,
 2. hold individual map subdomains with their own README and generated artifacts,
@@ -1179,41 +1178,41 @@ This means `Maps/` has four simultaneous roles:
 The root VMF remains read-only. Porting and new-map work must be derivative and clearly separated from the original VMF.
 
 ```text
-Maps/
+maps/
   Shared/
     eft.fgd
   Slam Dunk/
     README.md
     Slam Dunk.vmf
-    Analysis/
-    Virtual Perception/
-    Simulation/
-    Porting/
-    Design/
+    analysis/
+    virtual perception/
+    simulation/
+    porting/
+    design/
   Bloodbowl/
     README.md
     Bloodbowl.vmf
-    Analysis/
-    Virtual Perception/
-    Simulation/
-    Porting/
-    Design/
+    analysis/
+    virtual perception/
+    simulation/
+    porting/
+    design/
 ```
 
-The root VMF in each map domain is a read-only original Source 1 reference. Do not edit, reformat, normalize, or regenerate it. Original filenames and suffixes live in `Maps/source_manifest.json`.
+The root VMF in each map domain is a read-only original Source 1 reference. Do not edit, reformat, normalize, or regenerate it. Original filenames and suffixes live in `maps/source_manifest.json`.
 
 Map-domain folders:
 
 | Folder | Role |
 |---|---|
 | map root | canonical map identity, map README, and read-only original VMF reference |
-| `Analysis/` | structured parser output, semantic groups, confidence reports, gameplay profiles |
-| `Virtual Perception/` | LLM-facing spatial/gameplay artifacts |
-| `Simulation/` | future per-map gameplay prediction and simulation artifacts; placeholder until started |
-| `Porting/` | Source 1 -> Source 2/s&box conversion notes, remaster risks, scene plans, and map-specific port decisions |
-| `Design/` | derivative remake ideas, new-map concepts, layout notes, and future EFT2 map work tied to this map domain |
+| `analysis/` | structured parser output, semantic groups, confidence reports, gameplay profiles |
+| `virtual perception/` | LLM-facing spatial/gameplay artifacts |
+| `simulation/` | future per-map gameplay prediction and simulation artifacts; placeholder until started |
+| `porting/` | Source 1 -> Source 2/s&box conversion notes, remaster risks, scene plans, and map-specific port decisions |
+| `design/` | derivative remake ideas, new-map concepts, layout notes, and future EFT2 map work tied to this map domain |
 
-Final buildable Source 2 / s&box map assets belong under `Game/` according to s&box project rules. This includes the actual `.vmap` files and deployable scene/map outputs used by the playable game. `Maps/` remains the source/workbench/history domain, while `Game/` contains the promoted playable copy.
+Final buildable Source 2 / s&box map assets belong under `Game/` according to s&box project rules. This includes the actual `.vmap` files and deployable scene/map outputs used by the playable game. `maps/` remains the source/workbench/history domain, while `Game/` contains the promoted playable copy.
 
 ## Map Identity By Scoring Mode
 
@@ -1361,7 +1360,7 @@ Conversion must preserve:
 
 ## FGD Semantics
 
-`Maps/Shared/eft.fgd`, if present, is the shared read-only Hammer entity semantics reference.
+`maps/Shared/eft.fgd`, if present, is the shared read-only Hammer entity semantics reference.
 
 Important expected semantics:
 
@@ -1988,22 +1987,22 @@ No archetype should become a fixed class.
 - Keep this README current.
 - Keep AGENTS.md current.
 - Organize source domains.
-- Preserve Lua source under `Lua`.
-- Preserve VMFs under `Maps`.
-- Preserve FGD under `Maps/Shared/eft.fgd`.
+- Preserve Lua source under `lua`.
+- Preserve VMFs under `maps`.
+- Preserve FGD under `maps/Shared/eft.fgd`.
 - Curate gameplay evidence under `Assets`.
 - Record conflicts between original contract, Lua, maps, evidence, and intended remake behavior.
 
 ## Phase 1 — Map Intelligence Pipeline
 
-- Build `Tools/Map Analyzer/`.
+- Build `tools/map analyzer/`.
 - Organize canonical map domains.
 - Preserve read-only VMFs.
 - Parse VMF/FGD.
 - Generate map analysis.
 - Generate Virtual Perception artifacts.
-- Create or maintain per-map `Porting/` and `Design/` workspaces when derivative map work begins.
-- Leave `Simulation/` as placeholder until scenario/telemetry constraints exist, then use it for per-map simulation artifacts.
+- Create or maintain per-map `porting/` and `design/` workspaces when derivative map work begins.
+- Leave `simulation/` as placeholder until scenario/telemetry constraints exist, then use it for per-map simulation artifacts.
 - Validate first on Slam Dunk.
 - Validate second on Bloodbowl.
 

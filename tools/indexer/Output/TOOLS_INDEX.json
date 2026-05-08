@@ -1,0 +1,242 @@
+{
+  "generated_by": "tools/indexer",
+  "schema_version": 1,
+  "generated_at": "2026-05-08T18:23:10.683945+00:00",
+  "repo_root": ".",
+  "warnings": [
+    "sbox_scan_truncated_at:4000"
+  ],
+  "tools_root": "tools",
+  "tool_count": 6,
+  "present_tools": [
+    "contract validator",
+    "indexer",
+    "map analyzer",
+    "observer",
+    "scenario harness",
+    "telemetry"
+  ],
+  "missing_recommended_tools": [
+    "Indexer",
+    "Map Analyzer",
+    "Observer",
+    "Contract Validator",
+    "Scenario Harness",
+    "Telemetry",
+    "Simulation"
+  ],
+  "recommended_status": [
+    {
+      "name": "Indexer",
+      "status": "pending"
+    },
+    {
+      "name": "Map Analyzer",
+      "status": "pending"
+    },
+    {
+      "name": "Observer",
+      "status": "pending"
+    },
+    {
+      "name": "Contract Validator",
+      "status": "pending"
+    },
+    {
+      "name": "Scenario Harness",
+      "status": "pending"
+    },
+    {
+      "name": "Telemetry",
+      "status": "pending"
+    },
+    {
+      "name": "Simulation",
+      "status": "pending"
+    }
+  ],
+  "tools": [
+    {
+      "name": "contract validator",
+      "path": "tools/contract validator",
+      "readme": "tools/contract validator/README.md",
+      "readme_summary": "# Tools/Contract Validator\n\nChecks docs, code, and tooling outputs against the EFT2 game contract.",
+      "python_module_count": 1,
+      "python_modules": [
+        {
+          "path": "tools/contract validator/validate_contract.py",
+          "first_docstring_line": "EFT2 Contract Validator."
+        }
+      ],
+      "has_output_dir": true,
+      "output_dir": "tools/contract validator/Output"
+    },
+    {
+      "name": "indexer",
+      "path": "tools/indexer",
+      "readme": "tools/indexer/README.md",
+      "readme_summary": "# Tools/Indexer\n\nThe Indexer is the first project-wide LLM working-memory tool for EFT2. It reads\nthe repository and emits structured JSON/Markdown summaries that future agents\n(Claude, Codex, and later tools) can use as a fast on-ramp.\n\n> The Indexer is not the game builder. It is the repo memory builder.\n\nEFT2 is not just a code port. Its infrastructure exists to make agents understand\nEFT's rules, feel, maps, evidence, and failure modes deeply enough to implement\nand modernize the game without erasing its identity.\n\nThe named project structure is `tools/` (infrastructure) and `Game/` (future\nplayable s&box project). Do not introduce \"Engine\" or \"Runtime\" as umbrella names\nfor the infrastructure layer \u2014 \"Engine\" conflicts with s&box/Source 2 terminology,\nand \"Runtime\" implies only shipped game code rather than the full analysis,\nobservation, validation, and simulation pipeline.",
+      "python_module_count": 10,
+      "python_modules": [
+        {
+          "path": "tools/indexer/exporters.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "tools/indexer/index_assets.py",
+          "first_docstring_line": "OBSERVATION_INDEX.json + MULTIMODAL_CONTEXT.md \u2014 Assets/ inventory."
+        },
+        {
+          "path": "tools/indexer/index_external.py",
+          "first_docstring_line": "External-tree indexes: GMod source, Source 1 FGDs, FFmpeg-Builds, Source SDK 2013."
+        },
+        {
+          "path": "tools/indexer/index_lua.py",
+          "first_docstring_line": "LUA_INDEX.json \u2014 first-pass classification of Lua/."
+        },
+        {
+          "path": "tools/indexer/index_maps.py",
+          "first_docstring_line": "MAPS_INDEX.json \u2014 canonical map domains, FGD discovery, provenance."
+        },
+        {
+          "path": "tools/indexer/index_markdown.py",
+          "first_docstring_line": "CONTRACT_INDEX.json \u2014 index Markdown contract files."
+        },
+        {
+          "path": "tools/indexer/index_project.py",
+          "first_docstring_line": "EFT2 project-wide Indexer."
+        },
+        {
+          "path": "tools/indexer/index_sbox.py",
+          "first_docstring_line": "SBOX_INDEX.json \u2014 shallow s&box reference index, prioritized."
+        },
+        {
+          "path": "tools/indexer/index_tools.py",
+          "first_docstring_line": "TOOLS_INDEX.json \u2014 inventory Tools/, flag missing recommended tools."
+        },
+        {
+          "path": "tools/indexer/schemas.py",
+          "first_docstring_line": null
+        }
+      ],
+      "has_output_dir": true,
+      "output_dir": "tools/indexer/Output"
+    },
+    {
+      "name": "map analyzer",
+      "path": "tools/map analyzer",
+      "readme": "tools/map analyzer/README.md",
+      "readme_summary": "# EFT2 Map Analyzer\n\n`tools/map analyzer/` is the first EFT2 map intelligence pipeline.\n\nIt exists to help agents understand maps as played spaces, not merely as entity lists. Raw VMF data is preserved, then reconciled into confidence-scored gameplay structures, Virtual Perception artifacts, and map summaries for later porting/design work.",
+      "python_module_count": 15,
+      "python_modules": [
+        {
+          "path": "tools/map analyzer/__init__.py",
+          "first_docstring_line": "EFT2 map intelligence tools."
+        },
+        {
+          "path": "tools/map analyzer/analyze_all.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "tools/map analyzer/analyze_map.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "tools/map analyzer/compare_logs.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "tools/map analyzer/eft_entities.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "tools/map analyzer/exporters.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "tools/map analyzer/gameflow_sim.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "tools/map analyzer/geometry_backend.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "tools/map analyzer/organize_maps.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "tools/map analyzer/recast_adapter.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "tools/map analyzer/semantic_groups.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "tools/map analyzer/spatial_perception.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "tools/map analyzer/virtual_perception.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "tools/map analyzer/vmf_geometry.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "tools/map analyzer/vmf_parser.py",
+          "first_docstring_line": null
+        }
+      ],
+      "has_output_dir": false,
+      "output_dir": null
+    },
+    {
+      "name": "observer",
+      "path": "tools/observer",
+      "readme": "tools/observer/README.md",
+      "readme_summary": "# Tools/Observer\n\n**Status: skeleton only \u2014 implementation deferred.**",
+      "python_module_count": 1,
+      "python_modules": [
+        {
+          "path": "tools/observer/observe_video.py",
+          "first_docstring_line": "Tools/Observer \u2014 EFT2 media observation tool."
+        }
+      ],
+      "has_output_dir": false,
+      "output_dir": null
+    },
+    {
+      "name": "scenario harness",
+      "path": "tools/scenario harness",
+      "readme": "tools/scenario harness/README.md",
+      "readme_summary": "# Tools/Scenario Harness\n\nEncodes must-preserve EFT situations as structured test cases.",
+      "python_module_count": 1,
+      "python_modules": [
+        {
+          "path": "tools/scenario harness/run_scenarios.py",
+          "first_docstring_line": "EFT2 Scenario Harness."
+        }
+      ],
+      "has_output_dir": true,
+      "output_dir": "tools/scenario harness/Output"
+    },
+    {
+      "name": "telemetry",
+      "path": "tools/telemetry",
+      "readme": "tools/telemetry/README.md",
+      "readme_summary": "# Tools/Telemetry\n\nDefines canonical event schemas and metric guardrails for EFT2 matches and simulations.",
+      "python_module_count": 1,
+      "python_modules": [
+        {
+          "path": "tools/telemetry/validate_telemetry.py",
+          "first_docstring_line": "EFT2 Telemetry Validator."
+        }
+      ],
+      "has_output_dir": true,
+      "output_dir": "tools/telemetry/Output"
+    }
+  ]
+}

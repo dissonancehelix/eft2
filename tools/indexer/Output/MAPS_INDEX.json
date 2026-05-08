@@ -1,0 +1,586 @@
+{
+  "generated_by": "tools/indexer",
+  "schema_version": 1,
+  "generated_at": "2026-05-08T18:23:09.849659+00:00",
+  "repo_root": ".",
+  "warnings": [],
+  "present": true,
+  "maps_root": "maps",
+  "shared_dir_present": true,
+  "source_manifest": "maps/source_manifest.json",
+  "custom_eft_fgds": [
+    "maps/shared/eft.fgd"
+  ],
+  "custom_eft_fgd_contents": [
+    {
+      "path": "maps/shared/eft.fgd",
+      "size_bytes": 6312,
+      "includes": [
+        "base.fgd",
+        "halflife2.fgd",
+        "hl2mp.fgd"
+      ],
+      "class_count": 12,
+      "classes": [
+        {
+          "kind": "PointClass",
+          "name": "info_player_red",
+          "description": "EFT: Red Rhinos Spawn."
+        },
+        {
+          "kind": "PointClass",
+          "name": "info_player_blue",
+          "description": "EFT: Blue Bulls Spawn."
+        },
+        {
+          "kind": "SolidClass",
+          "name": "trigger_ballreset",
+          "description": "EFT: Resets ball to center. Use for Out of Bounds / Hazards."
+        },
+        {
+          "kind": "PointClass",
+          "name": "logic_teamscore",
+          "description": "EFT: Score Logic System."
+        },
+        {
+          "kind": "PointClass",
+          "name": "prop_ball",
+          "description": "EFT: Main Ball Spawner. Place at map center."
+        },
+        {
+          "kind": "PointClass",
+          "name": "env_teamsound",
+          "description": "EFT: Play sounds to specific teams."
+        },
+        {
+          "kind": "PointClass",
+          "name": "prop_goal",
+          "description": "EFT: Where the basic goal spawns."
+        },
+        {
+          "kind": "SolidClass",
+          "name": "trigger_goal",
+          "description": "EFT: Goal Volume. Scoring area."
+        },
+        {
+          "kind": "SolidClass",
+          "name": "trigger_jumppad",
+          "description": "EFT: Jump Pad / AbsPush. Adds velocity directly."
+        },
+        {
+          "kind": "SolidClass",
+          "name": "trigger_knockdown",
+          "description": "EFT: Knockdown trigger."
+        },
+        {
+          "kind": "SolidClass",
+          "name": "trigger_powerup",
+          "description": "EFT: Gives the ball a powerup when entering the volume."
+        },
+        {
+          "kind": "PointClass",
+          "name": "info_observer_point",
+          "description": "EFT: Observer Camera Point."
+        }
+      ]
+    }
+  ],
+  "domain_count": 16,
+  "domains": [
+    {
+      "canonical_name": "baseball dash",
+      "folder": "maps/baseball dash",
+      "readme": "maps/baseball dash/README.md",
+      "vmf_paths": [
+        "maps/baseball dash/Baseball Dash.vmf"
+      ],
+      "analysis_present": true,
+      "analysis_output_count": 15,
+      "analysis_outputs": [
+        "maps/baseball dash/analysis/brush_entities.json",
+        "maps/baseball dash/analysis/eft_entities.json",
+        "maps/baseball dash/analysis/gameplay_profile.json",
+        "maps/baseball dash/analysis/geometry_backend_summary.json",
+        "maps/baseball dash/analysis/geometry_mesh.json",
+        "maps/baseball dash/analysis/goal_complexes.json",
+        "maps/baseball dash/analysis/hazard_regions.json",
+        "maps/baseball dash/analysis/navmesh_summary.json",
+        "maps/baseball dash/analysis/powerup_locations.json",
+        "maps/baseball dash/analysis/raw_entities.json",
+        "maps/baseball dash/analysis/reset_regions.json",
+        "maps/baseball dash/analysis/route_graph.json",
+        "maps/baseball dash/analysis/spatial_clusters.json",
+        "maps/baseball dash/analysis/spawn_clusters.json",
+        "maps/baseball dash/analysis/trigger_volumes.json"
+      ],
+      "confidence_report": "maps/baseball dash/analysis/confidence_report.md",
+      "virtual_perception_present": true,
+      "virtual_perception_output_count": 5,
+      "simulation_present": true,
+      "provenance": null
+    },
+    {
+      "canonical_name": "big metal",
+      "folder": "maps/big metal",
+      "readme": "maps/big metal/README.md",
+      "vmf_paths": [
+        "maps/big metal/Big Metal.vmf"
+      ],
+      "analysis_present": true,
+      "analysis_output_count": 15,
+      "analysis_outputs": [
+        "maps/big metal/analysis/brush_entities.json",
+        "maps/big metal/analysis/eft_entities.json",
+        "maps/big metal/analysis/gameplay_profile.json",
+        "maps/big metal/analysis/geometry_backend_summary.json",
+        "maps/big metal/analysis/geometry_mesh.json",
+        "maps/big metal/analysis/goal_complexes.json",
+        "maps/big metal/analysis/hazard_regions.json",
+        "maps/big metal/analysis/navmesh_summary.json",
+        "maps/big metal/analysis/powerup_locations.json",
+        "maps/big metal/analysis/raw_entities.json",
+        "maps/big metal/analysis/reset_regions.json",
+        "maps/big metal/analysis/route_graph.json",
+        "maps/big metal/analysis/spatial_clusters.json",
+        "maps/big metal/analysis/spawn_clusters.json",
+        "maps/big metal/analysis/trigger_volumes.json"
+      ],
+      "confidence_report": "maps/big metal/analysis/confidence_report.md",
+      "virtual_perception_present": true,
+      "virtual_perception_output_count": 5,
+      "simulation_present": true,
+      "provenance": null
+    },
+    {
+      "canonical_name": "bloodbowl",
+      "folder": "maps/bloodbowl",
+      "readme": "maps/bloodbowl/README.md",
+      "vmf_paths": [
+        "maps/bloodbowl/Bloodbowl.vmf"
+      ],
+      "analysis_present": true,
+      "analysis_output_count": 15,
+      "analysis_outputs": [
+        "maps/bloodbowl/analysis/brush_entities.json",
+        "maps/bloodbowl/analysis/eft_entities.json",
+        "maps/bloodbowl/analysis/gameplay_profile.json",
+        "maps/bloodbowl/analysis/geometry_backend_summary.json",
+        "maps/bloodbowl/analysis/geometry_mesh.json",
+        "maps/bloodbowl/analysis/goal_complexes.json",
+        "maps/bloodbowl/analysis/hazard_regions.json",
+        "maps/bloodbowl/analysis/navmesh_summary.json",
+        "maps/bloodbowl/analysis/powerup_locations.json",
+        "maps/bloodbowl/analysis/raw_entities.json",
+        "maps/bloodbowl/analysis/reset_regions.json",
+        "maps/bloodbowl/analysis/route_graph.json",
+        "maps/bloodbowl/analysis/spatial_clusters.json",
+        "maps/bloodbowl/analysis/spawn_clusters.json",
+        "maps/bloodbowl/analysis/trigger_volumes.json"
+      ],
+      "confidence_report": "maps/bloodbowl/analysis/confidence_report.md",
+      "virtual_perception_present": true,
+      "virtual_perception_output_count": 5,
+      "simulation_present": true,
+      "provenance": null
+    },
+    {
+      "canonical_name": "chamber",
+      "folder": "maps/chamber",
+      "readme": "maps/chamber/README.md",
+      "vmf_paths": [
+        "maps/chamber/Chamber.vmf"
+      ],
+      "analysis_present": true,
+      "analysis_output_count": 15,
+      "analysis_outputs": [
+        "maps/chamber/analysis/brush_entities.json",
+        "maps/chamber/analysis/eft_entities.json",
+        "maps/chamber/analysis/gameplay_profile.json",
+        "maps/chamber/analysis/geometry_backend_summary.json",
+        "maps/chamber/analysis/geometry_mesh.json",
+        "maps/chamber/analysis/goal_complexes.json",
+        "maps/chamber/analysis/hazard_regions.json",
+        "maps/chamber/analysis/navmesh_summary.json",
+        "maps/chamber/analysis/powerup_locations.json",
+        "maps/chamber/analysis/raw_entities.json",
+        "maps/chamber/analysis/reset_regions.json",
+        "maps/chamber/analysis/route_graph.json",
+        "maps/chamber/analysis/spatial_clusters.json",
+        "maps/chamber/analysis/spawn_clusters.json",
+        "maps/chamber/analysis/trigger_volumes.json"
+      ],
+      "confidence_report": "maps/chamber/analysis/confidence_report.md",
+      "virtual_perception_present": true,
+      "virtual_perception_output_count": 5,
+      "simulation_present": true,
+      "provenance": null
+    },
+    {
+      "canonical_name": "cosmic arena",
+      "folder": "maps/cosmic arena",
+      "readme": "maps/cosmic arena/README.md",
+      "vmf_paths": [
+        "maps/cosmic arena/Cosmic Arena.vmf"
+      ],
+      "analysis_present": true,
+      "analysis_output_count": 15,
+      "analysis_outputs": [
+        "maps/cosmic arena/analysis/brush_entities.json",
+        "maps/cosmic arena/analysis/eft_entities.json",
+        "maps/cosmic arena/analysis/gameplay_profile.json",
+        "maps/cosmic arena/analysis/geometry_backend_summary.json",
+        "maps/cosmic arena/analysis/geometry_mesh.json",
+        "maps/cosmic arena/analysis/goal_complexes.json",
+        "maps/cosmic arena/analysis/hazard_regions.json",
+        "maps/cosmic arena/analysis/navmesh_summary.json",
+        "maps/cosmic arena/analysis/powerup_locations.json",
+        "maps/cosmic arena/analysis/raw_entities.json",
+        "maps/cosmic arena/analysis/reset_regions.json",
+        "maps/cosmic arena/analysis/route_graph.json",
+        "maps/cosmic arena/analysis/spatial_clusters.json",
+        "maps/cosmic arena/analysis/spawn_clusters.json",
+        "maps/cosmic arena/analysis/trigger_volumes.json"
+      ],
+      "confidence_report": "maps/cosmic arena/analysis/confidence_report.md",
+      "virtual_perception_present": true,
+      "virtual_perception_output_count": 5,
+      "simulation_present": true,
+      "provenance": null
+    },
+    {
+      "canonical_name": "legoland",
+      "folder": "maps/legoland",
+      "readme": "maps/legoland/README.md",
+      "vmf_paths": [
+        "maps/legoland/Legoland.vmf"
+      ],
+      "analysis_present": true,
+      "analysis_output_count": 15,
+      "analysis_outputs": [
+        "maps/legoland/analysis/brush_entities.json",
+        "maps/legoland/analysis/eft_entities.json",
+        "maps/legoland/analysis/gameplay_profile.json",
+        "maps/legoland/analysis/geometry_backend_summary.json",
+        "maps/legoland/analysis/geometry_mesh.json",
+        "maps/legoland/analysis/goal_complexes.json",
+        "maps/legoland/analysis/hazard_regions.json",
+        "maps/legoland/analysis/navmesh_summary.json",
+        "maps/legoland/analysis/powerup_locations.json",
+        "maps/legoland/analysis/raw_entities.json",
+        "maps/legoland/analysis/reset_regions.json",
+        "maps/legoland/analysis/route_graph.json",
+        "maps/legoland/analysis/spatial_clusters.json",
+        "maps/legoland/analysis/spawn_clusters.json",
+        "maps/legoland/analysis/trigger_volumes.json"
+      ],
+      "confidence_report": "maps/legoland/analysis/confidence_report.md",
+      "virtual_perception_present": true,
+      "virtual_perception_output_count": 5,
+      "simulation_present": true,
+      "provenance": null
+    },
+    {
+      "canonical_name": "mini putt",
+      "folder": "maps/mini putt",
+      "readme": "maps/mini putt/README.md",
+      "vmf_paths": [
+        "maps/mini putt/Mini Putt.vmf"
+      ],
+      "analysis_present": true,
+      "analysis_output_count": 15,
+      "analysis_outputs": [
+        "maps/mini putt/analysis/brush_entities.json",
+        "maps/mini putt/analysis/eft_entities.json",
+        "maps/mini putt/analysis/gameplay_profile.json",
+        "maps/mini putt/analysis/geometry_backend_summary.json",
+        "maps/mini putt/analysis/geometry_mesh.json",
+        "maps/mini putt/analysis/goal_complexes.json",
+        "maps/mini putt/analysis/hazard_regions.json",
+        "maps/mini putt/analysis/navmesh_summary.json",
+        "maps/mini putt/analysis/powerup_locations.json",
+        "maps/mini putt/analysis/raw_entities.json",
+        "maps/mini putt/analysis/reset_regions.json",
+        "maps/mini putt/analysis/route_graph.json",
+        "maps/mini putt/analysis/spatial_clusters.json",
+        "maps/mini putt/analysis/spawn_clusters.json",
+        "maps/mini putt/analysis/trigger_volumes.json"
+      ],
+      "confidence_report": "maps/mini putt/analysis/confidence_report.md",
+      "virtual_perception_present": true,
+      "virtual_perception_output_count": 5,
+      "simulation_present": true,
+      "provenance": null
+    },
+    {
+      "canonical_name": "shared",
+      "folder": "maps/shared",
+      "readme": null,
+      "vmf_paths": [],
+      "analysis_present": false,
+      "analysis_output_count": 0,
+      "analysis_outputs": [],
+      "confidence_report": null,
+      "virtual_perception_present": false,
+      "virtual_perception_output_count": 0,
+      "simulation_present": false,
+      "provenance": null
+    },
+    {
+      "canonical_name": "sky metal",
+      "folder": "maps/sky metal",
+      "readme": "maps/sky metal/README.md",
+      "vmf_paths": [
+        "maps/sky metal/Sky Metal.vmf"
+      ],
+      "analysis_present": true,
+      "analysis_output_count": 15,
+      "analysis_outputs": [
+        "maps/sky metal/analysis/brush_entities.json",
+        "maps/sky metal/analysis/eft_entities.json",
+        "maps/sky metal/analysis/gameplay_profile.json",
+        "maps/sky metal/analysis/geometry_backend_summary.json",
+        "maps/sky metal/analysis/geometry_mesh.json",
+        "maps/sky metal/analysis/goal_complexes.json",
+        "maps/sky metal/analysis/hazard_regions.json",
+        "maps/sky metal/analysis/navmesh_summary.json",
+        "maps/sky metal/analysis/powerup_locations.json",
+        "maps/sky metal/analysis/raw_entities.json",
+        "maps/sky metal/analysis/reset_regions.json",
+        "maps/sky metal/analysis/route_graph.json",
+        "maps/sky metal/analysis/spatial_clusters.json",
+        "maps/sky metal/analysis/spawn_clusters.json",
+        "maps/sky metal/analysis/trigger_volumes.json"
+      ],
+      "confidence_report": "maps/sky metal/analysis/confidence_report.md",
+      "virtual_perception_present": true,
+      "virtual_perception_output_count": 5,
+      "simulation_present": true,
+      "provenance": null
+    },
+    {
+      "canonical_name": "skyline",
+      "folder": "maps/skyline",
+      "readme": "maps/skyline/README.md",
+      "vmf_paths": [
+        "maps/skyline/Skyline.vmf"
+      ],
+      "analysis_present": true,
+      "analysis_output_count": 15,
+      "analysis_outputs": [
+        "maps/skyline/analysis/brush_entities.json",
+        "maps/skyline/analysis/eft_entities.json",
+        "maps/skyline/analysis/gameplay_profile.json",
+        "maps/skyline/analysis/geometry_backend_summary.json",
+        "maps/skyline/analysis/geometry_mesh.json",
+        "maps/skyline/analysis/goal_complexes.json",
+        "maps/skyline/analysis/hazard_regions.json",
+        "maps/skyline/analysis/navmesh_summary.json",
+        "maps/skyline/analysis/powerup_locations.json",
+        "maps/skyline/analysis/raw_entities.json",
+        "maps/skyline/analysis/reset_regions.json",
+        "maps/skyline/analysis/route_graph.json",
+        "maps/skyline/analysis/spatial_clusters.json",
+        "maps/skyline/analysis/spawn_clusters.json",
+        "maps/skyline/analysis/trigger_volumes.json"
+      ],
+      "confidence_report": "maps/skyline/analysis/confidence_report.md",
+      "virtual_perception_present": true,
+      "virtual_perception_output_count": 5,
+      "simulation_present": true,
+      "provenance": null
+    },
+    {
+      "canonical_name": "skystep",
+      "folder": "maps/skystep",
+      "readme": "maps/skystep/README.md",
+      "vmf_paths": [
+        "maps/skystep/Skystep.vmf"
+      ],
+      "analysis_present": true,
+      "analysis_output_count": 15,
+      "analysis_outputs": [
+        "maps/skystep/analysis/brush_entities.json",
+        "maps/skystep/analysis/eft_entities.json",
+        "maps/skystep/analysis/gameplay_profile.json",
+        "maps/skystep/analysis/geometry_backend_summary.json",
+        "maps/skystep/analysis/geometry_mesh.json",
+        "maps/skystep/analysis/goal_complexes.json",
+        "maps/skystep/analysis/hazard_regions.json",
+        "maps/skystep/analysis/navmesh_summary.json",
+        "maps/skystep/analysis/powerup_locations.json",
+        "maps/skystep/analysis/raw_entities.json",
+        "maps/skystep/analysis/reset_regions.json",
+        "maps/skystep/analysis/route_graph.json",
+        "maps/skystep/analysis/spatial_clusters.json",
+        "maps/skystep/analysis/spawn_clusters.json",
+        "maps/skystep/analysis/trigger_volumes.json"
+      ],
+      "confidence_report": "maps/skystep/analysis/confidence_report.md",
+      "virtual_perception_present": true,
+      "virtual_perception_output_count": 5,
+      "simulation_present": true,
+      "provenance": null
+    },
+    {
+      "canonical_name": "slam dunk",
+      "folder": "maps/slam dunk",
+      "readme": "maps/slam dunk/README.md",
+      "vmf_paths": [
+        "maps/slam dunk/Slam Dunk.vmf"
+      ],
+      "analysis_present": true,
+      "analysis_output_count": 15,
+      "analysis_outputs": [
+        "maps/slam dunk/analysis/brush_entities.json",
+        "maps/slam dunk/analysis/eft_entities.json",
+        "maps/slam dunk/analysis/gameplay_profile.json",
+        "maps/slam dunk/analysis/geometry_backend_summary.json",
+        "maps/slam dunk/analysis/geometry_mesh.json",
+        "maps/slam dunk/analysis/goal_complexes.json",
+        "maps/slam dunk/analysis/hazard_regions.json",
+        "maps/slam dunk/analysis/navmesh_summary.json",
+        "maps/slam dunk/analysis/powerup_locations.json",
+        "maps/slam dunk/analysis/raw_entities.json",
+        "maps/slam dunk/analysis/reset_regions.json",
+        "maps/slam dunk/analysis/route_graph.json",
+        "maps/slam dunk/analysis/spatial_clusters.json",
+        "maps/slam dunk/analysis/spawn_clusters.json",
+        "maps/slam dunk/analysis/trigger_volumes.json"
+      ],
+      "confidence_report": "maps/slam dunk/analysis/confidence_report.md",
+      "virtual_perception_present": true,
+      "virtual_perception_output_count": 5,
+      "simulation_present": true,
+      "provenance": null
+    },
+    {
+      "canonical_name": "soccer",
+      "folder": "maps/soccer",
+      "readme": "maps/soccer/README.md",
+      "vmf_paths": [
+        "maps/soccer/Soccer.vmf"
+      ],
+      "analysis_present": true,
+      "analysis_output_count": 15,
+      "analysis_outputs": [
+        "maps/soccer/analysis/brush_entities.json",
+        "maps/soccer/analysis/eft_entities.json",
+        "maps/soccer/analysis/gameplay_profile.json",
+        "maps/soccer/analysis/geometry_backend_summary.json",
+        "maps/soccer/analysis/geometry_mesh.json",
+        "maps/soccer/analysis/goal_complexes.json",
+        "maps/soccer/analysis/hazard_regions.json",
+        "maps/soccer/analysis/navmesh_summary.json",
+        "maps/soccer/analysis/powerup_locations.json",
+        "maps/soccer/analysis/raw_entities.json",
+        "maps/soccer/analysis/reset_regions.json",
+        "maps/soccer/analysis/route_graph.json",
+        "maps/soccer/analysis/spatial_clusters.json",
+        "maps/soccer/analysis/spawn_clusters.json",
+        "maps/soccer/analysis/trigger_volumes.json"
+      ],
+      "confidence_report": "maps/soccer/analysis/confidence_report.md",
+      "virtual_perception_present": true,
+      "virtual_perception_output_count": 5,
+      "simulation_present": true,
+      "provenance": null
+    },
+    {
+      "canonical_name": "space jump",
+      "folder": "maps/space jump",
+      "readme": "maps/space jump/README.md",
+      "vmf_paths": [
+        "maps/space jump/Space Jump.vmf"
+      ],
+      "analysis_present": true,
+      "analysis_output_count": 15,
+      "analysis_outputs": [
+        "maps/space jump/analysis/brush_entities.json",
+        "maps/space jump/analysis/eft_entities.json",
+        "maps/space jump/analysis/gameplay_profile.json",
+        "maps/space jump/analysis/geometry_backend_summary.json",
+        "maps/space jump/analysis/geometry_mesh.json",
+        "maps/space jump/analysis/goal_complexes.json",
+        "maps/space jump/analysis/hazard_regions.json",
+        "maps/space jump/analysis/navmesh_summary.json",
+        "maps/space jump/analysis/powerup_locations.json",
+        "maps/space jump/analysis/raw_entities.json",
+        "maps/space jump/analysis/reset_regions.json",
+        "maps/space jump/analysis/route_graph.json",
+        "maps/space jump/analysis/spatial_clusters.json",
+        "maps/space jump/analysis/spawn_clusters.json",
+        "maps/space jump/analysis/trigger_volumes.json"
+      ],
+      "confidence_report": "maps/space jump/analysis/confidence_report.md",
+      "virtual_perception_present": true,
+      "virtual_perception_output_count": 5,
+      "simulation_present": true,
+      "provenance": null
+    },
+    {
+      "canonical_name": "temple sacrifice",
+      "folder": "maps/temple sacrifice",
+      "readme": "maps/temple sacrifice/README.md",
+      "vmf_paths": [
+        "maps/temple sacrifice/Temple Sacrifice.vmf"
+      ],
+      "analysis_present": true,
+      "analysis_output_count": 15,
+      "analysis_outputs": [
+        "maps/temple sacrifice/analysis/brush_entities.json",
+        "maps/temple sacrifice/analysis/eft_entities.json",
+        "maps/temple sacrifice/analysis/gameplay_profile.json",
+        "maps/temple sacrifice/analysis/geometry_backend_summary.json",
+        "maps/temple sacrifice/analysis/geometry_mesh.json",
+        "maps/temple sacrifice/analysis/goal_complexes.json",
+        "maps/temple sacrifice/analysis/hazard_regions.json",
+        "maps/temple sacrifice/analysis/navmesh_summary.json",
+        "maps/temple sacrifice/analysis/powerup_locations.json",
+        "maps/temple sacrifice/analysis/raw_entities.json",
+        "maps/temple sacrifice/analysis/reset_regions.json",
+        "maps/temple sacrifice/analysis/route_graph.json",
+        "maps/temple sacrifice/analysis/spatial_clusters.json",
+        "maps/temple sacrifice/analysis/spawn_clusters.json",
+        "maps/temple sacrifice/analysis/trigger_volumes.json"
+      ],
+      "confidence_report": "maps/temple sacrifice/analysis/confidence_report.md",
+      "virtual_perception_present": true,
+      "virtual_perception_output_count": 5,
+      "simulation_present": true,
+      "provenance": null
+    },
+    {
+      "canonical_name": "tunnel",
+      "folder": "maps/tunnel",
+      "readme": "maps/tunnel/README.md",
+      "vmf_paths": [
+        "maps/tunnel/Tunnel.vmf"
+      ],
+      "analysis_present": true,
+      "analysis_output_count": 15,
+      "analysis_outputs": [
+        "maps/tunnel/analysis/brush_entities.json",
+        "maps/tunnel/analysis/eft_entities.json",
+        "maps/tunnel/analysis/gameplay_profile.json",
+        "maps/tunnel/analysis/geometry_backend_summary.json",
+        "maps/tunnel/analysis/geometry_mesh.json",
+        "maps/tunnel/analysis/goal_complexes.json",
+        "maps/tunnel/analysis/hazard_regions.json",
+        "maps/tunnel/analysis/navmesh_summary.json",
+        "maps/tunnel/analysis/powerup_locations.json",
+        "maps/tunnel/analysis/raw_entities.json",
+        "maps/tunnel/analysis/reset_regions.json",
+        "maps/tunnel/analysis/route_graph.json",
+        "maps/tunnel/analysis/spatial_clusters.json",
+        "maps/tunnel/analysis/spawn_clusters.json",
+        "maps/tunnel/analysis/trigger_volumes.json"
+      ],
+      "confidence_report": "maps/tunnel/analysis/confidence_report.md",
+      "virtual_perception_present": true,
+      "virtual_perception_output_count": 5,
+      "simulation_present": true,
+      "provenance": null
+    }
+  ],
+  "loose_vmfs": []
+}

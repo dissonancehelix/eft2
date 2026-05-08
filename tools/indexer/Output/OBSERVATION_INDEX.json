@@ -1,0 +1,846 @@
+{
+  "generated_by": "tools/indexer",
+  "schema_version": 1,
+  "generated_at": "2026-05-08T18:23:10.783122+00:00",
+  "repo_root": ".",
+  "warnings": [
+    "sbox_scan_truncated_at:4000"
+  ],
+  "present": true,
+  "assets_root": "assets",
+  "sections": {
+    "Video": {
+      "present": true,
+      "path": "assets/video",
+      "video_count": 1,
+      "videos": [
+        {
+          "path": "assets/video/bloodbowl 2017/EFT Bloodbowl POV.mp4",
+          "size_bytes": 376540317
+        }
+      ],
+      "image_count": 410,
+      "images": [
+        {
+          "path": "assets/video/bloodbowl 2017/contact_sheets/contact_01.jpg",
+          "size_bytes": 490232
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/contact_sheets/contact_02.jpg",
+          "size_bytes": 499198
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/contact_sheets/contact_03.jpg",
+          "size_bytes": 484788
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/contact_sheets/contact_04.jpg",
+          "size_bytes": 247005
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/contact_sheets_5s/contact_01.jpg",
+          "size_bytes": 550060
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/contact_sheets_5s/contact_02.jpg",
+          "size_bytes": 549308
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/contact_sheets_5s/contact_03.jpg",
+          "size_bytes": 559727
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/contact_sheets_5s/contact_04.jpg",
+          "size_bytes": 554065
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/contact_sheets_5s/contact_05.jpg",
+          "size_bytes": 538125
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/contact_sheets_5s/contact_06.jpg",
+          "size_bytes": 549616
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/contact_sheets_5s/contact_07.jpg",
+          "size_bytes": 559374
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/contact_sheets_5s/contact_08.jpg",
+          "size_bytes": 510377
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/contact_sheets_5s/contact_09.jpg",
+          "size_bytes": 535326
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/contact_sheets_5s/contact_10.jpg",
+          "size_bytes": 518431
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/contact_sheets_5s/contact_11.jpg",
+          "size_bytes": 56809
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0001.jpg",
+          "size_bytes": 61154
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0002.jpg",
+          "size_bytes": 57344
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0003.jpg",
+          "size_bytes": 59472
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0004.jpg",
+          "size_bytes": 51260
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0005.jpg",
+          "size_bytes": 57468
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0006.jpg",
+          "size_bytes": 57443
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0007.jpg",
+          "size_bytes": 45602
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0008.jpg",
+          "size_bytes": 52748
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0009.jpg",
+          "size_bytes": 57248
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0010.jpg",
+          "size_bytes": 59106
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0011.jpg",
+          "size_bytes": 64985
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0012.jpg",
+          "size_bytes": 61545
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0013.jpg",
+          "size_bytes": 55232
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0014.jpg",
+          "size_bytes": 54717
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0015.jpg",
+          "size_bytes": 73096
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0016.jpg",
+          "size_bytes": 71887
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0017.jpg",
+          "size_bytes": 57021
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0018.jpg",
+          "size_bytes": 58568
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0019.jpg",
+          "size_bytes": 59993
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0020.jpg",
+          "size_bytes": 54067
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0021.jpg",
+          "size_bytes": 49839
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0022.jpg",
+          "size_bytes": 63695
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0023.jpg",
+          "size_bytes": 55371
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0024.jpg",
+          "size_bytes": 48806
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0025.jpg",
+          "size_bytes": 50321
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0026.jpg",
+          "size_bytes": 55525
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0027.jpg",
+          "size_bytes": 53846
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0028.jpg",
+          "size_bytes": 69831
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0029.jpg",
+          "size_bytes": 56674
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0030.jpg",
+          "size_bytes": 57806
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0031.jpg",
+          "size_bytes": 31230
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0032.jpg",
+          "size_bytes": 47396
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0033.jpg",
+          "size_bytes": 55031
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0034.jpg",
+          "size_bytes": 53990
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0035.jpg",
+          "size_bytes": 71044
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0036.jpg",
+          "size_bytes": 46011
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0037.jpg",
+          "size_bytes": 70710
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0038.jpg",
+          "size_bytes": 51896
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0039.jpg",
+          "size_bytes": 63862
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0040.jpg",
+          "size_bytes": 57776
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0041.jpg",
+          "size_bytes": 48906
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0042.jpg",
+          "size_bytes": 56864
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0043.jpg",
+          "size_bytes": 51104
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0044.jpg",
+          "size_bytes": 51509
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0045.jpg",
+          "size_bytes": 60327
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0046.jpg",
+          "size_bytes": 56912
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0047.jpg",
+          "size_bytes": 68815
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0048.jpg",
+          "size_bytes": 56220
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0049.jpg",
+          "size_bytes": 49093
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0050.jpg",
+          "size_bytes": 53062
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0051.jpg",
+          "size_bytes": 56206
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0052.jpg",
+          "size_bytes": 57449
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0053.jpg",
+          "size_bytes": 51682
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0054.jpg",
+          "size_bytes": 55798
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0055.jpg",
+          "size_bytes": 59414
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0056.jpg",
+          "size_bytes": 54540
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0057.jpg",
+          "size_bytes": 60423
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0058.jpg",
+          "size_bytes": 53787
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0059.jpg",
+          "size_bytes": 53596
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0060.jpg",
+          "size_bytes": 38317
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0061.jpg",
+          "size_bytes": 62740
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0062.jpg",
+          "size_bytes": 60156
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0063.jpg",
+          "size_bytes": 58353
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0064.jpg",
+          "size_bytes": 66989
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0065.jpg",
+          "size_bytes": 51290
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0066.jpg",
+          "size_bytes": 59341
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0067.jpg",
+          "size_bytes": 75093
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0068.jpg",
+          "size_bytes": 67705
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0069.jpg",
+          "size_bytes": 45541
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0070.jpg",
+          "size_bytes": 63894
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0071.jpg",
+          "size_bytes": 61563
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0072.jpg",
+          "size_bytes": 47306
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0073.jpg",
+          "size_bytes": 67792
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0074.jpg",
+          "size_bytes": 69663
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0075.jpg",
+          "size_bytes": 43577
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0076.jpg",
+          "size_bytes": 43683
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0077.jpg",
+          "size_bytes": 55945
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0078.jpg",
+          "size_bytes": 56901
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0079.jpg",
+          "size_bytes": 61370
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0080.jpg",
+          "size_bytes": 53224
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0081.jpg",
+          "size_bytes": 84907
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0082.jpg",
+          "size_bytes": 53255
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0083.jpg",
+          "size_bytes": 62231
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0084.jpg",
+          "size_bytes": 56423
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0085.jpg",
+          "size_bytes": 35447
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0086.jpg",
+          "size_bytes": 55913
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0087.jpg",
+          "size_bytes": 58467
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0088.jpg",
+          "size_bytes": 53649
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0089.jpg",
+          "size_bytes": 51848
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0090.jpg",
+          "size_bytes": 57256
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0091.jpg",
+          "size_bytes": 56543
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0092.jpg",
+          "size_bytes": 49168
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0093.jpg",
+          "size_bytes": 53376
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0094.jpg",
+          "size_bytes": 69296
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0095.jpg",
+          "size_bytes": 62484
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0096.jpg",
+          "size_bytes": 59648
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0097.jpg",
+          "size_bytes": 68224
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0098.jpg",
+          "size_bytes": 72063
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0099.jpg",
+          "size_bytes": 32486
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0100.jpg",
+          "size_bytes": 33150
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0101.jpg",
+          "size_bytes": 60777
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0102.jpg",
+          "size_bytes": 54128
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0103.jpg",
+          "size_bytes": 23697
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0104.jpg",
+          "size_bytes": 60364
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0105.jpg",
+          "size_bytes": 71085
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0106.jpg",
+          "size_bytes": 63221
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0107.jpg",
+          "size_bytes": 43521
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0108.jpg",
+          "size_bytes": 59058
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0109.jpg",
+          "size_bytes": 63231
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0110.jpg",
+          "size_bytes": 57652
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0111.jpg",
+          "size_bytes": 47349
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0112.jpg",
+          "size_bytes": 52982
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0113.jpg",
+          "size_bytes": 62094
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0114.jpg",
+          "size_bytes": 55977
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0115.jpg",
+          "size_bytes": 60261
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0116.jpg",
+          "size_bytes": 61686
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0117.jpg",
+          "size_bytes": 60614
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0118.jpg",
+          "size_bytes": 48523
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0119.jpg",
+          "size_bytes": 55779
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0120.jpg",
+          "size_bytes": 72902
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0121.jpg",
+          "size_bytes": 52051
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0122.jpg",
+          "size_bytes": 59757
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0123.jpg",
+          "size_bytes": 53826
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0124.jpg",
+          "size_bytes": 55841
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0125.jpg",
+          "size_bytes": 67463
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_10s/frame_0126.jpg",
+          "size_bytes": 32627
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0001.jpg",
+          "size_bytes": 89777
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0002.jpg",
+          "size_bytes": 90933
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0003.jpg",
+          "size_bytes": 85350
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0004.jpg",
+          "size_bytes": 82212
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0005.jpg",
+          "size_bytes": 105025
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0006.jpg",
+          "size_bytes": 81532
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0007.jpg",
+          "size_bytes": 76067
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0008.jpg",
+          "size_bytes": 97628
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0009.jpg",
+          "size_bytes": 74003
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0010.jpg",
+          "size_bytes": 84437
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0011.jpg",
+          "size_bytes": 84396
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0012.jpg",
+          "size_bytes": 77076
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0013.jpg",
+          "size_bytes": 91416
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0014.jpg",
+          "size_bytes": 61569
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0015.jpg",
+          "size_bytes": 71003
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0016.jpg",
+          "size_bytes": 81802
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0017.jpg",
+          "size_bytes": 112232
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0018.jpg",
+          "size_bytes": 81732
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0019.jpg",
+          "size_bytes": 89609
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0020.jpg",
+          "size_bytes": 103767
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0021.jpg",
+          "size_bytes": 90586
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0022.jpg",
+          "size_bytes": 95540
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0023.jpg",
+          "size_bytes": 91990
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0024.jpg",
+          "size_bytes": 72502
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0025.jpg",
+          "size_bytes": 76330
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0026.jpg",
+          "size_bytes": 71113
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0027.jpg",
+          "size_bytes": 75903
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0028.jpg",
+          "size_bytes": 74642
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0029.jpg",
+          "size_bytes": 82502
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0030.jpg",
+          "size_bytes": 86319
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0031.jpg",
+          "size_bytes": 63707
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0032.jpg",
+          "size_bytes": 70784
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0033.jpg",
+          "size_bytes": 68879
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0034.jpg",
+          "size_bytes": 70357
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0035.jpg",
+          "size_bytes": 78519
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0036.jpg",
+          "size_bytes": 91806
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0037.jpg",
+          "size_bytes": 106580
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0038.jpg",
+          "size_bytes": 80997
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0039.jpg",
+          "size_bytes": 85061
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0040.jpg",
+          "size_bytes": 82490
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0041.jpg",
+          "size_bytes": 73607
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0042.jpg",
+          "size_bytes": 55506
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0043.jpg",
+          "size_bytes": 81832
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0044.jpg",
+          "size_bytes": 95113
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0045.jpg",
+          "size_bytes": 80412
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0046.jpg",
+          "size_bytes": 90463
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0047.jpg",
+          "size_bytes": 66662
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0048.jpg",
+          "size_bytes": 76772
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0049.jpg",
+          "size_bytes": 80227
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0050.jpg",
+          "size_bytes": 77512
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0051.jpg",
+          "size_bytes": 65718
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0052.jpg",
+          "size_bytes": 83271
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0053.jpg",
+          "size_bytes": 104022
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0054.jpg",
+          "size_bytes": 87281
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0055.jpg",
+          "size_bytes": 85581
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0056.jpg",
+          "size_bytes": 90362
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0057.jpg",
+          "size_bytes": 94135
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0058.jpg",
+          "size_bytes": 73959
+        },
+        {
+          "path": "assets/video/bloodbowl 2017/frames_5s/frame_0059.jpg",
+          "size_bytes": 86889
+        }
+      ],
+      "image_truncated": true,
+      "observation_artifacts": {
+        "contact_sheets": "assets/video/bloodbowl 2017/contact_sheets",
+        "keyframes": "assets/video/bloodbowl 2017/keyframes"
+      },
+      "other_files": [
+        "assets/video/bloodbowl 2017/full_watch_notes.md",
+        "assets/video/bloodbowl 2017/index.json",
+        "assets/video/bloodbowl 2017/match_feel_report.md"
+      ]
+    },
+    "Screenshots": {
+      "present": false,
+      "path": "assets/Screenshots"
+    },
+    "Backgrounds": {
+      "present": false,
+      "path": "assets/Backgrounds"
+    }
+  },
+  "pending_observer_processing": []
+}

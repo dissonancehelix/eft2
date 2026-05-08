@@ -15,12 +15,12 @@
 /SBox/README.md
 
 # Prebuilt tool binaries. Tools/ffmpeg.exe is a holding spot until
-# Tools/Observer/ is built; commit it only if you want it tracked.
+# tools/observer/ is built; commit it only if you want it tracked.
 /Tools/ffmpeg.exe
 
 # Evidence/dev captures. Keep paths documented in README, but do not
 # upload bulk captures unless they become curated fixtures.
-/Lua/game logs/
+/lua/game logs/
 /Assets/Backgrounds/
 /Assets/Screenshots/
 

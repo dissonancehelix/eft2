@@ -6,7 +6,7 @@ The user is the director and domain expert. The agent is the executor, tool-buil
 
 EFT2 is not just a code port. Its infrastructure exists to externalize the user's internal model of EFT into contracts, source indexes, map analysis, visual observation artifacts, telemetry, scenario tests, simulation, validation, and eventual playable s&box code. The goal is for agents to understand EFT's rules, feel, maps, evidence, and failure modes deeply enough to implement and modernize the game without erasing its identity.
 
-`s&box` / Source 2 is the engine substrate. EFT2's named project spaces are `Tools/`, `Maps/`, `Game/`, `Lua/`, `SBox/`, and `Assets/`.
+`s&box` / Source 2 is the engine substrate. EFT2's named project spaces are `tools/`, `maps/`, `Game/`, `lua/`, `SBox/`, and `Assets/`.
 
 ---
 
@@ -18,7 +18,7 @@ Before changing files, read in this order:
 2. `README.md`
 3. Relevant source/reference files for the task:
    - generated Indexer/Map Analyzer outputs
-   - Lua/source references
+   - lua/source references
    - VMFs/maps
    - FGD/entity grammar
    - s&box docs/source/templates
@@ -129,13 +129,13 @@ Current root domains:
 | `README.md` | Game contract: sport identity, rules, mechanics, map feel, evidence, validation targets, project overview |
 | `AGENTS.md` | Workflow contract: source hierarchy, mutation policy, local toolkit policy, agent behavior, tool boundaries |
 | `Game/` | Future/buildable EFT2 s&box game project; playable code and runtime assets belong here when scaffolded |
-| `Maps/` | Canonical map domains, read-only VMF references, map analysis, virtual perception, simulation work, porting workbench, and new-map design workspace |
-| `Lua/` | Original Garry's Mod EFT source reference and inherited behavior evidence |
+| `maps/` | Canonical map domains, read-only VMF references, map analysis, virtual perception, simulation work, porting workbench, and new-map design workspace |
+| `lua/` | Original Garry's Mod EFT source reference and inherited behavior evidence |
 | `SBox/` | Local s&box docs/source/runtime/sample reference material; external engine substrate, not EFT2-owned gameplay |
-| `Tools/` | EFT2-owned infrastructure tools |
+| `tools/` | EFT2-owned infrastructure tools |
 | `Assets/` | Curated evidence/remaster assets: videos, screenshots, images, audio, references, observation material |
 
-Use capitalized root project spaces: `Assets`, `Game`, `Lua`, `Maps`, `SBox`, `Tools`.
+Root project space casing: `Game/` and `SBox/` and `Assets/` keep their original casing. `maps/`, `lua/`, and `tools/` are lowercase.
 
 Use repo-relative paths in durable docs. Do not write full personal filesystem paths into repo documentation, generated outputs, prompts, reports, or indexes.
 
@@ -148,25 +148,25 @@ Do not create root `Engine/` or `Runtime/` folders. Those names cause confusion 
 Use simple durable tool names:
 
 ```text
-Tools/
-  Indexer/
-  Map Analyzer/
-  Observer/
-  Contract Validator/
-  Scenario Harness/
-  Telemetry/
-  Simulation/
+tools/
+  indexer/
+  map analyzer/
+  observer/
+  contract validator/
+  scenario harness/
+  telemetry/
+  simulation/
 ```
 
 Meaning:
 
-- `Indexer` = what exists in the repo and where source truth lives.
-- `Map Analyzer` = how maps are structured spatially and semantically.
-- `Observer` = what happened visually/in motion in videos, screenshots, keyframes, and later play captures.
-- `Contract Validator` = whether docs/code/tools/generated outputs still obey the EFT2 contract.
-- `Scenario Harness` = must-preserve gameplay situations and tests.
-- `Telemetry` = numerical events and match metrics.
-- `Simulation` = future gameplay/map simulation, prediction, and learning loops.
+- `indexer` = what exists in the repo and where source truth lives.
+- `map analyzer` = how maps are structured spatially and semantically.
+- `observer` = what happened visually/in motion in videos, screenshots, keyframes, and later play captures.
+- `contract validator` = whether docs/code/tools/generated outputs still obey the EFT2 contract.
+- `scenario harness` = must-preserve gameplay situations and tests.
+- `telemetry` = numerical events and match metrics.
+- `simulation` = future gameplay/map simulation, prediction, and learning loops.
 
 Do not use:
 
@@ -187,13 +187,13 @@ The first infrastructure goal is to make EFT2 a repo that agents can re-enter wi
 Preferred near-term order:
 
 1. Keep `AGENTS.md` and `README.md` synced.
-2. Keep `Tools/Indexer/` runnable and useful.
-3. Keep `Tools/Map Analyzer/` useful and evidence-bound.
-4. Set up `Tools/Observer/` as a skeleton/contract when needed, but do not deeply run media analysis until requested.
-5. Build `Tools/Contract Validator/`.
-6. Build `Tools/Scenario Harness/`.
-7. Build `Tools/Telemetry/`.
-8. Build `Tools/Simulation/` later, after map analysis, scenarios, and telemetry schemas can constrain it.
+2. Keep `tools/indexer/` runnable and useful.
+3. Keep `tools/map analyzer/` useful and evidence-bound.
+4. Set up `tools/observer/` as a skeleton/contract when needed, but do not deeply run media analysis until requested.
+5. Build `tools/contract validator/`.
+6. Build `tools/scenario harness/`.
+7. Build `tools/telemetry/`.
+8. Build `tools/simulation/` later, after map analysis, scenarios, and telemetry schemas can constrain it.
 9. Scaffold or expand `Game/` only when infrastructure can guide Codex/Claude toward correct EFT behavior.
 
 The project may temporarily adjust the order if the user directs it. Do not treat this order as a law; treat it as the current safest path.
@@ -228,7 +228,7 @@ The first validation target is `Slam Dunk`, because it stresses platforms, speed
 
 ## Maps Domain Policy
 
-`Maps/` is not merely an asset folder.
+`maps/` is not merely an asset folder.
 
 It is the canonical map workspace for:
 
@@ -245,25 +245,25 @@ Map identity is canonical display name, not old Source 1 filename.
 Target shape:
 
 ```text
-Maps/
+maps/
   Shared/
     eft.fgd
   Slam Dunk/
     README.md
     Slam Dunk.vmf
-    Analysis/
-    Virtual Perception/
-    Simulation/
-    Porting/
-    Design/
+    analysis/
+    virtual perception/
+    simulation/
+    porting/
+    design/
   Bloodbowl/
     README.md
     Bloodbowl.vmf
-    Analysis/
-    Virtual Perception/
-    Simulation/
-    Porting/
-    Design/
+    analysis/
+    virtual perception/
+    simulation/
+    porting/
+    design/
 ```
 
 Folder roles:
@@ -271,19 +271,19 @@ Folder roles:
 | Folder | Role |
 |---|---|
 | map root | canonical map identity and read-only original VMF |
-| `Analysis/` | parser output, semantic groups, gameplay profiles, confidence reports |
-| `Virtual Perception/` | LLM-facing spatial/gameplay descriptions and map-understanding artifacts |
-| `Simulation/` | future per-map simulation/prediction artifacts; placeholder until started |
-| `Porting/` | Source 2 / s&box conversion notes, scene plans, remaster risks, port decisions |
-| `Design/` | map design notes, derivative/remake plans, and new-map ideation related to this domain |
+| `analysis/` | parser output, semantic groups, gameplay profiles, confidence reports |
+| `virtual perception/` | LLM-facing spatial/gameplay descriptions and map-understanding artifacts |
+| `simulation/` | future per-map simulation/prediction artifacts; placeholder until started |
+| `porting/` | Source 2 / s&box conversion notes, scene plans, remaster risks, port decisions |
+| `design/` | map design notes, derivative/remake plans, and new-map ideation related to this domain |
 
 The root VMF inside each map domain is a read-only original source reference. Agents may read VMFs. Agents must not edit, reformat, normalize, regenerate, or otherwise mutate VMF contents unless the user explicitly asks for a derivative/remaster file.
 
-Derivative work belongs in generated analysis, `Porting/`, `Design/`, s&box scene outputs, Source 2 map outputs, or other clearly labeled derivative files.
+Derivative work belongs in generated analysis, `porting/`, `design/`, s&box scene outputs, Source 2 map outputs, or other clearly labeled derivative files.
 
-Final playable Source 2 / s&box map assets, including `.vmap` files and deployable scene/map outputs, belong under `Game/` according to s&box project requirements. `Maps/` remains the source/workbench/domain history for VMFs, analysis, simulation, porting notes, and design work. `Game/` contains the promoted buildable runtime/deployable copy.
+Final playable Source 2 / s&box map assets, including `.vmap` files and deployable scene/map outputs, belong under `Game/` according to s&box project requirements. `maps/` remains the source/workbench/domain history for VMFs, analysis, simulation, porting notes, and design work. `Game/` contains the promoted buildable runtime/deployable copy.
 
-Old filenames such as `eft_slamdunk_v6.vmf` and `eft_bloodbowl_v5.vmf` are Source 1/BSP-era artifacts. Their provenance should be preserved in `Maps/source_manifest.json`, but the map-domain identity should use canonical names.
+Old filenames such as `eft_slamdunk_v6.vmf` and `eft_bloodbowl_v5.vmf` are Source 1/BSP-era artifacts. Their provenance should be preserved in `maps/source_manifest.json`, but the map-domain identity should use canonical names.
 
 Do not create `SOURCE_LOCK.md`; put source-reference policy in each map's `README.md`.
 
@@ -293,15 +293,15 @@ Do not create `SOURCE_LOCK.md`; put source-reference policy in each map's `READM
 
 For project tooling:
 
-- Place repo-wide indexer code under `Tools/Indexer/`.
-- Place analyzer code under `Tools/Map Analyzer/`.
-- Place future observation/media tooling under `Tools/Observer/`.
-- Place future validation tooling under `Tools/Contract Validator/`.
-- Place future scenario cases/tests under `Tools/Scenario Harness/`.
-- Place future telemetry schemas/tools under `Tools/Telemetry/`.
-- Place future simulation tooling under `Tools/Simulation/`.
+- Place repo-wide indexer code under `tools/indexer/`.
+- Place analyzer code under `tools/map analyzer/`.
+- Place future observation/media tooling under `tools/observer/`.
+- Place future validation tooling under `tools/contract validator/`.
+- Place future scenario cases/tests under `tools/scenario harness/`.
+- Place future telemetry schemas/tools under `tools/telemetry/`.
+- Place future simulation tooling under `tools/simulation/`.
 
-Root project/domain spaces use capitals (`Game`, `Maps`, `Lua`, `SBox`, `Tools`, `Assets`). Named repo domains/tools/subfolders use normalized display names (`Map Analyzer`, `Analysis`, `Virtual Perception`, `Simulation`). Python script/module filenames may stay lower-case for import/CLI sanity.
+Root project/domain spaces use capitals (`Game`, `maps`, `lua`, `SBox`, `Tools`, `Assets`). Named repo domains/tools/subfolders use normalized display names (`map analyzer`, `Analysis`, `Virtual Perception`, `simulation`). Python script/module filenames may stay lower-case for import/CLI sanity.
 
 MCP is optional future work. s&box editor plugins are optional future work. Do not include either unless the user starts that phase.
 
@@ -370,10 +370,10 @@ Use repo-relative paths in durable docs, generated outputs, prompts, reports, an
 | Game contract | `README.md` |
 | Agent/workflow contract | `AGENTS.md` |
 | s&box reference tree | `SBox/` |
-| Lua/source reference | `Lua/` |
-| VMF/map workspace | `Maps/` |
+| lua/source reference | `lua/` |
+| VMF/map workspace | `maps/` |
 | Buildable EFT2 game project | `Game/` |
-| Map analyzer | `Tools/Map Analyzer/` |
+| Map analyzer | `tools/map analyzer/` |
 | Curated gameplay/video material | `Assets/` |
 | Observer/media material | `Assets/Video/`, `Assets/Screenshots/` |
 
@@ -457,7 +457,7 @@ These names are future gameplay implementation guidance, not commands to scaffol
 | `JumpPad` | map-authored movement boost |
 | `Hazard` | hurt/death/water/lava/void behavior |
 | `Hud` | score, timer, team, health, minimap, action text |
-| `Telemetry` | match events, replay log, tuning metrics |
+| `telemetry` | match events, replay log, tuning metrics |
 | `BotController` | pressure scaffolding and imperfect map-aware play |
 
 Name project-owned gameplay components plainly. Use `Ball`, not `EftBall`; `GoalTrigger`, not `EftGoalTrigger`, unless s&box naming collisions force prefixes.

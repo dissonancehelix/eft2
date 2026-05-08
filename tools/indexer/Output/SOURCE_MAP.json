@@ -1,0 +1,89 @@
+{
+  "generated_by": "tools/indexer",
+  "schema_version": 1,
+  "generated_at": "2026-05-08T18:23:10.783461+00:00",
+  "repo_root": ".",
+  "warnings": [
+    "sbox_scan_truncated_at:4000"
+  ],
+  "domains": {
+    "README.md": {
+      "purpose": "EFT2 game/remake contract",
+      "policy": "editable_contract",
+      "mutation_rule": "patch surgically",
+      "exists": true
+    },
+    "AGENTS.md": {
+      "purpose": "agent workflow and source hierarchy contract",
+      "policy": "editable_contract",
+      "mutation_rule": "patch surgically",
+      "exists": true
+    },
+    "Game/eft2/": {
+      "purpose": "EFT2 s&box game project (eft2.sbproj); initial scaffold exists",
+      "policy": "active_project",
+      "mutation_rule": "implementation guided by infrastructure tools; do not add mechanics until rails are stable",
+      "exists": true
+    },
+    "maps/": {
+      "purpose": "canonical map domains and map analysis outputs",
+      "policy": "mixed",
+      "mutation_rule": "VMFs read-only; analysis writable by tools",
+      "exists": true
+    },
+    "lua/": {
+      "purpose": "original GMod EFT source evidence",
+      "policy": "read_only_source_reference",
+      "mutation_rule": "do not mutate unless explicitly instructed",
+      "exists": true
+    },
+    "SBox/": {
+      "purpose": "s&box docs/source/runtime/sample reference",
+      "policy": "external_reference",
+      "mutation_rule": "do not mutate or vendor into Game/",
+      "exists": true
+    },
+    "tools/": {
+      "purpose": "EFT2-owned infrastructure",
+      "policy": "editable_tooling",
+      "mutation_rule": "safe to edit tool code for current task",
+      "exists": true
+    },
+    "assets/": {
+      "purpose": "curated gameplay/media/visual/reference material",
+      "policy": "curated_asset",
+      "mutation_rule": "edit only when curating evidence",
+      "exists": true
+    },
+    "tools/indexer/output/": {
+      "purpose": "generated LLM-readable working memory",
+      "policy": "generated_output",
+      "mutation_rule": "regenerate freely",
+      "exists": true
+    },
+    "garrysmod-master/": {
+      "purpose": "temporary GMod source reference",
+      "policy": "external_reference",
+      "mutation_rule": "temporary reference only; remove after derived indexes are generated",
+      "exists": false
+    },
+    "FFmpeg-Builds-master/": {
+      "purpose": "temporary upstream FFmpeg cross-build reference",
+      "policy": "external_reference",
+      "mutation_rule": "temporary reference only; remove after derived indexes are generated",
+      "exists": false
+    },
+    "source-sdk-2013-master/": {
+      "purpose": "temporary Source SDK 2013 reference",
+      "policy": "external_reference",
+      "mutation_rule": "temporary reference only; remove after SOURCE_SDK_REFERENCE_INDEX.json generated",
+      "exists": false
+    },
+    ".gitignore": {
+      "purpose": "Git ignore rules",
+      "policy": "editable_contract",
+      "mutation_rule": "do not edit from Indexer; recommend changes only",
+      "exists": true
+    }
+  }
+}
