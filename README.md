@@ -80,7 +80,7 @@ When implementing, validating, or resolving conflicts, use this order:
 5. lua/source copy under `lua`, as the preferred implementation reference for original behavior.
 6. Original VMF/map sources preserved under `maps`.
 7. `maps/Shared/eft.fgd`, if present, as Hammer entity grammar reference.
-8. Real gameplay evidence: Bloodbowl POV video, screenshots, future clips, demos, match logs, and replays.
+8. Real gameplay evidence: Bloodbowl POV video, screenshots and images under `assets/image/`, future clips, demos, match logs, and replays.
 9. Generated analyzer outputs under `maps/<Map Name>/Analysis/` and `maps/<Map Name>/Virtual Perception/`.
 10. s&box source/docs/examples under `sbox`, as engine reference.
 11. External references listed below.
@@ -1503,6 +1503,13 @@ Bots should eventually consume Map Analyzer outputs.
 
 EFT2 should look modern without becoming sterile or visually noisy.
 
+Legacy screenshots and curated images are visual/readability evidence. They are useful for preserving the old game's loud arcade-sports clarity, map identity, HUD density, team color, and physical comedy texture. They do not prove timing, physics, scoring rates, route preventability, or exact mechanic behavior unless logs, telemetry, map analysis, or source behavior also support the claim.
+
+Images under `assets/image/` should be treated as remake evidence in two lanes:
+
+- named map images preserve map-as-poster clarity: a map should read as itself at a glance, not as a generic arena
+- gameplay screenshots preserve old readability problems and successes: carrier/ball glow as a retarget anchor, red/blue team clarity, HUD density, readable nameplates, visible hazards, and the community's chaotic physical texture
+
 Priorities:
 
 - ball readability at speed
@@ -1544,6 +1551,8 @@ Preserve:
 - arcade sports tone
 - saturated team color
 - physical comedy
+- map-as-poster readability
+- carrier/ball glow or an equivalent retarget anchor
 - chunky readable bodies
 - exaggerated collision readability
 - map-specific themes
@@ -1559,6 +1568,8 @@ Avoid:
 - muted team identity
 - generic arena blandness
 - over-polished animation that masks mechanical timing
+- flattening map-specific identity into a single modern sports look
+- treating old GMod HUD clutter as sacred when only its information density must survive
 
 ---
 

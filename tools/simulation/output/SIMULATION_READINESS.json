@@ -1,0 +1,1416 @@
+{
+  "generated_by": "tools/simulation",
+  "schema_version": 1,
+  "generated_at": "2026-05-08T19:12:50.127237+00:00",
+  "root": ".",
+  "map_filter": null,
+  "warnings": [
+    "This report is simulation readiness only.",
+    "Do not treat existing abstract gameflow artifacts as live simulation results."
+  ],
+  "summary": {
+    "scenarios_defined": 22,
+    "telemetry_events_defined": 23,
+    "candidate_maps": 15,
+    "reported_maps": 15,
+    "map_analysis_ready": 15,
+    "reported_map_analysis_ready": 15,
+    "gameplay_runtime_present": false,
+    "telemetry_emitter_present": false
+  },
+  "gameplay_runtime": {
+    "present": false,
+    "code_dir": "game/eft2/Code",
+    "marker_hits": [],
+    "missing_markers": [
+      "Ball.cs",
+      "GoalTrigger.cs",
+      "PlayerMovement.cs",
+      "GameSystem.cs",
+      "BallResetTrigger.cs"
+    ],
+    "rule": "requires at least three core EFT gameplay runtime markers before scenarios can be executable"
+  },
+  "telemetry_emitter": {
+    "present": false,
+    "candidate_files": [],
+    "rule": "requires an actual gameplay/runtime emitter, not just telemetry schema validators"
+  },
+  "metric_guardrails_present": true,
+  "blockers": [
+    {
+      "id": "gameplay_runtime_missing",
+      "message": "No executable EFT gameplay runtime was detected under game/eft2/Code."
+    },
+    {
+      "id": "telemetry_emitter_missing",
+      "message": "Telemetry schemas exist, but no gameplay/runtime emitter was detected."
+    }
+  ],
+  "scenario_readiness": [
+    {
+      "id": "S-001",
+      "slug": "goal_line_stand",
+      "title": "Goal-Line Stand",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-001_goal_line_stand.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "TackleResolve",
+        "PossessionTransfer",
+        "GoalScore"
+      ],
+      "telemetry_schema_ready": [
+        "TackleResolve",
+        "PossessionTransfer",
+        "GoalScore"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-002",
+      "slug": "panic_short_pass",
+      "title": "Panic Short Pass",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-002_panic_short_pass.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "ThrowAttempt",
+        "BallLoose",
+        "PossessionTransfer"
+      ],
+      "telemetry_schema_ready": [
+        "ThrowAttempt",
+        "BallLoose",
+        "PossessionTransfer"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-003",
+      "slug": "long_throw_recovery",
+      "title": "Long Throw Recovery",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-003_long_throw_recovery.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "ThrowAttempt",
+        "BallLoose",
+        "BallLanded"
+      ],
+      "telemetry_schema_ready": [
+        "ThrowAttempt",
+        "BallLoose",
+        "BallLanded"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-004",
+      "slug": "jump_flung_fumble",
+      "title": "Jump-Flung Fumble",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-004_jump_flung_fumble.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "BallLoose",
+        "PossessionTransfer",
+        "PlayerAirborne"
+      ],
+      "telemetry_schema_ready": [
+        "BallLoose",
+        "PossessionTransfer",
+        "PlayerAirborne"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-005",
+      "slug": "swarm_collapse",
+      "title": "Swarm Collapse",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-005_swarm_collapse.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "BallLoose",
+        "TackleResolve",
+        "KnockdownEvent",
+        "PossessionTransfer"
+      ],
+      "telemetry_schema_ready": [
+        "BallLoose",
+        "TackleResolve",
+        "KnockdownEvent",
+        "PossessionTransfer"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-006",
+      "slug": "midfield_collection",
+      "title": "Midfield Collection",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-006_midfield_collection.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "PossessionTransfer",
+        "BallLoose"
+      ],
+      "telemetry_schema_ready": [
+        "PossessionTransfer",
+        "BallLoose"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-007",
+      "slug": "escort_clearing",
+      "title": "Escort Clearing",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-007_escort_clearing.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "TackleResolve",
+        "KnockdownEvent"
+      ],
+      "telemetry_schema_ready": [
+        "TackleResolve",
+        "KnockdownEvent"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-008",
+      "slug": "intentional_hazard_reset",
+      "title": "Intentional Hazard Reset",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-008_intentional_hazard_reset.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "BallReset",
+        "HazardTrigger"
+      ],
+      "telemetry_schema_ready": [
+        "BallReset",
+        "HazardTrigger"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-009",
+      "slug": "head_on_speed_duel",
+      "title": "Head-On Speed Duel",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-009_head_on_speed_duel.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "TackleResolve",
+        "KnockdownEvent",
+        "HeadOnCollision"
+      ],
+      "telemetry_schema_ready": [
+        "TackleResolve",
+        "KnockdownEvent",
+        "HeadOnCollision"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-010",
+      "slug": "last_second_touchdown_stop",
+      "title": "Last-Second Touchdown Stop",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-010_last_second_touchdown_stop.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "TackleResolve",
+        "GoalScore",
+        "PossessionTransfer"
+      ],
+      "telemetry_schema_ready": [
+        "TackleResolve",
+        "GoalScore",
+        "PossessionTransfer"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-011",
+      "slug": "loose_ball_bounce",
+      "title": "Loose Ball Bounce",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-011_loose_ball_bounce.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "BallLoose",
+        "BallBounce",
+        "BallLanded"
+      ],
+      "telemetry_schema_ready": [
+        "BallLoose",
+        "BallBounce",
+        "BallLanded"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-012",
+      "slug": "respawn_rejoin",
+      "title": "Respawn Rejoin",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-012_respawn_rejoin.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "PlayerDeath",
+        "PlayerRespawn",
+        "PlayerRejoinsContest"
+      ],
+      "telemetry_schema_ready": [
+        "PlayerDeath",
+        "PlayerRespawn",
+        "PlayerRejoinsContest"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-013",
+      "slug": "choke_corridor_fight",
+      "title": "Choke Corridor Fight",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-013_choke_corridor_fight.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "TackleResolve",
+        "KnockdownEvent",
+        "PossessionTransfer"
+      ],
+      "telemetry_schema_ready": [
+        "TackleResolve",
+        "KnockdownEvent",
+        "PossessionTransfer"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-014",
+      "slug": "score_counter_attack",
+      "title": "Score Counter-Attack",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-014_score_counter_attack.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "GoalScore",
+        "BallReset",
+        "PossessionTransfer"
+      ],
+      "telemetry_schema_ready": [
+        "GoalScore",
+        "BallReset",
+        "PossessionTransfer"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-015",
+      "slug": "tackle_chain",
+      "title": "Tackle Chain",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-015_tackle_chain.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "TackleResolve",
+        "PossessionTransfer",
+        "KnockdownEvent"
+      ],
+      "telemetry_schema_ready": [
+        "TackleResolve",
+        "PossessionTransfer",
+        "KnockdownEvent"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-016",
+      "slug": "goal_line_intercept",
+      "title": "Goal-Line Intercept",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-016_goal_line_intercept.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "PossessionTransfer",
+        "GoalScore"
+      ],
+      "telemetry_schema_ready": [
+        "PossessionTransfer",
+        "GoalScore"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-017",
+      "slug": "mid_air_catch",
+      "title": "Mid-Air Catch / Pickup",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-017_mid_air_catch.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "PossessionTransfer",
+        "PlayerAirborne"
+      ],
+      "telemetry_schema_ready": [
+        "PossessionTransfer",
+        "PlayerAirborne"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-018",
+      "slug": "powerup_route",
+      "title": "Powerup Route",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-018_powerup_route.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "PowerupPickup",
+        "PossessionTransfer"
+      ],
+      "telemetry_schema_ready": [
+        "PowerupPickup",
+        "PossessionTransfer"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-019",
+      "slug": "carrier_juke",
+      "title": "Carrier Juke",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-019_carrier_juke.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "TackleResolve",
+        "CarrierDirectionChange"
+      ],
+      "telemetry_schema_ready": [
+        "TackleResolve",
+        "CarrierDirectionChange"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-020",
+      "slug": "bot_positioning",
+      "title": "Bot Positioning",
+      "map_scope": "any",
+      "source_path": "tools/scenario harness/scenarios/S-020_bot_positioning.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "BotDecision",
+        "BallLoose"
+      ],
+      "telemetry_schema_ready": [
+        "BotDecision",
+        "BallLoose"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-021",
+      "slug": "slam_dunk_hoop_decision",
+      "title": "Slam Dunk Hoop Decision",
+      "map_scope": "Slam Dunk",
+      "source_path": "tools/scenario harness/scenarios/S-021_slam_dunk_hoop_decision.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "GoalScore",
+        "ScoringMethodDetected"
+      ],
+      "telemetry_schema_ready": [
+        "GoalScore",
+        "ScoringMethodDetected"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    },
+    {
+      "id": "S-022",
+      "slug": "bloodbowl_flat_swarm",
+      "title": "Bloodbowl Flat Swarm",
+      "map_scope": "Bloodbowl",
+      "source_path": "tools/scenario harness/scenarios/S-022_bloodbowl_flat_swarm.json",
+      "labels": [
+        "scenario_defined",
+        "telemetry_schema_ready_emitter_missing",
+        "blocked_by_gameplay_runtime"
+      ],
+      "telemetry_events_required": [
+        "BallReset",
+        "BallLoose",
+        "TackleResolve",
+        "KnockdownEvent",
+        "PossessionTransfer"
+      ],
+      "telemetry_schema_ready": [
+        "BallReset",
+        "BallLoose",
+        "TackleResolve",
+        "KnockdownEvent",
+        "PossessionTransfer"
+      ],
+      "missing_telemetry_events": [],
+      "simulation_ready_flag": false,
+      "status": "defined"
+    }
+  ],
+  "map_readiness": [
+    {
+      "map": "Baseball Dash",
+      "map_dir": "maps/baseball dash",
+      "labels": [
+        "map_analysis_ready",
+        "simulation_placeholder_present",
+        "map_ready_but_runtime_missing"
+      ],
+      "analysis_dir": "maps/baseball dash/analysis",
+      "virtual_perception_dir": "maps/baseball dash/virtual perception",
+      "simulation_dir": "maps/baseball dash/simulation",
+      "analysis_artifacts_present": [
+        "maps/baseball dash/analysis/brush_entities.json",
+        "maps/baseball dash/analysis/confidence_report.md",
+        "maps/baseball dash/analysis/eft_entities.json",
+        "maps/baseball dash/analysis/gameplay_profile.json",
+        "maps/baseball dash/analysis/geometry_backend_summary.json",
+        "maps/baseball dash/analysis/geometry_mesh.json",
+        "maps/baseball dash/analysis/goal_complexes.json",
+        "maps/baseball dash/analysis/hazard_regions.json",
+        "maps/baseball dash/analysis/navmesh_summary.json",
+        "maps/baseball dash/analysis/powerup_locations.json",
+        "maps/baseball dash/analysis/raw_entities.json",
+        "maps/baseball dash/analysis/recast_geometry.obj",
+        "maps/baseball dash/analysis/reset_regions.json",
+        "maps/baseball dash/analysis/route_graph.json",
+        "maps/baseball dash/analysis/spatial_clusters.json",
+        "maps/baseball dash/analysis/spawn_clusters.json",
+        "maps/baseball dash/analysis/summary.md",
+        "maps/baseball dash/analysis/trigger_volumes.json"
+      ],
+      "virtual_perception_artifacts_present": [
+        "maps/baseball dash/virtual perception/danger_fields.json",
+        "maps/baseball dash/virtual perception/gameplay_flow.md",
+        "maps/baseball dash/virtual perception/line_of_sight.json",
+        "maps/baseball dash/virtual perception/route_reads.json",
+        "maps/baseball dash/virtual perception/viewpoints.json"
+      ],
+      "simulation_artifacts_present": [
+        "maps/baseball dash/simulation/README.md",
+        "maps/baseball dash/simulation/abstract_gameflow.json",
+        "maps/baseball dash/simulation/abstract_gameflow.md"
+      ],
+      "missing_analysis_requirements": [],
+      "missing_virtual_perception_requirements": []
+    },
+    {
+      "map": "Big Metal",
+      "map_dir": "maps/big metal",
+      "labels": [
+        "map_analysis_ready",
+        "simulation_placeholder_present",
+        "map_ready_but_runtime_missing"
+      ],
+      "analysis_dir": "maps/big metal/analysis",
+      "virtual_perception_dir": "maps/big metal/virtual perception",
+      "simulation_dir": "maps/big metal/simulation",
+      "analysis_artifacts_present": [
+        "maps/big metal/analysis/brush_entities.json",
+        "maps/big metal/analysis/confidence_report.md",
+        "maps/big metal/analysis/eft_entities.json",
+        "maps/big metal/analysis/gameplay_profile.json",
+        "maps/big metal/analysis/geometry_backend_summary.json",
+        "maps/big metal/analysis/geometry_mesh.json",
+        "maps/big metal/analysis/goal_complexes.json",
+        "maps/big metal/analysis/hazard_regions.json",
+        "maps/big metal/analysis/navmesh_summary.json",
+        "maps/big metal/analysis/powerup_locations.json",
+        "maps/big metal/analysis/raw_entities.json",
+        "maps/big metal/analysis/recast_geometry.obj",
+        "maps/big metal/analysis/reset_regions.json",
+        "maps/big metal/analysis/route_graph.json",
+        "maps/big metal/analysis/spatial_clusters.json",
+        "maps/big metal/analysis/spawn_clusters.json",
+        "maps/big metal/analysis/summary.md",
+        "maps/big metal/analysis/trigger_volumes.json"
+      ],
+      "virtual_perception_artifacts_present": [
+        "maps/big metal/virtual perception/danger_fields.json",
+        "maps/big metal/virtual perception/gameplay_flow.md",
+        "maps/big metal/virtual perception/line_of_sight.json",
+        "maps/big metal/virtual perception/route_reads.json",
+        "maps/big metal/virtual perception/viewpoints.json"
+      ],
+      "simulation_artifacts_present": [
+        "maps/big metal/simulation/README.md",
+        "maps/big metal/simulation/abstract_gameflow.json",
+        "maps/big metal/simulation/abstract_gameflow.md"
+      ],
+      "missing_analysis_requirements": [],
+      "missing_virtual_perception_requirements": []
+    },
+    {
+      "map": "Bloodbowl",
+      "map_dir": "maps/bloodbowl",
+      "labels": [
+        "map_analysis_ready",
+        "simulation_placeholder_present",
+        "map_ready_but_runtime_missing"
+      ],
+      "analysis_dir": "maps/bloodbowl/analysis",
+      "virtual_perception_dir": "maps/bloodbowl/virtual perception",
+      "simulation_dir": "maps/bloodbowl/simulation",
+      "analysis_artifacts_present": [
+        "maps/bloodbowl/analysis/brush_entities.json",
+        "maps/bloodbowl/analysis/confidence_report.md",
+        "maps/bloodbowl/analysis/eft_entities.json",
+        "maps/bloodbowl/analysis/gameplay_profile.json",
+        "maps/bloodbowl/analysis/geometry_backend_summary.json",
+        "maps/bloodbowl/analysis/geometry_mesh.json",
+        "maps/bloodbowl/analysis/goal_complexes.json",
+        "maps/bloodbowl/analysis/hazard_regions.json",
+        "maps/bloodbowl/analysis/navmesh_summary.json",
+        "maps/bloodbowl/analysis/powerup_locations.json",
+        "maps/bloodbowl/analysis/raw_entities.json",
+        "maps/bloodbowl/analysis/recast_geometry.obj",
+        "maps/bloodbowl/analysis/reset_regions.json",
+        "maps/bloodbowl/analysis/route_graph.json",
+        "maps/bloodbowl/analysis/spatial_clusters.json",
+        "maps/bloodbowl/analysis/spawn_clusters.json",
+        "maps/bloodbowl/analysis/summary.md",
+        "maps/bloodbowl/analysis/trigger_volumes.json"
+      ],
+      "virtual_perception_artifacts_present": [
+        "maps/bloodbowl/virtual perception/danger_fields.json",
+        "maps/bloodbowl/virtual perception/gameplay_flow.md",
+        "maps/bloodbowl/virtual perception/line_of_sight.json",
+        "maps/bloodbowl/virtual perception/route_reads.json",
+        "maps/bloodbowl/virtual perception/viewpoints.json"
+      ],
+      "simulation_artifacts_present": [
+        "maps/bloodbowl/simulation/README.md",
+        "maps/bloodbowl/simulation/abstract_gameflow.json",
+        "maps/bloodbowl/simulation/abstract_gameflow.md"
+      ],
+      "missing_analysis_requirements": [],
+      "missing_virtual_perception_requirements": []
+    },
+    {
+      "map": "Chamber",
+      "map_dir": "maps/chamber",
+      "labels": [
+        "map_analysis_ready",
+        "simulation_placeholder_present",
+        "map_ready_but_runtime_missing"
+      ],
+      "analysis_dir": "maps/chamber/analysis",
+      "virtual_perception_dir": "maps/chamber/virtual perception",
+      "simulation_dir": "maps/chamber/simulation",
+      "analysis_artifacts_present": [
+        "maps/chamber/analysis/brush_entities.json",
+        "maps/chamber/analysis/confidence_report.md",
+        "maps/chamber/analysis/eft_entities.json",
+        "maps/chamber/analysis/gameplay_profile.json",
+        "maps/chamber/analysis/geometry_backend_summary.json",
+        "maps/chamber/analysis/geometry_mesh.json",
+        "maps/chamber/analysis/goal_complexes.json",
+        "maps/chamber/analysis/hazard_regions.json",
+        "maps/chamber/analysis/navmesh_summary.json",
+        "maps/chamber/analysis/powerup_locations.json",
+        "maps/chamber/analysis/raw_entities.json",
+        "maps/chamber/analysis/recast_geometry.obj",
+        "maps/chamber/analysis/reset_regions.json",
+        "maps/chamber/analysis/route_graph.json",
+        "maps/chamber/analysis/spatial_clusters.json",
+        "maps/chamber/analysis/spawn_clusters.json",
+        "maps/chamber/analysis/summary.md",
+        "maps/chamber/analysis/trigger_volumes.json"
+      ],
+      "virtual_perception_artifacts_present": [
+        "maps/chamber/virtual perception/danger_fields.json",
+        "maps/chamber/virtual perception/gameplay_flow.md",
+        "maps/chamber/virtual perception/line_of_sight.json",
+        "maps/chamber/virtual perception/route_reads.json",
+        "maps/chamber/virtual perception/viewpoints.json"
+      ],
+      "simulation_artifacts_present": [
+        "maps/chamber/simulation/README.md",
+        "maps/chamber/simulation/abstract_gameflow.json",
+        "maps/chamber/simulation/abstract_gameflow.md"
+      ],
+      "missing_analysis_requirements": [],
+      "missing_virtual_perception_requirements": []
+    },
+    {
+      "map": "Cosmic Arena",
+      "map_dir": "maps/cosmic arena",
+      "labels": [
+        "map_analysis_ready",
+        "simulation_placeholder_present",
+        "map_ready_but_runtime_missing"
+      ],
+      "analysis_dir": "maps/cosmic arena/analysis",
+      "virtual_perception_dir": "maps/cosmic arena/virtual perception",
+      "simulation_dir": "maps/cosmic arena/simulation",
+      "analysis_artifacts_present": [
+        "maps/cosmic arena/analysis/brush_entities.json",
+        "maps/cosmic arena/analysis/confidence_report.md",
+        "maps/cosmic arena/analysis/eft_entities.json",
+        "maps/cosmic arena/analysis/gameplay_profile.json",
+        "maps/cosmic arena/analysis/geometry_backend_summary.json",
+        "maps/cosmic arena/analysis/geometry_mesh.json",
+        "maps/cosmic arena/analysis/goal_complexes.json",
+        "maps/cosmic arena/analysis/hazard_regions.json",
+        "maps/cosmic arena/analysis/navmesh_summary.json",
+        "maps/cosmic arena/analysis/powerup_locations.json",
+        "maps/cosmic arena/analysis/raw_entities.json",
+        "maps/cosmic arena/analysis/recast_geometry.obj",
+        "maps/cosmic arena/analysis/reset_regions.json",
+        "maps/cosmic arena/analysis/route_graph.json",
+        "maps/cosmic arena/analysis/spatial_clusters.json",
+        "maps/cosmic arena/analysis/spawn_clusters.json",
+        "maps/cosmic arena/analysis/summary.md",
+        "maps/cosmic arena/analysis/trigger_volumes.json"
+      ],
+      "virtual_perception_artifacts_present": [
+        "maps/cosmic arena/virtual perception/danger_fields.json",
+        "maps/cosmic arena/virtual perception/gameplay_flow.md",
+        "maps/cosmic arena/virtual perception/line_of_sight.json",
+        "maps/cosmic arena/virtual perception/route_reads.json",
+        "maps/cosmic arena/virtual perception/viewpoints.json"
+      ],
+      "simulation_artifacts_present": [
+        "maps/cosmic arena/simulation/README.md",
+        "maps/cosmic arena/simulation/abstract_gameflow.json",
+        "maps/cosmic arena/simulation/abstract_gameflow.md"
+      ],
+      "missing_analysis_requirements": [],
+      "missing_virtual_perception_requirements": []
+    },
+    {
+      "map": "Legoland",
+      "map_dir": "maps/legoland",
+      "labels": [
+        "map_analysis_ready",
+        "simulation_placeholder_present",
+        "map_ready_but_runtime_missing"
+      ],
+      "analysis_dir": "maps/legoland/analysis",
+      "virtual_perception_dir": "maps/legoland/virtual perception",
+      "simulation_dir": "maps/legoland/simulation",
+      "analysis_artifacts_present": [
+        "maps/legoland/analysis/brush_entities.json",
+        "maps/legoland/analysis/confidence_report.md",
+        "maps/legoland/analysis/eft_entities.json",
+        "maps/legoland/analysis/gameplay_profile.json",
+        "maps/legoland/analysis/geometry_backend_summary.json",
+        "maps/legoland/analysis/geometry_mesh.json",
+        "maps/legoland/analysis/goal_complexes.json",
+        "maps/legoland/analysis/hazard_regions.json",
+        "maps/legoland/analysis/navmesh_summary.json",
+        "maps/legoland/analysis/powerup_locations.json",
+        "maps/legoland/analysis/raw_entities.json",
+        "maps/legoland/analysis/recast_geometry.obj",
+        "maps/legoland/analysis/reset_regions.json",
+        "maps/legoland/analysis/route_graph.json",
+        "maps/legoland/analysis/spatial_clusters.json",
+        "maps/legoland/analysis/spawn_clusters.json",
+        "maps/legoland/analysis/summary.md",
+        "maps/legoland/analysis/trigger_volumes.json"
+      ],
+      "virtual_perception_artifacts_present": [
+        "maps/legoland/virtual perception/danger_fields.json",
+        "maps/legoland/virtual perception/gameplay_flow.md",
+        "maps/legoland/virtual perception/line_of_sight.json",
+        "maps/legoland/virtual perception/route_reads.json",
+        "maps/legoland/virtual perception/viewpoints.json"
+      ],
+      "simulation_artifacts_present": [
+        "maps/legoland/simulation/README.md",
+        "maps/legoland/simulation/abstract_gameflow.json",
+        "maps/legoland/simulation/abstract_gameflow.md"
+      ],
+      "missing_analysis_requirements": [],
+      "missing_virtual_perception_requirements": []
+    },
+    {
+      "map": "Mini Putt",
+      "map_dir": "maps/mini putt",
+      "labels": [
+        "map_analysis_ready",
+        "simulation_placeholder_present",
+        "map_ready_but_runtime_missing"
+      ],
+      "analysis_dir": "maps/mini putt/analysis",
+      "virtual_perception_dir": "maps/mini putt/virtual perception",
+      "simulation_dir": "maps/mini putt/simulation",
+      "analysis_artifacts_present": [
+        "maps/mini putt/analysis/brush_entities.json",
+        "maps/mini putt/analysis/confidence_report.md",
+        "maps/mini putt/analysis/eft_entities.json",
+        "maps/mini putt/analysis/gameplay_profile.json",
+        "maps/mini putt/analysis/geometry_backend_summary.json",
+        "maps/mini putt/analysis/geometry_mesh.json",
+        "maps/mini putt/analysis/goal_complexes.json",
+        "maps/mini putt/analysis/hazard_regions.json",
+        "maps/mini putt/analysis/navmesh_summary.json",
+        "maps/mini putt/analysis/powerup_locations.json",
+        "maps/mini putt/analysis/raw_entities.json",
+        "maps/mini putt/analysis/recast_geometry.obj",
+        "maps/mini putt/analysis/reset_regions.json",
+        "maps/mini putt/analysis/route_graph.json",
+        "maps/mini putt/analysis/spatial_clusters.json",
+        "maps/mini putt/analysis/spawn_clusters.json",
+        "maps/mini putt/analysis/summary.md",
+        "maps/mini putt/analysis/trigger_volumes.json"
+      ],
+      "virtual_perception_artifacts_present": [
+        "maps/mini putt/virtual perception/danger_fields.json",
+        "maps/mini putt/virtual perception/gameplay_flow.md",
+        "maps/mini putt/virtual perception/line_of_sight.json",
+        "maps/mini putt/virtual perception/route_reads.json",
+        "maps/mini putt/virtual perception/viewpoints.json"
+      ],
+      "simulation_artifacts_present": [
+        "maps/mini putt/simulation/README.md",
+        "maps/mini putt/simulation/abstract_gameflow.json",
+        "maps/mini putt/simulation/abstract_gameflow.md"
+      ],
+      "missing_analysis_requirements": [],
+      "missing_virtual_perception_requirements": []
+    },
+    {
+      "map": "Sky Metal",
+      "map_dir": "maps/sky metal",
+      "labels": [
+        "map_analysis_ready",
+        "simulation_placeholder_present",
+        "map_ready_but_runtime_missing"
+      ],
+      "analysis_dir": "maps/sky metal/analysis",
+      "virtual_perception_dir": "maps/sky metal/virtual perception",
+      "simulation_dir": "maps/sky metal/simulation",
+      "analysis_artifacts_present": [
+        "maps/sky metal/analysis/brush_entities.json",
+        "maps/sky metal/analysis/confidence_report.md",
+        "maps/sky metal/analysis/eft_entities.json",
+        "maps/sky metal/analysis/gameplay_profile.json",
+        "maps/sky metal/analysis/geometry_backend_summary.json",
+        "maps/sky metal/analysis/geometry_mesh.json",
+        "maps/sky metal/analysis/goal_complexes.json",
+        "maps/sky metal/analysis/hazard_regions.json",
+        "maps/sky metal/analysis/navmesh_summary.json",
+        "maps/sky metal/analysis/powerup_locations.json",
+        "maps/sky metal/analysis/raw_entities.json",
+        "maps/sky metal/analysis/recast_geometry.obj",
+        "maps/sky metal/analysis/reset_regions.json",
+        "maps/sky metal/analysis/route_graph.json",
+        "maps/sky metal/analysis/spatial_clusters.json",
+        "maps/sky metal/analysis/spawn_clusters.json",
+        "maps/sky metal/analysis/summary.md",
+        "maps/sky metal/analysis/trigger_volumes.json"
+      ],
+      "virtual_perception_artifacts_present": [
+        "maps/sky metal/virtual perception/danger_fields.json",
+        "maps/sky metal/virtual perception/gameplay_flow.md",
+        "maps/sky metal/virtual perception/line_of_sight.json",
+        "maps/sky metal/virtual perception/route_reads.json",
+        "maps/sky metal/virtual perception/viewpoints.json"
+      ],
+      "simulation_artifacts_present": [
+        "maps/sky metal/simulation/README.md",
+        "maps/sky metal/simulation/abstract_gameflow.json",
+        "maps/sky metal/simulation/abstract_gameflow.md"
+      ],
+      "missing_analysis_requirements": [],
+      "missing_virtual_perception_requirements": []
+    },
+    {
+      "map": "Skyline",
+      "map_dir": "maps/skyline",
+      "labels": [
+        "map_analysis_ready",
+        "simulation_placeholder_present",
+        "map_ready_but_runtime_missing"
+      ],
+      "analysis_dir": "maps/skyline/analysis",
+      "virtual_perception_dir": "maps/skyline/virtual perception",
+      "simulation_dir": "maps/skyline/simulation",
+      "analysis_artifacts_present": [
+        "maps/skyline/analysis/brush_entities.json",
+        "maps/skyline/analysis/confidence_report.md",
+        "maps/skyline/analysis/eft_entities.json",
+        "maps/skyline/analysis/gameplay_profile.json",
+        "maps/skyline/analysis/geometry_backend_summary.json",
+        "maps/skyline/analysis/geometry_mesh.json",
+        "maps/skyline/analysis/goal_complexes.json",
+        "maps/skyline/analysis/hazard_regions.json",
+        "maps/skyline/analysis/navmesh_summary.json",
+        "maps/skyline/analysis/powerup_locations.json",
+        "maps/skyline/analysis/raw_entities.json",
+        "maps/skyline/analysis/recast_geometry.obj",
+        "maps/skyline/analysis/reset_regions.json",
+        "maps/skyline/analysis/route_graph.json",
+        "maps/skyline/analysis/spatial_clusters.json",
+        "maps/skyline/analysis/spawn_clusters.json",
+        "maps/skyline/analysis/summary.md",
+        "maps/skyline/analysis/trigger_volumes.json"
+      ],
+      "virtual_perception_artifacts_present": [
+        "maps/skyline/virtual perception/danger_fields.json",
+        "maps/skyline/virtual perception/gameplay_flow.md",
+        "maps/skyline/virtual perception/line_of_sight.json",
+        "maps/skyline/virtual perception/route_reads.json",
+        "maps/skyline/virtual perception/viewpoints.json"
+      ],
+      "simulation_artifacts_present": [
+        "maps/skyline/simulation/README.md",
+        "maps/skyline/simulation/abstract_gameflow.json",
+        "maps/skyline/simulation/abstract_gameflow.md"
+      ],
+      "missing_analysis_requirements": [],
+      "missing_virtual_perception_requirements": []
+    },
+    {
+      "map": "Skystep",
+      "map_dir": "maps/skystep",
+      "labels": [
+        "map_analysis_ready",
+        "simulation_placeholder_present",
+        "map_ready_but_runtime_missing"
+      ],
+      "analysis_dir": "maps/skystep/analysis",
+      "virtual_perception_dir": "maps/skystep/virtual perception",
+      "simulation_dir": "maps/skystep/simulation",
+      "analysis_artifacts_present": [
+        "maps/skystep/analysis/brush_entities.json",
+        "maps/skystep/analysis/confidence_report.md",
+        "maps/skystep/analysis/eft_entities.json",
+        "maps/skystep/analysis/gameplay_profile.json",
+        "maps/skystep/analysis/geometry_backend_summary.json",
+        "maps/skystep/analysis/geometry_mesh.json",
+        "maps/skystep/analysis/goal_complexes.json",
+        "maps/skystep/analysis/hazard_regions.json",
+        "maps/skystep/analysis/navmesh_summary.json",
+        "maps/skystep/analysis/powerup_locations.json",
+        "maps/skystep/analysis/raw_entities.json",
+        "maps/skystep/analysis/recast_geometry.obj",
+        "maps/skystep/analysis/reset_regions.json",
+        "maps/skystep/analysis/route_graph.json",
+        "maps/skystep/analysis/spatial_clusters.json",
+        "maps/skystep/analysis/spawn_clusters.json",
+        "maps/skystep/analysis/summary.md",
+        "maps/skystep/analysis/trigger_volumes.json"
+      ],
+      "virtual_perception_artifacts_present": [
+        "maps/skystep/virtual perception/danger_fields.json",
+        "maps/skystep/virtual perception/gameplay_flow.md",
+        "maps/skystep/virtual perception/line_of_sight.json",
+        "maps/skystep/virtual perception/route_reads.json",
+        "maps/skystep/virtual perception/viewpoints.json"
+      ],
+      "simulation_artifacts_present": [
+        "maps/skystep/simulation/README.md",
+        "maps/skystep/simulation/abstract_gameflow.json",
+        "maps/skystep/simulation/abstract_gameflow.md"
+      ],
+      "missing_analysis_requirements": [],
+      "missing_virtual_perception_requirements": []
+    },
+    {
+      "map": "Slam Dunk",
+      "map_dir": "maps/slam dunk",
+      "labels": [
+        "map_analysis_ready",
+        "simulation_placeholder_present",
+        "map_ready_but_runtime_missing"
+      ],
+      "analysis_dir": "maps/slam dunk/analysis",
+      "virtual_perception_dir": "maps/slam dunk/virtual perception",
+      "simulation_dir": "maps/slam dunk/simulation",
+      "analysis_artifacts_present": [
+        "maps/slam dunk/analysis/brush_entities.json",
+        "maps/slam dunk/analysis/confidence_report.md",
+        "maps/slam dunk/analysis/eft_entities.json",
+        "maps/slam dunk/analysis/gameplay_profile.json",
+        "maps/slam dunk/analysis/geometry_backend_summary.json",
+        "maps/slam dunk/analysis/geometry_mesh.json",
+        "maps/slam dunk/analysis/goal_complexes.json",
+        "maps/slam dunk/analysis/hazard_regions.json",
+        "maps/slam dunk/analysis/navmesh_summary.json",
+        "maps/slam dunk/analysis/powerup_locations.json",
+        "maps/slam dunk/analysis/raw_entities.json",
+        "maps/slam dunk/analysis/recast_geometry.obj",
+        "maps/slam dunk/analysis/reset_regions.json",
+        "maps/slam dunk/analysis/route_graph.json",
+        "maps/slam dunk/analysis/spatial_clusters.json",
+        "maps/slam dunk/analysis/spawn_clusters.json",
+        "maps/slam dunk/analysis/summary.md",
+        "maps/slam dunk/analysis/trigger_volumes.json"
+      ],
+      "virtual_perception_artifacts_present": [
+        "maps/slam dunk/virtual perception/danger_fields.json",
+        "maps/slam dunk/virtual perception/gameplay_flow.md",
+        "maps/slam dunk/virtual perception/line_of_sight.json",
+        "maps/slam dunk/virtual perception/route_reads.json",
+        "maps/slam dunk/virtual perception/viewpoints.json"
+      ],
+      "simulation_artifacts_present": [
+        "maps/slam dunk/simulation/README.md",
+        "maps/slam dunk/simulation/abstract_gameflow.json",
+        "maps/slam dunk/simulation/abstract_gameflow.md"
+      ],
+      "missing_analysis_requirements": [],
+      "missing_virtual_perception_requirements": []
+    },
+    {
+      "map": "Soccer",
+      "map_dir": "maps/soccer",
+      "labels": [
+        "map_analysis_ready",
+        "simulation_placeholder_present",
+        "map_ready_but_runtime_missing"
+      ],
+      "analysis_dir": "maps/soccer/analysis",
+      "virtual_perception_dir": "maps/soccer/virtual perception",
+      "simulation_dir": "maps/soccer/simulation",
+      "analysis_artifacts_present": [
+        "maps/soccer/analysis/brush_entities.json",
+        "maps/soccer/analysis/confidence_report.md",
+        "maps/soccer/analysis/eft_entities.json",
+        "maps/soccer/analysis/gameplay_profile.json",
+        "maps/soccer/analysis/geometry_backend_summary.json",
+        "maps/soccer/analysis/geometry_mesh.json",
+        "maps/soccer/analysis/goal_complexes.json",
+        "maps/soccer/analysis/hazard_regions.json",
+        "maps/soccer/analysis/navmesh_summary.json",
+        "maps/soccer/analysis/powerup_locations.json",
+        "maps/soccer/analysis/raw_entities.json",
+        "maps/soccer/analysis/recast_geometry.obj",
+        "maps/soccer/analysis/reset_regions.json",
+        "maps/soccer/analysis/route_graph.json",
+        "maps/soccer/analysis/spatial_clusters.json",
+        "maps/soccer/analysis/spawn_clusters.json",
+        "maps/soccer/analysis/summary.md",
+        "maps/soccer/analysis/trigger_volumes.json"
+      ],
+      "virtual_perception_artifacts_present": [
+        "maps/soccer/virtual perception/danger_fields.json",
+        "maps/soccer/virtual perception/gameplay_flow.md",
+        "maps/soccer/virtual perception/line_of_sight.json",
+        "maps/soccer/virtual perception/route_reads.json",
+        "maps/soccer/virtual perception/viewpoints.json"
+      ],
+      "simulation_artifacts_present": [
+        "maps/soccer/simulation/README.md",
+        "maps/soccer/simulation/abstract_gameflow.json",
+        "maps/soccer/simulation/abstract_gameflow.md"
+      ],
+      "missing_analysis_requirements": [],
+      "missing_virtual_perception_requirements": []
+    },
+    {
+      "map": "Space Jump",
+      "map_dir": "maps/space jump",
+      "labels": [
+        "map_analysis_ready",
+        "simulation_placeholder_present",
+        "map_ready_but_runtime_missing"
+      ],
+      "analysis_dir": "maps/space jump/analysis",
+      "virtual_perception_dir": "maps/space jump/virtual perception",
+      "simulation_dir": "maps/space jump/simulation",
+      "analysis_artifacts_present": [
+        "maps/space jump/analysis/brush_entities.json",
+        "maps/space jump/analysis/confidence_report.md",
+        "maps/space jump/analysis/eft_entities.json",
+        "maps/space jump/analysis/gameplay_profile.json",
+        "maps/space jump/analysis/geometry_backend_summary.json",
+        "maps/space jump/analysis/geometry_mesh.json",
+        "maps/space jump/analysis/goal_complexes.json",
+        "maps/space jump/analysis/hazard_regions.json",
+        "maps/space jump/analysis/navmesh_summary.json",
+        "maps/space jump/analysis/powerup_locations.json",
+        "maps/space jump/analysis/raw_entities.json",
+        "maps/space jump/analysis/recast_geometry.obj",
+        "maps/space jump/analysis/reset_regions.json",
+        "maps/space jump/analysis/route_graph.json",
+        "maps/space jump/analysis/spatial_clusters.json",
+        "maps/space jump/analysis/spawn_clusters.json",
+        "maps/space jump/analysis/summary.md",
+        "maps/space jump/analysis/trigger_volumes.json"
+      ],
+      "virtual_perception_artifacts_present": [
+        "maps/space jump/virtual perception/danger_fields.json",
+        "maps/space jump/virtual perception/gameplay_flow.md",
+        "maps/space jump/virtual perception/line_of_sight.json",
+        "maps/space jump/virtual perception/route_reads.json",
+        "maps/space jump/virtual perception/viewpoints.json"
+      ],
+      "simulation_artifacts_present": [
+        "maps/space jump/simulation/README.md",
+        "maps/space jump/simulation/abstract_gameflow.json",
+        "maps/space jump/simulation/abstract_gameflow.md"
+      ],
+      "missing_analysis_requirements": [],
+      "missing_virtual_perception_requirements": []
+    },
+    {
+      "map": "Temple Sacrifice",
+      "map_dir": "maps/temple sacrifice",
+      "labels": [
+        "map_analysis_ready",
+        "simulation_placeholder_present",
+        "map_ready_but_runtime_missing"
+      ],
+      "analysis_dir": "maps/temple sacrifice/analysis",
+      "virtual_perception_dir": "maps/temple sacrifice/virtual perception",
+      "simulation_dir": "maps/temple sacrifice/simulation",
+      "analysis_artifacts_present": [
+        "maps/temple sacrifice/analysis/brush_entities.json",
+        "maps/temple sacrifice/analysis/confidence_report.md",
+        "maps/temple sacrifice/analysis/eft_entities.json",
+        "maps/temple sacrifice/analysis/gameplay_profile.json",
+        "maps/temple sacrifice/analysis/geometry_backend_summary.json",
+        "maps/temple sacrifice/analysis/geometry_mesh.json",
+        "maps/temple sacrifice/analysis/goal_complexes.json",
+        "maps/temple sacrifice/analysis/hazard_regions.json",
+        "maps/temple sacrifice/analysis/navmesh_summary.json",
+        "maps/temple sacrifice/analysis/powerup_locations.json",
+        "maps/temple sacrifice/analysis/raw_entities.json",
+        "maps/temple sacrifice/analysis/recast_geometry.obj",
+        "maps/temple sacrifice/analysis/reset_regions.json",
+        "maps/temple sacrifice/analysis/route_graph.json",
+        "maps/temple sacrifice/analysis/spatial_clusters.json",
+        "maps/temple sacrifice/analysis/spawn_clusters.json",
+        "maps/temple sacrifice/analysis/summary.md",
+        "maps/temple sacrifice/analysis/trigger_volumes.json"
+      ],
+      "virtual_perception_artifacts_present": [
+        "maps/temple sacrifice/virtual perception/danger_fields.json",
+        "maps/temple sacrifice/virtual perception/gameplay_flow.md",
+        "maps/temple sacrifice/virtual perception/line_of_sight.json",
+        "maps/temple sacrifice/virtual perception/route_reads.json",
+        "maps/temple sacrifice/virtual perception/viewpoints.json"
+      ],
+      "simulation_artifacts_present": [
+        "maps/temple sacrifice/simulation/README.md",
+        "maps/temple sacrifice/simulation/abstract_gameflow.json",
+        "maps/temple sacrifice/simulation/abstract_gameflow.md"
+      ],
+      "missing_analysis_requirements": [],
+      "missing_virtual_perception_requirements": []
+    },
+    {
+      "map": "Tunnel",
+      "map_dir": "maps/tunnel",
+      "labels": [
+        "map_analysis_ready",
+        "simulation_placeholder_present",
+        "map_ready_but_runtime_missing"
+      ],
+      "analysis_dir": "maps/tunnel/analysis",
+      "virtual_perception_dir": "maps/tunnel/virtual perception",
+      "simulation_dir": "maps/tunnel/simulation",
+      "analysis_artifacts_present": [
+        "maps/tunnel/analysis/brush_entities.json",
+        "maps/tunnel/analysis/confidence_report.md",
+        "maps/tunnel/analysis/eft_entities.json",
+        "maps/tunnel/analysis/gameplay_profile.json",
+        "maps/tunnel/analysis/geometry_backend_summary.json",
+        "maps/tunnel/analysis/geometry_mesh.json",
+        "maps/tunnel/analysis/goal_complexes.json",
+        "maps/tunnel/analysis/hazard_regions.json",
+        "maps/tunnel/analysis/navmesh_summary.json",
+        "maps/tunnel/analysis/powerup_locations.json",
+        "maps/tunnel/analysis/raw_entities.json",
+        "maps/tunnel/analysis/recast_geometry.obj",
+        "maps/tunnel/analysis/reset_regions.json",
+        "maps/tunnel/analysis/route_graph.json",
+        "maps/tunnel/analysis/spatial_clusters.json",
+        "maps/tunnel/analysis/spawn_clusters.json",
+        "maps/tunnel/analysis/summary.md",
+        "maps/tunnel/analysis/trigger_volumes.json"
+      ],
+      "virtual_perception_artifacts_present": [
+        "maps/tunnel/virtual perception/danger_fields.json",
+        "maps/tunnel/virtual perception/gameplay_flow.md",
+        "maps/tunnel/virtual perception/line_of_sight.json",
+        "maps/tunnel/virtual perception/route_reads.json",
+        "maps/tunnel/virtual perception/viewpoints.json"
+      ],
+      "simulation_artifacts_present": [
+        "maps/tunnel/simulation/README.md",
+        "maps/tunnel/simulation/abstract_gameflow.json",
+        "maps/tunnel/simulation/abstract_gameflow.md"
+      ],
+      "missing_analysis_requirements": [],
+      "missing_virtual_perception_requirements": []
+    }
+  ],
+  "candidate_matrix": [
+    {
+      "scenario_id": "S-021",
+      "map": "Slam Dunk",
+      "labels": [
+        "blocked_by_gameplay_runtime",
+        "map_analysis_ready",
+        "map_ready_but_runtime_missing",
+        "scenario_defined",
+        "simulation_placeholder_present"
+      ],
+      "status": "blocked",
+      "reason": "Hoop/throw/slam route pressure needs map intelligence before runtime tests."
+    },
+    {
+      "scenario_id": "S-022",
+      "map": "Bloodbowl",
+      "labels": [
+        "blocked_by_gameplay_runtime",
+        "map_analysis_ready",
+        "map_ready_but_runtime_missing",
+        "scenario_defined",
+        "simulation_placeholder_present"
+      ],
+      "status": "blocked",
+      "reason": "Flat open-field swarm is the cleanest full-gameplay feel benchmark."
+    },
+    {
+      "scenario_id": "S-005",
+      "map": "Bloodbowl",
+      "labels": [
+        "blocked_by_gameplay_runtime",
+        "map_analysis_ready",
+        "map_ready_but_runtime_missing",
+        "scenario_defined",
+        "simulation_placeholder_present"
+      ],
+      "status": "blocked",
+      "reason": "Swarm collapse maps directly to Bloodbowl's open-field convergence."
+    },
+    {
+      "scenario_id": "S-009",
+      "map": "any/open map",
+      "labels": [
+        "blocked_by_gameplay_runtime",
+        "map_selection_needed",
+        "scenario_defined"
+      ],
+      "status": "blocked",
+      "reason": "Head-on speed duel can later validate charge/tackle readability on open layouts."
+    },
+    {
+      "scenario_id": "S-001",
+      "map": "any/hybrid map",
+      "labels": [
+        "blocked_by_gameplay_runtime",
+        "map_selection_needed",
+        "scenario_defined"
+      ],
+      "status": "blocked",
+      "reason": "Goal-line stand validates preventability once goals and runtime telemetry exist."
+    }
+  ],
+  "recommended_first_targets": [
+    {
+      "scenario_id": "S-021",
+      "map": "Slam Dunk",
+      "labels": [
+        "blocked_by_gameplay_runtime",
+        "map_analysis_ready",
+        "map_ready_but_runtime_missing",
+        "scenario_defined",
+        "simulation_placeholder_present"
+      ],
+      "status": "blocked",
+      "reason": "Hoop/throw/slam route pressure needs map intelligence before runtime tests."
+    },
+    {
+      "scenario_id": "S-022",
+      "map": "Bloodbowl",
+      "labels": [
+        "blocked_by_gameplay_runtime",
+        "map_analysis_ready",
+        "map_ready_but_runtime_missing",
+        "scenario_defined",
+        "simulation_placeholder_present"
+      ],
+      "status": "blocked",
+      "reason": "Flat open-field swarm is the cleanest full-gameplay feel benchmark."
+    },
+    {
+      "scenario_id": "S-005",
+      "map": "Bloodbowl",
+      "labels": [
+        "blocked_by_gameplay_runtime",
+        "map_analysis_ready",
+        "map_ready_but_runtime_missing",
+        "scenario_defined",
+        "simulation_placeholder_present"
+      ],
+      "status": "blocked",
+      "reason": "Swarm collapse maps directly to Bloodbowl's open-field convergence."
+    },
+    {
+      "scenario_id": "S-009",
+      "map": "any/open map",
+      "labels": [
+        "blocked_by_gameplay_runtime",
+        "map_selection_needed",
+        "scenario_defined"
+      ],
+      "status": "blocked",
+      "reason": "Head-on speed duel can later validate charge/tackle readability on open layouts."
+    },
+    {
+      "scenario_id": "S-001",
+      "map": "any/hybrid map",
+      "labels": [
+        "blocked_by_gameplay_runtime",
+        "map_selection_needed",
+        "scenario_defined"
+      ],
+      "status": "blocked",
+      "reason": "Goal-line stand validates preventability once goals and runtime telemetry exist."
+    }
+  ],
+  "inputs": {
+    "scenarios": "tools/scenario harness/scenarios/",
+    "telemetry_events": "tools/telemetry/events/",
+    "metric_guardrails": "tools/telemetry/metric_guardrails.json",
+    "maps": "maps/",
+    "map_manifest": "maps/source_manifest.json",
+    "lua_game_logs": "lua/game logs/"
+  }
+}

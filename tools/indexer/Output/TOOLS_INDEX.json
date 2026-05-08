@@ -1,58 +1,58 @@
 {
   "generated_by": "tools/indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T18:42:34.815535+00:00",
+  "generated_at": "2026-05-08T19:15:22.322966+00:00",
   "repo_root": ".",
   "warnings": [
     "sbox_scan_truncated_at:4000"
   ],
   "tools_root": "tools",
-  "tool_count": 6,
+  "tool_count": 7,
   "present_tools": [
     "contract validator",
     "indexer",
     "map analyzer",
     "observer",
     "scenario harness",
+    "simulation",
     "telemetry"
   ],
-  "missing_recommended_tools": [
-    "Indexer",
-    "Map Analyzer",
-    "Observer",
-    "Contract Validator",
-    "Scenario Harness",
-    "Telemetry",
-    "Simulation"
-  ],
+  "missing_recommended_tools": [],
   "recommended_status": [
     {
       "name": "Indexer",
-      "status": "pending"
+      "folder": "indexer",
+      "status": "present"
     },
     {
       "name": "Map Analyzer",
-      "status": "pending"
+      "folder": "map analyzer",
+      "status": "present"
     },
     {
       "name": "Observer",
-      "status": "pending"
+      "folder": "observer",
+      "status": "present"
     },
     {
       "name": "Contract Validator",
-      "status": "pending"
+      "folder": "contract validator",
+      "status": "present"
     },
     {
       "name": "Scenario Harness",
-      "status": "pending"
+      "folder": "scenario harness",
+      "status": "present"
     },
     {
       "name": "Telemetry",
-      "status": "pending"
+      "folder": "telemetry",
+      "status": "present"
     },
     {
       "name": "Simulation",
-      "status": "pending"
+      "folder": "simulation",
+      "status": "present"
     }
   ],
   "tools": [
@@ -197,16 +197,20 @@
       "name": "observer",
       "path": "tools/observer",
       "readme": "tools/observer/README.md",
-      "readme_summary": "# Tools/Observer\n\n**Status: skeleton only \u2014 implementation deferred.**",
-      "python_module_count": 1,
+      "readme_summary": "# Tools/Observer\n\n**Status: image evidence pass implemented; video/media event extraction remains deferred.**",
+      "python_module_count": 2,
       "python_modules": [
+        {
+          "path": "tools/observer/analyze_images.py",
+          "first_docstring_line": "EFT2 Observer image evidence pass."
+        },
         {
           "path": "tools/observer/observe_video.py",
           "first_docstring_line": "Tools/Observer \u2014 EFT2 media observation tool."
         }
       ],
-      "has_output_dir": false,
-      "output_dir": null
+      "has_output_dir": true,
+      "output_dir": "tools/observer/Output"
     },
     {
       "name": "scenario harness",
@@ -222,6 +226,29 @@
       ],
       "has_output_dir": true,
       "output_dir": "tools/scenario harness/Output"
+    },
+    {
+      "name": "simulation",
+      "path": "tools/simulation",
+      "readme": "tools/simulation/README.md",
+      "readme_summary": "# Tools/Simulation\n\n`tools/simulation/` is a dry-run readiness layer for future EFT2 simulation work.\n\nIt does not run gameplay simulation, reinforcement learning, physics, bots, or a gameplay runtime. It connects the evidence rails that must exist before those systems can be trusted:\n\n- scenario definitions in `tools/scenario harness/scenarios/`\n- telemetry schemas in `tools/telemetry/events/`\n- metric guardrails in `tools/telemetry/metric_guardrails.json`\n- map analyzer outputs in `maps/<map>/analysis/`\n- virtual perception outputs in `maps/<map>/virtual perception/`\n- per-map placeholders or artifacts in `maps/<map>/simulation/`\n- real inherited evidence such as `lua/game logs/`",
+      "python_module_count": 3,
+      "python_modules": [
+        {
+          "path": "tools/simulation/assess_simulation_readiness.py",
+          "first_docstring_line": "EFT2 dry-run simulation readiness assessor."
+        },
+        {
+          "path": "tools/simulation/exporters.py",
+          "first_docstring_line": "Output helpers for EFT2 simulation readiness reports."
+        },
+        {
+          "path": "tools/simulation/schemas.py",
+          "first_docstring_line": "Shared constants for the EFT2 simulation readiness tool."
+        }
+      ],
+      "has_output_dir": true,
+      "output_dir": "tools/simulation/output"
     },
     {
       "name": "telemetry",

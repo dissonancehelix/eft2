@@ -9,13 +9,13 @@ from exporters import safe_read_text
 from schemas import IndexEnvelope, rel
 
 RECOMMENDED = [
-    "Indexer",
-    "Map Analyzer",
-    "Observer",
-    "Contract Validator",
-    "Scenario Harness",
-    "Telemetry",
-    "Simulation",
+    ("Indexer", "indexer"),
+    ("Map Analyzer", "map analyzer"),
+    ("Observer", "observer"),
+    ("Contract Validator", "contract validator"),
+    ("Scenario Harness", "scenario harness"),
+    ("Telemetry", "telemetry"),
+    ("Simulation", "simulation"),
 ]
 
 DOCSTRING_RE = re.compile(r'^\s*(?:"""|\'\'\')(.*?)(?:"""|\'\'\')', re.DOTALL)
@@ -53,6 +53,8 @@ def _index_tool(tool_dir: Path, root: Path) -> dict[str, Any]:
             "first_docstring_line": _first_doc_line(py),
         })
     output_dir = tool_dir / "Output"
+    if not output_dir.is_dir():
+        output_dir = tool_dir / "output"
     return {
         "name": tool_dir.name,
         "path": rel(tool_dir, root),
@@ -78,15 +80,16 @@ def build(root: Path, env: IndexEnvelope) -> dict[str, Any]:
             present_names.append(sub.name)
             tools.append(_index_tool(sub, root))
 
-    missing = [n for n in RECOMMENDED if n not in present_names]
+    present_lookup = {name.lower(): name for name in present_names}
+    missing = [display for display, folder in RECOMMENDED if folder.lower() not in present_lookup]
     return env.wrap({
         "tools_root": rel(tools_root, root),
         "tool_count": len(tools),
         "present_tools": present_names,
         "missing_recommended_tools": missing,
         "recommended_status": [
-            {"name": n, "status": "present" if n in present_names else "pending"}
-            for n in RECOMMENDED
+            {"name": display, "folder": folder, "status": "present" if folder.lower() in present_lookup else "pending"}
+            for display, folder in RECOMMENDED
         ],
         "tools": tools,
     })

@@ -1,13 +1,13 @@
 {
   "generated_by": "tools/indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T18:42:33.629199+00:00",
+  "generated_at": "2026-05-08T19:15:21.147448+00:00",
   "repo_root": ".",
   "warnings": [],
   "files": [
     {
       "path": "README.md",
-      "size_bytes": 80081,
+      "size_bytes": 81147,
       "heading_count": 174,
       "headings": [
         {
@@ -819,12 +819,12 @@
           "text": "conflict"
         },
         {
-          "line": 1799,
+          "line": 1810,
           "marker": "NEXT",
           "text": "possession events"
         },
         {
-          "line": 1803,
+          "line": 1814,
           "marker": "NEXT",
           "text": "seconds"
         }
@@ -832,7 +832,7 @@
     },
     {
       "path": "AGENTS.md",
-      "size_bytes": 22317,
+      "size_bytes": 22665,
       "heading_count": 21,
       "headings": [
         {
@@ -923,7 +923,7 @@
       "contract_ids": [],
       "todo_markers": [
         {
-          "line": 515,
+          "line": 517,
           "marker": "NEXT",
           "text": "recommended step"
         }
@@ -1084,8 +1084,8 @@
     },
     {
       "path": "tools/observer/README.md",
-      "size_bytes": 2088,
-      "heading_count": 9,
+      "size_bytes": 3051,
+      "heading_count": 11,
       "headings": [
         {
           "level": 1,
@@ -1097,7 +1097,15 @@
         },
         {
           "level": 2,
-          "text": "What Observer will do (when implemented)"
+          "text": "What Observer can do now"
+        },
+        {
+          "level": 2,
+          "text": "Image CLI"
+        },
+        {
+          "level": 2,
+          "text": "What Observer will do later"
         },
         {
           "level": 2,
@@ -1109,7 +1117,7 @@
         },
         {
           "level": 2,
-          "text": "CLI (placeholder)"
+          "text": "Video CLI (placeholder)"
         },
         {
           "level": 2,
@@ -1163,6 +1171,45 @@
       ],
       "contract_ids": [
         "S-001",
+        "S-022"
+      ],
+      "todo_markers": []
+    },
+    {
+      "path": "tools/simulation/README.md",
+      "size_bytes": 2445,
+      "heading_count": 6,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Tools/Simulation"
+        },
+        {
+          "level": 2,
+          "text": "Commands"
+        },
+        {
+          "level": 2,
+          "text": "Outputs"
+        },
+        {
+          "level": 2,
+          "text": "Readiness Labels"
+        },
+        {
+          "level": 2,
+          "text": "First Later Targets"
+        },
+        {
+          "level": 2,
+          "text": "Evidence Limits"
+        }
+      ],
+      "contract_ids": [
+        "S-001",
+        "S-005",
+        "S-009",
+        "S-021",
         "S-022"
       ],
       "todo_markers": []
@@ -1237,5 +1284,5 @@
       "todo_markers": []
     }
   ],
-  "file_count": 9
+  "file_count": 10
 }

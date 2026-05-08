@@ -57,7 +57,7 @@ BAD_STATE_PATTERNS: list[dict[str, Any]] = [
     {
         "id": "sticky_possession",
         "description": "Sticky/locked possession — ball cannot change hands freely",
-        "pattern": re.compile(r"sticky.?possess|lock.?possess|possess.*lock", re.IGNORECASE),
+        "pattern": re.compile(r"sticky.?possess|\blocked.?possess|\bpossess(?:ion)?.{0,40}\block(?:ed|ing|s)?\b", re.IGNORECASE),
         "contract_refs": ["P-900"],
         "severity": "error",
     },
@@ -100,10 +100,12 @@ SCAN_TARGETS = [
 SKIP_EXTENSIONS = {
     ".vmf", ".vtf", ".mdl", ".bsp", ".mp4", ".mov", ".mkv", ".avi",
     ".png", ".jpg", ".jpeg", ".gif", ".wav", ".mp3", ".ogg",
-    ".exe", ".dll", ".so", ".zip", ".7z",
+    ".exe", ".dll", ".so", ".zip", ".7z", ".scene_c", ".scene_d",
 }
 
 MAX_FILE_BYTES = 1_000_000  # Skip files > 1 MB
+
+SKIP_DIR_NAMES = {"Output", "output", "__pycache__", ".git"}
 
 
 # ---------------------------------------------------------------------------
@@ -118,6 +120,8 @@ def _iter_text_files(root: Path, targets: list[str]):
             yield from _read_file(p)
         elif p.is_dir():
             for child in sorted(p.rglob("*")):
+                if any(part in SKIP_DIR_NAMES for part in child.parts):
+                    continue
                 if child.is_file():
                     yield from _read_file(child)
 
@@ -272,6 +276,8 @@ def check_bad_states(root: Path) -> list[dict[str, Any]]:
     validator_dir = HERE.resolve()
 
     for path, text in _iter_text_files(root, ["game/", "tools/"]):
+        if path.suffix.lower() not in {".cs", ".py", ".ts", ".js"}:
+            continue
         # Skip this tool's own source files — pattern definitions are not violations.
         try:
             path.resolve().relative_to(validator_dir)
@@ -395,7 +401,7 @@ def main(argv: list[str] | None = None) -> int:
         "generated_by": GENERATOR,
         "schema_version": SCHEMA_VERSION,
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "repo_root": str(root),
+        "repo_root": ".",
         "contract_ids_defined": sorted(contract_ids),
         "finding_count": len(findings),
         "error_count": sum(1 for f in findings if f.get("severity") == "error"),

@@ -26,13 +26,13 @@ Do not introduce Engine/ or Runtime/ folders or umbrella names.
 - `.gitignore` — Git ignore rules [editable_contract] (OK)
 
 ## Tools status
-- Indexer: pending
-- Map Analyzer: pending
-- Observer: pending
-- Contract Validator: pending
-- Scenario Harness: pending
-- Telemetry: pending
-- Simulation: pending
+- Indexer: present
+- Map Analyzer: present
+- Observer: present
+- Contract Validator: present
+- Scenario Harness: present
+- Telemetry: present
+- Simulation: present
 
 ## Maps status
 - canonical map domains: 16
@@ -54,9 +54,9 @@ Do not introduce Engine/ or Runtime/ folders or umbrella names.
 - ffmpeg: not present
 
 ## Current readiness
-- Infrastructure tools (Contract Validator, Scenario Harness, Telemetry): incomplete — see Tools status above
-- Tools/Observer: not yet built — media artifacts are unprocessed
-- Tools/Simulation: not yet built
+- Infrastructure tools (Contract Validator, Scenario Harness, Telemetry): all present
+- Tools/Observer: present
+- Tools/Simulation: present
 - game/eft2/ mechanics: scaffold present — mechanics deferred pending direction
 
 ## Warnings

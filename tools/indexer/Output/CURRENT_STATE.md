@@ -11,7 +11,7 @@ Factual snapshot — not aspirational.
 - [x] tools/contract validator/ present
 - [x] tools/scenario harness/ present
 - [x] tools/telemetry/ present
-- [ ] tools/simulation/ present
+- [x] tools/simulation/ present
 - [x] sbox/ reference tree present
 - [x] lua/ source reference present
 - [x] assets/ present

@@ -1,7 +1,7 @@
 {
-  "generated_by": "Tools/Contract Validator",
+  "generated_by": "tools/contract validator",
   "schema_version": 1,
-  "generated_at": "2026-05-08T17:27:19.847195+00:00",
+  "generated_at": "2026-05-08T19:15:21.374067+00:00",
   "repo_root": ".",
   "contract_ids_defined": [
     "C-001",
@@ -77,559 +77,571 @@
       "check": "id_coverage",
       "severity": "ok",
       "id": "C-001",
-      "message": "Contract ID C-001 referenced in 11 file(s).",
+      "message": "Contract ID C-001 referenced in 20 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Contract Validator/README.md",
-        "Tools/Contract Validator/validate_contract.py",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_init.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/init.lua",
-        "Lua/gamemode/round_controller.lua",
-        "Lua/gamemode/sh_roundtransitions.lua",
-        "Lua/gamemode/shared.lua"
+        "tools/contract validator/README.md",
+        "tools/contract validator/validate_contract.py",
+        "tools/scenario harness/scenario_schema.md",
+        "tools/scenario harness/scenarios/S-001_goal_line_stand.json",
+        "tools/scenario harness/scenarios/S-005_swarm_collapse.json",
+        "tools/scenario harness/scenarios/S-007_escort_clearing.json",
+        "tools/scenario harness/scenarios/S-010_last_second_touchdown_stop.json",
+        "tools/scenario harness/scenarios/S-013_choke_corridor_fight.json",
+        "tools/scenario harness/scenarios/S-018_powerup_route.json",
+        "tools/telemetry/events/E_001_tackleresolve.json",
+        "tools/telemetry/events/E_002_possessiontransfer.json",
+        "tools/telemetry/events/E_003_ballloose.json",
+        "tools/telemetry/metric_guardrails.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_init.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/init.lua",
+        "lua/gamemode/round_controller.lua",
+        "lua/gamemode/sh_roundtransitions.lua",
+        "lua/gamemode/shared.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "C-002",
-      "message": "Contract ID C-002 referenced in 7 file(s).",
+      "message": "Contract ID C-002 referenced in 13 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Contract Validator/validate_contract.py",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/states/knockdownrecover.lua",
-        "Lua/gamemode/states/knockeddown.lua"
+        "tools/contract validator/validate_contract.py",
+        "tools/scenario harness/scenario_schema.md",
+        "tools/scenario harness/scenarios/S-002_panic_short_pass.json",
+        "tools/scenario harness/scenarios/S-008_intentional_hazard_reset.json",
+        "tools/scenario harness/scenarios/S-013_choke_corridor_fight.json",
+        "tools/scenario harness/scenarios/S-015_tackle_chain.json",
+        "tools/telemetry/events/E_002_possessiontransfer.json",
+        "tools/telemetry/events/E_003_ballloose.json",
+        "tools/telemetry/metric_guardrails.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/states/knockdownrecover.lua",
+        "lua/gamemode/states/knockeddown.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "C-003",
-      "message": "Contract ID C-003 referenced in 4 file(s).",
+      "message": "Contract ID C-003 referenced in 9 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua"
+        "tools/scenario harness/scenarios/S-005_swarm_collapse.json",
+        "tools/scenario harness/scenarios/S-006_midfield_collection.json",
+        "tools/scenario harness/scenarios/S-007_escort_clearing.json",
+        "tools/scenario harness/scenarios/S-012_respawn_rejoin.json",
+        "tools/scenario harness/scenarios/S-016_goal_line_intercept.json",
+        "tools/scenario harness/scenarios/S-020_bot_positioning.json",
+        "tools/telemetry/metric_guardrails.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "C-004",
-      "message": "Contract ID C-004 referenced in 6 file(s).",
+      "message": "Contract ID C-004 referenced in 9 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/entities/entities/trigger_goal.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/states/divetackle.lua"
+        "tools/scenario harness/scenarios/S-001_goal_line_stand.json",
+        "tools/scenario harness/scenarios/S-010_last_second_touchdown_stop.json",
+        "tools/scenario harness/scenarios/S-016_goal_line_intercept.json",
+        "tools/telemetry/events/E_007_goalscored.json",
+        "tools/telemetry/metric_guardrails.json",
+        "lua/EFT.md",
+        "lua/entities/entities/trigger_goal.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/states/divetackle.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "C-005",
-      "message": "Contract ID C-005 referenced in 6 file(s).",
+      "message": "Contract ID C-005 referenced in 10 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/obj_bot.lua",
-        "Lua/gamemode/sv_bots.lua"
+        "tools/scenario harness/scenarios/S-006_midfield_collection.json",
+        "tools/scenario harness/scenarios/S-011_loose_ball_bounce.json",
+        "tools/scenario harness/scenarios/S-017_mid_air_catch.json",
+        "tools/scenario harness/scenarios/S-019_carrier_juke.json",
+        "tools/scenario harness/scenarios/S-020_bot_positioning.json",
+        "tools/telemetry/events/E_021_botdecision.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/obj_bot.lua",
+        "lua/gamemode/sv_bots.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "C-006",
-      "message": "Contract ID C-006 referenced in 4 file(s).",
+      "message": "Contract ID C-006 referenced in 7 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua"
+        "tools/scenario harness/scenarios/S-002_panic_short_pass.json",
+        "tools/scenario harness/scenarios/S-004_jump_flung_fumble.json",
+        "tools/scenario harness/scenarios/S-009_head_on_speed_duel.json",
+        "tools/scenario harness/scenarios/S-011_loose_ball_bounce.json",
+        "tools/scenario harness/scenarios/S-015_tackle_chain.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "C-007",
-      "message": "Contract ID C-007 referenced in 7 file(s).",
+      "message": "Contract ID C-007 referenced in 12 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Contract Validator/validate_contract.py",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/cl_mapvote.lua",
-        "Lua/gamemode/sv_mapvote.lua"
+        "tools/contract validator/validate_contract.py",
+        "tools/scenario harness/scenarios/S-003_long_throw_recovery.json",
+        "tools/scenario harness/scenarios/S-008_intentional_hazard_reset.json",
+        "tools/scenario harness/scenarios/S-014_score_counter_attack.json",
+        "tools/telemetry/events/E_004_ballreset.json",
+        "tools/telemetry/events/E_013_scrumdetected.json",
+        "tools/telemetry/events/E_014_routebreakout.json",
+        "tools/telemetry/metric_guardrails.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/cl_mapvote.lua",
+        "lua/gamemode/sv_mapvote.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "C-008",
-      "message": "Contract ID C-008 referenced in 4 file(s).",
+      "message": "Contract ID C-008 referenced in 5 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua"
+        "tools/scenario harness/scenarios/S-003_long_throw_recovery.json",
+        "tools/telemetry/events/E_008_throwattempt.json",
+        "tools/telemetry/metric_guardrails.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "C-009",
-      "message": "Contract ID C-009 referenced in 19 file(s).",
+      "message": "Contract ID C-009 referenced in 26 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Contract Validator/validate_contract.py",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_help.lua",
-        "Lua/gamemode/cl_hud.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/cl_scoreboard.lua",
-        "Lua/gamemode/cl_selectscreen.lua",
-        "Lua/gamemode/cl_splashscreen.lua",
-        "Lua/gamemode/states/powerstruggle.lua",
-        "Lua/gamemode/states/throw.lua",
-        "Lua/gamemode/vgui/dex3dnotification.lua",
-        "Lua/gamemode/vgui/vgui_gamenotice.lua",
-        "Lua/gamemode/vgui/vgui_hudbase.lua",
-        "Lua/gamemode/vgui/vgui_hudcommon.lua",
-        "Lua/gamemode/vgui/vgui_hudelement.lua",
-        "Lua/gamemode/vgui/vgui_hudlayout.lua",
-        "Lua/gamemode/vgui/vgui_vote.lua"
+        "tools/contract validator/validate_contract.py",
+        "tools/scenario harness/scenarios/S-004_jump_flung_fumble.json",
+        "tools/scenario harness/scenarios/S-009_head_on_speed_duel.json",
+        "tools/scenario harness/scenarios/S-017_mid_air_catch.json",
+        "tools/scenario harness/scenarios/S-019_carrier_juke.json",
+        "tools/telemetry/events/E_008_throwattempt.json",
+        "tools/telemetry/events/E_009_diveattempt.json",
+        "tools/telemetry/events/E_010_headon.json",
+        "tools/telemetry/events/E_022_carrierdirectionchange.json",
+        "tools/telemetry/metric_guardrails.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_help.lua",
+        "lua/gamemode/cl_hud.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/cl_scoreboard.lua",
+        "lua/gamemode/cl_selectscreen.lua",
+        "lua/gamemode/cl_splashscreen.lua",
+        "lua/gamemode/states/powerstruggle.lua",
+        "lua/gamemode/states/throw.lua",
+        "lua/gamemode/vgui/dex3dnotification.lua",
+        "lua/gamemode/vgui/vgui_gamenotice.lua",
+        "lua/gamemode/vgui/vgui_hudbase.lua",
+        "lua/gamemode/vgui/vgui_hudcommon.lua",
+        "lua/gamemode/vgui/vgui_hudelement.lua",
+        "lua/gamemode/vgui/vgui_hudlayout.lua",
+        "lua/gamemode/vgui/vgui_vote.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "C-010",
-      "message": "Contract ID C-010 referenced in 6 file(s).",
+      "message": "Contract ID C-010 referenced in 9 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_deathnotice.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/obj_gamemanager.lua"
+        "tools/scenario harness/scenarios/S-012_respawn_rejoin.json",
+        "tools/scenario harness/scenarios/S-014_score_counter_attack.json",
+        "tools/telemetry/events/E_006_playerrecovered.json",
+        "tools/telemetry/events/E_020_playerrejoinscontest.json",
+        "tools/telemetry/metric_guardrails.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_deathnotice.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/obj_gamemanager.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "C-011",
-      "message": "Contract ID C-011 referenced in 4 file(s).",
+      "message": "Contract ID C-011 referenced in 7 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Contract Validator/validate_contract.py",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "tools/contract validator/validate_contract.py",
+        "tools/telemetry/events/E_001_tackleresolve.json",
+        "tools/telemetry/events/E_005_playerknockdown.json",
+        "tools/telemetry/events/E_006_playerrecovered.json",
+        "tools/telemetry/events/E_014_routebreakout.json",
+        "tools/telemetry/metric_guardrails.json",
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-110",
-      "message": "Contract ID M-110 referenced in 19 file(s).",
+      "message": "Contract ID M-110 referenced in 17 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/entities/entities/status__base/cl_init.lua",
-        "Lua/entities/entities/status__base/init.lua",
-        "Lua/entities/entities/status__base/shared.lua",
-        "Lua/entities/entities/status_boozed.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/cl_obj_player_extend.lua",
-        "Lua/gamemode/obj_bot.lua",
-        "Lua/gamemode/obj_player.lua",
-        "Lua/gamemode/player_extension.lua",
-        "Lua/gamemode/sh_obj_player_extend.lua",
-        "Lua/gamemode/states/divetackle.lua",
-        "Lua/gamemode/states/movement.lua",
-        "Lua/gamemode/states/powerstruggle.lua",
-        "Lua/gamemode/states/punch.lua",
-        "Lua/gamemode/sv_bots.lua",
-        "Lua/gamemode/sv_obj_player_extend.lua"
+        "lua/EFT.md",
+        "lua/entities/entities/status__base/cl_init.lua",
+        "lua/entities/entities/status__base/init.lua",
+        "lua/entities/entities/status__base/shared.lua",
+        "lua/entities/entities/status_boozed.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/cl_obj_player_extend.lua",
+        "lua/gamemode/obj_bot.lua",
+        "lua/gamemode/obj_player.lua",
+        "lua/gamemode/player_extension.lua",
+        "lua/gamemode/sh_obj_player_extend.lua",
+        "lua/gamemode/states/divetackle.lua",
+        "lua/gamemode/states/movement.lua",
+        "lua/gamemode/states/powerstruggle.lua",
+        "lua/gamemode/states/punch.lua",
+        "lua/gamemode/sv_bots.lua",
+        "lua/gamemode/sv_obj_player_extend.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-120",
-      "message": "Contract ID M-120 referenced in 10 file(s).",
+      "message": "Contract ID M-120 referenced in 8 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/entities/entities/trigger_knockdown.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/obj_player.lua",
-        "Lua/gamemode/states/divetackle.lua",
-        "Lua/gamemode/states/knockdownrecover.lua",
-        "Lua/gamemode/states/knockeddown.lua",
-        "Lua/gamemode/states/spinnyknockdown.lua"
+        "lua/EFT.md",
+        "lua/entities/entities/trigger_knockdown.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/obj_player.lua",
+        "lua/gamemode/states/divetackle.lua",
+        "lua/gamemode/states/knockdownrecover.lua",
+        "lua/gamemode/states/knockeddown.lua",
+        "lua/gamemode/states/spinnyknockdown.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-130",
-      "message": "Contract ID M-130 referenced in 16 file(s).",
+      "message": "Contract ID M-130 referenced in 15 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/entities/entities/point_divetackletrigger.lua",
-        "Lua/entities/entities/projectile_arcanewand/cl_init.lua",
-        "Lua/entities/entities/projectile_arcanewand/init.lua",
-        "Lua/entities/entities/projectile_arcanewand/shared.lua",
-        "Lua/entities/weapons/weapon_eft.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/obj_player.lua",
-        "Lua/gamemode/states/arcanewandattack.lua",
-        "Lua/gamemode/states/beatingstickattack.lua",
-        "Lua/gamemode/states/bigpoleattack.lua",
-        "Lua/gamemode/states/powerstruggle.lua",
-        "Lua/gamemode/states/powerstrugglelose.lua",
-        "Lua/gamemode/states/powerstrugglewin.lua"
+        "tools/scenario harness/scenarios/S-001_goal_line_stand.json",
+        "lua/EFT.md",
+        "lua/entities/entities/point_divetackletrigger.lua",
+        "lua/entities/entities/projectile_arcanewand/cl_init.lua",
+        "lua/entities/entities/projectile_arcanewand/init.lua",
+        "lua/entities/entities/projectile_arcanewand/shared.lua",
+        "lua/entities/weapons/weapon_eft.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/obj_player.lua",
+        "lua/gamemode/states/arcanewandattack.lua",
+        "lua/gamemode/states/beatingstickattack.lua",
+        "lua/gamemode/states/bigpoleattack.lua",
+        "lua/gamemode/states/powerstruggle.lua",
+        "lua/gamemode/states/powerstrugglelose.lua",
+        "lua/gamemode/states/powerstrugglewin.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-135",
-      "message": "Contract ID M-135 referenced in 3 file(s).",
+      "message": "Contract ID M-135 referenced in 1 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-140",
-      "message": "Contract ID M-140 referenced in 17 file(s).",
+      "message": "Contract ID M-140 referenced in 15 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/entities/entities/prop_ball/init.lua",
-        "Lua/entities/entities/prop_carry_arcanewand.lua",
-        "Lua/entities/entities/prop_carry_barrel.lua",
-        "Lua/entities/entities/prop_carry_base/cl_init.lua",
-        "Lua/entities/entities/prop_carry_base/init.lua",
-        "Lua/entities/entities/prop_carry_base/shared.lua",
-        "Lua/entities/entities/prop_carry_beatingstick.lua",
-        "Lua/entities/entities/prop_carry_bigpole.lua",
-        "Lua/entities/entities/prop_carry_boozebottle.lua",
-        "Lua/entities/entities/prop_carry_car.lua",
-        "Lua/entities/entities/prop_carry_melon.lua",
-        "Lua/entities/entities/prop_carry_melondriver.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/obj_ball.lua"
+        "lua/EFT.md",
+        "lua/entities/entities/prop_ball/init.lua",
+        "lua/entities/entities/prop_carry_arcanewand.lua",
+        "lua/entities/entities/prop_carry_barrel.lua",
+        "lua/entities/entities/prop_carry_base/cl_init.lua",
+        "lua/entities/entities/prop_carry_base/init.lua",
+        "lua/entities/entities/prop_carry_base/shared.lua",
+        "lua/entities/entities/prop_carry_beatingstick.lua",
+        "lua/entities/entities/prop_carry_bigpole.lua",
+        "lua/entities/entities/prop_carry_boozebottle.lua",
+        "lua/entities/entities/prop_carry_car.lua",
+        "lua/entities/entities/prop_carry_melon.lua",
+        "lua/entities/entities/prop_carry_melondriver.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/obj_ball.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-145",
-      "message": "Contract ID M-145 referenced in 3 file(s).",
+      "message": "Contract ID M-145 referenced in 1 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-150",
-      "message": "Contract ID M-150 referenced in 6 file(s).",
+      "message": "Contract ID M-150 referenced in 4 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/entities/entities/prop_ball/init.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/obj_ball.lua"
+        "lua/EFT.md",
+        "lua/entities/entities/prop_ball/init.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/obj_ball.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-160",
-      "message": "Contract ID M-160 referenced in 5 file(s).",
+      "message": "Contract ID M-160 referenced in 3 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/states/throw.lua"
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/states/throw.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-170",
-      "message": "Contract ID M-170 referenced in 9 file(s).",
+      "message": "Contract ID M-170 referenced in 8 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/entities/entities/env_teamsound.lua",
-        "Lua/entities/entities/trigger_ballreset.lua",
-        "Lua/entities/entities/trigger_goal.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/obj_ball.lua",
-        "Lua/gamemode/obj_gamemanager.lua"
+        "tools/scenario harness/scenarios/S-002_panic_short_pass.json",
+        "lua/EFT.md",
+        "lua/entities/entities/env_teamsound.lua",
+        "lua/entities/entities/trigger_ballreset.lua",
+        "lua/entities/entities/trigger_goal.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/obj_ball.lua",
+        "lua/gamemode/obj_gamemanager.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-175",
-      "message": "Contract ID M-175 referenced in 3 file(s).",
+      "message": "Contract ID M-175 referenced in 1 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-178",
-      "message": "Contract ID M-178 referenced in 3 file(s).",
+      "message": "Contract ID M-178 referenced in 1 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-179",
-      "message": "Contract ID M-179 referenced in 3 file(s).",
+      "message": "Contract ID M-179 referenced in 1 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-180",
-      "message": "Contract ID M-180 referenced in 8 file(s).",
+      "message": "Contract ID M-180 referenced in 6 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/entities/entities/trigger_goal.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/obj_gamemanager.lua",
-        "Lua/gamemode/round_controller.lua",
-        "Lua/gamemode/sh_roundtransitions.lua"
+        "lua/EFT.md",
+        "lua/entities/entities/trigger_goal.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/obj_gamemanager.lua",
+        "lua/gamemode/round_controller.lua",
+        "lua/gamemode/sh_roundtransitions.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-190",
-      "message": "Contract ID M-190 referenced in 3 file(s).",
+      "message": "Contract ID M-190 referenced in 4 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "tools/scenario harness/scenarios/S-001_goal_line_stand.json",
+        "tools/scenario harness/scenarios/S-021_slam_dunk_hoop_decision.json",
+        "tools/telemetry/events/E_023_scoringmethoddetected.json",
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-195",
-      "message": "Contract ID M-195 referenced in 3 file(s).",
+      "message": "Contract ID M-195 referenced in 1 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-198",
-      "message": "Contract ID M-198 referenced in 3 file(s).",
+      "message": "Contract ID M-198 referenced in 1 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-199",
-      "message": "Contract ID M-199 referenced in 3 file(s).",
+      "message": "Contract ID M-199 referenced in 1 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "P-010",
-      "message": "Contract ID P-010 referenced in 45 file(s).",
+      "message": "Contract ID P-010 referenced in 43 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Contract Validator/validate_contract.py",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/entities/entities/status_jersey/cl_init.lua",
-        "Lua/entities/entities/status_jersey/init.lua",
-        "Lua/entities/entities/status_jersey/shared.lua",
-        "Lua/gamemode/animationsapi/boneanimlib.lua",
-        "Lua/gamemode/animationsapi/cl_boneanimlib.lua",
-        "Lua/gamemode/animationsapi/mocap_controller.lua",
-        "Lua/gamemode/animationsapi/sh_boneanimlib.lua",
-        "Lua/gamemode/animationsapi/sh_mocap.lua",
-        "Lua/gamemode/animationsapi/sv_mocap.lua",
-        "Lua/gamemode/cl_help.lua",
-        "Lua/gamemode/cl_hud.lua",
-        "Lua/gamemode/cl_init.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/cl_scoreboard.lua",
-        "Lua/gamemode/cl_selectscreen.lua",
-        "Lua/gamemode/cl_splashscreen.lua",
-        "Lua/gamemode/class_default.lua",
-        "Lua/gamemode/init.lua",
-        "Lua/gamemode/lib/class.lua",
-        "Lua/gamemode/lib/event.lua",
-        "Lua/gamemode/lib/promise.lua",
-        "Lua/gamemode/lib/SBOX_MAPPING.lua",
-        "Lua/gamemode/obj_network.lua",
-        "Lua/gamemode/player_class.lua",
-        "Lua/gamemode/player_colours.lua",
-        "Lua/gamemode/sh_animations.lua",
-        "Lua/gamemode/sh_globals.lua",
-        "Lua/gamemode/sh_states.lua",
-        "Lua/gamemode/sh_translate.lua",
-        "Lua/gamemode/shared.lua",
-        "Lua/gamemode/states/preround.lua",
-        "Lua/gamemode/sv_bot_pathfinding.lua",
-        "Lua/gamemode/sv_security.lua",
-        "Lua/gamemode/utility.lua",
-        "Lua/gamemode/vgui/dex3dnotification.lua",
-        "Lua/gamemode/vgui/vgui_gamenotice.lua",
-        "Lua/gamemode/vgui/vgui_hudbase.lua",
-        "Lua/gamemode/vgui/vgui_hudcommon.lua",
-        "Lua/gamemode/vgui/vgui_hudelement.lua",
-        "Lua/gamemode/vgui/vgui_hudlayout.lua",
-        "Lua/gamemode/vgui/vgui_vote.lua"
+        "tools/contract validator/validate_contract.py",
+        "lua/EFT.md",
+        "lua/entities/entities/status_jersey/cl_init.lua",
+        "lua/entities/entities/status_jersey/init.lua",
+        "lua/entities/entities/status_jersey/shared.lua",
+        "lua/gamemode/animationsapi/boneanimlib.lua",
+        "lua/gamemode/animationsapi/cl_boneanimlib.lua",
+        "lua/gamemode/animationsapi/mocap_controller.lua",
+        "lua/gamemode/animationsapi/sh_boneanimlib.lua",
+        "lua/gamemode/animationsapi/sh_mocap.lua",
+        "lua/gamemode/animationsapi/sv_mocap.lua",
+        "lua/gamemode/cl_help.lua",
+        "lua/gamemode/cl_hud.lua",
+        "lua/gamemode/cl_init.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/cl_scoreboard.lua",
+        "lua/gamemode/cl_selectscreen.lua",
+        "lua/gamemode/cl_splashscreen.lua",
+        "lua/gamemode/class_default.lua",
+        "lua/gamemode/init.lua",
+        "lua/gamemode/lib/class.lua",
+        "lua/gamemode/lib/event.lua",
+        "lua/gamemode/lib/promise.lua",
+        "lua/gamemode/lib/SBOX_MAPPING.lua",
+        "lua/gamemode/obj_network.lua",
+        "lua/gamemode/player_class.lua",
+        "lua/gamemode/player_colours.lua",
+        "lua/gamemode/sh_animations.lua",
+        "lua/gamemode/sh_globals.lua",
+        "lua/gamemode/sh_states.lua",
+        "lua/gamemode/sh_translate.lua",
+        "lua/gamemode/shared.lua",
+        "lua/gamemode/states/preround.lua",
+        "lua/gamemode/sv_bot_pathfinding.lua",
+        "lua/gamemode/sv_security.lua",
+        "lua/gamemode/utility.lua",
+        "lua/gamemode/vgui/dex3dnotification.lua",
+        "lua/gamemode/vgui/vgui_gamenotice.lua",
+        "lua/gamemode/vgui/vgui_hudbase.lua",
+        "lua/gamemode/vgui/vgui_hudcommon.lua",
+        "lua/gamemode/vgui/vgui_hudelement.lua",
+        "lua/gamemode/vgui/vgui_hudlayout.lua",
+        "lua/gamemode/vgui/vgui_vote.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "P-020",
-      "message": "Contract ID P-020 referenced in 9 file(s).",
+      "message": "Contract ID P-020 referenced in 7 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/entities/entities/trigger_knockdown.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/obj_gamemanager.lua",
-        "Lua/gamemode/states/knockdownrecover.lua",
-        "Lua/gamemode/states/punch.lua",
-        "Lua/gamemode/states/spinnyknockdown.lua"
+        "lua/EFT.md",
+        "lua/entities/entities/trigger_knockdown.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/obj_gamemanager.lua",
+        "lua/gamemode/states/knockdownrecover.lua",
+        "lua/gamemode/states/punch.lua",
+        "lua/gamemode/states/spinnyknockdown.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "P-030",
-      "message": "Contract ID P-030 referenced in 8 file(s).",
+      "message": "Contract ID P-030 referenced in 6 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/cl_obj_player_extend.lua",
-        "Lua/gamemode/player_extension.lua",
-        "Lua/gamemode/sh_obj_player_extend.lua",
-        "Lua/gamemode/sv_obj_player_extend.lua"
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/cl_obj_player_extend.lua",
+        "lua/gamemode/player_extension.lua",
+        "lua/gamemode/sh_obj_player_extend.lua",
+        "lua/gamemode/sv_obj_player_extend.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "P-040",
-      "message": "Contract ID P-040 referenced in 8 file(s).",
+      "message": "Contract ID P-040 referenced in 6 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/entities/entities/info_player_blue.lua",
-        "Lua/entities/entities/info_player_red.lua",
-        "Lua/entities/entities/info_player_spectator.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/states/punch.lua"
+        "lua/EFT.md",
+        "lua/entities/entities/info_player_blue.lua",
+        "lua/entities/entities/info_player_red.lua",
+        "lua/entities/entities/info_player_spectator.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/states/punch.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "P-050",
-      "message": "Contract ID P-050 referenced in 10 file(s).",
+      "message": "Contract ID P-050 referenced in 8 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/cl_obj_player_extend.lua",
-        "Lua/gamemode/obj_player.lua",
-        "Lua/gamemode/player_extension.lua",
-        "Lua/gamemode/sh_obj_player_extend.lua",
-        "Lua/gamemode/states/movement.lua",
-        "Lua/gamemode/sv_obj_player_extend.lua"
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/cl_obj_player_extend.lua",
+        "lua/gamemode/obj_player.lua",
+        "lua/gamemode/player_extension.lua",
+        "lua/gamemode/sh_obj_player_extend.lua",
+        "lua/gamemode/states/movement.lua",
+        "lua/gamemode/sv_obj_player_extend.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "P-060",
-      "message": "Contract ID P-060 referenced in 12 file(s).",
+      "message": "Contract ID P-060 referenced in 14 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Contract Validator/validate_contract.py",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/obj_bot.lua",
-        "Lua/gamemode/obj_player.lua",
-        "Lua/gamemode/sh_voice.lua",
-        "Lua/gamemode/states/arcanewandattack.lua",
-        "Lua/gamemode/states/beatingstickattack.lua",
-        "Lua/gamemode/states/bigpoleattack.lua",
-        "Lua/gamemode/sv_bots.lua"
+        "tools/contract validator/validate_contract.py",
+        "tools/scenario harness/scenarios/S-009_head_on_speed_duel.json",
+        "tools/telemetry/events/E_001_tackleresolve.json",
+        "tools/telemetry/events/E_010_headon.json",
+        "tools/telemetry/metric_guardrails.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/obj_bot.lua",
+        "lua/gamemode/obj_player.lua",
+        "lua/gamemode/sh_voice.lua",
+        "lua/gamemode/states/arcanewandattack.lua",
+        "lua/gamemode/states/beatingstickattack.lua",
+        "lua/gamemode/states/bigpoleattack.lua",
+        "lua/gamemode/sv_bots.lua"
       ]
     },
     {
@@ -638,12 +650,12 @@
       "id": "P-070",
       "message": "Contract ID P-070 referenced in 6 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/states/powerstruggle.lua",
-        "Lua/gamemode/states/throw.lua"
+        "tools/telemetry/events/E_008_throwattempt.json",
+        "tools/telemetry/metric_guardrails.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/states/powerstruggle.lua",
+        "lua/gamemode/states/throw.lua"
       ]
     },
     {
@@ -652,99 +664,103 @@
       "id": "P-080",
       "message": "Contract ID P-080 referenced in 47 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/entities/effects/ballreset.lua",
-        "Lua/entities/effects/blitzballhit.lua",
-        "Lua/entities/effects/bloodstream.lua",
-        "Lua/entities/effects/chargehit.lua",
-        "Lua/entities/effects/exp_boozebottle.lua",
-        "Lua/entities/effects/explosion_arcanewand.lua",
-        "Lua/entities/effects/hit_beatingstick.lua",
-        "Lua/entities/effects/hit_bigpole.lua",
-        "Lua/entities/effects/playergibs.lua",
-        "Lua/entities/effects/powerstrugglehit.lua",
-        "Lua/entities/effects/punchhit.lua",
-        "Lua/entities/effects/wallslam.lua",
-        "Lua/entities/entities/prop_ball/cl_init.lua",
-        "Lua/entities/entities/prop_ball/init.lua",
-        "Lua/entities/entities/prop_carry_arcanewand.lua",
-        "Lua/entities/entities/prop_carry_barrel.lua",
-        "Lua/entities/entities/prop_carry_beatingstick.lua",
-        "Lua/entities/entities/prop_carry_bigpole.lua",
-        "Lua/entities/entities/prop_carry_boozebottle.lua",
-        "Lua/entities/entities/prop_carry_car.lua",
-        "Lua/entities/entities/prop_carry_melon.lua",
-        "Lua/entities/entities/prop_carry_melondriver.lua",
-        "Lua/gamemode/animationsapi/boneanimlib.lua",
-        "Lua/gamemode/animationsapi/cl_animeditor.lua",
-        "Lua/gamemode/animationsapi/sh_boneanimlib.lua",
-        "Lua/gamemode/cl_draw.lua",
-        "Lua/gamemode/cl_gmchanger.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/cl_notify.lua",
-        "Lua/gamemode/cl_obj_entity_extend.lua",
-        "Lua/gamemode/cl_postprocess.lua",
-        "Lua/gamemode/languages/english.lua",
-        "Lua/gamemode/languages/spanish.lua",
-        "Lua/gamemode/obj_ball.lua",
-        "Lua/gamemode/obj_viewmodel_hud.lua",
-        "Lua/gamemode/round_transitions/slide.lua",
-        "Lua/gamemode/server/sv_match_recorder.lua",
-        "Lua/gamemode/sh_obj_entity_extend.lua",
-        "Lua/gamemode/sh_voice.lua",
-        "Lua/gamemode/skin.lua",
-        "Lua/gamemode/states/wave.lua",
-        "Lua/gamemode/sv_emotes.lua",
-        "Lua/gamemode/sv_gmchanger.lua",
-        "Lua/gamemode/sv_spectator.lua"
+        "tools/scenario harness/scenarios/S-018_powerup_route.json",
+        "tools/telemetry/events/E_012_powerupactivated.json",
+        "lua/EFT.md",
+        "lua/entities/effects/ballreset.lua",
+        "lua/entities/effects/blitzballhit.lua",
+        "lua/entities/effects/bloodstream.lua",
+        "lua/entities/effects/chargehit.lua",
+        "lua/entities/effects/exp_boozebottle.lua",
+        "lua/entities/effects/explosion_arcanewand.lua",
+        "lua/entities/effects/hit_beatingstick.lua",
+        "lua/entities/effects/hit_bigpole.lua",
+        "lua/entities/effects/playergibs.lua",
+        "lua/entities/effects/powerstrugglehit.lua",
+        "lua/entities/effects/punchhit.lua",
+        "lua/entities/effects/wallslam.lua",
+        "lua/entities/entities/prop_ball/cl_init.lua",
+        "lua/entities/entities/prop_ball/init.lua",
+        "lua/entities/entities/prop_carry_arcanewand.lua",
+        "lua/entities/entities/prop_carry_barrel.lua",
+        "lua/entities/entities/prop_carry_beatingstick.lua",
+        "lua/entities/entities/prop_carry_bigpole.lua",
+        "lua/entities/entities/prop_carry_boozebottle.lua",
+        "lua/entities/entities/prop_carry_car.lua",
+        "lua/entities/entities/prop_carry_melon.lua",
+        "lua/entities/entities/prop_carry_melondriver.lua",
+        "lua/gamemode/animationsapi/boneanimlib.lua",
+        "lua/gamemode/animationsapi/cl_animeditor.lua",
+        "lua/gamemode/animationsapi/sh_boneanimlib.lua",
+        "lua/gamemode/cl_draw.lua",
+        "lua/gamemode/cl_gmchanger.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/cl_notify.lua",
+        "lua/gamemode/cl_obj_entity_extend.lua",
+        "lua/gamemode/cl_postprocess.lua",
+        "lua/gamemode/languages/english.lua",
+        "lua/gamemode/languages/spanish.lua",
+        "lua/gamemode/obj_ball.lua",
+        "lua/gamemode/obj_viewmodel_hud.lua",
+        "lua/gamemode/round_transitions/slide.lua",
+        "lua/gamemode/server/sv_match_recorder.lua",
+        "lua/gamemode/sh_obj_entity_extend.lua",
+        "lua/gamemode/sh_voice.lua",
+        "lua/gamemode/skin.lua",
+        "lua/gamemode/states/wave.lua",
+        "lua/gamemode/sv_emotes.lua",
+        "lua/gamemode/sv_gmchanger.lua",
+        "lua/gamemode/sv_spectator.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "P-090",
-      "message": "Contract ID P-090 referenced in 6 file(s).",
+      "message": "Contract ID P-090 referenced in 9 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/entities/entities/trigger_ballreset.lua",
-        "Lua/gamemode/cl_deathnotice.lua",
-        "Lua/gamemode/cl_manifest_data.lua"
+        "tools/scenario harness/scenarios/S-008_intentional_hazard_reset.json",
+        "tools/scenario harness/scenarios/S-018_powerup_route.json",
+        "tools/telemetry/events/E_004_ballreset.json",
+        "tools/telemetry/events/E_011_hazardcontact.json",
+        "tools/telemetry/events/E_012_powerupactivated.json",
+        "lua/EFT.md",
+        "lua/entities/entities/trigger_ballreset.lua",
+        "lua/gamemode/cl_deathnotice.lua",
+        "lua/gamemode/cl_manifest_data.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "P-100",
-      "message": "Contract ID P-100 referenced in 24 file(s).",
+      "message": "Contract ID P-100 referenced in 25 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/entities/effects/ballreset.lua",
-        "Lua/entities/effects/blitzballhit.lua",
-        "Lua/entities/effects/bloodstream.lua",
-        "Lua/entities/effects/chargehit.lua",
-        "Lua/entities/effects/exp_boozebottle.lua",
-        "Lua/entities/effects/explosion_arcanewand.lua",
-        "Lua/entities/effects/hit_beatingstick.lua",
-        "Lua/entities/effects/hit_bigpole.lua",
-        "Lua/entities/effects/playergibs.lua",
-        "Lua/entities/effects/powerstrugglehit.lua",
-        "Lua/entities/effects/punchhit.lua",
-        "Lua/entities/effects/wallslam.lua",
-        "Lua/entities/entities/trigger_goal.lua",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/round_controller.lua",
-        "Lua/gamemode/sh_roundtransitions.lua",
-        "Lua/gamemode/sh_voice.lua",
-        "Lua/gamemode/states/divetackle.lua",
-        "Lua/gamemode/states/knockeddown.lua",
-        "Lua/gamemode/states/powerstrugglelose.lua",
-        "Lua/gamemode/sv_emotes.lua"
+        "tools/telemetry/events/E_007_goalscored.json",
+        "tools/telemetry/events/E_013_scrumdetected.json",
+        "tools/telemetry/metric_guardrails.json",
+        "lua/EFT.md",
+        "lua/entities/effects/ballreset.lua",
+        "lua/entities/effects/blitzballhit.lua",
+        "lua/entities/effects/bloodstream.lua",
+        "lua/entities/effects/chargehit.lua",
+        "lua/entities/effects/exp_boozebottle.lua",
+        "lua/entities/effects/explosion_arcanewand.lua",
+        "lua/entities/effects/hit_beatingstick.lua",
+        "lua/entities/effects/hit_bigpole.lua",
+        "lua/entities/effects/playergibs.lua",
+        "lua/entities/effects/powerstrugglehit.lua",
+        "lua/entities/effects/punchhit.lua",
+        "lua/entities/effects/wallslam.lua",
+        "lua/entities/entities/trigger_goal.lua",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/round_controller.lua",
+        "lua/gamemode/sh_roundtransitions.lua",
+        "lua/gamemode/sh_voice.lua",
+        "lua/gamemode/states/divetackle.lua",
+        "lua/gamemode/states/knockeddown.lua",
+        "lua/gamemode/states/powerstrugglelose.lua",
+        "lua/gamemode/sv_emotes.lua"
       ]
     },
     {
@@ -753,294 +769,365 @@
       "id": "P-900",
       "message": "Contract ID P-900 referenced in 5 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Contract Validator/README.md",
-        "Tools/Contract Validator/validate_contract.py",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "tools/contract validator/README.md",
+        "tools/contract validator/validate_contract.py",
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenario_schema.md",
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "P-910",
-      "message": "Contract ID P-910 referenced in 3 file(s).",
+      "message": "Contract ID P-910 referenced in 1 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "P-950",
-      "message": "Contract ID P-950 referenced in 7 file(s).",
+      "message": "Contract ID P-950 referenced in 9 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Contract Validator/validate_contract.py",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/obj_ball.lua",
-        "Lua/gamemode/obj_player.lua"
+        "tools/contract validator/validate_contract.py",
+        "tools/scenario harness/scenario_schema.md",
+        "tools/scenario harness/scenarios/S-006_midfield_collection.json",
+        "tools/telemetry/events/E_002_possessiontransfer.json",
+        "tools/telemetry/metric_guardrails.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/obj_ball.lua",
+        "lua/gamemode/obj_player.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-001",
-      "message": "Contract ID S-001 referenced in 5 file(s).",
+      "message": "Contract ID S-001 referenced in 13 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Contract Validator/validate_contract.py",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/obj_ball.lua"
+        "tools/contract validator/validate_contract.py",
+        "tools/scenario harness/README.md",
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenario_schema.md",
+        "tools/scenario harness/scenarios/S-001_goal_line_stand.json",
+        "tools/scenario harness/scenarios/S-010_last_second_touchdown_stop.json",
+        "tools/simulation/README.md",
+        "tools/simulation/schemas.py",
+        "tools/telemetry/events/E_001_tackleresolve.json",
+        "tools/telemetry/events/E_002_possessiontransfer.json",
+        "tools/telemetry/events/E_007_goalscored.json",
+        "lua/EFT.md",
+        "lua/gamemode/obj_ball.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-002",
-      "message": "Contract ID S-002 referenced in 4 file(s).",
+      "message": "Contract ID S-002 referenced in 7 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/states/throw.lua"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-002_panic_short_pass.json",
+        "tools/telemetry/events/E_002_possessiontransfer.json",
+        "tools/telemetry/events/E_003_ballloose.json",
+        "tools/telemetry/events/E_008_throwattempt.json",
+        "lua/EFT.md",
+        "lua/gamemode/states/throw.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-003",
-      "message": "Contract ID S-003 referenced in 4 file(s).",
+      "message": "Contract ID S-003 referenced in 7 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/states/throw.lua"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-003_long_throw_recovery.json",
+        "tools/telemetry/events/E_003_ballloose.json",
+        "tools/telemetry/events/E_008_throwattempt.json",
+        "tools/telemetry/events/E_016_balllanded.json",
+        "lua/EFT.md",
+        "lua/gamemode/states/throw.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-004",
-      "message": "Contract ID S-004 referenced in 3 file(s).",
+      "message": "Contract ID S-004 referenced in 5 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-004_jump_flung_fumble.json",
+        "tools/telemetry/events/E_003_ballloose.json",
+        "tools/telemetry/events/E_017_playerairborne.json",
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-005",
-      "message": "Contract ID S-005 referenced in 7 file(s).",
+      "message": "Contract ID S-005 referenced in 14 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/obj_bot.lua",
-        "Lua/gamemode/obj_player.lua",
-        "Lua/gamemode/states/powerstrugglelose.lua"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-005_swarm_collapse.json",
+        "tools/simulation/README.md",
+        "tools/simulation/schemas.py",
+        "tools/telemetry/events/E_001_tackleresolve.json",
+        "tools/telemetry/events/E_002_possessiontransfer.json",
+        "tools/telemetry/events/E_003_ballloose.json",
+        "tools/telemetry/events/E_005_playerknockdown.json",
+        "tools/telemetry/events/E_013_scrumdetected.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/obj_bot.lua",
+        "lua/gamemode/obj_player.lua",
+        "lua/gamemode/states/powerstrugglelose.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-006",
-      "message": "Contract ID S-006 referenced in 3 file(s).",
+      "message": "Contract ID S-006 referenced in 4 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-006_midfield_collection.json",
+        "tools/telemetry/events/E_002_possessiontransfer.json",
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-007",
-      "message": "Contract ID S-007 referenced in 3 file(s).",
+      "message": "Contract ID S-007 referenced in 6 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-007_escort_clearing.json",
+        "tools/telemetry/events/E_001_tackleresolve.json",
+        "tools/telemetry/events/E_002_possessiontransfer.json",
+        "tools/telemetry/events/E_005_playerknockdown.json",
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-008",
-      "message": "Contract ID S-008 referenced in 3 file(s).",
+      "message": "Contract ID S-008 referenced in 5 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-008_intentional_hazard_reset.json",
+        "tools/telemetry/events/E_004_ballreset.json",
+        "tools/telemetry/events/E_011_hazardcontact.json",
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-009",
-      "message": "Contract ID S-009 referenced in 5 file(s).",
+      "message": "Contract ID S-009 referenced in 11 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/obj_player.lua"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-009_head_on_speed_duel.json",
+        "tools/simulation/README.md",
+        "tools/simulation/schemas.py",
+        "tools/telemetry/events/E_001_tackleresolve.json",
+        "tools/telemetry/events/E_002_possessiontransfer.json",
+        "tools/telemetry/events/E_005_playerknockdown.json",
+        "tools/telemetry/events/E_010_headon.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/obj_player.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-010",
-      "message": "Contract ID S-010 referenced in 5 file(s).",
+      "message": "Contract ID S-010 referenced in 7 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/entities/entities/trigger_goal.lua",
-        "Lua/gamemode/cl_manifest_data.lua"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-010_last_second_touchdown_stop.json",
+        "tools/telemetry/events/E_001_tackleresolve.json",
+        "tools/telemetry/events/E_007_goalscored.json",
+        "lua/EFT.md",
+        "lua/entities/entities/trigger_goal.lua",
+        "lua/gamemode/cl_manifest_data.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-011",
-      "message": "Contract ID S-011 referenced in 4 file(s).",
+      "message": "Contract ID S-011 referenced in 7 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/obj_ball.lua"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-011_loose_ball_bounce.json",
+        "tools/telemetry/events/E_003_ballloose.json",
+        "tools/telemetry/events/E_015_ballbounce.json",
+        "tools/telemetry/events/E_016_balllanded.json",
+        "lua/EFT.md",
+        "lua/gamemode/obj_ball.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-012",
-      "message": "Contract ID S-012 referenced in 3 file(s).",
+      "message": "Contract ID S-012 referenced in 7 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-012_respawn_rejoin.json",
+        "tools/telemetry/events/E_003_ballloose.json",
+        "tools/telemetry/events/E_018_playerdeath.json",
+        "tools/telemetry/events/E_019_playerrespawn.json",
+        "tools/telemetry/events/E_020_playerrejoinscontest.json",
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-013",
-      "message": "Contract ID S-013 referenced in 3 file(s).",
+      "message": "Contract ID S-013 referenced in 6 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-013_choke_corridor_fight.json",
+        "tools/telemetry/events/E_001_tackleresolve.json",
+        "tools/telemetry/events/E_002_possessiontransfer.json",
+        "tools/telemetry/events/E_005_playerknockdown.json",
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-014",
-      "message": "Contract ID S-014 referenced in 3 file(s).",
+      "message": "Contract ID S-014 referenced in 6 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-014_score_counter_attack.json",
+        "tools/telemetry/events/E_002_possessiontransfer.json",
+        "tools/telemetry/events/E_004_ballreset.json",
+        "tools/telemetry/events/E_007_goalscored.json",
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-015",
-      "message": "Contract ID S-015 referenced in 3 file(s).",
+      "message": "Contract ID S-015 referenced in 5 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-015_tackle_chain.json",
+        "tools/telemetry/events/E_001_tackleresolve.json",
+        "tools/telemetry/events/E_002_possessiontransfer.json",
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-016",
-      "message": "Contract ID S-016 referenced in 3 file(s).",
+      "message": "Contract ID S-016 referenced in 5 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-016_goal_line_intercept.json",
+        "tools/telemetry/events/E_002_possessiontransfer.json",
+        "tools/telemetry/events/E_007_goalscored.json",
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-017",
-      "message": "Contract ID S-017 referenced in 6 file(s).",
+      "message": "Contract ID S-017 referenced in 7 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/obj_ball.lua",
-        "Lua/gamemode/obj_player.lua"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-017_mid_air_catch.json",
+        "tools/telemetry/events/E_017_playerairborne.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/obj_ball.lua",
+        "lua/gamemode/obj_player.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-018",
-      "message": "Contract ID S-018 referenced in 2 file(s).",
+      "message": "Contract ID S-018 referenced in 3 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-018_powerup_route.json",
+        "tools/telemetry/events/E_012_powerupactivated.json"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-019",
-      "message": "Contract ID S-019 referenced in 3 file(s).",
+      "message": "Contract ID S-019 referenced in 5 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-019_carrier_juke.json",
+        "tools/telemetry/events/E_001_tackleresolve.json",
+        "tools/telemetry/events/E_022_carrierdirectionchange.json",
+        "lua/EFT.md"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-020",
-      "message": "Contract ID S-020 referenced in 5 file(s).",
+      "message": "Contract ID S-020 referenced in 7 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/obj_bot.lua",
-        "Lua/gamemode/sv_bots.lua"
+        "tools/indexer/index_external.py",
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-020_bot_positioning.json",
+        "tools/telemetry/events/E_021_botdecision.json",
+        "lua/EFT.md",
+        "lua/gamemode/obj_bot.lua",
+        "lua/gamemode/sv_bots.lua"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-021",
-      "message": "Contract ID S-021 referenced in 2 file(s).",
+      "message": "Contract ID S-021 referenced in 6 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json"
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenarios/S-021_slam_dunk_hoop_decision.json",
+        "tools/simulation/README.md",
+        "tools/simulation/schemas.py",
+        "tools/telemetry/events/E_007_goalscored.json",
+        "tools/telemetry/events/E_023_scoringmethoddetected.json"
       ]
     },
     {
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-022",
-      "message": "Contract ID S-022 referenced in 2 file(s).",
+      "message": "Contract ID S-022 referenced in 9 file(s).",
       "referenced_in": [
-        "Tools/Contract Validator/Output/CONTRACT_REPORT.json",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json"
+        "tools/scenario harness/README.md",
+        "tools/scenario harness/run_scenarios.py",
+        "tools/scenario harness/scenario_schema.md",
+        "tools/scenario harness/scenarios/S-022_bloodbowl_flat_swarm.json",
+        "tools/simulation/README.md",
+        "tools/simulation/schemas.py",
+        "tools/telemetry/events/E_002_possessiontransfer.json",
+        "tools/telemetry/events/E_004_ballreset.json",
+        "tools/telemetry/events/E_005_playerknockdown.json"
       ]
     },
     {
@@ -1054,8 +1141,27 @@
       "message": "Mechanic anchor 'volatile_possession' found.",
       "found_in": [
         "AGENTS.md",
-        "Tools/Observer/observation_schema.md",
-        "Lua/EFT.md"
+        "tools/observer/observation_schema.md",
+        "tools/scenario harness/scenario_schema.md",
+        "tools/scenario harness/scenarios/S-001_goal_line_stand.json",
+        "tools/scenario harness/scenarios/S-002_panic_short_pass.json",
+        "tools/scenario harness/scenarios/S-003_long_throw_recovery.json",
+        "tools/scenario harness/scenarios/S-004_jump_flung_fumble.json",
+        "tools/scenario harness/scenarios/S-005_swarm_collapse.json",
+        "tools/scenario harness/scenarios/S-008_intentional_hazard_reset.json",
+        "tools/scenario harness/scenarios/S-010_last_second_touchdown_stop.json",
+        "tools/scenario harness/scenarios/S-011_loose_ball_bounce.json",
+        "tools/scenario harness/scenarios/S-012_respawn_rejoin.json",
+        "tools/scenario harness/scenarios/S-014_score_counter_attack.json",
+        "tools/scenario harness/scenarios/S-015_tackle_chain.json",
+        "tools/scenario harness/scenarios/S-016_goal_line_intercept.json",
+        "tools/scenario harness/scenarios/S-017_mid_air_catch.json",
+        "tools/scenario harness/scenarios/S-018_powerup_route.json",
+        "tools/scenario harness/scenarios/S-019_carrier_juke.json",
+        "tools/scenario harness/scenarios/S-020_bot_positioning.json",
+        "tools/scenario harness/scenarios/S-021_slam_dunk_hoop_decision.json",
+        "tools/scenario harness/scenarios/S-022_bloodbowl_flat_swarm.json",
+        "lua/EFT.md"
       ]
     },
     {
@@ -1070,7 +1176,7 @@
       "contract_refs": [
         "P-950"
       ],
-      "message": "Mechanic anchor 'automatic_pickup' (terms: ['automatic', 'pickup', 'autograb']) not found in any scanned file. Expected once Game/ is implemented.",
+      "message": "Mechanic anchor 'automatic_pickup' (terms: ['automatic', 'pickup', 'autograb']) not found in any scanned file. Expected once game/ is implemented.",
       "found_in": []
     },
     {
@@ -1084,9 +1190,18 @@
       "found_in": [
         "README.md",
         "AGENTS.md",
-        "Tools/Map Analyzer/analyze_map.py",
-        "Tools/Observer/observation_schema.md",
-        "Lua/EFT.md"
+        "tools/map analyzer/analyze_map.py",
+        "tools/observer/observation_schema.md",
+        "tools/scenario harness/scenario_schema.md",
+        "tools/scenario harness/scenarios/S-001_goal_line_stand.json",
+        "tools/scenario harness/scenarios/S-004_jump_flung_fumble.json",
+        "tools/scenario harness/scenarios/S-007_escort_clearing.json",
+        "tools/scenario harness/scenarios/S-010_last_second_touchdown_stop.json",
+        "tools/scenario harness/scenarios/S-013_choke_corridor_fight.json",
+        "tools/scenario harness/scenarios/S-018_powerup_route.json",
+        "tools/scenario harness/scenarios/S-019_carrier_juke.json",
+        "tools/scenario harness/scenarios/S-022_bloodbowl_flat_swarm.json",
+        "lua/EFT.md"
       ]
     },
     {
@@ -1101,7 +1216,7 @@
       "contract_refs": [
         "P-060"
       ],
-      "message": "Mechanic anchor 'head_on_skill' (terms: ['head.on', 'headon', 'head_on']) not found in any scanned file. Expected once Game/ is implemented.",
+      "message": "Mechanic anchor 'head_on_skill' (terms: ['head.on', 'headon', 'head_on']) not found in any scanned file. Expected once game/ is implemented.",
       "found_in": []
     },
     {
@@ -1115,12 +1230,14 @@
       "found_in": [
         "README.md",
         "AGENTS.md",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Tools/Observer/observation_schema.md",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/states/knockdownrecover.lua",
-        "Lua/gamemode/states/spinnyknockdown.lua"
+        "tools/observer/observation_schema.md",
+        "tools/scenario harness/scenarios/S-012_respawn_rejoin.json",
+        "tools/telemetry/event_schema.md",
+        "tools/telemetry/events/E_005_playerknockdown.json",
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/states/knockdownrecover.lua",
+        "lua/gamemode/states/spinnyknockdown.lua"
       ]
     },
     {
@@ -1133,8 +1250,8 @@
       "message": "Mechanic anchor 'dive' found.",
       "found_in": [
         "README.md",
-        "Lua/EFT.md",
-        "Lua/gamemode/shared.lua"
+        "lua/EFT.md",
+        "lua/gamemode/shared.lua"
       ]
     },
     {
@@ -1148,14 +1265,14 @@
       "found_in": [
         "README.md",
         "AGENTS.md",
-        "Tools/Indexer/Output/CONTRACT_INDEX.json",
-        "Tools/Indexer/Output/LUA_INDEX.json",
-        "Tools/Indexer/Output/SOURCE1_FGD_INDEX.json",
-        "Lua/EFT.md",
-        "Lua/gamemode/cl_manifest_data.lua",
-        "Lua/gamemode/init.lua",
-        "Lua/gamemode/states/powerstruggle.lua",
-        "Lua/gamemode/states/throw.lua"
+        "tools/telemetry/event_schema.md",
+        "tools/telemetry/events/E_008_throwattempt.json",
+        "tools/telemetry/README.md",
+        "lua/EFT.md",
+        "lua/gamemode/cl_manifest_data.lua",
+        "lua/gamemode/init.lua",
+        "lua/gamemode/states/powerstruggle.lua",
+        "lua/gamemode/states/throw.lua"
       ]
     },
     {
@@ -1166,7 +1283,7 @@
       "message": "Mechanic anchor 'jumppad' found.",
       "found_in": [
         "README.md",
-        "Tools/Map Analyzer/semantic_groups.py"
+        "tools/map analyzer/semantic_groups.py"
       ]
     },
     {
@@ -1177,8 +1294,12 @@
       "message": "Mechanic anchor 'ballreset' found.",
       "found_in": [
         "README.md",
-        "Lua/EFT.md",
-        "Lua/gamemode/obj_ball.lua"
+        "tools/scenario harness/scenarios/S-008_intentional_hazard_reset.json",
+        "tools/scenario harness/scenarios/S-014_score_counter_attack.json",
+        "tools/telemetry/event_schema.md",
+        "tools/telemetry/events/E_011_hazardcontact.json",
+        "lua/EFT.md",
+        "lua/gamemode/obj_ball.lua"
       ]
     },
     {
@@ -1192,13 +1313,22 @@
       "found_in": [
         "README.md",
         "AGENTS.md",
-        "Tools/Map Analyzer/compare_logs.py",
-        "Tools/Map Analyzer/gameflow_sim.py",
-        "Tools/Map Analyzer/log_comparison.json",
-        "Tools/Map Analyzer/README.md",
-        "Tools/Observer/observation_schema.md",
-        "Lua/EFT.md",
-        "Lua/README.md"
+        "tools/map analyzer/compare_logs.py",
+        "tools/map analyzer/gameflow_sim.py",
+        "tools/map analyzer/log_comparison.json",
+        "tools/map analyzer/README.md",
+        "tools/observer/observation_schema.md",
+        "tools/scenario harness/scenarios/S-005_swarm_collapse.json",
+        "tools/scenario harness/scenarios/S-013_choke_corridor_fight.json",
+        "tools/scenario harness/scenarios/S-022_bloodbowl_flat_swarm.json",
+        "tools/telemetry/event_schema.md",
+        "tools/telemetry/events/E_013_scrumdetected.json",
+        "tools/telemetry/events/E_014_routebreakout.json",
+        "tools/telemetry/metric_guardrails.json",
+        "tools/telemetry/README.md",
+        "tools/telemetry/validate_telemetry.py",
+        "lua/EFT.md",
+        "lua/README.md"
       ]
     }
   ]

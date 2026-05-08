@@ -84,6 +84,50 @@ When Observer generates a contact sheet (a tiled image of keyframes for fast rev
 
 ---
 
+## Image evidence index
+
+`analyze_images.py` emits a repo-wide image evidence index for curated screenshots and map reference images:
+
+```json
+{
+  "generated_by": "tools/observer",
+  "schema_version": 1,
+  "generated_at": "<ISO-8601 timestamp>",
+  "source_root": "assets/image",
+  "warnings": [],
+  "summary": {},
+  "observations": [
+    {
+      "source_image": "assets/image/slam dunk.jpg",
+      "original_filename": "slam dunk.jpg",
+      "image": {
+        "width": 1920,
+        "height": 1080,
+        "dominant_rgb": [0, 0, 0],
+        "luminance": {},
+        "color_ratios": {}
+      },
+      "inferred_map": {
+        "name": "Slam Dunk",
+        "source": "filename",
+        "confidence": 0.95,
+        "reasons": []
+      },
+      "source_role": "map_poster_reference",
+      "visual_tags": [],
+      "readable_observations": [],
+      "evidence_limits": [],
+      "confidence": "high",
+      "needs_human_review": false
+    }
+  ]
+}
+```
+
+Image observations are visual/readability evidence. They do not prove timing, physics, scoring rates, or route preventability without logs, telemetry, map analysis, or director review.
+
+---
+
 ## Pending items
 
 - Frame extraction implementation (requires `Tools/ffmpeg.exe`)

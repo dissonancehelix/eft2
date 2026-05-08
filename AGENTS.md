@@ -189,11 +189,11 @@ Preferred near-term order:
 1. Keep `AGENTS.md` and `README.md` synced.
 2. Keep `tools/indexer/` runnable and useful.
 3. Keep `tools/map analyzer/` useful and evidence-bound.
-4. Set up `tools/observer/` as a skeleton/contract when needed, but do not deeply run media analysis until requested.
+4. Keep `tools/observer/` able to turn deliberately requested image/media evidence into durable observation artifacts.
 5. Build `tools/contract validator/`.
 6. Build `tools/scenario harness/`.
 7. Build `tools/telemetry/`.
-8. Build `tools/simulation/` later, after map analysis, scenarios, and telemetry schemas can constrain it.
+8. Keep `tools/simulation/` as a readiness/reporting layer until gameplay runtime and telemetry emitters exist.
 9. Scaffold or expand `game/` only when infrastructure can guide Codex/Claude toward correct EFT behavior.
 
 The project may temporarily adjust the order if the user directs it. Do not treat this order as a law; treat it as the current safest path.
@@ -295,13 +295,13 @@ For project tooling:
 
 - Place repo-wide indexer code under `tools/indexer/`.
 - Place analyzer code under `tools/map analyzer/`.
-- Place future observation/media tooling under `tools/observer/`.
+- Place observation/media tooling under `tools/observer/`.
 - Place future validation tooling under `tools/contract validator/`.
 - Place future scenario cases/tests under `tools/scenario harness/`.
 - Place future telemetry schemas/tools under `tools/telemetry/`.
-- Place future simulation tooling under `tools/simulation/`.
+- Place simulation readiness and future simulation tooling under `tools/simulation/`.
 
-Root project/domain spaces use capitals (`game`, `maps`, `lua`, `sbox`, `Tools`, `assets`). Named repo domains/tools/subfolders use normalized display names (`map analyzer`, `Analysis`, `Virtual Perception`, `simulation`). Python script/module filenames may stay lower-case for import/CLI sanity.
+Root project/domain spaces use lowercase names (`game`, `maps`, `lua`, `sbox`, `tools`, `assets`). Named repo domains/tools/subfolders use normalized display names (`map analyzer`, `analysis`, `virtual perception`, `simulation`). Python script/module filenames may stay lower-case for import/CLI sanity.
 
 MCP is optional future work. s&box editor plugins are optional future work. Do not include either unless the user starts that phase.
 
@@ -317,6 +317,8 @@ EFT logic is the sport brain.
 ```
 
 Do not fake Recast output. If Recast integration is pending, write explicit pending status and TODOs.
+
+Simulation readiness is not simulation. `tools/simulation/` may connect scenarios, telemetry schemas, map analysis, virtual perception, per-map simulation folders, and runtime blockers, but it must not claim a scenario is executable or a gameplay result is real until gameplay code and host-side telemetry emitters exist.
 
 Blender, Recast, GMod source, FFmpeg, and other open-source trees may be useful as temporary references/toolkits. Do not turn them into durable EFT2 structure by default. Mine them for useful understanding, generate project-owned artifacts, then recommend deleting/ignoring the raw bulk.
 
