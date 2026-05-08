@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "event_id": "E-014",
+  "event": "RouteBreakout",
+  "category": "canonical_analytic",
+  "description": "Possession escapes high-density conflict into open route (generated analytically).",
+  "contract_refs": [
+    "C-007",
+    "C-011"
+  ],
+  "scenario_refs": [],
+  "payload_fields": {
+    "carrier": "PlayerRef",
+    "exit_position": "[x,y,z]",
+    "scrum_centre": "[x,y,z]",
+    "carrier_speed": "float",
+    "nearest_defender_distance": "float"
+  },
+  "aliases": [],
+  "emit_in_production": true,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

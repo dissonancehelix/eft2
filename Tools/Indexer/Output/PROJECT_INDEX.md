@@ -30,7 +30,7 @@ Do not introduce Engine/ or Runtime/ folders or umbrella names.
 - Observer: present
 - Contract Validator: present
 - Scenario Harness: present
-- Telemetry: pending
+- Telemetry: present
 - Simulation: pending
 
 ## Maps status

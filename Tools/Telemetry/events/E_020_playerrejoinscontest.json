@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "event_id": "E-020",
+  "event": "PlayerRejoinsContest",
+  "category": "extended",
+  "description": "Respawned player enters contest proximity (~300 HU of active ball).",
+  "contract_refs": [
+    "C-010"
+  ],
+  "scenario_refs": [
+    "S-012"
+  ],
+  "payload_fields": {
+    "player": "PlayerRef",
+    "respawn_to_contest_sec": "float",
+    "ball_position": "[x,y,z]",
+    "player_position": "[x,y,z]"
+  },
+  "aliases": [],
+  "emit_in_production": false,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

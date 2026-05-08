@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "event_id": "E-013",
+  "event": "ScrumDetected",
+  "category": "canonical_analytic",
+  "description": "Local high-density contested ball event (generated analytically).",
+  "contract_refs": [
+    "C-007",
+    "P-100"
+  ],
+  "scenario_refs": [
+    "S-005"
+  ],
+  "payload_fields": {
+    "centre": "[x,y,z]",
+    "radius": "float",
+    "player_count": "int",
+    "ball": "BallRef",
+    "duration_sec": "float",
+    "outcome": "breakout|reset|stalemate|still_active"
+  },
+  "aliases": [],
+  "emit_in_production": true,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

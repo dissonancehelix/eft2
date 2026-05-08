@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "event_id": "E-004",
+  "event": "BallReset",
+  "category": "canonical",
+  "description": "Ball repositioned by a game system (hazard, goal, stagnation, admin).",
+  "contract_refs": [
+    "C-007",
+    "P-090"
+  ],
+  "scenario_refs": [
+    "S-008",
+    "S-014",
+    "S-022"
+  ],
+  "payload_fields": {
+    "reason": "hazard|goal|stagnation|admin|out_of_bounds",
+    "reset_position": "[x,y,z]",
+    "previous_position": "[x,y,z]",
+    "previous_holder": "player_id|null"
+  },
+  "aliases": [],
+  "emit_in_production": true,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

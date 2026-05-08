@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "event_id": "E-003",
+  "event": "BallLoose",
+  "category": "canonical",
+  "description": "Ball leaves a holder without a new holder immediately.",
+  "contract_refs": [
+    "C-001",
+    "C-002"
+  ],
+  "scenario_refs": [
+    "S-002",
+    "S-003",
+    "S-004",
+    "S-005",
+    "S-011",
+    "S-012"
+  ],
+  "payload_fields": {
+    "cause": "fumble|throw|tackle|hazard|reset",
+    "from_player": "player_id|null",
+    "ball": "BallRef"
+  },
+  "aliases": [],
+  "emit_in_production": true,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

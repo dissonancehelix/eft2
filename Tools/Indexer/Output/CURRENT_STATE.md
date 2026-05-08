@@ -10,7 +10,7 @@ Factual snapshot — not aspirational.
 - [x] Tools/Observer/ present
 - [x] Tools/Contract Validator/ present
 - [x] Tools/Scenario Harness/ present
-- [ ] Tools/Telemetry/ present
+- [x] Tools/Telemetry/ present
 - [ ] Tools/Simulation/ present
 - [x] SBox/ reference tree present
 - [x] Lua/ source reference present

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "event_id": "E-011",
+  "event": "HazardContact",
+  "category": "canonical",
+  "description": "Player or ball touches hazard or reset-relevant volume.",
+  "contract_refs": [
+    "P-090"
+  ],
+  "scenario_refs": [
+    "S-008"
+  ],
+  "payload_fields": {
+    "contact_type": "player|ball",
+    "player": "player_id|null",
+    "ball": "BallRef",
+    "hazard_entity_id": "string",
+    "hazard_class": "trigger_ballreset|trigger_knockdown|void|other",
+    "result": "knockdown|ball_reset|death|none"
+  },
+  "aliases": [
+    "HazardTrigger"
+  ],
+  "emit_in_production": true,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

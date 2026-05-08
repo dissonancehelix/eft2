@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "event_id": "E-007",
+  "event": "GoalScored",
+  "category": "canonical",
+  "description": "Scoring condition satisfied.",
+  "contract_refs": [
+    "C-004",
+    "P-100"
+  ],
+  "scenario_refs": [
+    "S-001",
+    "S-010",
+    "S-014",
+    "S-016",
+    "S-021"
+  ],
+  "payload_fields": {
+    "scoring_team": "red|blue",
+    "scorer_player": "player_id|null",
+    "scoring_method": "carry|throw|slam|own_goal|other",
+    "score_red": "int",
+    "score_blue": "int",
+    "ball": "BallRef",
+    "goal_entity_id": "string"
+  },
+  "aliases": [
+    "GoalScore"
+  ],
+  "emit_in_production": true,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

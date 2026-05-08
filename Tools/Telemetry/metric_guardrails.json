@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "generated_by": "Tools/Telemetry",
+  "description": "Healthy-ish metric targets inherited from EFT original data. Treat as drift alarms, not laws. A match outside these ranges warrants investigation, not automatic rejection.",
+  "source": "README.md Part V — Canonical Events And Telemetry",
+  "guardrails": [
+    {
+      "metric_id": "G-001",
+      "name": "average_possession_duration_sec",
+      "description": "Mean duration a player holds the ball before losing it (fumble, tackle, throw, goal).",
+      "healthy_range": { "min": 1.0, "max": 3.0 },
+      "unit": "seconds",
+      "source_events": ["PossessionTransfer", "BallLoose"],
+      "drift_alarm": "If average exceeds 3s, possession is becoming sticky. If under 1s, possession is too chaotic to be readable.",
+      "contract_refs": ["C-001", "C-002", "P-950"]
+    },
+    {
+      "metric_id": "G-002",
+      "name": "tackle_to_possession_ratio",
+      "description": "Ratio of TackleResolve events to PossessionTransfer events per match.",
+      "healthy_range": { "min": 2.0, "max": 4.0 },
+      "unit": "ratio",
+      "source_events": ["TackleResolve", "PossessionTransfer"],
+      "drift_alarm": "Below 2x: not enough physical contest — game is becoming a passing sim. Above 4x: too many fruitless tackles, possibly cooldown or hit-detection issues.",
+      "contract_refs": ["C-001", "C-011"]
+    },
+    {
+      "metric_id": "G-003",
+      "name": "goals_per_match",
+      "description": "Total goals scored per match. Map-dependent.",
+      "healthy_range": { "min": 4, "max": 10 },
+      "unit": "goals",
+      "notes": "About 6 is the inherited reference. Adjust per-map — Slam Dunk may score higher due to multiple route pressure.",
+      "source_events": ["GoalScored"],
+      "drift_alarm": "Under 4: scoring is too hard — map or physics may be breaking the sport. Over 10: scoring is too easy — defender viability is eroded.",
+      "contract_refs": ["C-004"]
+    },
+    {
+      "metric_id": "G-004",
+      "name": "throw_catch_rate",
+      "description": "Fraction of ThrowAttempts (release phase) that result in a PossessionTransfer via catch.",
+      "healthy_range": { "min": 0.25, "max": 0.50 },
+      "unit": "fraction",
+      "notes": "About 35% in inherited mixed data. Lower = throws are risky/punished. Higher = passing is too safe.",
+      "source_events": ["ThrowAttempt", "PossessionTransfer"],
+      "drift_alarm": "Above 0.50: throwing is too safe — removes tackle pressure. Below 0.25: throwing is useless — removes passing as a viable option.",
+      "contract_refs": ["C-008", "P-070"]
+    },
+    {
+      "metric_id": "G-005",
+      "name": "head_on_log_rate",
+      "description": "Fraction of TackleResolve events classified as HeadOn (matched or near-matched frontal).",
+      "healthy_range": { "min": 0.10, "max": 0.40 },
+      "unit": "fraction",
+      "notes": "True frontal contests are a subset of all tackle events. Logged HeadOn events are the matched/near-matched subset only.",
+      "source_events": ["TackleResolve", "HeadOn"],
+      "drift_alarm": "Below 0.10: head-on skill is underused — map geometry or player behavior avoiding frontal contact. Above 0.40: too many matched frontal collisions, possibly speed normalization issue.",
+      "contract_refs": ["C-009", "P-060"]
+    },
+    {
+      "metric_id": "G-006",
+      "name": "respawn_to_contest_sec",
+      "description": "Mean time from PlayerDeath to PlayerRejoinsContest.",
+      "healthy_range": { "min": 2.0, "max": 10.0 },
+      "unit": "seconds",
+      "source_events": ["PlayerDeath", "PlayerRespawn", "PlayerRejoinsContest"],
+      "drift_alarm": "Above 10s: players are irrelevant after dying — violates C-010. Below 2s: respawn is too close to the contest, removing death as a meaningful event.",
+      "contract_refs": ["C-010", "C-003"]
+    },
+    {
+      "metric_id": "G-007",
+      "name": "scrum_duration_sec",
+      "description": "Mean duration of ScrumDetected events before outcome (breakout, reset, or stalemate).",
+      "healthy_range": { "min": 1.5, "max": 5.0 },
+      "unit": "seconds",
+      "notes": "Often 2-5s in inherited data before breakout or reset.",
+      "source_events": ["ScrumDetected"],
+      "drift_alarm": "Above 5s: scrums are stagnating — possession lock or physics issue. Below 1.5s: scrums are resolving too fast, removing tension.",
+      "contract_refs": ["C-007", "P-100"]
+    },
+    {
+      "metric_id": "G-008",
+      "name": "ball_loose_duration_sec",
+      "description": "Mean time the ball is loose (no holder) before PossessionTransfer or BallReset.",
+      "healthy_range": { "min": 0.5, "max": 4.0 },
+      "unit": "seconds",
+      "source_events": ["BallLoose", "PossessionTransfer", "BallReset"],
+      "drift_alarm": "Above 4s: ball is consistently uncatchable — physics or auto-pickup issue. Below 0.5s: ball is almost never truly loose — reducing contest windows.",
+      "contract_refs": ["C-001", "P-950"]
+    }
+  ]
+}

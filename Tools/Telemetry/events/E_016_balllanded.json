@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "event_id": "E-016",
+  "event": "BallLanded",
+  "category": "extended",
+  "description": "Ball comes to rest or terminal bounce after being loose.",
+  "contract_refs": [],
+  "scenario_refs": [
+    "S-003",
+    "S-011"
+  ],
+  "payload_fields": {
+    "ball": "BallRef",
+    "position": "[x,y,z]",
+    "loose_duration_sec": "float",
+    "bounce_count": "int",
+    "in_bounds": "bool"
+  },
+  "aliases": [],
+  "emit_in_production": false,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

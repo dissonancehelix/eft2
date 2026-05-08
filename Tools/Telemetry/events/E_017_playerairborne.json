@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "event_id": "E-017",
+  "event": "PlayerAirborne",
+  "category": "extended",
+  "description": "Player becomes airborne.",
+  "contract_refs": [],
+  "scenario_refs": [
+    "S-004",
+    "S-017"
+  ],
+  "payload_fields": {
+    "player": "PlayerRef",
+    "launch_velocity": "[vx,vy,vz]",
+    "cause": "jump|jumppad|knockback|hazard",
+    "ball_held": "bool"
+  },
+  "aliases": [],
+  "emit_in_production": false,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

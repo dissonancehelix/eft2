@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "event_id": "E-012",
+  "event": "PowerupActivated",
+  "category": "canonical",
+  "description": "Ball or player enters powerup state.",
+  "contract_refs": [
+    "P-080",
+    "P-090"
+  ],
+  "scenario_refs": [
+    "S-018"
+  ],
+  "payload_fields": {
+    "player": "player_id|null",
+    "powerup_type": "speedball|waterball|iceball|scoreball|other",
+    "powerup_entity_id": "string",
+    "ball": "BallRef",
+    "effect_duration_sec": "float"
+  },
+  "aliases": [
+    "PowerupPickup"
+  ],
+  "emit_in_production": true,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

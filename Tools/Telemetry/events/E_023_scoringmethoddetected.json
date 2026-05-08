@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "event_id": "E-023",
+  "event": "ScoringMethodDetected",
+  "category": "extended_analytic",
+  "description": "Map analyzer or game identifies the scoring method used at a goal.",
+  "contract_refs": [
+    "M-190"
+  ],
+  "scenario_refs": [
+    "S-021"
+  ],
+  "payload_fields": {
+    "goal_event_tick": "int",
+    "goal_entity_id": "string",
+    "detected_method": "carry|throw|slam|own_goal|unknown",
+    "confidence": "high|medium|low",
+    "approach_vector": "[dx,dy,dz]",
+    "notes": "string"
+  },
+  "aliases": [],
+  "emit_in_production": false,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

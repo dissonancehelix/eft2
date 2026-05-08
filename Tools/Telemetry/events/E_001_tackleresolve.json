@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "event_id": "E-001",
+  "event": "TackleResolve",
+  "category": "canonical",
+  "description": "Two players collide at charge/tackle relevance threshold.",
+  "contract_refs": [
+    "C-001",
+    "C-011",
+    "P-060"
+  ],
+  "scenario_refs": [
+    "S-001",
+    "S-005",
+    "S-007",
+    "S-009",
+    "S-010",
+    "S-013",
+    "S-015",
+    "S-019"
+  ],
+  "payload_fields": {
+    "initiator": "PlayerRef",
+    "target": "PlayerRef",
+    "outcome": "win|lose|mutual|graze",
+    "speed_delta": "float",
+    "ball_state_after": "loose|transferred|retained|unchanged",
+    "head_on": "bool"
+  },
+  "aliases": [],
+  "emit_in_production": true,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

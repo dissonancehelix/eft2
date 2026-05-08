@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "event_id": "E-019",
+  "event": "PlayerRespawn",
+  "category": "extended",
+  "description": "Player respawns after death.",
+  "contract_refs": [],
+  "scenario_refs": [
+    "S-012"
+  ],
+  "payload_fields": {
+    "player": "PlayerRef",
+    "spawn_position": "[x,y,z]",
+    "death_to_respawn_sec": "float",
+    "nearest_contest_distance": "float"
+  },
+  "aliases": [],
+  "emit_in_production": false,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

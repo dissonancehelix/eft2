@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "event_id": "E-015",
+  "event": "BallBounce",
+  "category": "extended",
+  "description": "Ball contacts a surface and reflects.",
+  "contract_refs": [],
+  "scenario_refs": [
+    "S-011"
+  ],
+  "payload_fields": {
+    "ball": "BallRef",
+    "surface_normal": "[nx,ny,nz]",
+    "surface_entity": "string",
+    "speed_before": "float",
+    "speed_after": "float",
+    "bounce_number": "int"
+  },
+  "aliases": [],
+  "emit_in_production": false,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

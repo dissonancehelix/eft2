@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "event_id": "E-021",
+  "event": "BotDecision",
+  "category": "extended_analytic",
+  "description": "Bot AI makes a movement or targeting decision (debug/sim).",
+  "contract_refs": [
+    "C-005"
+  ],
+  "scenario_refs": [
+    "S-020"
+  ],
+  "payload_fields": {
+    "bot": "PlayerRef",
+    "decision_type": "move_to_ball|move_to_intercept|charge_carrier|retreat|defend_goal",
+    "target_position": "[x,y,z]",
+    "confidence": "float",
+    "reason": "string"
+  },
+  "aliases": [],
+  "emit_in_production": false,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

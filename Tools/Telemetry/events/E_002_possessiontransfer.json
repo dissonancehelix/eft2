@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "event_id": "E-002",
+  "event": "PossessionTransfer",
+  "category": "canonical",
+  "description": "Ball changes holder or becomes held from loose state.",
+  "contract_refs": [
+    "C-001",
+    "C-002",
+    "P-950"
+  ],
+  "scenario_refs": [
+    "S-001",
+    "S-002",
+    "S-005",
+    "S-006",
+    "S-007",
+    "S-009",
+    "S-013",
+    "S-014",
+    "S-015",
+    "S-016",
+    "S-022"
+  ],
+  "payload_fields": {
+    "from_player": "player_id|null",
+    "to_player": "player_id",
+    "method": "pickup|catch|strip|reset_grant",
+    "ball": "BallRef",
+    "position": "[x,y,z]"
+  },
+  "aliases": [],
+  "emit_in_production": true,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

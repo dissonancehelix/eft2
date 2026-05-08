@@ -1,0 +1,83 @@
+{
+  "generated_by": "Tools/Telemetry",
+  "schema_version": 1,
+  "generated_at": "2026-05-08T17:46:42.114198+00:00",
+  "event_count": 23,
+  "load_error_count": 0,
+  "load_errors": [],
+  "finding_count": 14,
+  "error_count": 0,
+  "warning_count": 0,
+  "findings": [
+    {
+      "severity": "info",
+      "event_id": "alias",
+      "message": "Scenario S-001 uses alias 'GoalScore' → canonical 'GoalScored'"
+    },
+    {
+      "severity": "info",
+      "event_id": "alias",
+      "message": "Scenario S-005 uses alias 'KnockdownEvent' → canonical 'PlayerKnockdown'"
+    },
+    {
+      "severity": "info",
+      "event_id": "alias",
+      "message": "Scenario S-007 uses alias 'KnockdownEvent' → canonical 'PlayerKnockdown'"
+    },
+    {
+      "severity": "info",
+      "event_id": "alias",
+      "message": "Scenario S-008 uses alias 'HazardTrigger' → canonical 'HazardContact'"
+    },
+    {
+      "severity": "info",
+      "event_id": "alias",
+      "message": "Scenario S-009 uses alias 'KnockdownEvent' → canonical 'PlayerKnockdown'"
+    },
+    {
+      "severity": "info",
+      "event_id": "alias",
+      "message": "Scenario S-009 uses alias 'HeadOnCollision' → canonical 'HeadOn'"
+    },
+    {
+      "severity": "info",
+      "event_id": "alias",
+      "message": "Scenario S-010 uses alias 'GoalScore' → canonical 'GoalScored'"
+    },
+    {
+      "severity": "info",
+      "event_id": "alias",
+      "message": "Scenario S-013 uses alias 'KnockdownEvent' → canonical 'PlayerKnockdown'"
+    },
+    {
+      "severity": "info",
+      "event_id": "alias",
+      "message": "Scenario S-014 uses alias 'GoalScore' → canonical 'GoalScored'"
+    },
+    {
+      "severity": "info",
+      "event_id": "alias",
+      "message": "Scenario S-015 uses alias 'KnockdownEvent' → canonical 'PlayerKnockdown'"
+    },
+    {
+      "severity": "info",
+      "event_id": "alias",
+      "message": "Scenario S-016 uses alias 'GoalScore' → canonical 'GoalScored'"
+    },
+    {
+      "severity": "info",
+      "event_id": "alias",
+      "message": "Scenario S-018 uses alias 'PowerupPickup' → canonical 'PowerupActivated'"
+    },
+    {
+      "severity": "info",
+      "event_id": "alias",
+      "message": "Scenario S-021 uses alias 'GoalScore' → canonical 'GoalScored'"
+    },
+    {
+      "severity": "info",
+      "event_id": "alias",
+      "message": "Scenario S-022 uses alias 'KnockdownEvent' → canonical 'PlayerKnockdown'"
+    }
+  ]
+}

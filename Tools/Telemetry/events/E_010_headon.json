@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "event_id": "E-010",
+  "event": "HeadOn",
+  "category": "canonical",
+  "description": "Matched or near-matched frontal charge collision.",
+  "contract_refs": [
+    "C-009",
+    "P-060"
+  ],
+  "scenario_refs": [
+    "S-009"
+  ],
+  "payload_fields": {
+    "player_a": "PlayerRef",
+    "player_b": "PlayerRef",
+    "speed_a": "float",
+    "speed_b": "float",
+    "speed_delta": "float",
+    "classification": "matched|one_sided|near_matched",
+    "outcome": "a_wins|b_wins|mutual"
+  },
+  "aliases": [
+    "HeadOnCollision"
+  ],
+  "emit_in_production": true,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

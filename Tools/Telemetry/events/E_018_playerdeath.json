@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "event_id": "E-018",
+  "event": "PlayerDeath",
+  "category": "extended",
+  "description": "Player is eliminated (death zone, void, or admin kill).",
+  "contract_refs": [],
+  "scenario_refs": [
+    "S-012"
+  ],
+  "payload_fields": {
+    "player": "PlayerRef",
+    "cause": "void|hazard|admin",
+    "ball_held": "bool",
+    "ball_released_position": "[x,y,z]|null"
+  },
+  "aliases": [],
+  "emit_in_production": false,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

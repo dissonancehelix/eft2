@@ -1,7 +1,7 @@
 {
   "generated_by": "Tools/Indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T17:30:36.417788+00:00",
+  "generated_at": "2026-05-08T17:46:47.059910+00:00",
   "repo_root": "C:/Users/dissonance/Desktop/EFT2",
   "warnings": [],
   "files": [
@@ -1054,7 +1054,7 @@
     },
     {
       "path": "Tools/Observer/README.md",
-      "size_bytes": 1937,
+      "size_bytes": 2040,
       "heading_count": 9,
       "headings": [
         {
@@ -1136,7 +1136,76 @@
         "S-022"
       ],
       "todo_markers": []
+    },
+    {
+      "path": "Tools/Telemetry/README.md",
+      "size_bytes": 3805,
+      "heading_count": 9,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Tools/Telemetry"
+        },
+        {
+          "level": 2,
+          "text": "Purpose"
+        },
+        {
+          "level": 2,
+          "text": "Contents"
+        },
+        {
+          "level": 2,
+          "text": "Canonical events (from README.md Part V)"
+        },
+        {
+          "level": 2,
+          "text": "Extended events (required by Scenario Harness, not yet in contract)"
+        },
+        {
+          "level": 2,
+          "text": "Scenario event name aliases"
+        },
+        {
+          "level": 2,
+          "text": "Metric guardrails"
+        },
+        {
+          "level": 2,
+          "text": "CLI"
+        },
+        {
+          "level": 2,
+          "text": "Build order context"
+        }
+      ],
+      "contract_ids": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-005",
+        "E-006",
+        "E-007",
+        "E-008",
+        "E-009",
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-013",
+        "E-014",
+        "E-015",
+        "E-016",
+        "E-017",
+        "E-018",
+        "E-019",
+        "E-020",
+        "E-021",
+        "E-022",
+        "E-023"
+      ],
+      "todo_markers": []
     }
   ],
-  "file_count": 8
+  "file_count": 9
 }

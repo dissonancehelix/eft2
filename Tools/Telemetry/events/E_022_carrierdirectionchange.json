@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "event_id": "E-022",
+  "event": "CarrierDirectionChange",
+  "category": "extended",
+  "description": "Ball carrier changes movement direction significantly.",
+  "contract_refs": [
+    "C-009"
+  ],
+  "scenario_refs": [
+    "S-019"
+  ],
+  "payload_fields": {
+    "player": "PlayerRef",
+    "direction_before": "[dx,dy,dz]",
+    "direction_after": "[dx,dy,dz]",
+    "angle_delta_deg": "float",
+    "speed_before": "float",
+    "speed_after": "float",
+    "nearest_defender_distance": "float"
+  },
+  "aliases": [],
+  "emit_in_production": false,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

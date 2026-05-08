@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "event_id": "E-006",
+  "event": "PlayerRecovered",
+  "category": "canonical",
+  "description": "Player returns to upright participation after knockdown.",
+  "contract_refs": [
+    "C-011",
+    "C-010"
+  ],
+  "scenario_refs": [],
+  "payload_fields": {
+    "player": "PlayerRef",
+    "knockdown_duration_sec": "float",
+    "recovered_speed": "float"
+  },
+  "aliases": [],
+  "emit_in_production": true,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

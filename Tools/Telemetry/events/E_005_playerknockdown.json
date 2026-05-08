@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "event_id": "E-005",
+  "event": "PlayerKnockdown",
+  "category": "canonical",
+  "description": "Player enters knockdown state.",
+  "contract_refs": [
+    "C-011"
+  ],
+  "scenario_refs": [
+    "S-005",
+    "S-007",
+    "S-009",
+    "S-013",
+    "S-022"
+  ],
+  "payload_fields": {
+    "player": "PlayerRef",
+    "cause": "tackle|head_on|hazard|self",
+    "caused_by_player": "player_id|null",
+    "ball_held_at_time": "bool",
+    "recovery_position": "[x,y,z]"
+  },
+  "aliases": [
+    "KnockdownEvent"
+  ],
+  "emit_in_production": true,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "event_id": "E-009",
+  "event": "DiveAttempt",
+  "category": "canonical",
+  "description": "Player commits to a dive.",
+  "contract_refs": [
+    "C-009"
+  ],
+  "scenario_refs": [],
+  "payload_fields": {
+    "player": "PlayerRef",
+    "direction": "[dx,dy,dz]",
+    "ball_held": "bool",
+    "outcome": "pending|success|miss|interrupted"
+  },
+  "aliases": [],
+  "emit_in_production": true,
+  "emit_in_simulation": true,
+  "emit_in_dev": true,
+  "notes": ""
+}

@@ -1,22 +1,22 @@
 {
   "generated_by": "Tools/Indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T17:30:37.618253+00:00",
+  "generated_at": "2026-05-08T17:46:48.209528+00:00",
   "repo_root": "C:/Users/dissonance/Desktop/EFT2",
   "warnings": [
     "sbox_scan_truncated_at:4000"
   ],
   "tools_root": "Tools",
-  "tool_count": 5,
+  "tool_count": 6,
   "present_tools": [
     "Contract Validator",
     "Indexer",
     "Map Analyzer",
     "Observer",
-    "Scenario Harness"
+    "Scenario Harness",
+    "Telemetry"
   ],
   "missing_recommended_tools": [
-    "Telemetry",
     "Simulation"
   ],
   "recommended_status": [
@@ -42,7 +42,7 @@
     },
     {
       "name": "Telemetry",
-      "status": "pending"
+      "status": "present"
     },
     {
       "name": "Simulation",
@@ -207,10 +207,30 @@
       "path": "Tools/Scenario Harness",
       "readme": "Tools/Scenario Harness/README.md",
       "readme_summary": "# Tools/Scenario Harness\n\nEncodes must-preserve EFT situations as structured test cases.",
-      "python_module_count": 0,
-      "python_modules": [],
-      "has_output_dir": false,
-      "output_dir": null
+      "python_module_count": 1,
+      "python_modules": [
+        {
+          "path": "Tools/Scenario Harness/run_scenarios.py",
+          "first_docstring_line": "EFT2 Scenario Harness."
+        }
+      ],
+      "has_output_dir": true,
+      "output_dir": "Tools/Scenario Harness/Output"
+    },
+    {
+      "name": "Telemetry",
+      "path": "Tools/Telemetry",
+      "readme": "Tools/Telemetry/README.md",
+      "readme_summary": "# Tools/Telemetry\n\nDefines canonical event schemas and metric guardrails for EFT2 matches and simulations.",
+      "python_module_count": 1,
+      "python_modules": [
+        {
+          "path": "Tools/Telemetry/validate_telemetry.py",
+          "first_docstring_line": "EFT2 Telemetry Validator."
+        }
+      ],
+      "has_output_dir": true,
+      "output_dir": "Tools/Telemetry/Output"
     }
   ]
 }
