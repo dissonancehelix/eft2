@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "S-018",
+  "slug": "powerup_route",
+  "title": "Powerup Route",
+  "contract_refs": ["P-080", "P-090"],
+  "map_scope": "any",
+  "description": "Carrier chooses a longer route through a speedball or powerup. The powerup must change tempo enough to be worth the detour — but the route must remain contestable by defenders anticipating it.",
+  "preconditions": {
+    "ball_state": "carried",
+    "route_available": "powerup_route_longer_than_direct",
+    "map_feature": "speedball_or_powerup_present"
+  },
+  "trigger": "carrier_picks_up_powerup",
+  "expected_outcomes": [
+    {
+      "outcome_id": "powerup_changes_tempo",
+      "description": "Powerup effect is significant enough that the longer route was worth taking — speed, score multiplier, or other effect is impactful.",
+      "required": true,
+      "validates": ["powerup"]
+    },
+    {
+      "outcome_id": "route_remains_contestable",
+      "description": "Defender who anticipates the powerup route can still challenge — powerup does not guarantee success.",
+      "required": true,
+      "validates": ["carrier_danger", "volatile_possession"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "powerup_cosmetic",
+      "description": "Powerup effect is too small to justify the detour — route choice is irrelevant.",
+      "violates": ["P-080"]
+    },
+    {
+      "outcome_id": "powerup_guarantees_victory",
+      "description": "Powerup makes the carrier effectively unstoppable — defenders have no realistic counter.",
+      "violates": ["P-090", "C-001"]
+    }
+  ],
+  "mechanic_tags": ["powerup", "carrier_danger", "volatile_possession"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["PowerupPickup", "PossessionTransfer"],
+  "notes": "Speedball is the canonical powerup. Scoreball and iceball have different risk profiles — test all variants where available.",
+  "status": "defined"
+}

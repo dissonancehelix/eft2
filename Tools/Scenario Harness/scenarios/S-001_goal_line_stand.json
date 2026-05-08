@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "S-001",
+  "slug": "goal_line_stand",
+  "title": "Goal-Line Stand",
+  "contract_refs": ["C-001", "C-004", "M-130", "M-190"],
+  "map_scope": "any",
+  "description": "Carrier is within ~50 HU of goal; defender is charging. Defender must be able to deny score if the hit occurs before the goal condition resolves.",
+  "preconditions": {
+    "ball_state": "carried",
+    "carrier_position": "near_goal",
+    "carrier_distance_to_goal": "<=50_HU",
+    "defender_state": "charging_toward_carrier"
+  },
+  "trigger": "defender_contact_before_goal_condition_resolves",
+  "expected_outcomes": [
+    {
+      "outcome_id": "defender_denies_score",
+      "description": "Carrier is tackled or knocked down before goal condition resolves; no score registered.",
+      "required": true,
+      "validates": ["volatile_possession", "carrier_danger"]
+    },
+    {
+      "outcome_id": "ball_becomes_loose_or_transfers",
+      "description": "After the stop, ball is loose or transferred — not frozen in place.",
+      "required": true,
+      "validates": ["volatile_possession"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "carrier_scores_despite_prior_hit",
+      "description": "Carrier scores even though the hit clearly preceded the goal condition.",
+      "violates": ["C-004", "C-001"]
+    }
+  ],
+  "mechanic_tags": ["possession", "carrier_danger", "tackle", "volatile_possession", "goal_score"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["TackleResolve", "PossessionTransfer", "GoalScore"],
+  "notes": "Hit-before-goal timing must be deterministic, not frame-dependent.",
+  "status": "defined"
+}

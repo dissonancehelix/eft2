@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "S-012",
+  "slug": "respawn_rejoin",
+  "title": "Respawn Rejoin",
+  "contract_refs": ["C-003", "C-010"],
+  "map_scope": "any",
+  "description": "Player dies while ball is actively contested. Respawn path must allow the player to return to an active or immediately subsequent contest within ~10 seconds.",
+  "preconditions": {
+    "ball_state": "contested",
+    "player_event": "death_while_contest_active"
+  },
+  "trigger": "player_respawn",
+  "expected_outcomes": [
+    {
+      "outcome_id": "player_rejoins_contest",
+      "description": "Respawned player can reach the active contest or the next one within ~10 seconds.",
+      "required": true,
+      "validates": ["volatile_possession"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "player_irrelevant_for_over_10s",
+      "description": "Respawn location or timing locks the player out of play for more than 10 seconds.",
+      "violates": ["C-010", "C-003"]
+    }
+  ],
+  "mechanic_tags": ["knockdown", "recovery"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["PlayerDeath", "PlayerRespawn", "PlayerRejoinsContest"],
+  "notes": "Spawn placement is map-critical. All EFT maps must be validated against this — spawn clusters that are too far from the contest center will fail.",
+  "status": "defined"
+}

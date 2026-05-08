@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "S-005",
+  "slug": "swarm_collapse",
+  "title": "Swarm Collapse",
+  "contract_refs": ["C-001", "C-003"],
+  "map_scope": "any",
+  "description": "Loose ball with four or more players converging. Collisions, knockdowns, and possible ball pop-out must produce a new local crisis — not a ghost-through.",
+  "preconditions": {
+    "ball_state": "loose",
+    "players_converging": ">=4",
+    "spatial_context": "converging_on_ball"
+  },
+  "trigger": "multiple_players_reach_loose_ball_simultaneously",
+  "expected_outcomes": [
+    {
+      "outcome_id": "collisions_have_consequences",
+      "description": "Players collide, causing knockdowns, direction changes, or ball pop-out — not just path-through.",
+      "required": true,
+      "validates": ["volatile_possession", "knockdown"]
+    },
+    {
+      "outcome_id": "new_local_crisis",
+      "description": "After the swarm, a new unstable situation exists — ball in contest, knockdowns recovering, contested pickup imminent.",
+      "required": true,
+      "validates": ["volatile_possession", "contested_carry"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "players_ghost_through_each_other",
+      "description": "Players pass through each other with no physics or gameplay consequence.",
+      "violates": ["C-001", "C-003"]
+    }
+  ],
+  "mechanic_tags": ["possession", "volatile_possession", "knockdown", "scrum", "contested_carry"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["BallLoose", "TackleResolve", "KnockdownEvent", "PossessionTransfer"],
+  "notes": "This is the core chaos test. Bloodbowl centre-field is the canonical environment for this scenario.",
+  "status": "defined"
+}

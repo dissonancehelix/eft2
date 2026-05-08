@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "S-011",
+  "slug": "loose_ball_bounce",
+  "title": "Loose Ball Bounce",
+  "contract_refs": ["C-005", "C-006"],
+  "map_scope": "any",
+  "description": "Ball bounces after a fumble or throw. Bounce trajectory must be readable and the landing zone contestable.",
+  "preconditions": {
+    "ball_state": "loose_after_fumble_or_throw",
+    "surface": "ground_or_wall"
+  },
+  "trigger": "ball_contacts_surface_after_losing_possession",
+  "expected_outcomes": [
+    {
+      "outcome_id": "readable_reflection",
+      "description": "Ball reflects off surface in a direction consistent with incidence angle — players can anticipate it.",
+      "required": true,
+      "validates": ["volatile_possession"]
+    },
+    {
+      "outcome_id": "contestable_landing",
+      "description": "Ball comes to a rest or second bounce in a location where nearby players can realistically compete for it.",
+      "required": true,
+      "validates": ["automatic_pickup", "volatile_possession"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "ball_stops_dead",
+      "description": "Ball loses all momentum instantly on contact — no bounce or roll.",
+      "violates": ["C-006"]
+    },
+    {
+      "outcome_id": "ball_flies_erratically",
+      "description": "Ball bounces in an unreadable direction with no spatial logic.",
+      "violates": ["C-005"]
+    }
+  ],
+  "mechanic_tags": ["volatile_possession", "ballreset"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["BallLoose", "BallBounce", "BallLanded"],
+  "notes": "Wall bounces on Slam Dunk are particularly important — platforms and side walls create rebound routes that skilled players exploit.",
+  "status": "defined"
+}

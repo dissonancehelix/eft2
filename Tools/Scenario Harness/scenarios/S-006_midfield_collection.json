@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "S-006",
+  "slug": "midfield_collection",
+  "title": "Midfield Collection",
+  "contract_refs": ["C-003", "C-005"],
+  "map_scope": "any",
+  "description": "Ball lobbed across the middle; defender cuts the lane. Defender must be able to collect by running through the ball path — no special catch key or animation confirmation required.",
+  "preconditions": {
+    "ball_state": "in_flight",
+    "ball_trajectory": "crossing_midfield",
+    "defender_state": "cutting_lane"
+  },
+  "trigger": "defender_body_intersects_ball_path",
+  "expected_outcomes": [
+    {
+      "outcome_id": "defender_collects_via_body_contact",
+      "description": "Defender automatically picks up the ball by moving through its path.",
+      "required": true,
+      "validates": ["automatic_pickup"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "catch_requires_input_or_animation",
+      "description": "Collection requires a button press or a scripted catch animation — violates automatic pickup.",
+      "violates": ["C-005", "C-003"]
+    }
+  ],
+  "mechanic_tags": ["possession", "automatic_pickup", "contested_carry"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["PossessionTransfer", "BallLoose"],
+  "notes": "Automatic pickup is non-negotiable (P-950). The key test is that no additional input beyond movement is required.",
+  "status": "defined"
+}

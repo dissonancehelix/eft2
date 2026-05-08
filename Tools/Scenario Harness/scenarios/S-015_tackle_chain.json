@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "S-015",
+  "slug": "tackle_chain",
+  "title": "Tackle Chain",
+  "contract_refs": ["C-002", "C-006"],
+  "map_scope": "any",
+  "description": "Player A tackles B; ball pops to C; Player D immediately tackles C. Rapid chained possession/knockdown events must be possible — cooldowns must not block the second valid tackle.",
+  "preconditions": {
+    "ball_state": "carried_by_B",
+    "player_a_state": "charging_at_B",
+    "player_d_state": "near_C"
+  },
+  "trigger": "sequential_tackles_in_rapid_succession",
+  "expected_outcomes": [
+    {
+      "outcome_id": "first_tackle_lands",
+      "description": "A tackles B; ball becomes loose and goes to C.",
+      "required": true,
+      "validates": ["volatile_possession", "tackle"]
+    },
+    {
+      "outcome_id": "second_tackle_is_not_blocked",
+      "description": "D can tackle C immediately — no cooldown prevents the second valid tackle.",
+      "required": true,
+      "validates": ["volatile_possession", "tackle"]
+    },
+    {
+      "outcome_id": "chain_produces_new_contest",
+      "description": "After both tackles, ball is in a new loose or newly possessed state.",
+      "required": true,
+      "validates": ["volatile_possession"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "cooldown_blocks_second_tackle",
+      "description": "A global or per-player tackle cooldown prevents D from immediately tackling C after A tackles B.",
+      "violates": ["C-002", "C-006"]
+    }
+  ],
+  "mechanic_tags": ["tackle", "volatile_possession", "knockdown", "reversal"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["TackleResolve", "PossessionTransfer", "KnockdownEvent"],
+  "notes": "The chain should be possible within a single second. This tests that cooldown systems are per-player (not global) and short enough to preserve EFT's pace.",
+  "status": "defined"
+}

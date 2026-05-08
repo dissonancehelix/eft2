@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "S-016",
+  "slug": "goal_line_intercept",
+  "title": "Goal-Line Intercept",
+  "contract_refs": ["C-003", "C-004"],
+  "map_scope": "any",
+  "description": "Loose ball rolling or flying toward the goal. A defending player must be able to cut it off and intercept it — ball must not become non-interactable near scoring.",
+  "preconditions": {
+    "ball_state": "loose_in_flight_or_rolling",
+    "ball_trajectory": "toward_goal",
+    "defender_position": "cutting_path_to_goal"
+  },
+  "trigger": "defender_moves_into_ball_path_near_goal",
+  "expected_outcomes": [
+    {
+      "outcome_id": "defender_intercepts_ball",
+      "description": "Defender collects the ball by moving into its path — automatic pickup applies.",
+      "required": true,
+      "validates": ["automatic_pickup", "volatile_possession"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "ball_non_interactable_near_goal",
+      "description": "Ball ignores the defender near the goal zone — either phased through or treated as already scored.",
+      "violates": ["C-003", "C-004"]
+    }
+  ],
+  "mechanic_tags": ["automatic_pickup", "volatile_possession", "goal_score"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["PossessionTransfer", "GoalScore"],
+  "notes": "Critical for Slam Dunk where hoops are elevated — ball arc toward hoop must be interceptable by a jumping defender.",
+  "status": "defined"
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "S-007",
+  "slug": "escort_clearing",
+  "title": "Escort Clearing",
+  "contract_refs": ["C-001", "C-003"],
+  "map_scope": "any",
+  "description": "Carrier follows a teammate. Defender approaches the carrier. Teammate must be able to tackle/block the defender so the carrier can continue.",
+  "preconditions": {
+    "ball_state": "carried",
+    "formation": "carrier_with_escort",
+    "threat": "defender_approaching_carrier"
+  },
+  "trigger": "escort_teammate_intercepts_defender",
+  "expected_outcomes": [
+    {
+      "outcome_id": "teammate_blocks_defender",
+      "description": "Teammate collides with defender, causing knockdown or direction change that protects the carrier.",
+      "required": true,
+      "validates": ["tackle"]
+    },
+    {
+      "outcome_id": "carrier_gains_window",
+      "description": "Carrier continues forward after the block without being immediately stopped.",
+      "required": false,
+      "validates": ["carrier_danger"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "teammate_presence_irrelevant",
+      "description": "Defender passes through or ignores teammate and tackles carrier as if escort did not exist.",
+      "violates": ["C-001", "C-003"]
+    }
+  ],
+  "mechanic_tags": ["tackle", "carrier_danger", "knockdown"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["TackleResolve", "KnockdownEvent"],
+  "notes": "Tests that player bodies matter in open play — not just carrier/ball interactions.",
+  "status": "defined"
+}

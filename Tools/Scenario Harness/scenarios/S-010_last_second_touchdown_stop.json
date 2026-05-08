@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "S-010",
+  "slug": "last_second_touchdown_stop",
+  "title": "Last-Second Touchdown Stop",
+  "contract_refs": ["C-001", "C-004"],
+  "map_scope": "any",
+  "description": "Carrier is airborne or running directly into goal. Defender lands a hit just before the scoring condition triggers. Score must be deniable if hit precedes goal.",
+  "preconditions": {
+    "ball_state": "carried",
+    "carrier_position": "entering_goal_zone",
+    "carrier_state": "airborne_or_running",
+    "defender_state": "hitting_carrier"
+  },
+  "trigger": "defender_hit_lands_before_goal_condition",
+  "expected_outcomes": [
+    {
+      "outcome_id": "score_denied",
+      "description": "No goal registered; ball becomes loose or possession transfers.",
+      "required": true,
+      "validates": ["volatile_possession", "carrier_danger"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "goal_unstoppable_near_zone",
+      "description": "Carrier within goal proximity becomes invulnerable — hit has no effect on scoring.",
+      "violates": ["C-004", "C-001"]
+    }
+  ],
+  "mechanic_tags": ["carrier_danger", "volatile_possession", "tackle", "goal_score"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["TackleResolve", "GoalScore", "PossessionTransfer"],
+  "notes": "Related to S-001 but specifically tests the airborne + last-frame case. Timing resolution must be deterministic.",
+  "status": "defined"
+}

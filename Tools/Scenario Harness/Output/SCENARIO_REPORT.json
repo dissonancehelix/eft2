@@ -1,0 +1,1345 @@
+{
+  "generated_by": "Tools/Scenario Harness",
+  "schema_version": 1,
+  "generated_at": "2026-05-08T17:40:23.873414+00:00",
+  "scenario_count": 22,
+  "load_error_count": 0,
+  "load_errors": [],
+  "finding_count": 0,
+  "error_count": 0,
+  "warning_count": 0,
+  "findings": [],
+  "scenarios": [
+    {
+      "schema_version": 1,
+      "id": "S-001",
+      "slug": "goal_line_stand",
+      "title": "Goal-Line Stand",
+      "contract_refs": [
+        "C-001",
+        "C-004",
+        "M-130",
+        "M-190"
+      ],
+      "map_scope": "any",
+      "description": "Carrier is within ~50 HU of goal; defender is charging. Defender must be able to deny score if the hit occurs before the goal condition resolves.",
+      "preconditions": {
+        "ball_state": "carried",
+        "carrier_position": "near_goal",
+        "carrier_distance_to_goal": "<=50_HU",
+        "defender_state": "charging_toward_carrier"
+      },
+      "trigger": "defender_contact_before_goal_condition_resolves",
+      "expected_outcomes": [
+        {
+          "outcome_id": "defender_denies_score",
+          "description": "Carrier is tackled or knocked down before goal condition resolves; no score registered.",
+          "required": true,
+          "validates": [
+            "volatile_possession",
+            "carrier_danger"
+          ]
+        },
+        {
+          "outcome_id": "ball_becomes_loose_or_transfers",
+          "description": "After the stop, ball is loose or transferred — not frozen in place.",
+          "required": true,
+          "validates": [
+            "volatile_possession"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "carrier_scores_despite_prior_hit",
+          "description": "Carrier scores even though the hit clearly preceded the goal condition.",
+          "violates": [
+            "C-004",
+            "C-001"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "possession",
+        "carrier_danger",
+        "tackle",
+        "volatile_possession",
+        "goal_score"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "TackleResolve",
+        "PossessionTransfer",
+        "GoalScore"
+      ],
+      "notes": "Hit-before-goal timing must be deterministic, not frame-dependent.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-002",
+      "slug": "panic_short_pass",
+      "title": "Panic Short Pass",
+      "contract_refs": [
+        "C-002",
+        "C-006",
+        "M-170"
+      ],
+      "map_scope": "any",
+      "description": "Carrier is swarmed by two defenders. Early or low-power throw must create a nearby contested loose ball — not a safe clean pass.",
+      "preconditions": {
+        "ball_state": "carried",
+        "defenders_nearby": 2,
+        "carrier_state": "under_pressure"
+      },
+      "trigger": "carrier_throws_under_pressure",
+      "expected_outcomes": [
+        {
+          "outcome_id": "nearby_contested_loose_ball",
+          "description": "Ball lands nearby as a loose ball with multiple players able to contest it.",
+          "required": true,
+          "validates": [
+            "volatile_possession",
+            "contested_carry"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "safe_pass_to_open_teammate",
+          "description": "Ball reaches a teammate cleanly with no contest — panic throw should not produce a perfect result.",
+          "violates": [
+            "C-002",
+            "C-006"
+          ]
+        },
+        {
+          "outcome_id": "ball_sticks_to_carrier",
+          "description": "Carrier retains ball despite throw input — voluntary release must work.",
+          "violates": [
+            "C-002"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "possession",
+        "volatile_possession",
+        "throw",
+        "contested_carry"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "ThrowAttempt",
+        "BallLoose",
+        "PossessionTransfer"
+      ],
+      "notes": "Throw power/arc must degrade meaningfully under pressure. The loose ball landing zone should be close enough for both teams to realistically contest.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-003",
+      "slug": "long_throw_recovery",
+      "title": "Long Throw Recovery",
+      "contract_refs": [
+        "C-007",
+        "C-008"
+      ],
+      "map_scope": "any",
+      "description": "Carrier throws a high arc downfield into open space. Ball must be recoverable and create a new contest — not vanish, clip geometry, or become dead.",
+      "preconditions": {
+        "ball_state": "carried",
+        "throw_type": "high_arc_long_range",
+        "destination": "open_space_downfield"
+      },
+      "trigger": "carrier_releases_long_throw",
+      "expected_outcomes": [
+        {
+          "outcome_id": "ball_lands_and_is_live",
+          "description": "Ball lands in bounds, remains live, and can be picked up by any player.",
+          "required": true,
+          "validates": [
+            "volatile_possession"
+          ]
+        },
+        {
+          "outcome_id": "new_contest_created",
+          "description": "Players converge on landing zone — a new spatial conflict forms.",
+          "required": true,
+          "validates": [
+            "volatile_possession",
+            "contested_carry"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "ball_clips_through_world",
+          "description": "Ball passes through geometry and becomes unrecoverable.",
+          "violates": [
+            "C-008"
+          ]
+        },
+        {
+          "outcome_id": "ball_rolls_forever",
+          "description": "Ball never settles and continues rolling past any recoverable position.",
+          "violates": [
+            "C-008"
+          ]
+        },
+        {
+          "outcome_id": "ball_becomes_uncatchable",
+          "description": "Ball is too fast or bounces erratically — no player can practically contest it.",
+          "violates": [
+            "C-007"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "throw",
+        "volatile_possession",
+        "ballreset"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "ThrowAttempt",
+        "BallLoose",
+        "BallLanded"
+      ],
+      "notes": "Arc trajectory must respect gravity in a way players can read and predict. Out-of-bounds resets must not grant possession.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-004",
+      "slug": "jump_flung_fumble",
+      "title": "Jump-Flung Fumble",
+      "contract_refs": [
+        "C-006",
+        "C-009"
+      ],
+      "map_scope": "any",
+      "description": "Carrier jumps and is hit or loses control during vertical motion. Verticality must produce readable chaos with a contestable ball — not a dead straight-down drop.",
+      "preconditions": {
+        "ball_state": "carried",
+        "carrier_state": "airborne",
+        "contact_type": "hit_or_control_loss_during_jump"
+      },
+      "trigger": "carrier_loses_ball_while_airborne",
+      "expected_outcomes": [
+        {
+          "outcome_id": "ball_has_spatial_consequence",
+          "description": "Ball travels in a direction related to the collision — readable momentum transfer.",
+          "required": true,
+          "validates": [
+            "volatile_possession",
+            "carrier_danger"
+          ]
+        },
+        {
+          "outcome_id": "ball_is_contestable_after_landing",
+          "description": "Ball comes to rest or bounces in a location where players can realistically contest it.",
+          "required": true,
+          "validates": [
+            "volatile_possession"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "carrier_drops_straight_down",
+          "description": "Ball falls directly below the carrier with no spatial influence from the hit.",
+          "violates": [
+            "C-006",
+            "C-009"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "possession",
+        "volatile_possession",
+        "dive",
+        "knockdown",
+        "carrier_danger"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "BallLoose",
+        "PossessionTransfer",
+        "PlayerAirborne"
+      ],
+      "notes": "Jump + hit interaction is a primary EFT skill expression. The output direction should be predictable enough for experienced players to anticipate.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-005",
+      "slug": "swarm_collapse",
+      "title": "Swarm Collapse",
+      "contract_refs": [
+        "C-001",
+        "C-003"
+      ],
+      "map_scope": "any",
+      "description": "Loose ball with four or more players converging. Collisions, knockdowns, and possible ball pop-out must produce a new local crisis — not a ghost-through.",
+      "preconditions": {
+        "ball_state": "loose",
+        "players_converging": ">=4",
+        "spatial_context": "converging_on_ball"
+      },
+      "trigger": "multiple_players_reach_loose_ball_simultaneously",
+      "expected_outcomes": [
+        {
+          "outcome_id": "collisions_have_consequences",
+          "description": "Players collide, causing knockdowns, direction changes, or ball pop-out — not just path-through.",
+          "required": true,
+          "validates": [
+            "volatile_possession",
+            "knockdown"
+          ]
+        },
+        {
+          "outcome_id": "new_local_crisis",
+          "description": "After the swarm, a new unstable situation exists — ball in contest, knockdowns recovering, contested pickup imminent.",
+          "required": true,
+          "validates": [
+            "volatile_possession",
+            "contested_carry"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "players_ghost_through_each_other",
+          "description": "Players pass through each other with no physics or gameplay consequence.",
+          "violates": [
+            "C-001",
+            "C-003"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "possession",
+        "volatile_possession",
+        "knockdown",
+        "scrum",
+        "contested_carry"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "BallLoose",
+        "TackleResolve",
+        "KnockdownEvent",
+        "PossessionTransfer"
+      ],
+      "notes": "This is the core chaos test. Bloodbowl centre-field is the canonical environment for this scenario.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-006",
+      "slug": "midfield_collection",
+      "title": "Midfield Collection",
+      "contract_refs": [
+        "C-003",
+        "C-005"
+      ],
+      "map_scope": "any",
+      "description": "Ball lobbed across the middle; defender cuts the lane. Defender must be able to collect by running through the ball path — no special catch key or animation confirmation required.",
+      "preconditions": {
+        "ball_state": "in_flight",
+        "ball_trajectory": "crossing_midfield",
+        "defender_state": "cutting_lane"
+      },
+      "trigger": "defender_body_intersects_ball_path",
+      "expected_outcomes": [
+        {
+          "outcome_id": "defender_collects_via_body_contact",
+          "description": "Defender automatically picks up the ball by moving through its path.",
+          "required": true,
+          "validates": [
+            "automatic_pickup"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "catch_requires_input_or_animation",
+          "description": "Collection requires a button press or a scripted catch animation — violates automatic pickup.",
+          "violates": [
+            "C-005",
+            "C-003"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "possession",
+        "automatic_pickup",
+        "contested_carry"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "PossessionTransfer",
+        "BallLoose"
+      ],
+      "notes": "Automatic pickup is non-negotiable (P-950). The key test is that no additional input beyond movement is required.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-007",
+      "slug": "escort_clearing",
+      "title": "Escort Clearing",
+      "contract_refs": [
+        "C-001",
+        "C-003"
+      ],
+      "map_scope": "any",
+      "description": "Carrier follows a teammate. Defender approaches the carrier. Teammate must be able to tackle/block the defender so the carrier can continue.",
+      "preconditions": {
+        "ball_state": "carried",
+        "formation": "carrier_with_escort",
+        "threat": "defender_approaching_carrier"
+      },
+      "trigger": "escort_teammate_intercepts_defender",
+      "expected_outcomes": [
+        {
+          "outcome_id": "teammate_blocks_defender",
+          "description": "Teammate collides with defender, causing knockdown or direction change that protects the carrier.",
+          "required": true,
+          "validates": [
+            "tackle"
+          ]
+        },
+        {
+          "outcome_id": "carrier_gains_window",
+          "description": "Carrier continues forward after the block without being immediately stopped.",
+          "required": false,
+          "validates": [
+            "carrier_danger"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "teammate_presence_irrelevant",
+          "description": "Defender passes through or ignores teammate and tackles carrier as if escort did not exist.",
+          "violates": [
+            "C-001",
+            "C-003"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "tackle",
+        "carrier_danger",
+        "knockdown"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "TackleResolve",
+        "KnockdownEvent"
+      ],
+      "notes": "Tests that player bodies matter in open play — not just carrier/ball interactions.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-008",
+      "slug": "intentional_hazard_reset",
+      "title": "Intentional Hazard Reset",
+      "contract_refs": [
+        "C-002",
+        "C-007",
+        "P-090"
+      ],
+      "map_scope": "any",
+      "description": "Carrier is pinned near own goal. Team uses an intentional hazard or void dump to force a neutral reset rather than concede possession. Reset must be fast and fair — not a long downtime or a gift.",
+      "preconditions": {
+        "ball_state": "carried",
+        "carrier_position": "pinned_near_own_goal",
+        "map_feature": "hazard_or_void_accessible"
+      },
+      "trigger": "carrier_or_teammate_dumps_ball_into_hazard",
+      "expected_outcomes": [
+        {
+          "outcome_id": "neutral_ball_reset",
+          "description": "Ball resets to a neutral location with no team retaining possession advantage.",
+          "required": true,
+          "validates": [
+            "ballreset",
+            "volatile_possession"
+          ]
+        },
+        {
+          "outcome_id": "reset_is_fast",
+          "description": "Reset completes quickly — no extended dead-ball period.",
+          "required": true,
+          "validates": [
+            "volatile_possession"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "reset_grants_unfair_possession",
+          "description": "The dumping team re-obtains the ball immediately after reset — hazard reset becomes a free re-possession.",
+          "violates": [
+            "C-002",
+            "P-090"
+          ]
+        },
+        {
+          "outcome_id": "long_downtime",
+          "description": "Reset causes >5 seconds of dead play.",
+          "violates": [
+            "C-007"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "ballreset",
+        "hazard",
+        "reset_pressure",
+        "volatile_possession"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "BallReset",
+        "HazardTrigger"
+      ],
+      "notes": "Map-dependent: only valid on maps with accessible hazards/voids. Slam Dunk and Bloodbowl both qualify.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-009",
+      "slug": "head_on_speed_duel",
+      "title": "Head-On Speed Duel",
+      "contract_refs": [
+        "C-006",
+        "C-009",
+        "P-060"
+      ],
+      "map_scope": "any",
+      "description": "Two players charge head-on. Player A is moving at a clearly higher speed than Player B. Higher-speed player should win the collision or close-speed cases resolve readably — never randomly.",
+      "preconditions": {
+        "player_a_state": "charging",
+        "player_b_state": "charging",
+        "collision_type": "head_on",
+        "speed_delta": "player_a_clearly_faster"
+      },
+      "trigger": "head_on_collision",
+      "expected_outcomes": [
+        {
+          "outcome_id": "higher_speed_wins",
+          "description": "Player A (higher speed) wins the collision — Player B is knocked down or deflected.",
+          "required": true,
+          "validates": [
+            "head_on_skill",
+            "knockdown"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "random_winner",
+          "description": "Winner is determined by RNG rather than speed/skill inputs.",
+          "violates": [
+            "C-009",
+            "P-060"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "head_on",
+        "knockdown",
+        "charge",
+        "tackle"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "TackleResolve",
+        "KnockdownEvent",
+        "HeadOnCollision"
+      ],
+      "notes": "P-060 is explicit: skill delta must be legible. Close-speed outcomes can be defined (e.g. mutual knockdown) but must not be random. Speed includes powerup-modified speeds.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-010",
+      "slug": "last_second_touchdown_stop",
+      "title": "Last-Second Touchdown Stop",
+      "contract_refs": [
+        "C-001",
+        "C-004"
+      ],
+      "map_scope": "any",
+      "description": "Carrier is airborne or running directly into goal. Defender lands a hit just before the scoring condition triggers. Score must be deniable if hit precedes goal.",
+      "preconditions": {
+        "ball_state": "carried",
+        "carrier_position": "entering_goal_zone",
+        "carrier_state": "airborne_or_running",
+        "defender_state": "hitting_carrier"
+      },
+      "trigger": "defender_hit_lands_before_goal_condition",
+      "expected_outcomes": [
+        {
+          "outcome_id": "score_denied",
+          "description": "No goal registered; ball becomes loose or possession transfers.",
+          "required": true,
+          "validates": [
+            "volatile_possession",
+            "carrier_danger"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "goal_unstoppable_near_zone",
+          "description": "Carrier within goal proximity becomes invulnerable — hit has no effect on scoring.",
+          "violates": [
+            "C-004",
+            "C-001"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "carrier_danger",
+        "volatile_possession",
+        "tackle",
+        "goal_score"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "TackleResolve",
+        "GoalScore",
+        "PossessionTransfer"
+      ],
+      "notes": "Related to S-001 but specifically tests the airborne + last-frame case. Timing resolution must be deterministic.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-011",
+      "slug": "loose_ball_bounce",
+      "title": "Loose Ball Bounce",
+      "contract_refs": [
+        "C-005",
+        "C-006"
+      ],
+      "map_scope": "any",
+      "description": "Ball bounces after a fumble or throw. Bounce trajectory must be readable and the landing zone contestable.",
+      "preconditions": {
+        "ball_state": "loose_after_fumble_or_throw",
+        "surface": "ground_or_wall"
+      },
+      "trigger": "ball_contacts_surface_after_losing_possession",
+      "expected_outcomes": [
+        {
+          "outcome_id": "readable_reflection",
+          "description": "Ball reflects off surface in a direction consistent with incidence angle — players can anticipate it.",
+          "required": true,
+          "validates": [
+            "volatile_possession"
+          ]
+        },
+        {
+          "outcome_id": "contestable_landing",
+          "description": "Ball comes to a rest or second bounce in a location where nearby players can realistically compete for it.",
+          "required": true,
+          "validates": [
+            "automatic_pickup",
+            "volatile_possession"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "ball_stops_dead",
+          "description": "Ball loses all momentum instantly on contact — no bounce or roll.",
+          "violates": [
+            "C-006"
+          ]
+        },
+        {
+          "outcome_id": "ball_flies_erratically",
+          "description": "Ball bounces in an unreadable direction with no spatial logic.",
+          "violates": [
+            "C-005"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "volatile_possession",
+        "ballreset"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "BallLoose",
+        "BallBounce",
+        "BallLanded"
+      ],
+      "notes": "Wall bounces on Slam Dunk are particularly important — platforms and side walls create rebound routes that skilled players exploit.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-012",
+      "slug": "respawn_rejoin",
+      "title": "Respawn Rejoin",
+      "contract_refs": [
+        "C-003",
+        "C-010"
+      ],
+      "map_scope": "any",
+      "description": "Player dies while ball is actively contested. Respawn path must allow the player to return to an active or immediately subsequent contest within ~10 seconds.",
+      "preconditions": {
+        "ball_state": "contested",
+        "player_event": "death_while_contest_active"
+      },
+      "trigger": "player_respawn",
+      "expected_outcomes": [
+        {
+          "outcome_id": "player_rejoins_contest",
+          "description": "Respawned player can reach the active contest or the next one within ~10 seconds.",
+          "required": true,
+          "validates": [
+            "volatile_possession"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "player_irrelevant_for_over_10s",
+          "description": "Respawn location or timing locks the player out of play for more than 10 seconds.",
+          "violates": [
+            "C-010",
+            "C-003"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "knockdown",
+        "recovery"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "PlayerDeath",
+        "PlayerRespawn",
+        "PlayerRejoinsContest"
+      ],
+      "notes": "Spawn placement is map-critical. All EFT maps must be validated against this — spawn clusters that are too far from the contest center will fail.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-013",
+      "slug": "choke_corridor_fight",
+      "title": "Choke Corridor Fight",
+      "contract_refs": [
+        "C-001",
+        "C-002"
+      ],
+      "map_scope": "any",
+      "description": "Ball is in a narrow corridor or choke point. Body-blocking and clearing maneuvers must matter — defending a choke must be viable, not random.",
+      "preconditions": {
+        "ball_state": "loose_or_carried",
+        "spatial_context": "narrow_corridor_or_choke"
+      },
+      "trigger": "contest_in_choke_geometry",
+      "expected_outcomes": [
+        {
+          "outcome_id": "body_blocking_has_effect",
+          "description": "Defender can use their body to block or slow the ball carrier's path through the choke.",
+          "required": true,
+          "validates": [
+            "tackle",
+            "carrier_danger"
+          ]
+        },
+        {
+          "outcome_id": "clearing_is_viable",
+          "description": "A team can clear defenders from the choke by outrunning or hitting them, allowing a carrier through.",
+          "required": true,
+          "validates": [
+            "tackle",
+            "contested_carry"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "corridor_defense_impossible",
+          "description": "Player bodies have no effect in the choke — carrier passes through freely.",
+          "violates": [
+            "C-001"
+          ]
+        },
+        {
+          "outcome_id": "corridor_fight_purely_random",
+          "description": "Outcome is coin-flip with no relation to positioning or skill.",
+          "violates": [
+            "C-002"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "tackle",
+        "carrier_danger",
+        "contested_carry",
+        "scrum"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "TackleResolve",
+        "KnockdownEvent",
+        "PossessionTransfer"
+      ],
+      "notes": "Slam Dunk's side corridors and Bloodbowl's channel edges are the canonical environments.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-014",
+      "slug": "score_counter_attack",
+      "title": "Score Counter-Attack",
+      "contract_refs": [
+        "C-007",
+        "C-010"
+      ],
+      "map_scope": "any",
+      "description": "Team A scores. Ball resets. Team B can immediately rush the reset point to create a new contest — no long dead-play interruption.",
+      "preconditions": {
+        "event": "goal_just_scored",
+        "ball_state": "resetting"
+      },
+      "trigger": "ball_reset_after_goal",
+      "expected_outcomes": [
+        {
+          "outcome_id": "contest_resumes_quickly",
+          "description": "New contest is live within a few seconds of the reset. Team B can realistically rush and challenge.",
+          "required": true,
+          "validates": [
+            "volatile_possession",
+            "reset_pressure"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "long_dead_play_after_goal",
+          "description": "Goal triggers a ceremony or pause that removes the ability to immediately counter.",
+          "violates": [
+            "C-007",
+            "C-010"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "ballreset",
+        "reset_pressure",
+        "volatile_possession"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "GoalScore",
+        "BallReset",
+        "PossessionTransfer"
+      ],
+      "notes": "The counter-rush after a goal is a core EFT tension pattern. The reset delay must be short enough that Team B can contest the reset ball if they commit immediately.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-015",
+      "slug": "tackle_chain",
+      "title": "Tackle Chain",
+      "contract_refs": [
+        "C-002",
+        "C-006"
+      ],
+      "map_scope": "any",
+      "description": "Player A tackles B; ball pops to C; Player D immediately tackles C. Rapid chained possession/knockdown events must be possible — cooldowns must not block the second valid tackle.",
+      "preconditions": {
+        "ball_state": "carried_by_B",
+        "player_a_state": "charging_at_B",
+        "player_d_state": "near_C"
+      },
+      "trigger": "sequential_tackles_in_rapid_succession",
+      "expected_outcomes": [
+        {
+          "outcome_id": "first_tackle_lands",
+          "description": "A tackles B; ball becomes loose and goes to C.",
+          "required": true,
+          "validates": [
+            "volatile_possession",
+            "tackle"
+          ]
+        },
+        {
+          "outcome_id": "second_tackle_is_not_blocked",
+          "description": "D can tackle C immediately — no cooldown prevents the second valid tackle.",
+          "required": true,
+          "validates": [
+            "volatile_possession",
+            "tackle"
+          ]
+        },
+        {
+          "outcome_id": "chain_produces_new_contest",
+          "description": "After both tackles, ball is in a new loose or newly possessed state.",
+          "required": true,
+          "validates": [
+            "volatile_possession"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "cooldown_blocks_second_tackle",
+          "description": "A global or per-player tackle cooldown prevents D from immediately tackling C after A tackles B.",
+          "violates": [
+            "C-002",
+            "C-006"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "tackle",
+        "volatile_possession",
+        "knockdown",
+        "reversal"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "TackleResolve",
+        "PossessionTransfer",
+        "KnockdownEvent"
+      ],
+      "notes": "The chain should be possible within a single second. This tests that cooldown systems are per-player (not global) and short enough to preserve EFT's pace.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-016",
+      "slug": "goal_line_intercept",
+      "title": "Goal-Line Intercept",
+      "contract_refs": [
+        "C-003",
+        "C-004"
+      ],
+      "map_scope": "any",
+      "description": "Loose ball rolling or flying toward the goal. A defending player must be able to cut it off and intercept it — ball must not become non-interactable near scoring.",
+      "preconditions": {
+        "ball_state": "loose_in_flight_or_rolling",
+        "ball_trajectory": "toward_goal",
+        "defender_position": "cutting_path_to_goal"
+      },
+      "trigger": "defender_moves_into_ball_path_near_goal",
+      "expected_outcomes": [
+        {
+          "outcome_id": "defender_intercepts_ball",
+          "description": "Defender collects the ball by moving into its path — automatic pickup applies.",
+          "required": true,
+          "validates": [
+            "automatic_pickup",
+            "volatile_possession"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "ball_non_interactable_near_goal",
+          "description": "Ball ignores the defender near the goal zone — either phased through or treated as already scored.",
+          "violates": [
+            "C-003",
+            "C-004"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "automatic_pickup",
+        "volatile_possession",
+        "goal_score"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "PossessionTransfer",
+        "GoalScore"
+      ],
+      "notes": "Critical for Slam Dunk where hoops are elevated — ball arc toward hoop must be interceptable by a jumping defender.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-017",
+      "slug": "mid_air_catch",
+      "title": "Mid-Air Catch / Pickup",
+      "contract_refs": [
+        "C-005",
+        "C-009"
+      ],
+      "map_scope": "any",
+      "description": "Ball thrown high; a player jumps into its path. Player must be able to collect through contact — automatic pickup, not a scripted catch. Player carries momentum state from the jump.",
+      "preconditions": {
+        "ball_state": "in_flight_high_arc",
+        "player_state": "jumping_into_ball_path"
+      },
+      "trigger": "player_body_intersects_ball_while_airborne",
+      "expected_outcomes": [
+        {
+          "outcome_id": "player_collects_in_air",
+          "description": "Player automatically picks up ball while airborne by moving through its path.",
+          "required": true,
+          "validates": [
+            "automatic_pickup"
+          ]
+        },
+        {
+          "outcome_id": "momentum_preserved",
+          "description": "Player's airborne momentum state is preserved after collection — no snap-to-ground.",
+          "required": true,
+          "validates": [
+            "dive"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "only_grounded_scripted_catches",
+          "description": "Pickup only possible when grounded or via a catch animation — mid-air body contact fails.",
+          "violates": [
+            "C-005",
+            "C-009"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "automatic_pickup",
+        "volatile_possession",
+        "dive"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "PossessionTransfer",
+        "PlayerAirborne"
+      ],
+      "notes": "The Slam Dunk slam-dunk route depends on this — jumping toward the hoop while collecting a thrown ball is the key interaction.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-018",
+      "slug": "powerup_route",
+      "title": "Powerup Route",
+      "contract_refs": [
+        "P-080",
+        "P-090"
+      ],
+      "map_scope": "any",
+      "description": "Carrier chooses a longer route through a speedball or powerup. The powerup must change tempo enough to be worth the detour — but the route must remain contestable by defenders anticipating it.",
+      "preconditions": {
+        "ball_state": "carried",
+        "route_available": "powerup_route_longer_than_direct",
+        "map_feature": "speedball_or_powerup_present"
+      },
+      "trigger": "carrier_picks_up_powerup",
+      "expected_outcomes": [
+        {
+          "outcome_id": "powerup_changes_tempo",
+          "description": "Powerup effect is significant enough that the longer route was worth taking — speed, score multiplier, or other effect is impactful.",
+          "required": true,
+          "validates": [
+            "powerup"
+          ]
+        },
+        {
+          "outcome_id": "route_remains_contestable",
+          "description": "Defender who anticipates the powerup route can still challenge — powerup does not guarantee success.",
+          "required": true,
+          "validates": [
+            "carrier_danger",
+            "volatile_possession"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "powerup_cosmetic",
+          "description": "Powerup effect is too small to justify the detour — route choice is irrelevant.",
+          "violates": [
+            "P-080"
+          ]
+        },
+        {
+          "outcome_id": "powerup_guarantees_victory",
+          "description": "Powerup makes the carrier effectively unstoppable — defenders have no realistic counter.",
+          "violates": [
+            "P-090",
+            "C-001"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "powerup",
+        "carrier_danger",
+        "volatile_possession"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "PowerupPickup",
+        "PossessionTransfer"
+      ],
+      "notes": "Speedball is the canonical powerup. Scoreball and iceball have different risk profiles — test all variants where available.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-019",
+      "slug": "carrier_juke",
+      "title": "Carrier Juke",
+      "contract_refs": [
+        "C-005",
+        "C-009"
+      ],
+      "map_scope": "any",
+      "description": "Defender charges straight at carrier. Carrier cuts sideways or uses geometry to cause the defender to overcommit. Defender must lose relevance for a short window — no magnetic tracking.",
+      "preconditions": {
+        "ball_state": "carried",
+        "defender_state": "charging_straight",
+        "carrier_state": "cutting_or_using_geometry"
+      },
+      "trigger": "carrier_direction_change_causes_defender_to_overcommit",
+      "expected_outcomes": [
+        {
+          "outcome_id": "defender_overcommits",
+          "description": "Defender's charge carries them past or away from the carrier, opening a window.",
+          "required": true,
+          "validates": [
+            "carrier_danger"
+          ]
+        },
+        {
+          "outcome_id": "carrier_gains_short_window",
+          "description": "Carrier has a brief window of reduced threat — not immunity, just a gap.",
+          "required": true,
+          "validates": [
+            "volatile_possession",
+            "carrier_danger"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "defender_magnetically_tracks",
+          "description": "Defender auto-corrects direction perfectly and the juke produces no meaningful separation.",
+          "violates": [
+            "C-005",
+            "C-009"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "carrier_danger",
+        "volatile_possession",
+        "charge"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "TackleResolve",
+        "CarrierDirectionChange"
+      ],
+      "notes": "Jukes are map-geometry-dependent. Slam Dunk platforms and Bloodbowl open field produce different juke windows.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-020",
+      "slug": "bot_positioning",
+      "title": "Bot Positioning",
+      "contract_refs": [
+        "C-003",
+        "C-005"
+      ],
+      "map_scope": "any",
+      "description": "Ball is loose to one side of the field. A bot must move toward the predicted future contest or pickup zone — not chase the current ball position if it has already moved.",
+      "preconditions": {
+        "ball_state": "loose",
+        "ball_direction": "moving_to_one_side",
+        "bot_state": "deciding_movement"
+      },
+      "trigger": "bot_movement_decision_after_loose_ball",
+      "expected_outcomes": [
+        {
+          "outcome_id": "bot_moves_to_future_contest",
+          "description": "Bot anticipates where the ball will be and moves there, not where the ball was.",
+          "required": true,
+          "validates": [
+            "volatile_possession"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "bot_chases_behind_play",
+          "description": "Bot moves to the ball's stale last-known position and arrives after the contest has moved.",
+          "violates": [
+            "C-003",
+            "C-005"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "volatile_possession"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "BotDecision",
+        "BallLoose"
+      ],
+      "notes": "Bot AI must use predictive positioning (C-005 domain). This scenario validates the AI target selection, not physics.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-021",
+      "slug": "slam_dunk_hoop_decision",
+      "title": "Slam Dunk Hoop Decision",
+      "contract_refs": [
+        "M-190"
+      ],
+      "map_scope": "Slam Dunk",
+      "description": "Slam Dunk scoring complex has throw and movement-assisted slam-dunk routes. The map analyzer and game implementation must distinguish these scoring methods and preserve the route pressure each creates.",
+      "preconditions": {
+        "map": "Slam Dunk",
+        "ball_state": "carried_or_in_flight",
+        "scoring_complex": "hoop_with_multiple_approach_vectors"
+      },
+      "trigger": "ball_approaches_slam_dunk_scoring_complex",
+      "expected_outcomes": [
+        {
+          "outcome_id": "throw_route_detectable",
+          "description": "Map analyzer correctly identifies the throw-to-hoop route as a distinct scoring method.",
+          "required": true,
+          "validates": [
+            "goal_score"
+          ]
+        },
+        {
+          "outcome_id": "slam_route_detectable",
+          "description": "Map analyzer correctly identifies the movement-assisted dunk route as a distinct scoring method.",
+          "required": true,
+          "validates": [
+            "goal_score",
+            "jumppad"
+          ]
+        },
+        {
+          "outcome_id": "route_pressure_preserved",
+          "description": "Implementation treats the two routes as requiring different defensive responses — not collapsed into one generic goal check.",
+          "required": true,
+          "validates": [
+            "volatile_possession",
+            "goal_score"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "all_triggers_generic_goal_box",
+          "description": "Both scoring routes reduced to a single trigger_goal box with no route distinction.",
+          "violates": [
+            "M-190"
+          ]
+        }
+      ],
+      "mechanic_tags": [
+        "goal_score",
+        "jumppad"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "GoalScore",
+        "ScoringMethodDetected"
+      ],
+      "notes": "This is a map-intelligence scenario as much as a gameplay scenario. The map analyzer must produce distinct scoring complex entries for throw vs. slam routes before implementation can be validated.",
+      "status": "defined"
+    },
+    {
+      "schema_version": 1,
+      "id": "S-022",
+      "slug": "bloodbowl_flat_swarm",
+      "title": "Bloodbowl Flat Swarm",
+      "contract_refs": [],
+      "map_scope": "Bloodbowl",
+      "description": "Bloodbowl reset or loose ball near centre field. Open-field convergence must produce tackles, knockdowns, and breakouts quickly — no spreading or safe carries across the flat open field.",
+      "preconditions": {
+        "map": "Bloodbowl",
+        "ball_state": "loose_or_reset",
+        "ball_position": "centre_field",
+        "player_distribution": "spread_on_both_sides"
+      },
+      "trigger": "ball_becomes_live_at_centre",
+      "expected_outcomes": [
+        {
+          "outcome_id": "rapid_convergence",
+          "description": "Players from both teams converge quickly on the ball.",
+          "required": true,
+          "validates": [
+            "volatile_possession"
+          ]
+        },
+        {
+          "outcome_id": "tackles_and_knockdowns",
+          "description": "Collisions, tackles, and knockdowns occur during convergence.",
+          "required": true,
+          "validates": [
+            "tackle",
+            "knockdown",
+            "scrum"
+          ]
+        },
+        {
+          "outcome_id": "breakout_possible",
+          "description": "A player can break from the swarm and carry in open field — but not safely all the way.",
+          "required": true,
+          "validates": [
+            "volatile_possession",
+            "carrier_danger"
+          ]
+        }
+      ],
+      "must_not_outcomes": [
+        {
+          "outcome_id": "players_spread_out",
+          "description": "Players avoid the contest zone and stay spread — no swarm forms.",
+          "violates": []
+        },
+        {
+          "outcome_id": "safe_carry_across_field",
+          "description": "Carrier runs unopposed from reset to goal with no realistic interception opportunity.",
+          "violates": []
+        }
+      ],
+      "mechanic_tags": [
+        "volatile_possession",
+        "scrum",
+        "tackle",
+        "knockdown",
+        "carrier_danger"
+      ],
+      "simulation_ready": false,
+      "telemetry_events_required": [
+        "BallReset",
+        "BallLoose",
+        "TackleResolve",
+        "KnockdownEvent",
+        "PossessionTransfer"
+      ],
+      "notes": "This is the canonical Bloodbowl vertical slice. The open flat geometry makes it the benchmark for swarm density and carrier danger in unobstructed space.",
+      "status": "defined"
+    }
+  ]
+}

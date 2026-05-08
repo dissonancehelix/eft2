@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "S-020",
+  "slug": "bot_positioning",
+  "title": "Bot Positioning",
+  "contract_refs": ["C-003", "C-005"],
+  "map_scope": "any",
+  "description": "Ball is loose to one side of the field. A bot must move toward the predicted future contest or pickup zone — not chase the current ball position if it has already moved.",
+  "preconditions": {
+    "ball_state": "loose",
+    "ball_direction": "moving_to_one_side",
+    "bot_state": "deciding_movement"
+  },
+  "trigger": "bot_movement_decision_after_loose_ball",
+  "expected_outcomes": [
+    {
+      "outcome_id": "bot_moves_to_future_contest",
+      "description": "Bot anticipates where the ball will be and moves there, not where the ball was.",
+      "required": true,
+      "validates": ["volatile_possession"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "bot_chases_behind_play",
+      "description": "Bot moves to the ball's stale last-known position and arrives after the contest has moved.",
+      "violates": ["C-003", "C-005"]
+    }
+  ],
+  "mechanic_tags": ["volatile_possession"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["BotDecision", "BallLoose"],
+  "notes": "Bot AI must use predictive positioning (C-005 domain). This scenario validates the AI target selection, not physics.",
+  "status": "defined"
+}

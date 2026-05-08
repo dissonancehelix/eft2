@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "S-022",
+  "slug": "bloodbowl_flat_swarm",
+  "title": "Bloodbowl Flat Swarm",
+  "contract_refs": [],
+  "map_scope": "Bloodbowl",
+  "description": "Bloodbowl reset or loose ball near centre field. Open-field convergence must produce tackles, knockdowns, and breakouts quickly — no spreading or safe carries across the flat open field.",
+  "preconditions": {
+    "map": "Bloodbowl",
+    "ball_state": "loose_or_reset",
+    "ball_position": "centre_field",
+    "player_distribution": "spread_on_both_sides"
+  },
+  "trigger": "ball_becomes_live_at_centre",
+  "expected_outcomes": [
+    {
+      "outcome_id": "rapid_convergence",
+      "description": "Players from both teams converge quickly on the ball.",
+      "required": true,
+      "validates": ["volatile_possession"]
+    },
+    {
+      "outcome_id": "tackles_and_knockdowns",
+      "description": "Collisions, tackles, and knockdowns occur during convergence.",
+      "required": true,
+      "validates": ["tackle", "knockdown", "scrum"]
+    },
+    {
+      "outcome_id": "breakout_possible",
+      "description": "A player can break from the swarm and carry in open field — but not safely all the way.",
+      "required": true,
+      "validates": ["volatile_possession", "carrier_danger"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "players_spread_out",
+      "description": "Players avoid the contest zone and stay spread — no swarm forms.",
+      "violates": []
+    },
+    {
+      "outcome_id": "safe_carry_across_field",
+      "description": "Carrier runs unopposed from reset to goal with no realistic interception opportunity.",
+      "violates": []
+    }
+  ],
+  "mechanic_tags": ["volatile_possession", "scrum", "tackle", "knockdown", "carrier_danger"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["BallReset", "BallLoose", "TackleResolve", "KnockdownEvent", "PossessionTransfer"],
+  "notes": "This is the canonical Bloodbowl vertical slice. The open flat geometry makes it the benchmark for swarm density and carrier danger in unobstructed space.",
+  "status": "defined"
+}

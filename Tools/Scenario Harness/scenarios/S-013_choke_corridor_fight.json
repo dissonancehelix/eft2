@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "S-013",
+  "slug": "choke_corridor_fight",
+  "title": "Choke Corridor Fight",
+  "contract_refs": ["C-001", "C-002"],
+  "map_scope": "any",
+  "description": "Ball is in a narrow corridor or choke point. Body-blocking and clearing maneuvers must matter — defending a choke must be viable, not random.",
+  "preconditions": {
+    "ball_state": "loose_or_carried",
+    "spatial_context": "narrow_corridor_or_choke"
+  },
+  "trigger": "contest_in_choke_geometry",
+  "expected_outcomes": [
+    {
+      "outcome_id": "body_blocking_has_effect",
+      "description": "Defender can use their body to block or slow the ball carrier's path through the choke.",
+      "required": true,
+      "validates": ["tackle", "carrier_danger"]
+    },
+    {
+      "outcome_id": "clearing_is_viable",
+      "description": "A team can clear defenders from the choke by outrunning or hitting them, allowing a carrier through.",
+      "required": true,
+      "validates": ["tackle", "contested_carry"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "corridor_defense_impossible",
+      "description": "Player bodies have no effect in the choke — carrier passes through freely.",
+      "violates": ["C-001"]
+    },
+    {
+      "outcome_id": "corridor_fight_purely_random",
+      "description": "Outcome is coin-flip with no relation to positioning or skill.",
+      "violates": ["C-002"]
+    }
+  ],
+  "mechanic_tags": ["tackle", "carrier_danger", "contested_carry", "scrum"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["TackleResolve", "KnockdownEvent", "PossessionTransfer"],
+  "notes": "Slam Dunk's side corridors and Bloodbowl's channel edges are the canonical environments.",
+  "status": "defined"
+}

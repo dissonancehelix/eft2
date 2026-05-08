@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "S-004",
+  "slug": "jump_flung_fumble",
+  "title": "Jump-Flung Fumble",
+  "contract_refs": ["C-006", "C-009"],
+  "map_scope": "any",
+  "description": "Carrier jumps and is hit or loses control during vertical motion. Verticality must produce readable chaos with a contestable ball — not a dead straight-down drop.",
+  "preconditions": {
+    "ball_state": "carried",
+    "carrier_state": "airborne",
+    "contact_type": "hit_or_control_loss_during_jump"
+  },
+  "trigger": "carrier_loses_ball_while_airborne",
+  "expected_outcomes": [
+    {
+      "outcome_id": "ball_has_spatial_consequence",
+      "description": "Ball travels in a direction related to the collision — readable momentum transfer.",
+      "required": true,
+      "validates": ["volatile_possession", "carrier_danger"]
+    },
+    {
+      "outcome_id": "ball_is_contestable_after_landing",
+      "description": "Ball comes to rest or bounces in a location where players can realistically contest it.",
+      "required": true,
+      "validates": ["volatile_possession"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "carrier_drops_straight_down",
+      "description": "Ball falls directly below the carrier with no spatial influence from the hit.",
+      "violates": ["C-006", "C-009"]
+    }
+  ],
+  "mechanic_tags": ["possession", "volatile_possession", "dive", "knockdown", "carrier_danger"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["BallLoose", "PossessionTransfer", "PlayerAirborne"],
+  "notes": "Jump + hit interaction is a primary EFT skill expression. The output direction should be predictable enough for experienced players to anticipate.",
+  "status": "defined"
+}

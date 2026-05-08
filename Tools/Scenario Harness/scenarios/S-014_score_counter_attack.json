@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "S-014",
+  "slug": "score_counter_attack",
+  "title": "Score Counter-Attack",
+  "contract_refs": ["C-007", "C-010"],
+  "map_scope": "any",
+  "description": "Team A scores. Ball resets. Team B can immediately rush the reset point to create a new contest — no long dead-play interruption.",
+  "preconditions": {
+    "event": "goal_just_scored",
+    "ball_state": "resetting"
+  },
+  "trigger": "ball_reset_after_goal",
+  "expected_outcomes": [
+    {
+      "outcome_id": "contest_resumes_quickly",
+      "description": "New contest is live within a few seconds of the reset. Team B can realistically rush and challenge.",
+      "required": true,
+      "validates": ["volatile_possession", "reset_pressure"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "long_dead_play_after_goal",
+      "description": "Goal triggers a ceremony or pause that removes the ability to immediately counter.",
+      "violates": ["C-007", "C-010"]
+    }
+  ],
+  "mechanic_tags": ["ballreset", "reset_pressure", "volatile_possession"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["GoalScore", "BallReset", "PossessionTransfer"],
+  "notes": "The counter-rush after a goal is a core EFT tension pattern. The reset delay must be short enough that Team B can contest the reset ball if they commit immediately.",
+  "status": "defined"
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "S-019",
+  "slug": "carrier_juke",
+  "title": "Carrier Juke",
+  "contract_refs": ["C-005", "C-009"],
+  "map_scope": "any",
+  "description": "Defender charges straight at carrier. Carrier cuts sideways or uses geometry to cause the defender to overcommit. Defender must lose relevance for a short window — no magnetic tracking.",
+  "preconditions": {
+    "ball_state": "carried",
+    "defender_state": "charging_straight",
+    "carrier_state": "cutting_or_using_geometry"
+  },
+  "trigger": "carrier_direction_change_causes_defender_to_overcommit",
+  "expected_outcomes": [
+    {
+      "outcome_id": "defender_overcommits",
+      "description": "Defender's charge carries them past or away from the carrier, opening a window.",
+      "required": true,
+      "validates": ["carrier_danger"]
+    },
+    {
+      "outcome_id": "carrier_gains_short_window",
+      "description": "Carrier has a brief window of reduced threat — not immunity, just a gap.",
+      "required": true,
+      "validates": ["volatile_possession", "carrier_danger"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "defender_magnetically_tracks",
+      "description": "Defender auto-corrects direction perfectly and the juke produces no meaningful separation.",
+      "violates": ["C-005", "C-009"]
+    }
+  ],
+  "mechanic_tags": ["carrier_danger", "volatile_possession", "charge"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["TackleResolve", "CarrierDirectionChange"],
+  "notes": "Jukes are map-geometry-dependent. Slam Dunk platforms and Bloodbowl open field produce different juke windows.",
+  "status": "defined"
+}

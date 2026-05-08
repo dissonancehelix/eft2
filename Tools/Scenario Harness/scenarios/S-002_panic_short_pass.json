@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "S-002",
+  "slug": "panic_short_pass",
+  "title": "Panic Short Pass",
+  "contract_refs": ["C-002", "C-006", "M-170"],
+  "map_scope": "any",
+  "description": "Carrier is swarmed by two defenders. Early or low-power throw must create a nearby contested loose ball — not a safe clean pass.",
+  "preconditions": {
+    "ball_state": "carried",
+    "defenders_nearby": 2,
+    "carrier_state": "under_pressure"
+  },
+  "trigger": "carrier_throws_under_pressure",
+  "expected_outcomes": [
+    {
+      "outcome_id": "nearby_contested_loose_ball",
+      "description": "Ball lands nearby as a loose ball with multiple players able to contest it.",
+      "required": true,
+      "validates": ["volatile_possession", "contested_carry"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "safe_pass_to_open_teammate",
+      "description": "Ball reaches a teammate cleanly with no contest — panic throw should not produce a perfect result.",
+      "violates": ["C-002", "C-006"]
+    },
+    {
+      "outcome_id": "ball_sticks_to_carrier",
+      "description": "Carrier retains ball despite throw input — voluntary release must work.",
+      "violates": ["C-002"]
+    }
+  ],
+  "mechanic_tags": ["possession", "volatile_possession", "throw", "contested_carry"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["ThrowAttempt", "BallLoose", "PossessionTransfer"],
+  "notes": "Throw power/arc must degrade meaningfully under pressure. The loose ball landing zone should be close enough for both teams to realistically contest.",
+  "status": "defined"
+}

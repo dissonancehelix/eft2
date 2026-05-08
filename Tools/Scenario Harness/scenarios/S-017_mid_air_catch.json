@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "S-017",
+  "slug": "mid_air_catch",
+  "title": "Mid-Air Catch / Pickup",
+  "contract_refs": ["C-005", "C-009"],
+  "map_scope": "any",
+  "description": "Ball thrown high; a player jumps into its path. Player must be able to collect through contact — automatic pickup, not a scripted catch. Player carries momentum state from the jump.",
+  "preconditions": {
+    "ball_state": "in_flight_high_arc",
+    "player_state": "jumping_into_ball_path"
+  },
+  "trigger": "player_body_intersects_ball_while_airborne",
+  "expected_outcomes": [
+    {
+      "outcome_id": "player_collects_in_air",
+      "description": "Player automatically picks up ball while airborne by moving through its path.",
+      "required": true,
+      "validates": ["automatic_pickup"]
+    },
+    {
+      "outcome_id": "momentum_preserved",
+      "description": "Player's airborne momentum state is preserved after collection — no snap-to-ground.",
+      "required": true,
+      "validates": ["dive"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "only_grounded_scripted_catches",
+      "description": "Pickup only possible when grounded or via a catch animation — mid-air body contact fails.",
+      "violates": ["C-005", "C-009"]
+    }
+  ],
+  "mechanic_tags": ["automatic_pickup", "volatile_possession", "dive"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["PossessionTransfer", "PlayerAirborne"],
+  "notes": "The Slam Dunk slam-dunk route depends on this — jumping toward the hoop while collecting a thrown ball is the key interaction.",
+  "status": "defined"
+}

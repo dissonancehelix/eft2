@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "S-009",
+  "slug": "head_on_speed_duel",
+  "title": "Head-On Speed Duel",
+  "contract_refs": ["C-006", "C-009", "P-060"],
+  "map_scope": "any",
+  "description": "Two players charge head-on. Player A is moving at a clearly higher speed than Player B. Higher-speed player should win the collision or close-speed cases resolve readably — never randomly.",
+  "preconditions": {
+    "player_a_state": "charging",
+    "player_b_state": "charging",
+    "collision_type": "head_on",
+    "speed_delta": "player_a_clearly_faster"
+  },
+  "trigger": "head_on_collision",
+  "expected_outcomes": [
+    {
+      "outcome_id": "higher_speed_wins",
+      "description": "Player A (higher speed) wins the collision — Player B is knocked down or deflected.",
+      "required": true,
+      "validates": ["head_on_skill", "knockdown"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "random_winner",
+      "description": "Winner is determined by RNG rather than speed/skill inputs.",
+      "violates": ["C-009", "P-060"]
+    }
+  ],
+  "mechanic_tags": ["head_on", "knockdown", "charge", "tackle"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["TackleResolve", "KnockdownEvent", "HeadOnCollision"],
+  "notes": "P-060 is explicit: skill delta must be legible. Close-speed outcomes can be defined (e.g. mutual knockdown) but must not be random. Speed includes powerup-modified speeds.",
+  "status": "defined"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "S-021",
+  "slug": "slam_dunk_hoop_decision",
+  "title": "Slam Dunk Hoop Decision",
+  "contract_refs": ["M-190"],
+  "map_scope": "Slam Dunk",
+  "description": "Slam Dunk scoring complex has throw and movement-assisted slam-dunk routes. The map analyzer and game implementation must distinguish these scoring methods and preserve the route pressure each creates.",
+  "preconditions": {
+    "map": "Slam Dunk",
+    "ball_state": "carried_or_in_flight",
+    "scoring_complex": "hoop_with_multiple_approach_vectors"
+  },
+  "trigger": "ball_approaches_slam_dunk_scoring_complex",
+  "expected_outcomes": [
+    {
+      "outcome_id": "throw_route_detectable",
+      "description": "Map analyzer correctly identifies the throw-to-hoop route as a distinct scoring method.",
+      "required": true,
+      "validates": ["goal_score"]
+    },
+    {
+      "outcome_id": "slam_route_detectable",
+      "description": "Map analyzer correctly identifies the movement-assisted dunk route as a distinct scoring method.",
+      "required": true,
+      "validates": ["goal_score", "jumppad"]
+    },
+    {
+      "outcome_id": "route_pressure_preserved",
+      "description": "Implementation treats the two routes as requiring different defensive responses — not collapsed into one generic goal check.",
+      "required": true,
+      "validates": ["volatile_possession", "goal_score"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "all_triggers_generic_goal_box",
+      "description": "Both scoring routes reduced to a single trigger_goal box with no route distinction.",
+      "violates": ["M-190"]
+    }
+  ],
+  "mechanic_tags": ["goal_score", "jumppad"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["GoalScore", "ScoringMethodDetected"],
+  "notes": "This is a map-intelligence scenario as much as a gameplay scenario. The map analyzer must produce distinct scoring complex entries for throw vs. slam routes before implementation can be validated.",
+  "status": "defined"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "S-003",
+  "slug": "long_throw_recovery",
+  "title": "Long Throw Recovery",
+  "contract_refs": ["C-007", "C-008"],
+  "map_scope": "any",
+  "description": "Carrier throws a high arc downfield into open space. Ball must be recoverable and create a new contest — not vanish, clip geometry, or become dead.",
+  "preconditions": {
+    "ball_state": "carried",
+    "throw_type": "high_arc_long_range",
+    "destination": "open_space_downfield"
+  },
+  "trigger": "carrier_releases_long_throw",
+  "expected_outcomes": [
+    {
+      "outcome_id": "ball_lands_and_is_live",
+      "description": "Ball lands in bounds, remains live, and can be picked up by any player.",
+      "required": true,
+      "validates": ["volatile_possession"]
+    },
+    {
+      "outcome_id": "new_contest_created",
+      "description": "Players converge on landing zone — a new spatial conflict forms.",
+      "required": true,
+      "validates": ["volatile_possession", "contested_carry"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "ball_clips_through_world",
+      "description": "Ball passes through geometry and becomes unrecoverable.",
+      "violates": ["C-008"]
+    },
+    {
+      "outcome_id": "ball_rolls_forever",
+      "description": "Ball never settles and continues rolling past any recoverable position.",
+      "violates": ["C-008"]
+    },
+    {
+      "outcome_id": "ball_becomes_uncatchable",
+      "description": "Ball is too fast or bounces erratically — no player can practically contest it.",
+      "violates": ["C-007"]
+    }
+  ],
+  "mechanic_tags": ["throw", "volatile_possession", "ballreset"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["ThrowAttempt", "BallLoose", "BallLanded"],
+  "notes": "Arc trajectory must respect gravity in a way players can read and predict. Out-of-bounds resets must not grant possession.",
+  "status": "defined"
+}

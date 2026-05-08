@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "S-008",
+  "slug": "intentional_hazard_reset",
+  "title": "Intentional Hazard Reset",
+  "contract_refs": ["C-002", "C-007", "P-090"],
+  "map_scope": "any",
+  "description": "Carrier is pinned near own goal. Team uses an intentional hazard or void dump to force a neutral reset rather than concede possession. Reset must be fast and fair — not a long downtime or a gift.",
+  "preconditions": {
+    "ball_state": "carried",
+    "carrier_position": "pinned_near_own_goal",
+    "map_feature": "hazard_or_void_accessible"
+  },
+  "trigger": "carrier_or_teammate_dumps_ball_into_hazard",
+  "expected_outcomes": [
+    {
+      "outcome_id": "neutral_ball_reset",
+      "description": "Ball resets to a neutral location with no team retaining possession advantage.",
+      "required": true,
+      "validates": ["ballreset", "volatile_possession"]
+    },
+    {
+      "outcome_id": "reset_is_fast",
+      "description": "Reset completes quickly — no extended dead-ball period.",
+      "required": true,
+      "validates": ["volatile_possession"]
+    }
+  ],
+  "must_not_outcomes": [
+    {
+      "outcome_id": "reset_grants_unfair_possession",
+      "description": "The dumping team re-obtains the ball immediately after reset — hazard reset becomes a free re-possession.",
+      "violates": ["C-002", "P-090"]
+    },
+    {
+      "outcome_id": "long_downtime",
+      "description": "Reset causes >5 seconds of dead play.",
+      "violates": ["C-007"]
+    }
+  ],
+  "mechanic_tags": ["ballreset", "hazard", "reset_pressure", "volatile_possession"],
+  "simulation_ready": false,
+  "telemetry_events_required": ["BallReset", "HazardTrigger"],
+  "notes": "Map-dependent: only valid on maps with accessible hazards/voids. Slam Dunk and Bloodbowl both qualify.",
+  "status": "defined"
+}
