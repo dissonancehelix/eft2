@@ -456,29 +456,29 @@ Bots should not:
 
 This list comes from the inherited GMod `EFT.md`. Actual VMF availability has been checked lightly against `C:\Users\dissonance\Desktop\EFT\Projects`.
 
-| Canonical filename | Display name | Source status |
-|---|---|---|
-| `eft_baseballdash_v3` | Baseball Dash | exact VMF found |
-| `eft_big_metal03r1` | Big Metal | closest found: `eft_big_metal03r1_d.vmf` |
-| `eft_bloodbowl_v5` | Bloodbowl | exact VMF found |
-| `eft_castle_warfare` | Castle Warfare | multiple versioned VMFs found |
-| `eft_chamber_v3` | Chamber | closest found: `eft_chamber_d.vmf`, `eft_chamber_v2.vmf` |
-| `eft_cosmic_arena_v2` | Cosmic Arena | exact VMF found |
-| `eft_countdown_v4` | Countdown | closest found: `eft_countdown_v2_d.vmf` |
-| `eft_handegg_r2` | Handegg | exact VMF found |
-| `eft_lake_parima_v2` | Lake Parima | not found in first pass |
-| `eft_legoland_v2` | Legoland | exact VMF found |
-| `eft_minecraft_v4` | Minecraft | exact VMF found |
-| `eft_miniputt_v1r` | Mini Putt | closest found: `eft_miniputt_v1r_d.vmf` |
-| `eft_sky_metal_v2` | Sky Metal | exact VMF found |
-| `eft_skyline_v2` | Skyline | closest found: `eft_skyline_v3.vmf` |
-| `eft_skystep_v4` | Skystep | exact VMF found |
-| `eft_slamdunk_v6` | Slam Dunk | exact VMF found |
-| `eft_soccer_b4` | Soccer | closest found: `eft_soccer_b1.vmf`, `eft_soccer_b2.vmf` |
-| `eft_spacejump_v6` | Space Jump | exact VMF found |
-| `eft_temple_sacrifice_v3` | Temple Sacrifice | exact VMF found |
-| `eft_tunnel_v2` | Tunnel | exact VMF found |
-| `eft_turbines_v2` | Turbines | closest found: `eft_turbines_v2_d.vmf` |
+| Filename | Display name |
+|---|---|
+| `eft_baseballdash_v3` | Baseball Dash |
+| `eft_big_metal03r1` | Big Metal |
+| `eft_bloodbowl_v5` | Bloodbowl |
+| `eft_castle_warfare` | Castle Warfare |
+| `eft_chamber_v3` | Chamber |
+| `eft_cosmic_arena_v2` | Cosmic Arena |
+| `eft_countdown_v4` | Countdown |
+| `eft_handegg_r2` | Handegg |
+| `eft_lake_parima_v2` | Lake Parima |
+| `eft_legoland_v2` | Legoland |
+| `eft_minecraft_v4` | Minecraft |
+| `eft_miniputt_v1r` | Mini Putt |
+| `eft_sky_metal_v2` | Sky Metal |
+| `eft_skyline_v2` | Skyline |
+| `eft_skystep_v4` | Skystep |
+| `eft_slamdunk_v6` | Slam Dunk |
+| `eft_soccer_b4` | Soccer |
+| `eft_spacejump_v6` | Space Jump |
+| `eft_temple_sacrifice_v3` | Temple Sacrifice |
+| `eft_tunnel_v2` | Tunnel |
+| `eft_turbines_v2` | Turbines |
 
 Map identity is partly scoring mode:
 
