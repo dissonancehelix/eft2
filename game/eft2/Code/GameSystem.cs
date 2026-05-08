@@ -19,8 +19,8 @@ public sealed class GameSystem : GameObjectSystem<GameSystem>, Component.INetwor
 	private TimeSince _sinceHostInitialize;
 	private Vector3 _ballSpawn = Vector3.Up * 28.0f;
 
-	[Sync( SyncFlags.FromHost )] public int RedScore { get; private set; }
-	[Sync( SyncFlags.FromHost )] public int BlueScore { get; private set; }
+	[Sync( SyncFlags.FromHost )] public int red_rhinos_score { get; private set; }
+	[Sync( SyncFlags.FromHost )] public int blue_bulls_score { get; private set; }
 	[Sync( SyncFlags.FromHost )] public string RoundState { get; private set; } = "warmup";
 
 	public IReadOnlyList<PlayerMovement> Players => _players;
@@ -108,13 +108,13 @@ public sealed class GameSystem : GameObjectSystem<GameSystem>, Component.INetwor
 		// Mechanics: M-190
 		// Concepts: C-004, C-011
 		// Scenarios: S-001, S-005
-		if ( carrier.Team == TeamId.Red )
-			RedScore++;
-		else if ( carrier.Team == TeamId.Blue )
-			BlueScore++;
+		if ( carrier.Team == TeamId.red_rhinos )
+			red_rhinos_score++;
+		else if ( carrier.Team == TeamId.blue_bulls )
+			blue_bulls_score++;
 
 		RoundState = "score_reset";
-		Telemetry.Emit( "GoalScored", "E-007", $"team={carrier.Team} player={carrier.DisplayName} red={RedScore} blue={BlueScore}" );
+		Telemetry.Emit( "GoalScored", "E-007", $"team={carrier.Team} player={carrier.DisplayName} red_rhinos={red_rhinos_score} blue_bulls={blue_bulls_score}" );
 		ResetAfterScore();
 		RoundState = "playing";
 	}
@@ -188,16 +188,16 @@ public sealed class GameSystem : GameObjectSystem<GameSystem>, Component.INetwor
 
 		CreateBox( root, "North Wall", new Vector3( 0.0f, ArenaHalfWidth + 32.0f, 74.0f ), new Vector3( ArenaHalfLength * 2.0f + 160.0f, 64.0f, 148.0f ), Color.Gray, false );
 		CreateBox( root, "South Wall", new Vector3( 0.0f, -ArenaHalfWidth - 32.0f, 74.0f ), new Vector3( ArenaHalfLength * 2.0f + 160.0f, 64.0f, 148.0f ), Color.Gray, false );
-		CreateBox( root, "Red End Wall", new Vector3( -ArenaHalfLength - 32.0f, 0.0f, 74.0f ), new Vector3( 64.0f, ArenaHalfWidth * 2.0f + 64.0f, 148.0f ), new Color( 0.45f, 0.03f, 0.02f, 1.0f ), false );
-		CreateBox( root, "Blue End Wall", new Vector3( ArenaHalfLength + 32.0f, 0.0f, 74.0f ), new Vector3( 64.0f, ArenaHalfWidth * 2.0f + 64.0f, 148.0f ), new Color( 0.02f, 0.08f, 0.42f, 1.0f ), false );
+		CreateBox( root, "Red Rhinos End Wall", new Vector3( -ArenaHalfLength - 32.0f, 0.0f, 74.0f ), new Vector3( 64.0f, ArenaHalfWidth * 2.0f + 64.0f, 148.0f ), new Color( 0.45f, 0.03f, 0.02f, 1.0f ), false );
+		CreateBox( root, "Blue Bulls End Wall", new Vector3( ArenaHalfLength + 32.0f, 0.0f, 74.0f ), new Vector3( 64.0f, ArenaHalfWidth * 2.0f + 64.0f, 148.0f ), new Color( 0.02f, 0.08f, 0.42f, 1.0f ), false );
 
-		CreateSpawn( root, TeamId.Red, 0, new Vector3( -820.0f, -160.0f, 34.0f ) );
-		CreateSpawn( root, TeamId.Red, 1, new Vector3( -820.0f, 160.0f, 34.0f ) );
-		CreateSpawn( root, TeamId.Blue, 0, new Vector3( 820.0f, -160.0f, 34.0f ) );
-		CreateSpawn( root, TeamId.Blue, 1, new Vector3( 820.0f, 160.0f, 34.0f ) );
+		CreateSpawn( root, TeamId.red_rhinos, 0, new Vector3( -820.0f, -160.0f, 34.0f ) );
+		CreateSpawn( root, TeamId.red_rhinos, 1, new Vector3( -820.0f, 160.0f, 34.0f ) );
+		CreateSpawn( root, TeamId.blue_bulls, 0, new Vector3( 820.0f, -160.0f, 34.0f ) );
+		CreateSpawn( root, TeamId.blue_bulls, 1, new Vector3( 820.0f, 160.0f, 34.0f ) );
 
-		CreateGoal( root, TeamId.Red, new Vector3( ArenaHalfLength - 90.0f, 0.0f, 76.0f ), new Color( 1.0f, 0.02f, 0.02f, 0.55f ) );
-		CreateGoal( root, TeamId.Blue, new Vector3( -ArenaHalfLength + 90.0f, 0.0f, 76.0f ), new Color( 0.05f, 0.22f, 1.0f, 0.55f ) );
+		CreateGoal( root, TeamId.red_rhinos, new Vector3( ArenaHalfLength - 90.0f, 0.0f, 76.0f ), new Color( 1.0f, 0.02f, 0.02f, 0.55f ) );
+		CreateGoal( root, TeamId.blue_bulls, new Vector3( -ArenaHalfLength + 90.0f, 0.0f, 76.0f ), new Color( 0.05f, 0.22f, 1.0f, 0.55f ) );
 		CreateResetTrigger( root );
 
 		if ( networked )
@@ -231,8 +231,8 @@ public sealed class GameSystem : GameObjectSystem<GameSystem>, Component.INetwor
 
 	private void CreateSpawn( GameObject parent, TeamId team, int index, Vector3 position )
 	{
-		var color = team == TeamId.Red ? new Color( 0.8f, 0.04f, 0.03f, 1.0f ) : new Color( 0.04f, 0.18f, 0.95f, 1.0f );
-		var pad = CreateBox( parent, $"{team} Spawn {index}", position - Vector3.Up * 20.0f, new Vector3( 170.0f, 120.0f, 14.0f ), color, true );
+		var color = team == TeamId.red_rhinos ? new Color( 0.8f, 0.04f, 0.03f, 1.0f ) : new Color( 0.04f, 0.18f, 0.95f, 1.0f );
+		var pad = CreateBox( parent, $"{DisplayTeamName( team )} Spawn {index}", position - Vector3.Up * 20.0f, new Vector3( 170.0f, 120.0f, 14.0f ), color, true );
 		var spawn = pad.AddComponent<SpawnPoint>();
 		spawn.Team = team;
 		spawn.Index = index;
@@ -240,7 +240,7 @@ public sealed class GameSystem : GameObjectSystem<GameSystem>, Component.INetwor
 
 	private void CreateGoal( GameObject parent, TeamId scoringTeam, Vector3 position, Color color )
 	{
-		var goal = CreateBox( parent, $"{scoringTeam} Goal Trigger", position, new Vector3( 150.0f, 620.0f, 150.0f ), color, true );
+		var goal = CreateBox( parent, $"{DisplayTeamName( scoringTeam )} Goal Trigger", position, new Vector3( 150.0f, 620.0f, 150.0f ), color, true );
 		var collider = goal.Components.Get<BoxCollider>();
 		collider.IsTrigger = true;
 		goal.AddComponent<GoalTrigger>().ScoringTeam = scoringTeam;
@@ -289,12 +289,12 @@ public sealed class GameSystem : GameObjectSystem<GameSystem>, Component.INetwor
 		if ( _players.Any( p => p.IsValid() ) )
 			return;
 
-		CreatePlayerObject( TeamId.Red, "Local Tester", FindSpawnTransform( TeamId.Red ) );
+		CreatePlayerObject( TeamId.red_rhinos, "Local Tester", FindSpawnTransform( TeamId.red_rhinos ) );
 	}
 
 	private PlayerMovement CreatePlayerObject( TeamId team, string displayName, Transform spawn )
 	{
-		var playerObject = NewObject( $"{team} Player - {displayName}", spawn.Position );
+		var playerObject = NewObject( $"{DisplayTeamName( team )} Player - {displayName}", spawn.Position );
 		playerObject.WorldRotation = spawn.Rotation;
 		playerObject.Tags.Add( "player" );
 
@@ -320,16 +320,16 @@ public sealed class GameSystem : GameObjectSystem<GameSystem>, Component.INetwor
 
 	private TeamId ChooseNextTeam()
 	{
-		var red = _players.Count( p => p.IsValid() && p.Team == TeamId.Red );
-		var blue = _players.Count( p => p.IsValid() && p.Team == TeamId.Blue );
-		return red <= blue ? TeamId.Red : TeamId.Blue;
+		var red = _players.Count( p => p.IsValid() && p.Team == TeamId.red_rhinos );
+		var blue = _players.Count( p => p.IsValid() && p.Team == TeamId.blue_bulls );
+		return red <= blue ? TeamId.red_rhinos : TeamId.blue_bulls;
 	}
 
 	private Transform FindSpawnTransform( TeamId team )
 	{
 		var spawns = Scene.GetAllComponents<SpawnPoint>().Where( s => s.Team == team ).ToArray();
 		if ( spawns.Length == 0 )
-			return new Transform( team == TeamId.Red ? new Vector3( -800.0f, 0.0f, 48.0f ) : new Vector3( 800.0f, 0.0f, 48.0f ) );
+			return new Transform( team == TeamId.red_rhinos ? new Vector3( -800.0f, 0.0f, 48.0f ) : new Vector3( 800.0f, 0.0f, 48.0f ) );
 
 		var spawn = Random.Shared.FromArray( spawns );
 		return new Transform( spawn.WorldPosition + Vector3.Up * 54.0f, spawn.WorldRotation );
@@ -407,5 +407,15 @@ public sealed class GameSystem : GameObjectSystem<GameSystem>, Component.INetwor
 		var gameObject = parent is null ? new GameObject( true, name ) : new GameObject( parent, true, name );
 		gameObject.WorldPosition = position;
 		return gameObject;
+	}
+
+	public static string DisplayTeamName( TeamId team )
+	{
+		return team switch
+		{
+			TeamId.red_rhinos => "Red Rhinos",
+			TeamId.blue_bulls => "Blue Bulls",
+			_ => "No Team"
+		};
 	}
 }

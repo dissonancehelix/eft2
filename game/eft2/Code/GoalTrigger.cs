@@ -1,6 +1,6 @@
 public sealed class GoalTrigger : Component, Component.ITriggerListener
 {
-	[Property] public TeamId ScoringTeam { get; set; } = TeamId.None;
+	[Property] public TeamId ScoringTeam { get; set; } = TeamId.none;
 
 	void Component.ITriggerListener.OnTriggerEnter( Collider other )
 	{

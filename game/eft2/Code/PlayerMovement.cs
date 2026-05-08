@@ -14,7 +14,7 @@ public sealed class PlayerMovement : Component
 
 	[RequireComponent] public PlayerController Controller { get; set; }
 
-	[Sync( SyncFlags.FromHost )] public TeamId Team { get; private set; } = TeamId.None;
+	[Sync( SyncFlags.FromHost )] public TeamId Team { get; private set; } = TeamId.none;
 	[Sync( SyncFlags.FromHost )] public bool IsCarrier { get; private set; }
 	[Sync( SyncFlags.FromHost )] public bool IsKnockedDown { get; private set; }
 	[Sync( SyncFlags.FromHost )] public float KnockdownRemaining { get; private set; }
@@ -216,8 +216,8 @@ public sealed class PlayerMovement : Component
 
 		var tint = Team switch
 		{
-			TeamId.Red => new Color( 1.0f, 0.12f, 0.08f, 1.0f ),
-			TeamId.Blue => new Color( 0.1f, 0.35f, 1.0f, 1.0f ),
+			TeamId.red_rhinos => new Color( 1.0f, 0.12f, 0.08f, 1.0f ),
+			TeamId.blue_bulls => new Color( 0.1f, 0.35f, 1.0f, 1.0f ),
 			_ => Color.White
 		};
 

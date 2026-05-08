@@ -1,6 +1,6 @@
 public enum TeamId
 {
-	None = 0,
-	Red = 1,
-	Blue = 2
+	none = 0,
+	red_rhinos = 1,
+	blue_bulls = 2
 }

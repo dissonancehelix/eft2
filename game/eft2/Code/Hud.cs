@@ -17,15 +17,15 @@ public sealed class Hud : Component
 		hud.DrawRect( new Rect( width * 0.5f - 220.0f, Screen.Height - 92.0f, 440.0f, 58.0f ), Color.Black.WithAlpha( 0.72f ) );
 		hud.DrawRect( new Rect( width * 0.5f - 220.0f, Screen.Height - 92.0f, 140.0f, 58.0f ), new Color( 0.8f, 0.04f, 0.03f, 0.78f ) );
 		hud.DrawRect( new Rect( width * 0.5f + 80.0f, Screen.Height - 92.0f, 140.0f, 58.0f ), new Color( 0.03f, 0.2f, 0.9f, 0.78f ) );
-		hud.DrawText( $"RED {game.RedScore}", 28.0f, Color.White, new Rect( width * 0.5f - 210.0f, Screen.Height - 82.0f, 120.0f, 40.0f ), TextFlag.Center );
-		hud.DrawText( $"{game.BlueScore} BLUE", 28.0f, Color.White, new Rect( width * 0.5f + 90.0f, Screen.Height - 82.0f, 120.0f, 40.0f ), TextFlag.Center );
+		hud.DrawText( $"RHINOS {game.red_rhinos_score}", 24.0f, Color.White, new Rect( width * 0.5f - 214.0f, Screen.Height - 82.0f, 132.0f, 40.0f ), TextFlag.Center );
+		hud.DrawText( $"{game.blue_bulls_score} BULLS", 24.0f, Color.White, new Rect( width * 0.5f + 84.0f, Screen.Height - 82.0f, 132.0f, 40.0f ), TextFlag.Center );
 		hud.DrawText( "EFT2 CORE LOOP", 18.0f, Color.White.WithAlpha( 0.8f ), new Rect( width * 0.5f - 70.0f, Screen.Height - 76.0f, 140.0f, 24.0f ), TextFlag.Center );
 
 		var local = game.Players.FirstOrDefault( p => p.IsValid() && p.Network.Owner == Connection.Local );
 		var carrier = game.Ball?.Carrier;
-		var carrierText = carrier.IsValid() ? $"{carrier.Team} carrier: {carrier.DisplayName}" : "Ball loose";
+		var carrierText = carrier.IsValid() ? $"{GameSystem.DisplayTeamName( carrier.Team )} carrier: {carrier.DisplayName}" : "Ball loose";
 		var localText = local.IsValid()
-			? $"You: {local.Team} speed={local.ChargeSpeed:0} charge={(local.IsCharging ? "yes" : "no")} carrier={(local.IsCarrier ? "yes" : "no")} down={(local.IsKnockedDown ? local.KnockdownRemaining.ToString( "0.0" ) : "no")}"
+			? $"You: {GameSystem.DisplayTeamName( local.Team )} speed={local.ChargeSpeed:0} charge={(local.IsCharging ? "yes" : "no")} carrier={(local.IsCarrier ? "yes" : "no")} down={(local.IsKnockedDown ? local.KnockdownRemaining.ToString( "0.0" ) : "no")}"
 			: "Waiting for player";
 
 		hud.DrawRect( new Rect( 20.0f, 20.0f, 520.0f, 104.0f ), Color.Black.WithAlpha( 0.62f ) );
