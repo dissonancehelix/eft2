@@ -1,7 +1,7 @@
 {
   "generated_by": "tools/indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T18:26:45.624533+00:00",
+  "generated_at": "2026-05-08T18:42:34.919915+00:00",
   "repo_root": ".",
   "warnings": [
     "sbox_scan_truncated_at:4000"

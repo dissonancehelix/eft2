@@ -2,7 +2,7 @@
   "generated_by": "Tools/Contract Validator",
   "schema_version": 1,
   "generated_at": "2026-05-08T17:27:19.847195+00:00",
-  "repo_root": "C:\\Users\\dissonance\\Desktop\\EFT2",
+  "repo_root": ".",
   "contract_ids_defined": [
     "C-001",
     "C-002",

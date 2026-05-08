@@ -171,11 +171,11 @@ Meaning:
 Do not use:
 
 ```text
-Tools/SBox Indexer/
-Tools/Evidence Analyzer/
-Tools/Simulation Lab/
-Tools/Game Observer/
-Tools/Replay Analyzer/
+tools/sbox indexer/
+tools/evidence analyzer/
+tools/simulation lab/
+tools/game observer/
+tools/replay analyzer/
 ```
 
 ---

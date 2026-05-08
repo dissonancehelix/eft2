@@ -148,7 +148,7 @@ def render_project_index(root: Path, summary: dict[str, Any]) -> str:
     lines.append(f"- Tools/Observer: {'present' if observer_ready else 'not yet built — media artifacts are unprocessed'}")
     sim_ready = recommended.get("Simulation") == "present"
     lines.append(f"- Tools/Simulation: {'present' if sim_ready else 'not yet built'}")
-    lines.append(f"- game/eft2/ mechanics: {'scaffold present — mechanics deferred pending direction' if (root / 'Game' / 'eft2' / 'eft2.sbproj').exists() else 'no scaffold found'}")
+    lines.append(f"- game/eft2/ mechanics: {'scaffold present — mechanics deferred pending direction' if (root / 'game' / 'eft2' / 'eft2.sbproj').exists() else 'no scaffold found'}")
     ext = summary.get("external", {}) or {}
     blockers = []
     for key, label in [("gmod", "garrysmod-master/"), ("ffmpeg", "FFmpeg-Builds-master/"), ("source_sdk", "source-sdk-2013-master/")]:

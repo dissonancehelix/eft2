@@ -2,7 +2,7 @@
   "generated_by": "Tools/Indexer",
   "schema_version": 1,
   "generated_at": "2026-05-08T16:53:02.299506+00:00",
-  "repo_root": "C:/Users/dissonance/Desktop/EFT2",
+  "repo_root": ".",
   "warnings": [
     "custom_eft_fgd_missing",
     "sbox_scan_truncated_at:4000",
@@ -13,7 +13,7 @@
   "fgd_count": 3,
   "fgds": [
     {
-      "path": "C:/Users/dissonance/Desktop/EFT2/garrysmod-master/bin/base.fgd",
+      "path": ".garrysmod-master/bin/base.fgd",
       "size_bytes": 377106,
       "class_count": 329,
       "classes": [
@@ -11799,7 +11799,7 @@
       ]
     },
     {
-      "path": "C:/Users/dissonance/Desktop/EFT2/garrysmod-master/bin/garrysmod.fgd",
+      "path": ".garrysmod-master/bin/garrysmod.fgd",
       "size_bytes": 10553,
       "class_count": 11,
       "classes": [
@@ -12190,7 +12190,7 @@
       ]
     },
     {
-      "path": "C:/Users/dissonance/Desktop/EFT2/garrysmod-master/bin/halflife2.fgd",
+      "path": ".garrysmod-master/bin/halflife2.fgd",
       "size_bytes": 202492,
       "class_count": 228,
       "classes": [
