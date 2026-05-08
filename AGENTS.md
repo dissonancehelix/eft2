@@ -494,7 +494,7 @@ The repo should contain durable EFT2 project material, curated map/source refere
 
 ## Git Commit Policy
 
-Push to git after every update.
+Push to `main` after every update.
 
 - Commit and push after each discrete unit of work: a new file, a tool build, a patch, a doc update, an output regeneration.
 - Do not batch unrelated changes into one commit unless the user asks for it.
