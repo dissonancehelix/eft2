@@ -1,0 +1,123 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Legoland",
+  "source_vmf": "Maps/Legoland/Legoland.vmf",
+  "original_filename": "eft_legoland_v2.vmf",
+  "generated_at": "2026-05-08T15:27:11.508764+00:00",
+  "spawn_clusters": {
+    "red": [
+      {
+        "cluster_id": 1,
+        "center": [
+          -2496.0,
+          1152.0,
+          452.0
+        ],
+        "count": 10,
+        "source_entity_ids": [
+          28102,
+          28104,
+          28106,
+          28108,
+          28110,
+          28112,
+          28114,
+          28116,
+          28118,
+          28120
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 10 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          -2496.0,
+          -128.0,
+          452.0
+        ],
+        "count": 10,
+        "source_entity_ids": [
+          28122,
+          28124,
+          28126,
+          28128,
+          28130,
+          28132,
+          28134,
+          28136,
+          28138,
+          28140
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 10 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "blue": [
+      {
+        "cluster_id": 1,
+        "center": [
+          1472.0,
+          1152.0,
+          452.0
+        ],
+        "count": 10,
+        "source_entity_ids": [
+          6144,
+          6159,
+          6161,
+          6163,
+          6165,
+          6167,
+          6169,
+          6171,
+          6173,
+          6175
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 10 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          1472.0,
+          -128.0,
+          452.0
+        ],
+        "count": 10,
+        "source_entity_ids": [
+          6177,
+          6179,
+          6181,
+          6183,
+          6185,
+          6187,
+          6189,
+          6191,
+          6193,
+          6195
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 10 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "spectator": []
+  }
+}

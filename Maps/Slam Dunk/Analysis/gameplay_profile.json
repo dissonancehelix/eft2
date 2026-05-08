@@ -1,0 +1,39 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Slam Dunk",
+  "source_vmf": "Maps/Slam Dunk/Slam Dunk.vmf",
+  "original_filename": "eft_slamdunk_v6.vmf",
+  "generated_at": "2026-05-08T15:27:14.689573+00:00",
+  "tags": [
+    "hazard_regulated",
+    "jump_pad_route",
+    "powerup_route",
+    "speedball_tempo",
+    "touch_or_throw_scoring",
+    "vertical_platform"
+  ],
+  "raw_counts": {
+    "info_player_blue": 13,
+    "info_player_red": 13,
+    "logic_teamscore": 1,
+    "prop_ball": 1,
+    "trigger_abspush": 10,
+    "trigger_goal": 4,
+    "trigger_hurt": 2,
+    "trigger_multiple": 20,
+    "trigger_powerup": 2
+  },
+  "estimated_constants": {
+    "base_speed_hu_s": 350,
+    "carrier_speed_hu_s": 262.5,
+    "charge_threshold_hu_s": 300,
+    "note": "Initial README constants only; route/intercept estimates are pending Recast integration."
+  },
+  "confidence_notes": [
+    "Slam Dunk validation expects basketball/hoop scoring, vertical routes, powerup tempo, and movement-assisted scoring only when supported by extracted data.",
+    "Multiple raw trigger_goal entities require semantic grouping before claiming real scoring structure.",
+    "Vertical/platform claims are approximate until Recast or stronger geometry analysis is active."
+  ],
+  "needs_human_review": true
+}

@@ -1,0 +1,61 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Skyline",
+  "source_vmf": "Maps/Skyline/Skyline.vmf",
+  "original_filename": "eft_skyline_v3.vmf",
+  "generated_at": "2026-05-08T15:27:13.836608+00:00",
+  "hazard_regions": [
+    {
+      "id": "hazard_region_1",
+      "type": "hazard_region",
+      "center": [
+        0.0,
+        -18.06999999999971,
+        -1280.0
+      ],
+      "bounds": {
+        "min": [
+          -4064.0,
+          -4626.07,
+          -1664.0
+        ],
+        "max": [
+          4064.0,
+          4589.93,
+          -896.0
+        ],
+        "center": [
+          0.0,
+          -18.06999999999971,
+          -1280.0
+        ],
+        "size": [
+          8128.0,
+          9216.0,
+          768.0
+        ],
+        "z_range": [
+          -1664.0,
+          -896.0
+        ],
+        "aabb_volume": 57529073664.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Hazard or forced knockdown trigger.",
+        "Source entity class `trigger_hurt` id `1077`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        1077
+      ],
+      "source_classes": [
+        "trigger_hurt"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

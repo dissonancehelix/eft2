@@ -1,0 +1,112 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Skystep",
+  "source_vmf": "Maps/Skystep/Skystep.vmf",
+  "original_filename": "eft_skystep_v4.vmf",
+  "generated_at": "2026-05-08T15:27:14.172991+00:00",
+  "powerup_locations": [
+    {
+      "id": "powerup_location_1",
+      "type": "powerup_location",
+      "center": [
+        -272.0,
+        0.0,
+        120.0
+      ],
+      "bounds": {
+        "min": [
+          -273.0,
+          -103.0,
+          17.0
+        ],
+        "max": [
+          -271.0,
+          103.0,
+          223.0
+        ],
+        "center": [
+          -272.0,
+          0.0,
+          120.0
+        ],
+        "size": [
+          2.0,
+          206.0,
+          206.0
+        ],
+        "z_range": [
+          17.0,
+          223.0
+        ],
+        "aabb_volume": 84872.0,
+        "source_point_count": 54,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `44966`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        44966
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "powerup_location_2",
+      "type": "powerup_location",
+      "center": [
+        272.0,
+        0.0,
+        120.0
+      ],
+      "bounds": {
+        "min": [
+          271.0,
+          -103.0,
+          17.0
+        ],
+        "max": [
+          273.0,
+          103.0,
+          223.0
+        ],
+        "center": [
+          272.0,
+          0.0,
+          120.0
+        ],
+        "size": [
+          2.0,
+          206.0,
+          206.0
+        ],
+        "z_range": [
+          17.0,
+          223.0
+        ],
+        "aabb_volume": 84872.0,
+        "source_point_count": 54,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `46310`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        46310
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

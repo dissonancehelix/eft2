@@ -1,0 +1,611 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Soccer",
+  "source_vmf": "Maps/Soccer/Soccer.vmf",
+  "original_filename": "eft_soccer_b2.vmf",
+  "generated_at": "2026-05-08T15:27:14.992384+00:00",
+  "status": "abstract_core_gameplay_telemetry",
+  "model_scope": [
+    "Uses README movement constants and extracted map landmarks.",
+    "Models possession pressure, carrier exposure, defender intercept opportunity, powerup/jump-route influence, and scoring likelihood.",
+    "Does not model real player input, exact ball physics, ragdolls, prop collision, or s&box Scene.NavMesh yet."
+  ],
+  "constants": {
+    "base_speed_hu_s": 350.0,
+    "carrier_speed_hu_s": 262.5,
+    "pity_carrier_speed_hu_s": 315.0,
+    "strafe_only_speed_hu_s": 160.0,
+    "charge_threshold_hu_s": 300.0,
+    "time_to_charge_s": 1.0,
+    "time_to_max_speed_s": 1.5,
+    "post_hit_charge_immunity_s": 0.45,
+    "dive_extra_speed_hu_s": 100.0,
+    "dive_landing_penalty_multiplier": 0.5
+  },
+  "landmarks": {
+    "ball_spawn": [
+      0.0,
+      0.0,
+      13.0
+    ],
+    "red_spawns": [
+      {
+        "cluster_id": 1,
+        "center": [
+          1120.0,
+          1664.0,
+          64.0
+        ],
+        "count": 16,
+        "source_entity_ids": [
+          4,
+          14930,
+          14932,
+          14934,
+          14936,
+          14938,
+          14940,
+          14942,
+          14944,
+          14946,
+          14948,
+          14950,
+          14952,
+          52927,
+          52929,
+          52931
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 16 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "blue_spawns": [
+      {
+        "cluster_id": 1,
+        "center": [
+          -768.0,
+          -1664.0,
+          64.0
+        ],
+        "count": 8,
+        "source_entity_ids": [
+          108,
+          12111,
+          12113,
+          12119,
+          12121,
+          12123,
+          12127,
+          12129
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 8 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          -1408.0,
+          -1664.0,
+          64.0
+        ],
+        "count": 8,
+        "source_entity_ids": [
+          12109,
+          12115,
+          12117,
+          12125,
+          12131,
+          52869,
+          52871,
+          52873
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 8 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "goals": [
+      {
+        "id": "goal_complex_1",
+        "type": "goal_complex",
+        "center": [
+          -2984.0,
+          0.0,
+          52.0
+        ],
+        "bounds": {
+          "min": [
+            -3008.0,
+            -144.0,
+            0.0
+          ],
+          "max": [
+            -2960.0,
+            144.0,
+            104.0
+          ],
+          "center": [
+            -2984.0,
+            0.0,
+            52.0
+          ],
+          "size": [
+            48.0,
+            288.0,
+            104.0
+          ],
+          "z_range": [
+            0.0,
+            104.0
+          ],
+          "aabb_volume": 1437696.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.72,
+        "reasons": [
+          "Grouped nearby raw trigger_goal entities into a gameplay scoring-complex candidate.",
+          "Raw trigger count is preserved separately and is not treated as final scoring-location count."
+        ],
+        "source_entity_ids": [
+          158
+        ],
+        "source_classes": [
+          "trigger_goal"
+        ],
+        "raw_trigger_count": 1,
+        "teamids": [
+          "2"
+        ],
+        "scoretypes": [
+          "3"
+        ],
+        "semantics_used": [
+          "VMF trigger_goal teamid key",
+          "VMF trigger_goal scoretype key"
+        ],
+        "needs_human_review": true
+      },
+      {
+        "id": "goal_complex_2",
+        "type": "goal_complex",
+        "center": [
+          2984.0,
+          0.0,
+          52.0
+        ],
+        "bounds": {
+          "min": [
+            2960.0,
+            -144.0,
+            0.0
+          ],
+          "max": [
+            3008.0,
+            144.0,
+            104.0
+          ],
+          "center": [
+            2984.0,
+            0.0,
+            52.0
+          ],
+          "size": [
+            48.0,
+            288.0,
+            104.0
+          ],
+          "z_range": [
+            0.0,
+            104.0
+          ],
+          "aabb_volume": 1437696.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.72,
+        "reasons": [
+          "Grouped nearby raw trigger_goal entities into a gameplay scoring-complex candidate.",
+          "Raw trigger count is preserved separately and is not treated as final scoring-location count."
+        ],
+        "source_entity_ids": [
+          165
+        ],
+        "source_classes": [
+          "trigger_goal"
+        ],
+        "raw_trigger_count": 1,
+        "teamids": [
+          "1"
+        ],
+        "scoretypes": [
+          "3"
+        ],
+        "semantics_used": [
+          "VMF trigger_goal teamid key",
+          "VMF trigger_goal scoretype key"
+        ],
+        "needs_human_review": true
+      }
+    ],
+    "powerups": [],
+    "jump_push_regions": [],
+    "hazards": []
+  },
+  "route_candidates": [
+    {
+      "id": "route_1",
+      "from_spawn": "red_spawn_1",
+      "ball_to_goal": "goal_complex_1",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2006.46,
+      "carrier_distance_hu": 2984.25,
+      "raw_ball_to_goal_distance_hu": 2984.25,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_2",
+      "from_spawn": "red_spawn_1",
+      "ball_to_goal": "goal_complex_2",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2006.46,
+      "carrier_distance_hu": 2984.25,
+      "raw_ball_to_goal_distance_hu": 2984.25,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_3",
+      "from_spawn": "blue_spawn_1",
+      "ball_to_goal": "goal_complex_1",
+      "route_type": "direct_carry",
+      "support_distance_hu": 1833.39,
+      "carrier_distance_hu": 2984.25,
+      "raw_ball_to_goal_distance_hu": 2984.25,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_4",
+      "from_spawn": "blue_spawn_1",
+      "ball_to_goal": "goal_complex_2",
+      "route_type": "direct_carry",
+      "support_distance_hu": 1833.39,
+      "carrier_distance_hu": 2984.25,
+      "raw_ball_to_goal_distance_hu": 2984.25,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_5",
+      "from_spawn": "blue_spawn_2",
+      "ball_to_goal": "goal_complex_1",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2180.36,
+      "carrier_distance_hu": 2984.25,
+      "raw_ball_to_goal_distance_hu": 2984.25,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_6",
+      "from_spawn": "blue_spawn_2",
+      "ball_to_goal": "goal_complex_2",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2180.36,
+      "carrier_distance_hu": 2984.25,
+      "raw_ball_to_goal_distance_hu": 2984.25,
+      "influence_regions": [],
+      "confidence": 0.45
+    }
+  ],
+  "trials": 400,
+  "seed": 2,
+  "aggregates": {
+    "score_rate": 0.24,
+    "intercept_rate": 0.76,
+    "reset_or_hazard_rate": 0.0,
+    "scrum_continues_rate": 0.0,
+    "mean_carrier_time_s": 11.369,
+    "mean_defender_time_s": 6.751,
+    "mean_preventability_margin_s": 4.6177,
+    "route_type_counts": {
+      "direct_carry": 400
+    },
+    "trial_count": 400
+  },
+  "sample_trials": [
+    {
+      "route_id": "route_1",
+      "route_type": "direct_carry",
+      "outcome": "score",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 6.733,
+      "preventability_margin_s": 4.636,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_3",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 6.238,
+      "preventability_margin_s": 5.13,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_6",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 7.23,
+      "preventability_margin_s": 4.139,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_3",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 6.238,
+      "preventability_margin_s": 5.13,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_2",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 6.733,
+      "preventability_margin_s": 4.636,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_5",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 7.23,
+      "preventability_margin_s": 4.139,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_4",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 6.238,
+      "preventability_margin_s": 5.13,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_6",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 7.23,
+      "preventability_margin_s": 4.139,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_5",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 7.23,
+      "preventability_margin_s": 4.139,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_5",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 7.23,
+      "preventability_margin_s": 4.139,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_5",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 7.23,
+      "preventability_margin_s": 4.139,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_1",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 6.733,
+      "preventability_margin_s": 4.636,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_3",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 6.238,
+      "preventability_margin_s": 5.13,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_3",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 6.238,
+      "preventability_margin_s": 5.13,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_4",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 6.238,
+      "preventability_margin_s": 5.13,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_5",
+      "route_type": "direct_carry",
+      "outcome": "score",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 7.23,
+      "preventability_margin_s": 4.139,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_2",
+      "route_type": "direct_carry",
+      "outcome": "score",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 6.733,
+      "preventability_margin_s": 4.636,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_1",
+      "route_type": "direct_carry",
+      "outcome": "score",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 6.733,
+      "preventability_margin_s": 4.636,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_2",
+      "route_type": "direct_carry",
+      "outcome": "score",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 6.733,
+      "preventability_margin_s": 4.636,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_5",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 7.23,
+      "preventability_margin_s": 4.139,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_5",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 7.23,
+      "preventability_margin_s": 4.139,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_2",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 6.733,
+      "preventability_margin_s": 4.636,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_4",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 6.238,
+      "preventability_margin_s": 5.13,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_6",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 7.23,
+      "preventability_margin_s": 4.139,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    },
+    {
+      "route_id": "route_3",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.369,
+      "defender_intercept_time_s": 6.238,
+      "preventability_margin_s": 5.13,
+      "pressure": 0.95,
+      "hazard_pressure": 0.02,
+      "score_chance": 0.242
+    }
+  ],
+  "interpretation": [
+    "Defenders usually have a timing window before the carrier reaches a scoring route; expect tackles/scrums unless a jump/powerup route changes tempo.",
+    "Interception/tackle pressure is at least as important as clean scoring in the current coarse telemetry."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Sky Metal",
+  "source_vmf": "Maps/Sky Metal/Sky Metal.vmf",
+  "original_filename": "eft_sky_metal_v2.vmf",
+  "generated_at": "2026-05-08T15:27:13.673374+00:00",
+  "reset_regions": [
+    {
+      "id": "reset_region_1",
+      "type": "reset_region",
+      "center": [
+        0.0,
+        0.0,
+        -456.0
+      ],
+      "bounds": {
+        "min": [
+          -4608.0,
+          -6656.0,
+          -512.0
+        ],
+        "max": [
+          4608.0,
+          6656.0,
+          -400.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          -456.0
+        ],
+        "size": [
+          9216.0,
+          13312.0,
+          112.0
+        ],
+        "z_range": [
+          -512.0,
+          -400.0
+        ],
+        "aabb_volume": 13740539904.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball reset trigger volume.",
+        "Source entity class `trigger_ballreset` id `1983`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        1983
+      ],
+      "source_classes": [
+        "trigger_ballreset"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Baseball Dash",
+  "source_vmf": "Maps/Baseball Dash/Baseball Dash.vmf",
+  "original_filename": "eft_baseballdash_v3.vmf",
+  "generated_at": "2026-05-08T15:27:09.153286+00:00",
+  "spawn_clusters": {
+    "red": [
+      {
+        "cluster_id": 1,
+        "center": [
+          1268.748636363636,
+          2652.818181818181,
+          -814.214909090909
+        ],
+        "count": 22,
+        "source_entity_ids": [
+          308,
+          310,
+          312,
+          314,
+          316,
+          318,
+          320,
+          322,
+          324,
+          326,
+          328,
+          330,
+          332,
+          334,
+          336,
+          338,
+          340,
+          342,
+          344,
+          346,
+          348,
+          350
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 22 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "blue": [
+      {
+        "cluster_id": 1,
+        "center": [
+          -2371.818181818182,
+          -1031.4536363636364,
+          -814.214909090909
+        ],
+        "count": 22,
+        "source_entity_ids": [
+          352,
+          354,
+          356,
+          358,
+          360,
+          362,
+          364,
+          366,
+          368,
+          370,
+          372,
+          374,
+          376,
+          378,
+          380,
+          382,
+          384,
+          386,
+          388,
+          390,
+          392,
+          527
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 22 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "spectator": []
+  }
+}

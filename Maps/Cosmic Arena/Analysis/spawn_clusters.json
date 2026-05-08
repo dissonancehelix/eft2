@@ -1,0 +1,89 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Cosmic Arena",
+  "source_vmf": "Maps/Cosmic Arena/Cosmic Arena.vmf",
+  "original_filename": "eft_cosmic_arena_v2.vmf",
+  "generated_at": "2026-05-08T15:27:10.885141+00:00",
+  "spawn_clusters": {
+    "red": [
+      {
+        "cluster_id": 1,
+        "center": [
+          -7950.600000000003,
+          -0.004079999999930806,
+          657.0
+        ],
+        "count": 20,
+        "source_entity_ids": [
+          48109,
+          60295,
+          60299,
+          60301,
+          60351,
+          60353,
+          60355,
+          60357,
+          60383,
+          60385,
+          60387,
+          60389,
+          60399,
+          60401,
+          60403,
+          60405,
+          60415,
+          60417,
+          60419,
+          60421
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 20 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "blue": [
+      {
+        "cluster_id": 1,
+        "center": [
+          7942.334000000001,
+          -25.739110000000004,
+          656.8199999999997
+        ],
+        "count": 20,
+        "source_entity_ids": [
+          47675,
+          47690,
+          47702,
+          47704,
+          47706,
+          47708,
+          47710,
+          47719,
+          47721,
+          47727,
+          58313,
+          58315,
+          58317,
+          58319,
+          58321,
+          58323,
+          58325,
+          58327,
+          58329,
+          58331
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 20 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "spectator": []
+  }
+}

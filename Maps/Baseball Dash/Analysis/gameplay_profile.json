@@ -1,0 +1,40 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Baseball Dash",
+  "source_vmf": "Maps/Baseball Dash/Baseball Dash.vmf",
+  "original_filename": "eft_baseballdash_v3.vmf",
+  "generated_at": "2026-05-08T15:27:09.153286+00:00",
+  "tags": [
+    "hazard_regulated",
+    "jump_pad_route",
+    "powerup_route",
+    "rotating_obstruction_shot",
+    "speedball_tempo",
+    "touch_or_throw_scoring",
+    "vertical_platform"
+  ],
+  "raw_counts": {
+    "func_rotating": 2,
+    "info_player_blue": 22,
+    "info_player_red": 22,
+    "logic_teamscore": 1,
+    "prop_ball": 1,
+    "trigger_abspush": 1,
+    "trigger_ballreset": 7,
+    "trigger_goal": 2,
+    "trigger_hurt": 2,
+    "trigger_powerup": 2
+  },
+  "estimated_constants": {
+    "base_speed_hu_s": 350,
+    "carrier_speed_hu_s": 262.5,
+    "charge_threshold_hu_s": 300,
+    "note": "Initial README constants only; route/intercept estimates are pending Recast integration."
+  },
+  "confidence_notes": [
+    "Multiple raw trigger_goal entities require semantic grouping before claiming real scoring structure.",
+    "Vertical/platform claims are approximate until Recast or stronger geometry analysis is active."
+  ],
+  "needs_human_review": true
+}

@@ -1,0 +1,38 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Mini Putt",
+  "source_vmf": "Maps/Mini Putt/Mini Putt.vmf",
+  "original_filename": "eft_miniputt_v1r_d.vmf",
+  "generated_at": "2026-05-08T15:27:13.297951+00:00",
+  "tags": [
+    "flat_swarm",
+    "hazard_regulated",
+    "hybrid_scoring",
+    "jump_pad_route",
+    "open_field_intercept",
+    "rotating_obstruction_shot",
+    "vertical_platform"
+  ],
+  "raw_counts": {
+    "func_rotating": 2,
+    "info_player_blue": 20,
+    "info_player_red": 21,
+    "prop_ball": 1,
+    "trigger_abspush": 12,
+    "trigger_goal": 4,
+    "trigger_hurt": 6
+  },
+  "estimated_constants": {
+    "base_speed_hu_s": 350,
+    "carrier_speed_hu_s": 262.5,
+    "charge_threshold_hu_s": 300,
+    "note": "Initial README constants only; route/intercept estimates are pending Recast integration."
+  },
+  "confidence_notes": [
+    "Multiple raw trigger_goal entities require semantic grouping before claiming real scoring structure.",
+    "No trigger_powerup entities found; do not infer speedball/powerup routing without other evidence.",
+    "Vertical/platform claims are approximate until Recast or stronger geometry analysis is active."
+  ],
+  "needs_human_review": true
+}

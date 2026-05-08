@@ -1,0 +1,82 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Mini Putt",
+  "source_vmf": "Maps/Mini Putt/Mini Putt.vmf",
+  "original_filename": "eft_miniputt_v1r_d.vmf",
+  "generated_at": "2026-05-08T15:27:13.297951+00:00",
+  "danger_fields": [
+    {
+      "region": "hazard_region_1",
+      "type": "hazard_region",
+      "center": [
+        -4635.56,
+        306.94085,
+        220.25815
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_2",
+      "type": "hazard_region",
+      "center": [
+        -5456.0,
+        1792.0,
+        92.1231
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_3",
+      "type": "hazard_region",
+      "center": [
+        -3101.28,
+        2364.677,
+        77.04265000000001
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_4",
+      "type": "hazard_region",
+      "center": [
+        4699.56,
+        -306.93989999999997,
+        220.25815
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_5",
+      "type": "hazard_region",
+      "center": [
+        3165.28,
+        -2364.6805,
+        77.04315000000001
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_6",
+      "type": "hazard_region",
+      "center": [
+        5520.0,
+        -1792.0,
+        92.1231
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    }
+  ]
+}

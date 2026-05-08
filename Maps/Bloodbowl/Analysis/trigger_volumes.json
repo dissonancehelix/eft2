@@ -1,0 +1,4130 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Bloodbowl",
+  "source_vmf": "Maps/Bloodbowl/Bloodbowl.vmf",
+  "original_filename": "eft_bloodbowl_v5.vmf",
+  "generated_at": "2026-05-08T15:27:10.210248+00:00",
+  "trigger_volumes": [
+    {
+      "id": 114494,
+      "classname": "trigger_goal",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "114494",
+        "classname": "trigger_goal",
+        "points": "1",
+        "scoretype": "1",
+        "teamid": "2"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "touchdown cheer,PlaySound,,0,-1",
+          "parts": [
+            "touchdown cheer",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "touchdown,PlaySound,,0,-1",
+          "parts": [
+            "touchdown",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "solids": [
+        {
+          "id": 114495,
+          "keyvalues": {
+            "id": "114495"
+          },
+          "sides": [
+            {
+              "id": 27704,
+              "plane": "(-2720 -1016 72) (-2720 -1016 64) (-2720 2040 64)",
+              "plane_points": [
+                [
+                  -2720.0,
+                  -1016.0,
+                  72.0
+                ],
+                [
+                  -2720.0,
+                  -1016.0,
+                  64.0
+                ],
+                [
+                  -2720.0,
+                  2040.0,
+                  64.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27704",
+                "plane": "(-2720 -1016 72) (-2720 -1016 64) (-2720 2040 64)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27703,
+              "plane": "(-2208 2040 72) (-2208 2040 64) (-2208 -1016 64)",
+              "plane_points": [
+                [
+                  -2208.0,
+                  2040.0,
+                  72.0
+                ],
+                [
+                  -2208.0,
+                  2040.0,
+                  64.0
+                ],
+                [
+                  -2208.0,
+                  -1016.0,
+                  64.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27703",
+                "plane": "(-2208 2040 72) (-2208 2040 64) (-2208 -1016 64)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27702,
+              "plane": "(-2208 -1016 72) (-2208 -1016 64) (-2720 -1016 64)",
+              "plane_points": [
+                [
+                  -2208.0,
+                  -1016.0,
+                  72.0
+                ],
+                [
+                  -2208.0,
+                  -1016.0,
+                  64.0
+                ],
+                [
+                  -2720.0,
+                  -1016.0,
+                  64.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27702",
+                "plane": "(-2208 -1016 72) (-2208 -1016 64) (-2720 -1016 64)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 0 -1 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27701,
+              "plane": "(-2720 2040 72) (-2720 2040 64) (-2208 2040 64)",
+              "plane_points": [
+                [
+                  -2720.0,
+                  2040.0,
+                  72.0
+                ],
+                [
+                  -2720.0,
+                  2040.0,
+                  64.0
+                ],
+                [
+                  -2208.0,
+                  2040.0,
+                  64.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27701",
+                "plane": "(-2720 2040 72) (-2720 2040 64) (-2208 2040 64)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 0 -1 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27700,
+              "plane": "(-2720 2040 64) (-2720 -1016 64) (-2208 -1016 64)",
+              "plane_points": [
+                [
+                  -2720.0,
+                  2040.0,
+                  64.0
+                ],
+                [
+                  -2720.0,
+                  -1016.0,
+                  64.0
+                ],
+                [
+                  -2208.0,
+                  -1016.0,
+                  64.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27700",
+                "plane": "(-2720 2040 64) (-2720 -1016 64) (-2208 -1016 64)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27699,
+              "plane": "(-2720 -1016 72) (-2720 2040 72) (-2208 2040 72)",
+              "plane_points": [
+                [
+                  -2720.0,
+                  -1016.0,
+                  72.0
+                ],
+                [
+                  -2720.0,
+                  2040.0,
+                  72.0
+                ],
+                [
+                  -2208.0,
+                  2040.0,
+                  72.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27699",
+                "plane": "(-2720 -1016 72) (-2720 2040 72) (-2208 2040 72)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -2720.0,
+          -1016.0,
+          64.0
+        ],
+        "max": [
+          -2208.0,
+          2040.0,
+          72.0
+        ],
+        "center": [
+          -2464.0,
+          512.0,
+          68.0
+        ],
+        "size": [
+          512.0,
+          3056.0,
+          8.0
+        ],
+        "z_range": [
+          64.0,
+          72.0
+        ],
+        "aabb_volume": 12517376.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 114496,
+      "classname": "trigger_goal",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "114496",
+        "classname": "trigger_goal",
+        "points": "1",
+        "scoretype": "1",
+        "teamid": "1"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "touchdown cheer,PlaySound,,0,-1",
+          "parts": [
+            "touchdown cheer",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "touchdown,PlaySound,,0,-1",
+          "parts": [
+            "touchdown",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "solids": [
+        {
+          "id": 114497,
+          "keyvalues": {
+            "id": "114497"
+          },
+          "sides": [
+            {
+              "id": 27710,
+              "plane": "(3744 -1016 64) (3232 -1016 64) (3232 -1016 72)",
+              "plane_points": [
+                [
+                  3744.0,
+                  -1016.0,
+                  64.0
+                ],
+                [
+                  3232.0,
+                  -1016.0,
+                  64.0
+                ],
+                [
+                  3232.0,
+                  -1016.0,
+                  72.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27710",
+                "plane": "(3744 -1016 64) (3232 -1016 64) (3232 -1016 72)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 0 -1 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27709,
+              "plane": "(3232 2040 64) (3744 2040 64) (3744 2040 72)",
+              "plane_points": [
+                [
+                  3232.0,
+                  2040.0,
+                  64.0
+                ],
+                [
+                  3744.0,
+                  2040.0,
+                  64.0
+                ],
+                [
+                  3744.0,
+                  2040.0,
+                  72.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27709",
+                "plane": "(3232 2040 64) (3744 2040 64) (3744 2040 72)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 0 -1 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27708,
+              "plane": "(3744 2040 64) (3232 2040 64) (3232 -1016 64)",
+              "plane_points": [
+                [
+                  3744.0,
+                  2040.0,
+                  64.0
+                ],
+                [
+                  3232.0,
+                  2040.0,
+                  64.0
+                ],
+                [
+                  3232.0,
+                  -1016.0,
+                  64.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27708",
+                "plane": "(3744 2040 64) (3232 2040 64) (3232 -1016 64)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27707,
+              "plane": "(3744 -1016 72) (3232 -1016 72) (3232 2040 72)",
+              "plane_points": [
+                [
+                  3744.0,
+                  -1016.0,
+                  72.0
+                ],
+                [
+                  3232.0,
+                  -1016.0,
+                  72.0
+                ],
+                [
+                  3232.0,
+                  2040.0,
+                  72.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27707",
+                "plane": "(3744 -1016 72) (3232 -1016 72) (3232 2040 72)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27706,
+              "plane": "(3232 -1016 72) (3232 -1016 64) (3232 2040 64)",
+              "plane_points": [
+                [
+                  3232.0,
+                  -1016.0,
+                  72.0
+                ],
+                [
+                  3232.0,
+                  -1016.0,
+                  64.0
+                ],
+                [
+                  3232.0,
+                  2040.0,
+                  64.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27706",
+                "plane": "(3232 -1016 72) (3232 -1016 64) (3232 2040 64)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27705,
+              "plane": "(3744 2040 72) (3744 2040 64) (3744 -1016 64)",
+              "plane_points": [
+                [
+                  3744.0,
+                  2040.0,
+                  72.0
+                ],
+                [
+                  3744.0,
+                  2040.0,
+                  64.0
+                ],
+                [
+                  3744.0,
+                  -1016.0,
+                  64.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27705",
+                "plane": "(3744 2040 72) (3744 2040 64) (3744 -1016 64)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          3232.0,
+          -1016.0,
+          64.0
+        ],
+        "max": [
+          3744.0,
+          2040.0,
+          72.0
+        ],
+        "center": [
+          3488.0,
+          512.0,
+          68.0
+        ],
+        "size": [
+          512.0,
+          3056.0,
+          8.0
+        ],
+        "z_range": [
+          64.0,
+          72.0
+        ],
+        "aabb_volume": 12517376.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 114628,
+      "classname": "trigger_hurt",
+      "targetname": null,
+      "origin": [
+        2402.0,
+        1502.0,
+        -4.5
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "114628",
+        "classname": "trigger_hurt",
+        "damage": "500",
+        "damagecap": "20",
+        "damagemodel": "0",
+        "damagetype": "4",
+        "nodmgforce": "1",
+        "origin": "2402 1502 -4.5",
+        "spawnflags": "1",
+        "StartDisabled": "0"
+      },
+      "outputs": [],
+      "solids": [
+        {
+          "id": 114629,
+          "keyvalues": {
+            "id": "114629"
+          },
+          "sides": [
+            {
+              "id": 27716,
+              "plane": "(2168 1268 47) (2168 1268 -56) (2168 1736 -56)",
+              "plane_points": [
+                [
+                  2168.0,
+                  1268.0,
+                  47.0
+                ],
+                [
+                  2168.0,
+                  1268.0,
+                  -56.0
+                ],
+                [
+                  2168.0,
+                  1736.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27716",
+                "plane": "(2168 1268 47) (2168 1268 -56) (2168 1736 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27715,
+              "plane": "(2636 1736 47) (2636 1736 -56) (2636 1268 -56)",
+              "plane_points": [
+                [
+                  2636.0,
+                  1736.0,
+                  47.0
+                ],
+                [
+                  2636.0,
+                  1736.0,
+                  -56.0
+                ],
+                [
+                  2636.0,
+                  1268.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27715",
+                "plane": "(2636 1736 47) (2636 1736 -56) (2636 1268 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27714,
+              "plane": "(2636 1268 47) (2636 1268 -56) (2168 1268 -56)",
+              "plane_points": [
+                [
+                  2636.0,
+                  1268.0,
+                  47.0
+                ],
+                [
+                  2636.0,
+                  1268.0,
+                  -56.0
+                ],
+                [
+                  2168.0,
+                  1268.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27714",
+                "plane": "(2636 1268 47) (2636 1268 -56) (2168 1268 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27713,
+              "plane": "(2168 1736 47) (2168 1736 -56) (2636 1736 -56)",
+              "plane_points": [
+                [
+                  2168.0,
+                  1736.0,
+                  47.0
+                ],
+                [
+                  2168.0,
+                  1736.0,
+                  -56.0
+                ],
+                [
+                  2636.0,
+                  1736.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27713",
+                "plane": "(2168 1736 47) (2168 1736 -56) (2636 1736 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27712,
+              "plane": "(2168 1736 -56) (2168 1268 -56) (2636 1268 -56)",
+              "plane_points": [
+                [
+                  2168.0,
+                  1736.0,
+                  -56.0
+                ],
+                [
+                  2168.0,
+                  1268.0,
+                  -56.0
+                ],
+                [
+                  2636.0,
+                  1268.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27712",
+                "plane": "(2168 1736 -56) (2168 1268 -56) (2636 1268 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27711,
+              "plane": "(2168 1268 47) (2168 1736 47) (2636 1736 47)",
+              "plane_points": [
+                [
+                  2168.0,
+                  1268.0,
+                  47.0
+                ],
+                [
+                  2168.0,
+                  1736.0,
+                  47.0
+                ],
+                [
+                  2636.0,
+                  1736.0,
+                  47.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27711",
+                "plane": "(2168 1268 47) (2168 1736 47) (2636 1736 47)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          4570.0,
+          2770.0,
+          -60.5
+        ],
+        "max": [
+          5038.0,
+          3238.0,
+          42.5
+        ],
+        "center": [
+          4804.0,
+          3004.0,
+          -9.0
+        ],
+        "size": [
+          468.0,
+          468.0,
+          103.0
+        ],
+        "z_range": [
+          -60.5,
+          42.5
+        ],
+        "aabb_volume": 22559472.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 114672,
+      "classname": "trigger_hurt",
+      "targetname": null,
+      "origin": [
+        4460.0,
+        512.0,
+        -28.0
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "114672",
+        "classname": "trigger_hurt",
+        "damage": "500",
+        "damagecap": "20",
+        "damagemodel": "0",
+        "damagetype": "4",
+        "nodmgforce": "1",
+        "origin": "4460 512 -28",
+        "spawnflags": "1",
+        "StartDisabled": "0"
+      },
+      "outputs": [],
+      "solids": [
+        {
+          "id": 114673,
+          "keyvalues": {
+            "id": "114673"
+          },
+          "sides": [
+            {
+              "id": 27794,
+              "plane": "(4444 278 47) (4444 278 -103) (4444 746 -103)",
+              "plane_points": [
+                [
+                  4444.0,
+                  278.0,
+                  47.0
+                ],
+                [
+                  4444.0,
+                  278.0,
+                  -103.0
+                ],
+                [
+                  4444.0,
+                  746.0,
+                  -103.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27794",
+                "plane": "(4444 278 47) (4444 278 -103) (4444 746 -103)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 -8] 0.25",
+                "vaxis": "[0 0 -1 -28] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27793,
+              "plane": "(4912 746 47) (4912 746 -103) (4912 278 -103)",
+              "plane_points": [
+                [
+                  4912.0,
+                  746.0,
+                  47.0
+                ],
+                [
+                  4912.0,
+                  746.0,
+                  -103.0
+                ],
+                [
+                  4912.0,
+                  278.0,
+                  -103.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27793",
+                "plane": "(4912 746 47) (4912 746 -103) (4912 278 -103)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 -8] 0.25",
+                "vaxis": "[0 0 -1 -28] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27792,
+              "plane": "(4912 278 47) (4912 278 -103) (4444 278 -103)",
+              "plane_points": [
+                [
+                  4912.0,
+                  278.0,
+                  47.0
+                ],
+                [
+                  4912.0,
+                  278.0,
+                  -103.0
+                ],
+                [
+                  4444.0,
+                  278.0,
+                  -103.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27792",
+                "plane": "(4912 278 47) (4912 278 -103) (4444 278 -103)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 48] 0.25",
+                "vaxis": "[0 0 -1 -28] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27791,
+              "plane": "(4444 746 47) (4444 746 -103) (4912 746 -103)",
+              "plane_points": [
+                [
+                  4444.0,
+                  746.0,
+                  47.0
+                ],
+                [
+                  4444.0,
+                  746.0,
+                  -103.0
+                ],
+                [
+                  4912.0,
+                  746.0,
+                  -103.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27791",
+                "plane": "(4444 746 47) (4444 746 -103) (4912 746 -103)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 48] 0.25",
+                "vaxis": "[0 0 -1 -28] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27790,
+              "plane": "(4444 746 -103) (4444 278 -103) (4912 278 -103)",
+              "plane_points": [
+                [
+                  4444.0,
+                  746.0,
+                  -103.0
+                ],
+                [
+                  4444.0,
+                  278.0,
+                  -103.0
+                ],
+                [
+                  4912.0,
+                  278.0,
+                  -103.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27790",
+                "plane": "(4444 746 -103) (4444 278 -103) (4912 278 -103)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 48] 0.25",
+                "vaxis": "[0 -1 0 8] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 27789,
+              "plane": "(4444 278 47) (4444 746 47) (4912 746 47)",
+              "plane_points": [
+                [
+                  4444.0,
+                  278.0,
+                  47.0
+                ],
+                [
+                  4444.0,
+                  746.0,
+                  47.0
+                ],
+                [
+                  4912.0,
+                  746.0,
+                  47.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "27789",
+                "plane": "(4444 278 47) (4444 746 47) (4912 746 47)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 48] 0.25",
+                "vaxis": "[0 -1 0 8] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          8904.0,
+          790.0,
+          -131.0
+        ],
+        "max": [
+          9372.0,
+          1258.0,
+          19.0
+        ],
+        "center": [
+          9138.0,
+          1024.0,
+          -56.0
+        ],
+        "size": [
+          468.0,
+          468.0,
+          150.0
+        ],
+        "z_range": [
+          -131.0,
+          19.0
+        ],
+        "aabb_volume": 32853600.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 229169,
+      "classname": "trigger_ballreset",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "229169",
+        "classname": "trigger_ballreset",
+        "enabled": "1"
+      },
+      "outputs": [],
+      "solids": [
+        {
+          "id": 229170,
+          "keyvalues": {
+            "id": "229170"
+          },
+          "sides": [
+            {
+              "id": 154314,
+              "plane": "(2168 1268 12) (2168 1268 -56) (2168 1736 -56)",
+              "plane_points": [
+                [
+                  2168.0,
+                  1268.0,
+                  12.0
+                ],
+                [
+                  2168.0,
+                  1268.0,
+                  -56.0
+                ],
+                [
+                  2168.0,
+                  1736.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "154314",
+                "plane": "(2168 1268 12) (2168 1268 -56) (2168 1736 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 154313,
+              "plane": "(2636 1736 12) (2636 1736 -56) (2636 1268 -56)",
+              "plane_points": [
+                [
+                  2636.0,
+                  1736.0,
+                  12.0
+                ],
+                [
+                  2636.0,
+                  1736.0,
+                  -56.0
+                ],
+                [
+                  2636.0,
+                  1268.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "154313",
+                "plane": "(2636 1736 12) (2636 1736 -56) (2636 1268 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 154312,
+              "plane": "(2636 1268 12) (2636 1268 -56) (2168 1268 -56)",
+              "plane_points": [
+                [
+                  2636.0,
+                  1268.0,
+                  12.0
+                ],
+                [
+                  2636.0,
+                  1268.0,
+                  -56.0
+                ],
+                [
+                  2168.0,
+                  1268.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "154312",
+                "plane": "(2636 1268 12) (2636 1268 -56) (2168 1268 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 154311,
+              "plane": "(2168 1736 12) (2168 1736 -56) (2636 1736 -56)",
+              "plane_points": [
+                [
+                  2168.0,
+                  1736.0,
+                  12.0
+                ],
+                [
+                  2168.0,
+                  1736.0,
+                  -56.0
+                ],
+                [
+                  2636.0,
+                  1736.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "154311",
+                "plane": "(2168 1736 12) (2168 1736 -56) (2636 1736 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 154310,
+              "plane": "(2168 1736 -56) (2168 1268 -56) (2636 1268 -56)",
+              "plane_points": [
+                [
+                  2168.0,
+                  1736.0,
+                  -56.0
+                ],
+                [
+                  2168.0,
+                  1268.0,
+                  -56.0
+                ],
+                [
+                  2636.0,
+                  1268.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "154310",
+                "plane": "(2168 1736 -56) (2168 1268 -56) (2636 1268 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 154309,
+              "plane": "(2168 1268 12) (2168 1736 12) (2636 1736 12)",
+              "plane_points": [
+                [
+                  2168.0,
+                  1268.0,
+                  12.0
+                ],
+                [
+                  2168.0,
+                  1736.0,
+                  12.0
+                ],
+                [
+                  2636.0,
+                  1736.0,
+                  12.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "154309",
+                "plane": "(2168 1268 12) (2168 1736 12) (2636 1736 12)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          2168.0,
+          1268.0,
+          -56.0
+        ],
+        "max": [
+          2636.0,
+          1736.0,
+          12.0
+        ],
+        "center": [
+          2402.0,
+          1502.0,
+          -22.0
+        ],
+        "size": [
+          468.0,
+          468.0,
+          68.0
+        ],
+        "z_range": [
+          -56.0,
+          12.0
+        ],
+        "aabb_volume": 14893632.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 114680,
+      "classname": "trigger_hurt",
+      "targetname": null,
+      "origin": [
+        -3555.0,
+        512.0,
+        -28.0
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "114680",
+        "classname": "trigger_hurt",
+        "damage": "500",
+        "damagecap": "20",
+        "damagemodel": "0",
+        "damagetype": "4",
+        "nodmgforce": "1",
+        "origin": "-3555 512 -28",
+        "spawnflags": "1",
+        "StartDisabled": "0"
+      },
+      "outputs": [],
+      "solids": [
+        {
+          "id": 114681,
+          "keyvalues": {
+            "id": "114681"
+          },
+          "sides": [
+            {
+              "id": 154402,
+              "plane": "(-3888 278 47) (-3888 278 -103) (-3888 746 -103)",
+              "plane_points": [
+                [
+                  -3888.0,
+                  278.0,
+                  47.0
+                ],
+                [
+                  -3888.0,
+                  278.0,
+                  -103.0
+                ],
+                [
+                  -3888.0,
+                  746.0,
+                  -103.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "154402",
+                "plane": "(-3888 278 47) (-3888 278 -103) (-3888 746 -103)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 56] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 154401,
+              "plane": "(-3420 746 47) (-3420 746 -103) (-3420 278 -103)",
+              "plane_points": [
+                [
+                  -3420.0,
+                  746.0,
+                  47.0
+                ],
+                [
+                  -3420.0,
+                  746.0,
+                  -103.0
+                ],
+                [
+                  -3420.0,
+                  278.0,
+                  -103.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "154401",
+                "plane": "(-3420 746 47) (-3420 746 -103) (-3420 278 -103)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 56] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 154400,
+              "plane": "(-3420 278 47) (-3420 278 -103) (-3888 278 -103)",
+              "plane_points": [
+                [
+                  -3420.0,
+                  278.0,
+                  47.0
+                ],
+                [
+                  -3420.0,
+                  278.0,
+                  -103.0
+                ],
+                [
+                  -3888.0,
+                  278.0,
+                  -103.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "154400",
+                "plane": "(-3420 278 47) (-3420 278 -103) (-3888 278 -103)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 32] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 154399,
+              "plane": "(-3888 746 47) (-3888 746 -103) (-3420 746 -103)",
+              "plane_points": [
+                [
+                  -3888.0,
+                  746.0,
+                  47.0
+                ],
+                [
+                  -3888.0,
+                  746.0,
+                  -103.0
+                ],
+                [
+                  -3420.0,
+                  746.0,
+                  -103.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "154399",
+                "plane": "(-3888 746 47) (-3888 746 -103) (-3420 746 -103)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 32] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 154398,
+              "plane": "(-3888 746 -103) (-3888 278 -103) (-3420 278 -103)",
+              "plane_points": [
+                [
+                  -3888.0,
+                  746.0,
+                  -103.0
+                ],
+                [
+                  -3888.0,
+                  278.0,
+                  -103.0
+                ],
+                [
+                  -3420.0,
+                  278.0,
+                  -103.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "154398",
+                "plane": "(-3888 746 -103) (-3888 278 -103) (-3420 278 -103)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 32] 0.25",
+                "vaxis": "[0 -1 0 -56] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 154397,
+              "plane": "(-3888 278 47) (-3888 746 47) (-3420 746 47)",
+              "plane_points": [
+                [
+                  -3888.0,
+                  278.0,
+                  47.0
+                ],
+                [
+                  -3888.0,
+                  746.0,
+                  47.0
+                ],
+                [
+                  -3420.0,
+                  746.0,
+                  47.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "154397",
+                "plane": "(-3888 278 47) (-3888 746 47) (-3420 746 47)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 32] 0.25",
+                "vaxis": "[0 -1 0 -56] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -7443.0,
+          790.0,
+          -131.0
+        ],
+        "max": [
+          -6975.0,
+          1258.0,
+          19.0
+        ],
+        "center": [
+          -7209.0,
+          1024.0,
+          -56.0
+        ],
+        "size": [
+          468.0,
+          468.0,
+          150.0
+        ],
+        "z_range": [
+          -131.0,
+          19.0
+        ],
+        "aabb_volume": 32853600.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 233445,
+      "classname": "trigger_hurt",
+      "targetname": null,
+      "origin": [
+        1322.0,
+        -478.0,
+        -4.5
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "233445",
+        "classname": "trigger_hurt",
+        "damage": "500",
+        "damagecap": "20",
+        "damagemodel": "0",
+        "damagetype": "4",
+        "nodmgforce": "1",
+        "origin": "1322 -478 -4.5",
+        "spawnflags": "1",
+        "StartDisabled": "0"
+      },
+      "outputs": [],
+      "solids": [
+        {
+          "id": 233446,
+          "keyvalues": {
+            "id": "233446"
+          },
+          "sides": [
+            {
+              "id": 155466,
+              "plane": "(1088 -244 47) (1088 -244 -56) (1556 -244 -56)",
+              "plane_points": [
+                [
+                  1088.0,
+                  -244.0,
+                  47.0
+                ],
+                [
+                  1088.0,
+                  -244.0,
+                  -56.0
+                ],
+                [
+                  1556.0,
+                  -244.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "155466",
+                "plane": "(1088 -244 47) (1088 -244 -56) (1556 -244 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 -48] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 155465,
+              "plane": "(1556 -712 47) (1556 -712 -56) (1088 -712 -56)",
+              "plane_points": [
+                [
+                  1556.0,
+                  -712.0,
+                  47.0
+                ],
+                [
+                  1556.0,
+                  -712.0,
+                  -56.0
+                ],
+                [
+                  1088.0,
+                  -712.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "155465",
+                "plane": "(1556 -712 47) (1556 -712 -56) (1088 -712 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 -48] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 155464,
+              "plane": "(1088 -712 47) (1088 -712 -56) (1088 -244 -56)",
+              "plane_points": [
+                [
+                  1088.0,
+                  -712.0,
+                  47.0
+                ],
+                [
+                  1088.0,
+                  -712.0,
+                  -56.0
+                ],
+                [
+                  1088.0,
+                  -244.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "155464",
+                "plane": "(1088 -712 47) (1088 -712 -56) (1088 -244 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 -1 0 16] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 155463,
+              "plane": "(1556 -244 47) (1556 -244 -56) (1556 -712 -56)",
+              "plane_points": [
+                [
+                  1556.0,
+                  -244.0,
+                  47.0
+                ],
+                [
+                  1556.0,
+                  -244.0,
+                  -56.0
+                ],
+                [
+                  1556.0,
+                  -712.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "155463",
+                "plane": "(1556 -244 47) (1556 -244 -56) (1556 -712 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 -1 0 16] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 155462,
+              "plane": "(1556 -244 -56) (1088 -244 -56) (1088 -712 -56)",
+              "plane_points": [
+                [
+                  1556.0,
+                  -244.0,
+                  -56.0
+                ],
+                [
+                  1088.0,
+                  -244.0,
+                  -56.0
+                ],
+                [
+                  1088.0,
+                  -712.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "155462",
+                "plane": "(1556 -244 -56) (1088 -244 -56) (1088 -712 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 -1 0 16] 0.25",
+                "vaxis": "[-1 0 0 48] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 155461,
+              "plane": "(1088 -244 47) (1556 -244 47) (1556 -712 47)",
+              "plane_points": [
+                [
+                  1088.0,
+                  -244.0,
+                  47.0
+                ],
+                [
+                  1556.0,
+                  -244.0,
+                  47.0
+                ],
+                [
+                  1556.0,
+                  -712.0,
+                  47.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "155461",
+                "plane": "(1088 -244 47) (1556 -244 47) (1556 -712 47)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 -1 0 16] 0.25",
+                "vaxis": "[-1 0 0 48] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          2410.0,
+          -1190.0,
+          -60.5
+        ],
+        "max": [
+          2878.0,
+          -722.0,
+          42.5
+        ],
+        "center": [
+          2644.0,
+          -956.0,
+          -9.0
+        ],
+        "size": [
+          468.0,
+          468.0,
+          103.0
+        ],
+        "z_range": [
+          -60.5,
+          42.5
+        ],
+        "aabb_volume": 22559472.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 233777,
+      "classname": "trigger_hurt",
+      "targetname": null,
+      "origin": [
+        -298.0,
+        1502.0,
+        -4.5
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "233777",
+        "classname": "trigger_hurt",
+        "damage": "500",
+        "damagecap": "20",
+        "damagemodel": "0",
+        "damagetype": "4",
+        "nodmgforce": "1",
+        "origin": "-298 1502 -4.5",
+        "spawnflags": "1",
+        "StartDisabled": "0"
+      },
+      "outputs": [],
+      "solids": [
+        {
+          "id": 233778,
+          "keyvalues": {
+            "id": "233778"
+          },
+          "sides": [
+            {
+              "id": 156200,
+              "plane": "(-64 1736 47) (-64 1736 -56) (-64 1268 -56)",
+              "plane_points": [
+                [
+                  -64.0,
+                  1736.0,
+                  47.0
+                ],
+                [
+                  -64.0,
+                  1736.0,
+                  -56.0
+                ],
+                [
+                  -64.0,
+                  1268.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "156200",
+                "plane": "(-64 1736 47) (-64 1736 -56) (-64 1268 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 -1 0 -16] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 156199,
+              "plane": "(-532 1268 47) (-532 1268 -56) (-532 1736 -56)",
+              "plane_points": [
+                [
+                  -532.0,
+                  1268.0,
+                  47.0
+                ],
+                [
+                  -532.0,
+                  1268.0,
+                  -56.0
+                ],
+                [
+                  -532.0,
+                  1736.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "156199",
+                "plane": "(-532 1268 47) (-532 1268 -56) (-532 1736 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 -1 0 -16] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 156198,
+              "plane": "(-532 1736 47) (-532 1736 -56) (-64 1736 -56)",
+              "plane_points": [
+                [
+                  -532.0,
+                  1736.0,
+                  47.0
+                ],
+                [
+                  -532.0,
+                  1736.0,
+                  -56.0
+                ],
+                [
+                  -64.0,
+                  1736.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "156198",
+                "plane": "(-532 1736 47) (-532 1736 -56) (-64 1736 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[-1 0 0 32] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 156197,
+              "plane": "(-64 1268 47) (-64 1268 -56) (-532 1268 -56)",
+              "plane_points": [
+                [
+                  -64.0,
+                  1268.0,
+                  47.0
+                ],
+                [
+                  -64.0,
+                  1268.0,
+                  -56.0
+                ],
+                [
+                  -532.0,
+                  1268.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "156197",
+                "plane": "(-64 1268 47) (-64 1268 -56) (-532 1268 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[-1 0 0 32] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 156196,
+              "plane": "(-64 1268 -56) (-64 1736 -56) (-532 1736 -56)",
+              "plane_points": [
+                [
+                  -64.0,
+                  1268.0,
+                  -56.0
+                ],
+                [
+                  -64.0,
+                  1736.0,
+                  -56.0
+                ],
+                [
+                  -532.0,
+                  1736.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "156196",
+                "plane": "(-64 1268 -56) (-64 1736 -56) (-532 1736 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[-1 0 0 32] 0.25",
+                "vaxis": "[0 1 0 16] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 156195,
+              "plane": "(-64 1736 47) (-64 1268 47) (-532 1268 47)",
+              "plane_points": [
+                [
+                  -64.0,
+                  1736.0,
+                  47.0
+                ],
+                [
+                  -64.0,
+                  1268.0,
+                  47.0
+                ],
+                [
+                  -532.0,
+                  1268.0,
+                  47.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "156195",
+                "plane": "(-64 1736 47) (-64 1268 47) (-532 1268 47)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[-1 0 0 32] 0.25",
+                "vaxis": "[0 1 0 16] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -830.0,
+          2770.0,
+          -60.5
+        ],
+        "max": [
+          -362.0,
+          3238.0,
+          42.5
+        ],
+        "center": [
+          -596.0,
+          3004.0,
+          -9.0
+        ],
+        "size": [
+          468.0,
+          468.0,
+          103.0
+        ],
+        "z_range": [
+          -60.5,
+          42.5
+        ],
+        "aabb_volume": 22559472.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 234109,
+      "classname": "trigger_hurt",
+      "targetname": null,
+      "origin": [
+        -1378.0,
+        -478.0,
+        -4.5
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "234109",
+        "classname": "trigger_hurt",
+        "damage": "500",
+        "damagecap": "20",
+        "damagemodel": "0",
+        "damagetype": "4",
+        "nodmgforce": "1",
+        "origin": "-1378 -478 -4.5",
+        "spawnflags": "1",
+        "StartDisabled": "0"
+      },
+      "outputs": [],
+      "solids": [
+        {
+          "id": 234110,
+          "keyvalues": {
+            "id": "234110"
+          },
+          "sides": [
+            {
+              "id": 156934,
+              "plane": "(-1144 -712 47) (-1144 -712 -56) (-1612 -712 -56)",
+              "plane_points": [
+                [
+                  -1144.0,
+                  -712.0,
+                  47.0
+                ],
+                [
+                  -1144.0,
+                  -712.0,
+                  -56.0
+                ],
+                [
+                  -1612.0,
+                  -712.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "156934",
+                "plane": "(-1144 -712 47) (-1144 -712 -56) (-1612 -712 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[-1 0 0 48] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 156933,
+              "plane": "(-1612 -244 47) (-1612 -244 -56) (-1144 -244 -56)",
+              "plane_points": [
+                [
+                  -1612.0,
+                  -244.0,
+                  47.0
+                ],
+                [
+                  -1612.0,
+                  -244.0,
+                  -56.0
+                ],
+                [
+                  -1144.0,
+                  -244.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "156933",
+                "plane": "(-1612 -244 47) (-1612 -244 -56) (-1144 -244 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[-1 0 0 48] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 156932,
+              "plane": "(-1144 -244 47) (-1144 -244 -56) (-1144 -712 -56)",
+              "plane_points": [
+                [
+                  -1144.0,
+                  -244.0,
+                  47.0
+                ],
+                [
+                  -1144.0,
+                  -244.0,
+                  -56.0
+                ],
+                [
+                  -1144.0,
+                  -712.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "156932",
+                "plane": "(-1144 -244 47) (-1144 -244 -56) (-1144 -712 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 156931,
+              "plane": "(-1612 -712 47) (-1612 -712 -56) (-1612 -244 -56)",
+              "plane_points": [
+                [
+                  -1612.0,
+                  -712.0,
+                  47.0
+                ],
+                [
+                  -1612.0,
+                  -712.0,
+                  -56.0
+                ],
+                [
+                  -1612.0,
+                  -244.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "156931",
+                "plane": "(-1612 -712 47) (-1612 -712 -56) (-1612 -244 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 156930,
+              "plane": "(-1612 -712 -56) (-1144 -712 -56) (-1144 -244 -56)",
+              "plane_points": [
+                [
+                  -1612.0,
+                  -712.0,
+                  -56.0
+                ],
+                [
+                  -1144.0,
+                  -712.0,
+                  -56.0
+                ],
+                [
+                  -1144.0,
+                  -244.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "156930",
+                "plane": "(-1612 -712 -56) (-1144 -712 -56) (-1144 -244 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[1 0 0 -48] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 156929,
+              "plane": "(-1144 -712 47) (-1612 -712 47) (-1612 -244 47)",
+              "plane_points": [
+                [
+                  -1144.0,
+                  -712.0,
+                  47.0
+                ],
+                [
+                  -1612.0,
+                  -712.0,
+                  47.0
+                ],
+                [
+                  -1612.0,
+                  -244.0,
+                  47.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "156929",
+                "plane": "(-1144 -712 47) (-1612 -712 47) (-1612 -244 47)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[1 0 0 -48] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -2990.0,
+          -1190.0,
+          -60.5
+        ],
+        "max": [
+          -2522.0,
+          -722.0,
+          42.5
+        ],
+        "center": [
+          -2756.0,
+          -956.0,
+          -9.0
+        ],
+        "size": [
+          468.0,
+          468.0,
+          103.0
+        ],
+        "z_range": [
+          -60.5,
+          42.5
+        ],
+        "aabb_volume": 22559472.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 234839,
+      "classname": "trigger_ballreset",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "234839",
+        "classname": "trigger_ballreset",
+        "enabled": "1"
+      },
+      "outputs": [],
+      "solids": [
+        {
+          "id": 234840,
+          "keyvalues": {
+            "id": "234840"
+          },
+          "sides": [
+            {
+              "id": 157687,
+              "plane": "(1088 -712 12) (1088 -712 -56) (1088 -244 -56)",
+              "plane_points": [
+                [
+                  1088.0,
+                  -712.0,
+                  12.0
+                ],
+                [
+                  1088.0,
+                  -712.0,
+                  -56.0
+                ],
+                [
+                  1088.0,
+                  -244.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157687",
+                "plane": "(1088 -712 12) (1088 -712 -56) (1088 -244 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 -16] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 157686,
+              "plane": "(1556 -244 12) (1556 -244 -56) (1556 -712 -56)",
+              "plane_points": [
+                [
+                  1556.0,
+                  -244.0,
+                  12.0
+                ],
+                [
+                  1556.0,
+                  -244.0,
+                  -56.0
+                ],
+                [
+                  1556.0,
+                  -712.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157686",
+                "plane": "(1556 -244 12) (1556 -244 -56) (1556 -712 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 -16] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 157685,
+              "plane": "(1556 -712 12) (1556 -712 -56) (1088 -712 -56)",
+              "plane_points": [
+                [
+                  1556.0,
+                  -712.0,
+                  12.0
+                ],
+                [
+                  1556.0,
+                  -712.0,
+                  -56.0
+                ],
+                [
+                  1088.0,
+                  -712.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157685",
+                "plane": "(1556 -712 12) (1556 -712 -56) (1088 -712 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 32] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 157684,
+              "plane": "(1088 -244 12) (1088 -244 -56) (1556 -244 -56)",
+              "plane_points": [
+                [
+                  1088.0,
+                  -244.0,
+                  12.0
+                ],
+                [
+                  1088.0,
+                  -244.0,
+                  -56.0
+                ],
+                [
+                  1556.0,
+                  -244.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157684",
+                "plane": "(1088 -244 12) (1088 -244 -56) (1556 -244 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 32] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 157683,
+              "plane": "(1088 -244 -56) (1088 -712 -56) (1556 -712 -56)",
+              "plane_points": [
+                [
+                  1088.0,
+                  -244.0,
+                  -56.0
+                ],
+                [
+                  1088.0,
+                  -712.0,
+                  -56.0
+                ],
+                [
+                  1556.0,
+                  -712.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157683",
+                "plane": "(1088 -244 -56) (1088 -712 -56) (1556 -712 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 32] 0.25",
+                "vaxis": "[0 -1 0 16] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 157682,
+              "plane": "(1088 -712 12) (1088 -244 12) (1556 -244 12)",
+              "plane_points": [
+                [
+                  1088.0,
+                  -712.0,
+                  12.0
+                ],
+                [
+                  1088.0,
+                  -244.0,
+                  12.0
+                ],
+                [
+                  1556.0,
+                  -244.0,
+                  12.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157682",
+                "plane": "(1088 -712 12) (1088 -244 12) (1556 -244 12)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 32] 0.25",
+                "vaxis": "[0 -1 0 16] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          1088.0,
+          -712.0,
+          -56.0
+        ],
+        "max": [
+          1556.0,
+          -244.0,
+          12.0
+        ],
+        "center": [
+          1322.0,
+          -478.0,
+          -22.0
+        ],
+        "size": [
+          468.0,
+          468.0,
+          68.0
+        ],
+        "z_range": [
+          -56.0,
+          12.0
+        ],
+        "aabb_volume": 14893632.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 234845,
+      "classname": "trigger_ballreset",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "234845",
+        "classname": "trigger_ballreset",
+        "enabled": "1"
+      },
+      "outputs": [],
+      "solids": [
+        {
+          "id": 234846,
+          "keyvalues": {
+            "id": "234846"
+          },
+          "sides": [
+            {
+              "id": 157699,
+              "plane": "(-1612 -712 12) (-1612 -712 -56) (-1612 -244 -56)",
+              "plane_points": [
+                [
+                  -1612.0,
+                  -712.0,
+                  12.0
+                ],
+                [
+                  -1612.0,
+                  -712.0,
+                  -56.0
+                ],
+                [
+                  -1612.0,
+                  -244.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157699",
+                "plane": "(-1612 -712 12) (-1612 -712 -56) (-1612 -244 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 48] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 157698,
+              "plane": "(-1144 -244 12) (-1144 -244 -56) (-1144 -712 -56)",
+              "plane_points": [
+                [
+                  -1144.0,
+                  -244.0,
+                  12.0
+                ],
+                [
+                  -1144.0,
+                  -244.0,
+                  -56.0
+                ],
+                [
+                  -1144.0,
+                  -712.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157698",
+                "plane": "(-1144 -244 12) (-1144 -244 -56) (-1144 -712 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 48] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 157697,
+              "plane": "(-1144 -712 12) (-1144 -712 -56) (-1612 -712 -56)",
+              "plane_points": [
+                [
+                  -1144.0,
+                  -712.0,
+                  12.0
+                ],
+                [
+                  -1144.0,
+                  -712.0,
+                  -56.0
+                ],
+                [
+                  -1612.0,
+                  -712.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157697",
+                "plane": "(-1144 -712 12) (-1144 -712 -56) (-1612 -712 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 16] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 157696,
+              "plane": "(-1612 -244 12) (-1612 -244 -56) (-1144 -244 -56)",
+              "plane_points": [
+                [
+                  -1612.0,
+                  -244.0,
+                  12.0
+                ],
+                [
+                  -1612.0,
+                  -244.0,
+                  -56.0
+                ],
+                [
+                  -1144.0,
+                  -244.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157696",
+                "plane": "(-1612 -244 12) (-1612 -244 -56) (-1144 -244 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 16] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 157695,
+              "plane": "(-1612 -244 -56) (-1612 -712 -56) (-1144 -712 -56)",
+              "plane_points": [
+                [
+                  -1612.0,
+                  -244.0,
+                  -56.0
+                ],
+                [
+                  -1612.0,
+                  -712.0,
+                  -56.0
+                ],
+                [
+                  -1144.0,
+                  -712.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157695",
+                "plane": "(-1612 -244 -56) (-1612 -712 -56) (-1144 -712 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 16] 0.25",
+                "vaxis": "[0 -1 0 -48] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 157694,
+              "plane": "(-1612 -712 12) (-1612 -244 12) (-1144 -244 12)",
+              "plane_points": [
+                [
+                  -1612.0,
+                  -712.0,
+                  12.0
+                ],
+                [
+                  -1612.0,
+                  -244.0,
+                  12.0
+                ],
+                [
+                  -1144.0,
+                  -244.0,
+                  12.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157694",
+                "plane": "(-1612 -712 12) (-1612 -244 12) (-1144 -244 12)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 16] 0.25",
+                "vaxis": "[0 -1 0 -48] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -1612.0,
+          -712.0,
+          -56.0
+        ],
+        "max": [
+          -1144.0,
+          -244.0,
+          12.0
+        ],
+        "center": [
+          -1378.0,
+          -478.0,
+          -22.0
+        ],
+        "size": [
+          468.0,
+          468.0,
+          68.0
+        ],
+        "z_range": [
+          -56.0,
+          12.0
+        ],
+        "aabb_volume": 14893632.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 234855,
+      "classname": "trigger_ballreset",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "234855",
+        "classname": "trigger_ballreset",
+        "enabled": "1"
+      },
+      "outputs": [],
+      "solids": [
+        {
+          "id": 234856,
+          "keyvalues": {
+            "id": "234856"
+          },
+          "sides": [
+            {
+              "id": 157711,
+              "plane": "(-532 1268 12) (-532 1268 -56) (-532 1736 -56)",
+              "plane_points": [
+                [
+                  -532.0,
+                  1268.0,
+                  12.0
+                ],
+                [
+                  -532.0,
+                  1268.0,
+                  -56.0
+                ],
+                [
+                  -532.0,
+                  1736.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157711",
+                "plane": "(-532 1268 12) (-532 1268 -56) (-532 1736 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 157710,
+              "plane": "(-64 1736 12) (-64 1736 -56) (-64 1268 -56)",
+              "plane_points": [
+                [
+                  -64.0,
+                  1736.0,
+                  12.0
+                ],
+                [
+                  -64.0,
+                  1736.0,
+                  -56.0
+                ],
+                [
+                  -64.0,
+                  1268.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157710",
+                "plane": "(-64 1736 12) (-64 1736 -56) (-64 1268 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 157709,
+              "plane": "(-64 1268 12) (-64 1268 -56) (-532 1268 -56)",
+              "plane_points": [
+                [
+                  -64.0,
+                  1268.0,
+                  12.0
+                ],
+                [
+                  -64.0,
+                  1268.0,
+                  -56.0
+                ],
+                [
+                  -532.0,
+                  1268.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157709",
+                "plane": "(-64 1268 12) (-64 1268 -56) (-532 1268 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 -16] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 157708,
+              "plane": "(-532 1736 12) (-532 1736 -56) (-64 1736 -56)",
+              "plane_points": [
+                [
+                  -532.0,
+                  1736.0,
+                  12.0
+                ],
+                [
+                  -532.0,
+                  1736.0,
+                  -56.0
+                ],
+                [
+                  -64.0,
+                  1736.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157708",
+                "plane": "(-532 1736 12) (-532 1736 -56) (-64 1736 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 -16] 0.25",
+                "vaxis": "[0 0 -1 32] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 157707,
+              "plane": "(-532 1736 -56) (-532 1268 -56) (-64 1268 -56)",
+              "plane_points": [
+                [
+                  -532.0,
+                  1736.0,
+                  -56.0
+                ],
+                [
+                  -532.0,
+                  1268.0,
+                  -56.0
+                ],
+                [
+                  -64.0,
+                  1268.0,
+                  -56.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157707",
+                "plane": "(-532 1736 -56) (-532 1268 -56) (-64 1268 -56)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 -16] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 157706,
+              "plane": "(-532 1268 12) (-532 1736 12) (-64 1736 12)",
+              "plane_points": [
+                [
+                  -532.0,
+                  1268.0,
+                  12.0
+                ],
+                [
+                  -532.0,
+                  1736.0,
+                  12.0
+                ],
+                [
+                  -64.0,
+                  1736.0,
+                  12.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "157706",
+                "plane": "(-532 1268 12) (-532 1736 12) (-64 1736 12)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 -16] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -532.0,
+          1268.0,
+          -56.0
+        ],
+        "max": [
+          -64.0,
+          1736.0,
+          12.0
+        ],
+        "center": [
+          -298.0,
+          1502.0,
+          -22.0
+        ],
+        "size": [
+          468.0,
+          468.0,
+          68.0
+        ],
+        "z_range": [
+          -56.0,
+          12.0
+        ],
+        "aabb_volume": 14893632.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 247300,
+      "classname": "trigger_goal",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "247300",
+        "classname": "trigger_goal",
+        "points": "1",
+        "scoretype": "2",
+        "teamid": "1"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "it's good,PlaySound,,0,-1",
+          "parts": [
+            "it's good",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "touchdown cheer,PlaySound,,0,-1",
+          "parts": [
+            "touchdown cheer",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "solids": [
+        {
+          "id": 247301,
+          "keyvalues": {
+            "id": "247301"
+          },
+          "sides": [
+            {
+              "id": 178649,
+              "plane": "(3907 296 352) (3907 728 352) (3907 728 800)",
+              "plane_points": [
+                [
+                  3907.0,
+                  296.0,
+                  352.0
+                ],
+                [
+                  3907.0,
+                  728.0,
+                  352.0
+                ],
+                [
+                  3907.0,
+                  728.0,
+                  800.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "178649",
+                "plane": "(3907 296 352) (3907 728 352) (3907 728 800)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 178648,
+              "plane": "(3909 728 352) (3909 296 352) (3909 296 800)",
+              "plane_points": [
+                [
+                  3909.0,
+                  728.0,
+                  352.0
+                ],
+                [
+                  3909.0,
+                  296.0,
+                  352.0
+                ],
+                [
+                  3909.0,
+                  296.0,
+                  800.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "178648",
+                "plane": "(3909 728 352) (3909 296 352) (3909 296 800)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 178647,
+              "plane": "(3907 728 352) (3907 296 352) (3909 296 352)",
+              "plane_points": [
+                [
+                  3907.0,
+                  728.0,
+                  352.0
+                ],
+                [
+                  3907.0,
+                  296.0,
+                  352.0
+                ],
+                [
+                  3909.0,
+                  296.0,
+                  352.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "178647",
+                "plane": "(3907 728 352) (3907 296 352) (3909 296 352)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 -32] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 178646,
+              "plane": "(3907 296 800) (3907 728 800) (3909 728 800)",
+              "plane_points": [
+                [
+                  3907.0,
+                  296.0,
+                  800.0
+                ],
+                [
+                  3907.0,
+                  728.0,
+                  800.0
+                ],
+                [
+                  3909.0,
+                  728.0,
+                  800.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "178646",
+                "plane": "(3907 296 800) (3907 728 800) (3909 728 800)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 -32] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 178645,
+              "plane": "(3909 296 800) (3909 296 352) (3907 296 352)",
+              "plane_points": [
+                [
+                  3909.0,
+                  296.0,
+                  800.0
+                ],
+                [
+                  3909.0,
+                  296.0,
+                  352.0
+                ],
+                [
+                  3907.0,
+                  296.0,
+                  352.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "178645",
+                "plane": "(3909 296 800) (3909 296 352) (3907 296 352)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 -32] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 178644,
+              "plane": "(3907 728 800) (3907 728 352) (3909 728 352)",
+              "plane_points": [
+                [
+                  3907.0,
+                  728.0,
+                  800.0
+                ],
+                [
+                  3907.0,
+                  728.0,
+                  352.0
+                ],
+                [
+                  3909.0,
+                  728.0,
+                  352.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "178644",
+                "plane": "(3907 728 800) (3907 728 352) (3909 728 352)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 -32] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          3907.0,
+          296.0,
+          352.0
+        ],
+        "max": [
+          3909.0,
+          728.0,
+          800.0
+        ],
+        "center": [
+          3908.0,
+          512.0,
+          576.0
+        ],
+        "size": [
+          2.0,
+          432.0,
+          448.0
+        ],
+        "z_range": [
+          352.0,
+          800.0
+        ],
+        "aabb_volume": 387072.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 247302,
+      "classname": "trigger_goal",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "247302",
+        "classname": "trigger_goal",
+        "points": "1",
+        "scoretype": "2",
+        "teamid": "1"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "it's good,PlaySound,,0,-1",
+          "parts": [
+            "it's good",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "touchdown cheer,PlaySound,,0,-1",
+          "parts": [
+            "touchdown cheer",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "solids": [
+        {
+          "id": 247303,
+          "keyvalues": {
+            "id": "247303"
+          },
+          "sides": [
+            {
+              "id": 178655,
+              "plane": "(3907 312 800) (3907 712 800) (3907 712 2119)",
+              "plane_points": [
+                [
+                  3907.0,
+                  312.0,
+                  800.0
+                ],
+                [
+                  3907.0,
+                  712.0,
+                  800.0
+                ],
+                [
+                  3907.0,
+                  712.0,
+                  2119.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "178655",
+                "plane": "(3907 312 800) (3907 712 800) (3907 712 2119)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 178654,
+              "plane": "(3909 712 800) (3909 312 800) (3909 312 2119)",
+              "plane_points": [
+                [
+                  3909.0,
+                  712.0,
+                  800.0
+                ],
+                [
+                  3909.0,
+                  312.0,
+                  800.0
+                ],
+                [
+                  3909.0,
+                  312.0,
+                  2119.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "178654",
+                "plane": "(3909 712 800) (3909 312 800) (3909 312 2119)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 178653,
+              "plane": "(3907 312 2119) (3907 712 2119) (3909 712 2119)",
+              "plane_points": [
+                [
+                  3907.0,
+                  312.0,
+                  2119.0
+                ],
+                [
+                  3907.0,
+                  712.0,
+                  2119.0
+                ],
+                [
+                  3909.0,
+                  712.0,
+                  2119.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "178653",
+                "plane": "(3907 312 2119) (3907 712 2119) (3909 712 2119)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 -32] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 178652,
+              "plane": "(3907 712 800) (3907 312 800) (3909 312 800)",
+              "plane_points": [
+                [
+                  3907.0,
+                  712.0,
+                  800.0
+                ],
+                [
+                  3907.0,
+                  312.0,
+                  800.0
+                ],
+                [
+                  3909.0,
+                  312.0,
+                  800.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "178652",
+                "plane": "(3907 712 800) (3907 312 800) (3909 312 800)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 -32] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 178651,
+              "plane": "(3909 312 2119) (3909 312 800) (3907 312 800)",
+              "plane_points": [
+                [
+                  3909.0,
+                  312.0,
+                  2119.0
+                ],
+                [
+                  3909.0,
+                  312.0,
+                  800.0
+                ],
+                [
+                  3907.0,
+                  312.0,
+                  800.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "178651",
+                "plane": "(3909 312 2119) (3909 312 800) (3907 312 800)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 -32] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 178650,
+              "plane": "(3907 712 2119) (3907 712 800) (3909 712 800)",
+              "plane_points": [
+                [
+                  3907.0,
+                  712.0,
+                  2119.0
+                ],
+                [
+                  3907.0,
+                  712.0,
+                  800.0
+                ],
+                [
+                  3909.0,
+                  712.0,
+                  800.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "178650",
+                "plane": "(3907 712 2119) (3907 712 800) (3909 712 800)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 -32] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          3907.0,
+          312.0,
+          800.0
+        ],
+        "max": [
+          3909.0,
+          712.0,
+          2119.0
+        ],
+        "center": [
+          3908.0,
+          512.0,
+          1459.5
+        ],
+        "size": [
+          2.0,
+          400.0,
+          1319.0
+        ],
+        "z_range": [
+          800.0,
+          2119.0
+        ],
+        "aabb_volume": 1055200.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 274668,
+      "classname": "trigger_goal",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "274668",
+        "classname": "trigger_goal",
+        "points": "1",
+        "scoretype": "2",
+        "teamid": "2"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "it's good,PlaySound,,0,-1",
+          "parts": [
+            "it's good",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "touchdown cheer,PlaySound,,0,-1",
+          "parts": [
+            "touchdown cheer",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "solids": [
+        {
+          "id": 274669,
+          "keyvalues": {
+            "id": "274669"
+          },
+          "sides": [
+            {
+              "id": 192023,
+              "plane": "(-2885 296 352) (-2885 728 352) (-2885 728 800)",
+              "plane_points": [
+                [
+                  -2885.0,
+                  296.0,
+                  352.0
+                ],
+                [
+                  -2885.0,
+                  728.0,
+                  352.0
+                ],
+                [
+                  -2885.0,
+                  728.0,
+                  800.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "192023",
+                "plane": "(-2885 296 352) (-2885 728 352) (-2885 728 800)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 192022,
+              "plane": "(-2883 728 352) (-2883 296 352) (-2883 296 800)",
+              "plane_points": [
+                [
+                  -2883.0,
+                  728.0,
+                  352.0
+                ],
+                [
+                  -2883.0,
+                  296.0,
+                  352.0
+                ],
+                [
+                  -2883.0,
+                  296.0,
+                  800.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "192022",
+                "plane": "(-2883 728 352) (-2883 296 352) (-2883 296 800)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 192021,
+              "plane": "(-2885 728 352) (-2885 296 352) (-2883 296 352)",
+              "plane_points": [
+                [
+                  -2885.0,
+                  728.0,
+                  352.0
+                ],
+                [
+                  -2885.0,
+                  296.0,
+                  352.0
+                ],
+                [
+                  -2883.0,
+                  296.0,
+                  352.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "192021",
+                "plane": "(-2885 728 352) (-2885 296 352) (-2883 296 352)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 192020,
+              "plane": "(-2885 296 800) (-2885 728 800) (-2883 728 800)",
+              "plane_points": [
+                [
+                  -2885.0,
+                  296.0,
+                  800.0
+                ],
+                [
+                  -2885.0,
+                  728.0,
+                  800.0
+                ],
+                [
+                  -2883.0,
+                  728.0,
+                  800.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "192020",
+                "plane": "(-2885 296 800) (-2885 728 800) (-2883 728 800)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 192019,
+              "plane": "(-2883 296 800) (-2883 296 352) (-2885 296 352)",
+              "plane_points": [
+                [
+                  -2883.0,
+                  296.0,
+                  800.0
+                ],
+                [
+                  -2883.0,
+                  296.0,
+                  352.0
+                ],
+                [
+                  -2885.0,
+                  296.0,
+                  352.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "192019",
+                "plane": "(-2883 296 800) (-2883 296 352) (-2885 296 352)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 192018,
+              "plane": "(-2885 728 800) (-2885 728 352) (-2883 728 352)",
+              "plane_points": [
+                [
+                  -2885.0,
+                  728.0,
+                  800.0
+                ],
+                [
+                  -2885.0,
+                  728.0,
+                  352.0
+                ],
+                [
+                  -2883.0,
+                  728.0,
+                  352.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "192018",
+                "plane": "(-2885 728 800) (-2885 728 352) (-2883 728 352)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -2885.0,
+          296.0,
+          352.0
+        ],
+        "max": [
+          -2883.0,
+          728.0,
+          800.0
+        ],
+        "center": [
+          -2884.0,
+          512.0,
+          576.0
+        ],
+        "size": [
+          2.0,
+          432.0,
+          448.0
+        ],
+        "z_range": [
+          352.0,
+          800.0
+        ],
+        "aabb_volume": 387072.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 274670,
+      "classname": "trigger_goal",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "274670",
+        "classname": "trigger_goal",
+        "points": "1",
+        "scoretype": "2",
+        "teamid": "2"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "it's good,PlaySound,,0,-1",
+          "parts": [
+            "it's good",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "touchdown cheer,PlaySound,,0,-1",
+          "parts": [
+            "touchdown cheer",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "solids": [
+        {
+          "id": 274671,
+          "keyvalues": {
+            "id": "274671"
+          },
+          "sides": [
+            {
+              "id": 192029,
+              "plane": "(-2885 312 800) (-2885 712 800) (-2885 712 2119)",
+              "plane_points": [
+                [
+                  -2885.0,
+                  312.0,
+                  800.0
+                ],
+                [
+                  -2885.0,
+                  712.0,
+                  800.0
+                ],
+                [
+                  -2885.0,
+                  712.0,
+                  2119.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "192029",
+                "plane": "(-2885 312 800) (-2885 712 800) (-2885 712 2119)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 192028,
+              "plane": "(-2883 712 800) (-2883 312 800) (-2883 312 2119)",
+              "plane_points": [
+                [
+                  -2883.0,
+                  712.0,
+                  800.0
+                ],
+                [
+                  -2883.0,
+                  312.0,
+                  800.0
+                ],
+                [
+                  -2883.0,
+                  312.0,
+                  2119.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "192028",
+                "plane": "(-2883 712 800) (-2883 312 800) (-2883 312 2119)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[0 1 0 0] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 192027,
+              "plane": "(-2885 312 2119) (-2885 712 2119) (-2883 712 2119)",
+              "plane_points": [
+                [
+                  -2885.0,
+                  312.0,
+                  2119.0
+                ],
+                [
+                  -2885.0,
+                  712.0,
+                  2119.0
+                ],
+                [
+                  -2883.0,
+                  712.0,
+                  2119.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "192027",
+                "plane": "(-2885 312 2119) (-2885 712 2119) (-2883 712 2119)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 192026,
+              "plane": "(-2885 712 800) (-2885 312 800) (-2883 312 800)",
+              "plane_points": [
+                [
+                  -2885.0,
+                  712.0,
+                  800.0
+                ],
+                [
+                  -2885.0,
+                  312.0,
+                  800.0
+                ],
+                [
+                  -2883.0,
+                  312.0,
+                  800.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "192026",
+                "plane": "(-2885 712 800) (-2885 312 800) (-2883 312 800)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 -1 0 0] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 192025,
+              "plane": "(-2883 312 2119) (-2883 312 800) (-2885 312 800)",
+              "plane_points": [
+                [
+                  -2883.0,
+                  312.0,
+                  2119.0
+                ],
+                [
+                  -2883.0,
+                  312.0,
+                  800.0
+                ],
+                [
+                  -2885.0,
+                  312.0,
+                  800.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "192025",
+                "plane": "(-2883 312 2119) (-2883 312 800) (-2885 312 800)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            },
+            {
+              "id": 192024,
+              "plane": "(-2885 712 2119) (-2885 712 800) (-2883 712 800)",
+              "plane_points": [
+                [
+                  -2885.0,
+                  712.0,
+                  2119.0
+                ],
+                [
+                  -2885.0,
+                  712.0,
+                  800.0
+                ],
+                [
+                  -2883.0,
+                  712.0,
+                  800.0
+                ]
+              ],
+              "material": "TOOLS/TOOLSTRIGGER",
+              "keyvalues": {
+                "id": "192024",
+                "plane": "(-2885 712 2119) (-2885 712 800) (-2883 712 800)",
+                "material": "TOOLS/TOOLSTRIGGER",
+                "uaxis": "[1 0 0 0] 0.25",
+                "vaxis": "[0 0 -1 4] 0.25",
+                "rotation": "0",
+                "lightmapscale": "16",
+                "smoothing_groups": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -2885.0,
+          312.0,
+          800.0
+        ],
+        "max": [
+          -2883.0,
+          712.0,
+          2119.0
+        ],
+        "center": [
+          -2884.0,
+          512.0,
+          1459.5
+        ],
+        "size": [
+          2.0,
+          400.0,
+          1319.0
+        ],
+        "z_range": [
+          800.0,
+          2119.0
+        ],
+        "aabb_volume": 1055200.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    }
+  ]
+}

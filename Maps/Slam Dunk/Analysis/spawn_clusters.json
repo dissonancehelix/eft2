@@ -1,0 +1,109 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Slam Dunk",
+  "source_vmf": "Maps/Slam Dunk/Slam Dunk.vmf",
+  "original_filename": "eft_slamdunk_v6.vmf",
+  "generated_at": "2026-05-08T15:27:14.689573+00:00",
+  "spawn_clusters": {
+    "red": [
+      {
+        "cluster_id": 1,
+        "center": [
+          700.3333333333334,
+          3137.0,
+          270.0
+        ],
+        "count": 6,
+        "source_entity_ids": [
+          19269,
+          19271,
+          83155,
+          83147,
+          76000,
+          83153
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 6 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          700.2857142857143,
+          1999.857142857143,
+          270.0
+        ],
+        "count": 7,
+        "source_entity_ids": [
+          19273,
+          19275,
+          19277,
+          19279,
+          75994,
+          88170,
+          88172
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 7 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "blue": [
+      {
+        "cluster_id": 1,
+        "center": [
+          5587.714285714285,
+          1999.857142857143,
+          270.0
+        ],
+        "count": 7,
+        "source_entity_ids": [
+          88182,
+          88184,
+          88186,
+          88188,
+          88190,
+          88192,
+          88194
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 7 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          5587.666666666667,
+          3137.0,
+          270.0
+        ],
+        "count": 6,
+        "source_entity_ids": [
+          88196,
+          88198,
+          88200,
+          88202,
+          88204,
+          88206
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 6 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "spectator": []
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Legoland",
+  "source_vmf": "Maps/Legoland/Legoland.vmf",
+  "original_filename": "eft_legoland_v2.vmf",
+  "generated_at": "2026-05-08T15:27:11.508764+00:00",
+  "danger_fields": [
+    {
+      "region": "hazard_region_1",
+      "type": "hazard_region",
+      "center": [
+        6176.0,
+        1024.0,
+        48.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_2",
+      "type": "hazard_region",
+      "center": [
+        -8224.0,
+        1024.0,
+        48.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_3",
+      "type": "hazard_region",
+      "center": [
+        6656.0,
+        256.0,
+        2080.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_4",
+      "type": "hazard_region",
+      "center": [
+        6656.0,
+        1792.0,
+        2080.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_5",
+      "type": "hazard_region",
+      "center": [
+        -8768.0,
+        1792.0,
+        2080.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_6",
+      "type": "hazard_region",
+      "center": [
+        -8768.0,
+        256.0,
+        2080.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_7",
+      "type": "hazard_region",
+      "center": [
+        576.0,
+        1216.0,
+        1672.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_8",
+      "type": "hazard_region",
+      "center": [
+        -2624.0,
+        1024.0,
+        1672.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_1",
+      "type": "reset_region",
+      "center": [
+        3088.0,
+        512.0,
+        8.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_2",
+      "type": "reset_region",
+      "center": [
+        -4112.0,
+        512.0,
+        8.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    }
+  ]
+}

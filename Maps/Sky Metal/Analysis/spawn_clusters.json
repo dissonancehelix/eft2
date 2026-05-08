@@ -1,0 +1,83 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Sky Metal",
+  "source_vmf": "Maps/Sky Metal/Sky Metal.vmf",
+  "original_filename": "eft_sky_metal_v2.vmf",
+  "generated_at": "2026-05-08T15:27:13.673374+00:00",
+  "spawn_clusters": {
+    "red": [
+      {
+        "cluster_id": 1,
+        "center": [
+          2236.235294117647,
+          4284.235294117647,
+          769.0
+        ],
+        "count": 17,
+        "source_entity_ids": [
+          1001,
+          1013,
+          1015,
+          1019,
+          1023,
+          1025,
+          1027,
+          1029,
+          29968,
+          29976,
+          29988,
+          30000,
+          30002,
+          30004,
+          1003,
+          29992,
+          997
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 17 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "blue": [
+      {
+        "cluster_id": 1,
+        "center": [
+          -2236.235294117647,
+          -4284.235294117647,
+          769.0
+        ],
+        "count": 17,
+        "source_entity_ids": [
+          30031,
+          30033,
+          30035,
+          30037,
+          30039,
+          30041,
+          30043,
+          30045,
+          30047,
+          30049,
+          30051,
+          30053,
+          30055,
+          30057,
+          30059,
+          30061,
+          30063
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 17 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "spectator": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Chamber",
+  "source_vmf": "Maps/Chamber/Chamber.vmf",
+  "original_filename": "eft_chamber_v2.vmf",
+  "generated_at": "2026-05-08T15:27:10.640109+00:00",
+  "status": "pending_recast_integration",
+  "nodes": [],
+  "edges": [],
+  "note": "No route metrics faked before Recast integration."
+}

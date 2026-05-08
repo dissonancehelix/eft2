@@ -1,0 +1,946 @@
+{
+  "status": "log_vs_abstract_gameflow_comparison",
+  "comparison_note": "Observed resolution rates normalize goals, tackles/head-ons, and ball resets. This is closer to abstract possession trials than raw per-minute counts, but still not a perfect semantic match.",
+  "maps": {
+    "Slam Dunk": {
+      "log_count": 4,
+      "logs": [
+        {
+          "file": "Lua/game logs/match_20260224_034541.json",
+          "raw_map": "eft_slamdunk_v6",
+          "duration_s": 984,
+          "event_counts": {
+            "respawn": 96,
+            "ball_reset": 1,
+            "round_start": 6,
+            "possession_gain": 232,
+            "tackle_success": 684,
+            "throw": 48,
+            "round_end": 5,
+            "goal": 5
+          },
+          "rates_per_min": {
+            "respawn": 5.8537,
+            "ball_reset": 0.061,
+            "round_start": 0.3659,
+            "possession_gain": 14.1463,
+            "tackle_success": 41.7073,
+            "throw": 2.9268,
+            "round_end": 0.3049,
+            "goal": 0.3049
+          },
+          "resolution_rates": {
+            "score_rate": 0.007246376811594203,
+            "intercept_rate": 0.991304347826087,
+            "reset_or_hazard_rate": 0.0014492753623188406,
+            "resolution_count": 690
+          }
+        },
+        {
+          "file": "Lua/game logs/match_20260224_051049.json",
+          "raw_map": "eft_slamdunk_v6",
+          "duration_s": 973,
+          "event_counts": {
+            "respawn": 85,
+            "ball_reset": 1,
+            "round_start": 5,
+            "possession_gain": 217,
+            "tackle_success": 660,
+            "throw": 47,
+            "round_end": 4,
+            "goal": 4
+          },
+          "rates_per_min": {
+            "respawn": 5.2415,
+            "ball_reset": 0.0617,
+            "round_start": 0.3083,
+            "possession_gain": 13.3813,
+            "tackle_success": 40.6989,
+            "throw": 2.8983,
+            "round_end": 0.2467,
+            "goal": 0.2467
+          },
+          "resolution_rates": {
+            "score_rate": 0.006015037593984963,
+            "intercept_rate": 0.9924812030075187,
+            "reset_or_hazard_rate": 0.0015037593984962407,
+            "resolution_count": 665
+          }
+        },
+        {
+          "file": "Lua/game logs/match_20260302_033228.json",
+          "raw_map": "eft_slamdunk_v6",
+          "duration_s": 951,
+          "event_counts": {
+            "match_start": 1,
+            "respawn": 63,
+            "team_change": 12,
+            "ball_reset": 1,
+            "possession_gain": 257,
+            "round_start": 3,
+            "tackle_success": 822,
+            "possession_loss": 235,
+            "head_on": 18,
+            "throw": 19,
+            "throw_received": 18,
+            "round_end": 2,
+            "goal": 2,
+            "match_end": 1
+          },
+          "rates_per_min": {
+            "match_start": 0.0631,
+            "respawn": 3.9748,
+            "team_change": 0.7571,
+            "ball_reset": 0.0631,
+            "possession_gain": 16.2145,
+            "round_start": 0.1893,
+            "tackle_success": 51.8612,
+            "possession_loss": 14.8265,
+            "head_on": 1.1356,
+            "throw": 1.1987,
+            "throw_received": 1.1356,
+            "round_end": 0.1262,
+            "goal": 0.1262,
+            "match_end": 0.0631
+          },
+          "resolution_rates": {
+            "score_rate": 0.002372479240806643,
+            "intercept_rate": 0.99644128113879,
+            "reset_or_hazard_rate": 0.0011862396204033216,
+            "resolution_count": 843
+          }
+        },
+        {
+          "file": "Lua/game logs/match_20260302_050140.json",
+          "raw_map": "eft_slamdunk_v6",
+          "duration_s": 973,
+          "event_counts": {
+            "match_start": 1,
+            "respawn": 85,
+            "team_change": 13,
+            "ball_reset": 1,
+            "possession_gain": 269,
+            "throw": 25,
+            "throw_received": 22,
+            "tackle_success": 792,
+            "possession_loss": 243,
+            "round_start": 5,
+            "head_on": 13,
+            "round_end": 4,
+            "goal": 4,
+            "match_end": 1
+          },
+          "rates_per_min": {
+            "match_start": 0.0617,
+            "respawn": 5.2415,
+            "team_change": 0.8016,
+            "ball_reset": 0.0617,
+            "possession_gain": 16.5879,
+            "throw": 1.5416,
+            "throw_received": 1.3566,
+            "tackle_success": 48.8386,
+            "possession_loss": 14.9846,
+            "round_start": 0.3083,
+            "head_on": 0.8016,
+            "round_end": 0.2467,
+            "goal": 0.2467,
+            "match_end": 0.0617
+          },
+          "resolution_rates": {
+            "score_rate": 0.0049382716049382715,
+            "intercept_rate": 0.9938271604938271,
+            "reset_or_hazard_rate": 0.0012345679012345679,
+            "resolution_count": 810
+          }
+        }
+      ],
+      "observed": {
+        "duration_s": 3881.0,
+        "event_counts": {
+          "respawn": 329,
+          "ball_reset": 4,
+          "round_start": 19,
+          "possession_gain": 975,
+          "tackle_success": 2958,
+          "throw": 139,
+          "round_end": 15,
+          "goal": 15,
+          "match_start": 2,
+          "team_change": 25,
+          "possession_loss": 478,
+          "head_on": 31,
+          "throw_received": 40,
+          "match_end": 2
+        },
+        "rates_per_min": {
+          "respawn": 5.0863,
+          "ball_reset": 0.0618,
+          "round_start": 0.2937,
+          "possession_gain": 15.0734,
+          "tackle_success": 45.7305,
+          "throw": 2.1489,
+          "round_end": 0.2319,
+          "goal": 0.2319,
+          "match_start": 0.0309,
+          "team_change": 0.3865,
+          "possession_loss": 7.3898,
+          "head_on": 0.4793,
+          "throw_received": 0.6184,
+          "match_end": 0.0309
+        },
+        "resolution_rates": {
+          "score_rate": 0.004986702127659575,
+          "intercept_rate": 0.9936835106382979,
+          "reset_or_hazard_rate": 0.0013297872340425532,
+          "resolution_count": 3008
+        }
+      },
+      "simulation": {
+        "path": "Maps/Slam Dunk/Simulation/abstract_gameflow.json",
+        "score_rate": 0.4425,
+        "intercept_rate": 0.345,
+        "reset_or_hazard_rate": 0.11,
+        "scrum_continues_rate": 0.1025,
+        "mean_preventability_margin_s": 0.322
+      },
+      "fit": {
+        "overall": "poor",
+        "mean_absolute_delta": 0.39828900709219867,
+        "score_rate_delta": 0.43751329787234045,
+        "intercept_rate_delta": 0.6486835106382979,
+        "reset_rate_delta": 0.10867021276595745,
+        "observed_resolution_rates": {
+          "score_rate": 0.004986702127659575,
+          "intercept_rate": 0.9936835106382979,
+          "reset_or_hazard_rate": 0.0013297872340425532,
+          "resolution_count": 3008
+        },
+        "simulation_rates": {
+          "path": "Maps/Slam Dunk/Simulation/abstract_gameflow.json",
+          "score_rate": 0.4425,
+          "intercept_rate": 0.345,
+          "reset_or_hazard_rate": 0.11,
+          "scrum_continues_rate": 0.1025,
+          "mean_preventability_margin_s": 0.322
+        }
+      }
+    },
+    "Bloodbowl": {
+      "log_count": 2,
+      "logs": [
+        {
+          "file": "Lua/game logs/match_20260224_040501.json",
+          "raw_map": "eft_bloodbowl_v5",
+          "duration_s": 1083,
+          "event_counts": {
+            "respawn": 280,
+            "possession_gain": 293,
+            "throw": 21,
+            "round_start": 15,
+            "tackle_success": 736,
+            "round_end": 14,
+            "goal": 14,
+            "ball_reset": 8
+          },
+          "rates_per_min": {
+            "respawn": 15.5125,
+            "possession_gain": 16.2327,
+            "throw": 1.1634,
+            "round_start": 0.831,
+            "tackle_success": 40.7756,
+            "round_end": 0.7756,
+            "goal": 0.7756,
+            "ball_reset": 0.4432
+          },
+          "resolution_rates": {
+            "score_rate": 0.018469656992084433,
+            "intercept_rate": 0.9709762532981531,
+            "reset_or_hazard_rate": 0.010554089709762533,
+            "resolution_count": 758
+          }
+        },
+        {
+          "file": "Lua/game logs/match_20260302_040931.json",
+          "raw_map": "eft_bloodbowl_v5",
+          "duration_s": 1039,
+          "event_counts": {
+            "match_start": 1,
+            "respawn": 217,
+            "team_change": 15,
+            "ball_reset": 5,
+            "possession_gain": 315,
+            "round_start": 11,
+            "tackle_success": 855,
+            "possession_loss": 293,
+            "round_end": 10,
+            "goal": 10,
+            "head_on": 28,
+            "throw": 12,
+            "throw_received": 11,
+            "match_end": 1
+          },
+          "rates_per_min": {
+            "match_start": 0.0577,
+            "respawn": 12.5313,
+            "team_change": 0.8662,
+            "ball_reset": 0.2887,
+            "possession_gain": 18.1906,
+            "round_start": 0.6352,
+            "tackle_success": 49.3744,
+            "possession_loss": 16.9201,
+            "round_end": 0.5775,
+            "goal": 0.5775,
+            "head_on": 1.6169,
+            "throw": 0.693,
+            "throw_received": 0.6352,
+            "match_end": 0.0577
+          },
+          "resolution_rates": {
+            "score_rate": 0.011135857461024499,
+            "intercept_rate": 0.9832962138084632,
+            "reset_or_hazard_rate": 0.005567928730512249,
+            "resolution_count": 898
+          }
+        }
+      ],
+      "observed": {
+        "duration_s": 2122.0,
+        "event_counts": {
+          "respawn": 497,
+          "possession_gain": 608,
+          "throw": 33,
+          "round_start": 26,
+          "tackle_success": 1591,
+          "round_end": 24,
+          "goal": 24,
+          "ball_reset": 13,
+          "match_start": 1,
+          "team_change": 15,
+          "possession_loss": 293,
+          "head_on": 28,
+          "throw_received": 11,
+          "match_end": 1
+        },
+        "rates_per_min": {
+          "respawn": 14.0528,
+          "possession_gain": 17.1913,
+          "throw": 0.9331,
+          "round_start": 0.7352,
+          "tackle_success": 44.9859,
+          "round_end": 0.6786,
+          "goal": 0.6786,
+          "ball_reset": 0.3676,
+          "match_start": 0.0283,
+          "team_change": 0.4241,
+          "possession_loss": 8.2846,
+          "head_on": 0.7917,
+          "throw_received": 0.311,
+          "match_end": 0.0283
+        },
+        "resolution_rates": {
+          "score_rate": 0.014492753623188406,
+          "intercept_rate": 0.9776570048309179,
+          "reset_or_hazard_rate": 0.00785024154589372,
+          "resolution_count": 1656
+        }
+      },
+      "simulation": {
+        "path": "Maps/Bloodbowl/Simulation/abstract_gameflow.json",
+        "score_rate": 0.2175,
+        "intercept_rate": 0.7825,
+        "reset_or_hazard_rate": 0.0,
+        "scrum_continues_rate": 0.0,
+        "mean_preventability_margin_s": 3.8114
+      },
+      "fit": {
+        "overall": "directional",
+        "mean_absolute_delta": 0.13533816425120773,
+        "score_rate_delta": 0.20300724637681158,
+        "intercept_rate_delta": 0.1951570048309179,
+        "reset_rate_delta": 0.00785024154589372,
+        "observed_resolution_rates": {
+          "score_rate": 0.014492753623188406,
+          "intercept_rate": 0.9776570048309179,
+          "reset_or_hazard_rate": 0.00785024154589372,
+          "resolution_count": 1656
+        },
+        "simulation_rates": {
+          "path": "Maps/Bloodbowl/Simulation/abstract_gameflow.json",
+          "score_rate": 0.2175,
+          "intercept_rate": 0.7825,
+          "reset_or_hazard_rate": 0.0,
+          "scrum_continues_rate": 0.0,
+          "mean_preventability_margin_s": 3.8114
+        }
+      }
+    },
+    "Baseball Dash": {
+      "log_count": 2,
+      "logs": [
+        {
+          "file": "Lua/game logs/match_20260224_042240.json",
+          "raw_map": "eft_baseballdash_v3",
+          "duration_s": 1006,
+          "event_counts": {
+            "respawn": 116,
+            "ball_reset": 1,
+            "possession_gain": 253,
+            "throw": 61,
+            "round_start": 8,
+            "tackle_success": 714,
+            "round_end": 7,
+            "goal": 7
+          },
+          "rates_per_min": {
+            "respawn": 6.9185,
+            "ball_reset": 0.0596,
+            "possession_gain": 15.0895,
+            "throw": 3.6382,
+            "round_start": 0.4771,
+            "tackle_success": 42.5845,
+            "round_end": 0.4175,
+            "goal": 0.4175
+          },
+          "resolution_rates": {
+            "score_rate": 0.009695290858725761,
+            "intercept_rate": 0.9889196675900277,
+            "reset_or_hazard_rate": 0.0013850415512465374,
+            "resolution_count": 722
+          }
+        },
+        {
+          "file": "Lua/game logs/match_20260302_044320.json",
+          "raw_map": "eft_baseballdash_v3",
+          "duration_s": 995,
+          "event_counts": {
+            "match_start": 1,
+            "respawn": 112,
+            "team_change": 16,
+            "ball_reset": 2,
+            "possession_gain": 280,
+            "throw": 39,
+            "round_start": 7,
+            "tackle_success": 759,
+            "possession_loss": 238,
+            "head_on": 15,
+            "throw_received": 34,
+            "round_end": 6,
+            "goal": 6,
+            "match_end": 1
+          },
+          "rates_per_min": {
+            "match_start": 0.0603,
+            "respawn": 6.7538,
+            "team_change": 0.9648,
+            "ball_reset": 0.1206,
+            "possession_gain": 16.8844,
+            "throw": 2.3518,
+            "round_start": 0.4221,
+            "tackle_success": 45.7688,
+            "possession_loss": 14.3518,
+            "head_on": 0.9045,
+            "throw_received": 2.0503,
+            "round_end": 0.3618,
+            "goal": 0.3618,
+            "match_end": 0.0603
+          },
+          "resolution_rates": {
+            "score_rate": 0.0076726342710997444,
+            "intercept_rate": 0.989769820971867,
+            "reset_or_hazard_rate": 0.0025575447570332483,
+            "resolution_count": 782
+          }
+        }
+      ],
+      "observed": {
+        "duration_s": 2001.0,
+        "event_counts": {
+          "respawn": 228,
+          "ball_reset": 3,
+          "possession_gain": 533,
+          "throw": 100,
+          "round_start": 15,
+          "tackle_success": 1473,
+          "round_end": 13,
+          "goal": 13,
+          "match_start": 1,
+          "team_change": 16,
+          "possession_loss": 238,
+          "head_on": 15,
+          "throw_received": 34,
+          "match_end": 1
+        },
+        "rates_per_min": {
+          "respawn": 6.8366,
+          "ball_reset": 0.09,
+          "possession_gain": 15.982,
+          "throw": 2.9985,
+          "round_start": 0.4498,
+          "tackle_success": 44.1679,
+          "round_end": 0.3898,
+          "goal": 0.3898,
+          "match_start": 0.03,
+          "team_change": 0.4798,
+          "possession_loss": 7.1364,
+          "head_on": 0.4498,
+          "throw_received": 1.0195,
+          "match_end": 0.03
+        },
+        "resolution_rates": {
+          "score_rate": 0.008643617021276596,
+          "intercept_rate": 0.9893617021276596,
+          "reset_or_hazard_rate": 0.0019946808510638296,
+          "resolution_count": 1504
+        }
+      },
+      "simulation": {
+        "path": "Maps/Baseball Dash/Simulation/abstract_gameflow.json",
+        "score_rate": 0.5775,
+        "intercept_rate": 0.0225,
+        "reset_or_hazard_rate": 0.13,
+        "scrum_continues_rate": 0.27,
+        "mean_preventability_margin_s": -5.2562
+      },
+      "fit": {
+        "overall": "poor",
+        "mean_absolute_delta": 0.5545744680851064,
+        "score_rate_delta": 0.5688563829787234,
+        "intercept_rate_delta": 0.9668617021276597,
+        "reset_rate_delta": 0.12800531914893618,
+        "observed_resolution_rates": {
+          "score_rate": 0.008643617021276596,
+          "intercept_rate": 0.9893617021276596,
+          "reset_or_hazard_rate": 0.0019946808510638296,
+          "resolution_count": 1504
+        },
+        "simulation_rates": {
+          "path": "Maps/Baseball Dash/Simulation/abstract_gameflow.json",
+          "score_rate": 0.5775,
+          "intercept_rate": 0.0225,
+          "reset_or_hazard_rate": 0.13,
+          "scrum_continues_rate": 0.27,
+          "mean_preventability_margin_s": -5.2562
+        }
+      }
+    },
+    "Handegg": {
+      "log_count": 1,
+      "logs": [
+        {
+          "file": "Lua/game logs/match_20260224_043940.json",
+          "raw_map": "eft_handegg_r2",
+          "duration_s": 973,
+          "event_counts": {
+            "respawn": 98,
+            "possession_gain": 314,
+            "throw": 26,
+            "round_start": 5,
+            "tackle_success": 925,
+            "round_end": 4,
+            "goal": 4
+          },
+          "rates_per_min": {
+            "respawn": 6.0432,
+            "possession_gain": 19.3628,
+            "throw": 1.6033,
+            "round_start": 0.3083,
+            "tackle_success": 57.0401,
+            "round_end": 0.2467,
+            "goal": 0.2467
+          },
+          "resolution_rates": {
+            "score_rate": 0.004305705059203444,
+            "intercept_rate": 0.9956942949407965,
+            "reset_or_hazard_rate": 0.0,
+            "resolution_count": 929
+          }
+        }
+      ],
+      "observed": {
+        "duration_s": 973.0,
+        "event_counts": {
+          "respawn": 98,
+          "possession_gain": 314,
+          "throw": 26,
+          "round_start": 5,
+          "tackle_success": 925,
+          "round_end": 4,
+          "goal": 4
+        },
+        "rates_per_min": {
+          "respawn": 6.0432,
+          "possession_gain": 19.3628,
+          "throw": 1.6033,
+          "round_start": 0.3083,
+          "tackle_success": 57.0401,
+          "round_end": 0.2467,
+          "goal": 0.2467
+        },
+        "resolution_rates": {
+          "score_rate": 0.004305705059203444,
+          "intercept_rate": 0.9956942949407965,
+          "reset_or_hazard_rate": 0.0,
+          "resolution_count": 929
+        }
+      },
+      "simulation": null,
+      "fit": {
+        "overall": "no_simulation"
+      }
+    },
+    "Soccer": {
+      "log_count": 1,
+      "logs": [
+        {
+          "file": "Lua/game logs/match_20260302_035118.json",
+          "raw_map": "eft_soccer_b4",
+          "duration_s": 1072,
+          "event_counts": {
+            "match_start": 1,
+            "respawn": 173,
+            "team_change": 12,
+            "ball_reset": 1,
+            "possession_gain": 253,
+            "throw": 13,
+            "round_start": 14,
+            "tackle_success": 785,
+            "possession_loss": 231,
+            "round_end": 13,
+            "goal": 13,
+            "head_on": 19,
+            "throw_received": 8,
+            "match_end": 1
+          },
+          "rates_per_min": {
+            "match_start": 0.056,
+            "respawn": 9.6828,
+            "team_change": 0.6716,
+            "ball_reset": 0.056,
+            "possession_gain": 14.1604,
+            "throw": 0.7276,
+            "round_start": 0.7836,
+            "tackle_success": 43.9366,
+            "possession_loss": 12.9291,
+            "round_end": 0.7276,
+            "goal": 0.7276,
+            "head_on": 1.0634,
+            "throw_received": 0.4478,
+            "match_end": 0.056
+          },
+          "resolution_rates": {
+            "score_rate": 0.01589242053789731,
+            "intercept_rate": 0.9828850855745721,
+            "reset_or_hazard_rate": 0.0012224938875305623,
+            "resolution_count": 818
+          }
+        }
+      ],
+      "observed": {
+        "duration_s": 1072.0,
+        "event_counts": {
+          "match_start": 1,
+          "respawn": 173,
+          "team_change": 12,
+          "ball_reset": 1,
+          "possession_gain": 253,
+          "throw": 13,
+          "round_start": 14,
+          "tackle_success": 785,
+          "possession_loss": 231,
+          "round_end": 13,
+          "goal": 13,
+          "head_on": 19,
+          "throw_received": 8,
+          "match_end": 1
+        },
+        "rates_per_min": {
+          "match_start": 0.056,
+          "respawn": 9.6828,
+          "team_change": 0.6716,
+          "ball_reset": 0.056,
+          "possession_gain": 14.1604,
+          "throw": 0.7276,
+          "round_start": 0.7836,
+          "tackle_success": 43.9366,
+          "possession_loss": 12.9291,
+          "round_end": 0.7276,
+          "goal": 0.7276,
+          "head_on": 1.0634,
+          "throw_received": 0.4478,
+          "match_end": 0.056
+        },
+        "resolution_rates": {
+          "score_rate": 0.01589242053789731,
+          "intercept_rate": 0.9828850855745721,
+          "reset_or_hazard_rate": 0.0012224938875305623,
+          "resolution_count": 818
+        }
+      },
+      "simulation": {
+        "path": "Maps/Soccer/Simulation/abstract_gameflow.json",
+        "score_rate": 0.24,
+        "intercept_rate": 0.76,
+        "reset_or_hazard_rate": 0.0,
+        "scrum_continues_rate": 0.0,
+        "mean_preventability_margin_s": 4.6177
+      },
+      "fit": {
+        "overall": "directional",
+        "mean_absolute_delta": 0.1494050529747351,
+        "score_rate_delta": 0.2241075794621027,
+        "intercept_rate_delta": 0.2228850855745721,
+        "reset_rate_delta": 0.0012224938875305623,
+        "observed_resolution_rates": {
+          "score_rate": 0.01589242053789731,
+          "intercept_rate": 0.9828850855745721,
+          "reset_or_hazard_rate": 0.0012224938875305623,
+          "resolution_count": 818
+        },
+        "simulation_rates": {
+          "path": "Maps/Soccer/Simulation/abstract_gameflow.json",
+          "score_rate": 0.24,
+          "intercept_rate": 0.76,
+          "reset_or_hazard_rate": 0.0,
+          "scrum_continues_rate": 0.0,
+          "mean_preventability_margin_s": 4.6177
+        }
+      }
+    },
+    "Tunnel": {
+      "log_count": 1,
+      "logs": [
+        {
+          "file": "Lua/game logs/match_20260302_042605.json",
+          "raw_map": "eft_tunnel_v2",
+          "duration_s": 962,
+          "event_counts": {
+            "match_start": 1,
+            "respawn": 78,
+            "team_change": 12,
+            "ball_reset": 3,
+            "round_start": 4,
+            "possession_gain": 246,
+            "tackle_success": 922,
+            "possession_loss": 229,
+            "throw": 14,
+            "throw_received": 14,
+            "head_on": 12,
+            "round_end": 3,
+            "goal": 3,
+            "match_end": 1
+          },
+          "rates_per_min": {
+            "match_start": 0.0624,
+            "respawn": 4.8649,
+            "team_change": 0.7484,
+            "ball_reset": 0.1871,
+            "round_start": 0.2495,
+            "possession_gain": 15.343,
+            "tackle_success": 57.5052,
+            "possession_loss": 14.2827,
+            "throw": 0.8732,
+            "throw_received": 0.8732,
+            "head_on": 0.7484,
+            "round_end": 0.1871,
+            "goal": 0.1871,
+            "match_end": 0.0624
+          },
+          "resolution_rates": {
+            "score_rate": 0.0031914893617021275,
+            "intercept_rate": 0.9936170212765958,
+            "reset_or_hazard_rate": 0.0031914893617021275,
+            "resolution_count": 940
+          }
+        }
+      ],
+      "observed": {
+        "duration_s": 962.0,
+        "event_counts": {
+          "match_start": 1,
+          "respawn": 78,
+          "team_change": 12,
+          "ball_reset": 3,
+          "round_start": 4,
+          "possession_gain": 246,
+          "tackle_success": 922,
+          "possession_loss": 229,
+          "throw": 14,
+          "throw_received": 14,
+          "head_on": 12,
+          "round_end": 3,
+          "goal": 3,
+          "match_end": 1
+        },
+        "rates_per_min": {
+          "match_start": 0.0624,
+          "respawn": 4.8649,
+          "team_change": 0.7484,
+          "ball_reset": 0.1871,
+          "round_start": 0.2495,
+          "possession_gain": 15.343,
+          "tackle_success": 57.5052,
+          "possession_loss": 14.2827,
+          "throw": 0.8732,
+          "throw_received": 0.8732,
+          "head_on": 0.7484,
+          "round_end": 0.1871,
+          "goal": 0.1871,
+          "match_end": 0.0624
+        },
+        "resolution_rates": {
+          "score_rate": 0.0031914893617021275,
+          "intercept_rate": 0.9936170212765958,
+          "reset_or_hazard_rate": 0.0031914893617021275,
+          "resolution_count": 940
+        }
+      },
+      "simulation": {
+        "path": "Maps/Tunnel/Simulation/abstract_gameflow.json",
+        "score_rate": 0.5775,
+        "intercept_rate": 0.0225,
+        "reset_or_hazard_rate": 0.13,
+        "scrum_continues_rate": 0.27,
+        "mean_preventability_margin_s": -6.0287
+      },
+      "fit": {
+        "overall": "poor",
+        "mean_absolute_delta": 0.5574113475177306,
+        "score_rate_delta": 0.5743085106382979,
+        "intercept_rate_delta": 0.9711170212765958,
+        "reset_rate_delta": 0.12680851063829787,
+        "observed_resolution_rates": {
+          "score_rate": 0.0031914893617021275,
+          "intercept_rate": 0.9936170212765958,
+          "reset_or_hazard_rate": 0.0031914893617021275,
+          "resolution_count": 940
+        },
+        "simulation_rates": {
+          "path": "Maps/Tunnel/Simulation/abstract_gameflow.json",
+          "score_rate": 0.5775,
+          "intercept_rate": 0.0225,
+          "reset_or_hazard_rate": 0.13,
+          "scrum_continues_rate": 0.27,
+          "mean_preventability_margin_s": -6.0287
+        }
+      }
+    },
+    "Legoland": {
+      "log_count": 1,
+      "logs": [
+        {
+          "file": "Lua/game logs/match_20260302_051843.json",
+          "raw_map": "eft_legoland_v2",
+          "duration_s": 984,
+          "event_counts": {
+            "match_start": 1,
+            "respawn": 124,
+            "team_change": 12,
+            "possession_gain": 159,
+            "tackle_success": 766,
+            "possession_loss": 143,
+            "round_start": 6,
+            "head_on": 13,
+            "throw": 9,
+            "throw_received": 8,
+            "round_end": 5,
+            "goal": 5,
+            "ball_reset": 4,
+            "match_end": 1
+          },
+          "rates_per_min": {
+            "match_start": 0.061,
+            "respawn": 7.561,
+            "team_change": 0.7317,
+            "possession_gain": 9.6951,
+            "tackle_success": 46.7073,
+            "possession_loss": 8.7195,
+            "round_start": 0.3659,
+            "head_on": 0.7927,
+            "throw": 0.5488,
+            "throw_received": 0.4878,
+            "round_end": 0.3049,
+            "goal": 0.3049,
+            "ball_reset": 0.2439,
+            "match_end": 0.061
+          },
+          "resolution_rates": {
+            "score_rate": 0.006345177664974619,
+            "intercept_rate": 0.9885786802030457,
+            "reset_or_hazard_rate": 0.005076142131979695,
+            "resolution_count": 788
+          }
+        }
+      ],
+      "observed": {
+        "duration_s": 984.0,
+        "event_counts": {
+          "match_start": 1,
+          "respawn": 124,
+          "team_change": 12,
+          "possession_gain": 159,
+          "tackle_success": 766,
+          "possession_loss": 143,
+          "round_start": 6,
+          "head_on": 13,
+          "throw": 9,
+          "throw_received": 8,
+          "round_end": 5,
+          "goal": 5,
+          "ball_reset": 4,
+          "match_end": 1
+        },
+        "rates_per_min": {
+          "match_start": 0.061,
+          "respawn": 7.561,
+          "team_change": 0.7317,
+          "possession_gain": 9.6951,
+          "tackle_success": 46.7073,
+          "possession_loss": 8.7195,
+          "round_start": 0.3659,
+          "head_on": 0.7927,
+          "throw": 0.5488,
+          "throw_received": 0.4878,
+          "round_end": 0.3049,
+          "goal": 0.3049,
+          "ball_reset": 0.2439,
+          "match_end": 0.061
+        },
+        "resolution_rates": {
+          "score_rate": 0.006345177664974619,
+          "intercept_rate": 0.9885786802030457,
+          "reset_or_hazard_rate": 0.005076142131979695,
+          "resolution_count": 788
+        }
+      },
+      "simulation": {
+        "path": "Maps/Legoland/Simulation/abstract_gameflow.json",
+        "score_rate": 0.29,
+        "intercept_rate": 0.71,
+        "reset_or_hazard_rate": 0.0,
+        "scrum_continues_rate": 0.0,
+        "mean_preventability_margin_s": 6.2634
+      },
+      "fit": {
+        "overall": "directional",
+        "mean_absolute_delta": 0.18910321489001694,
+        "score_rate_delta": 0.28365482233502537,
+        "intercept_rate_delta": 0.27857868020304577,
+        "reset_rate_delta": 0.005076142131979695,
+        "observed_resolution_rates": {
+          "score_rate": 0.006345177664974619,
+          "intercept_rate": 0.9885786802030457,
+          "reset_or_hazard_rate": 0.005076142131979695,
+          "resolution_count": 788
+        },
+        "simulation_rates": {
+          "path": "Maps/Legoland/Simulation/abstract_gameflow.json",
+          "score_rate": 0.29,
+          "intercept_rate": 0.71,
+          "reset_or_hazard_rate": 0.0,
+          "scrum_continues_rate": 0.0,
+          "mean_preventability_margin_s": 6.2634
+        }
+      }
+    }
+  }
+}

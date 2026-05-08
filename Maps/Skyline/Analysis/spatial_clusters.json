@@ -1,0 +1,410 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Skyline",
+  "source_vmf": "Maps/Skyline/Skyline.vmf",
+  "original_filename": "eft_skyline_v3.vmf",
+  "generated_at": "2026-05-08T15:27:13.836608+00:00",
+  "spatial_clusters": [
+    {
+      "cluster_id": 1,
+      "center": [
+        4.119874999446438e-05,
+        -2611.2,
+        41.29999999999999
+      ],
+      "count": 20,
+      "source_entity_ids": [
+        712,
+        635,
+        680,
+        697,
+        2363,
+        2365,
+        2367,
+        2369,
+        2371,
+        2373,
+        2375,
+        2377,
+        2379,
+        2381,
+        2383,
+        2385,
+        2387,
+        3731,
+        1512,
+        1517
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 2,
+      "center": [
+        -12.19047619047619,
+        2581.3333333333335,
+        41.04761904761903
+      ],
+      "count": 21,
+      "source_entity_ids": [
+        782,
+        785,
+        788,
+        791,
+        2155,
+        2141,
+        2151,
+        2105,
+        2113,
+        2097,
+        2085,
+        2119,
+        2083,
+        2073,
+        266,
+        2067,
+        2127,
+        2133,
+        3737,
+        1522,
+        1527
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 3,
+      "center": [
+        13.86688,
+        -22.814,
+        -76.00001999999999
+      ],
+      "count": 5,
+      "source_entity_ids": [
+        255,
+        341,
+        1077,
+        1507,
+        5829
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 4,
+      "center": [
+        -1536.0,
+        0.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        1505
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 5,
+      "center": [
+        1536.0,
+        0.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        1508
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 6,
+      "center": [
+        -1536.0,
+        -1600.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        1510
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 7,
+      "center": [
+        1536.0,
+        -1600.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        1513
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 8,
+      "center": [
+        3584.0,
+        -1536.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        1514
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 9,
+      "center": [
+        -1536.0,
+        -3072.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        1515
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 10,
+      "center": [
+        1536.0,
+        -3072.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        1518
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 11,
+      "center": [
+        -1536.0,
+        1600.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        1520
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 12,
+      "center": [
+        1536.0,
+        1600.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        1523
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 13,
+      "center": [
+        3584.0,
+        1536.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        1524
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 14,
+      "center": [
+        -1536.0,
+        3072.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        1525
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 15,
+      "center": [
+        1536.0,
+        3072.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        1528
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 16,
+      "center": [
+        3584.0,
+        0.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        5966
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 17,
+      "center": [
+        -3584.0,
+        -1536.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        5972
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 18,
+      "center": [
+        -3584.0,
+        0.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        5975
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 19,
+      "center": [
+        -3584.0,
+        1536.0,
+        96.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        5978
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "type": "world_z_level_summary",
+      "sampled_level_count": 2,
+      "sampled_z_levels": [
+        -1520.0,
+        2064.0
+      ],
+      "confidence": 0.35,
+      "reasons": [
+        "World brush AABB z-centers suggest vertical/platform structure candidates."
+      ],
+      "needs_human_review": true
+    }
+  ],
+  "jump_push_regions": [],
+  "rotating_obstructions": []
+}

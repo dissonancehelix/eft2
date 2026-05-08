@@ -1,0 +1,34 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Slam Dunk",
+  "source_vmf": "Maps/Slam Dunk/Slam Dunk.vmf",
+  "original_filename": "eft_slamdunk_v6.vmf",
+  "generated_at": "2026-05-08T15:27:14.689573+00:00",
+  "danger_fields": [
+    {
+      "region": "hazard_region_1",
+      "type": "hazard_region",
+      "center": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_2",
+      "type": "hazard_region",
+      "center": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    }
+  ]
+}

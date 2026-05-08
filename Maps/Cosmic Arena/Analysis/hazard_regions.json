@@ -1,0 +1,61 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Cosmic Arena",
+  "source_vmf": "Maps/Cosmic Arena/Cosmic Arena.vmf",
+  "original_filename": "eft_cosmic_arena_v2.vmf",
+  "generated_at": "2026-05-08T15:27:10.885141+00:00",
+  "hazard_regions": [
+    {
+      "id": "hazard_region_1",
+      "type": "hazard_region",
+      "center": [
+        2.0,
+        -18.0,
+        -788.0
+      ],
+      "bounds": {
+        "min": [
+          -6958.0,
+          -3652.0,
+          -807.0
+        ],
+        "max": [
+          6962.0,
+          3616.0,
+          -769.0
+        ],
+        "center": [
+          2.0,
+          -18.0,
+          -788.0
+        ],
+        "size": [
+          13920.0,
+          7268.0,
+          38.0
+        ],
+        "z_range": [
+          -807.0,
+          -769.0
+        ],
+        "aabb_volume": 3844481280.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Hazard or forced knockdown trigger.",
+        "Source entity class `trigger_hurt` id `316363`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        316363
+      ],
+      "source_classes": [
+        "trigger_hurt"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

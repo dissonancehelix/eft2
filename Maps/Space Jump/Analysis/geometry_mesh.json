@@ -1,0 +1,278 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Space Jump",
+  "source_vmf": "Maps/Space Jump/Space Jump.vmf",
+  "original_filename": "eft_spacejump_v6.vmf",
+  "generated_at": "2026-05-08T15:27:15.177720+00:00",
+  "status": "brush_plane_mesh",
+  "solid_count": 7,
+  "reconstructed_solids": 7,
+  "partial_solids": 0,
+  "failed_solids": 0,
+  "triangle_count": 84,
+  "solids": [
+    {
+      "solid_id": 2,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          240.0,
+          -7585.0,
+          -536.0
+        ],
+        "max": [
+          272.0,
+          -94.0,
+          1920.0
+        ],
+        "center": [
+          256.0,
+          -3839.5,
+          692.0
+        ],
+        "size": [
+          32.0,
+          7491.0,
+          2456.0
+        ],
+        "z_range": [
+          -536.0,
+          1920.0
+        ],
+        "aabb_volume": 588732672.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 9,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          6800.0,
+          -7585.0,
+          -536.0
+        ],
+        "max": [
+          6832.0,
+          -94.0,
+          1920.0
+        ],
+        "center": [
+          6816.0,
+          -3839.5,
+          692.0
+        ],
+        "size": [
+          32.0,
+          7491.0,
+          2456.0
+        ],
+        "z_range": [
+          -536.0,
+          1920.0
+        ],
+        "aabb_volume": 588732672.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 16,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          272.0,
+          -94.0,
+          -536.0
+        ],
+        "max": [
+          6800.0,
+          -62.0,
+          1920.0
+        ],
+        "center": [
+          3536.0,
+          -78.0,
+          692.0
+        ],
+        "size": [
+          6528.0,
+          32.0,
+          2456.0
+        ],
+        "z_range": [
+          -536.0,
+          1920.0
+        ],
+        "aabb_volume": 513048576.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 23,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          272.0,
+          -7585.0,
+          -536.0
+        ],
+        "max": [
+          6800.0,
+          -7553.0,
+          1920.0
+        ],
+        "center": [
+          3536.0,
+          -7569.0,
+          692.0
+        ],
+        "size": [
+          6528.0,
+          32.0,
+          2456.0
+        ],
+        "z_range": [
+          -536.0,
+          1920.0
+        ],
+        "aabb_volume": 513048576.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 30,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          272.0,
+          -7553.0,
+          1920.0
+        ],
+        "max": [
+          6800.0,
+          -94.0,
+          1984.0
+        ],
+        "center": [
+          3536.0,
+          -3823.5,
+          1952.0
+        ],
+        "size": [
+          6528.0,
+          7459.0,
+          64.0
+        ],
+        "z_range": [
+          1920.0,
+          1984.0
+        ],
+        "aabb_volume": 3116310528.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          272.0,
+          -7553.0,
+          -568.0
+        ],
+        "max": [
+          6800.0,
+          -94.0,
+          -536.0
+        ],
+        "center": [
+          3536.0,
+          -3823.5,
+          -552.0
+        ],
+        "size": [
+          6528.0,
+          7459.0,
+          32.0
+        ],
+        "z_range": [
+          -568.0,
+          -536.0
+        ],
+        "aabb_volume": 1558155264.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 43414,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          2512.0,
+          -3426.0,
+          224.0
+        ],
+        "max": [
+          2576.0,
+          -3170.0,
+          288.0
+        ],
+        "center": [
+          2544.0,
+          -3298.0,
+          256.0
+        ],
+        "size": [
+          64.0,
+          256.0,
+          64.0
+        ],
+        "z_range": [
+          224.0,
+          288.0
+        ],
+        "aabb_volume": 1048576.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    }
+  ],
+  "warnings": [
+    "Meshes are reconstructed from convex VMF brush planes; displacement and complex prop geometry are not included."
+  ]
+}

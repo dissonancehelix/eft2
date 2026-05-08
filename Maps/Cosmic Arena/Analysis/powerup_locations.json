@@ -1,0 +1,622 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Cosmic Arena",
+  "source_vmf": "Maps/Cosmic Arena/Cosmic Arena.vmf",
+  "original_filename": "eft_cosmic_arena_v2.vmf",
+  "generated_at": "2026-05-08T15:27:10.885141+00:00",
+  "powerup_locations": [
+    {
+      "id": "powerup_location_1",
+      "type": "powerup_location",
+      "center": [
+        759.7975,
+        -1083.199,
+        -91.00095
+      ],
+      "bounds": {
+        "min": [
+          602.0,
+          -1187.0,
+          -95.8027
+        ],
+        "max": [
+          917.595,
+          -979.398,
+          -86.1992
+        ],
+        "center": [
+          759.7975,
+          -1083.199,
+          -91.00095
+        ],
+        "size": [
+          315.595,
+          207.60199999999998,
+          9.603499999999997
+        ],
+        "z_range": [
+          -95.8027,
+          -86.1992
+        ],
+        "aabb_volume": 629203.5841601648,
+        "source_point_count": 84,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `318811`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        318811
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "powerup_location_2",
+      "type": "powerup_location",
+      "center": [
+        1704.205,
+        -1537.2,
+        -91.0
+      ],
+      "bounds": {
+        "min": [
+          1546.41,
+          -1641.0,
+          -95.8008
+        ],
+        "max": [
+          1862.0,
+          -1433.4,
+          -86.1992
+        ],
+        "center": [
+          1704.205,
+          -1537.2,
+          -91.0
+        ],
+        "size": [
+          315.5899999999999,
+          207.5999999999999,
+          9.60159999999999
+        ],
+        "z_range": [
+          -95.8008,
+          -86.1992
+        ],
+        "aabb_volume": 629063.072774399,
+        "source_point_count": 84,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `318826`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        318826
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "powerup_location_3",
+      "type": "powerup_location",
+      "center": [
+        -759.7950000000001,
+        -1082.199,
+        -91.00095
+      ],
+      "bounds": {
+        "min": [
+          -917.59,
+          -1186.0,
+          -95.8027
+        ],
+        "max": [
+          -602.0,
+          -978.398,
+          -86.1992
+        ],
+        "center": [
+          -759.7950000000001,
+          -1082.199,
+          -91.00095
+        ],
+        "size": [
+          315.59000000000003,
+          207.60199999999998,
+          9.603499999999997
+        ],
+        "z_range": [
+          -95.8027,
+          -86.1992
+        ],
+        "aabb_volume": 629193.6156311298,
+        "source_point_count": 84,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `318836`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        318836
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "powerup_location_4",
+      "type": "powerup_location",
+      "center": [
+        -1702.795,
+        -1537.8,
+        -91.0
+      ],
+      "bounds": {
+        "min": [
+          -1860.59,
+          -1641.6,
+          -95.8008
+        ],
+        "max": [
+          -1545.0,
+          -1434.0,
+          -86.1992
+        ],
+        "center": [
+          -1702.795,
+          -1537.8,
+          -91.0
+        ],
+        "size": [
+          315.5899999999999,
+          207.5999999999999,
+          9.60159999999999
+        ],
+        "z_range": [
+          -95.8008,
+          -86.1992
+        ],
+        "aabb_volume": 629063.072774399,
+        "source_point_count": 84,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `318856`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        318856
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "powerup_location_5",
+      "type": "powerup_location",
+      "center": [
+        1703.8,
+        1518.8,
+        -90.99895000000001
+      ],
+      "bounds": {
+        "min": [
+          1546.01,
+          1415.0,
+          -95.8008
+        ],
+        "max": [
+          1861.59,
+          1622.6,
+          -86.1971
+        ],
+        "center": [
+          1703.8,
+          1518.8,
+          -90.99895000000001
+        ],
+        "size": [
+          315.5799999999999,
+          207.5999999999999,
+          9.60369999999999
+        ],
+        "z_range": [
+          -95.8008,
+          -86.1971
+        ],
+        "aabb_volume": 629180.720109599,
+        "source_point_count": 84,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `318871`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        318871
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "powerup_location_6",
+      "type": "powerup_location",
+      "center": [
+        759.3945,
+        1064.8,
+        -91.0
+      ],
+      "bounds": {
+        "min": [
+          601.598,
+          961.0,
+          -95.8027
+        ],
+        "max": [
+          917.191,
+          1168.6,
+          -86.1973
+        ],
+        "center": [
+          759.3945,
+          1064.8,
+          -91.0
+        ],
+        "size": [
+          315.5930000000001,
+          207.5999999999999,
+          9.605400000000003
+        ],
+        "z_range": [
+          -95.8027,
+          -86.1973
+        ],
+        "aabb_volume": 629318.0176567201,
+        "source_point_count": 84,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `318876`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        318876
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "powerup_location_7",
+      "type": "powerup_location",
+      "center": [
+        -760.2025,
+        1063.8,
+        -91.0
+      ],
+      "bounds": {
+        "min": [
+          -918.0,
+          960.0,
+          -95.8008
+        ],
+        "max": [
+          -602.405,
+          1167.6,
+          -86.1992
+        ],
+        "center": [
+          -760.2025,
+          1063.8,
+          -91.0
+        ],
+        "size": [
+          315.595,
+          207.5999999999999,
+          9.60159999999999
+        ],
+        "z_range": [
+          -95.8008,
+          -86.1992
+        ],
+        "aabb_volume": 629073.0392351991,
+        "source_point_count": 84,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `318881`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        318881
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "powerup_location_8",
+      "type": "powerup_location",
+      "center": [
+        -1703.205,
+        1519.4,
+        -91.0
+      ],
+      "bounds": {
+        "min": [
+          -1861.0,
+          1415.6,
+          -95.8008
+        ],
+        "max": [
+          -1545.41,
+          1623.2,
+          -86.1992
+        ],
+        "center": [
+          -1703.205,
+          1519.4,
+          -91.0
+        ],
+        "size": [
+          315.5899999999999,
+          207.60000000000014,
+          9.60159999999999
+        ],
+        "z_range": [
+          -95.8008,
+          -86.1992
+        ],
+        "aabb_volume": 629063.0727743997,
+        "source_point_count": 84,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `318886`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        318886
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "powerup_location_9",
+      "type": "powerup_location",
+      "center": [
+        -1.090999999999994,
+        -513.035,
+        100.0001
+      ],
+      "bounds": {
+        "min": [
+          -158.89,
+          -616.836,
+          95.1972
+        ],
+        "max": [
+          156.708,
+          -409.234,
+          104.803
+        ],
+        "center": [
+          -1.090999999999994,
+          -513.035,
+          100.0001
+        ],
+        "size": [
+          315.59799999999996,
+          207.60200000000003,
+          9.605800000000002
+        ],
+        "z_range": [
+          95.1972,
+          104.803
+        ],
+        "aabb_volume": 629360.258462377,
+        "source_point_count": 84,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `322905`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        322905
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "powerup_location_10",
+      "type": "powerup_location",
+      "center": [
+        10.111000000000004,
+        494.965,
+        100.0001
+      ],
+      "bounds": {
+        "min": [
+          -147.688,
+          391.164,
+          95.1972
+        ],
+        "max": [
+          167.91,
+          598.766,
+          104.803
+        ],
+        "center": [
+          10.111000000000004,
+          494.965,
+          100.0001
+        ],
+        "size": [
+          315.59799999999996,
+          207.60199999999998,
+          9.605800000000002
+        ],
+        "z_range": [
+          95.1972,
+          104.803
+        ],
+        "aabb_volume": 629360.2584623768,
+        "source_point_count": 84,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `323525`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        323525
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "powerup_location_11",
+      "type": "powerup_location",
+      "center": [
+        1.2009999999999934,
+        -1535.2,
+        -91.0
+      ],
+      "bounds": {
+        "min": [
+          -156.598,
+          -1639.0,
+          -95.8028
+        ],
+        "max": [
+          159.0,
+          -1431.4,
+          -86.1972
+        ],
+        "center": [
+          1.2009999999999934,
+          -1535.2,
+          -91.0
+        ],
+        "size": [
+          315.598,
+          207.5999999999999,
+          9.60560000000001
+        ],
+        "z_range": [
+          -95.8028,
+          -86.1972
+        ],
+        "aabb_volume": 629341.0916908804,
+        "source_point_count": 84,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `323526`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        323526
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "powerup_location_12",
+      "type": "powerup_location",
+      "center": [
+        0.9989999999999952,
+        1519.8,
+        -91.0
+      ],
+      "bounds": {
+        "min": [
+          -156.8,
+          1416.0,
+          -95.8028
+        ],
+        "max": [
+          158.798,
+          1623.6,
+          -86.1972
+        ],
+        "center": [
+          0.9989999999999952,
+          1519.8,
+          -91.0
+        ],
+        "size": [
+          315.598,
+          207.5999999999999,
+          9.60560000000001
+        ],
+        "z_range": [
+          -95.8028,
+          -86.1972
+        ],
+        "aabb_volume": 629341.0916908804,
+        "source_point_count": 84,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `323551`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        323551
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

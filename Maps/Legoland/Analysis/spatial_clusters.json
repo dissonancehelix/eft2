@@ -1,0 +1,421 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Legoland",
+  "source_vmf": "Maps/Legoland/Legoland.vmf",
+  "original_filename": "eft_legoland_v2.vmf",
+  "generated_at": "2026-05-08T15:27:11.508764+00:00",
+  "spatial_clusters": [
+    {
+      "cluster_id": 1,
+      "center": [
+        -493.2,
+        532.8,
+        318.4
+      ],
+      "count": 10,
+      "source_entity_ids": [
+        2128,
+        6247,
+        16684,
+        29612,
+        33917,
+        35343,
+        36217,
+        36220,
+        39513,
+        39652
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 2,
+      "center": [
+        1466.1818181818182,
+        1047.2727272727273,
+        452.0
+      ],
+      "count": 11,
+      "source_entity_ids": [
+        6144,
+        6159,
+        6161,
+        6163,
+        6165,
+        6167,
+        6169,
+        6171,
+        6173,
+        6175,
+        6177
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 3,
+      "center": [
+        1479.111111111111,
+        -142.22222222222223,
+        452.0
+      ],
+      "count": 9,
+      "source_entity_ids": [
+        6179,
+        6181,
+        6183,
+        6185,
+        6187,
+        6189,
+        6191,
+        6193,
+        6195
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 4,
+      "center": [
+        3320.0,
+        512.0,
+        657.3333333333334
+      ],
+      "count": 6,
+      "source_entity_ids": [
+        8761,
+        10361,
+        16450,
+        33590,
+        39310,
+        39321
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 5,
+      "center": [
+        -2490.181818181818,
+        1047.2727272727273,
+        452.0
+      ],
+      "count": 11,
+      "source_entity_ids": [
+        28102,
+        28104,
+        28106,
+        28108,
+        28110,
+        28112,
+        28114,
+        28116,
+        28118,
+        28120,
+        28122
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 6,
+      "center": [
+        -2503.1111111111113,
+        -142.22222222222223,
+        452.0
+      ],
+      "count": 9,
+      "source_entity_ids": [
+        28124,
+        28126,
+        28128,
+        28130,
+        28132,
+        28134,
+        28136,
+        28138,
+        28140
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 7,
+      "center": [
+        -4370.666666666667,
+        512.0,
+        657.3333333333334
+      ],
+      "count": 6,
+      "source_entity_ids": [
+        28186,
+        28191,
+        28254,
+        33654,
+        39340,
+        39343
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "type": "world_z_level_summary",
+      "sampled_level_count": 12,
+      "sampled_z_levels": [
+        -256.0,
+        -16.0,
+        64.0,
+        128.0,
+        192.0,
+        224.0,
+        288.0,
+        320.0,
+        384.0,
+        432.0,
+        1256.0,
+        1904.0
+      ],
+      "confidence": 0.35,
+      "reasons": [
+        "World brush AABB z-centers suggest vertical/platform structure candidates."
+      ],
+      "needs_human_review": true
+    }
+  ],
+  "jump_push_regions": [],
+  "rotating_obstructions": [
+    {
+      "id": "rotating_obstruction_1",
+      "type": "rotating_obstruction",
+      "center": [
+        6848.0,
+        1024.0,
+        1024.0
+      ],
+      "bounds": {
+        "min": [
+          6846.0,
+          960.0,
+          992.0
+        ],
+        "max": [
+          6850.0,
+          1088.0,
+          1056.0
+        ],
+        "center": [
+          6848.0,
+          1024.0,
+          1024.0
+        ],
+        "size": [
+          4.0,
+          128.0,
+          64.0
+        ],
+        "z_range": [
+          992.0,
+          1056.0
+        ],
+        "aabb_volume": 32768.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Rotating brush/object that can shape shots or traversal.",
+        "Source entity class `func_rotating` id `33590`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        33590
+      ],
+      "source_classes": [
+        "func_rotating"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "rotating_obstruction_2",
+      "type": "rotating_obstruction",
+      "center": [
+        -8960.0,
+        1024.0,
+        1024.0
+      ],
+      "bounds": {
+        "min": [
+          -8962.0,
+          960.0,
+          992.0
+        ],
+        "max": [
+          -8958.0,
+          1088.0,
+          1056.0
+        ],
+        "center": [
+          -8960.0,
+          1024.0,
+          1024.0
+        ],
+        "size": [
+          4.0,
+          128.0,
+          64.0
+        ],
+        "z_range": [
+          992.0,
+          1056.0
+        ],
+        "aabb_volume": 32768.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Rotating brush/object that can shape shots or traversal.",
+        "Source entity class `func_rotating` id `33654`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        33654
+      ],
+      "source_classes": [
+        "func_rotating"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "rotating_obstruction_3",
+      "type": "rotating_obstruction",
+      "center": [
+        -1028.0,
+        2912.0,
+        632.0
+      ],
+      "bounds": {
+        "min": [
+          -1030.0,
+          2848.0,
+          580.0
+        ],
+        "max": [
+          -1026.0,
+          2976.0,
+          684.0
+        ],
+        "center": [
+          -1028.0,
+          2912.0,
+          632.0
+        ],
+        "size": [
+          4.0,
+          128.0,
+          104.0
+        ],
+        "z_range": [
+          580.0,
+          684.0
+        ],
+        "aabb_volume": 53248.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Rotating brush/object that can shape shots or traversal.",
+        "Source entity class `func_rotating` id `35343`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        35343
+      ],
+      "source_classes": [
+        "func_rotating"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "rotating_obstruction_4",
+      "type": "rotating_obstruction",
+      "center": [
+        -1028.0,
+        -864.0,
+        632.0
+      ],
+      "bounds": {
+        "min": [
+          -1030.0,
+          -928.0,
+          580.0
+        ],
+        "max": [
+          -1026.0,
+          -800.0,
+          684.0
+        ],
+        "center": [
+          -1028.0,
+          -864.0,
+          632.0
+        ],
+        "size": [
+          4.0,
+          128.0,
+          104.0
+        ],
+        "z_range": [
+          580.0,
+          684.0
+        ],
+        "aabb_volume": 53248.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Rotating brush/object that can shape shots or traversal.",
+        "Source entity class `func_rotating` id `36217`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        36217
+      ],
+      "source_classes": [
+        "func_rotating"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

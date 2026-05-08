@@ -1,0 +1,98 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Soccer",
+  "source_vmf": "Maps/Soccer/Soccer.vmf",
+  "original_filename": "eft_soccer_b2.vmf",
+  "generated_at": "2026-05-08T15:27:14.992384+00:00",
+  "spawn_clusters": {
+    "red": [
+      {
+        "cluster_id": 1,
+        "center": [
+          1120.0,
+          1664.0,
+          64.0
+        ],
+        "count": 16,
+        "source_entity_ids": [
+          4,
+          14930,
+          14932,
+          14934,
+          14936,
+          14938,
+          14940,
+          14942,
+          14944,
+          14946,
+          14948,
+          14950,
+          14952,
+          52927,
+          52929,
+          52931
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 16 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "blue": [
+      {
+        "cluster_id": 1,
+        "center": [
+          -768.0,
+          -1664.0,
+          64.0
+        ],
+        "count": 8,
+        "source_entity_ids": [
+          108,
+          12111,
+          12113,
+          12119,
+          12121,
+          12123,
+          12127,
+          12129
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 8 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          -1408.0,
+          -1664.0,
+          64.0
+        ],
+        "count": 8,
+        "source_entity_ids": [
+          12109,
+          12115,
+          12117,
+          12125,
+          12131,
+          52869,
+          52871,
+          52873
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 8 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "spectator": []
+  }
+}

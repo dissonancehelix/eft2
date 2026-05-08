@@ -1,0 +1,412 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Skystep",
+  "source_vmf": "Maps/Skystep/Skystep.vmf",
+  "original_filename": "eft_skystep_v4.vmf",
+  "generated_at": "2026-05-08T15:27:14.172991+00:00",
+  "viewpoints": [
+    {
+      "type": "ball_spawn",
+      "label": "Ball spawn",
+      "origin": [
+        0.0,
+        0.0,
+        27.0
+      ],
+      "source_entity_ids": [
+        19354
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": false,
+      "confidence": 0.6,
+      "reasons": [
+        "Primary convergence point at round/reset start."
+      ]
+    },
+    {
+      "type": "red_spawn_cluster",
+      "label": "Red spawn cluster",
+      "origin": [
+        -464.0,
+        4750.736842105263,
+        -241.0
+      ],
+      "source_entity_ids": [
+        20580,
+        20599,
+        20607,
+        20617,
+        20619,
+        20621,
+        20633,
+        20655,
+        20657,
+        20659,
+        20661,
+        20663,
+        20665,
+        20667,
+        20713,
+        20715,
+        20717,
+        20719,
+        20721
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": false,
+      "confidence": 0.6,
+      "reasons": [
+        "Clustered 19 red spawn entities by origin proximity."
+      ]
+    },
+    {
+      "type": "blue_spawn_cluster",
+      "label": "Blue spawn cluster",
+      "origin": [
+        464.0,
+        -4750.736842105263,
+        -241.0
+      ],
+      "source_entity_ids": [
+        20975,
+        20977,
+        20979,
+        20981,
+        20983,
+        20985,
+        20987,
+        20989,
+        20991,
+        20993,
+        20995,
+        20997,
+        20999,
+        21001,
+        21003,
+        21005,
+        21007,
+        21009,
+        21011
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": false,
+      "confidence": 0.6,
+      "reasons": [
+        "Clustered 19 blue spawn entities by origin proximity."
+      ]
+    },
+    {
+      "type": "goal_complex",
+      "label": "goal_complex_1",
+      "origin": [
+        -3448.0,
+        2408.0,
+        -161.0
+      ],
+      "source_entity_ids": [
+        9445
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": true,
+      "confidence": 0.72,
+      "reasons": [
+        "Grouped nearby raw trigger_goal entities into a gameplay scoring-complex candidate.",
+        "Raw trigger count is preserved separately and is not treated as final scoring-location count."
+      ]
+    },
+    {
+      "type": "goal_complex",
+      "label": "goal_complex_2",
+      "origin": [
+        3448.0,
+        -2408.0,
+        -161.0
+      ],
+      "source_entity_ids": [
+        11520
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": true,
+      "confidence": 0.72,
+      "reasons": [
+        "Grouped nearby raw trigger_goal entities into a gameplay scoring-complex candidate.",
+        "Raw trigger count is preserved separately and is not treated as final scoring-location count."
+      ]
+    },
+    {
+      "type": "hazard_region",
+      "label": "hazard_region_1",
+      "origin": [
+        544.0,
+        -224.0,
+        -3746.0
+      ],
+      "source_entity_ids": [
+        22334
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": false,
+      "confidence": 0.75,
+      "reasons": [
+        "Hazard or forced knockdown trigger.",
+        "Source entity class `trigger_hurt` id `22334`.",
+        "Brush bounds extracted from VMF side plane points."
+      ]
+    },
+    {
+      "type": "reset_region",
+      "label": "reset_region_1",
+      "origin": [
+        -480.0,
+        4528.0,
+        -209.0
+      ],
+      "source_entity_ids": [
+        20740
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": false,
+      "confidence": 0.75,
+      "reasons": [
+        "Ball reset trigger volume.",
+        "Source entity class `trigger_ballreset` id `20740`.",
+        "Brush bounds extracted from VMF side plane points."
+      ]
+    },
+    {
+      "type": "reset_region",
+      "label": "reset_region_2",
+      "origin": [
+        -480.0,
+        3932.0,
+        -209.0
+      ],
+      "source_entity_ids": [
+        20746
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": false,
+      "confidence": 0.75,
+      "reasons": [
+        "Ball reset trigger volume.",
+        "Source entity class `trigger_ballreset` id `20746`.",
+        "Brush bounds extracted from VMF side plane points."
+      ]
+    },
+    {
+      "type": "reset_region",
+      "label": "reset_region_3",
+      "origin": [
+        480.0,
+        -4528.0,
+        -209.0
+      ],
+      "source_entity_ids": [
+        21013
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": false,
+      "confidence": 0.75,
+      "reasons": [
+        "Ball reset trigger volume.",
+        "Source entity class `trigger_ballreset` id `21013`.",
+        "Brush bounds extracted from VMF side plane points."
+      ]
+    },
+    {
+      "type": "reset_region",
+      "label": "reset_region_4",
+      "origin": [
+        480.0,
+        -3932.0,
+        -209.0
+      ],
+      "source_entity_ids": [
+        21015
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": false,
+      "confidence": 0.75,
+      "reasons": [
+        "Ball reset trigger volume.",
+        "Source entity class `trigger_ballreset` id `21015`.",
+        "Brush bounds extracted from VMF side plane points."
+      ]
+    },
+    {
+      "type": "reset_region",
+      "label": "reset_region_5",
+      "origin": [
+        272.0,
+        -112.0,
+        -1331.5
+      ],
+      "source_entity_ids": [
+        61925
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": false,
+      "confidence": 0.75,
+      "reasons": [
+        "Ball reset trigger volume.",
+        "Source entity class `trigger_ballreset` id `61925`.",
+        "Brush bounds extracted from VMF side plane points."
+      ]
+    },
+    {
+      "type": "powerup_location",
+      "label": "powerup_location_1",
+      "origin": [
+        -272.0,
+        0.0,
+        120.0
+      ],
+      "source_entity_ids": [
+        44966
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": false,
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `44966`.",
+        "Brush bounds extracted from VMF side plane points."
+      ]
+    },
+    {
+      "type": "powerup_location",
+      "label": "powerup_location_2",
+      "origin": [
+        272.0,
+        0.0,
+        120.0
+      ],
+      "source_entity_ids": [
+        46310
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": false,
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `46310`.",
+        "Brush bounds extracted from VMF side plane points."
+      ]
+    },
+    {
+      "type": "rotating_obstruction",
+      "label": "rotating_obstruction_1",
+      "origin": [
+        -6896.0,
+        4816.0,
+        -321.9995
+      ],
+      "source_entity_ids": [
+        9334
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": false,
+      "confidence": 0.75,
+      "reasons": [
+        "Rotating brush/object that can shape shots or traversal.",
+        "Source entity class `func_rotating` id `9334`.",
+        "Brush bounds extracted from VMF side plane points."
+      ]
+    },
+    {
+      "type": "rotating_obstruction",
+      "label": "rotating_obstruction_2",
+      "origin": [
+        6896.0,
+        -4816.0,
+        -322.0005
+      ],
+      "source_entity_ids": [
+        11502
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": false,
+      "confidence": 0.75,
+      "reasons": [
+        "Rotating brush/object that can shape shots or traversal.",
+        "Source entity class `func_rotating` id `11502`.",
+        "Brush bounds extracted from VMF side plane points."
+      ]
+    },
+    {
+      "type": "rotating_obstruction",
+      "label": "rotating_obstruction_3",
+      "origin": [
+        -544.0,
+        -0.0005000000000023874,
+        240.013535
+      ],
+      "source_entity_ids": [
+        46458
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": false,
+      "confidence": 0.75,
+      "reasons": [
+        "Rotating brush/object that can shape shots or traversal.",
+        "Source entity class `func_rotating` id `46458`.",
+        "Brush bounds extracted from VMF side plane points."
+      ]
+    },
+    {
+      "type": "rotating_obstruction",
+      "label": "rotating_obstruction_4",
+      "origin": [
+        544.0,
+        -0.0005000000000023874,
+        240.013535
+      ],
+      "source_entity_ids": [
+        46985
+      ],
+      "nearby_landmarks": [],
+      "route_connections": [],
+      "gameplay_meaning": "Candidate gameplay landmark for LLM spatial reasoning.",
+      "uncertain": false,
+      "confidence": 0.75,
+      "reasons": [
+        "Rotating brush/object that can shape shots or traversal.",
+        "Source entity class `func_rotating` id `46985`.",
+        "Brush bounds extracted from VMF side plane points."
+      ]
+    }
+  ]
+}

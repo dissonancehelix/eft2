@@ -1,0 +1,22 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Chamber",
+  "source_vmf": "Maps/Chamber/Chamber.vmf",
+  "original_filename": "eft_chamber_v2.vmf",
+  "generated_at": "2026-05-08T15:27:10.640109+00:00",
+  "danger_fields": [
+    {
+      "region": "reset_region_1",
+      "type": "reset_region",
+      "center": [
+        0.0,
+        0.0,
+        601.5
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    }
+  ]
+}

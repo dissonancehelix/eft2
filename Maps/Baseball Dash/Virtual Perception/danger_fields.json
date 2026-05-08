@@ -1,0 +1,118 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Baseball Dash",
+  "source_vmf": "Maps/Baseball Dash/Baseball Dash.vmf",
+  "original_filename": "eft_baseballdash_v3.vmf",
+  "generated_at": "2026-05-08T15:27:09.153286+00:00",
+  "danger_fields": [
+    {
+      "region": "hazard_region_1",
+      "type": "hazard_region",
+      "center": [
+        -3316.0,
+        514.0,
+        -582.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_2",
+      "type": "hazard_region",
+      "center": [
+        44.0,
+        3872.0,
+        -582.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_1",
+      "type": "reset_region",
+      "center": [
+        -2980.0,
+        856.0,
+        485.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_2",
+      "type": "reset_region",
+      "center": [
+        -577.0,
+        3272.0,
+        485.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_3",
+      "type": "reset_region",
+      "center": [
+        2143.0,
+        3272.0,
+        788.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_4",
+      "type": "reset_region",
+      "center": [
+        143.0,
+        135.5,
+        425.5
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_5",
+      "type": "reset_region",
+      "center": [
+        2431.5,
+        1019.5,
+        425.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_6",
+      "type": "reset_region",
+      "center": [
+        -2561.0,
+        -2153.0,
+        425.5
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_7",
+      "type": "reset_region",
+      "center": [
+        -2993.0,
+        -1864.0,
+        788.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    }
+  ]
+}

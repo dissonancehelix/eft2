@@ -1,0 +1,265 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Skystep",
+  "source_vmf": "Maps/Skystep/Skystep.vmf",
+  "original_filename": "eft_skystep_v4.vmf",
+  "generated_at": "2026-05-08T15:27:14.172991+00:00",
+  "reset_regions": [
+    {
+      "id": "reset_region_1",
+      "type": "reset_region",
+      "center": [
+        -480.0,
+        4528.0,
+        -209.0
+      ],
+      "bounds": {
+        "min": [
+          -768.0,
+          4216.0,
+          -257.0
+        ],
+        "max": [
+          -192.0,
+          4840.0,
+          -161.0
+        ],
+        "center": [
+          -480.0,
+          4528.0,
+          -209.0
+        ],
+        "size": [
+          576.0,
+          624.0,
+          96.0
+        ],
+        "z_range": [
+          -257.0,
+          -161.0
+        ],
+        "aabb_volume": 34504704.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball reset trigger volume.",
+        "Source entity class `trigger_ballreset` id `20740`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        20740
+      ],
+      "source_classes": [
+        "trigger_ballreset"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "reset_region_2",
+      "type": "reset_region",
+      "center": [
+        -480.0,
+        3932.0,
+        -209.0
+      ],
+      "bounds": {
+        "min": [
+          -608.0,
+          3648.0,
+          -257.0
+        ],
+        "max": [
+          -352.0,
+          4216.0,
+          -161.0
+        ],
+        "center": [
+          -480.0,
+          3932.0,
+          -209.0
+        ],
+        "size": [
+          256.0,
+          568.0,
+          96.0
+        ],
+        "z_range": [
+          -257.0,
+          -161.0
+        ],
+        "aabb_volume": 13959168.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball reset trigger volume.",
+        "Source entity class `trigger_ballreset` id `20746`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        20746
+      ],
+      "source_classes": [
+        "trigger_ballreset"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "reset_region_3",
+      "type": "reset_region",
+      "center": [
+        480.0,
+        -4528.0,
+        -209.0
+      ],
+      "bounds": {
+        "min": [
+          192.0,
+          -4840.0,
+          -257.0
+        ],
+        "max": [
+          768.0,
+          -4216.0,
+          -161.0
+        ],
+        "center": [
+          480.0,
+          -4528.0,
+          -209.0
+        ],
+        "size": [
+          576.0,
+          624.0,
+          96.0
+        ],
+        "z_range": [
+          -257.0,
+          -161.0
+        ],
+        "aabb_volume": 34504704.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball reset trigger volume.",
+        "Source entity class `trigger_ballreset` id `21013`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        21013
+      ],
+      "source_classes": [
+        "trigger_ballreset"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "reset_region_4",
+      "type": "reset_region",
+      "center": [
+        480.0,
+        -3932.0,
+        -209.0
+      ],
+      "bounds": {
+        "min": [
+          352.0,
+          -4216.0,
+          -257.0
+        ],
+        "max": [
+          608.0,
+          -3648.0,
+          -161.0
+        ],
+        "center": [
+          480.0,
+          -3932.0,
+          -209.0
+        ],
+        "size": [
+          256.0,
+          568.0,
+          96.0
+        ],
+        "z_range": [
+          -257.0,
+          -161.0
+        ],
+        "aabb_volume": 13959168.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball reset trigger volume.",
+        "Source entity class `trigger_ballreset` id `21015`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        21015
+      ],
+      "source_classes": [
+        "trigger_ballreset"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "reset_region_5",
+      "type": "reset_region",
+      "center": [
+        272.0,
+        -112.0,
+        -1331.5
+      ],
+      "bounds": {
+        "min": [
+          -4208.0,
+          -6600.0,
+          -1397.0
+        ],
+        "max": [
+          4752.0,
+          6376.0,
+          -1266.0
+        ],
+        "center": [
+          272.0,
+          -112.0,
+          -1331.5
+        ],
+        "size": [
+          8960.0,
+          12976.0,
+          131.0
+        ],
+        "z_range": [
+          -1397.0,
+          -1266.0
+        ],
+        "aabb_volume": 15230709760.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball reset trigger volume.",
+        "Source entity class `trigger_ballreset` id `61925`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        61925
+      ],
+      "source_classes": [
+        "trigger_ballreset"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

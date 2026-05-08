@@ -1,0 +1,250 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Temple Sacrifice",
+  "source_vmf": "Maps/Temple Sacrifice/Temple Sacrifice.vmf",
+  "original_filename": "eft_temple_sacrifice_v2.vmf",
+  "generated_at": "2026-05-08T15:27:16.591994+00:00",
+  "danger_fields": [
+    {
+      "region": "hazard_region_1",
+      "type": "hazard_region",
+      "center": [
+        0.0,
+        -6400.0,
+        -160.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_2",
+      "type": "hazard_region",
+      "center": [
+        -3840.0,
+        -2816.0,
+        96.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_3",
+      "type": "hazard_region",
+      "center": [
+        3840.0,
+        -2816.0,
+        96.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_4",
+      "type": "hazard_region",
+      "center": [
+        0.0,
+        6400.0,
+        -160.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_5",
+      "type": "hazard_region",
+      "center": [
+        -3840.0,
+        2816.0,
+        96.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_6",
+      "type": "hazard_region",
+      "center": [
+        3840.0,
+        2816.0,
+        96.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_7",
+      "type": "hazard_region",
+      "center": [
+        0.0,
+        -60.76000000000022,
+        1280.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_8",
+      "type": "hazard_region",
+      "center": [
+        0.0,
+        -60.73999999999978,
+        1248.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "hazard_region_9",
+      "type": "hazard_region",
+      "center": [
+        0.0,
+        0.0,
+        46.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_1",
+      "type": "reset_region",
+      "center": [
+        0.0,
+        -3200.0,
+        -48.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_2",
+      "type": "reset_region",
+      "center": [
+        -1920.0,
+        -1408.0,
+        80.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_3",
+      "type": "reset_region",
+      "center": [
+        1920.0,
+        -1408.0,
+        80.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_4",
+      "type": "reset_region",
+      "center": [
+        0.0,
+        3200.0,
+        -48.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_5",
+      "type": "reset_region",
+      "center": [
+        -1920.0,
+        1408.0,
+        80.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_6",
+      "type": "reset_region",
+      "center": [
+        1920.0,
+        1408.0,
+        80.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_7",
+      "type": "reset_region",
+      "center": [
+        0.0,
+        0.0,
+        23.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_8",
+      "type": "reset_region",
+      "center": [
+        1024.0,
+        -3072.0,
+        23.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_9",
+      "type": "reset_region",
+      "center": [
+        -1024.0,
+        -3072.0,
+        23.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_10",
+      "type": "reset_region",
+      "center": [
+        -1024.0,
+        3072.0,
+        23.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    },
+    {
+      "region": "reset_region_11",
+      "type": "reset_region",
+      "center": [
+        1024.0,
+        3072.0,
+        23.0
+      ],
+      "gameplay_meaning": "Danger/reset pressure near this region can redirect possession and route choices.",
+      "confidence": 0.75,
+      "needs_human_review": false
+    }
+  ]
+}

@@ -1,0 +1,3181 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Slam Dunk",
+  "source_vmf": "Maps/Slam Dunk/Slam Dunk.vmf",
+  "original_filename": "eft_slamdunk_v6.vmf",
+  "generated_at": "2026-05-08T15:27:14.689573+00:00",
+  "status": "brush_mesh_visibility_probe",
+  "probes": [
+    {
+      "from": "Ball spawn",
+      "to": "Red spawn cluster",
+      "from_origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "to_origin": [
+        700.3333333333334,
+        3137.0,
+        270.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "Red spawn cluster",
+      "from_origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "to_origin": [
+        700.2857142857143,
+        1999.857142857143,
+        270.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "Blue spawn cluster",
+      "from_origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "to_origin": [
+        5587.714285714285,
+        1999.857142857143,
+        270.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "Blue spawn cluster",
+      "from_origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "to_origin": [
+        5587.666666666667,
+        3137.0,
+        270.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "goal_complex_1",
+      "from_origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "to_origin": [
+        295.99875000000003,
+        2551.4449999999997,
+        658.00775
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "goal_complex_2",
+      "from_origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "to_origin": [
+        5992.0,
+        2551.4449999999997,
+        658.00775
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "hazard_region_1",
+      "from_origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "to_origin": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 97679,
+          "distance_fraction": 0.7116516280894468,
+          "sample_triangle": [
+            [
+              2577.0,
+              4367.0,
+              985.0
+            ],
+            [
+              577.0,
+              4367.0,
+              1161.0
+            ],
+            [
+              577.0,
+              4367.0,
+              985.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "hazard_region_2",
+      "from_origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "to_origin": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "blocker_count": 2,
+      "sample_blockers": [
+        {
+          "solid_id": 54035,
+          "distance_fraction": 0.329563447183895,
+          "sample_triangle": [
+            [
+              6058.0,
+              4026.0,
+              985.0
+            ],
+            [
+              6058.0,
+              2973.0,
+              519.0
+            ],
+            [
+              6058.0,
+              2973.0,
+              985.0
+            ]
+          ]
+        },
+        {
+          "solid_id": 29259,
+          "distance_fraction": 0.33306944130287264,
+          "sample_triangle": [
+            [
+              6089.0,
+              4026.0,
+              985.0
+            ],
+            [
+              6089.0,
+              2973.0,
+              519.0
+            ],
+            [
+              6089.0,
+              2973.0,
+              985.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "powerup_location_1",
+      "from_origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "to_origin": [
+        3144.0,
+        829.5,
+        734.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "powerup_location_2",
+      "from_origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "to_origin": [
+        3144.0,
+        4272.5,
+        734.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "jump_push_region_1",
+      "from_origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "to_origin": [
+        295.009,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "jump_push_region_2",
+      "from_origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "to_origin": [
+        245.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "jump_push_region_3",
+      "from_origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "to_origin": [
+        569.4475,
+        2552.0,
+        356.72450000000003
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "jump_push_region_4",
+      "from_origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "to_origin": [
+        6042.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "jump_push_region_5",
+      "from_origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "to_origin": [
+        5992.99,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "Red spawn cluster",
+      "from_origin": [
+        700.3333333333334,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        700.2857142857143,
+        1999.857142857143,
+        270.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "Blue spawn cluster",
+      "from_origin": [
+        700.3333333333334,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        5587.714285714285,
+        1999.857142857143,
+        270.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "Blue spawn cluster",
+      "from_origin": [
+        700.3333333333334,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        5587.666666666667,
+        3137.0,
+        270.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "goal_complex_1",
+      "from_origin": [
+        700.3333333333334,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        295.99875000000003,
+        2551.4449999999997,
+        658.00775
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "goal_complex_2",
+      "from_origin": [
+        700.3333333333334,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        5992.0,
+        2551.4449999999997,
+        658.00775
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "hazard_region_1",
+      "from_origin": [
+        700.3333333333334,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "blocker_count": 3,
+      "sample_blockers": [
+        {
+          "solid_id": 97678,
+          "distance_fraction": 0.6264631043256997,
+          "sample_triangle": [
+            [
+              2577.0,
+              4368.0,
+              985.0
+            ],
+            [
+              577.0,
+              4368.0,
+              519.0
+            ],
+            [
+              577.0,
+              4368.0,
+              985.0
+            ]
+          ]
+        },
+        {
+          "solid_id": 97681,
+          "distance_fraction": 0.6396946564885496,
+          "sample_triangle": [
+            [
+              2577.0,
+              4394.0,
+              519.0
+            ],
+            [
+              2577.0,
+              4394.0,
+              985.0
+            ],
+            [
+              577.0,
+              4394.0,
+              985.0
+            ]
+          ]
+        },
+        {
+          "solid_id": 97682,
+          "distance_fraction": 0.6417302798982188,
+          "sample_triangle": [
+            [
+              2577.0,
+              4398.0,
+              519.0
+            ],
+            [
+              2577.0,
+              4398.0,
+              985.0
+            ],
+            [
+              577.0,
+              4398.0,
+              985.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "hazard_region_2",
+      "from_origin": [
+        700.3333333333334,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 89888,
+          "distance_fraction": 0.4747319608943498,
+          "sample_triangle": [
+            [
+              6058.0,
+              4367.0,
+              1161.0
+            ],
+            [
+              6058.0,
+              4026.0,
+              128.0
+            ],
+            [
+              6058.0,
+              4026.0,
+              1161.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "powerup_location_1",
+      "from_origin": [
+        700.3333333333334,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        3144.0,
+        829.5,
+        734.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "powerup_location_2",
+      "from_origin": [
+        700.3333333333334,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        3144.0,
+        4272.5,
+        734.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "jump_push_region_1",
+      "from_origin": [
+        700.3333333333334,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        295.009,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "jump_push_region_2",
+      "from_origin": [
+        700.3333333333334,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        245.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "jump_push_region_3",
+      "from_origin": [
+        700.3333333333334,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        569.4475,
+        2552.0,
+        356.72450000000003
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "jump_push_region_4",
+      "from_origin": [
+        700.3333333333334,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        6042.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "jump_push_region_5",
+      "from_origin": [
+        700.3333333333334,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        5992.99,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "Blue spawn cluster",
+      "from_origin": [
+        700.2857142857143,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        5587.714285714285,
+        1999.857142857143,
+        270.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "Blue spawn cluster",
+      "from_origin": [
+        700.2857142857143,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        5587.666666666667,
+        3137.0,
+        270.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "goal_complex_1",
+      "from_origin": [
+        700.2857142857143,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        295.99875000000003,
+        2551.4449999999997,
+        658.00775
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "goal_complex_2",
+      "from_origin": [
+        700.2857142857143,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        5992.0,
+        2551.4449999999997,
+        658.00775
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "hazard_region_1",
+      "from_origin": [
+        700.2857142857143,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 97679,
+          "distance_fraction": 0.7630670043748562,
+          "sample_triangle": [
+            [
+              2577.0,
+              4367.0,
+              985.0
+            ],
+            [
+              577.0,
+              4367.0,
+              1161.0
+            ],
+            [
+              577.0,
+              4367.0,
+              985.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "hazard_region_2",
+      "from_origin": [
+        700.2857142857143,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "blocker_count": 2,
+      "sample_blockers": [
+        {
+          "solid_id": 54035,
+          "distance_fraction": 0.47473417721518973,
+          "sample_triangle": [
+            [
+              6058.0,
+              4026.0,
+              985.0
+            ],
+            [
+              6058.0,
+              2973.0,
+              519.0
+            ],
+            [
+              6058.0,
+              2973.0,
+              985.0
+            ]
+          ]
+        },
+        {
+          "solid_id": 29259,
+          "distance_fraction": 0.47748101265822773,
+          "sample_triangle": [
+            [
+              6089.0,
+              4026.0,
+              985.0
+            ],
+            [
+              6089.0,
+              2973.0,
+              519.0
+            ],
+            [
+              6089.0,
+              2973.0,
+              985.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "powerup_location_1",
+      "from_origin": [
+        700.2857142857143,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        3144.0,
+        829.5,
+        734.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "powerup_location_2",
+      "from_origin": [
+        700.2857142857143,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        3144.0,
+        4272.5,
+        734.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "jump_push_region_1",
+      "from_origin": [
+        700.2857142857143,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        295.009,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "jump_push_region_2",
+      "from_origin": [
+        700.2857142857143,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        245.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "jump_push_region_3",
+      "from_origin": [
+        700.2857142857143,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        569.4475,
+        2552.0,
+        356.72450000000003
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "jump_push_region_4",
+      "from_origin": [
+        700.2857142857143,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        6042.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "jump_push_region_5",
+      "from_origin": [
+        700.2857142857143,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        5992.99,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "Blue spawn cluster",
+      "from_origin": [
+        5587.714285714285,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        5587.666666666667,
+        3137.0,
+        270.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "goal_complex_1",
+      "from_origin": [
+        5587.714285714285,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        295.99875000000003,
+        2551.4449999999997,
+        658.00775
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "goal_complex_2",
+      "from_origin": [
+        5587.714285714285,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        5992.0,
+        2551.4449999999997,
+        658.00775
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "hazard_region_1",
+      "from_origin": [
+        5587.714285714285,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 97679,
+          "distance_fraction": 0.7630670043748562,
+          "sample_triangle": [
+            [
+              2577.0,
+              4367.0,
+              985.0
+            ],
+            [
+              2577.0,
+              4367.0,
+              1161.0
+            ],
+            [
+              577.0,
+              4367.0,
+              1161.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "hazard_region_2",
+      "from_origin": [
+        5587.714285714285,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 89886,
+          "distance_fraction": 0.07350183084754851,
+          "sample_triangle": [
+            [
+              6058.0,
+              2973.0,
+              1161.0
+            ],
+            [
+              6058.0,
+              2129.0,
+              128.0
+            ],
+            [
+              6058.0,
+              2129.0,
+              1161.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "powerup_location_1",
+      "from_origin": [
+        5587.714285714285,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        3144.0,
+        829.5,
+        734.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "powerup_location_2",
+      "from_origin": [
+        5587.714285714285,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        3144.0,
+        4272.5,
+        734.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "jump_push_region_1",
+      "from_origin": [
+        5587.714285714285,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        295.009,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "jump_push_region_2",
+      "from_origin": [
+        5587.714285714285,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        245.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "jump_push_region_3",
+      "from_origin": [
+        5587.714285714285,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        569.4475,
+        2552.0,
+        356.72450000000003
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "jump_push_region_4",
+      "from_origin": [
+        5587.714285714285,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        6042.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "jump_push_region_5",
+      "from_origin": [
+        5587.714285714285,
+        1999.857142857143,
+        270.0
+      ],
+      "to_origin": [
+        5992.99,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "goal_complex_1",
+      "from_origin": [
+        5587.666666666667,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        295.99875000000003,
+        2551.4449999999997,
+        658.00775
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "goal_complex_2",
+      "from_origin": [
+        5587.666666666667,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        5992.0,
+        2551.4449999999997,
+        658.00775
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "hazard_region_1",
+      "from_origin": [
+        5587.666666666667,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "blocker_count": 3,
+      "sample_blockers": [
+        {
+          "solid_id": 97678,
+          "distance_fraction": 0.6264631043256997,
+          "sample_triangle": [
+            [
+              2577.0,
+              4368.0,
+              985.0
+            ],
+            [
+              577.0,
+              4368.0,
+              519.0
+            ],
+            [
+              577.0,
+              4368.0,
+              985.0
+            ]
+          ]
+        },
+        {
+          "solid_id": 97681,
+          "distance_fraction": 0.6396946564885496,
+          "sample_triangle": [
+            [
+              2577.0,
+              4394.0,
+              519.0
+            ],
+            [
+              2577.0,
+              4394.0,
+              985.0
+            ],
+            [
+              577.0,
+              4394.0,
+              985.0
+            ]
+          ]
+        },
+        {
+          "solid_id": 97682,
+          "distance_fraction": 0.6417302798982188,
+          "sample_triangle": [
+            [
+              2577.0,
+              4398.0,
+              519.0
+            ],
+            [
+              2577.0,
+              4398.0,
+              985.0
+            ],
+            [
+              577.0,
+              4398.0,
+              985.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "hazard_region_2",
+      "from_origin": [
+        5587.666666666667,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 29237,
+          "distance_fraction": 0.07350872623078922,
+          "sample_triangle": [
+            [
+              6058.0,
+              4026.0,
+              518.998
+            ],
+            [
+              6058.0,
+              2973.0,
+              128.0
+            ],
+            [
+              6058.0,
+              2973.0,
+              518.998
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "powerup_location_1",
+      "from_origin": [
+        5587.666666666667,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        3144.0,
+        829.5,
+        734.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "powerup_location_2",
+      "from_origin": [
+        5587.666666666667,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        3144.0,
+        4272.5,
+        734.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "jump_push_region_1",
+      "from_origin": [
+        5587.666666666667,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        295.009,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "jump_push_region_2",
+      "from_origin": [
+        5587.666666666667,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        245.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "jump_push_region_3",
+      "from_origin": [
+        5587.666666666667,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        569.4475,
+        2552.0,
+        356.72450000000003
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "jump_push_region_4",
+      "from_origin": [
+        5587.666666666667,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        6042.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "jump_push_region_5",
+      "from_origin": [
+        5587.666666666667,
+        3137.0,
+        270.0
+      ],
+      "to_origin": [
+        5992.99,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_1",
+      "to": "goal_complex_2",
+      "from_origin": [
+        295.99875000000003,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        5992.0,
+        2551.4449999999997,
+        658.00775
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_1",
+      "to": "hazard_region_1",
+      "from_origin": [
+        295.99875000000003,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 92030,
+          "distance_fraction": 0.7118274257955621,
+          "sample_triangle": [
+            [
+              6058.0,
+              4367.0,
+              1161.0
+            ],
+            [
+              230.0,
+              4367.0,
+              1231.0
+            ],
+            [
+              230.0,
+              4367.0,
+              1161.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_1",
+      "to": "hazard_region_2",
+      "from_origin": [
+        295.99875000000003,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 89887,
+          "distance_fraction": 0.49289996868049957,
+          "sample_triangle": [
+            [
+              6058.0,
+              4026.0,
+              1161.0
+            ],
+            [
+              6058.0,
+              4026.0,
+              985.0
+            ],
+            [
+              6058.0,
+              2973.0,
+              985.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_1",
+      "to": "powerup_location_1",
+      "from_origin": [
+        295.99875000000003,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        3144.0,
+        829.5,
+        734.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_1",
+      "to": "powerup_location_2",
+      "from_origin": [
+        295.99875000000003,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        3144.0,
+        4272.5,
+        734.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_1",
+      "to": "jump_push_region_1",
+      "from_origin": [
+        295.99875000000003,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        295.009,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_1",
+      "to": "jump_push_region_2",
+      "from_origin": [
+        295.99875000000003,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        245.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_1",
+      "to": "jump_push_region_3",
+      "from_origin": [
+        295.99875000000003,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        569.4475,
+        2552.0,
+        356.72450000000003
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_1",
+      "to": "jump_push_region_4",
+      "from_origin": [
+        295.99875000000003,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        6042.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_1",
+      "to": "jump_push_region_5",
+      "from_origin": [
+        295.99875000000003,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        5992.99,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_2",
+      "to": "hazard_region_1",
+      "from_origin": [
+        5992.0,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 92030,
+          "distance_fraction": 0.7118274257955621,
+          "sample_triangle": [
+            [
+              6058.0,
+              4367.0,
+              1161.0
+            ],
+            [
+              230.0,
+              4367.0,
+              1231.0
+            ],
+            [
+              230.0,
+              4367.0,
+              1161.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_2",
+      "to": "hazard_region_2",
+      "from_origin": [
+        5992.0,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "blocker_count": 2,
+      "sample_blockers": [
+        {
+          "solid_id": 73476,
+          "distance_fraction": 0.009342676009342677,
+          "sample_triangle": [
+            [
+              6048.0,
+              2726.0,
+              654.0
+            ],
+            [
+              6048.0,
+              2376.0,
+              854.0
+            ],
+            [
+              6048.0,
+              2376.0,
+              654.0
+            ]
+          ]
+        },
+        {
+          "solid_id": 89886,
+          "distance_fraction": 0.011011011011011011,
+          "sample_triangle": [
+            [
+              6058.0,
+              2973.0,
+              1161.0
+            ],
+            [
+              6058.0,
+              2973.0,
+              128.0
+            ],
+            [
+              6058.0,
+              2129.0,
+              128.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_2",
+      "to": "powerup_location_1",
+      "from_origin": [
+        5992.0,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        3144.0,
+        829.5,
+        734.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_2",
+      "to": "powerup_location_2",
+      "from_origin": [
+        5992.0,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        3144.0,
+        4272.5,
+        734.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_2",
+      "to": "jump_push_region_1",
+      "from_origin": [
+        5992.0,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        295.009,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_2",
+      "to": "jump_push_region_2",
+      "from_origin": [
+        5992.0,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        245.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_2",
+      "to": "jump_push_region_3",
+      "from_origin": [
+        5992.0,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        569.4475,
+        2552.0,
+        356.72450000000003
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_2",
+      "to": "jump_push_region_4",
+      "from_origin": [
+        5992.0,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        6042.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_2",
+      "to": "jump_push_region_5",
+      "from_origin": [
+        5992.0,
+        2551.4449999999997,
+        658.00775
+      ],
+      "to_origin": [
+        5992.99,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "hazard_region_1",
+      "to": "hazard_region_2",
+      "from_origin": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "to_origin": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "hazard_region_1",
+      "to": "powerup_location_1",
+      "from_origin": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "to_origin": [
+        3144.0,
+        829.5,
+        734.0
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 95932,
+          "distance_fraction": 0.16454066705675835,
+          "sample_triangle": [
+            [
+              6058.0,
+              4399.0,
+              1268.0
+            ],
+            [
+              230.0,
+              4399.0,
+              1231.0
+            ],
+            [
+              230.0,
+              4399.0,
+              1268.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "hazard_region_1",
+      "to": "powerup_location_2",
+      "from_origin": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "to_origin": [
+        3144.0,
+        4272.5,
+        734.0
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 97673,
+          "distance_fraction": 0.8860759493670886,
+          "sample_triangle": [
+            [
+              3717.0,
+              4367.0,
+              128.0
+            ],
+            [
+              2577.0,
+              4367.0,
+              1161.0
+            ],
+            [
+              2577.0,
+              4367.0,
+              128.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "hazard_region_1",
+      "to": "jump_push_region_1",
+      "from_origin": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "to_origin": [
+        295.009,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 2,
+      "sample_blockers": [
+        {
+          "solid_id": 92030,
+          "distance_fraction": 0.27544917218315995,
+          "sample_triangle": [
+            [
+              6058.0,
+              4399.0,
+              1231.0
+            ],
+            [
+              230.0,
+              4399.0,
+              1161.0
+            ],
+            [
+              230.0,
+              4399.0,
+              1231.0
+            ]
+          ]
+        },
+        {
+          "solid_id": 97671,
+          "distance_fraction": 0.2879873990819667,
+          "sample_triangle": [
+            [
+              577.0,
+              4367.0,
+              128.0
+            ],
+            [
+              577.0,
+              4367.0,
+              1161.0
+            ],
+            [
+              230.0,
+              4367.0,
+              1161.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "hazard_region_1",
+      "to": "jump_push_region_2",
+      "from_origin": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "to_origin": [
+        245.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 92030,
+          "distance_fraction": 0.2884049440847557,
+          "sample_triangle": [
+            [
+              6058.0,
+              4367.0,
+              1161.0
+            ],
+            [
+              230.0,
+              4367.0,
+              1231.0
+            ],
+            [
+              230.0,
+              4367.0,
+              1161.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "hazard_region_1",
+      "to": "jump_push_region_3",
+      "from_origin": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "to_origin": [
+        569.4475,
+        2552.0,
+        356.72450000000003
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 97679,
+          "distance_fraction": 0.28823529411764703,
+          "sample_triangle": [
+            [
+              2577.0,
+              4367.0,
+              985.0
+            ],
+            [
+              577.0,
+              4367.0,
+              1161.0
+            ],
+            [
+              577.0,
+              4367.0,
+              985.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "hazard_region_1",
+      "to": "jump_push_region_4",
+      "from_origin": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "to_origin": [
+        6042.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 92030,
+          "distance_fraction": 0.2884049440847557,
+          "sample_triangle": [
+            [
+              6058.0,
+              4367.0,
+              1161.0
+            ],
+            [
+              230.0,
+              4367.0,
+              1231.0
+            ],
+            [
+              230.0,
+              4367.0,
+              1161.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "hazard_region_1",
+      "to": "jump_push_region_5",
+      "from_origin": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "to_origin": [
+        5992.99,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 2,
+      "sample_blockers": [
+        {
+          "solid_id": 92030,
+          "distance_fraction": 0.27544917218315995,
+          "sample_triangle": [
+            [
+              6058.0,
+              4399.0,
+              1231.0
+            ],
+            [
+              6058.0,
+              4399.0,
+              1161.0
+            ],
+            [
+              230.0,
+              4399.0,
+              1161.0
+            ]
+          ]
+        },
+        {
+          "solid_id": 97679,
+          "distance_fraction": 0.28798739908196674,
+          "sample_triangle": [
+            [
+              2577.0,
+              4367.0,
+              985.0
+            ],
+            [
+              2577.0,
+              4367.0,
+              1161.0
+            ],
+            [
+              577.0,
+              4367.0,
+              1161.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "hazard_region_2",
+      "to": "powerup_location_1",
+      "from_origin": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "to_origin": [
+        3144.0,
+        829.5,
+        734.0
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 89886,
+          "distance_fraction": 0.670436552816105,
+          "sample_triangle": [
+            [
+              6058.0,
+              2973.0,
+              1161.0
+            ],
+            [
+              6058.0,
+              2129.0,
+              128.0
+            ],
+            [
+              6058.0,
+              2129.0,
+              1161.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "hazard_region_2",
+      "to": "powerup_location_2",
+      "from_origin": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "to_origin": [
+        3144.0,
+        4272.5,
+        734.0
+      ],
+      "blocker_count": 3,
+      "sample_blockers": [
+        {
+          "solid_id": 97683,
+          "distance_fraction": 0.8487040385774564,
+          "sample_triangle": [
+            [
+              5717.0,
+              4398.0,
+              519.0
+            ],
+            [
+              5717.0,
+              4398.0,
+              985.0
+            ],
+            [
+              3717.0,
+              4398.0,
+              985.0
+            ]
+          ]
+        },
+        {
+          "solid_id": 97680,
+          "distance_fraction": 0.8535262206148282,
+          "sample_triangle": [
+            [
+              5717.0,
+              4394.0,
+              519.0
+            ],
+            [
+              5717.0,
+              4394.0,
+              985.0
+            ],
+            [
+              3717.0,
+              4394.0,
+              985.0
+            ]
+          ]
+        },
+        {
+          "solid_id": 97677,
+          "distance_fraction": 0.8848704038577456,
+          "sample_triangle": [
+            [
+              5717.0,
+              4368.0,
+              985.0
+            ],
+            [
+              3717.0,
+              4368.0,
+              519.0
+            ],
+            [
+              3717.0,
+              4368.0,
+              985.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "hazard_region_2",
+      "to": "jump_push_region_1",
+      "from_origin": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "to_origin": [
+        295.009,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 89887,
+          "distance_fraction": 0.507057100634155,
+          "sample_triangle": [
+            [
+              6058.0,
+              4026.0,
+              1161.0
+            ],
+            [
+              6058.0,
+              4026.0,
+              985.0
+            ],
+            [
+              6058.0,
+              2973.0,
+              985.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "hazard_region_2",
+      "to": "jump_push_region_2",
+      "from_origin": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "to_origin": [
+        245.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 89887,
+          "distance_fraction": 0.5049188705762105,
+          "sample_triangle": [
+            [
+              6058.0,
+              4026.0,
+              1161.0
+            ],
+            [
+              6058.0,
+              4026.0,
+              985.0
+            ],
+            [
+              6058.0,
+              2973.0,
+              985.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "hazard_region_2",
+      "to": "jump_push_region_3",
+      "from_origin": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "to_origin": [
+        569.4475,
+        2552.0,
+        356.72450000000003
+      ],
+      "blocker_count": 2,
+      "sample_blockers": [
+        {
+          "solid_id": 29259,
+          "distance_fraction": 0.5165307127523829,
+          "sample_triangle": [
+            [
+              6089.0,
+              4026.0,
+              985.0
+            ],
+            [
+              6089.0,
+              4026.0,
+              519.0
+            ],
+            [
+              6089.0,
+              2973.0,
+              519.0
+            ]
+          ]
+        },
+        {
+          "solid_id": 54035,
+          "distance_fraction": 0.5192460683730925,
+          "sample_triangle": [
+            [
+              6058.0,
+              4026.0,
+              985.0
+            ],
+            [
+              6058.0,
+              4026.0,
+              519.0
+            ],
+            [
+              6058.0,
+              2973.0,
+              519.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "hazard_region_2",
+      "to": "jump_push_region_4",
+      "from_origin": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "to_origin": [
+        6042.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 2,
+      "sample_blockers": [
+        {
+          "solid_id": 89886,
+          "distance_fraction": 0.9973921090266678,
+          "sample_triangle": [
+            [
+              6058.0,
+              2973.0,
+              1161.0
+            ],
+            [
+              6058.0,
+              2129.0,
+              128.0
+            ],
+            [
+              6058.0,
+              2129.0,
+              1161.0
+            ]
+          ]
+        },
+        {
+          "solid_id": 73476,
+          "distance_fraction": 0.9990746193320434,
+          "sample_triangle": [
+            [
+              6048.0,
+              2726.0,
+              654.0
+            ],
+            [
+              6048.0,
+              2376.0,
+              854.0
+            ],
+            [
+              6048.0,
+              2376.0,
+              654.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "hazard_region_2",
+      "to": "jump_push_region_5",
+      "from_origin": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "to_origin": [
+        5992.99,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 1,
+      "sample_blockers": [
+        {
+          "solid_id": 89886,
+          "distance_fraction": 0.9891523625023151,
+          "sample_triangle": [
+            [
+              6058.0,
+              2973.0,
+              1161.0
+            ],
+            [
+              6058.0,
+              2973.0,
+              128.0
+            ],
+            [
+              6058.0,
+              2129.0,
+              128.0
+            ]
+          ]
+        }
+      ],
+      "read": "geometry_intersected",
+      "confidence": 0.38,
+      "needs_human_review": true
+    },
+    {
+      "from": "powerup_location_1",
+      "to": "powerup_location_2",
+      "from_origin": [
+        3144.0,
+        829.5,
+        734.0
+      ],
+      "to_origin": [
+        3144.0,
+        4272.5,
+        734.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "powerup_location_1",
+      "to": "jump_push_region_1",
+      "from_origin": [
+        3144.0,
+        829.5,
+        734.0
+      ],
+      "to_origin": [
+        295.009,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "powerup_location_1",
+      "to": "jump_push_region_2",
+      "from_origin": [
+        3144.0,
+        829.5,
+        734.0
+      ],
+      "to_origin": [
+        245.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "powerup_location_1",
+      "to": "jump_push_region_3",
+      "from_origin": [
+        3144.0,
+        829.5,
+        734.0
+      ],
+      "to_origin": [
+        569.4475,
+        2552.0,
+        356.72450000000003
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "powerup_location_1",
+      "to": "jump_push_region_4",
+      "from_origin": [
+        3144.0,
+        829.5,
+        734.0
+      ],
+      "to_origin": [
+        6042.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "powerup_location_1",
+      "to": "jump_push_region_5",
+      "from_origin": [
+        3144.0,
+        829.5,
+        734.0
+      ],
+      "to_origin": [
+        5992.99,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "powerup_location_2",
+      "to": "jump_push_region_1",
+      "from_origin": [
+        3144.0,
+        4272.5,
+        734.0
+      ],
+      "to_origin": [
+        295.009,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "powerup_location_2",
+      "to": "jump_push_region_2",
+      "from_origin": [
+        3144.0,
+        4272.5,
+        734.0
+      ],
+      "to_origin": [
+        245.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "powerup_location_2",
+      "to": "jump_push_region_3",
+      "from_origin": [
+        3144.0,
+        4272.5,
+        734.0
+      ],
+      "to_origin": [
+        569.4475,
+        2552.0,
+        356.72450000000003
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "powerup_location_2",
+      "to": "jump_push_region_4",
+      "from_origin": [
+        3144.0,
+        4272.5,
+        734.0
+      ],
+      "to_origin": [
+        6042.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "powerup_location_2",
+      "to": "jump_push_region_5",
+      "from_origin": [
+        3144.0,
+        4272.5,
+        734.0
+      ],
+      "to_origin": [
+        5992.99,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "jump_push_region_1",
+      "to": "jump_push_region_2",
+      "from_origin": [
+        295.009,
+        2549.8050000000003,
+        625.5
+      ],
+      "to_origin": [
+        245.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "jump_push_region_1",
+      "to": "jump_push_region_3",
+      "from_origin": [
+        295.009,
+        2549.8050000000003,
+        625.5
+      ],
+      "to_origin": [
+        569.4475,
+        2552.0,
+        356.72450000000003
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "jump_push_region_1",
+      "to": "jump_push_region_4",
+      "from_origin": [
+        295.009,
+        2549.8050000000003,
+        625.5
+      ],
+      "to_origin": [
+        6042.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "jump_push_region_1",
+      "to": "jump_push_region_5",
+      "from_origin": [
+        295.009,
+        2549.8050000000003,
+        625.5
+      ],
+      "to_origin": [
+        5992.99,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "jump_push_region_2",
+      "to": "jump_push_region_3",
+      "from_origin": [
+        245.5,
+        2553.5,
+        750.0
+      ],
+      "to_origin": [
+        569.4475,
+        2552.0,
+        356.72450000000003
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "jump_push_region_2",
+      "to": "jump_push_region_4",
+      "from_origin": [
+        245.5,
+        2553.5,
+        750.0
+      ],
+      "to_origin": [
+        6042.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "jump_push_region_2",
+      "to": "jump_push_region_5",
+      "from_origin": [
+        245.5,
+        2553.5,
+        750.0
+      ],
+      "to_origin": [
+        5992.99,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "jump_push_region_3",
+      "to": "jump_push_region_4",
+      "from_origin": [
+        569.4475,
+        2552.0,
+        356.72450000000003
+      ],
+      "to_origin": [
+        6042.5,
+        2553.5,
+        750.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "jump_push_region_3",
+      "to": "jump_push_region_5",
+      "from_origin": [
+        569.4475,
+        2552.0,
+        356.72450000000003
+      ],
+      "to_origin": [
+        5992.99,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "jump_push_region_4",
+      "to": "jump_push_region_5",
+      "from_origin": [
+        6042.5,
+        2553.5,
+        750.0
+      ],
+      "to_origin": [
+        5992.99,
+        2549.8050000000003,
+        625.5
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    }
+  ],
+  "note": "Uses reconstructed VMF brush triangles for sight probes when available. Treat as map-vision evidence, not final Source/s&box collision truth."
+}

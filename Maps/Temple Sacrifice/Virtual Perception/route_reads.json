@@ -1,0 +1,80 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Temple Sacrifice",
+  "source_vmf": "Maps/Temple Sacrifice/Temple Sacrifice.vmf",
+  "original_filename": "eft_temple_sacrifice_v2.vmf",
+  "generated_at": "2026-05-08T15:27:16.591994+00:00",
+  "route_reads": [
+    {
+      "type": "movement_boost_route_candidate",
+      "from": "nearby traversal area",
+      "to": "boost destination unknown until route/navmesh analysis",
+      "source_region": "jump_push_region_1",
+      "confidence": 0.45,
+      "needs_human_review": true,
+      "reasons": [
+        "Map-authored movement boost route.",
+        "Source entity class `trigger_abspush` id `8192`.",
+        "Brush bounds extracted from VMF side plane points.",
+        "Route endpoint requires Recast or trigger output interpretation."
+      ]
+    },
+    {
+      "type": "movement_boost_route_candidate",
+      "from": "nearby traversal area",
+      "to": "boost destination unknown until route/navmesh analysis",
+      "source_region": "jump_push_region_2",
+      "confidence": 0.45,
+      "needs_human_review": true,
+      "reasons": [
+        "Map-authored movement boost route.",
+        "Source entity class `trigger_abspush` id `14144`.",
+        "Brush bounds extracted from VMF side plane points.",
+        "Route endpoint requires Recast or trigger output interpretation."
+      ]
+    },
+    {
+      "type": "movement_boost_route_candidate",
+      "from": "nearby traversal area",
+      "to": "boost destination unknown until route/navmesh analysis",
+      "source_region": "jump_push_region_3",
+      "confidence": 0.45,
+      "needs_human_review": true,
+      "reasons": [
+        "Map-authored movement boost route.",
+        "Source entity class `trigger_abspush` id `14166`.",
+        "Brush bounds extracted from VMF side plane points.",
+        "Route endpoint requires Recast or trigger output interpretation."
+      ]
+    },
+    {
+      "type": "movement_boost_route_candidate",
+      "from": "nearby traversal area",
+      "to": "boost destination unknown until route/navmesh analysis",
+      "source_region": "jump_push_region_4",
+      "confidence": 0.45,
+      "needs_human_review": true,
+      "reasons": [
+        "Map-authored movement boost route.",
+        "Source entity class `trigger_abspush` id `96709`.",
+        "Brush bounds extracted from VMF side plane points.",
+        "Route endpoint requires Recast or trigger output interpretation."
+      ]
+    },
+    {
+      "type": "movement_boost_route_candidate",
+      "from": "nearby traversal area",
+      "to": "boost destination unknown until route/navmesh analysis",
+      "source_region": "jump_push_region_5",
+      "confidence": 0.45,
+      "needs_human_review": true,
+      "reasons": [
+        "Map-authored movement boost route.",
+        "Source entity class `trigger_abspush` id `96722`.",
+        "Brush bounds extracted from VMF side plane points.",
+        "Route endpoint requires Recast or trigger output interpretation."
+      ]
+    }
+  ]
+}

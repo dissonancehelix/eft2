@@ -1,0 +1,18 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Skystep",
+  "source_vmf": "Maps/Skystep/Skystep.vmf",
+  "original_filename": "eft_skystep_v4.vmf",
+  "generated_at": "2026-05-08T15:27:14.172991+00:00",
+  "status": "vmf_only",
+  "source_references": [],
+  "executables": [],
+  "active_geometry_mode": "vmf_brush_plane_mesh",
+  "policy": "Optional geometry/navigation references are internal inputs only; Tools/Map Analyzer remains the durable project-owned interface.",
+  "notes": [
+    "Blender source was not copied or required by the analyzer.",
+    "Recast/Detour source was inspected as the intended navmesh/path-query direction, but no navmesh build is active yet.",
+    "Current geometry reconstructs convex brush meshes from VMF side planes, then falls back to bounds only where reconstruction fails."
+  ]
+}

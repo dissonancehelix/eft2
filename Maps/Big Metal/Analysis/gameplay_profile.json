@@ -1,0 +1,31 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Big Metal",
+  "source_vmf": "Maps/Big Metal/Big Metal.vmf",
+  "original_filename": "eft_big_metal03r1_d.vmf",
+  "generated_at": "2026-05-08T15:27:09.349549+00:00",
+  "tags": [
+    "touch_or_throw_scoring",
+    "vertical_platform"
+  ],
+  "raw_counts": {
+    "info_player_blue": 12,
+    "info_player_red": 12,
+    "prop_ball": 1,
+    "trigger_goal": 2
+  },
+  "estimated_constants": {
+    "base_speed_hu_s": 350,
+    "carrier_speed_hu_s": 262.5,
+    "charge_threshold_hu_s": 300,
+    "note": "Initial README constants only; route/intercept estimates are pending Recast integration."
+  },
+  "confidence_notes": [
+    "Multiple raw trigger_goal entities require semantic grouping before claiming real scoring structure.",
+    "No trigger_powerup entities found; do not infer speedball/powerup routing without other evidence.",
+    "No trigger_jumppad/trigger_abspush entities found; do not infer jump-pad routes without other evidence.",
+    "Vertical/platform claims are approximate until Recast or stronger geometry analysis is active."
+  ],
+  "needs_human_review": true
+}

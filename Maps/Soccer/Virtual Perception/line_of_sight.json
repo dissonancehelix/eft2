@@ -1,0 +1,297 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Soccer",
+  "source_vmf": "Maps/Soccer/Soccer.vmf",
+  "original_filename": "eft_soccer_b2.vmf",
+  "generated_at": "2026-05-08T15:27:14.992384+00:00",
+  "status": "brush_mesh_visibility_probe",
+  "probes": [
+    {
+      "from": "Ball spawn",
+      "to": "Red spawn cluster",
+      "from_origin": [
+        0.0,
+        0.0,
+        13.0
+      ],
+      "to_origin": [
+        1120.0,
+        1664.0,
+        64.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "Blue spawn cluster",
+      "from_origin": [
+        0.0,
+        0.0,
+        13.0
+      ],
+      "to_origin": [
+        -768.0,
+        -1664.0,
+        64.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "Blue spawn cluster",
+      "from_origin": [
+        0.0,
+        0.0,
+        13.0
+      ],
+      "to_origin": [
+        -1408.0,
+        -1664.0,
+        64.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "goal_complex_1",
+      "from_origin": [
+        0.0,
+        0.0,
+        13.0
+      ],
+      "to_origin": [
+        -2984.0,
+        0.0,
+        52.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Ball spawn",
+      "to": "goal_complex_2",
+      "from_origin": [
+        0.0,
+        0.0,
+        13.0
+      ],
+      "to_origin": [
+        2984.0,
+        0.0,
+        52.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "Blue spawn cluster",
+      "from_origin": [
+        1120.0,
+        1664.0,
+        64.0
+      ],
+      "to_origin": [
+        -768.0,
+        -1664.0,
+        64.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "Blue spawn cluster",
+      "from_origin": [
+        1120.0,
+        1664.0,
+        64.0
+      ],
+      "to_origin": [
+        -1408.0,
+        -1664.0,
+        64.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "goal_complex_1",
+      "from_origin": [
+        1120.0,
+        1664.0,
+        64.0
+      ],
+      "to_origin": [
+        -2984.0,
+        0.0,
+        52.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Red spawn cluster",
+      "to": "goal_complex_2",
+      "from_origin": [
+        1120.0,
+        1664.0,
+        64.0
+      ],
+      "to_origin": [
+        2984.0,
+        0.0,
+        52.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "Blue spawn cluster",
+      "from_origin": [
+        -768.0,
+        -1664.0,
+        64.0
+      ],
+      "to_origin": [
+        -1408.0,
+        -1664.0,
+        64.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "goal_complex_1",
+      "from_origin": [
+        -768.0,
+        -1664.0,
+        64.0
+      ],
+      "to_origin": [
+        -2984.0,
+        0.0,
+        52.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "goal_complex_2",
+      "from_origin": [
+        -768.0,
+        -1664.0,
+        64.0
+      ],
+      "to_origin": [
+        2984.0,
+        0.0,
+        52.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "goal_complex_1",
+      "from_origin": [
+        -1408.0,
+        -1664.0,
+        64.0
+      ],
+      "to_origin": [
+        -2984.0,
+        0.0,
+        52.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "Blue spawn cluster",
+      "to": "goal_complex_2",
+      "from_origin": [
+        -1408.0,
+        -1664.0,
+        64.0
+      ],
+      "to_origin": [
+        2984.0,
+        0.0,
+        52.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    },
+    {
+      "from": "goal_complex_1",
+      "to": "goal_complex_2",
+      "from_origin": [
+        -2984.0,
+        0.0,
+        52.0
+      ],
+      "to_origin": [
+        2984.0,
+        0.0,
+        52.0
+      ],
+      "blocker_count": 0,
+      "sample_blockers": [],
+      "read": "likely_exposed",
+      "confidence": 0.45,
+      "needs_human_review": true
+    }
+  ],
+  "note": "Uses reconstructed VMF brush triangles for sight probes when available. Treat as map-vision evidence, not final Source/s&box collision truth."
+}

@@ -1,0 +1,1597 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Bloodbowl",
+  "source_vmf": "Maps/Bloodbowl/Bloodbowl.vmf",
+  "original_filename": "eft_bloodbowl_v5.vmf",
+  "generated_at": "2026-05-08T15:27:10.210248+00:00",
+  "status": "abstract_core_gameplay_telemetry",
+  "model_scope": [
+    "Uses README movement constants and extracted map landmarks.",
+    "Models possession pressure, carrier exposure, defender intercept opportunity, powerup/jump-route influence, and scoring likelihood.",
+    "Does not model real player input, exact ball physics, ragdolls, prop collision, or s&box Scene.NavMesh yet."
+  ],
+  "constants": {
+    "base_speed_hu_s": 350.0,
+    "carrier_speed_hu_s": 262.5,
+    "pity_carrier_speed_hu_s": 315.0,
+    "strafe_only_speed_hu_s": 160.0,
+    "charge_threshold_hu_s": 300.0,
+    "time_to_charge_s": 1.0,
+    "time_to_max_speed_s": 1.5,
+    "post_hit_charge_immunity_s": 0.45,
+    "dive_extra_speed_hu_s": 100.0,
+    "dive_landing_penalty_multiplier": 0.5
+  },
+  "landmarks": {
+    "ball_spawn": [
+      512.0,
+      512.0,
+      669.0
+    ],
+    "red_spawns": [
+      {
+        "cluster_id": 1,
+        "center": [
+          3074.0,
+          1280.0,
+          68.0
+        ],
+        "count": 12,
+        "source_entity_ids": [
+          114566,
+          114568,
+          114570,
+          114572,
+          114574,
+          114576,
+          114578,
+          114580,
+          114582,
+          114584,
+          114586,
+          114588
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 12 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          3074.0,
+          -256.0,
+          68.0
+        ],
+        "count": 12,
+        "source_entity_ids": [
+          114598,
+          114600,
+          114602,
+          114604,
+          114606,
+          114608,
+          114610,
+          114612,
+          114614,
+          114616,
+          114618,
+          114620
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 12 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "blue_spawns": [
+      {
+        "cluster_id": 1,
+        "center": [
+          -2050.0,
+          -256.0,
+          68.0
+        ],
+        "count": 12,
+        "source_entity_ids": [
+          114502,
+          114504,
+          114506,
+          114508,
+          114510,
+          114512,
+          114514,
+          114516,
+          114518,
+          114520,
+          114522,
+          114524
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 12 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          -2050.0,
+          1280.0,
+          68.0
+        ],
+        "count": 12,
+        "source_entity_ids": [
+          114534,
+          114536,
+          114538,
+          114540,
+          114542,
+          114544,
+          114546,
+          114548,
+          114550,
+          114552,
+          114554,
+          114556
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 12 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "goals": [
+      {
+        "id": "goal_complex_1",
+        "type": "goal_complex",
+        "center": [
+          -2464.0,
+          512.0,
+          68.0
+        ],
+        "bounds": {
+          "min": [
+            -2720.0,
+            -1016.0,
+            64.0
+          ],
+          "max": [
+            -2208.0,
+            2040.0,
+            72.0
+          ],
+          "center": [
+            -2464.0,
+            512.0,
+            68.0
+          ],
+          "size": [
+            512.0,
+            3056.0,
+            8.0
+          ],
+          "z_range": [
+            64.0,
+            72.0
+          ],
+          "aabb_volume": 12517376.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.72,
+        "reasons": [
+          "Grouped nearby raw trigger_goal entities into a gameplay scoring-complex candidate.",
+          "Raw trigger count is preserved separately and is not treated as final scoring-location count."
+        ],
+        "source_entity_ids": [
+          114494
+        ],
+        "source_classes": [
+          "trigger_goal"
+        ],
+        "raw_trigger_count": 1,
+        "teamids": [
+          "2"
+        ],
+        "scoretypes": [
+          "1"
+        ],
+        "semantics_used": [
+          "VMF trigger_goal teamid key",
+          "VMF trigger_goal scoretype key"
+        ],
+        "needs_human_review": true
+      },
+      {
+        "id": "goal_complex_2",
+        "type": "goal_complex",
+        "center": [
+          3488.0,
+          512.0,
+          68.0
+        ],
+        "bounds": {
+          "min": [
+            3232.0,
+            -1016.0,
+            64.0
+          ],
+          "max": [
+            3744.0,
+            2040.0,
+            72.0
+          ],
+          "center": [
+            3488.0,
+            512.0,
+            68.0
+          ],
+          "size": [
+            512.0,
+            3056.0,
+            8.0
+          ],
+          "z_range": [
+            64.0,
+            72.0
+          ],
+          "aabb_volume": 12517376.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.72,
+        "reasons": [
+          "Grouped nearby raw trigger_goal entities into a gameplay scoring-complex candidate.",
+          "Raw trigger count is preserved separately and is not treated as final scoring-location count."
+        ],
+        "source_entity_ids": [
+          114496
+        ],
+        "source_classes": [
+          "trigger_goal"
+        ],
+        "raw_trigger_count": 1,
+        "teamids": [
+          "1"
+        ],
+        "scoretypes": [
+          "1"
+        ],
+        "semantics_used": [
+          "VMF trigger_goal teamid key",
+          "VMF trigger_goal scoretype key"
+        ],
+        "needs_human_review": true
+      },
+      {
+        "id": "goal_complex_3",
+        "type": "goal_complex",
+        "center": [
+          3908.0,
+          512.0,
+          576.0
+        ],
+        "bounds": {
+          "min": [
+            3907.0,
+            296.0,
+            352.0
+          ],
+          "max": [
+            3909.0,
+            728.0,
+            800.0
+          ],
+          "center": [
+            3908.0,
+            512.0,
+            576.0
+          ],
+          "size": [
+            2.0,
+            432.0,
+            448.0
+          ],
+          "z_range": [
+            352.0,
+            800.0
+          ],
+          "aabb_volume": 387072.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.72,
+        "reasons": [
+          "Grouped nearby raw trigger_goal entities into a gameplay scoring-complex candidate.",
+          "Raw trigger count is preserved separately and is not treated as final scoring-location count."
+        ],
+        "source_entity_ids": [
+          247300
+        ],
+        "source_classes": [
+          "trigger_goal"
+        ],
+        "raw_trigger_count": 1,
+        "teamids": [
+          "1"
+        ],
+        "scoretypes": [
+          "2"
+        ],
+        "semantics_used": [
+          "VMF trigger_goal teamid key",
+          "VMF trigger_goal scoretype key"
+        ],
+        "needs_human_review": true
+      },
+      {
+        "id": "goal_complex_4",
+        "type": "goal_complex",
+        "center": [
+          3908.0,
+          512.0,
+          1459.5
+        ],
+        "bounds": {
+          "min": [
+            3907.0,
+            312.0,
+            800.0
+          ],
+          "max": [
+            3909.0,
+            712.0,
+            2119.0
+          ],
+          "center": [
+            3908.0,
+            512.0,
+            1459.5
+          ],
+          "size": [
+            2.0,
+            400.0,
+            1319.0
+          ],
+          "z_range": [
+            800.0,
+            2119.0
+          ],
+          "aabb_volume": 1055200.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.72,
+        "reasons": [
+          "Grouped nearby raw trigger_goal entities into a gameplay scoring-complex candidate.",
+          "Raw trigger count is preserved separately and is not treated as final scoring-location count."
+        ],
+        "source_entity_ids": [
+          247302
+        ],
+        "source_classes": [
+          "trigger_goal"
+        ],
+        "raw_trigger_count": 1,
+        "teamids": [
+          "1"
+        ],
+        "scoretypes": [
+          "2"
+        ],
+        "semantics_used": [
+          "VMF trigger_goal teamid key",
+          "VMF trigger_goal scoretype key"
+        ],
+        "needs_human_review": true
+      },
+      {
+        "id": "goal_complex_5",
+        "type": "goal_complex",
+        "center": [
+          -2884.0,
+          512.0,
+          576.0
+        ],
+        "bounds": {
+          "min": [
+            -2885.0,
+            296.0,
+            352.0
+          ],
+          "max": [
+            -2883.0,
+            728.0,
+            800.0
+          ],
+          "center": [
+            -2884.0,
+            512.0,
+            576.0
+          ],
+          "size": [
+            2.0,
+            432.0,
+            448.0
+          ],
+          "z_range": [
+            352.0,
+            800.0
+          ],
+          "aabb_volume": 387072.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.72,
+        "reasons": [
+          "Grouped nearby raw trigger_goal entities into a gameplay scoring-complex candidate.",
+          "Raw trigger count is preserved separately and is not treated as final scoring-location count."
+        ],
+        "source_entity_ids": [
+          274668
+        ],
+        "source_classes": [
+          "trigger_goal"
+        ],
+        "raw_trigger_count": 1,
+        "teamids": [
+          "2"
+        ],
+        "scoretypes": [
+          "2"
+        ],
+        "semantics_used": [
+          "VMF trigger_goal teamid key",
+          "VMF trigger_goal scoretype key"
+        ],
+        "needs_human_review": true
+      },
+      {
+        "id": "goal_complex_6",
+        "type": "goal_complex",
+        "center": [
+          -2884.0,
+          512.0,
+          1459.5
+        ],
+        "bounds": {
+          "min": [
+            -2885.0,
+            312.0,
+            800.0
+          ],
+          "max": [
+            -2883.0,
+            712.0,
+            2119.0
+          ],
+          "center": [
+            -2884.0,
+            512.0,
+            1459.5
+          ],
+          "size": [
+            2.0,
+            400.0,
+            1319.0
+          ],
+          "z_range": [
+            800.0,
+            2119.0
+          ],
+          "aabb_volume": 1055200.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.72,
+        "reasons": [
+          "Grouped nearby raw trigger_goal entities into a gameplay scoring-complex candidate.",
+          "Raw trigger count is preserved separately and is not treated as final scoring-location count."
+        ],
+        "source_entity_ids": [
+          274670
+        ],
+        "source_classes": [
+          "trigger_goal"
+        ],
+        "raw_trigger_count": 1,
+        "teamids": [
+          "2"
+        ],
+        "scoretypes": [
+          "2"
+        ],
+        "semantics_used": [
+          "VMF trigger_goal teamid key",
+          "VMF trigger_goal scoretype key"
+        ],
+        "needs_human_review": true
+      }
+    ],
+    "powerups": [],
+    "jump_push_regions": [],
+    "hazards": [
+      {
+        "id": "hazard_region_1",
+        "type": "hazard_region",
+        "center": [
+          4804.0,
+          3004.0,
+          -9.0
+        ],
+        "bounds": {
+          "min": [
+            4570.0,
+            2770.0,
+            -60.5
+          ],
+          "max": [
+            5038.0,
+            3238.0,
+            42.5
+          ],
+          "center": [
+            4804.0,
+            3004.0,
+            -9.0
+          ],
+          "size": [
+            468.0,
+            468.0,
+            103.0
+          ],
+          "z_range": [
+            -60.5,
+            42.5
+          ],
+          "aabb_volume": 22559472.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Hazard or forced knockdown trigger.",
+          "Source entity class `trigger_hurt` id `114628`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          114628
+        ],
+        "source_classes": [
+          "trigger_hurt"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "hazard_region_2",
+        "type": "hazard_region",
+        "center": [
+          9138.0,
+          1024.0,
+          -56.0
+        ],
+        "bounds": {
+          "min": [
+            8904.0,
+            790.0,
+            -131.0
+          ],
+          "max": [
+            9372.0,
+            1258.0,
+            19.0
+          ],
+          "center": [
+            9138.0,
+            1024.0,
+            -56.0
+          ],
+          "size": [
+            468.0,
+            468.0,
+            150.0
+          ],
+          "z_range": [
+            -131.0,
+            19.0
+          ],
+          "aabb_volume": 32853600.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Hazard or forced knockdown trigger.",
+          "Source entity class `trigger_hurt` id `114672`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          114672
+        ],
+        "source_classes": [
+          "trigger_hurt"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "hazard_region_3",
+        "type": "hazard_region",
+        "center": [
+          -7209.0,
+          1024.0,
+          -56.0
+        ],
+        "bounds": {
+          "min": [
+            -7443.0,
+            790.0,
+            -131.0
+          ],
+          "max": [
+            -6975.0,
+            1258.0,
+            19.0
+          ],
+          "center": [
+            -7209.0,
+            1024.0,
+            -56.0
+          ],
+          "size": [
+            468.0,
+            468.0,
+            150.0
+          ],
+          "z_range": [
+            -131.0,
+            19.0
+          ],
+          "aabb_volume": 32853600.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Hazard or forced knockdown trigger.",
+          "Source entity class `trigger_hurt` id `114680`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          114680
+        ],
+        "source_classes": [
+          "trigger_hurt"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "hazard_region_4",
+        "type": "hazard_region",
+        "center": [
+          2644.0,
+          -956.0,
+          -9.0
+        ],
+        "bounds": {
+          "min": [
+            2410.0,
+            -1190.0,
+            -60.5
+          ],
+          "max": [
+            2878.0,
+            -722.0,
+            42.5
+          ],
+          "center": [
+            2644.0,
+            -956.0,
+            -9.0
+          ],
+          "size": [
+            468.0,
+            468.0,
+            103.0
+          ],
+          "z_range": [
+            -60.5,
+            42.5
+          ],
+          "aabb_volume": 22559472.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Hazard or forced knockdown trigger.",
+          "Source entity class `trigger_hurt` id `233445`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          233445
+        ],
+        "source_classes": [
+          "trigger_hurt"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "hazard_region_5",
+        "type": "hazard_region",
+        "center": [
+          -596.0,
+          3004.0,
+          -9.0
+        ],
+        "bounds": {
+          "min": [
+            -830.0,
+            2770.0,
+            -60.5
+          ],
+          "max": [
+            -362.0,
+            3238.0,
+            42.5
+          ],
+          "center": [
+            -596.0,
+            3004.0,
+            -9.0
+          ],
+          "size": [
+            468.0,
+            468.0,
+            103.0
+          ],
+          "z_range": [
+            -60.5,
+            42.5
+          ],
+          "aabb_volume": 22559472.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Hazard or forced knockdown trigger.",
+          "Source entity class `trigger_hurt` id `233777`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          233777
+        ],
+        "source_classes": [
+          "trigger_hurt"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "hazard_region_6",
+        "type": "hazard_region",
+        "center": [
+          -2756.0,
+          -956.0,
+          -9.0
+        ],
+        "bounds": {
+          "min": [
+            -2990.0,
+            -1190.0,
+            -60.5
+          ],
+          "max": [
+            -2522.0,
+            -722.0,
+            42.5
+          ],
+          "center": [
+            -2756.0,
+            -956.0,
+            -9.0
+          ],
+          "size": [
+            468.0,
+            468.0,
+            103.0
+          ],
+          "z_range": [
+            -60.5,
+            42.5
+          ],
+          "aabb_volume": 22559472.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Hazard or forced knockdown trigger.",
+          "Source entity class `trigger_hurt` id `234109`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          234109
+        ],
+        "source_classes": [
+          "trigger_hurt"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "reset_region_1",
+        "type": "reset_region",
+        "center": [
+          2402.0,
+          1502.0,
+          -22.0
+        ],
+        "bounds": {
+          "min": [
+            2168.0,
+            1268.0,
+            -56.0
+          ],
+          "max": [
+            2636.0,
+            1736.0,
+            12.0
+          ],
+          "center": [
+            2402.0,
+            1502.0,
+            -22.0
+          ],
+          "size": [
+            468.0,
+            468.0,
+            68.0
+          ],
+          "z_range": [
+            -56.0,
+            12.0
+          ],
+          "aabb_volume": 14893632.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Ball reset trigger volume.",
+          "Source entity class `trigger_ballreset` id `229169`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          229169
+        ],
+        "source_classes": [
+          "trigger_ballreset"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "reset_region_2",
+        "type": "reset_region",
+        "center": [
+          1322.0,
+          -478.0,
+          -22.0
+        ],
+        "bounds": {
+          "min": [
+            1088.0,
+            -712.0,
+            -56.0
+          ],
+          "max": [
+            1556.0,
+            -244.0,
+            12.0
+          ],
+          "center": [
+            1322.0,
+            -478.0,
+            -22.0
+          ],
+          "size": [
+            468.0,
+            468.0,
+            68.0
+          ],
+          "z_range": [
+            -56.0,
+            12.0
+          ],
+          "aabb_volume": 14893632.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Ball reset trigger volume.",
+          "Source entity class `trigger_ballreset` id `234839`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          234839
+        ],
+        "source_classes": [
+          "trigger_ballreset"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "reset_region_3",
+        "type": "reset_region",
+        "center": [
+          -1378.0,
+          -478.0,
+          -22.0
+        ],
+        "bounds": {
+          "min": [
+            -1612.0,
+            -712.0,
+            -56.0
+          ],
+          "max": [
+            -1144.0,
+            -244.0,
+            12.0
+          ],
+          "center": [
+            -1378.0,
+            -478.0,
+            -22.0
+          ],
+          "size": [
+            468.0,
+            468.0,
+            68.0
+          ],
+          "z_range": [
+            -56.0,
+            12.0
+          ],
+          "aabb_volume": 14893632.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Ball reset trigger volume.",
+          "Source entity class `trigger_ballreset` id `234845`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          234845
+        ],
+        "source_classes": [
+          "trigger_ballreset"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "reset_region_4",
+        "type": "reset_region",
+        "center": [
+          -298.0,
+          1502.0,
+          -22.0
+        ],
+        "bounds": {
+          "min": [
+            -532.0,
+            1268.0,
+            -56.0
+          ],
+          "max": [
+            -64.0,
+            1736.0,
+            12.0
+          ],
+          "center": [
+            -298.0,
+            1502.0,
+            -22.0
+          ],
+          "size": [
+            468.0,
+            468.0,
+            68.0
+          ],
+          "z_range": [
+            -56.0,
+            12.0
+          ],
+          "aabb_volume": 14893632.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Ball reset trigger volume.",
+          "Source entity class `trigger_ballreset` id `234855`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          234855
+        ],
+        "source_classes": [
+          "trigger_ballreset"
+        ],
+        "needs_human_review": false
+      }
+    ]
+  },
+  "route_candidates": [
+    {
+      "id": "route_1",
+      "from_spawn": "red_spawn_1",
+      "ball_to_goal": "goal_complex_1",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3036.08,
+      "raw_ball_to_goal_distance_hu": 3036.08,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_2",
+      "from_spawn": "red_spawn_1",
+      "ball_to_goal": "goal_complex_2",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3036.08,
+      "raw_ball_to_goal_distance_hu": 3036.08,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_3",
+      "from_spawn": "red_spawn_1",
+      "ball_to_goal": "goal_complex_3",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3397.27,
+      "raw_ball_to_goal_distance_hu": 3397.27,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_4",
+      "from_spawn": "red_spawn_1",
+      "ball_to_goal": "goal_complex_4",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3486.79,
+      "raw_ball_to_goal_distance_hu": 3486.79,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_5",
+      "from_spawn": "red_spawn_1",
+      "ball_to_goal": "goal_complex_5",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3397.27,
+      "raw_ball_to_goal_distance_hu": 3397.27,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_6",
+      "from_spawn": "red_spawn_1",
+      "ball_to_goal": "goal_complex_6",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3486.79,
+      "raw_ball_to_goal_distance_hu": 3486.79,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_7",
+      "from_spawn": "red_spawn_2",
+      "ball_to_goal": "goal_complex_1",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3036.08,
+      "raw_ball_to_goal_distance_hu": 3036.08,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_8",
+      "from_spawn": "red_spawn_2",
+      "ball_to_goal": "goal_complex_2",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3036.08,
+      "raw_ball_to_goal_distance_hu": 3036.08,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_9",
+      "from_spawn": "red_spawn_2",
+      "ball_to_goal": "goal_complex_3",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3397.27,
+      "raw_ball_to_goal_distance_hu": 3397.27,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_10",
+      "from_spawn": "red_spawn_2",
+      "ball_to_goal": "goal_complex_4",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3486.79,
+      "raw_ball_to_goal_distance_hu": 3486.79,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_11",
+      "from_spawn": "red_spawn_2",
+      "ball_to_goal": "goal_complex_5",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3397.27,
+      "raw_ball_to_goal_distance_hu": 3397.27,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_12",
+      "from_spawn": "red_spawn_2",
+      "ball_to_goal": "goal_complex_6",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3486.79,
+      "raw_ball_to_goal_distance_hu": 3486.79,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_13",
+      "from_spawn": "blue_spawn_1",
+      "ball_to_goal": "goal_complex_1",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3036.08,
+      "raw_ball_to_goal_distance_hu": 3036.08,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_14",
+      "from_spawn": "blue_spawn_1",
+      "ball_to_goal": "goal_complex_2",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3036.08,
+      "raw_ball_to_goal_distance_hu": 3036.08,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_15",
+      "from_spawn": "blue_spawn_1",
+      "ball_to_goal": "goal_complex_3",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3397.27,
+      "raw_ball_to_goal_distance_hu": 3397.27,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_16",
+      "from_spawn": "blue_spawn_1",
+      "ball_to_goal": "goal_complex_4",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3486.79,
+      "raw_ball_to_goal_distance_hu": 3486.79,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_17",
+      "from_spawn": "blue_spawn_1",
+      "ball_to_goal": "goal_complex_5",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3397.27,
+      "raw_ball_to_goal_distance_hu": 3397.27,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_18",
+      "from_spawn": "blue_spawn_1",
+      "ball_to_goal": "goal_complex_6",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3486.79,
+      "raw_ball_to_goal_distance_hu": 3486.79,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_19",
+      "from_spawn": "blue_spawn_2",
+      "ball_to_goal": "goal_complex_1",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3036.08,
+      "raw_ball_to_goal_distance_hu": 3036.08,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_20",
+      "from_spawn": "blue_spawn_2",
+      "ball_to_goal": "goal_complex_2",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3036.08,
+      "raw_ball_to_goal_distance_hu": 3036.08,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_21",
+      "from_spawn": "blue_spawn_2",
+      "ball_to_goal": "goal_complex_3",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3397.27,
+      "raw_ball_to_goal_distance_hu": 3397.27,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_22",
+      "from_spawn": "blue_spawn_2",
+      "ball_to_goal": "goal_complex_4",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3486.79,
+      "raw_ball_to_goal_distance_hu": 3486.79,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_23",
+      "from_spawn": "blue_spawn_2",
+      "ball_to_goal": "goal_complex_5",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3397.27,
+      "raw_ball_to_goal_distance_hu": 3397.27,
+      "influence_regions": [],
+      "confidence": 0.45
+    },
+    {
+      "id": "route_24",
+      "from_spawn": "blue_spawn_2",
+      "ball_to_goal": "goal_complex_6",
+      "route_type": "direct_carry",
+      "support_distance_hu": 2741.33,
+      "carrier_distance_hu": 3486.79,
+      "raw_ball_to_goal_distance_hu": 3486.79,
+      "influence_regions": [],
+      "confidence": 0.45
+    }
+  ],
+  "trials": 400,
+  "seed": 2,
+  "aggregates": {
+    "score_rate": 0.2175,
+    "intercept_rate": 0.7825,
+    "reset_or_hazard_rate": 0.0,
+    "scrum_continues_rate": 0.0,
+    "mean_carrier_time_s": 12.6434,
+    "mean_defender_time_s": 8.832,
+    "mean_preventability_margin_s": 3.8114,
+    "route_type_counts": {
+      "direct_carry": 400
+    },
+    "trial_count": 400
+  },
+  "sample_trials": [
+    {
+      "route_id": "route_2",
+      "route_type": "direct_carry",
+      "outcome": "score",
+      "carrier_time_s": 11.566,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 2.734,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_12",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 13.283,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.451,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_24",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 13.283,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.451,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_10",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 13.283,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.451,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_7",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.566,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 2.734,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_19",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.566,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 2.734,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_14",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.566,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 2.734,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_24",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 13.283,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.451,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_17",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 12.942,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.11,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_18",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 13.283,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.451,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_17",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 12.942,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.11,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_2",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.566,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 2.734,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_12",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 13.283,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.451,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_11",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 12.942,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.11,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_14",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 11.566,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 2.734,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_17",
+      "route_type": "direct_carry",
+      "outcome": "score",
+      "carrier_time_s": 12.942,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.11,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_6",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 13.283,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.451,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_1",
+      "route_type": "direct_carry",
+      "outcome": "score",
+      "carrier_time_s": 11.566,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 2.734,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_6",
+      "route_type": "direct_carry",
+      "outcome": "score",
+      "carrier_time_s": 13.283,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.451,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_17",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 12.942,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.11,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_17",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 12.942,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.11,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_6",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 13.283,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.451,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_15",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 12.942,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.11,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_24",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 13.283,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.451,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    },
+    {
+      "route_id": "route_12",
+      "route_type": "direct_carry",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 13.283,
+      "defender_intercept_time_s": 8.832,
+      "preventability_margin_s": 4.451,
+      "pressure": 0.95,
+      "hazard_pressure": 0.07,
+      "score_chance": 0.23
+    }
+  ],
+  "interpretation": [
+    "Defenders usually have a timing window before the carrier reaches a scoring route; expect tackles/scrums unless a jump/powerup route changes tempo.",
+    "Interception/tackle pressure is at least as important as clean scoring in the current coarse telemetry."
+  ]
+}

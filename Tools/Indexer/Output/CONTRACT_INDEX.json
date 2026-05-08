@@ -1,0 +1,1025 @@
+{
+  "generated_by": "Tools/Indexer",
+  "schema_version": 1,
+  "generated_at": "2026-05-08T17:05:00.903724+00:00",
+  "repo_root": "C:/Users/dissonance/Desktop/EFT2",
+  "warnings": [],
+  "files": [
+    {
+      "path": "README.md",
+      "size_bytes": 75734,
+      "heading_count": 174,
+      "headings": [
+        {
+          "level": 1,
+          "text": "EFT2 Game Contract"
+        },
+        {
+          "level": 2,
+          "text": "0. Document Role"
+        },
+        {
+          "level": 2,
+          "text": "1. Absolute Rule"
+        },
+        {
+          "level": 2,
+          "text": "2. Source Of Truth Hierarchy"
+        },
+        {
+          "level": 2,
+          "text": "3. Repository Domains"
+        },
+        {
+          "level": 2,
+          "text": "4. External References"
+        },
+        {
+          "level": 1,
+          "text": "Part I \u2014 What EFT2 Is"
+        },
+        {
+          "level": 2,
+          "text": "5. Project Identity"
+        },
+        {
+          "level": 2,
+          "text": "6. What EFT2 Is Not"
+        },
+        {
+          "level": 3,
+          "text": "EFT2 Is Not American Football"
+        },
+        {
+          "level": 3,
+          "text": "EFT2 Is Not These Either"
+        },
+        {
+          "level": 3,
+          "text": "Useful Orientation Analogies"
+        },
+        {
+          "level": 1,
+          "text": "Part II \u2014 Core Concepts"
+        },
+        {
+          "level": 2,
+          "text": "C-001 Continuous Contest"
+        },
+        {
+          "level": 2,
+          "text": "C-002 Short Possession"
+        },
+        {
+          "level": 2,
+          "text": "C-003 Simultaneous Relevance"
+        },
+        {
+          "level": 2,
+          "text": "C-004 Last-Second Intervention"
+        },
+        {
+          "level": 2,
+          "text": "C-005 Predictive Positioning"
+        },
+        {
+          "level": 2,
+          "text": "C-006 Controlled Chaos"
+        },
+        {
+          "level": 2,
+          "text": "C-007 Migrating Conflict Zone"
+        },
+        {
+          "level": 2,
+          "text": "C-008 Downfield Contest Creation"
+        },
+        {
+          "level": 2,
+          "text": "C-009 Commitment Under Uncertainty"
+        },
+        {
+          "level": 2,
+          "text": "C-010 Continuous Participation"
+        },
+        {
+          "level": 2,
+          "text": "C-011 Transition Dominance"
+        },
+        {
+          "level": 3,
+          "text": "Tackle Taxonomy"
+        },
+        {
+          "level": 1,
+          "text": "Part III \u2014 Non-Negotiable Invariants"
+        },
+        {
+          "level": 2,
+          "text": "P-010 Sport Identity"
+        },
+        {
+          "level": 2,
+          "text": "P-020 Interaction Frequency"
+        },
+        {
+          "level": 2,
+          "text": "P-030 Role Fluidity"
+        },
+        {
+          "level": 2,
+          "text": "P-040 Prediction Dominance"
+        },
+        {
+          "level": 2,
+          "text": "P-050 Movement Constraints"
+        },
+        {
+          "level": 2,
+          "text": "P-060 Head-On Collision Skill"
+        },
+        {
+          "level": 2,
+          "text": "P-070 Passing Purpose"
+        },
+        {
+          "level": 2,
+          "text": "P-080 Ball Readability"
+        },
+        {
+          "level": 2,
+          "text": "P-090 Hazards, Death, And Reset Migration"
+        },
+        {
+          "level": 2,
+          "text": "P-100 Reversals And Hype"
+        },
+        {
+          "level": 2,
+          "text": "P-900 What Breaks EFT2"
+        },
+        {
+          "level": 2,
+          "text": "P-910 Excluded Or Deferred Mechanics"
+        },
+        {
+          "level": 2,
+          "text": "P-950 Behavioral Guarantees"
+        },
+        {
+          "level": 3,
+          "text": "Possession Volatility"
+        },
+        {
+          "level": 3,
+          "text": "Collision Density"
+        },
+        {
+          "level": 3,
+          "text": "Carrier Emotional Tension"
+        },
+        {
+          "level": 3,
+          "text": "Shared Attention Convergence"
+        },
+        {
+          "level": 3,
+          "text": "Global Readability"
+        },
+        {
+          "level": 3,
+          "text": "Universal Influence"
+        },
+        {
+          "level": 3,
+          "text": "Map Authority"
+        },
+        {
+          "level": 1,
+          "text": "Part IV \u2014 Simulation Model For EFT2"
+        },
+        {
+          "level": 2,
+          "text": "M-110 Movement And Charge"
+        },
+        {
+          "level": 3,
+          "text": "Forward-Locked Charging"
+        },
+        {
+          "level": 3,
+          "text": "The Curve"
+        },
+        {
+          "level": 3,
+          "text": "Wall Punishment"
+        },
+        {
+          "level": 2,
+          "text": "M-120 Knockdown And Recovery"
+        },
+        {
+          "level": 2,
+          "text": "M-130 Tackle Mechanics"
+        },
+        {
+          "level": 2,
+          "text": "M-135 Combat Matrix"
+        },
+        {
+          "level": 2,
+          "text": "M-140 Dive Mechanics"
+        },
+        {
+          "level": 2,
+          "text": "M-145 Punch And Cross-Counter"
+        },
+        {
+          "level": 2,
+          "text": "M-150 Possession"
+        },
+        {
+          "level": 2,
+          "text": "M-160 Fumble / Ball Loose"
+        },
+        {
+          "level": 2,
+          "text": "M-170 Passing And Throw Windup"
+        },
+        {
+          "level": 2,
+          "text": "M-175 Jump"
+        },
+        {
+          "level": 2,
+          "text": "M-178 Walls, Obstacles, And Wall Slam"
+        },
+        {
+          "level": 2,
+          "text": "M-179 Collision Model"
+        },
+        {
+          "level": 2,
+          "text": "M-180 Hazards And Resets"
+        },
+        {
+          "level": 2,
+          "text": "M-190 Scoring"
+        },
+        {
+          "level": 2,
+          "text": "M-195 Match Structure"
+        },
+        {
+          "level": 2,
+          "text": "M-198 Pity Mechanic"
+        },
+        {
+          "level": 2,
+          "text": "M-199 Team Sizes"
+        },
+        {
+          "level": 1,
+          "text": "Part V \u2014 Canonical Events And Telemetry"
+        },
+        {
+          "level": 1,
+          "text": "Part VI \u2014 The Feel"
+        },
+        {
+          "level": 2,
+          "text": "The Soul Of EFT2"
+        },
+        {
+          "level": 2,
+          "text": "Charge State Economy"
+        },
+        {
+          "level": 2,
+          "text": "Air Vulnerability Paradox"
+        },
+        {
+          "level": 2,
+          "text": "Human Cognitive Model"
+        },
+        {
+          "level": 2,
+          "text": "Reflex Continuity"
+        },
+        {
+          "level": 2,
+          "text": "Emotional Rhythm"
+        },
+        {
+          "level": 2,
+          "text": "Required Player Perceptions"
+        },
+        {
+          "level": 1,
+          "text": "Part VII \u2014 Player Decision Model"
+        },
+        {
+          "level": 2,
+          "text": "What Players React To"
+        },
+        {
+          "level": 2,
+          "text": "Safe vs Threatened"
+        },
+        {
+          "level": 2,
+          "text": "Run vs Throw"
+        },
+        {
+          "level": 2,
+          "text": "Why Positioning Beats Reaction"
+        },
+        {
+          "level": 1,
+          "text": "Part VIII \u2014 Modern Remake Principles"
+        },
+        {
+          "level": 2,
+          "text": "Behavioral Fidelity Over Literal Fidelity"
+        },
+        {
+          "level": 2,
+          "text": "Modernization Targets"
+        },
+        {
+          "level": 2,
+          "text": "s&box / Source 2 Adaptation"
+        },
+        {
+          "level": 1,
+          "text": "Part IX \u2014 Maps"
+        },
+        {
+          "level": 2,
+          "text": "Map Authority"
+        },
+        {
+          "level": 2,
+          "text": "Canonical Map Roster"
+        },
+        {
+          "level": 2,
+          "text": "EFT2 Map Domain Structure"
+        },
+        {
+          "level": 2,
+          "text": "Map Identity By Scoring Mode"
+        },
+        {
+          "level": 2,
+          "text": "Map Geometry As Tactical Space"
+        },
+        {
+          "level": 2,
+          "text": "Map Design Signals"
+        },
+        {
+          "level": 2,
+          "text": "Map Intelligence"
+        },
+        {
+          "level": 3,
+          "text": "First Map Intelligence Target: Slam Dunk"
+        },
+        {
+          "level": 3,
+          "text": "Second Map Intelligence Target: Bloodbowl"
+        },
+        {
+          "level": 2,
+          "text": "Map Entity Grammar"
+        },
+        {
+          "level": 2,
+          "text": "FGD Semantics"
+        },
+        {
+          "level": 2,
+          "text": "Ball Powerups"
+        },
+        {
+          "level": 1,
+          "text": "Part X \u2014 Bots"
+        },
+        {
+          "level": 2,
+          "text": "Bot Role"
+        },
+        {
+          "level": 2,
+          "text": "Bot Anti-Patterns"
+        },
+        {
+          "level": 2,
+          "text": "Core Bot Behaviors"
+        },
+        {
+          "level": 2,
+          "text": "Local Decision Sketch"
+        },
+        {
+          "level": 2,
+          "text": "Bot Map Awareness"
+        },
+        {
+          "level": 1,
+          "text": "Part XI \u2014 Visual And UX Contract"
+        },
+        {
+          "level": 2,
+          "text": "Team Identity"
+        },
+        {
+          "level": 2,
+          "text": "HUD Target"
+        },
+        {
+          "level": 2,
+          "text": "Visual Tone"
+        },
+        {
+          "level": 1,
+          "text": "Part XII \u2014 Scenario Library"
+        },
+        {
+          "level": 2,
+          "text": "S-001 Goal-Line Stand"
+        },
+        {
+          "level": 2,
+          "text": "S-002 Panic Short Pass"
+        },
+        {
+          "level": 2,
+          "text": "S-003 Long Throw Recovery"
+        },
+        {
+          "level": 2,
+          "text": "S-004 Jump-Flung Fumble"
+        },
+        {
+          "level": 2,
+          "text": "S-005 Swarm Collapse"
+        },
+        {
+          "level": 2,
+          "text": "S-006 Midfield Collection"
+        },
+        {
+          "level": 2,
+          "text": "S-007 Escort Clearing"
+        },
+        {
+          "level": 2,
+          "text": "S-008 Intentional Hazard Reset"
+        },
+        {
+          "level": 2,
+          "text": "S-009 Head-On Speed Duel"
+        },
+        {
+          "level": 2,
+          "text": "S-010 Last-Second Touchdown Stop"
+        },
+        {
+          "level": 2,
+          "text": "S-011 Loose Ball Bounce"
+        },
+        {
+          "level": 2,
+          "text": "S-012 Respawn Rejoin"
+        },
+        {
+          "level": 2,
+          "text": "S-013 Choke Corridor Fight"
+        },
+        {
+          "level": 2,
+          "text": "S-014 Score Counter-Attack"
+        },
+        {
+          "level": 2,
+          "text": "S-015 Tackle Chain"
+        },
+        {
+          "level": 2,
+          "text": "S-016 Goal-Line Intercept"
+        },
+        {
+          "level": 2,
+          "text": "S-017 Mid-Air Catch / Pickup"
+        },
+        {
+          "level": 2,
+          "text": "S-018 Powerup Route"
+        },
+        {
+          "level": 2,
+          "text": "S-019 Carrier Juke"
+        },
+        {
+          "level": 2,
+          "text": "S-020 Bot Positioning"
+        },
+        {
+          "level": 2,
+          "text": "S-021 Slam Dunk Hoop Decision"
+        },
+        {
+          "level": 2,
+          "text": "S-022 Bloodbowl Flat Swarm"
+        },
+        {
+          "level": 1,
+          "text": "Part XIII \u2014 Diagnostics"
+        },
+        {
+          "level": 2,
+          "text": "Correct Behavior"
+        },
+        {
+          "level": 2,
+          "text": "Drift Conditions"
+        },
+        {
+          "level": 2,
+          "text": "Known Bad States"
+        },
+        {
+          "level": 2,
+          "text": "Evaluation Checklist For Changes"
+        },
+        {
+          "level": 1,
+          "text": "Part XIV \u2014 Traceability"
+        },
+        {
+          "level": 2,
+          "text": "ID Families"
+        },
+        {
+          "level": 2,
+          "text": "Commenting Standard"
+        },
+        {
+          "level": 2,
+          "text": "Initial Trace Index"
+        },
+        {
+          "level": 1,
+          "text": "Part XV \u2014 Controls And Runtime Settings"
+        },
+        {
+          "level": 2,
+          "text": "Player Controls"
+        },
+        {
+          "level": 2,
+          "text": "Server/Game Settings To Preserve Conceptually"
+        },
+        {
+          "level": 1,
+          "text": "Part XVI \u2014 Competitive / Community Context"
+        },
+        {
+          "level": 2,
+          "text": "Competitive Team Sizes"
+        },
+        {
+          "level": 2,
+          "text": "Player Archetypes"
+        },
+        {
+          "level": 1,
+          "text": "Part XVII \u2014 Phase Milestones"
+        },
+        {
+          "level": 2,
+          "text": "Phase 0 \u2014 Contract And Evidence Index"
+        },
+        {
+          "level": 2,
+          "text": "Phase 1 \u2014 Map Intelligence Pipeline"
+        },
+        {
+          "level": 2,
+          "text": "Phase 2 \u2014 s&box Project Scaffold"
+        },
+        {
+          "level": 2,
+          "text": "Phase 3 \u2014 Core Loop Prototype"
+        },
+        {
+          "level": 2,
+          "text": "Phase 4 \u2014 Bloodbowl Gameplay Vertical Slice"
+        },
+        {
+          "level": 2,
+          "text": "Phase 5 \u2014 Full Core Mechanic Parity"
+        },
+        {
+          "level": 2,
+          "text": "Phase 6 \u2014 Map Grammar And Conversion"
+        },
+        {
+          "level": 2,
+          "text": "Phase 7 \u2014 Bots And Match Population"
+        },
+        {
+          "level": 2,
+          "text": "Phase 8 \u2014 Remaster Presentation"
+        },
+        {
+          "level": 2,
+          "text": "Phase 9 \u2014 Telemetry, Replay, And Tuning"
+        },
+        {
+          "level": 1,
+          "text": "Part XVIII \u2014 Golden Targets"
+        },
+        {
+          "level": 2,
+          "text": "Map Intelligence Golden Target: Slam Dunk"
+        },
+        {
+          "level": 2,
+          "text": "Gameplay Golden Target: Bloodbowl"
+        },
+        {
+          "level": 1,
+          "text": "Part XIX \u2014 Open Questions"
+        },
+        {
+          "level": 2,
+          "text": "Q-001 Bloodbowl Version"
+        },
+        {
+          "level": 2,
+          "text": "Q-002 Throw Movement"
+        },
+        {
+          "level": 2,
+          "text": "Q-003 Power Struggle"
+        },
+        {
+          "level": 2,
+          "text": "Q-004 Items"
+        },
+        {
+          "level": 2,
+          "text": "Q-005 Powerups"
+        },
+        {
+          "level": 2,
+          "text": "Q-006 Scale Conversion"
+        },
+        {
+          "level": 2,
+          "text": "Q-007 Bots At Launch"
+        },
+        {
+          "level": 2,
+          "text": "Q-008 Map Order"
+        },
+        {
+          "level": 2,
+          "text": "Q-009 Competitive Format"
+        },
+        {
+          "level": 2,
+          "text": "Q-010 Presentation Tone"
+        },
+        {
+          "level": 1,
+          "text": "Appendix A \u2014 Machine-Readable Constants"
+        },
+        {
+          "level": 1,
+          "text": "Appendix B \u2014 Map Grammar Tags"
+        },
+        {
+          "level": 1,
+          "text": "Appendix C \u2014 Agent Reminder"
+        }
+      ],
+      "contract_ids": [
+        "C-001",
+        "C-002",
+        "C-003",
+        "C-004",
+        "C-005",
+        "C-006",
+        "C-007",
+        "C-008",
+        "C-009",
+        "C-010",
+        "C-011",
+        "M-110",
+        "M-120",
+        "M-130",
+        "M-135",
+        "M-140",
+        "M-145",
+        "M-150",
+        "M-160",
+        "M-170",
+        "M-175",
+        "M-178",
+        "M-179",
+        "M-180",
+        "M-190",
+        "M-195",
+        "M-198",
+        "M-199",
+        "P-010",
+        "P-020",
+        "P-030",
+        "P-040",
+        "P-050",
+        "P-060",
+        "P-070",
+        "P-080",
+        "P-090",
+        "P-100",
+        "P-900",
+        "P-910",
+        "P-950",
+        "S-001",
+        "S-002",
+        "S-003",
+        "S-004",
+        "S-005",
+        "S-006",
+        "S-007",
+        "S-008",
+        "S-009",
+        "S-010",
+        "S-011",
+        "S-012",
+        "S-013",
+        "S-014",
+        "S-015",
+        "S-016",
+        "S-017",
+        "S-018",
+        "S-019",
+        "S-020",
+        "S-021",
+        "S-022"
+      ],
+      "todo_markers": [
+        {
+          "line": 242,
+          "marker": "NEXT",
+          "text": "possession event occur within the next 1-2 seconds?"
+        },
+        {
+          "line": 244,
+          "marker": "NEXT",
+          "text": "collision, fumble, catch, bounce, or reset that will decide the ball."
+        },
+        {
+          "line": 268,
+          "marker": "NEXT",
+          "text": "contested collision to a better location."
+        },
+        {
+          "line": 331,
+          "marker": "NEXT",
+          "text": "."
+        },
+        {
+          "line": 885,
+          "marker": "NEXT",
+          "text": "possession event occur?"
+        },
+        {
+          "line": 935,
+          "marker": "NEXT",
+          "text": "possession event"
+        },
+        {
+          "line": 1029,
+          "marker": "NEXT",
+          "text": ""
+        },
+        {
+          "line": 1427,
+          "marker": "NEXT",
+          "text": "transfer interface."
+        },
+        {
+          "line": 1441,
+          "marker": "NEXT",
+          "text": "conflict"
+        },
+        {
+          "line": 1780,
+          "marker": "NEXT",
+          "text": "possession events"
+        },
+        {
+          "line": 1784,
+          "marker": "NEXT",
+          "text": "seconds"
+        }
+      ]
+    },
+    {
+      "path": "AGENTS.md",
+      "size_bytes": 16092,
+      "heading_count": 17,
+      "headings": [
+        {
+          "level": 1,
+          "text": "AGENTS.md"
+        },
+        {
+          "level": 2,
+          "text": "Read Order"
+        },
+        {
+          "level": 2,
+          "text": "Project Mission"
+        },
+        {
+          "level": 2,
+          "text": "User / Agent Roles"
+        },
+        {
+          "level": 2,
+          "text": "Current Priority: Map Intelligence Pipeline"
+        },
+        {
+          "level": 2,
+          "text": "Repository Layout"
+        },
+        {
+          "level": 2,
+          "text": "Maps Domain Policy"
+        },
+        {
+          "level": 2,
+          "text": "Tooling Rules"
+        },
+        {
+          "level": 2,
+          "text": "Canonical SBox And Toolkit Paths"
+        },
+        {
+          "level": 2,
+          "text": "s&box Workflow Notes"
+        },
+        {
+          "level": 2,
+          "text": "Multiplayer Authority Contract"
+        },
+        {
+          "level": 2,
+          "text": "Physics And Trigger Notes"
+        },
+        {
+          "level": 2,
+          "text": "Runtime Architecture"
+        },
+        {
+          "level": 2,
+          "text": "Generated Output Policy"
+        },
+        {
+          "level": 2,
+          "text": "Documentation Rules"
+        },
+        {
+          "level": 2,
+          "text": "Git / Repository Boundary"
+        },
+        {
+          "level": 2,
+          "text": "Validation And Reporting"
+        }
+      ],
+      "contract_ids": [],
+      "todo_markers": [
+        {
+          "line": 341,
+          "marker": "NEXT",
+          "text": "recommended step"
+        }
+      ]
+    },
+    {
+      "path": "Maps/README.md",
+      "size_bytes": 826,
+      "heading_count": 1,
+      "headings": [
+        {
+          "level": 1,
+          "text": "EFT2 Maps"
+        }
+      ],
+      "contract_ids": [],
+      "todo_markers": []
+    },
+    {
+      "path": "Tools/Indexer/README.md",
+      "size_bytes": 5108,
+      "heading_count": 9,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Tools/Indexer"
+        },
+        {
+          "level": 2,
+          "text": "Purpose"
+        },
+        {
+          "level": 2,
+          "text": "What it reads"
+        },
+        {
+          "level": 2,
+          "text": "What it writes"
+        },
+        {
+          "level": 2,
+          "text": "Safety policy"
+        },
+        {
+          "level": 2,
+          "text": "Commands"
+        },
+        {
+          "level": 2,
+          "text": "Usage pattern"
+        },
+        {
+          "level": 2,
+          "text": "Relationship to other tools"
+        },
+        {
+          "level": 2,
+          "text": "Implementation notes"
+        }
+      ],
+      "contract_ids": [],
+      "todo_markers": [
+        {
+          "line": 50,
+          "marker": "TODO",
+          "text": "markers in contract docs"
+        },
+        {
+          "line": 104,
+          "marker": "NEXT",
+          "text": "task."
+        },
+        {
+          "line": 124,
+          "marker": "NEXT",
+          "text": "."
+        }
+      ]
+    },
+    {
+      "path": "Tools/Map Analyzer/README.md",
+      "size_bytes": 3272,
+      "heading_count": 6,
+      "headings": [
+        {
+          "level": 1,
+          "text": "EFT2 Map Analyzer"
+        },
+        {
+          "level": 2,
+          "text": "Commands"
+        },
+        {
+          "level": 2,
+          "text": "Output"
+        },
+        {
+          "level": 2,
+          "text": "Recast Status"
+        },
+        {
+          "level": 2,
+          "text": "Validation Targets"
+        },
+        {
+          "level": 2,
+          "text": "Known Limits"
+        }
+      ],
+      "contract_ids": [],
+      "todo_markers": []
+    }
+  ],
+  "file_count": 5
+}

@@ -1,0 +1,5754 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Legoland",
+  "source_vmf": "Maps/Legoland/Legoland.vmf",
+  "original_filename": "eft_legoland_v2.vmf",
+  "generated_at": "2026-05-08T15:27:11.508764+00:00",
+  "status": "brush_plane_mesh",
+  "solid_count": 155,
+  "reconstructed_solids": 155,
+  "partial_solids": 0,
+  "failed_solids": 0,
+  "triangle_count": 1756,
+  "solids": [
+    {
+      "solid_id": 8169,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1888.0,
+          -512.0,
+          -32.0
+        ],
+        "max": [
+          4288.0,
+          1536.0,
+          0.0
+        ],
+        "center": [
+          3088.0,
+          512.0,
+          -16.0
+        ],
+        "size": [
+          2400.0,
+          2048.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          0.0
+        ],
+        "aabb_volume": 157286400.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 1006,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          768.0,
+          256.0,
+          -0.0
+        ],
+        "max": [
+          992.0,
+          768.0,
+          128.0
+        ],
+        "center": [
+          880.0,
+          512.0,
+          64.0
+        ],
+        "size": [
+          224.0,
+          512.0,
+          128.0
+        ],
+        "z_range": [
+          -0.0,
+          128.0
+        ],
+        "aabb_volume": 14680064.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 1007,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          672.0,
+          800.0,
+          0.0
+        ],
+        "max": [
+          992.0,
+          1504.0,
+          128.0
+        ],
+        "center": [
+          832.0,
+          1152.0,
+          64.0
+        ],
+        "size": [
+          320.0,
+          704.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 28835840.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 1010,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1664.0,
+          -480.0,
+          0.0
+        ],
+        "max": [
+          1856.0,
+          1504.0,
+          448.0
+        ],
+        "center": [
+          1760.0,
+          512.0,
+          224.0
+        ],
+        "size": [
+          192.0,
+          1984.0,
+          448.0
+        ],
+        "z_range": [
+          0.0,
+          448.0
+        ],
+        "aabb_volume": 170655744.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 8438,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          256.0,
+          256.0,
+          -512.0
+        ],
+        "max": [
+          768.0,
+          768.0,
+          -0.0
+        ],
+        "center": [
+          512.0,
+          512.0,
+          -256.0
+        ],
+        "size": [
+          512.0,
+          512.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 134217728.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 8484,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1280.0,
+          256.0,
+          128.0
+        ],
+        "max": [
+          1664.0,
+          768.0,
+          320.0
+        ],
+        "center": [
+          1472.0,
+          512.0,
+          224.0
+        ],
+        "size": [
+          384.0,
+          512.0,
+          192.0
+        ],
+        "z_range": [
+          128.0,
+          320.0
+        ],
+        "aabb_volume": 37748736.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 8701,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          1248.0,
+          256.0,
+          320.0
+        ],
+        "max": [
+          1280.0,
+          768.0,
+          336.0
+        ],
+        "center": [
+          1264.0,
+          512.0,
+          328.0
+        ],
+        "size": [
+          32.0,
+          512.0,
+          16.0
+        ],
+        "z_range": [
+          320.0,
+          336.0
+        ],
+        "aabb_volume": 262144.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 8827,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          1024.0,
+          -160.0,
+          128.0
+        ],
+        "max": [
+          1280.0,
+          224.0,
+          320.0
+        ],
+        "center": [
+          1152.0,
+          32.0,
+          224.0
+        ],
+        "size": [
+          256.0,
+          384.0,
+          192.0
+        ],
+        "z_range": [
+          128.0,
+          320.0
+        ],
+        "aabb_volume": 18874368.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 8828,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          1024.0,
+          800.0,
+          128.0
+        ],
+        "max": [
+          1280.0,
+          1184.0,
+          320.0
+        ],
+        "center": [
+          1152.0,
+          992.0,
+          224.0
+        ],
+        "size": [
+          256.0,
+          384.0,
+          192.0
+        ],
+        "z_range": [
+          128.0,
+          320.0
+        ],
+        "aabb_volume": 18874368.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 12499,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1888.0,
+          -512.0,
+          416.0
+        ],
+        "max": [
+          4288.0,
+          1536.0,
+          448.0
+        ],
+        "center": [
+          3088.0,
+          512.0,
+          432.0
+        ],
+        "size": [
+          2400.0,
+          2048.0,
+          32.0
+        ],
+        "z_range": [
+          416.0,
+          448.0
+        ],
+        "aabb_volume": 157286400.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 21510,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          256.0,
+          -576.0,
+          0.0
+        ],
+        "max": [
+          1280.0,
+          -512.0,
+          640.0
+        ],
+        "center": [
+          768.0,
+          -544.0,
+          320.0
+        ],
+        "size": [
+          1024.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 41943040.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 21976,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1280.0,
+          256.0,
+          320.0
+        ],
+        "max": [
+          1616.0,
+          768.0,
+          448.0
+        ],
+        "center": [
+          1448.0,
+          512.0,
+          384.0
+        ],
+        "size": [
+          336.0,
+          512.0,
+          128.0
+        ],
+        "z_range": [
+          320.0,
+          448.0
+        ],
+        "aabb_volume": 22020096.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 22083,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -128.0,
+          1536.0,
+          -0.0
+        ],
+        "max": [
+          256.0,
+          1600.0,
+          640.0
+        ],
+        "center": [
+          64.0,
+          1568.0,
+          320.0
+        ],
+        "size": [
+          384.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          -0.0,
+          640.0
+        ],
+        "aabb_volume": 15728640.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 22086,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -128.0,
+          -576.0,
+          0.0
+        ],
+        "max": [
+          256.0,
+          -512.0,
+          640.0
+        ],
+        "center": [
+          64.0,
+          -544.0,
+          320.0
+        ],
+        "size": [
+          384.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 15728640.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 22532,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          256.0,
+          1536.0,
+          -0.0
+        ],
+        "max": [
+          1280.0,
+          1600.0,
+          640.0
+        ],
+        "center": [
+          768.0,
+          1568.0,
+          320.0
+        ],
+        "size": [
+          1024.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          -0.0,
+          640.0
+        ],
+        "aabb_volume": 41943040.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 22533,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1280.0,
+          1536.0,
+          -0.0
+        ],
+        "max": [
+          4528.0,
+          1600.0,
+          640.0
+        ],
+        "center": [
+          2904.0,
+          1568.0,
+          320.0
+        ],
+        "size": [
+          3248.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          -0.0,
+          640.0
+        ],
+        "aabb_volume": 133038080.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 22566,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1248.0,
+          768.0,
+          -512.0
+        ],
+        "max": [
+          224.0,
+          1024.0,
+          0.0
+        ],
+        "center": [
+          -512.0,
+          896.0,
+          -256.0
+        ],
+        "size": [
+          1472.0,
+          256.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          0.0
+        ],
+        "aabb_volume": 192937984.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 22567,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1280.0,
+          288.0,
+          -512.0
+        ],
+        "max": [
+          256.0,
+          736.0,
+          -0.0
+        ],
+        "center": [
+          -512.0,
+          512.0,
+          -256.0
+        ],
+        "size": [
+          1536.0,
+          448.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 352321536.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 22568,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1248.0,
+          0.0,
+          -512.0
+        ],
+        "max": [
+          224.0,
+          256.0,
+          -0.0
+        ],
+        "center": [
+          -512.0,
+          128.0,
+          -256.0
+        ],
+        "size": [
+          1472.0,
+          256.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 192937984.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 22569,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1248.0,
+          -320.0,
+          -512.0
+        ],
+        "max": [
+          224.0,
+          -0.0,
+          -0.0
+        ],
+        "center": [
+          -512.0,
+          -160.0,
+          -256.0
+        ],
+        "size": [
+          1472.0,
+          320.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 241172480.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 25673,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1280.0,
+          -576.0,
+          0.0
+        ],
+        "max": [
+          4528.0,
+          -512.0,
+          640.0
+        ],
+        "center": [
+          2904.0,
+          -544.0,
+          320.0
+        ],
+        "size": [
+          3248.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 133038080.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 25803,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          4528.0,
+          -992.0,
+          640.0
+        ],
+        "max": [
+          4592.0,
+          2016.0,
+          1872.0
+        ],
+        "center": [
+          4560.0,
+          512.0,
+          1256.0
+        ],
+        "size": [
+          64.0,
+          3008.0,
+          1232.0
+        ],
+        "z_range": [
+          640.0,
+          1872.0
+        ],
+        "aabb_volume": 237174784.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 25990,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          4288.0,
+          -512.0,
+          -0.0
+        ],
+        "max": [
+          4528.0,
+          1536.0,
+          640.0
+        ],
+        "center": [
+          4408.0,
+          512.0,
+          320.0
+        ],
+        "size": [
+          240.0,
+          2048.0,
+          640.0
+        ],
+        "z_range": [
+          -0.0,
+          640.0
+        ],
+        "aabb_volume": 314572800.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 26035,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -5552.0,
+          2016.0,
+          640.0
+        ],
+        "max": [
+          4528.0,
+          2080.0,
+          1872.0
+        ],
+        "center": [
+          -512.0,
+          2048.0,
+          1256.0
+        ],
+        "size": [
+          10080.0,
+          64.0,
+          1232.0
+        ],
+        "z_range": [
+          640.0,
+          1872.0
+        ],
+        "aabb_volume": 794787840.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 26036,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -5552.0,
+          -1056.0,
+          640.0
+        ],
+        "max": [
+          4528.0,
+          -992.0,
+          1872.0
+        ],
+        "center": [
+          -512.0,
+          -1024.0,
+          1256.0
+        ],
+        "size": [
+          10080.0,
+          64.0,
+          1232.0
+        ],
+        "z_range": [
+          640.0,
+          1872.0
+        ],
+        "aabb_volume": 794787840.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 28091,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2880.0,
+          -480.0,
+          0.0
+        ],
+        "max": [
+          -2688.0,
+          1504.0,
+          448.0
+        ],
+        "center": [
+          -2784.0,
+          512.0,
+          224.0
+        ],
+        "size": [
+          192.0,
+          1984.0,
+          448.0
+        ],
+        "z_range": [
+          0.0,
+          448.0
+        ],
+        "aabb_volume": 170655744.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 28092,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1792.0,
+          256.0,
+          -512.0
+        ],
+        "max": [
+          -1280.0,
+          768.0,
+          -0.0
+        ],
+        "center": [
+          -1536.0,
+          512.0,
+          -256.0
+        ],
+        "size": [
+          512.0,
+          512.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 134217728.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 28093,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2688.0,
+          256.0,
+          128.0
+        ],
+        "max": [
+          -2304.0,
+          768.0,
+          320.0
+        ],
+        "center": [
+          -2496.0,
+          512.0,
+          224.0
+        ],
+        "size": [
+          384.0,
+          512.0,
+          192.0
+        ],
+        "z_range": [
+          128.0,
+          320.0
+        ],
+        "aabb_volume": 37748736.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 28096,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          -2304.0,
+          256.0,
+          320.0
+        ],
+        "max": [
+          -2272.0,
+          768.0,
+          336.0
+        ],
+        "center": [
+          -2288.0,
+          512.0,
+          328.0
+        ],
+        "size": [
+          32.0,
+          512.0,
+          16.0
+        ],
+        "z_range": [
+          320.0,
+          336.0
+        ],
+        "aabb_volume": 262144.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 28099,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -5312.0,
+          -512.0,
+          416.0
+        ],
+        "max": [
+          -2912.0,
+          1536.0,
+          448.0
+        ],
+        "center": [
+          -4112.0,
+          512.0,
+          432.0
+        ],
+        "size": [
+          2400.0,
+          2048.0,
+          32.0
+        ],
+        "z_range": [
+          416.0,
+          448.0
+        ],
+        "aabb_volume": 157286400.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 28314,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2304.0,
+          -576.0,
+          0.0
+        ],
+        "max": [
+          -1280.0,
+          -512.0,
+          640.0
+        ],
+        "center": [
+          -1792.0,
+          -544.0,
+          320.0
+        ],
+        "size": [
+          1024.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 41943040.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 28363,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2640.0,
+          256.0,
+          320.0
+        ],
+        "max": [
+          -2304.0,
+          768.0,
+          448.0
+        ],
+        "center": [
+          -2472.0,
+          512.0,
+          384.0
+        ],
+        "size": [
+          336.0,
+          512.0,
+          128.0
+        ],
+        "z_range": [
+          320.0,
+          448.0
+        ],
+        "aabb_volume": 22020096.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 28364,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2304.0,
+          1536.0,
+          0.0
+        ],
+        "max": [
+          -1280.0,
+          1600.0,
+          640.0
+        ],
+        "center": [
+          -1792.0,
+          1568.0,
+          320.0
+        ],
+        "size": [
+          1024.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 41943040.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 28365,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -5552.0,
+          1536.0,
+          0.0
+        ],
+        "max": [
+          -2304.0,
+          1600.0,
+          640.0
+        ],
+        "center": [
+          -3928.0,
+          1568.0,
+          320.0
+        ],
+        "size": [
+          3248.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 133038080.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 28366,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1248.0,
+          1024.0,
+          -512.0
+        ],
+        "max": [
+          224.0,
+          1344.0,
+          0.0
+        ],
+        "center": [
+          -512.0,
+          1184.0,
+          -256.0
+        ],
+        "size": [
+          1472.0,
+          320.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          0.0
+        ],
+        "aabb_volume": 241172480.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 28373,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -5552.0,
+          -576.0,
+          0.0
+        ],
+        "max": [
+          -2304.0,
+          -512.0,
+          640.0
+        ],
+        "center": [
+          -3928.0,
+          -544.0,
+          320.0
+        ],
+        "size": [
+          3248.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 133038080.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 28375,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -5552.0,
+          -512.0,
+          0.0
+        ],
+        "max": [
+          -5312.0,
+          1536.0,
+          640.0
+        ],
+        "center": [
+          -5432.0,
+          512.0,
+          320.0
+        ],
+        "size": [
+          240.0,
+          2048.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 314572800.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 28958,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1280.0,
+          1536.0,
+          0.0
+        ],
+        "max": [
+          -896.0,
+          1600.0,
+          640.0
+        ],
+        "center": [
+          -1088.0,
+          1568.0,
+          320.0
+        ],
+        "size": [
+          384.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 15728640.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 28959,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1280.0,
+          -576.0,
+          0.0
+        ],
+        "max": [
+          -896.0,
+          -512.0,
+          640.0
+        ],
+        "center": [
+          -1088.0,
+          -544.0,
+          320.0
+        ],
+        "size": [
+          384.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 15728640.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 29550,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -896.0,
+          1536.0,
+          0.0
+        ],
+        "max": [
+          -576.0,
+          1600.0,
+          640.0
+        ],
+        "center": [
+          -736.0,
+          1568.0,
+          320.0
+        ],
+        "size": [
+          320.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 13107200.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 29551,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -576.0,
+          1536.0,
+          -0.0
+        ],
+        "max": [
+          -448.0,
+          1600.0,
+          640.0
+        ],
+        "center": [
+          -512.0,
+          1568.0,
+          320.0
+        ],
+        "size": [
+          128.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          -0.0,
+          640.0
+        ],
+        "aabb_volume": 5242880.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 29552,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -448.0,
+          1536.0,
+          -0.0
+        ],
+        "max": [
+          -128.0,
+          1600.0,
+          640.0
+        ],
+        "center": [
+          -288.0,
+          1568.0,
+          320.0
+        ],
+        "size": [
+          320.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          -0.0,
+          640.0
+        ],
+        "aabb_volume": 13107200.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 29553,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -896.0,
+          -576.0,
+          0.0
+        ],
+        "max": [
+          -576.0,
+          -512.0,
+          640.0
+        ],
+        "center": [
+          -736.0,
+          -544.0,
+          320.0
+        ],
+        "size": [
+          320.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 13107200.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 29554,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -576.0,
+          -576.0,
+          0.0
+        ],
+        "max": [
+          -448.0,
+          -512.0,
+          640.0
+        ],
+        "center": [
+          -512.0,
+          -544.0,
+          320.0
+        ],
+        "size": [
+          128.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 5242880.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 29555,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -448.0,
+          -576.0,
+          0.0
+        ],
+        "max": [
+          -128.0,
+          -512.0,
+          640.0
+        ],
+        "center": [
+          -288.0,
+          -544.0,
+          320.0
+        ],
+        "size": [
+          320.0,
+          64.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 13107200.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 29636,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -5616.0,
+          -992.0,
+          640.0
+        ],
+        "max": [
+          -5552.0,
+          2016.0,
+          1872.0
+        ],
+        "center": [
+          -5584.0,
+          512.0,
+          1256.0
+        ],
+        "size": [
+          64.0,
+          3008.0,
+          1232.0
+        ],
+        "z_range": [
+          640.0,
+          1872.0
+        ],
+        "aabb_volume": 237174784.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 29757,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          -1728.0,
+          256.0,
+          0.0
+        ],
+        "max": [
+          -1216.0,
+          768.0,
+          128.0
+        ],
+        "center": [
+          -1472.0,
+          512.0,
+          64.0
+        ],
+        "size": [
+          512.0,
+          512.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 33554432.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 29758,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          192.0,
+          256.0,
+          -0.0
+        ],
+        "max": [
+          704.0,
+          768.0,
+          128.0
+        ],
+        "center": [
+          448.0,
+          512.0,
+          64.0
+        ],
+        "size": [
+          512.0,
+          512.0,
+          128.0
+        ],
+        "z_range": [
+          -0.0,
+          128.0
+        ],
+        "aabb_volume": 33554432.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 29893,
+      "status": "ok",
+      "vertex_count": 5,
+      "face_count": 5,
+      "triangle_count": 6,
+      "bounds": {
+        "min": [
+          -1280.0,
+          224.0,
+          -0.0
+        ],
+        "max": [
+          -1216.0,
+          256.0,
+          16.0
+        ],
+        "center": [
+          -1248.0,
+          240.0,
+          8.0
+        ],
+        "size": [
+          64.0,
+          32.0,
+          16.0
+        ],
+        "z_range": [
+          -0.0,
+          16.0
+        ],
+        "aabb_volume": 32768.0,
+        "source_point_count": 5,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 29965,
+      "status": "ok",
+      "vertex_count": 5,
+      "face_count": 5,
+      "triangle_count": 6,
+      "bounds": {
+        "min": [
+          -1280.0,
+          768.0,
+          0.0
+        ],
+        "max": [
+          -1216.0,
+          800.0,
+          16.0
+        ],
+        "center": [
+          -1248.0,
+          784.0,
+          8.0
+        ],
+        "size": [
+          64.0,
+          32.0,
+          16.0
+        ],
+        "z_range": [
+          0.0,
+          16.0
+        ],
+        "aabb_volume": 32768.0,
+        "source_point_count": 5,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 29968,
+      "status": "ok",
+      "vertex_count": 5,
+      "face_count": 5,
+      "triangle_count": 6,
+      "bounds": {
+        "min": [
+          192.0,
+          768.0,
+          -0.0
+        ],
+        "max": [
+          256.0,
+          800.0,
+          16.0
+        ],
+        "center": [
+          224.0,
+          784.0,
+          8.0
+        ],
+        "size": [
+          64.0,
+          32.0,
+          16.0
+        ],
+        "z_range": [
+          -0.0,
+          16.0
+        ],
+        "aabb_volume": 32768.0,
+        "source_point_count": 5,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 29969,
+      "status": "ok",
+      "vertex_count": 5,
+      "face_count": 5,
+      "triangle_count": 6,
+      "bounds": {
+        "min": [
+          192.0,
+          224.0,
+          0.0
+        ],
+        "max": [
+          256.0,
+          256.0,
+          16.0
+        ],
+        "center": [
+          224.0,
+          240.0,
+          8.0
+        ],
+        "size": [
+          64.0,
+          32.0,
+          16.0
+        ],
+        "z_range": [
+          0.0,
+          16.0
+        ],
+        "aabb_volume": 32768.0,
+        "source_point_count": 5,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 30005,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1536.0,
+          -992.0,
+          0.0
+        ],
+        "max": [
+          512.0,
+          -576.0,
+          640.0
+        ],
+        "center": [
+          -512.0,
+          -784.0,
+          320.0
+        ],
+        "size": [
+          2048.0,
+          416.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 545259520.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 30009,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -5552.0,
+          1600.0,
+          -0.0
+        ],
+        "max": [
+          512.0,
+          2016.0,
+          640.0
+        ],
+        "center": [
+          -2520.0,
+          1808.0,
+          320.0
+        ],
+        "size": [
+          6064.0,
+          416.0,
+          640.0
+        ],
+        "z_range": [
+          -0.0,
+          640.0
+        ],
+        "aabb_volume": 1614479360.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 30013,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -5552.0,
+          -992.0,
+          1872.0
+        ],
+        "max": [
+          4528.0,
+          2016.0,
+          1936.0
+        ],
+        "center": [
+          -512.0,
+          512.0,
+          1904.0
+        ],
+        "size": [
+          10080.0,
+          3008.0,
+          64.0
+        ],
+        "z_range": [
+          1872.0,
+          1936.0
+        ],
+        "aabb_volume": 1940520960.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 30698,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          512.0,
+          1600.0,
+          -0.0
+        ],
+        "max": [
+          4528.0,
+          2016.0,
+          640.0
+        ],
+        "center": [
+          2520.0,
+          1808.0,
+          320.0
+        ],
+        "size": [
+          4016.0,
+          416.0,
+          640.0
+        ],
+        "z_range": [
+          -0.0,
+          640.0
+        ],
+        "aabb_volume": 1069219840.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 30806,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          512.0,
+          -992.0,
+          -0.0
+        ],
+        "max": [
+          4528.0,
+          -576.0,
+          640.0
+        ],
+        "center": [
+          2520.0,
+          -784.0,
+          320.0
+        ],
+        "size": [
+          4016.0,
+          416.0,
+          640.0
+        ],
+        "z_range": [
+          -0.0,
+          640.0
+        ],
+        "aabb_volume": 1069219840.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 30821,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -5552.0,
+          -992.0,
+          0.0
+        ],
+        "max": [
+          -1536.0,
+          -576.0,
+          640.0
+        ],
+        "center": [
+          -3544.0,
+          -784.0,
+          320.0
+        ],
+        "size": [
+          4016.0,
+          416.0,
+          640.0
+        ],
+        "z_range": [
+          0.0,
+          640.0
+        ],
+        "aabb_volume": 1069219840.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 30939,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -5552.0,
+          -576.0,
+          640.0
+        ],
+        "max": [
+          4288.0,
+          -512.0,
+          1872.0
+        ],
+        "center": [
+          -632.0,
+          -544.0,
+          1256.0
+        ],
+        "size": [
+          9840.0,
+          64.0,
+          1232.0
+        ],
+        "z_range": [
+          640.0,
+          1872.0
+        ],
+        "aabb_volume": 775864320.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 30951,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -5552.0,
+          1536.0,
+          640.0
+        ],
+        "max": [
+          4288.0,
+          1600.0,
+          1872.0
+        ],
+        "center": [
+          -632.0,
+          1568.0,
+          1256.0
+        ],
+        "size": [
+          9840.0,
+          64.0,
+          1232.0
+        ],
+        "z_range": [
+          640.0,
+          1872.0
+        ],
+        "aabb_volume": 775864320.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 30963,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          4288.0,
+          -512.0,
+          640.0
+        ],
+        "max": [
+          4528.0,
+          1536.0,
+          1872.0
+        ],
+        "center": [
+          4408.0,
+          512.0,
+          1256.0
+        ],
+        "size": [
+          240.0,
+          2048.0,
+          1232.0
+        ],
+        "z_range": [
+          640.0,
+          1872.0
+        ],
+        "aabb_volume": 605552640.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 30966,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -5552.0,
+          -512.0,
+          640.0
+        ],
+        "max": [
+          -5312.0,
+          1536.0,
+          1872.0
+        ],
+        "center": [
+          -5432.0,
+          512.0,
+          1256.0
+        ],
+        "size": [
+          240.0,
+          2048.0,
+          1232.0
+        ],
+        "z_range": [
+          640.0,
+          1872.0
+        ],
+        "aabb_volume": 605552640.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 31414,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -5312.0,
+          -512.0,
+          -32.0
+        ],
+        "max": [
+          -2912.0,
+          1536.0,
+          -0.0
+        ],
+        "center": [
+          -4112.0,
+          512.0,
+          -16.0
+        ],
+        "size": [
+          2400.0,
+          2048.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 157286400.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34129,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          -448.0,
+          1376.0,
+          256.0
+        ],
+        "max": [
+          -416.0,
+          1536.0,
+          272.0
+        ],
+        "center": [
+          -432.0,
+          1456.0,
+          264.0
+        ],
+        "size": [
+          32.0,
+          160.0,
+          16.0
+        ],
+        "z_range": [
+          256.0,
+          272.0
+        ],
+        "aabb_volume": 81920.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34130,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          -608.0,
+          1376.0,
+          256.0
+        ],
+        "max": [
+          -576.0,
+          1536.0,
+          272.0
+        ],
+        "center": [
+          -592.0,
+          1456.0,
+          264.0
+        ],
+        "size": [
+          32.0,
+          160.0,
+          16.0
+        ],
+        "z_range": [
+          256.0,
+          272.0
+        ],
+        "aabb_volume": 81920.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34237,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1312.0,
+          768.0,
+          0.0
+        ],
+        "max": [
+          -1280.0,
+          1504.0,
+          128.0
+        ],
+        "center": [
+          -1296.0,
+          1136.0,
+          64.0
+        ],
+        "size": [
+          32.0,
+          736.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 3014656.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34317,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          256.0,
+          1504.0,
+          0.0
+        ],
+        "max": [
+          1248.0,
+          1536.0,
+          128.0
+        ],
+        "center": [
+          752.0,
+          1520.0,
+          64.0
+        ],
+        "size": [
+          992.0,
+          32.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 4063232.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34319,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          256.0,
+          768.0,
+          0.0
+        ],
+        "max": [
+          288.0,
+          1504.0,
+          128.0
+        ],
+        "center": [
+          272.0,
+          1136.0,
+          64.0
+        ],
+        "size": [
+          32.0,
+          736.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 3014656.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34343,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1792.0,
+          768.0,
+          0.0
+        ],
+        "max": [
+          -1312.0,
+          800.0,
+          128.0
+        ],
+        "center": [
+          -1552.0,
+          784.0,
+          64.0
+        ],
+        "size": [
+          480.0,
+          32.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 1966080.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34358,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1248.0,
+          -480.0,
+          0.0
+        ],
+        "max": [
+          1280.0,
+          1536.0,
+          128.0
+        ],
+        "center": [
+          1264.0,
+          528.0,
+          64.0
+        ],
+        "size": [
+          32.0,
+          2016.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 8257536.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34373,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          288.0,
+          768.0,
+          -0.0
+        ],
+        "max": [
+          768.0,
+          800.0,
+          128.0
+        ],
+        "center": [
+          528.0,
+          784.0,
+          64.0
+        ],
+        "size": [
+          480.0,
+          32.0,
+          128.0
+        ],
+        "z_range": [
+          -0.0,
+          128.0
+        ],
+        "aabb_volume": 1966080.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34374,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          768.0,
+          768.0,
+          0.0
+        ],
+        "max": [
+          992.0,
+          800.0,
+          128.0
+        ],
+        "center": [
+          880.0,
+          784.0,
+          64.0
+        ],
+        "size": [
+          224.0,
+          32.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 917504.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34608,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1312.0,
+          -480.0,
+          0.0
+        ],
+        "max": [
+          -1280.0,
+          256.0,
+          128.0
+        ],
+        "center": [
+          -1296.0,
+          -112.0,
+          64.0
+        ],
+        "size": [
+          32.0,
+          736.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 3014656.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34609,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1792.0,
+          224.0,
+          -0.0
+        ],
+        "max": [
+          -1312.0,
+          256.0,
+          128.0
+        ],
+        "center": [
+          -1552.0,
+          240.0,
+          64.0
+        ],
+        "size": [
+          480.0,
+          32.0,
+          128.0
+        ],
+        "z_range": [
+          -0.0,
+          128.0
+        ],
+        "aabb_volume": 1966080.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34734,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          256.0,
+          -512.0,
+          0.0
+        ],
+        "max": [
+          288.0,
+          224.0,
+          128.0
+        ],
+        "center": [
+          272.0,
+          -144.0,
+          64.0
+        ],
+        "size": [
+          32.0,
+          736.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 3014656.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34735,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          288.0,
+          -512.0,
+          -0.0
+        ],
+        "max": [
+          1280.0,
+          -480.0,
+          128.0
+        ],
+        "center": [
+          784.0,
+          -496.0,
+          64.0
+        ],
+        "size": [
+          992.0,
+          32.0,
+          128.0
+        ],
+        "z_range": [
+          -0.0,
+          128.0
+        ],
+        "aabb_volume": 4063232.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34783,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          256.0,
+          224.0,
+          -0.0
+        ],
+        "max": [
+          768.0,
+          256.0,
+          128.0
+        ],
+        "center": [
+          512.0,
+          240.0,
+          64.0
+        ],
+        "size": [
+          512.0,
+          32.0,
+          128.0
+        ],
+        "z_range": [
+          -0.0,
+          128.0
+        ],
+        "aabb_volume": 2097152.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34784,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          768.0,
+          224.0,
+          0.0
+        ],
+        "max": [
+          992.0,
+          256.0,
+          128.0
+        ],
+        "center": [
+          880.0,
+          240.0,
+          64.0
+        ],
+        "size": [
+          224.0,
+          32.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 917504.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35411,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          -2304.0,
+          800.0,
+          128.0
+        ],
+        "max": [
+          -2048.0,
+          1184.0,
+          320.0
+        ],
+        "center": [
+          -2176.0,
+          992.0,
+          224.0
+        ],
+        "size": [
+          256.0,
+          384.0,
+          192.0
+        ],
+        "z_range": [
+          128.0,
+          320.0
+        ],
+        "aabb_volume": 18874368.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35412,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          -2304.0,
+          -160.0,
+          128.0
+        ],
+        "max": [
+          -2048.0,
+          224.0,
+          320.0
+        ],
+        "center": [
+          -2176.0,
+          32.0,
+          224.0
+        ],
+        "size": [
+          256.0,
+          384.0,
+          192.0
+        ],
+        "z_range": [
+          128.0,
+          320.0
+        ],
+        "aabb_volume": 18874368.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35537,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1248.0,
+          1344.0,
+          -512.0
+        ],
+        "max": [
+          -576.0,
+          1376.0,
+          -0.0
+        ],
+        "center": [
+          -912.0,
+          1360.0,
+          -256.0
+        ],
+        "size": [
+          672.0,
+          32.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 11010048.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35546,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -448.0,
+          1344.0,
+          -512.0
+        ],
+        "max": [
+          224.0,
+          1376.0,
+          -0.0
+        ],
+        "center": [
+          -112.0,
+          1360.0,
+          -256.0
+        ],
+        "size": [
+          672.0,
+          32.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 11010048.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35570,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -448.0,
+          -352.0,
+          -512.0
+        ],
+        "max": [
+          224.0,
+          -320.0,
+          -0.0
+        ],
+        "center": [
+          -112.0,
+          -336.0,
+          -256.0
+        ],
+        "size": [
+          672.0,
+          32.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 11010048.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35571,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1248.0,
+          -352.0,
+          -512.0
+        ],
+        "max": [
+          -576.0,
+          -320.0,
+          -0.0
+        ],
+        "center": [
+          -912.0,
+          -336.0,
+          -256.0
+        ],
+        "size": [
+          672.0,
+          32.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 11010048.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35593,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1280.0,
+          1504.0,
+          -0.0
+        ],
+        "max": [
+          1888.0,
+          1536.0,
+          448.0
+        ],
+        "center": [
+          1584.0,
+          1520.0,
+          224.0
+        ],
+        "size": [
+          608.0,
+          32.0,
+          448.0
+        ],
+        "z_range": [
+          -0.0,
+          448.0
+        ],
+        "aabb_volume": 8716288.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35606,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1280.0,
+          -512.0,
+          -0.0
+        ],
+        "max": [
+          1888.0,
+          -480.0,
+          448.0
+        ],
+        "center": [
+          1584.0,
+          -496.0,
+          224.0
+        ],
+        "size": [
+          608.0,
+          32.0,
+          448.0
+        ],
+        "z_range": [
+          -0.0,
+          448.0
+        ],
+        "aabb_volume": 8716288.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35616,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1856.0,
+          -480.0,
+          -0.0
+        ],
+        "max": [
+          1888.0,
+          1504.0,
+          448.0
+        ],
+        "center": [
+          1872.0,
+          512.0,
+          224.0
+        ],
+        "size": [
+          32.0,
+          1984.0,
+          448.0
+        ],
+        "z_range": [
+          -0.0,
+          448.0
+        ],
+        "aabb_volume": 28442624.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35656,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2912.0,
+          -512.0,
+          -0.0
+        ],
+        "max": [
+          -2304.0,
+          -480.0,
+          448.0
+        ],
+        "center": [
+          -2608.0,
+          -496.0,
+          224.0
+        ],
+        "size": [
+          608.0,
+          32.0,
+          448.0
+        ],
+        "z_range": [
+          -0.0,
+          448.0
+        ],
+        "aabb_volume": 8716288.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35657,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2912.0,
+          -480.0,
+          -0.0
+        ],
+        "max": [
+          -2880.0,
+          1504.0,
+          448.0
+        ],
+        "center": [
+          -2896.0,
+          512.0,
+          224.0
+        ],
+        "size": [
+          32.0,
+          1984.0,
+          448.0
+        ],
+        "z_range": [
+          -0.0,
+          448.0
+        ],
+        "aabb_volume": 28442624.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35658,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2912.0,
+          1504.0,
+          -0.0
+        ],
+        "max": [
+          -2304.0,
+          1536.0,
+          448.0
+        ],
+        "center": [
+          -2608.0,
+          1520.0,
+          224.0
+        ],
+        "size": [
+          608.0,
+          32.0,
+          448.0
+        ],
+        "z_range": [
+          -0.0,
+          448.0
+        ],
+        "aabb_volume": 8716288.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34075,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1280.0,
+          1376.0,
+          0.0
+        ],
+        "max": [
+          -576.0,
+          1536.0,
+          256.0
+        ],
+        "center": [
+          -928.0,
+          1456.0,
+          128.0
+        ],
+        "size": [
+          704.0,
+          160.0,
+          256.0
+        ],
+        "z_range": [
+          0.0,
+          256.0
+        ],
+        "aabb_volume": 28835840.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 33971,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -576.0,
+          1376.0,
+          0.0
+        ],
+        "max": [
+          -448.0,
+          1536.0,
+          256.0
+        ],
+        "center": [
+          -512.0,
+          1456.0,
+          128.0
+        ],
+        "size": [
+          128.0,
+          160.0,
+          256.0
+        ],
+        "z_range": [
+          0.0,
+          256.0
+        ],
+        "aabb_volume": 5242880.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 34077,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -448.0,
+          1376.0,
+          -0.0
+        ],
+        "max": [
+          256.0,
+          1536.0,
+          256.0
+        ],
+        "center": [
+          -96.0,
+          1456.0,
+          128.0
+        ],
+        "size": [
+          704.0,
+          160.0,
+          256.0
+        ],
+        "z_range": [
+          -0.0,
+          256.0
+        ],
+        "aabb_volume": 28835840.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35905,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1280.0,
+          768.0,
+          -512.0
+        ],
+        "max": [
+          -1248.0,
+          1376.0,
+          0.0
+        ],
+        "center": [
+          -1264.0,
+          1072.0,
+          -256.0
+        ],
+        "size": [
+          32.0,
+          608.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          0.0
+        ],
+        "aabb_volume": 9961472.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35910,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          224.0,
+          768.0,
+          -512.0
+        ],
+        "max": [
+          256.0,
+          1376.0,
+          -0.0
+        ],
+        "center": [
+          240.0,
+          1072.0,
+          -256.0
+        ],
+        "size": [
+          32.0,
+          608.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 9961472.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35922,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -576.0,
+          1344.0,
+          -512.0
+        ],
+        "max": [
+          -448.0,
+          1376.0,
+          -0.0
+        ],
+        "center": [
+          -512.0,
+          1360.0,
+          -256.0
+        ],
+        "size": [
+          128.0,
+          32.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 2097152.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35947,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -576.0,
+          -352.0,
+          -512.0
+        ],
+        "max": [
+          -448.0,
+          -320.0,
+          0.0
+        ],
+        "center": [
+          -512.0,
+          -336.0,
+          -256.0
+        ],
+        "size": [
+          128.0,
+          32.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          0.0
+        ],
+        "aabb_volume": 2097152.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35957,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1280.0,
+          -352.0,
+          -512.0
+        ],
+        "max": [
+          -1248.0,
+          256.0,
+          -0.0
+        ],
+        "center": [
+          -1264.0,
+          -48.0,
+          -256.0
+        ],
+        "size": [
+          32.0,
+          608.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 9961472.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 35958,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          224.0,
+          -352.0,
+          -512.0
+        ],
+        "max": [
+          256.0,
+          256.0,
+          0.0
+        ],
+        "center": [
+          240.0,
+          -48.0,
+          -256.0
+        ],
+        "size": [
+          32.0,
+          608.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          0.0
+        ],
+        "aabb_volume": 9961472.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 36204,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1280.0,
+          -512.0,
+          0.0
+        ],
+        "max": [
+          -576.0,
+          -352.0,
+          256.0
+        ],
+        "center": [
+          -928.0,
+          -432.0,
+          128.0
+        ],
+        "size": [
+          704.0,
+          160.0,
+          256.0
+        ],
+        "z_range": [
+          0.0,
+          256.0
+        ],
+        "aabb_volume": 28835840.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 36205,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -448.0,
+          -512.0,
+          0.0
+        ],
+        "max": [
+          256.0,
+          -352.0,
+          256.0
+        ],
+        "center": [
+          -96.0,
+          -432.0,
+          128.0
+        ],
+        "size": [
+          704.0,
+          160.0,
+          256.0
+        ],
+        "z_range": [
+          0.0,
+          256.0
+        ],
+        "aabb_volume": 28835840.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 36206,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -576.0,
+          -512.0,
+          0.0
+        ],
+        "max": [
+          -448.0,
+          -352.0,
+          256.0
+        ],
+        "center": [
+          -512.0,
+          -432.0,
+          128.0
+        ],
+        "size": [
+          128.0,
+          160.0,
+          256.0
+        ],
+        "z_range": [
+          0.0,
+          256.0
+        ],
+        "aabb_volume": 5242880.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 36213,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          -448.0,
+          -512.0,
+          256.0
+        ],
+        "max": [
+          -416.0,
+          -352.0,
+          272.0
+        ],
+        "center": [
+          -432.0,
+          -432.0,
+          264.0
+        ],
+        "size": [
+          32.0,
+          160.0,
+          16.0
+        ],
+        "z_range": [
+          256.0,
+          272.0
+        ],
+        "aabb_volume": 81920.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 36214,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          -608.0,
+          -512.0,
+          256.0
+        ],
+        "max": [
+          -576.0,
+          -352.0,
+          272.0
+        ],
+        "center": [
+          -592.0,
+          -432.0,
+          264.0
+        ],
+        "size": [
+          32.0,
+          160.0,
+          16.0
+        ],
+        "z_range": [
+          256.0,
+          272.0
+        ],
+        "aabb_volume": 81920.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 36691,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          416.0,
+          1120.0,
+          128.0
+        ],
+        "max": [
+          672.0,
+          1536.0,
+          256.0
+        ],
+        "center": [
+          544.0,
+          1328.0,
+          192.0
+        ],
+        "size": [
+          256.0,
+          416.0,
+          128.0
+        ],
+        "z_range": [
+          128.0,
+          256.0
+        ],
+        "aabb_volume": 13631488.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 36692,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          256.0,
+          1120.0,
+          128.0
+        ],
+        "max": [
+          672.0,
+          1376.0,
+          256.0
+        ],
+        "center": [
+          464.0,
+          1248.0,
+          192.0
+        ],
+        "size": [
+          416.0,
+          256.0,
+          128.0
+        ],
+        "z_range": [
+          128.0,
+          256.0
+        ],
+        "aabb_volume": 13631488.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37063,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          256.0,
+          -352.0,
+          128.0
+        ],
+        "max": [
+          672.0,
+          -96.0,
+          256.0
+        ],
+        "center": [
+          464.0,
+          -224.0,
+          192.0
+        ],
+        "size": [
+          416.0,
+          256.0,
+          128.0
+        ],
+        "z_range": [
+          128.0,
+          256.0
+        ],
+        "aabb_volume": 13631488.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37064,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          416.0,
+          -512.0,
+          128.0
+        ],
+        "max": [
+          672.0,
+          -96.0,
+          256.0
+        ],
+        "center": [
+          544.0,
+          -304.0,
+          192.0
+        ],
+        "size": [
+          256.0,
+          416.0,
+          128.0
+        ],
+        "z_range": [
+          128.0,
+          256.0
+        ],
+        "aabb_volume": 13631488.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37071,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          -1696.0,
+          -352.0,
+          128.0
+        ],
+        "max": [
+          -1280.0,
+          -96.0,
+          256.0
+        ],
+        "center": [
+          -1488.0,
+          -224.0,
+          192.0
+        ],
+        "size": [
+          416.0,
+          256.0,
+          128.0
+        ],
+        "z_range": [
+          128.0,
+          256.0
+        ],
+        "aabb_volume": 13631488.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37072,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          -1696.0,
+          -512.0,
+          128.0
+        ],
+        "max": [
+          -1440.0,
+          -96.0,
+          256.0
+        ],
+        "center": [
+          -1568.0,
+          -304.0,
+          192.0
+        ],
+        "size": [
+          256.0,
+          416.0,
+          128.0
+        ],
+        "z_range": [
+          128.0,
+          256.0
+        ],
+        "aabb_volume": 13631488.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37073,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          -1696.0,
+          1120.0,
+          128.0
+        ],
+        "max": [
+          -1440.0,
+          1536.0,
+          256.0
+        ],
+        "center": [
+          -1568.0,
+          1328.0,
+          192.0
+        ],
+        "size": [
+          256.0,
+          416.0,
+          128.0
+        ],
+        "z_range": [
+          128.0,
+          256.0
+        ],
+        "aabb_volume": 13631488.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37074,
+      "status": "ok",
+      "vertex_count": 6,
+      "face_count": 5,
+      "triangle_count": 8,
+      "bounds": {
+        "min": [
+          -1696.0,
+          1120.0,
+          128.0
+        ],
+        "max": [
+          -1280.0,
+          1376.0,
+          256.0
+        ],
+        "center": [
+          -1488.0,
+          1248.0,
+          192.0
+        ],
+        "size": [
+          416.0,
+          256.0,
+          128.0
+        ],
+        "z_range": [
+          128.0,
+          256.0
+        ],
+        "aabb_volume": 13631488.0,
+        "source_point_count": 6,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37205,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          992.0,
+          -160.0,
+          0.0
+        ],
+        "max": [
+          1248.0,
+          1184.0,
+          128.0
+        ],
+        "center": [
+          1120.0,
+          512.0,
+          64.0
+        ],
+        "size": [
+          256.0,
+          1344.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 44040192.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37216,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          992.0,
+          -480.0,
+          0.0
+        ],
+        "max": [
+          1248.0,
+          -160.0,
+          128.0
+        ],
+        "center": [
+          1120.0,
+          -320.0,
+          64.0
+        ],
+        "size": [
+          256.0,
+          320.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 10485760.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37222,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          992.0,
+          1184.0,
+          0.0
+        ],
+        "max": [
+          1248.0,
+          1504.0,
+          128.0
+        ],
+        "center": [
+          1120.0,
+          1344.0,
+          64.0
+        ],
+        "size": [
+          256.0,
+          320.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 10485760.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37226,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1280.0,
+          768.0,
+          128.0
+        ],
+        "max": [
+          1312.0,
+          1504.0,
+          448.0
+        ],
+        "center": [
+          1296.0,
+          1136.0,
+          288.0
+        ],
+        "size": [
+          32.0,
+          736.0,
+          320.0
+        ],
+        "z_range": [
+          128.0,
+          448.0
+        ],
+        "aabb_volume": 7536640.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37237,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1312.0,
+          768.0,
+          128.0
+        ],
+        "max": [
+          1664.0,
+          800.0,
+          448.0
+        ],
+        "center": [
+          1488.0,
+          784.0,
+          288.0
+        ],
+        "size": [
+          352.0,
+          32.0,
+          320.0
+        ],
+        "z_range": [
+          128.0,
+          448.0
+        ],
+        "aabb_volume": 3604480.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37238,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1312.0,
+          800.0,
+          128.0
+        ],
+        "max": [
+          1664.0,
+          1504.0,
+          448.0
+        ],
+        "center": [
+          1488.0,
+          1152.0,
+          288.0
+        ],
+        "size": [
+          352.0,
+          704.0,
+          320.0
+        ],
+        "z_range": [
+          128.0,
+          448.0
+        ],
+        "aabb_volume": 79298560.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37983,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2272.0,
+          1184.0,
+          0.0
+        ],
+        "max": [
+          -2016.0,
+          1504.0,
+          128.0
+        ],
+        "center": [
+          -2144.0,
+          1344.0,
+          64.0
+        ],
+        "size": [
+          256.0,
+          320.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 10485760.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37985,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2016.0,
+          256.0,
+          0.0
+        ],
+        "max": [
+          -1792.0,
+          768.0,
+          128.0
+        ],
+        "center": [
+          -1904.0,
+          512.0,
+          64.0
+        ],
+        "size": [
+          224.0,
+          512.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 14680064.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37986,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2272.0,
+          -480.0,
+          -0.0
+        ],
+        "max": [
+          -2016.0,
+          -160.0,
+          128.0
+        ],
+        "center": [
+          -2144.0,
+          -320.0,
+          64.0
+        ],
+        "size": [
+          256.0,
+          320.0,
+          128.0
+        ],
+        "z_range": [
+          -0.0,
+          128.0
+        ],
+        "aabb_volume": 10485760.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37987,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2304.0,
+          -480.0,
+          0.0
+        ],
+        "max": [
+          -2272.0,
+          1536.0,
+          128.0
+        ],
+        "center": [
+          -2288.0,
+          528.0,
+          64.0
+        ],
+        "size": [
+          32.0,
+          2016.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 8257536.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37988,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2272.0,
+          -160.0,
+          0.0
+        ],
+        "max": [
+          -2016.0,
+          1184.0,
+          128.0
+        ],
+        "center": [
+          -2144.0,
+          512.0,
+          64.0
+        ],
+        "size": [
+          256.0,
+          1344.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 44040192.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37989,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2016.0,
+          768.0,
+          0.0
+        ],
+        "max": [
+          -1792.0,
+          800.0,
+          128.0
+        ],
+        "center": [
+          -1904.0,
+          784.0,
+          64.0
+        ],
+        "size": [
+          224.0,
+          32.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 917504.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37990,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2016.0,
+          224.0,
+          0.0
+        ],
+        "max": [
+          -1792.0,
+          256.0,
+          128.0
+        ],
+        "center": [
+          -1904.0,
+          240.0,
+          64.0
+        ],
+        "size": [
+          224.0,
+          32.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 917504.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 37991,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2272.0,
+          1504.0,
+          0.0
+        ],
+        "max": [
+          -1280.0,
+          1536.0,
+          128.0
+        ],
+        "center": [
+          -1776.0,
+          1520.0,
+          64.0
+        ],
+        "size": [
+          992.0,
+          32.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 4063232.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38028,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2304.0,
+          -512.0,
+          -0.0
+        ],
+        "max": [
+          -1280.0,
+          -480.0,
+          128.0
+        ],
+        "center": [
+          -1792.0,
+          -496.0,
+          64.0
+        ],
+        "size": [
+          1024.0,
+          32.0,
+          128.0
+        ],
+        "z_range": [
+          -0.0,
+          128.0
+        ],
+        "aabb_volume": 4194304.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38051,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2688.0,
+          768.0,
+          128.0
+        ],
+        "max": [
+          -2336.0,
+          800.0,
+          448.0
+        ],
+        "center": [
+          -2512.0,
+          784.0,
+          288.0
+        ],
+        "size": [
+          352.0,
+          32.0,
+          320.0
+        ],
+        "z_range": [
+          128.0,
+          448.0
+        ],
+        "aabb_volume": 3604480.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38052,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2688.0,
+          800.0,
+          128.0
+        ],
+        "max": [
+          -2336.0,
+          1504.0,
+          448.0
+        ],
+        "center": [
+          -2512.0,
+          1152.0,
+          288.0
+        ],
+        "size": [
+          352.0,
+          704.0,
+          320.0
+        ],
+        "z_range": [
+          128.0,
+          448.0
+        ],
+        "aabb_volume": 79298560.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38053,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2336.0,
+          768.0,
+          128.0
+        ],
+        "max": [
+          -2304.0,
+          1504.0,
+          448.0
+        ],
+        "center": [
+          -2320.0,
+          1136.0,
+          288.0
+        ],
+        "size": [
+          32.0,
+          736.0,
+          320.0
+        ],
+        "z_range": [
+          128.0,
+          448.0
+        ],
+        "aabb_volume": 7536640.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38116,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -512.0,
+          736.0,
+          -512.0
+        ],
+        "max": [
+          256.0,
+          768.0,
+          -0.0
+        ],
+        "center": [
+          -128.0,
+          752.0,
+          -256.0
+        ],
+        "size": [
+          768.0,
+          32.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 12582912.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38121,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1280.0,
+          736.0,
+          -512.0
+        ],
+        "max": [
+          -512.0,
+          768.0,
+          -0.0
+        ],
+        "center": [
+          -896.0,
+          752.0,
+          -256.0
+        ],
+        "size": [
+          768.0,
+          32.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 12582912.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38125,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -512.0,
+          256.0,
+          -512.0
+        ],
+        "max": [
+          256.0,
+          288.0,
+          -0.0
+        ],
+        "center": [
+          -128.0,
+          272.0,
+          -256.0
+        ],
+        "size": [
+          768.0,
+          32.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 12582912.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38126,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1280.0,
+          256.0,
+          -512.0
+        ],
+        "max": [
+          -512.0,
+          288.0,
+          -0.0
+        ],
+        "center": [
+          -896.0,
+          272.0,
+          -256.0
+        ],
+        "size": [
+          768.0,
+          32.0,
+          512.0
+        ],
+        "z_range": [
+          -512.0,
+          -0.0
+        ],
+        "aabb_volume": 12582912.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38144,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          288.0,
+          1120.0,
+          0.0
+        ],
+        "max": [
+          640.0,
+          1504.0,
+          128.0
+        ],
+        "center": [
+          464.0,
+          1312.0,
+          64.0
+        ],
+        "size": [
+          352.0,
+          384.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 17301504.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38148,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          640.0,
+          1120.0,
+          0.0
+        ],
+        "max": [
+          672.0,
+          1504.0,
+          128.0
+        ],
+        "center": [
+          656.0,
+          1312.0,
+          64.0
+        ],
+        "size": [
+          32.0,
+          384.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 1572864.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38155,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          288.0,
+          800.0,
+          0.0
+        ],
+        "max": [
+          672.0,
+          1120.0,
+          128.0
+        ],
+        "center": [
+          480.0,
+          960.0,
+          64.0
+        ],
+        "size": [
+          384.0,
+          320.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 15728640.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38169,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          288.0,
+          -96.0,
+          0.0
+        ],
+        "max": [
+          672.0,
+          224.0,
+          128.0
+        ],
+        "center": [
+          480.0,
+          64.0,
+          64.0
+        ],
+        "size": [
+          384.0,
+          320.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 15728640.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38170,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          672.0,
+          -480.0,
+          0.0
+        ],
+        "max": [
+          992.0,
+          224.0,
+          128.0
+        ],
+        "center": [
+          832.0,
+          -128.0,
+          64.0
+        ],
+        "size": [
+          320.0,
+          704.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 28835840.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38171,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          640.0,
+          -480.0,
+          0.0
+        ],
+        "max": [
+          672.0,
+          -96.0,
+          128.0
+        ],
+        "center": [
+          656.0,
+          -288.0,
+          64.0
+        ],
+        "size": [
+          32.0,
+          384.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 1572864.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38172,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          288.0,
+          -480.0,
+          -0.0
+        ],
+        "max": [
+          640.0,
+          -96.0,
+          128.0
+        ],
+        "center": [
+          464.0,
+          -288.0,
+          64.0
+        ],
+        "size": [
+          352.0,
+          384.0,
+          128.0
+        ],
+        "z_range": [
+          -0.0,
+          128.0
+        ],
+        "aabb_volume": 17301504.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38205,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2016.0,
+          800.0,
+          0.0
+        ],
+        "max": [
+          -1696.0,
+          1504.0,
+          128.0
+        ],
+        "center": [
+          -1856.0,
+          1152.0,
+          64.0
+        ],
+        "size": [
+          320.0,
+          704.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 28835840.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38206,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1696.0,
+          1120.0,
+          -0.0
+        ],
+        "max": [
+          -1664.0,
+          1504.0,
+          128.0
+        ],
+        "center": [
+          -1680.0,
+          1312.0,
+          64.0
+        ],
+        "size": [
+          32.0,
+          384.0,
+          128.0
+        ],
+        "z_range": [
+          -0.0,
+          128.0
+        ],
+        "aabb_volume": 1572864.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38207,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1696.0,
+          800.0,
+          0.0
+        ],
+        "max": [
+          -1312.0,
+          1120.0,
+          128.0
+        ],
+        "center": [
+          -1504.0,
+          960.0,
+          64.0
+        ],
+        "size": [
+          384.0,
+          320.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 15728640.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38208,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1664.0,
+          1120.0,
+          -0.0
+        ],
+        "max": [
+          -1312.0,
+          1504.0,
+          128.0
+        ],
+        "center": [
+          -1488.0,
+          1312.0,
+          64.0
+        ],
+        "size": [
+          352.0,
+          384.0,
+          128.0
+        ],
+        "z_range": [
+          -0.0,
+          128.0
+        ],
+        "aabb_volume": 17301504.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38209,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1696.0,
+          -96.0,
+          0.0
+        ],
+        "max": [
+          -1312.0,
+          224.0,
+          128.0
+        ],
+        "center": [
+          -1504.0,
+          64.0,
+          64.0
+        ],
+        "size": [
+          384.0,
+          320.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 15728640.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38210,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1664.0,
+          -480.0,
+          0.0
+        ],
+        "max": [
+          -1312.0,
+          -96.0,
+          128.0
+        ],
+        "center": [
+          -1488.0,
+          -288.0,
+          64.0
+        ],
+        "size": [
+          352.0,
+          384.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 17301504.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38211,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2016.0,
+          -480.0,
+          0.0
+        ],
+        "max": [
+          -1696.0,
+          224.0,
+          128.0
+        ],
+        "center": [
+          -1856.0,
+          -128.0,
+          64.0
+        ],
+        "size": [
+          320.0,
+          704.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 28835840.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38212,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1696.0,
+          -480.0,
+          0.0
+        ],
+        "max": [
+          -1664.0,
+          -96.0,
+          128.0
+        ],
+        "center": [
+          -1680.0,
+          -288.0,
+          64.0
+        ],
+        "size": [
+          32.0,
+          384.0,
+          128.0
+        ],
+        "z_range": [
+          0.0,
+          128.0
+        ],
+        "aabb_volume": 1572864.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38877,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2688.0,
+          -480.0,
+          128.0
+        ],
+        "max": [
+          -2336.0,
+          224.0,
+          448.0
+        ],
+        "center": [
+          -2512.0,
+          -128.0,
+          288.0
+        ],
+        "size": [
+          352.0,
+          704.0,
+          320.0
+        ],
+        "z_range": [
+          128.0,
+          448.0
+        ],
+        "aabb_volume": 79298560.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38878,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2688.0,
+          224.0,
+          128.0
+        ],
+        "max": [
+          -2336.0,
+          256.0,
+          448.0
+        ],
+        "center": [
+          -2512.0,
+          240.0,
+          288.0
+        ],
+        "size": [
+          352.0,
+          32.0,
+          320.0
+        ],
+        "z_range": [
+          128.0,
+          448.0
+        ],
+        "aabb_volume": 3604480.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38879,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2336.0,
+          -480.0,
+          128.0
+        ],
+        "max": [
+          -2304.0,
+          256.0,
+          448.0
+        ],
+        "center": [
+          -2320.0,
+          -112.0,
+          288.0
+        ],
+        "size": [
+          32.0,
+          736.0,
+          320.0
+        ],
+        "z_range": [
+          128.0,
+          448.0
+        ],
+        "aabb_volume": 7536640.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38904,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1312.0,
+          -480.0,
+          128.0
+        ],
+        "max": [
+          1664.0,
+          224.0,
+          448.0
+        ],
+        "center": [
+          1488.0,
+          -128.0,
+          288.0
+        ],
+        "size": [
+          352.0,
+          704.0,
+          320.0
+        ],
+        "z_range": [
+          128.0,
+          448.0
+        ],
+        "aabb_volume": 79298560.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38905,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1312.0,
+          224.0,
+          128.0
+        ],
+        "max": [
+          1664.0,
+          256.0,
+          448.0
+        ],
+        "center": [
+          1488.0,
+          240.0,
+          288.0
+        ],
+        "size": [
+          352.0,
+          32.0,
+          320.0
+        ],
+        "z_range": [
+          128.0,
+          448.0
+        ],
+        "aabb_volume": 3604480.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38906,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1280.0,
+          -480.0,
+          128.0
+        ],
+        "max": [
+          1312.0,
+          256.0,
+          448.0
+        ],
+        "center": [
+          1296.0,
+          -112.0,
+          288.0
+        ],
+        "size": [
+          32.0,
+          736.0,
+          320.0
+        ],
+        "z_range": [
+          128.0,
+          448.0
+        ],
+        "aabb_volume": 7536640.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    }
+  ],
+  "warnings": [
+    "Meshes are reconstructed from convex VMF brush planes; displacement and complex prop geometry are not included."
+  ]
+}

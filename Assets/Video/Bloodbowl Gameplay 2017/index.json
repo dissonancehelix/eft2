@@ -1,0 +1,645 @@
+{
+  "video": "Assets/Video/Bloodbowl Gameplay 2017",
+  "duration_seconds": 1258.846621,
+  "duration_hms": "20:58",
+  "sample_interval_seconds": 10,
+  "frame_count": 126,
+  "frames": [
+    {
+      "second": 0,
+      "timestamp": "00:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0001.jpg"
+    },
+    {
+      "second": 10,
+      "timestamp": "00:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0002.jpg"
+    },
+    {
+      "second": 20,
+      "timestamp": "00:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0003.jpg"
+    },
+    {
+      "second": 30,
+      "timestamp": "00:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0004.jpg"
+    },
+    {
+      "second": 40,
+      "timestamp": "00:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0005.jpg"
+    },
+    {
+      "second": 50,
+      "timestamp": "00:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0006.jpg"
+    },
+    {
+      "second": 60,
+      "timestamp": "01:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0007.jpg"
+    },
+    {
+      "second": 70,
+      "timestamp": "01:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0008.jpg"
+    },
+    {
+      "second": 80,
+      "timestamp": "01:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0009.jpg"
+    },
+    {
+      "second": 90,
+      "timestamp": "01:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0010.jpg"
+    },
+    {
+      "second": 100,
+      "timestamp": "01:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0011.jpg"
+    },
+    {
+      "second": 110,
+      "timestamp": "01:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0012.jpg"
+    },
+    {
+      "second": 120,
+      "timestamp": "02:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0013.jpg"
+    },
+    {
+      "second": 130,
+      "timestamp": "02:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0014.jpg"
+    },
+    {
+      "second": 140,
+      "timestamp": "02:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0015.jpg"
+    },
+    {
+      "second": 150,
+      "timestamp": "02:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0016.jpg"
+    },
+    {
+      "second": 160,
+      "timestamp": "02:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0017.jpg"
+    },
+    {
+      "second": 170,
+      "timestamp": "02:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0018.jpg"
+    },
+    {
+      "second": 180,
+      "timestamp": "03:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0019.jpg"
+    },
+    {
+      "second": 190,
+      "timestamp": "03:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0020.jpg"
+    },
+    {
+      "second": 200,
+      "timestamp": "03:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0021.jpg"
+    },
+    {
+      "second": 210,
+      "timestamp": "03:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0022.jpg"
+    },
+    {
+      "second": 220,
+      "timestamp": "03:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0023.jpg"
+    },
+    {
+      "second": 230,
+      "timestamp": "03:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0024.jpg"
+    },
+    {
+      "second": 240,
+      "timestamp": "04:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0025.jpg"
+    },
+    {
+      "second": 250,
+      "timestamp": "04:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0026.jpg"
+    },
+    {
+      "second": 260,
+      "timestamp": "04:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0027.jpg"
+    },
+    {
+      "second": 270,
+      "timestamp": "04:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0028.jpg"
+    },
+    {
+      "second": 280,
+      "timestamp": "04:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0029.jpg"
+    },
+    {
+      "second": 290,
+      "timestamp": "04:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0030.jpg"
+    },
+    {
+      "second": 300,
+      "timestamp": "05:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0031.jpg"
+    },
+    {
+      "second": 310,
+      "timestamp": "05:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0032.jpg"
+    },
+    {
+      "second": 320,
+      "timestamp": "05:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0033.jpg"
+    },
+    {
+      "second": 330,
+      "timestamp": "05:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0034.jpg"
+    },
+    {
+      "second": 340,
+      "timestamp": "05:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0035.jpg"
+    },
+    {
+      "second": 350,
+      "timestamp": "05:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0036.jpg"
+    },
+    {
+      "second": 360,
+      "timestamp": "06:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0037.jpg"
+    },
+    {
+      "second": 370,
+      "timestamp": "06:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0038.jpg"
+    },
+    {
+      "second": 380,
+      "timestamp": "06:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0039.jpg"
+    },
+    {
+      "second": 390,
+      "timestamp": "06:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0040.jpg"
+    },
+    {
+      "second": 400,
+      "timestamp": "06:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0041.jpg"
+    },
+    {
+      "second": 410,
+      "timestamp": "06:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0042.jpg"
+    },
+    {
+      "second": 420,
+      "timestamp": "07:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0043.jpg"
+    },
+    {
+      "second": 430,
+      "timestamp": "07:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0044.jpg"
+    },
+    {
+      "second": 440,
+      "timestamp": "07:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0045.jpg"
+    },
+    {
+      "second": 450,
+      "timestamp": "07:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0046.jpg"
+    },
+    {
+      "second": 460,
+      "timestamp": "07:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0047.jpg"
+    },
+    {
+      "second": 470,
+      "timestamp": "07:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0048.jpg"
+    },
+    {
+      "second": 480,
+      "timestamp": "08:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0049.jpg"
+    },
+    {
+      "second": 490,
+      "timestamp": "08:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0050.jpg"
+    },
+    {
+      "second": 500,
+      "timestamp": "08:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0051.jpg"
+    },
+    {
+      "second": 510,
+      "timestamp": "08:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0052.jpg"
+    },
+    {
+      "second": 520,
+      "timestamp": "08:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0053.jpg"
+    },
+    {
+      "second": 530,
+      "timestamp": "08:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0054.jpg"
+    },
+    {
+      "second": 540,
+      "timestamp": "09:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0055.jpg"
+    },
+    {
+      "second": 550,
+      "timestamp": "09:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0056.jpg"
+    },
+    {
+      "second": 560,
+      "timestamp": "09:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0057.jpg"
+    },
+    {
+      "second": 570,
+      "timestamp": "09:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0058.jpg"
+    },
+    {
+      "second": 580,
+      "timestamp": "09:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0059.jpg"
+    },
+    {
+      "second": 590,
+      "timestamp": "09:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0060.jpg"
+    },
+    {
+      "second": 600,
+      "timestamp": "10:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0061.jpg"
+    },
+    {
+      "second": 610,
+      "timestamp": "10:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0062.jpg"
+    },
+    {
+      "second": 620,
+      "timestamp": "10:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0063.jpg"
+    },
+    {
+      "second": 630,
+      "timestamp": "10:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0064.jpg"
+    },
+    {
+      "second": 640,
+      "timestamp": "10:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0065.jpg"
+    },
+    {
+      "second": 650,
+      "timestamp": "10:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0066.jpg"
+    },
+    {
+      "second": 660,
+      "timestamp": "11:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0067.jpg"
+    },
+    {
+      "second": 670,
+      "timestamp": "11:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0068.jpg"
+    },
+    {
+      "second": 680,
+      "timestamp": "11:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0069.jpg"
+    },
+    {
+      "second": 690,
+      "timestamp": "11:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0070.jpg"
+    },
+    {
+      "second": 700,
+      "timestamp": "11:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0071.jpg"
+    },
+    {
+      "second": 710,
+      "timestamp": "11:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0072.jpg"
+    },
+    {
+      "second": 720,
+      "timestamp": "12:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0073.jpg"
+    },
+    {
+      "second": 730,
+      "timestamp": "12:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0074.jpg"
+    },
+    {
+      "second": 740,
+      "timestamp": "12:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0075.jpg"
+    },
+    {
+      "second": 750,
+      "timestamp": "12:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0076.jpg"
+    },
+    {
+      "second": 760,
+      "timestamp": "12:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0077.jpg"
+    },
+    {
+      "second": 770,
+      "timestamp": "12:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0078.jpg"
+    },
+    {
+      "second": 780,
+      "timestamp": "13:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0079.jpg"
+    },
+    {
+      "second": 790,
+      "timestamp": "13:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0080.jpg"
+    },
+    {
+      "second": 800,
+      "timestamp": "13:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0081.jpg"
+    },
+    {
+      "second": 810,
+      "timestamp": "13:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0082.jpg"
+    },
+    {
+      "second": 820,
+      "timestamp": "13:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0083.jpg"
+    },
+    {
+      "second": 830,
+      "timestamp": "13:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0084.jpg"
+    },
+    {
+      "second": 840,
+      "timestamp": "14:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0085.jpg"
+    },
+    {
+      "second": 850,
+      "timestamp": "14:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0086.jpg"
+    },
+    {
+      "second": 860,
+      "timestamp": "14:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0087.jpg"
+    },
+    {
+      "second": 870,
+      "timestamp": "14:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0088.jpg"
+    },
+    {
+      "second": 880,
+      "timestamp": "14:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0089.jpg"
+    },
+    {
+      "second": 890,
+      "timestamp": "14:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0090.jpg"
+    },
+    {
+      "second": 900,
+      "timestamp": "15:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0091.jpg"
+    },
+    {
+      "second": 910,
+      "timestamp": "15:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0092.jpg"
+    },
+    {
+      "second": 920,
+      "timestamp": "15:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0093.jpg"
+    },
+    {
+      "second": 930,
+      "timestamp": "15:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0094.jpg"
+    },
+    {
+      "second": 940,
+      "timestamp": "15:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0095.jpg"
+    },
+    {
+      "second": 950,
+      "timestamp": "15:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0096.jpg"
+    },
+    {
+      "second": 960,
+      "timestamp": "16:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0097.jpg"
+    },
+    {
+      "second": 970,
+      "timestamp": "16:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0098.jpg"
+    },
+    {
+      "second": 980,
+      "timestamp": "16:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0099.jpg"
+    },
+    {
+      "second": 990,
+      "timestamp": "16:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0100.jpg"
+    },
+    {
+      "second": 1000,
+      "timestamp": "16:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0101.jpg"
+    },
+    {
+      "second": 1010,
+      "timestamp": "16:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0102.jpg"
+    },
+    {
+      "second": 1020,
+      "timestamp": "17:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0103.jpg"
+    },
+    {
+      "second": 1030,
+      "timestamp": "17:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0104.jpg"
+    },
+    {
+      "second": 1040,
+      "timestamp": "17:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0105.jpg"
+    },
+    {
+      "second": 1050,
+      "timestamp": "17:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0106.jpg"
+    },
+    {
+      "second": 1060,
+      "timestamp": "17:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0107.jpg"
+    },
+    {
+      "second": 1070,
+      "timestamp": "17:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0108.jpg"
+    },
+    {
+      "second": 1080,
+      "timestamp": "18:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0109.jpg"
+    },
+    {
+      "second": 1090,
+      "timestamp": "18:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0110.jpg"
+    },
+    {
+      "second": 1100,
+      "timestamp": "18:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0111.jpg"
+    },
+    {
+      "second": 1110,
+      "timestamp": "18:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0112.jpg"
+    },
+    {
+      "second": 1120,
+      "timestamp": "18:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0113.jpg"
+    },
+    {
+      "second": 1130,
+      "timestamp": "18:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0114.jpg"
+    },
+    {
+      "second": 1140,
+      "timestamp": "19:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0115.jpg"
+    },
+    {
+      "second": 1150,
+      "timestamp": "19:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0116.jpg"
+    },
+    {
+      "second": 1160,
+      "timestamp": "19:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0117.jpg"
+    },
+    {
+      "second": 1170,
+      "timestamp": "19:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0118.jpg"
+    },
+    {
+      "second": 1180,
+      "timestamp": "19:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0119.jpg"
+    },
+    {
+      "second": 1190,
+      "timestamp": "19:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0120.jpg"
+    },
+    {
+      "second": 1200,
+      "timestamp": "20:00",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0121.jpg"
+    },
+    {
+      "second": 1210,
+      "timestamp": "20:10",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0122.jpg"
+    },
+    {
+      "second": 1220,
+      "timestamp": "20:20",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0123.jpg"
+    },
+    {
+      "second": 1230,
+      "timestamp": "20:30",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0124.jpg"
+    },
+    {
+      "second": 1240,
+      "timestamp": "20:40",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0125.jpg"
+    },
+    {
+      "second": 1250,
+      "timestamp": "20:50",
+      "file": "video-analysis\\bloodbowl_pov\\frames_10s\\frame_0126.jpg"
+    }
+  ],
+  "contact_sheets": [
+    "video-analysis\\bloodbowl_pov\\contact_sheets\\contact_01.jpg",
+    "video-analysis\\bloodbowl_pov\\contact_sheets\\contact_02.jpg",
+    "video-analysis\\bloodbowl_pov\\contact_sheets\\contact_03.jpg",
+    "video-analysis\\bloodbowl_pov\\contact_sheets\\contact_04.jpg"
+  ]
+}

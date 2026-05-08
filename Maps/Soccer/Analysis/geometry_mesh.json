@@ -1,0 +1,1055 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Soccer",
+  "source_vmf": "Maps/Soccer/Soccer.vmf",
+  "original_filename": "eft_soccer_b2.vmf",
+  "generated_at": "2026-05-08T15:27:14.992384+00:00",
+  "status": "brush_plane_mesh",
+  "solid_count": 28,
+  "reconstructed_solids": 28,
+  "partial_solids": 0,
+  "failed_solids": 0,
+  "triangle_count": 336,
+  "solids": [
+    {
+      "solid_id": 2,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -4352.0,
+          -2848.0,
+          0.0
+        ],
+        "max": [
+          4352.0,
+          -2816.0,
+          1088.0
+        ],
+        "center": [
+          0.0,
+          -2832.0,
+          544.0
+        ],
+        "size": [
+          8704.0,
+          32.0,
+          1088.0
+        ],
+        "z_range": [
+          0.0,
+          1088.0
+        ],
+        "aabb_volume": 303038464.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 10,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -4352.0,
+          2816.0,
+          0.0
+        ],
+        "max": [
+          4352.0,
+          2848.0,
+          1088.0
+        ],
+        "center": [
+          0.0,
+          2832.0,
+          544.0
+        ],
+        "size": [
+          8704.0,
+          32.0,
+          1088.0
+        ],
+        "z_range": [
+          0.0,
+          1088.0
+        ],
+        "aabb_volume": 303038464.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 17,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          4352.0,
+          -2848.0,
+          0.0
+        ],
+        "max": [
+          4384.0,
+          2816.0,
+          1088.0
+        ],
+        "center": [
+          4368.0,
+          -16.0,
+          544.0
+        ],
+        "size": [
+          32.0,
+          5664.0,
+          1088.0
+        ],
+        "z_range": [
+          0.0,
+          1088.0
+        ],
+        "aabb_volume": 197197824.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 24,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -4384.0,
+          -2816.0,
+          0.0
+        ],
+        "max": [
+          -4352.0,
+          2816.0,
+          1088.0
+        ],
+        "center": [
+          -4368.0,
+          0.0,
+          544.0
+        ],
+        "size": [
+          32.0,
+          5632.0,
+          1088.0
+        ],
+        "z_range": [
+          0.0,
+          1088.0
+        ],
+        "aabb_volume": 196083712.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 31,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -4384.0,
+          -2816.0,
+          1088.0
+        ],
+        "max": [
+          4384.0,
+          2816.0,
+          1120.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          1104.0
+        ],
+        "size": [
+          8768.0,
+          5632.0,
+          32.0
+        ],
+        "z_range": [
+          1088.0,
+          1120.0
+        ],
+        "aabb_volume": 1580204032.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 38,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -1024.0,
+          -1408.0,
+          -32.0
+        ],
+        "max": [
+          1024.0,
+          1408.0,
+          -0.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          -16.0
+        ],
+        "size": [
+          2048.0,
+          2816.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 184549376.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 45,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          1024.0,
+          -1408.0,
+          -32.0
+        ],
+        "max": [
+          2944.0,
+          1408.0,
+          -0.0
+        ],
+        "center": [
+          1984.0,
+          0.0,
+          -16.0
+        ],
+        "size": [
+          1920.0,
+          2816.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 173015040.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 52,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -2944.0,
+          -1408.0,
+          -32.0
+        ],
+        "max": [
+          -1024.0,
+          1408.0,
+          -0.0
+        ],
+        "center": [
+          -1984.0,
+          0.0,
+          -16.0
+        ],
+        "size": [
+          1920.0,
+          2816.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 173015040.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 59,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -3136.0,
+          1408.0,
+          -32.0
+        ],
+        "max": [
+          3136.0,
+          1664.0,
+          -0.0
+        ],
+        "center": [
+          0.0,
+          1536.0,
+          -16.0
+        ],
+        "size": [
+          6272.0,
+          256.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 51380224.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 66,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -3136.0,
+          -1664.0,
+          -32.0
+        ],
+        "max": [
+          3136.0,
+          -1408.0,
+          -0.0
+        ],
+        "center": [
+          0.0,
+          -1536.0,
+          -16.0
+        ],
+        "size": [
+          6272.0,
+          256.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 51380224.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 73,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -4352.0,
+          -1792.0,
+          -32.0
+        ],
+        "max": [
+          -3328.0,
+          1792.0,
+          -0.0
+        ],
+        "center": [
+          -3840.0,
+          0.0,
+          -16.0
+        ],
+        "size": [
+          1024.0,
+          3584.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 117440512.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 81,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          2944.0,
+          -1408.0,
+          -32.0
+        ],
+        "max": [
+          3136.0,
+          1408.0,
+          -0.0
+        ],
+        "center": [
+          3040.0,
+          0.0,
+          -16.0
+        ],
+        "size": [
+          192.0,
+          2816.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 17301504.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 88,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -3136.0,
+          -1408.0,
+          -32.0
+        ],
+        "max": [
+          -2944.0,
+          1408.0,
+          -0.0
+        ],
+        "center": [
+          -3040.0,
+          0.0,
+          -16.0
+        ],
+        "size": [
+          192.0,
+          2816.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 17301504.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 168,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -3328.0,
+          -1824.0,
+          0.0
+        ],
+        "max": [
+          3328.0,
+          -1760.0,
+          1088.0
+        ],
+        "center": [
+          0.0,
+          -1792.0,
+          544.0
+        ],
+        "size": [
+          6656.0,
+          64.0,
+          1088.0
+        ],
+        "z_range": [
+          0.0,
+          1088.0
+        ],
+        "aabb_volume": 463470592.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 175,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -3328.0,
+          1792.0,
+          0.0
+        ],
+        "max": [
+          3328.0,
+          1824.0,
+          1088.0
+        ],
+        "center": [
+          0.0,
+          1808.0,
+          544.0
+        ],
+        "size": [
+          6656.0,
+          32.0,
+          1088.0
+        ],
+        "z_range": [
+          0.0,
+          1088.0
+        ],
+        "aabb_volume": 231735296.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 182,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          3328.0,
+          -1824.0,
+          0.0
+        ],
+        "max": [
+          3392.0,
+          1792.0,
+          1088.0
+        ],
+        "center": [
+          3360.0,
+          -16.0,
+          544.0
+        ],
+        "size": [
+          64.0,
+          3616.0,
+          1088.0
+        ],
+        "z_range": [
+          0.0,
+          1088.0
+        ],
+        "aabb_volume": 251789312.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 189,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -3392.0,
+          -1792.0,
+          0.0
+        ],
+        "max": [
+          -3328.0,
+          1792.0,
+          1088.0
+        ],
+        "center": [
+          -3360.0,
+          0.0,
+          544.0
+        ],
+        "size": [
+          64.0,
+          3584.0,
+          1088.0
+        ],
+        "z_range": [
+          0.0,
+          1088.0
+        ],
+        "aabb_volume": 249561088.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 196,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -3328.0,
+          -1664.0,
+          -32.0
+        ],
+        "max": [
+          -3136.0,
+          1664.0,
+          -0.0
+        ],
+        "center": [
+          -3232.0,
+          0.0,
+          -16.0
+        ],
+        "size": [
+          192.0,
+          3328.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 20447232.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 203,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -3328.0,
+          1664.0,
+          -32.0
+        ],
+        "max": [
+          3328.0,
+          1792.0,
+          -0.0
+        ],
+        "center": [
+          0.0,
+          1728.0,
+          -16.0
+        ],
+        "size": [
+          6656.0,
+          128.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 27262976.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 211,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -3328.0,
+          -1792.0,
+          -32.0
+        ],
+        "max": [
+          3328.0,
+          -1664.0,
+          -0.0
+        ],
+        "center": [
+          0.0,
+          -1728.0,
+          -16.0
+        ],
+        "size": [
+          6656.0,
+          128.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 27262976.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 218,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          3328.0,
+          -1792.0,
+          -32.0
+        ],
+        "max": [
+          4384.0,
+          1792.0,
+          -0.0
+        ],
+        "center": [
+          3856.0,
+          0.0,
+          -16.0
+        ],
+        "size": [
+          1056.0,
+          3584.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 121110528.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 225,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          3136.0,
+          -1664.0,
+          -32.0
+        ],
+        "max": [
+          3328.0,
+          1664.0,
+          -0.0
+        ],
+        "center": [
+          3232.0,
+          0.0,
+          -16.0
+        ],
+        "size": [
+          192.0,
+          3328.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 20447232.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 409,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -4352.0,
+          1792.0,
+          -32.0
+        ],
+        "max": [
+          -120.0,
+          2848.0,
+          -0.0
+        ],
+        "center": [
+          -2236.0,
+          2320.0,
+          -16.0
+        ],
+        "size": [
+          4232.0,
+          1056.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 143007744.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 416,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          120.0,
+          1792.0,
+          -32.0
+        ],
+        "max": [
+          4352.0,
+          2848.0,
+          -0.0
+        ],
+        "center": [
+          2236.0,
+          2320.0,
+          -16.0
+        ],
+        "size": [
+          4232.0,
+          1056.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 143007744.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 423,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -120.0,
+          1792.0,
+          -32.0
+        ],
+        "max": [
+          120.0,
+          2848.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          2320.0,
+          -16.0
+        ],
+        "size": [
+          240.0,
+          1056.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          0.0
+        ],
+        "aabb_volume": 8110080.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 512,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -120.0,
+          -2848.0,
+          -32.0
+        ],
+        "max": [
+          120.0,
+          -1792.0,
+          -0.0
+        ],
+        "center": [
+          0.0,
+          -2320.0,
+          -16.0
+        ],
+        "size": [
+          240.0,
+          1056.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 8110080.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 546,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -4352.0,
+          -2848.0,
+          -32.0
+        ],
+        "max": [
+          -120.0,
+          -1792.0,
+          -0.0
+        ],
+        "center": [
+          -2236.0,
+          -2320.0,
+          -16.0
+        ],
+        "size": [
+          4232.0,
+          1056.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 143007744.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 553,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          120.0,
+          -2848.0,
+          -32.0
+        ],
+        "max": [
+          4352.0,
+          -1792.0,
+          -0.0
+        ],
+        "center": [
+          2236.0,
+          -2320.0,
+          -16.0
+        ],
+        "size": [
+          4232.0,
+          1056.0,
+          32.0
+        ],
+        "z_range": [
+          -32.0,
+          -0.0
+        ],
+        "aabb_volume": 143007744.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    }
+  ],
+  "warnings": [
+    "Meshes are reconstructed from convex VMF brush planes; displacement and complex prop geometry are not included."
+  ]
+}

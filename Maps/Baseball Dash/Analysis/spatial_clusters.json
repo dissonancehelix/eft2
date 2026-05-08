@@ -1,0 +1,629 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Baseball Dash",
+  "source_vmf": "Maps/Baseball Dash/Baseball Dash.vmf",
+  "original_filename": "eft_baseballdash_v3.vmf",
+  "generated_at": "2026-05-08T15:27:09.153286+00:00",
+  "spatial_clusters": [
+    {
+      "cluster_id": 1,
+      "center": [
+        6992.598750000001,
+        -3612.8529166666663,
+        -700.4285
+      ],
+      "count": 24,
+      "source_entity_ids": [
+        20916,
+        20919,
+        20922,
+        20925,
+        20928,
+        20931,
+        20934,
+        20937,
+        20940,
+        20943,
+        20946,
+        20949,
+        20952,
+        20955,
+        20958,
+        20961,
+        20964,
+        20967,
+        20970,
+        20973,
+        20976,
+        20979,
+        20982,
+        20985
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 2,
+      "center": [
+        -2429.5,
+        -1025.3327777777777,
+        -776.5134166666666
+      ],
+      "count": 36,
+      "source_entity_ids": [
+        37,
+        42,
+        44,
+        50,
+        352,
+        354,
+        356,
+        358,
+        360,
+        362,
+        364,
+        366,
+        368,
+        370,
+        372,
+        374,
+        376,
+        378,
+        380,
+        382,
+        384,
+        386,
+        388,
+        390,
+        392,
+        501,
+        503,
+        527,
+        543,
+        8361,
+        8362,
+        8369,
+        8370,
+        8387,
+        15068,
+        15250
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 3,
+      "center": [
+        -3229.5494827586217,
+        3503.1312068965517,
+        226.41550000000007
+      ],
+      "count": 58,
+      "source_entity_ids": [
+        173,
+        176,
+        178,
+        180,
+        183,
+        185,
+        187,
+        190,
+        192,
+        195,
+        198,
+        200,
+        203,
+        205,
+        208,
+        210,
+        212,
+        214,
+        216,
+        218,
+        220,
+        222,
+        224,
+        226,
+        228,
+        231,
+        233,
+        235,
+        237,
+        239,
+        241,
+        243,
+        245,
+        247,
+        249,
+        251,
+        253,
+        255,
+        257,
+        259,
+        261,
+        263,
+        265,
+        267,
+        270,
+        273,
+        276,
+        279,
+        282,
+        285,
+        1228,
+        1230,
+        1597,
+        8365,
+        8366,
+        8367,
+        8368,
+        19683
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 4,
+      "center": [
+        1243.3197058823525,
+        2702.9999999999995,
+        -778.8082647058824
+      ],
+      "count": 34,
+      "source_entity_ids": [
+        308,
+        310,
+        312,
+        314,
+        316,
+        318,
+        320,
+        322,
+        324,
+        326,
+        328,
+        330,
+        332,
+        334,
+        336,
+        338,
+        340,
+        342,
+        344,
+        346,
+        348,
+        350,
+        509,
+        511,
+        517,
+        519,
+        545,
+        8359,
+        8360,
+        8371,
+        8372,
+        8385,
+        15095,
+        15241
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 5,
+      "center": [
+        -1318.170875,
+        1593.0887500000001,
+        -733.81225
+      ],
+      "count": 8,
+      "source_entity_ids": [
+        402,
+        450,
+        521,
+        524,
+        533,
+        8383,
+        18419,
+        19573
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 6,
+      "center": [
+        16.745,
+        2165.0625,
+        -431.22249999999997
+      ],
+      "count": 4,
+      "source_entity_ids": [
+        404,
+        12194,
+        19588,
+        19656
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 7,
+      "center": [
+        -1888.255,
+        264.8125,
+        -431.725
+      ],
+      "count": 4,
+      "source_entity_ids": [
+        422,
+        12100,
+        19594,
+        19677
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 8,
+      "center": [
+        5970.416666666667,
+        -2536.3333333333335,
+        -1101.2933333333333
+      ],
+      "count": 3,
+      "source_entity_ids": [
+        1803,
+        18725,
+        19158
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 9,
+      "center": [
+        2334.6,
+        1168.4,
+        -567.2
+      ],
+      "count": 5,
+      "source_entity_ids": [
+        8363,
+        8373,
+        8374,
+        8375,
+        19626
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 10,
+      "center": [
+        -382.76,
+        -2379.25,
+        -530.0
+      ],
+      "count": 4,
+      "source_entity_ids": [
+        8364,
+        8379,
+        8380,
+        8381
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 11,
+      "center": [
+        2545.3333333333335,
+        -902.0,
+        -536.3333333333334
+      ],
+      "count": 3,
+      "source_entity_ids": [
+        8376,
+        8377,
+        14656
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 12,
+      "center": [
+        -1983.0,
+        -2508.0,
+        -501.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        8378
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 13,
+      "center": [
+        1668.75,
+        -1975.75,
+        -443.5
+      ],
+      "count": 4,
+      "source_entity_ids": [
+        8382,
+        14697,
+        16627,
+        19606
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 14,
+      "center": [
+        -57.0,
+        336.0,
+        -719.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        19579
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 15,
+      "center": [
+        -1024.0,
+        -1024.0,
+        -719.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        19600
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "type": "world_z_level_summary",
+      "sampled_level_count": 6,
+      "sampled_z_levels": [
+        -1327.5,
+        -885.0,
+        -226.0,
+        -108.0,
+        673.0,
+        1373.0
+      ],
+      "confidence": 0.35,
+      "reasons": [
+        "World brush AABB z-centers suggest vertical/platform structure candidates."
+      ],
+      "needs_human_review": true
+    }
+  ],
+  "jump_push_regions": [
+    {
+      "id": "jump_push_region_1",
+      "type": "jump_push_region",
+      "center": [
+        -1657.5,
+        1936.5,
+        -560.5
+      ],
+      "bounds": {
+        "min": [
+          -1660.0,
+          1935.0,
+          -561.0
+        ],
+        "max": [
+          -1655.0,
+          1938.0,
+          -560.0
+        ],
+        "center": [
+          -1657.5,
+          1936.5,
+          -560.5
+        ],
+        "size": [
+          5.0,
+          3.0,
+          1.0
+        ],
+        "z_range": [
+          -561.0,
+          -560.0
+        ],
+        "aabb_volume": 15.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Map-authored movement boost route.",
+        "Source entity class `trigger_abspush` id `529`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        529
+      ],
+      "source_classes": [
+        "trigger_abspush"
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "rotating_obstructions": [
+    {
+      "id": "rotating_obstruction_1",
+      "type": "rotating_obstruction",
+      "center": [
+        43.959999999999994,
+        3872.5,
+        -581.7860000000001
+      ],
+      "bounds": {
+        "min": [
+          13.96,
+          3782.5,
+          -671.787
+        ],
+        "max": [
+          73.96,
+          3962.5,
+          -491.78499999999997
+        ],
+        "center": [
+          43.959999999999994,
+          3872.5,
+          -581.7860000000001
+        ],
+        "size": [
+          59.99999999999999,
+          180.0,
+          180.00200000000007
+        ],
+        "z_range": [
+          -671.787,
+          -491.78499999999997
+        ],
+        "aabb_volume": 1944021.6000000003,
+        "source_point_count": 288,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Rotating brush/object that can shape shots or traversal.",
+        "Source entity class `func_rotating` id `404`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        404
+      ],
+      "source_classes": [
+        "func_rotating"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "rotating_obstruction_2",
+      "type": "rotating_obstruction",
+      "center": [
+        -3316.04,
+        514.5015,
+        -585.7955
+      ],
+      "bounds": {
+        "min": [
+          -3346.04,
+          424.5,
+          -675.796
+        ],
+        "max": [
+          -3286.04,
+          604.5029999999999,
+          -495.79499999999996
+        ],
+        "center": [
+          -3316.04,
+          514.5015,
+          -585.7955
+        ],
+        "size": [
+          60.0,
+          180.00299999999993,
+          180.0010000000001
+        ],
+        "z_range": [
+          -675.796,
+          -495.79499999999996
+        ],
+        "aabb_volume": 1944043.2001800004,
+        "source_point_count": 288,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Rotating brush/object that can shape shots or traversal.",
+        "Source entity class `func_rotating` id `422`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        422
+      ],
+      "source_classes": [
+        "func_rotating"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

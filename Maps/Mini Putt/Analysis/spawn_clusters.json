@@ -1,0 +1,158 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Mini Putt",
+  "source_vmf": "Maps/Mini Putt/Mini Putt.vmf",
+  "original_filename": "eft_miniputt_v1r_d.vmf",
+  "generated_at": "2026-05-08T15:27:13.297951+00:00",
+  "spawn_clusters": {
+    "red": [
+      {
+        "cluster_id": 1,
+        "center": [
+          -3946.1440000000002,
+          -20.078300000000002,
+          1152.0
+        ],
+        "count": 5,
+        "source_entity_ids": [
+          7089,
+          7091,
+          7093,
+          7095,
+          7097
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 5 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          -3812.94625,
+          791.883375,
+          47.562743324275004
+        ],
+        "count": 8,
+        "source_entity_ids": [
+          7099,
+          7101,
+          7103,
+          7105,
+          7119,
+          7121,
+          7127,
+          7129
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 8 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 3,
+        "center": [
+          -3776.735,
+          -843.45525,
+          47.629754768375
+        ],
+        "count": 8,
+        "source_entity_ids": [
+          7107,
+          7109,
+          7111,
+          7113,
+          7115,
+          7117,
+          7123,
+          7125
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 8 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "blue": [
+      {
+        "cluster_id": 1,
+        "center": [
+          3787.99125,
+          822.2785,
+          48.65075076976875
+        ],
+        "count": 8,
+        "source_entity_ids": [
+          11029,
+          11044,
+          11046,
+          11048,
+          11050,
+          11052,
+          11054,
+          11056
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 8 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          3785.51625,
+          -870.814375,
+          47.57061379433125
+        ],
+        "count": 8,
+        "source_entity_ids": [
+          11058,
+          11060,
+          11062,
+          11064,
+          11066,
+          11068,
+          11070,
+          11072
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 8 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 3,
+        "center": [
+          3933.69,
+          -16.679974999999995,
+          1152.0
+        ],
+        "count": 4,
+        "source_entity_ids": [
+          11074,
+          11076,
+          11078,
+          11080
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 4 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "spectator": []
+  }
+}

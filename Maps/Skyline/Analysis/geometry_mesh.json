@@ -1,0 +1,241 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Skyline",
+  "source_vmf": "Maps/Skyline/Skyline.vmf",
+  "original_filename": "eft_skyline_v3.vmf",
+  "generated_at": "2026-05-08T15:27:13.836608+00:00",
+  "status": "brush_plane_mesh",
+  "solid_count": 6,
+  "reconstructed_solids": 6,
+  "partial_solids": 0,
+  "failed_solids": 0,
+  "triangle_count": 72,
+  "solids": [
+    {
+      "solid_id": 5825,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -4096.0,
+          -4608.0,
+          2048.0
+        ],
+        "max": [
+          4096.0,
+          4608.0,
+          2080.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          2064.0
+        ],
+        "size": [
+          8192.0,
+          9216.0,
+          32.0
+        ],
+        "z_range": [
+          2048.0,
+          2080.0
+        ],
+        "aabb_volume": 2415919104.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 5826,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -4096.0,
+          -4608.0,
+          -1536.0
+        ],
+        "max": [
+          4096.0,
+          4608.0,
+          -1504.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          -1520.0
+        ],
+        "size": [
+          8192.0,
+          9216.0,
+          32.0
+        ],
+        "z_range": [
+          -1536.0,
+          -1504.0
+        ],
+        "aabb_volume": 2415919104.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 6016,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -4096.0,
+          -4608.0,
+          -1536.0
+        ],
+        "max": [
+          -4064.0,
+          4608.0,
+          2048.0
+        ],
+        "center": [
+          -4080.0,
+          0.0,
+          256.0
+        ],
+        "size": [
+          32.0,
+          9216.0,
+          3584.0
+        ],
+        "z_range": [
+          -1536.0,
+          2048.0
+        ],
+        "aabb_volume": 1056964608.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 6017,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -4096.0,
+          -4640.0,
+          -1564.0
+        ],
+        "max": [
+          4096.0,
+          -4608.0,
+          2048.0
+        ],
+        "center": [
+          0.0,
+          -4624.0,
+          242.0
+        ],
+        "size": [
+          8192.0,
+          32.0,
+          3612.0
+        ],
+        "z_range": [
+          -1564.0,
+          2048.0
+        ],
+        "aabb_volume": 946864128.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 6018,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          4064.0,
+          -4608.0,
+          -1536.0
+        ],
+        "max": [
+          4096.0,
+          4608.0,
+          2048.0
+        ],
+        "center": [
+          4080.0,
+          0.0,
+          256.0
+        ],
+        "size": [
+          32.0,
+          9216.0,
+          3584.0
+        ],
+        "z_range": [
+          -1536.0,
+          2048.0
+        ],
+        "aabb_volume": 1056964608.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 6019,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -4064.0,
+          4608.0,
+          -1532.0
+        ],
+        "max": [
+          4064.0,
+          4640.0,
+          2048.0
+        ],
+        "center": [
+          0.0,
+          4624.0,
+          258.0
+        ],
+        "size": [
+          8128.0,
+          32.0,
+          3580.0
+        ],
+        "z_range": [
+          -1532.0,
+          2048.0
+        ],
+        "aabb_volume": 931143680.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    }
+  ],
+  "warnings": [
+    "Meshes are reconstructed from convex VMF brush planes; displacement and complex prop geometry are not included."
+  ]
+}

@@ -1,0 +1,1946 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Baseball Dash",
+  "source_vmf": "Maps/Baseball Dash/Baseball Dash.vmf",
+  "original_filename": "eft_baseballdash_v3.vmf",
+  "generated_at": "2026-05-08T15:27:09.153286+00:00",
+  "class_counts": {
+    "ambient_generic": 2,
+    "env_cubemap": 19,
+    "func_brush": 15,
+    "func_detail": 39,
+    "func_rotating": 2,
+    "info_overlay": 12,
+    "info_player_blue": 22,
+    "info_player_red": 22,
+    "info_player_start": 1,
+    "keyframe_rope": 12,
+    "light_environment": 1,
+    "light_spot": 2,
+    "logic_auto": 1,
+    "logic_case": 16,
+    "logic_relay": 20,
+    "logic_teamscore": 1,
+    "move_rope": 12,
+    "point_spotlight": 8,
+    "prop_ball": 1,
+    "prop_carry_bigpole": 3,
+    "prop_static": 15,
+    "sky_camera": 1,
+    "trigger_abspush": 1,
+    "trigger_ballreset": 7,
+    "trigger_goal": 2,
+    "trigger_hurt": 2,
+    "trigger_powerup": 2
+  },
+  "eft_class_counts": {
+    "func_rotating": 2,
+    "info_player_blue": 22,
+    "info_player_red": 22,
+    "logic_teamscore": 1,
+    "prop_ball": 1,
+    "trigger_abspush": 1,
+    "trigger_ballreset": 7,
+    "trigger_goal": 2,
+    "trigger_hurt": 2,
+    "trigger_powerup": 2
+  },
+  "entities": [
+    {
+      "id": 288,
+      "classname": "trigger_powerup",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "288",
+        "classname": "trigger_powerup",
+        "enabled": "1",
+        "powerup": "speedball",
+        "poweruptime": "5"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          -97.0,
+          296.0,
+          -783.75
+        ],
+        "max": [
+          -17.0,
+          376.0,
+          -775.895
+        ],
+        "center": [
+          -57.0,
+          336.0,
+          -779.8225
+        ],
+        "size": [
+          80.0,
+          80.0,
+          7.855000000000018
+        ],
+        "z_range": [
+          -783.75,
+          -775.895
+        ],
+        "aabb_volume": 50272.00000000012,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 308,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        953.9,
+        2616.0,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "308",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "953.9 2616 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 310,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1018.6,
+        2616.0,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "310",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1018.6 2616 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 312,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1083.6,
+        2616.0,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "312",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1083.6 2616 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 314,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1273.3,
+        2616.0,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "314",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1273.3 2616 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 316,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1143.6,
+        2616.0,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "316",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1143.6 2616 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 318,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1208.3,
+        2616.0,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "318",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1208.3 2616 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 320,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1528.3,
+        2616.0,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "320",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1528.3 2616 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 322,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1593.0,
+        2616.0,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "322",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1593 2616 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 324,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1658.0,
+        2616.0,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "324",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1658 2616 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 326,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1468.3,
+        2616.0,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "326",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1468.3 2616 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 328,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1403.3,
+        2616.0,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "328",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1403.3 2616 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 330,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1338.6,
+        2616.0,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "330",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1338.6 2616 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 332,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        888.6,
+        2616.0,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "332",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "888.6 2616 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 334,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        964.85,
+        2706.0,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "334",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "964.85 2706 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 336,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1040.34,
+        2706.0,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "336",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1040.34 2706 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 338,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1110.03,
+        2706.0,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "338",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1110.03 2706 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 340,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1185.16,
+        2706.0,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "340",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1185.16 2706 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 342,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1260.65,
+        2706.0,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "342",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1260.65 2706 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 344,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1336.49,
+        2706.0,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "344",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1336.49 2706 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 346,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1411.63,
+        2706.0,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "346",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1411.63 2706 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 348,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1487.12,
+        2706.0,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "348",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1487.12 2706 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 350,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1556.8,
+        2706.0,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "350",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1556.8 2706 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 352,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2337.0,
+        -1442.22,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "352",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2337 -1442.22 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 354,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2337.0,
+        -1376.93,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "354",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2337 -1376.93 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 356,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2337.0,
+        -1312.22,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "356",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2337 -1312.22 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 358,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2422.0,
+        -1289.0,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "358",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2422 -1289 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 360,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2422.0,
+        -1219.31,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "360",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2422 -1219.31 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 362,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2337.0,
+        -1247.22,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "362",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2337 -1247.22 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 364,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2337.0,
+        -1187.22,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "364",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2337 -1187.22 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 366,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2422.0,
+        -1144.18,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "366",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2422 -1144.18 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 368,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2337.0,
+        -1122.52,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "368",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2337 -1122.52 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 370,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2422.0,
+        -1068.69,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "370",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2422 -1068.69 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 372,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2337.0,
+        -1057.52,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "372",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2337 -1057.52 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 374,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2422.0,
+        -992.85,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "374",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2422 -992.85 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 376,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2337.0,
+        -992.22,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "376",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2337 -992.22 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 378,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2422.0,
+        -917.71,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "378",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2422 -917.71 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 380,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2337.0,
+        -927.52,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "380",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2337 -927.52 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 382,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2337.0,
+        -862.52,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "382",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2337 -862.52 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 384,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2422.0,
+        -772.55,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "384",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2422 -772.55 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 386,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2337.0,
+        -802.52,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "386",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2337 -802.52 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 388,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2422.0,
+        -697.4,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "388",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2422 -697.4 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 390,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2337.0,
+        -737.83,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "390",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2337 -737.83 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 392,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2337.0,
+        -672.83,
+        -826.999
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "392",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2337 -672.83 -826.999"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 396,
+      "classname": "trigger_goal",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "396",
+        "classname": "trigger_goal",
+        "parentname": "redsgoal",
+        "points": "1",
+        "scoretype": "2",
+        "teamid": "1"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "score,PlaySound,,0,-1",
+          "parts": [
+            "score",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "BGM,FadeOut,,0,-1",
+          "parts": [
+            "BGM",
+            "FadeOut",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          2.9851,
+          1873.21,
+          -358.818
+        ],
+        "max": [
+          40.9372,
+          2002.26,
+          -226.89
+        ],
+        "center": [
+          21.96115,
+          1937.7350000000001,
+          -292.854
+        ],
+        "size": [
+          37.952099999999994,
+          129.04999999999995,
+          131.928
+        ],
+        "z_range": [
+          -358.818,
+          -226.89
+        ],
+        "aabb_volume": 646146.2069276397,
+        "source_point_count": 189,
+        "warnings": []
+      }
+    },
+    {
+      "id": 398,
+      "classname": "trigger_goal",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "398",
+        "classname": "trigger_goal",
+        "parentname": "bluesgoal",
+        "points": "1",
+        "scoretype": "2",
+        "teamid": "2"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "score,PlaySound,,0,-1",
+          "parts": [
+            "score",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "BGM,FadeOut,,0,-1",
+          "parts": [
+            "BGM",
+            "FadeOut",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -1676.02,
+          194.197,
+          -359.9
+        ],
+        "max": [
+          -1638.02,
+          320.128,
+          -232.895
+        ],
+        "center": [
+          -1657.02,
+          257.1625,
+          -296.3975
+        ],
+        "size": [
+          38.0,
+          125.93099999999998,
+          127.00499999999997
+        ],
+        "z_range": [
+          -359.9,
+          -232.895
+        ],
+        "aabb_volume": 607766.9328899998,
+        "source_point_count": 192,
+        "warnings": []
+      }
+    },
+    {
+      "id": 402,
+      "classname": "prop_ball",
+      "targetname": "ball",
+      "origin": [
+        -1657.0,
+        1936.0,
+        -545.0
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "402",
+        "classname": "prop_ball",
+        "angles": "0 0 0",
+        "targetname": "ball",
+        "origin": "-1657 1936 -545"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 404,
+      "classname": "func_rotating",
+      "targetname": "redsgoal",
+      "origin": [
+        21.98,
+        1936.25,
+        -290.89
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "404",
+        "classname": "func_rotating",
+        "angles": "0 0 0",
+        "disablereceiveshadows": "0",
+        "disableshadows": "0",
+        "dmg": "0",
+        "fanfriction": "20",
+        "maxspeed": "160",
+        "origin": "21.98 1936.25 -290.89",
+        "renderamt": "255",
+        "rendercolor": "255 255 255",
+        "renderfx": "0",
+        "rendermode": "0",
+        "solidbsp": "0",
+        "spawnflags": "1",
+        "targetname": "redsgoal",
+        "volume": "10"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          13.96,
+          3782.5,
+          -671.787
+        ],
+        "max": [
+          73.96,
+          3962.5,
+          -491.78499999999997
+        ],
+        "center": [
+          43.959999999999994,
+          3872.5,
+          -581.7860000000001
+        ],
+        "size": [
+          59.99999999999999,
+          180.0,
+          180.00200000000007
+        ],
+        "z_range": [
+          -671.787,
+          -491.78499999999997
+        ],
+        "aabb_volume": 1944021.6000000003,
+        "source_point_count": 288,
+        "warnings": []
+      }
+    },
+    {
+      "id": 422,
+      "classname": "func_rotating",
+      "targetname": "bluesgoal",
+      "origin": [
+        -1658.02,
+        257.25,
+        -292.9
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "422",
+        "classname": "func_rotating",
+        "angles": "0 0 0",
+        "disablereceiveshadows": "0",
+        "disableshadows": "0",
+        "dmg": "0",
+        "fanfriction": "20",
+        "maxspeed": "160",
+        "origin": "-1658.02 257.25 -292.9",
+        "renderamt": "255",
+        "rendercolor": "255 255 255",
+        "renderfx": "0",
+        "rendermode": "0",
+        "solidbsp": "0",
+        "spawnflags": "1",
+        "targetname": "bluesgoal",
+        "volume": "10"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          -3346.04,
+          424.5,
+          -675.796
+        ],
+        "max": [
+          -3286.04,
+          604.5029999999999,
+          -495.79499999999996
+        ],
+        "center": [
+          -3316.04,
+          514.5015,
+          -585.7955
+        ],
+        "size": [
+          60.0,
+          180.00299999999993,
+          180.0010000000001
+        ],
+        "z_range": [
+          -675.796,
+          -495.79499999999996
+        ],
+        "aabb_volume": 1944043.2001800004,
+        "source_point_count": 288,
+        "warnings": []
+      }
+    },
+    {
+      "id": 527,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -2423.0,
+        -849.0,
+        -795.749
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "527",
+        "classname": "info_player_blue",
+        "angles": "0 0 0",
+        "origin": "-2423 -849 -795.749"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 529,
+      "classname": "trigger_abspush",
+      "targetname": "ballpush",
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "529",
+        "classname": "trigger_abspush",
+        "enabled": "1",
+        "knockdown": "0",
+        "overridevelocity": "0",
+        "pushball": "1",
+        "pushfromorigin": "0",
+        "pushphysobjects": "0",
+        "pushplayers": "0",
+        "pushvelocity": "850 -850 850",
+        "starttouchonly": "1",
+        "targetname": "ballpush"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          -1660.0,
+          1935.0,
+          -561.0
+        ],
+        "max": [
+          -1655.0,
+          1938.0,
+          -560.0
+        ],
+        "center": [
+          -1657.5,
+          1936.5,
+          -560.5
+        ],
+        "size": [
+          5.0,
+          3.0,
+          1.0
+        ],
+        "z_range": [
+          -561.0,
+          -560.0
+        ],
+        "aabb_volume": 15.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 541,
+      "classname": "trigger_powerup",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "541",
+        "classname": "trigger_powerup",
+        "enabled": "1",
+        "powerup": "speedball",
+        "poweruptime": "5"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          -1697.0,
+          1896.0,
+          -783.124
+        ],
+        "max": [
+          -1617.0,
+          1976.0,
+          -775.269
+        ],
+        "center": [
+          -1657.0,
+          1936.0,
+          -779.1965
+        ],
+        "size": [
+          80.0,
+          80.0,
+          7.855000000000018
+        ],
+        "z_range": [
+          -783.124,
+          -775.269
+        ],
+        "aabb_volume": 50272.00000000012,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 1230,
+      "classname": "logic_teamscore",
+      "targetname": "teamscorer",
+      "origin": [
+        -3167.17,
+        3583.87,
+        257.35
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "1230",
+        "classname": "logic_teamscore",
+        "enabled": "1",
+        "targetname": "teamscorer",
+        "origin": "-3167.17 3583.87 257.35"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "teamscorer,getscore,,0,-1",
+          "parts": [
+            "teamscorer",
+            "getscore",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "ongetredscore",
+          "raw": "ssd_case_1,InValue,,0,-1",
+          "parts": [
+            "ssd_case_1",
+            "InValue",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "ongetbluescore",
+          "raw": "ssd_case_2,InValue,,0,-1",
+          "parts": [
+            "ssd_case_2",
+            "InValue",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": null
+    },
+    {
+      "id": 1240,
+      "classname": "trigger_ballreset",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "1240",
+        "classname": "trigger_ballreset",
+        "enabled": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          -2983.0,
+          -1544.0,
+          -346.0
+        ],
+        "max": [
+          -2977.0,
+          3256.0,
+          1316.0
+        ],
+        "center": [
+          -2980.0,
+          856.0,
+          485.0
+        ],
+        "size": [
+          6.0,
+          4800.0,
+          1662.0
+        ],
+        "z_range": [
+          -346.0,
+          1316.0
+        ],
+        "aabb_volume": 47865600.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 1242,
+      "classname": "trigger_ballreset",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "1242",
+        "classname": "trigger_ballreset",
+        "enabled": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          -2977.0,
+          3256.0,
+          -346.0
+        ],
+        "max": [
+          1823.0,
+          3288.0,
+          1316.0
+        ],
+        "center": [
+          -577.0,
+          3272.0,
+          485.0
+        ],
+        "size": [
+          4800.0,
+          32.0,
+          1662.0
+        ],
+        "z_range": [
+          -346.0,
+          1316.0
+        ],
+        "aabb_volume": 255283200.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 1336,
+      "classname": "trigger_ballreset",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "1336",
+        "classname": "trigger_ballreset",
+        "enabled": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          1823.0,
+          3256.0,
+          260.0
+        ],
+        "max": [
+          2463.0,
+          3288.0,
+          1316.0
+        ],
+        "center": [
+          2143.0,
+          3272.0,
+          788.0
+        ],
+        "size": [
+          640.0,
+          32.0,
+          1056.0
+        ],
+        "z_range": [
+          260.0,
+          1316.0
+        ],
+        "aabb_volume": 21626880.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 1338,
+      "classname": "trigger_ballreset",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "1338",
+        "classname": "trigger_ballreset",
+        "enabled": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          -2177.0,
+          -2185.0,
+          -465.0
+        ],
+        "max": [
+          2463.0,
+          2456.0,
+          1316.0
+        ],
+        "center": [
+          143.0,
+          135.5,
+          425.5
+        ],
+        "size": [
+          4640.0,
+          4641.0,
+          1781.0
+        ],
+        "z_range": [
+          -465.0,
+          1316.0
+        ],
+        "aabb_volume": 38352481440.0,
+        "source_point_count": 396,
+        "warnings": []
+      }
+    },
+    {
+      "id": 11898,
+      "classname": "trigger_ballreset",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "11898",
+        "classname": "trigger_ballreset",
+        "enabled": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          2400.0,
+          -1185.0,
+          -465.0
+        ],
+        "max": [
+          2463.0,
+          3224.0,
+          1315.0
+        ],
+        "center": [
+          2431.5,
+          1019.5,
+          425.0
+        ],
+        "size": [
+          63.0,
+          4409.0,
+          1780.0
+        ],
+        "z_range": [
+          -465.0,
+          1315.0
+        ],
+        "aabb_volume": 494425260.0,
+        "source_point_count": 21,
+        "warnings": []
+      }
+    },
+    {
+      "id": 12022,
+      "classname": "trigger_ballreset",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "12022",
+        "classname": "trigger_ballreset",
+        "enabled": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          -2945.0,
+          -2185.0,
+          -465.0
+        ],
+        "max": [
+          -2177.0,
+          -2121.0,
+          1316.0
+        ],
+        "center": [
+          -2561.0,
+          -2153.0,
+          425.5
+        ],
+        "size": [
+          768.0,
+          64.0,
+          1781.0
+        ],
+        "z_range": [
+          -465.0,
+          1316.0
+        ],
+        "aabb_volume": 87539712.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 12030,
+      "classname": "trigger_ballreset",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "12030",
+        "classname": "trigger_ballreset",
+        "enabled": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          -3009.0,
+          -2184.0,
+          260.0
+        ],
+        "max": [
+          -2977.0,
+          -1544.0,
+          1316.0
+        ],
+        "center": [
+          -2993.0,
+          -1864.0,
+          788.0
+        ],
+        "size": [
+          32.0,
+          640.0,
+          1056.0
+        ],
+        "z_range": [
+          260.0,
+          1316.0
+        ],
+        "aabb_volume": 21626880.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 12100,
+      "classname": "trigger_hurt",
+      "targetname": null,
+      "origin": [
+        -1658.0,
+        257.0,
+        -291.0
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "12100",
+        "classname": "trigger_hurt",
+        "damage": "9999",
+        "damagecap": "9999",
+        "damagemodel": "0",
+        "damagetype": "0",
+        "nodmgforce": "0",
+        "origin": "-1658 257 -291",
+        "parentname": "bluesgoal",
+        "spawnflags": "1",
+        "StartDisabled": "0"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          -3346.0,
+          424.0,
+          -672.0
+        ],
+        "max": [
+          -3286.0,
+          604.0,
+          -492.0
+        ],
+        "center": [
+          -3316.0,
+          514.0,
+          -582.0
+        ],
+        "size": [
+          60.0,
+          180.0,
+          180.0
+        ],
+        "z_range": [
+          -672.0,
+          -492.0
+        ],
+        "aabb_volume": 1944000.0,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 12194,
+      "classname": "trigger_hurt",
+      "targetname": null,
+      "origin": [
+        22.0,
+        1936.0,
+        -291.0
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "12194",
+        "classname": "trigger_hurt",
+        "damage": "9999",
+        "damagecap": "9999",
+        "damagemodel": "0",
+        "damagetype": "0",
+        "nodmgforce": "0",
+        "origin": "22 1936 -291",
+        "parentname": "redsgoal",
+        "spawnflags": "1",
+        "StartDisabled": "0"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          14.0,
+          3782.0,
+          -672.0
+        ],
+        "max": [
+          74.0,
+          3962.0,
+          -492.0
+        ],
+        "center": [
+          44.0,
+          3872.0,
+          -582.0
+        ],
+        "size": [
+          60.0,
+          180.0,
+          180.0
+        ],
+        "z_range": [
+          -672.0,
+          -492.0
+        ],
+        "aabb_volume": 1944000.0,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    }
+  ]
+}

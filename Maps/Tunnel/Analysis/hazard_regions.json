@@ -1,0 +1,214 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Tunnel",
+  "source_vmf": "Maps/Tunnel/Tunnel.vmf",
+  "original_filename": "eft_tunnel_v2.vmf",
+  "generated_at": "2026-05-08T15:27:18.618107+00:00",
+  "hazard_regions": [
+    {
+      "id": "hazard_region_1",
+      "type": "hazard_region",
+      "center": [
+        -5784.0,
+        0.0,
+        2032.0
+      ],
+      "bounds": {
+        "min": [
+          -5796.0,
+          -384.0,
+          1720.0
+        ],
+        "max": [
+          -5772.0,
+          384.0,
+          2344.0
+        ],
+        "center": [
+          -5784.0,
+          0.0,
+          2032.0
+        ],
+        "size": [
+          24.0,
+          768.0,
+          624.0
+        ],
+        "z_range": [
+          1720.0,
+          2344.0
+        ],
+        "aabb_volume": 11501568.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Hazard or forced knockdown trigger.",
+        "Source entity class `trigger_hurt` id `174699`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        174699
+      ],
+      "source_classes": [
+        "trigger_hurt"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "hazard_region_2",
+      "type": "hazard_region",
+      "center": [
+        2703.0,
+        0.0,
+        864.002
+      ],
+      "bounds": {
+        "min": [
+          2695.5,
+          -96.0,
+          736.0
+        ],
+        "max": [
+          2710.5,
+          96.0,
+          992.004
+        ],
+        "center": [
+          2703.0,
+          0.0,
+          864.002
+        ],
+        "size": [
+          15.0,
+          192.0,
+          256.004
+        ],
+        "z_range": [
+          736.0,
+          992.004
+        ],
+        "aabb_volume": 737291.52,
+        "source_point_count": 258,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Hazard or forced knockdown trigger.",
+        "Source entity class `trigger_hurt` id `173623`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        173623
+      ],
+      "source_classes": [
+        "trigger_hurt"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "hazard_region_3",
+      "type": "hazard_region",
+      "center": [
+        -2703.0,
+        0.0,
+        864.002
+      ],
+      "bounds": {
+        "min": [
+          -2710.5,
+          -96.0,
+          736.0
+        ],
+        "max": [
+          -2695.5,
+          96.0,
+          992.004
+        ],
+        "center": [
+          -2703.0,
+          0.0,
+          864.002
+        ],
+        "size": [
+          15.0,
+          192.0,
+          256.004
+        ],
+        "z_range": [
+          736.0,
+          992.004
+        ],
+        "aabb_volume": 737291.52,
+        "source_point_count": 258,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Hazard or forced knockdown trigger.",
+        "Source entity class `trigger_hurt` id `173997`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        173997
+      ],
+      "source_classes": [
+        "trigger_hurt"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "hazard_region_4",
+      "type": "hazard_region",
+      "center": [
+        5784.0,
+        0.0,
+        2032.0
+      ],
+      "bounds": {
+        "min": [
+          5772.0,
+          -384.0,
+          1720.0
+        ],
+        "max": [
+          5796.0,
+          384.0,
+          2344.0
+        ],
+        "center": [
+          5784.0,
+          0.0,
+          2032.0
+        ],
+        "size": [
+          24.0,
+          768.0,
+          624.0
+        ],
+        "z_range": [
+          1720.0,
+          2344.0
+        ],
+        "aabb_volume": 11501568.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Hazard or forced knockdown trigger.",
+        "Source entity class `trigger_hurt` id `174460`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        174460
+      ],
+      "source_classes": [
+        "trigger_hurt"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

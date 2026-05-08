@@ -1,0 +1,61 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Space Jump",
+  "source_vmf": "Maps/Space Jump/Space Jump.vmf",
+  "original_filename": "eft_spacejump_v6.vmf",
+  "generated_at": "2026-05-08T15:27:15.177720+00:00",
+  "powerup_locations": [
+    {
+      "id": "powerup_location_1",
+      "type": "powerup_location",
+      "center": [
+        3536.0,
+        -1378.0,
+        389.0
+      ],
+      "bounds": {
+        "min": [
+          3535.0,
+          -1448.0,
+          319.0
+        ],
+        "max": [
+          3537.0,
+          -1308.0,
+          459.0
+        ],
+        "center": [
+          3536.0,
+          -1378.0,
+          389.0
+        ],
+        "size": [
+          2.0,
+          140.0,
+          140.0
+        ],
+        "z_range": [
+          319.0,
+          459.0
+        ],
+        "aabb_volume": 39200.0,
+        "source_point_count": 54,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `25187`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        25187
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

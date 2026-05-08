@@ -1,0 +1,4086 @@
+{
+  "generated_by": "Tools/Indexer",
+  "schema_version": 1,
+  "generated_at": "2026-05-08T17:05:00.984129+00:00",
+  "repo_root": "C:/Users/dissonance/Desktop/EFT2",
+  "warnings": [],
+  "present": true,
+  "lua_root": "Lua",
+  "file_count": 157,
+  "tag_counts": {
+    "movement": 86,
+    "ball": 66,
+    "possession": 47,
+    "tackle": 14,
+    "head_on": 29,
+    "knockdown": 27,
+    "throw": 49,
+    "dive": 7,
+    "goal": 29,
+    "trigger": 28,
+    "powerup": 7,
+    "bot": 100,
+    "hud": 34,
+    "round_flow": 68,
+    "telemetry": 87
+  },
+  "files": [
+    {
+      "path": "Lua/entities/effects/ballreset.lua",
+      "size_bytes": 890,
+      "line_count": 30,
+      "functions": [
+        "EFFECT:Init",
+        "EFFECT:Render",
+        "EFFECT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "ball"
+      ]
+    },
+    {
+      "path": "Lua/entities/effects/barrelexplosion.lua",
+      "size_bytes": 3434,
+      "line_count": 102,
+      "functions": [
+        "EFFECT:Init",
+        "EFFECT:Render",
+        "EFFECT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "bot",
+        "round_flow"
+      ]
+    },
+    {
+      "path": "Lua/entities/effects/blitzballhit.lua",
+      "size_bytes": 1732,
+      "line_count": 55,
+      "functions": [
+        "EFFECT:Init",
+        "EFFECT:Render",
+        "EFFECT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/entities/effects/bloodstream.lua",
+      "size_bytes": 2890,
+      "line_count": 88,
+      "functions": [
+        "CollideCallback",
+        "CollideCallbackSmall",
+        "EFFECT:Init",
+        "EFFECT:Render",
+        "EFFECT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "head_on",
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/entities/effects/chargehit.lua",
+      "size_bytes": 1887,
+      "line_count": 60,
+      "functions": [
+        "EFFECT:Init",
+        "EFFECT:Render",
+        "EFFECT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/entities/effects/exp_boozebottle.lua",
+      "size_bytes": 1767,
+      "line_count": 62,
+      "functions": [
+        "EFFECT:Init",
+        "EFFECT:Render",
+        "EFFECT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "head_on",
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/entities/effects/explosion_arcanewand.lua",
+      "size_bytes": 1909,
+      "line_count": 67,
+      "functions": [
+        "EFFECT:Init",
+        "EFFECT:Render",
+        "EFFECT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/entities/effects/hit_beatingstick.lua",
+      "size_bytes": 497,
+      "line_count": 26,
+      "functions": [
+        "EFFECT:Init",
+        "EFFECT:Render",
+        "EFFECT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": []
+    },
+    {
+      "path": "Lua/entities/effects/hit_bigpole.lua",
+      "size_bytes": 597,
+      "line_count": 26,
+      "functions": [
+        "EFFECT:Init",
+        "EFFECT:Render",
+        "EFFECT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": []
+    },
+    {
+      "path": "Lua/entities/effects/playergibs.lua",
+      "size_bytes": 2489,
+      "line_count": 80,
+      "functions": [
+        "CollideCallback",
+        "EFFECT:Init",
+        "EFFECT:Render",
+        "EFFECT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "head_on",
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/entities/effects/powerstrugglehit.lua",
+      "size_bytes": 1493,
+      "line_count": 53,
+      "functions": [
+        "EFFECT:Init",
+        "EFFECT:Render",
+        "EFFECT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": []
+    },
+    {
+      "path": "Lua/entities/effects/punchhit.lua",
+      "size_bytes": 508,
+      "line_count": 25,
+      "functions": [
+        "EFFECT:Init",
+        "EFFECT:Render",
+        "EFFECT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": []
+    },
+    {
+      "path": "Lua/entities/effects/wallslam.lua",
+      "size_bytes": 1446,
+      "line_count": 45,
+      "functions": [
+        "EFFECT:Init",
+        "EFFECT:Render",
+        "EFFECT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "ball"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/env_teamsound.lua",
+      "size_bytes": 921,
+      "line_count": 33,
+      "functions": [
+        "ENT:AcceptInput"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type"
+      ],
+      "tags": [
+        "round_flow"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/info_observer_point/init.lua",
+      "size_bytes": 281,
+      "line_count": 9,
+      "functions": [
+        "ENT:Initialize"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Base",
+        "ENT.Type"
+      ],
+      "tags": [
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/info_player_blue.lua",
+      "size_bytes": 73,
+      "line_count": 3,
+      "functions": [],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type"
+      ],
+      "tags": []
+    },
+    {
+      "path": "Lua/entities/entities/info_player_red.lua",
+      "size_bytes": 73,
+      "line_count": 3,
+      "functions": [],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type"
+      ],
+      "tags": []
+    },
+    {
+      "path": "Lua/entities/entities/info_player_spectator.lua",
+      "size_bytes": 73,
+      "line_count": 3,
+      "functions": [],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type"
+      ],
+      "tags": []
+    },
+    {
+      "path": "Lua/entities/entities/logic_norandomweapons.lua",
+      "size_bytes": 73,
+      "line_count": 3,
+      "functions": [],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type"
+      ],
+      "tags": [
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/logic_teamscore.lua",
+      "size_bytes": 840,
+      "line_count": 30,
+      "functions": [
+        "ENT:AcceptInput",
+        "ENT:Initialize",
+        "ENT:KeyValue"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type"
+      ],
+      "tags": [
+        "goal",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/point_divetackletrigger.lua",
+      "size_bytes": 4117,
+      "line_count": 123,
+      "functions": [
+        "ENT:Initialize",
+        "ENT:ProcessTackles",
+        "ENT:ShouldNotCollide",
+        "ENT:StartTouch",
+        "ENT:Think",
+        "ENT:UpdateTransmitState"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "tackle",
+        "head_on",
+        "knockdown",
+        "throw",
+        "dive",
+        "trigger",
+        "bot",
+        "hud",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/projectile_arcanewand/cl_init.lua",
+      "size_bytes": 1361,
+      "line_count": 51,
+      "functions": [
+        "ENT:Draw",
+        "ENT:Initialize",
+        "ENT:OnRemove",
+        "ENT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.RenderGroup"
+      ],
+      "tags": [
+        "ball"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/projectile_arcanewand/init.lua",
+      "size_bytes": 1754,
+      "line_count": 70,
+      "functions": [
+        "ENT:Explode",
+        "ENT:Initialize",
+        "ENT:PhysicsCollide",
+        "ENT:StartTouch",
+        "ENT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "possession",
+        "head_on",
+        "trigger",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/projectile_arcanewand/shared.lua",
+      "size_bytes": 105,
+      "line_count": 6,
+      "functions": [],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.LifeTime",
+        "ENT.Type"
+      ],
+      "tags": []
+    },
+    {
+      "path": "Lua/entities/entities/prop_ball/cl_init.lua",
+      "size_bytes": 4528,
+      "line_count": 146,
+      "functions": [
+        "ENT:CreateSpeedParticles",
+        "ENT:DefaultDraw",
+        "ENT:DrawTranslucent",
+        "ENT:Initialize",
+        "ENT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.LerpSpeed",
+        "ENT.NextEmit",
+        "ENT.NextStateEmit"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "throw",
+        "powerup",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_ball/init.lua",
+      "size_bytes": 9772,
+      "line_count": 328,
+      "functions": [
+        "ENT:AcceptInput",
+        "ENT:CheckScoring",
+        "ENT:Drop",
+        "ENT:EndTouch",
+        "ENT:Initialize",
+        "ENT:KeyValue",
+        "ENT:OnRemove",
+        "ENT:OnTakeDamage",
+        "ENT:PhysicsCollide",
+        "ENT:PhysicsUpdate",
+        "ENT:ReturnHome",
+        "ENT:StartTouch",
+        "ENT:Think",
+        "ENT:Touch",
+        "ENT:UpdateNearestGoal",
+        "ENT:UpdateTransmitState",
+        "game.CleanUpMap"
+      ],
+      "hooks": [
+        "ShutDown"
+      ],
+      "entity_assignments": [
+        "ENT.LastBallOnGround",
+        "ENT.LastCarrierTeam",
+        "ENT.LastOnGround",
+        "ENT.NextUpdateNearestGoal",
+        "ENT.Reset",
+        "ENT.WasOnGround"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "head_on",
+        "throw",
+        "goal",
+        "trigger",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_ball/shared.lua",
+      "size_bytes": 6513,
+      "line_count": 290,
+      "functions": [
+        "ENT:AlignToCarrier",
+        "ENT:CallStateFunction",
+        "ENT:GetAcceleration",
+        "ENT:GetAutoReturn",
+        "ENT:GetBlueGoalCenter",
+        "ENT:GetCarrier",
+        "ENT:GetHome",
+        "ENT:GetLastCarrier",
+        "ENT:GetLastCarrierTeam",
+        "ENT:GetRedGoalCenter",
+        "ENT:GetState",
+        "ENT:GetStateEnd",
+        "ENT:GetStateEntity",
+        "ENT:GetStateStart",
+        "ENT:GetStateTable",
+        "ENT:GetStateVector",
+        "ENT:GetThrowForceMultiplier",
+        "ENT:GetWasThrown",
+        "ENT:Move",
+        "ENT:OverTimeScoreBall",
+        "ENT:SecondaryAttack",
+        "ENT:SetAutoReturn",
+        "ENT:SetBlueGoalCenter",
+        "ENT:SetCarrier",
+        "ENT:SetHome",
+        "ENT:SetLastCarrier",
+        "ENT:SetLastCarrierTeam",
+        "ENT:SetRedGoalCenter",
+        "ENT:SetState",
+        "ENT:SetStateEnd",
+        "ENT:SetStateEntity",
+        "ENT:SetStateStart",
+        "ENT:SetStateVector",
+        "ENT:SetWasThrown",
+        "ENT:UpdateAnimation"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Name",
+        "ENT.RenderGroup",
+        "ENT.ResetTime",
+        "ENT.States",
+        "ENT.Type"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "throw",
+        "goal",
+        "trigger",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_ball/states/iceball.lua",
+      "size_bytes": 3686,
+      "line_count": 103,
+      "functions": [
+        "STATE:End",
+        "STATE:GetBallColor",
+        "STATE:PhysicsCollide",
+        "STATE:PostDraw",
+        "STATE:Start"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "head_on",
+        "throw",
+        "bot",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_ball/states/scoreball.lua",
+      "size_bytes": 1945,
+      "line_count": 68,
+      "functions": [
+        "STATE:End",
+        "STATE:GetBallColor",
+        "STATE:PostDraw",
+        "STATE:Start",
+        "STATE:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "head_on",
+        "goal",
+        "bot",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_ball/states/speedball.lua",
+      "size_bytes": 2289,
+      "line_count": 78,
+      "functions": [
+        "STATE:End",
+        "STATE:GetBallColor",
+        "STATE:GetChargeTimeMultiplier",
+        "STATE:PostDraw",
+        "STATE:PreMove",
+        "STATE:Start"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "powerup",
+        "bot",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_ball/states/waterball.lua",
+      "size_bytes": 2406,
+      "line_count": 94,
+      "functions": [
+        "STATE:End",
+        "STATE:GetBallColor",
+        "STATE:PostDraw",
+        "STATE:RemoveWaterPlatform",
+        "STATE:SpawnWaterPlatform",
+        "STATE:Start",
+        "STATE:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "head_on",
+        "bot",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_balltrigger/cl_init.lua",
+      "size_bytes": 250,
+      "line_count": 18,
+      "functions": [
+        "ENT:Draw",
+        "ENT:Initialize",
+        "ENT:OnRemove",
+        "ENT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "ball"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_balltrigger/init.lua",
+      "size_bytes": 822,
+      "line_count": 39,
+      "functions": [
+        "ENT:EndTouch",
+        "ENT:Initialize",
+        "ENT:StartTouch",
+        "ENT:Touch"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "ball",
+        "trigger"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_balltrigger/shared.lua",
+      "size_bytes": 75,
+      "line_count": 4,
+      "functions": [],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type"
+      ],
+      "tags": [
+        "ball"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_carry_arcanewand.lua",
+      "size_bytes": 3841,
+      "line_count": 146,
+      "functions": [
+        "ENT:DoAnimationEvent",
+        "ENT:DrawTranslucent",
+        "ENT:Move",
+        "ENT:PhysicsCollide",
+        "ENT:PrimaryAttack",
+        "ENT:SecondaryAttack",
+        "ENT:TranslateActivity"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.AttachmentAngles",
+        "ENT.AttachmentOffset",
+        "ENT.Base",
+        "ENT.BoneName",
+        "ENT.IsPropWeapon",
+        "ENT.Mass",
+        "ENT.MaxActiveSets",
+        "ENT.Model",
+        "ENT.Name",
+        "ENT.Rotation",
+        "ENT.ThrowForce",
+        "ENT.Type"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "head_on",
+        "knockdown",
+        "throw",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_carry_barrel.lua",
+      "size_bytes": 2785,
+      "line_count": 107,
+      "functions": [
+        "ENT:Explode",
+        "ENT:GetImpactSpeed",
+        "ENT:Initialize",
+        "ENT:Move",
+        "ENT:OnThink",
+        "ENT:OnTouch",
+        "ENT:PhysicsCollide",
+        "ENT:SecondaryAttack",
+        "ENT:TranslateActivity"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.AttachmentAngles",
+        "ENT.AttachmentOffset",
+        "ENT.Base",
+        "ENT.BoneName",
+        "ENT.DropChance",
+        "ENT.IsPropWeapon",
+        "ENT.MaxActiveSets",
+        "ENT.Model",
+        "ENT.Name",
+        "ENT.ThrowForce",
+        "ENT.Type"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "head_on",
+        "throw",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_carry_base/cl_init.lua",
+      "size_bytes": 336,
+      "line_count": 23,
+      "functions": [
+        "ENT:Draw",
+        "ENT:OnThink",
+        "ENT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.DrawTranslucent"
+      ],
+      "tags": [
+        "ball",
+        "possession"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_carry_base/init.lua",
+      "size_bytes": 3454,
+      "line_count": 146,
+      "functions": [
+        "ENT:AcceptInput",
+        "ENT:Drop",
+        "ENT:EndTouch",
+        "ENT:Initialize",
+        "ENT:KeyValue",
+        "ENT:OnThink",
+        "ENT:OnThrown",
+        "ENT:OnTouch",
+        "ENT:PhysicsUpdate",
+        "ENT:Think",
+        "ENT:Touch"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.LastCarrierTeam"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "throw",
+        "trigger",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_carry_base/shared.lua",
+      "size_bytes": 2928,
+      "line_count": 116,
+      "functions": [
+        "ENT:AlignToCarrier",
+        "ENT:GetAttachmentPosAng",
+        "ENT:GetCarrier",
+        "ENT:GetLastCarrier",
+        "ENT:GetLastCarrierTeam",
+        "ENT:SetCarrier",
+        "ENT:SetLastCarrier",
+        "ENT:SetLastCarrierTeam"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.AttachmentAngles",
+        "ENT.AttachmentOffset",
+        "ENT.BoneName",
+        "ENT.LifeTime",
+        "ENT.Model",
+        "ENT.RenderGroup",
+        "ENT.Type"
+      ],
+      "tags": [
+        "ball",
+        "possession",
+        "trigger",
+        "bot",
+        "round_flow"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_carry_beatingstick.lua",
+      "size_bytes": 3347,
+      "line_count": 125,
+      "functions": [
+        "ENT:GetImpactSpeed",
+        "ENT:HitObject",
+        "ENT:Initialize",
+        "ENT:Move",
+        "ENT:OnThink",
+        "ENT:OnTouch",
+        "ENT:PhysicsCollide",
+        "ENT:PrimaryAttack",
+        "ENT:SecondaryAttack",
+        "ENT:TranslateActivity"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.AllowInCompetitive",
+        "ENT.AttachmentAngles",
+        "ENT.AttachmentOffset",
+        "ENT.Base",
+        "ENT.BoneName",
+        "ENT.IsPropWeapon",
+        "ENT.Mass",
+        "ENT.MaxActiveSets",
+        "ENT.Model",
+        "ENT.Name",
+        "ENT.ThrowForce",
+        "ENT.Type"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "head_on",
+        "knockdown",
+        "throw",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_carry_bigpole.lua",
+      "size_bytes": 3203,
+      "line_count": 120,
+      "functions": [
+        "ENT:CalcMainActivity",
+        "ENT:GetImpactSpeed",
+        "ENT:HitObject",
+        "ENT:Initialize",
+        "ENT:Move",
+        "ENT:OnThink",
+        "ENT:OnTouch",
+        "ENT:PhysicsCollide",
+        "ENT:PrimaryAttack",
+        "ENT:SecondaryAttack"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.AllowInCompetitive",
+        "ENT.AttachmentAngles",
+        "ENT.AttachmentOffset",
+        "ENT.Base",
+        "ENT.BoneName",
+        "ENT.IsPropWeapon",
+        "ENT.Mass",
+        "ENT.MaxActiveSets",
+        "ENT.Model",
+        "ENT.Name",
+        "ENT.ThrowForce",
+        "ENT.Type"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "head_on",
+        "throw",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_carry_boozebottle.lua",
+      "size_bytes": 4071,
+      "line_count": 148,
+      "functions": [
+        "ENT:Explode",
+        "ENT:GetImpactSpeed",
+        "ENT:Initialize",
+        "ENT:Move",
+        "ENT:OnThink",
+        "ENT:OnTouch",
+        "ENT:PhysicsCollide",
+        "ENT:SecondaryAttack",
+        "ENT:TranslateActivity"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.AllowInCompetitive",
+        "ENT.AttachmentAngles",
+        "ENT.AttachmentOffset",
+        "ENT.Base",
+        "ENT.BoneName",
+        "ENT.DropChance",
+        "ENT.IsPropWeapon",
+        "ENT.MaxActiveSets",
+        "ENT.Model",
+        "ENT.Name",
+        "ENT.ThrowForce",
+        "ENT.Type"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "head_on",
+        "throw",
+        "bot",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_carry_car.lua",
+      "size_bytes": 8558,
+      "line_count": 308,
+      "functions": [
+        "ENT:Draw",
+        "ENT:DrawSpotlight",
+        "ENT:Explode",
+        "ENT:GetThrown",
+        "ENT:HitObject",
+        "ENT:Initialize",
+        "ENT:Move",
+        "ENT:OnRemove",
+        "ENT:OnThink",
+        "ENT:OnThrown",
+        "ENT:OnTouch",
+        "ENT:PhysicsCollide",
+        "ENT:PhysicsUpdate",
+        "ENT:SecondaryAttack",
+        "ENT:SetCarrier",
+        "ENT:SetThrown",
+        "ENT:ShouldNotCollide",
+        "ENT:Think",
+        "ENT:TranslateActivity"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.AccelTime",
+        "ENT.AttachmentAngles",
+        "ENT.AttachmentOffset",
+        "ENT.Base",
+        "ENT.BoneName",
+        "ENT.DrawTranslucent",
+        "ENT.DropChance",
+        "ENT.IsPropWeapon",
+        "ENT.MaxActiveSets",
+        "ENT.Model",
+        "ENT.Name",
+        "ENT.ThrowForce",
+        "ENT.Type"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "head_on",
+        "knockdown",
+        "throw",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_carry_melon.lua",
+      "size_bytes": 2625,
+      "line_count": 101,
+      "functions": [
+        "ENT:Explode",
+        "ENT:GetImpactSpeed",
+        "ENT:Move",
+        "ENT:OnThink",
+        "ENT:OnTouch",
+        "ENT:PhysicsCollide",
+        "ENT:SecondaryAttack"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.AttachmentAngles",
+        "ENT.AttachmentOffset",
+        "ENT.Base",
+        "ENT.BoneName",
+        "ENT.DropChance",
+        "ENT.IsPropWeapon",
+        "ENT.MaxActiveSets",
+        "ENT.Model",
+        "ENT.Name",
+        "ENT.ThrowForce",
+        "ENT.Type"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "head_on",
+        "throw",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_carry_melondriver.lua",
+      "size_bytes": 6697,
+      "line_count": 237,
+      "functions": [
+        "ENT:DrawTranslucent",
+        "ENT:GetCameraPos",
+        "ENT:GetFireTime",
+        "ENT:GetImpactSpeed",
+        "ENT:GetNextFireTime",
+        "ENT:HUDPaint",
+        "ENT:HitObject",
+        "ENT:Initialize",
+        "ENT:Move",
+        "ENT:OnThink",
+        "ENT:OnTouch",
+        "ENT:PhysicsCollide",
+        "ENT:PrimaryAttack",
+        "ENT:SecondaryAttack",
+        "ENT:SetFireTime",
+        "ENT:SetNextFireTime",
+        "ENT:TranslateActivity"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.AttachmentAngles",
+        "ENT.AttachmentOffset",
+        "ENT.Base",
+        "ENT.BoneName",
+        "ENT.ChargeTime",
+        "ENT.DropChance",
+        "ENT.FireDelay",
+        "ENT.IsPropWeapon",
+        "ENT.MaxActiveSets",
+        "ENT.Model",
+        "ENT.Name",
+        "ENT.RenderGroup",
+        "ENT.ThrowForce",
+        "ENT.Type"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "head_on",
+        "throw",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_goal/cl_init.lua",
+      "size_bytes": 121,
+      "line_count": 8,
+      "functions": [
+        "ENT:Draw"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "goal"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_goal/init.lua",
+      "size_bytes": 1456,
+      "line_count": 65,
+      "functions": [
+        "ENT:GetPoints",
+        "ENT:GetTeamID",
+        "ENT:Initialize",
+        "ENT:KeyValue",
+        "ENT:SetPoints",
+        "ENT:SetTeamID",
+        "ENT:Touch"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.m_Points",
+        "ENT.m_TeamID"
+      ],
+      "tags": [
+        "ball",
+        "goal",
+        "trigger"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_goal/shared.lua",
+      "size_bytes": 70,
+      "line_count": 4,
+      "functions": [],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type"
+      ],
+      "tags": [
+        "goal"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_waterballplatform/cl_init.lua",
+      "size_bytes": 140,
+      "line_count": 9,
+      "functions": [
+        "ENT:Draw"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.RenderGroup"
+      ],
+      "tags": []
+    },
+    {
+      "path": "Lua/entities/entities/prop_waterballplatform/init.lua",
+      "size_bytes": 1471,
+      "line_count": 52,
+      "functions": [
+        "ENT:AlignToCarrier",
+        "ENT:Initialize",
+        "ENT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/prop_waterballplatform/shared.lua",
+      "size_bytes": 334,
+      "line_count": 17,
+      "functions": [
+        "ENT:SetPlayer",
+        "ENT:ShouldNotCollide"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type"
+      ],
+      "tags": [
+        "head_on"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/status__base/cl_init.lua",
+      "size_bytes": 617,
+      "line_count": 29,
+      "functions": [
+        "ENT:Draw",
+        "ENT:Initialize",
+        "ENT:OnRemove",
+        "ENT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "possession",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/status__base/init.lua",
+      "size_bytes": 1404,
+      "line_count": 74,
+      "functions": [
+        "ENT:Initialize",
+        "ENT:KeyValue",
+        "ENT:OnRemove",
+        "ENT:PhysicsCollide",
+        "ENT:PlayerSet",
+        "ENT:SetDie",
+        "ENT:SetPlayer",
+        "ENT:Think",
+        "ENT:Touch",
+        "ENT:UpdateTransmitState"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "possession",
+        "head_on",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/status__base/shared.lua",
+      "size_bytes": 325,
+      "line_count": 21,
+      "functions": [
+        "ENT:AcceptInput",
+        "ENT:EndTouch",
+        "ENT:PhysicsCollide",
+        "ENT:StartTouch",
+        "ENT:Touch"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.GetPlayer",
+        "ENT.Type"
+      ],
+      "tags": [
+        "head_on",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/status_boozed.lua",
+      "size_bytes": 2180,
+      "line_count": 89,
+      "functions": [
+        "ENT:CreateMove",
+        "ENT:DrawTranslucent",
+        "ENT:Initialize",
+        "ENT:OnRemove",
+        "ENT:RenderScreenspaceEffects",
+        "ENT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.LifeTime",
+        "ENT.RenderGroup",
+        "ENT.Type"
+      ],
+      "tags": [
+        "possession",
+        "knockdown",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/status_jersey/cl_init.lua",
+      "size_bytes": 499,
+      "line_count": 19,
+      "functions": [
+        "ENT:DrawTranslucent"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.RenderGroup"
+      ],
+      "tags": []
+    },
+    {
+      "path": "Lua/entities/entities/status_jersey/init.lua",
+      "size_bytes": 1381,
+      "line_count": 53,
+      "functions": [
+        "ENT:SetPlayer",
+        "MoveOffset",
+        "RotateAngles"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.BoneName",
+        "ENT.OffsetAngles",
+        "ENT.OffsetPosition"
+      ],
+      "tags": [
+        "possession",
+        "round_flow"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/status_jersey/shared.lua",
+      "size_bytes": 500,
+      "line_count": 27,
+      "functions": [
+        "ENT:GetJerseyName",
+        "ENT:Initialize",
+        "ENT:SetJerseyName",
+        "ENT:SetJerseyNumber"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type"
+      ],
+      "tags": []
+    },
+    {
+      "path": "Lua/entities/entities/trigger_abspush.lua",
+      "size_bytes": 3947,
+      "line_count": 127,
+      "functions": [
+        "ENT:AcceptInput",
+        "ENT:Initialize",
+        "ENT:KeyValue",
+        "ENT:Push",
+        "ENT:StartTouch",
+        "ENT:Touch"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "knockdown",
+        "throw",
+        "trigger",
+        "bot",
+        "round_flow"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/trigger_ballreset.lua",
+      "size_bytes": 877,
+      "line_count": 40,
+      "functions": [
+        "ENT:AcceptInput",
+        "ENT:GetEnabled",
+        "ENT:KeyValue",
+        "ENT:SetEnabled",
+        "ENT:Touch"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type",
+        "ENT.m_Enabled"
+      ],
+      "tags": [
+        "ball",
+        "trigger"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/trigger_goal.lua",
+      "size_bytes": 2802,
+      "line_count": 100,
+      "functions": [
+        "ENT:AcceptInput",
+        "ENT:GetPoints",
+        "ENT:GetScoreType",
+        "ENT:GetTeamID",
+        "ENT:KeyValue",
+        "ENT:SetPoints",
+        "ENT:SetScoreType",
+        "ENT:SetTeamID",
+        "ENT:Touch"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Enabled",
+        "ENT.Type",
+        "ENT.m_Points",
+        "ENT.m_ScoreType",
+        "ENT.m_TeamID"
+      ],
+      "tags": [
+        "ball",
+        "possession",
+        "throw",
+        "goal",
+        "trigger",
+        "round_flow"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/trigger_jumppad.lua",
+      "size_bytes": 3642,
+      "line_count": 123,
+      "functions": [
+        "ENT:AcceptInput",
+        "ENT:Initialize",
+        "ENT:KeyValue",
+        "ENT:Push",
+        "ENT:StartTouch",
+        "ENT:Touch"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "knockdown",
+        "throw",
+        "trigger",
+        "round_flow"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/trigger_knockdown.lua",
+      "size_bytes": 1527,
+      "line_count": 52,
+      "functions": [
+        "ENT:AcceptInput",
+        "ENT:Initialize",
+        "ENT:KeyValue",
+        "ENT:KnockDown",
+        "ENT:StartTouch",
+        "ENT:Touch"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type"
+      ],
+      "tags": [
+        "knockdown",
+        "trigger",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/entities/trigger_powerup.lua",
+      "size_bytes": 1344,
+      "line_count": 52,
+      "functions": [
+        "ENT:AcceptInput",
+        "ENT:GetEnabled",
+        "ENT:KeyValue",
+        "ENT:SetEnabled",
+        "ENT:Touch"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type",
+        "ENT.m_Enabled",
+        "ENT.m_Powerup",
+        "ENT.m_PowerupTime"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "trigger",
+        "powerup",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/weapons/weapon_eft.lua",
+      "size_bytes": 2149,
+      "line_count": 87,
+      "functions": [
+        "SWEP:DrawWeaponSelection",
+        "SWEP:PreDrawViewModel",
+        "SWEP:PrimaryAttack",
+        "SWEP:Reload",
+        "SWEP:SecondaryAttack",
+        "SWEP:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "SWEP.PrintName",
+        "SWEP.ShowViewModel",
+        "SWEP.ShowWorldModel",
+        "SWEP.ViewModel",
+        "SWEP.WorldModel"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "tackle",
+        "dive",
+        "bot",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/entities/weapons/weapon_eft_nav.lua",
+      "size_bytes": 10491,
+      "line_count": 262,
+      "functions": [
+        "NearestNodeTo",
+        "SWEP:DrawHUD",
+        "SWEP:DrawViewModel",
+        "SWEP:DrawWeaponSelection",
+        "SWEP:DrawWorldModel",
+        "SWEP:PreDrawViewModel",
+        "SWEP:PrimaryAttack",
+        "SWEP:Reload",
+        "SWEP:SecondaryAttack"
+      ],
+      "hooks": [
+        "PostDrawOpaqueRenderables"
+      ],
+      "entity_assignments": [
+        "SWEP.Author",
+        "SWEP.PrintName",
+        "SWEP.Purpose",
+        "SWEP.ShowViewModel",
+        "SWEP.ShowWorldModel",
+        "SWEP.Slot",
+        "SWEP.SlotPos",
+        "SWEP.ViewModel",
+        "SWEP.WorldModel"
+      ],
+      "tags": [
+        "movement",
+        "possession",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/animationsapi/boneanimlib.lua",
+      "size_bytes": 1895,
+      "line_count": 67,
+      "functions": [
+        "meta:ResetLuaAnimation",
+        "meta:SetLuaAnimation",
+        "meta:StopAllLuaAnimations",
+        "meta:StopLuaAnimation",
+        "meta:StopLuaAnimationGroup"
+      ],
+      "hooks": [
+        "Initialize"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/animationsapi/cl_animeditor.lua",
+      "size_bytes": 43864,
+      "line_count": 1502,
+      "functions": [
+        "AnimationEditorOff",
+        "AnimationEditorOn",
+        "AnimationEditorView",
+        "AnimationStarted",
+        "ApplyEndResults",
+        "DistFromPointToLine",
+        "FixMouse",
+        "IsMouseOverPanel",
+        "KEYFRAME:CopyPreviousKey",
+        "KEYFRAME:GetAnimationIndex",
+        "KEYFRAME:GetData",
+        "KEYFRAME:Init",
+        "KEYFRAME:OnMousePressed",
+        "KEYFRAME:Paint",
+        "KEYFRAME:SetFrameData",
+        "KEYFRAME:SetLength",
+        "LoadAnimation",
+        "LoadAnimationFromFile",
+        "MAIN:Init",
+        "MAIN:RefreshBoneSet",
+        "NewAnimation",
+        "OutputCode",
+        "PaintTopBar",
+        "RegisterAll",
+        "SLIDERS:Dragged3D",
+        "SLIDERS:Init",
+        "SLIDERS:OnSliderChanged",
+        "SLIDERS:SetFrameData",
+        "SUBANIMS:Init",
+        "SUBANIMS:Refresh",
+        "SaveAnimation",
+        "TIMELINE:AddKeyFrame",
+        "TIMELINE:GetAnimationTime",
+        "TIMELINE:Init",
+        "TIMELINE:LoadSubAnimation",
+        "TIMELINE:OnLoadAnimation",
+        "TIMELINE:OnNewAnimation",
+        "TIMELINE:ResolveRestart",
+        "TIMELINE:ResolveStart",
+        "TIMELINE:Toggle",
+        "animprint"
+      ],
+      "hooks": [
+        "CalcView",
+        "HUDPaint",
+        "ShouldDrawLocalPlayer",
+        "Think"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "throw",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/animationsapi/cl_boneanimlib.lua",
+      "size_bytes": 11958,
+      "line_count": 347,
+      "functions": [
+        "AdvanceFrame",
+        "BuildBonePositions",
+        "CosineInterpolation",
+        "CubicInterpolation",
+        "DoCurrentFrame",
+        "GetFrameBoneInfo",
+        "ProcessAnimations",
+        "meta:ResetBoneMatrix",
+        "meta:ResetInSequence",
+        "meta:ResetLuaAnimation",
+        "meta:ResetLuaAnimationProperties",
+        "meta:SetLuaAnimation",
+        "meta:SetLuaAnimationDieTime",
+        "meta:SetLuaAnimationPower",
+        "meta:SetLuaAnimationTimeScale",
+        "meta:StopAllLuaAnimations",
+        "meta:StopLuaAnimation",
+        "meta:StopLuaAnimationGroup"
+      ],
+      "hooks": [
+        "CalcMainActivity",
+        "Think"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/animationsapi/mocap_controller.lua",
+      "size_bytes": 2006,
+      "line_count": 92,
+      "functions": [
+        "ENT:Draw",
+        "ENT:GetAnimationData",
+        "ENT:GetAnimationName",
+        "ENT:GetStartTime",
+        "ENT:Initialize",
+        "ENT:OnRemove",
+        "ENT:SetAnimationName",
+        "ENT:SetStartTime",
+        "ENT:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "ENT.Type"
+      ],
+      "tags": [
+        "knockdown",
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/animationsapi/sh_boneanimlib.lua",
+      "size_bytes": 7507,
+      "line_count": 285,
+      "functions": [
+        "Deserialize",
+        "GetLuaAnimations",
+        "MakeTable",
+        "RegisterLuaAnimation",
+        "Serialize"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "bot",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/animationsapi/sh_mocap.lua",
+      "size_bytes": 715,
+      "line_count": 42,
+      "functions": [
+        "GetMocapAnimations",
+        "RegisterMocapAnimation"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/animationsapi/sv_mocap.lua",
+      "size_bytes": 2004,
+      "line_count": 76,
+      "functions": [
+        "ResetMoCap",
+        "meta:ResetLuaAnimation",
+        "meta:SetLuaAnimation",
+        "meta:StopAllLuaAnimations",
+        "meta:StopLuaAnimation",
+        "meta:StopLuaAnimationGroup"
+      ],
+      "hooks": [
+        "Initialize"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "knockdown",
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_deathnotice.lua",
+      "size_bytes": 4414,
+      "line_count": 174,
+      "functions": [
+        "CreateDeathNotify",
+        "GM:AddDeathNotice",
+        "GM:AddPlayerAction",
+        "RecvNPCKilledNPC",
+        "RecvPlayerKilled",
+        "RecvPlayerKilledByPlayer",
+        "RecvPlayerKilledNPC",
+        "RecvPlayerKilledSelf",
+        "container:AddItem",
+        "container:PerformLayout",
+        "container:Think"
+      ],
+      "hooks": [
+        "InitPostEntity"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "bot",
+        "hud"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_draw.lua",
+      "size_bytes": 753,
+      "line_count": 26,
+      "functions": [
+        "draw.DrawTextBlurBG",
+        "draw.SimpleTextBlurBG"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": []
+    },
+    {
+      "path": "Lua/gamemode/cl_gmchanger.lua",
+      "size_bytes": 2251,
+      "line_count": 96,
+      "functions": [
+        "GM:ChangingGamemode",
+        "GM:GamemodeWon",
+        "GM:ShowClassChooser",
+        "GM:ShowGamemodeChooser",
+        "GM:ShowMapChooserForGamemode",
+        "GetVoteScreen",
+        "RcvPlayableGamemodes"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "goal",
+        "bot",
+        "hud",
+        "round_flow"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_help.lua",
+      "size_bytes": 10757,
+      "line_count": 292,
+      "functions": [
+        "GM:ShowHelp",
+        "MakeLabel"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "tackle",
+        "throw",
+        "goal",
+        "trigger",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_hud.lua",
+      "size_bytes": 1409,
+      "line_count": 57,
+      "functions": [
+        "GM:HUDNeedsUpdate",
+        "GM:HUDPaint",
+        "GM:HUDShouldDraw",
+        "GM:OnHUDUpdated",
+        "GM:RefreshHUD"
+      ],
+      "hooks": [
+        "InitPostEntity"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "bot",
+        "hud",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_init.lua",
+      "size_bytes": 69000,
+      "line_count": 2096,
+      "functions": [
+        "BetterScreenScale",
+        "EyeAngles3D2D",
+        "EyePos3D2DScreen",
+        "GM:Add3DNotice",
+        "GM:AddScoreboardDeaths",
+        "GM:AddScoreboardKills",
+        "GM:AddScreenCrack",
+        "GM:AddTeamPlayerAction",
+        "GM:Base_HUDShouldDraw",
+        "GM:CalcView",
+        "GM:ChatText",
+        "GM:CreateFonts",
+        "GM:CreateMoveTaunt",
+        "GM:CreateScoreboard",
+        "GM:Draw3DBallIndicator",
+        "GM:Draw3DBallPowerup",
+        "GM:Draw3DGameState",
+        "GM:Draw3DGameWinner",
+        "GM:Draw3DGoalIndicator",
+        "GM:Draw3DHUD",
+        "GM:Draw3DHealthBar",
+        "GM:Draw3DNotices",
+        "GM:Draw3DOvertime",
+        "GM:Draw3DPotentialWeapon",
+        "GM:Draw3DRoundWinner",
+        "GM:Draw3DTeamScores",
+        "GM:Draw3DWarmUp",
+        "GM:Draw3DWeapon",
+        "GM:DrawAngleFinder",
+        "GM:DrawCircle",
+        "GM:DrawCrosshair",
+        "GM:DrawGameStateHUD",
+        "GM:DrawMinimap",
+        "GM:DrawPlayerNames",
+        "GM:DrawPlayerRing",
+        "GM:DrawScoreboard",
+        "GM:DrawScreenCracks",
+        "GM:EndOfGame",
+        "GM:GenerateMinimapMaterial",
+        "GM:GetTeamColor",
+        "GM:HUDDrawTargetID",
+        "GM:HUDShouldDraw",
+        "GM:HealthThink",
+        "GM:HookGetLocal",
+        "GM:InitPostEntity",
+        "GM:Initialize",
+        "GM:InputMouseApply",
+        "GM:OnHUDPaint",
+        "GM:OnSpawnMenuOpen",
+        "GM:PlayerBindPress",
+        "GM:PlayerStepSoundTime",
+        "GM:PositionScoreboard",
+        "GM:PostDrawSkyBox",
+        "GM:PostProcessPermitted",
+        "GM:PreDrawSkyBox",
+        "GM:RenderScreenspaceEffects",
+        "GM:ShouldDrawLocalPlayer",
+        "GM:TeamChangeNotification",
+        "GM:TeamScored",
+        "GM:Think",
+        "GM:UpdateHUD_Alive",
+        "GM:UpdateHUD_Dead",
+        "GM:UpdateHUD_Observer",
+        "GM:_CreateMove",
+        "GM:_PostDrawTranslucentRenderables",
+        "GM:_PostPlayerDraw",
+        "GM:_PrePlayerDraw",
+        "HSVtoRGB",
+        "MinimapWorldToScreen",
+        "create",
+        "create_large",
+        "render.DrawQuadEasy",
+        "surface.CreateLegacyFont"
+      ],
+      "hooks": [
+        "HUDPaint",
+        "PostDrawTranslucentRenderables",
+        "PreDrawSkyBox"
+      ],
+      "entity_assignments": [
+        "GM.CameraYawLerp",
+        "GM.CurrentTransition",
+        "GM.LerpRateOff",
+        "GM.LerpRateOn",
+        "GM.PrevCameraYaw"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "tackle",
+        "knockdown",
+        "throw",
+        "goal",
+        "powerup",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_manifest_data.lua",
+      "size_bytes": 3746,
+      "line_count": 88,
+      "functions": [],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "tackle",
+        "head_on",
+        "knockdown",
+        "throw",
+        "dive",
+        "goal",
+        "trigger",
+        "powerup",
+        "bot",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_manifest_debug.lua",
+      "size_bytes": 11358,
+      "line_count": 282,
+      "functions": [
+        "DrawManifestBox",
+        "DrawSection",
+        "GetStateName"
+      ],
+      "hooks": [
+        "HUDPaint"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "goal",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_mapvote.lua",
+      "size_bytes": 20588,
+      "line_count": 610,
+      "functions": [
+        "FindBackgroundForMap",
+        "GetMapThumbnail",
+        "MapNameToKeyword",
+        "PANEL:Init",
+        "PANEL:Paint",
+        "PANEL:PerformLayout",
+        "PANEL:SetMaps",
+        "PANEL:ShowWinner",
+        "PANEL:Think",
+        "PANEL:UpdateVotes",
+        "ScanBackgrounds"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "throw",
+        "goal",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_nav_editor.lua",
+      "size_bytes": 5797,
+      "line_count": 155,
+      "functions": [],
+      "hooks": [
+        "HUDPaint",
+        "PostDrawOpaqueRenderables"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "throw",
+        "bot",
+        "hud",
+        "round_flow"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_notify.lua",
+      "size_bytes": 749,
+      "line_count": 31,
+      "functions": [
+        "CreateLeftNotify",
+        "GM:NotifyGMVote"
+      ],
+      "hooks": [
+        "InitPostEntity"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "hud"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_obj_entity_extend.lua",
+      "size_bytes": 327,
+      "line_count": 10,
+      "functions": [
+        "meta:SetRenderBoundsNumber"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": []
+    },
+    {
+      "path": "Lua/gamemode/cl_obj_player_extend.lua",
+      "size_bytes": 1716,
+      "line_count": 59,
+      "functions": [
+        "GetController",
+        "meta:CanCharge",
+        "meta:EndState",
+        "meta:FixModelAngles",
+        "meta:GetStatus",
+        "meta:GiveStatus",
+        "meta:IsFriend",
+        "meta:RemoveAllStatus",
+        "meta:RemoveStatus",
+        "meta:ThirdPersonCamera"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "bot",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_postprocess.lua",
+      "size_bytes": 1130,
+      "line_count": 38,
+      "functions": [
+        "GM:DoPostProcessing"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "round_flow"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_rich_presence.lua",
+      "size_bytes": 3488,
+      "line_count": 98,
+      "functions": [
+        "GetScoreString",
+        "GetStateString",
+        "UpdatePresence"
+      ],
+      "hooks": [
+        "InitPostEntity",
+        "TeamScored"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "ball",
+        "throw",
+        "goal",
+        "trigger",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_scoreboard.lua",
+      "size_bytes": 11327,
+      "line_count": 329,
+      "functions": [
+        "GM:ScoreboardHide",
+        "GM:ScoreboardShow",
+        "PANEL:DrawPlayerRow",
+        "PANEL:Init",
+        "PANEL:OnMouseWheeled",
+        "PANEL:OnRemove",
+        "PANEL:Paint",
+        "PANEL:Think",
+        "sortPlayers"
+      ],
+      "hooks": [
+        "PlayerCanHearPlayersVoice",
+        "PlayerDisconnected"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "ball",
+        "tackle",
+        "throw",
+        "goal",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_selectscreen.lua",
+      "size_bytes": 7916,
+      "line_count": 255,
+      "functions": [
+        "CreatePlayerRows",
+        "GM:ShowTeam"
+      ],
+      "hooks": [
+        "OnPauseMenuShow"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "goal",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/cl_splashscreen.lua",
+      "size_bytes": 159,
+      "line_count": 6,
+      "functions": [
+        "GM:ShowSplash"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/class_default.lua",
+      "size_bytes": 1606,
+      "line_count": 65,
+      "functions": [
+        "CLASS:CalcView",
+        "CLASS:Loadout",
+        "CLASS:Move",
+        "CLASS:OnDeath",
+        "CLASS:OnKeyPress",
+        "CLASS:OnKeyRelease",
+        "CLASS:OnSpawn",
+        "CLASS:ShouldDrawLocalPlayer",
+        "CLASS:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "head_on"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/init.lua",
+      "size_bytes": 34845,
+      "line_count": 1082,
+      "functions": [
+        "BroadcastLua",
+        "GM:AllowPlayerPickup",
+        "GM:AutoTeam",
+        "GM:Base_CanPlayerSuicide",
+        "GM:Base_DoPlayerDeath",
+        "GM:Base_OnPlayerChangedTeam",
+        "GM:Base_PlayerInitialSpawn",
+        "GM:Base_PlayerSpawn",
+        "GM:Base_Think",
+        "GM:BroadcastAction",
+        "GM:CanEndRoundBasedGame",
+        "GM:CanPlayerSuicide",
+        "GM:CheckPlayerReconnected",
+        "GM:CheckTeamBalance",
+        "GM:DoPlayerDeath",
+        "GM:EndOfGame",
+        "GM:EndSpectating",
+        "GM:EndWarmUp",
+        "GM:EntityTakeDamage",
+        "GM:FindLeastCommittedPlayerOnTeam",
+        "GM:GetFallDamage",
+        "GM:GetWinningFraction",
+        "GM:HasReachedRoundLimit",
+        "GM:InitPostEntity",
+        "GM:Initialize",
+        "GM:IsSpawnpointSuitable",
+        "GM:LocalSound",
+        "GM:OnDoPlayerDeath",
+        "GM:OnEndOfGame",
+        "GM:OnPlayerChangedTeam",
+        "GM:OnPlayerKnockedDownBy",
+        "GM:OnPreRoundStart",
+        "GM:OnRoundResult",
+        "GM:OnRoundStart",
+        "GM:OnTeamScored",
+        "GM:PlayerCanHearPlayersVoice",
+        "GM:PlayerCanJoinTeam",
+        "GM:PlayerDeath",
+        "GM:PlayerDeathSound",
+        "GM:PlayerDeathThink",
+        "GM:PlayerDisconnected",
+        "GM:PlayerHurt",
+        "GM:PlayerInitialSpawn",
+        "GM:PlayerJoinClass",
+        "GM:PlayerJoinTeam",
+        "GM:PlayerLoadout",
+        "GM:PlayerReady",
+        "GM:PlayerReconnected",
+        "GM:PlayerRequestClass",
+        "GM:PlayerRequestTeam",
+        "GM:PlayerSelectSpawn",
+        "GM:PlayerSetModel",
+        "GM:PlayerShouldTakeDamage",
+        "GM:PlayerSpawn",
+        "GM:PlayerSwitchFlashlight",
+        "GM:PostPlayerDeath",
+        "GM:ReturnBall",
+        "GM:SetInRound",
+        "GM:SetOvertime",
+        "GM:SetupPlayerVisibility",
+        "GM:ShowHelp",
+        "GM:ShowTeam",
+        "GM:SlowTime",
+        "GM:SlowTimeEase",
+        "GM:SpawnRandomWeapon",
+        "GM:SpawnRandomWeaponAtSpawn",
+        "GM:StartSpectating",
+        "GM:TeamScored",
+        "GM:TeamSound",
+        "GM:Think",
+        "SeenSplash",
+        "TimeLeft",
+        "gsub_randomsound"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "GM.ForceEmoteDownload",
+        "GM.ReconnectedPlayers",
+        "GM.SetOverTime"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "knockdown",
+        "throw",
+        "goal",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/languages/english.lua",
+      "size_bytes": 1288,
+      "line_count": 25,
+      "functions": [],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": []
+    },
+    {
+      "path": "Lua/gamemode/languages/spanish.lua",
+      "size_bytes": 145,
+      "line_count": 7,
+      "functions": [],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": []
+    },
+    {
+      "path": "Lua/gamemode/lib/class.lua",
+      "size_bytes": 2552,
+      "line_count": 74,
+      "functions": [
+        "GetClass",
+        "class",
+        "cls:Is"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/lib/event.lua",
+      "size_bytes": 3179,
+      "line_count": 96,
+      "functions": [
+        "Event:Add",
+        "Event:Clear",
+        "Event:Invoke",
+        "Event:New",
+        "Event:Remove"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "throw",
+        "goal",
+        "bot",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/lib/promise.lua",
+      "size_bytes": 7749,
+      "line_count": 233,
+      "functions": [
+        "Promise.Delay",
+        "Promise.all",
+        "Promise.new",
+        "Promise.reject",
+        "Promise.resolve",
+        "Promise:catch",
+        "Promise:executeHandlers",
+        "Promise:then_",
+        "reject",
+        "resolve"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "throw",
+        "bot",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/lib/SBOX_MAPPING.lua",
+      "size_bytes": 6489,
+      "line_count": 118,
+      "functions": [],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "possession",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/obj_ball.lua",
+      "size_bytes": 6669,
+      "line_count": 175,
+      "functions": [
+        "Ball:CheckScoring",
+        "Ball:CheckScoringCarrier",
+        "Ball:CheckScoringPhys",
+        "Ball:GetPos",
+        "Ball:IsValid",
+        "Ball:ReturnHome",
+        "Ball:UpdateNearestGoal",
+        "Ball:ctor"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "throw",
+        "goal",
+        "trigger",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/obj_bot.lua",
+      "size_bytes": 84044,
+      "line_count": 1850,
+      "functions": [
+        "AreGoalsThrowOnly",
+        "Bot:AnalyzeFloor",
+        "Bot:ApplyMovement",
+        "Bot:BuildCommand",
+        "Bot:CheckStuck",
+        "Bot:Debug",
+        "Bot:DecideState",
+        "Bot:DetectJumpableObstacle",
+        "Bot:DetectWalls",
+        "Bot:ExecuteState",
+        "Bot:GetPos",
+        "Bot:IsValid",
+        "Bot:MoveTo",
+        "Bot:Name",
+        "Bot:Team",
+        "Bot:Think",
+        "Bot:ctor",
+        "CalcThrowPitch",
+        "CountEnemiesInPath",
+        "FindBestGoal",
+        "FindBestJumpPad",
+        "FindNearbyPowerup",
+        "FindThrowTarget",
+        "GetBotSpeed",
+        "GetGoalInfo",
+        "GetInterceptPoint",
+        "GetJumpPads",
+        "GetNearestEnemy",
+        "GetOpenness",
+        "GetProximityRank",
+        "IsKnockedDown",
+        "IsWall",
+        "ScanFloor"
+      ],
+      "hooks": [
+        "InitPostEntity"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "tackle",
+        "head_on",
+        "knockdown",
+        "throw",
+        "goal",
+        "trigger",
+        "powerup",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/obj_gamemanager.lua",
+      "size_bytes": 18853,
+      "line_count": 498,
+      "functions": [
+        "GameManager:AddBonusTime",
+        "GameManager:CheckRoundEnd",
+        "GameManager:ClearRoundResult",
+        "GameManager:EndOfGame",
+        "GameManager:GetBonusTime",
+        "GameManager:GetOvertime",
+        "GameManager:GetRoundLimit",
+        "GameManager:GetTimeLimit",
+        "GameManager:HasReachedRoundLimit",
+        "GameManager:InRound",
+        "GameManager:OnTeamScored",
+        "GameManager:PreRoundStart",
+        "GameManager:ProcessResultText",
+        "GameManager:RoundEnd",
+        "GameManager:RoundEndWithResult",
+        "GameManager:RoundStart",
+        "GameManager:RoundTimerEnd",
+        "GameManager:SetBonusTime",
+        "GameManager:SetInGamemodeVote",
+        "GameManager:SetInRound",
+        "GameManager:SetIsEndOfGame",
+        "GameManager:SetOvertime",
+        "GameManager:SetRoundResult",
+        "GameManager:SetRoundWinner",
+        "GameManager:SetVoteEndTime",
+        "GameManager:Think",
+        "GameManager:ctor"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "ball",
+        "throw",
+        "goal",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/obj_network.lua",
+      "size_bytes": 9844,
+      "line_count": 253,
+      "functions": [
+        "EstimateArgSize",
+        "Network:Broadcast",
+        "Network:GetAllStats",
+        "Network:GetStats",
+        "Network:GetTotals",
+        "Network:PrintStats",
+        "Network:RPC",
+        "Network:ResetStats",
+        "Network:Send",
+        "Network:SendToServer",
+        "Network:Start",
+        "Network:WriteBool",
+        "Network:WriteEntity",
+        "Network:WriteFloat",
+        "Network:WriteInt",
+        "Network:WriteString",
+        "Network:WriteUInt",
+        "Network:_recordSend",
+        "Network:ctor",
+        "WriteArg"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/obj_player.lua",
+      "size_bytes": 19142,
+      "line_count": 460,
+      "functions": [
+        "PlayerController:CanCharge",
+        "PlayerController:ChargeHit",
+        "PlayerController:ChargeLaunch",
+        "PlayerController:EndState",
+        "PlayerController:FixModelAngles",
+        "PlayerController:GetChargeImmunity",
+        "PlayerController:GetKnockdownImmunity",
+        "PlayerController:GetStatus",
+        "PlayerController:GiveStatus",
+        "PlayerController:IsValid",
+        "PlayerController:KnockDown",
+        "PlayerController:OnHurt",
+        "PlayerController:OnInitialSpawn",
+        "PlayerController:OnKilled",
+        "PlayerController:OnSpawn",
+        "PlayerController:PunchHit",
+        "PlayerController:RemoveStatus",
+        "PlayerController:ResetChargeImmunity",
+        "PlayerController:ResetKnockdownImmunity",
+        "PlayerController:SetChargeImmunity",
+        "PlayerController:SetKnockdownImmunity",
+        "PlayerController:ThinkHealthRegen",
+        "PlayerController:ThirdPersonCamera",
+        "PlayerController:ctor"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "tackle",
+        "head_on",
+        "knockdown",
+        "throw",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/obj_viewmodel_hud.lua",
+      "size_bytes": 2760,
+      "line_count": 91,
+      "functions": [
+        "HUDViewModel:GetRoundTimer",
+        "HUDViewModel:GetSpeed",
+        "HUDViewModel:GetStatusText",
+        "HUDViewModel:GetTeamColor",
+        "HUDViewModel:GetTeamName",
+        "HUDViewModel:GetTeamScore",
+        "HUDViewModel:New",
+        "HUDViewModel:ShouldDrawHUD"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "goal",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/player_class/class_default.lua",
+      "size_bytes": 379,
+      "line_count": 20,
+      "functions": [
+        "CLASS:Loadout",
+        "CLASS:OnSpawn"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/player_class.lua",
+      "size_bytes": 1028,
+      "line_count": 45,
+      "functions": [
+        "Get",
+        "GetClassName",
+        "Register"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": []
+    },
+    {
+      "path": "Lua/gamemode/player_colours.lua",
+      "size_bytes": 639,
+      "line_count": 16,
+      "functions": [],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": []
+    },
+    {
+      "path": "Lua/gamemode/player_extension.lua",
+      "size_bytes": 5764,
+      "line_count": 236,
+      "functions": [
+        "meta:AddFrags",
+        "meta:AllowFlashlight",
+        "meta:CallClassFunction",
+        "meta:CanRespawn",
+        "meta:CanUseFlashlight",
+        "meta:CheckPlayerClassOnSpawn",
+        "meta:DisableRespawn",
+        "meta:EnableRespawn",
+        "meta:Frags",
+        "meta:GetPlayerClass",
+        "meta:GetPlayerClassName",
+        "meta:GetRespawnTime",
+        "meta:IsObserver",
+        "meta:OnDeath",
+        "meta:OnLoadout",
+        "meta:OnPlayerModel",
+        "meta:OnSpawn",
+        "meta:SetFrags",
+        "meta:SetPlayerClass",
+        "meta:SetRandomClass",
+        "meta:SetRespawnTime",
+        "meta:UpdateNameColor"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "head_on",
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/round_controller.lua",
+      "size_bytes": 8324,
+      "line_count": 293,
+      "functions": [
+        "GM:AddRoundTime",
+        "GM:CanEndRoundBasedGame",
+        "GM:CanStartRound",
+        "GM:CheckPlayerDeathRoundEnd",
+        "GM:CheckRoundEnd",
+        "GM:CheckRoundEndInternal",
+        "GM:ClearRoundResult",
+        "GM:GetRoundLimit",
+        "GM:GetRoundTime",
+        "GM:GetTeamAliveCounts",
+        "GM:HasReachedRoundLimit",
+        "GM:InRound",
+        "GM:OnPreRoundStart",
+        "GM:OnRoundEnd",
+        "GM:OnRoundResult",
+        "GM:OnRoundStart",
+        "GM:OnRoundWinner",
+        "GM:OnTimerTick",
+        "GM:PreRoundStart",
+        "GM:ProcessResultText",
+        "GM:RoundEnd",
+        "GM:RoundEndWithResult",
+        "GM:RoundStart",
+        "GM:RoundTimerEnd",
+        "GM:SelectCurrentlyWinningPlayer",
+        "GM:SetInRound",
+        "GM:SetRoundResult",
+        "GM:SetRoundWinner",
+        "GM:StartRoundBasedGame"
+      ],
+      "hooks": [
+        "PlayerDisconnected",
+        "PostPlayerDeath",
+        "Tick"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "goal",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/round_transitions/slide.lua",
+      "size_bytes": 378,
+      "line_count": 14,
+      "functions": [
+        "TRANSITION:In",
+        "TRANSITION:Out"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": []
+    },
+    {
+      "path": "Lua/gamemode/server/sv_downloads.lua",
+      "size_bytes": 1068,
+      "line_count": 33,
+      "functions": [],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/server/sv_match_recorder.lua",
+      "size_bytes": 10693,
+      "line_count": 311,
+      "functions": [
+        "ComputeSummary",
+        "GetSpatialContext",
+        "RECORDING:AddPlayer",
+        "RECORDING:EndMatch",
+        "RECORDING:StartMatch",
+        "RecordMatchEvent"
+      ],
+      "hooks": [
+        "Initialize",
+        "PlayerDisconnected",
+        "PlayerInitialSpawn"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "tackle",
+        "head_on",
+        "knockdown",
+        "throw",
+        "goal",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/server/sv_nav.lua",
+      "size_bytes": 2317,
+      "line_count": 70,
+      "functions": [
+        "RunNavGenerate",
+        "SnapSpawnsToGround"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "bot",
+        "round_flow"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sh_animations.lua",
+      "size_bytes": 2894,
+      "line_count": 77,
+      "functions": [
+        "GM:CalcMainActivity",
+        "GM:DoAnimationEvent",
+        "GM:HandlePlayerSwimming",
+        "GM:UpdateAnimation"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "trigger",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sh_globals.lua",
+      "size_bytes": 1947,
+      "line_count": 56,
+      "functions": [],
+      "hooks": [],
+      "entity_assignments": [
+        "GM.AllowedPlayerModels"
+      ],
+      "tags": [
+        "movement",
+        "throw"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sh_nav_graph.lua",
+      "size_bytes": 5360,
+      "line_count": 141,
+      "functions": [
+        "EFTNav.Deserialize",
+        "EFTNav.FindPath",
+        "EFTNav.GetNearestNode",
+        "EFTNav.IsLoaded",
+        "EFTNav.Serialize"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "goal",
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sh_obj_entity_extend.lua",
+      "size_bytes": 3522,
+      "line_count": 106,
+      "functions": [
+        "meta:AddOnOutput",
+        "meta:CollisionRulesChanged",
+        "meta:FindByNameHammer",
+        "meta:FireOutput",
+        "meta:GetBonePositionMatrixed",
+        "meta:GetNamedAttachment",
+        "meta:IsInWater",
+        "meta:IsSubmerged",
+        "meta:IsSwimming",
+        "meta:TakeSpecialDamage",
+        "meta:ThrowFromPosition"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "knockdown",
+        "throw",
+        "bot",
+        "round_flow"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sh_obj_player_extend.lua",
+      "size_bytes": 12057,
+      "line_count": 473,
+      "functions": [
+        "InvalidateCompensatedTrace",
+        "meta:CallCarryFunction",
+        "meta:CallForcedStateFunction",
+        "meta:CallStateFunction",
+        "meta:CanDodge",
+        "meta:CanMelee",
+        "meta:CanThrow",
+        "meta:ChargingSpeed",
+        "meta:ChargingSpeedSqr",
+        "meta:Freeze",
+        "meta:GetCarry",
+        "meta:GetCollisionMode",
+        "meta:GetLastAttacker",
+        "meta:GetLastChargeHit",
+        "meta:GetLaunchPos",
+        "meta:GetNextMoveVelocity",
+        "meta:GetPotentialCarry",
+        "meta:GetState",
+        "meta:GetStateAngles",
+        "meta:GetStateBool",
+        "meta:GetStateBool2",
+        "meta:GetStateEnd",
+        "meta:GetStateEntity",
+        "meta:GetStateInteger",
+        "meta:GetStateNumber",
+        "meta:GetStateStart",
+        "meta:GetStateTable",
+        "meta:GetStateVector",
+        "meta:GetSweepTargets",
+        "meta:GetTargetTrace",
+        "meta:GetTargets",
+        "meta:GetTraceFilter",
+        "meta:HasPity",
+        "meta:ImmuneToAll",
+        "meta:IsCarrying",
+        "meta:IsCarryingBall",
+        "meta:IsIdle",
+        "meta:IsOnPlayer",
+        "meta:MaxCollisionMode",
+        "meta:MinCollisionMode",
+        "meta:PenetratingTraceHull",
+        "meta:ResetJumpPower",
+        "meta:SetCarry",
+        "meta:SetCollisionMode",
+        "meta:SetLastAttacker",
+        "meta:SetLastChargeHit",
+        "meta:SetNextMoveVelocity",
+        "meta:SetPotentialCarry",
+        "meta:SetState",
+        "meta:SetStateAngles",
+        "meta:SetStateBool",
+        "meta:SetStateBool2",
+        "meta:SetStateEnd",
+        "meta:SetStateEntity",
+        "meta:SetStateInteger",
+        "meta:SetStateNumber",
+        "meta:SetStateStart",
+        "meta:SetStateVector",
+        "meta:ShouldBeFrozen",
+        "meta:ShouldCompensate",
+        "meta:ShouldNotCollide",
+        "meta:TargetsContain",
+        "meta:ThinkSelf",
+        "meta:TranslateWeaponActivity"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "head_on",
+        "throw",
+        "trigger",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sh_roundtransitions.lua",
+      "size_bytes": 1119,
+      "line_count": 50,
+      "functions": [
+        "Register"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "bot",
+        "round_flow"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sh_states.lua",
+      "size_bytes": 944,
+      "line_count": 44,
+      "functions": [
+        "Register"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "throw",
+        "bot",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sh_translate.lua",
+      "size_bytes": 2917,
+      "line_count": 107,
+      "functions": [
+        "PrintTranslatedMessage",
+        "meta:PrintTranslatedMessage",
+        "translate.AddLanguage",
+        "translate.AddTranslation",
+        "translate.ClientFormat",
+        "translate.ClientGet",
+        "translate.Format",
+        "translate.Get",
+        "translate.GetLanguageName",
+        "translate.GetLanguages",
+        "translate.GetTranslations"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "bot",
+        "hud"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sh_voice.lua",
+      "size_bytes": 8912,
+      "line_count": 154,
+      "functions": [
+        "meta:GetVoiceSet",
+        "meta:PlayPainSound",
+        "meta:PlayVoiceSet"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "throw",
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/shared.lua",
+      "size_bytes": 23375,
+      "line_count": 753,
+      "functions": [
+        "AccessorFuncDT",
+        "GM:CreateTeams",
+        "GM:DefaultMove",
+        "GM:EntityEmitSound",
+        "GM:GetBall",
+        "GM:GetBallHome",
+        "GM:GetFallDamage",
+        "GM:GetGameTimeLeft",
+        "GM:GetGoalCenter",
+        "GM:GetGoalEntities",
+        "GM:GetOppositeTeam",
+        "GM:GetOvertime",
+        "GM:GetRoundTime",
+        "GM:GetTimeLimit",
+        "GM:GetWeapons",
+        "GM:InGamemodeVote",
+        "GM:InitPostEntity",
+        "GM:IsOverTime",
+        "GM:IsWarmUp",
+        "GM:KeyPress",
+        "GM:KeyRelease",
+        "GM:Move",
+        "GM:OnPlayerHitGround",
+        "GM:OnPowerStruggleLose",
+        "GM:OnPowerStruggleWin",
+        "GM:PlayerNoClip",
+        "GM:PlayerShouldTaunt",
+        "GM:PrecacheResources",
+        "GM:RecalculateGoalCenters",
+        "GM:RegisterWeapon",
+        "GM:RegisterWeapons",
+        "GM:SetBall",
+        "GM:SetBallHome",
+        "GM:ShouldCollide",
+        "GM:ShouldDrawLocalPlayer",
+        "GM:TeamHasEnoughPlayers",
+        "IncludePlayerClasses",
+        "team.HasPity",
+        "team.HasPlayers",
+        "team.TopPlayer",
+        "timer.CreateEx",
+        "timer.SimpleEx",
+        "util.Blood",
+        "util.Chance",
+        "util.ExplosiveDamage",
+        "util.IsVisible",
+        "util.LimitTurning",
+        "util.Probability",
+        "util.ToMinutesSeconds",
+        "util.ToMinutesSecondsMilliseconds"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "GM.AllowAutoTeam",
+        "GM.AllowSpectating",
+        "GM.Author",
+        "GM.AutomaticTeamBalance",
+        "GM.Ball",
+        "GM.BallTrigger",
+        "GM.BoneScales",
+        "GM.CanOnlySpectateOwnTeam",
+        "GM.Competitive",
+        "GM.DeathLingerTime",
+        "GM.Email",
+        "GM.FolderName",
+        "GM.GameLength",
+        "GM.GetOverTime",
+        "GM.Help",
+        "GM.IsOverTime",
+        "GM.IsOvertime",
+        "GM.MaximumDeathLength",
+        "GM.MinimumDeathLength",
+        "GM.Name",
+        "GM.NoNonPlayerPlayerDamage",
+        "GM.NoPlayerDamage",
+        "GM.NoPlayerPlayerDamage",
+        "GM.NoPlayerSelfDamage",
+        "GM.NoPlayerTeamDamage",
+        "GM.OvertimeScoreBall",
+        "GM.OvertimeTime",
+        "GM.Pity",
+        "GM.RealisticFallDamage",
+        "GM.RoundBased",
+        "GM.RoundEndsWhenOneTeamAlive",
+        "GM.RoundLength",
+        "GM.RoundLimit",
+        "GM.RoundPostLength",
+        "GM.RoundPreStartTime",
+        "GM.ScoreLimit",
+        "GM.SecondsBetweenTeamSwitches",
+        "GM.SecondsBetweenTeamSwitchesFromSpec",
+        "GM.SelectClass",
+        "GM.SelectModel",
+        "GM.TeamBased",
+        "GM.UseAutoJoin",
+        "GM.ValidSpectatorEntities",
+        "GM.ValidSpectatorModes",
+        "GM.VeryCompetitive",
+        "GM.VotingDelay",
+        "GM.WarmUpLength",
+        "GM.Website",
+        "GM.m_Weapons"
+      ],
+      "tags": [
+        "movement",
+        "ball",
+        "tackle",
+        "head_on",
+        "knockdown",
+        "throw",
+        "dive",
+        "goal",
+        "trigger",
+        "powerup",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/skin.lua",
+      "size_bytes": 12786,
+      "line_count": 448,
+      "functions": [
+        "SKIN:DrawGenericBackground",
+        "SKIN:DrawLinedButtonBorder",
+        "SKIN:LayoutScoreHeader",
+        "SKIN:LayoutTeamScoreboardHeader",
+        "SKIN:PaintCancelButton",
+        "SKIN:PaintGameNotice",
+        "SKIN:PaintGamemodeButton",
+        "SKIN:PaintListView",
+        "SKIN:PaintListViewLine",
+        "SKIN:PaintOverCancelButton",
+        "SKIN:PaintOverPanelButton",
+        "SKIN:PaintPanelButton",
+        "SKIN:PaintScoreHeader",
+        "SKIN:PaintScorePanel",
+        "SKIN:PaintScorePanelHeader",
+        "SKIN:PaintScorePanelLabel",
+        "SKIN:PaintScorePanelLine",
+        "SKIN:PaintTeamScoreboardHeader",
+        "SKIN:SchemeCancelButton",
+        "SKIN:SchemeGameNoticeLabel",
+        "SKIN:SchemeGamemodeButton",
+        "SKIN:SchemeScoreHeader",
+        "SKIN:SchemeScorePanelHeaderLabel",
+        "SKIN:SchemeScorePanelLabel",
+        "SKIN:SchemeSelectButton",
+        "SKIN:SchemeSpectatorInfo"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "goal",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/states/arcanewandattack.lua",
+      "size_bytes": 1987,
+      "line_count": 78,
+      "functions": [
+        "STATE:Ended",
+        "STATE:GetCameraPos",
+        "STATE:IsIdle",
+        "STATE:ShouldDrawCrosshair",
+        "STATE:Started",
+        "STATE:Think",
+        "STATE:UpdateAnimation"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/states/beatingstickattack.lua",
+      "size_bytes": 4020,
+      "line_count": 148,
+      "functions": [
+        "STATE:CalcMainActivity",
+        "STATE:HitEntity",
+        "STATE:IsIdle",
+        "STATE:Move",
+        "STATE:OnChargedInto",
+        "STATE:OnHitWithArcaneBolt",
+        "STATE:Started",
+        "STATE:Think",
+        "STATE:UpdateAnimation"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "knockdown",
+        "throw",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/states/bigpoleattack.lua",
+      "size_bytes": 4099,
+      "line_count": 148,
+      "functions": [
+        "STATE:CalcMainActivity",
+        "STATE:HitEntity",
+        "STATE:IsIdle",
+        "STATE:Move",
+        "STATE:OnChargedInto",
+        "STATE:OnHitWithArcaneBolt",
+        "STATE:Started",
+        "STATE:Think",
+        "STATE:UpdateAnimation"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "knockdown",
+        "throw",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/states/divetackle.lua",
+      "size_bytes": 4897,
+      "line_count": 170,
+      "functions": [
+        "STATE:BuildBonePositions",
+        "STATE:CalcMainActivity",
+        "STATE:CanPickup",
+        "STATE:CreateMove",
+        "STATE:Ended",
+        "STATE:IsIdle",
+        "STATE:PostPlayerDraw",
+        "STATE:PrePlayerDraw",
+        "STATE:Started",
+        "STATE:Think",
+        "STATE:UpdateAnimation"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "tackle",
+        "knockdown",
+        "dive",
+        "trigger",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/states/knockdownrecover.lua",
+      "size_bytes": 1033,
+      "line_count": 51,
+      "functions": [
+        "STATE:Ended",
+        "STATE:IsIdle",
+        "STATE:Move",
+        "STATE:PrePlayerDraw",
+        "STATE:Started",
+        "STATE:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "possession",
+        "knockdown",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/states/knockeddown.lua",
+      "size_bytes": 8436,
+      "line_count": 282,
+      "functions": [
+        "STATE:CalcMainActivity",
+        "STATE:CanPickup",
+        "STATE:ComputeShadowControl",
+        "STATE:Ended",
+        "STATE:GoToNextState",
+        "STATE:IsIdle",
+        "STATE:Move",
+        "STATE:PrePlayerDraw",
+        "STATE:Restarted",
+        "STATE:Started",
+        "STATE:Think",
+        "STATE:UpdateAnimation",
+        "STATE:WallSlamThink"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "tackle",
+        "knockdown",
+        "dive",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/states/movement.lua",
+      "size_bytes": 6557,
+      "line_count": 215,
+      "functions": [
+        "STATE:CalcMainActivity",
+        "STATE:CanPickup",
+        "STATE:DoAnimationEvent",
+        "STATE:IsIdle",
+        "STATE:KeyPress",
+        "STATE:KeyRelease",
+        "STATE:Reload",
+        "STATE:Started",
+        "STATE:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "tackle",
+        "head_on",
+        "throw",
+        "trigger",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/states/powerstruggle.lua",
+      "size_bytes": 16840,
+      "line_count": 549,
+      "functions": [
+        "STATE:AddPower",
+        "STATE:CalcMainActivity",
+        "STATE:CreateMove",
+        "STATE:Draw3DHUD",
+        "STATE:GetKeyPattern",
+        "STATE:GetMatchEndTime",
+        "STATE:GetOpponent",
+        "STATE:GetRequiredPattern",
+        "STATE:GetSeed",
+        "STATE:ImmuneToAll",
+        "STATE:IsIdle",
+        "STATE:KeyPress",
+        "STATE:Move",
+        "STATE:NoSuicide",
+        "STATE:PrimaryAttack",
+        "STATE:SetKeyPattern",
+        "STATE:Started",
+        "STATE:Think",
+        "STATE:UpdateAnimation",
+        "STATE:WinPowerStruggle"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "throw",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/states/powerstrugglelose.lua",
+      "size_bytes": 1583,
+      "line_count": 70,
+      "functions": [
+        "STATE:CalcMainActivity",
+        "STATE:CreateMove",
+        "STATE:GetOpponent",
+        "STATE:ImmuneToAll",
+        "STATE:IsIdle",
+        "STATE:Move",
+        "STATE:NoSuicide",
+        "STATE:Started",
+        "STATE:Think",
+        "STATE:UpdateAnimation"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/states/powerstrugglewin.lua",
+      "size_bytes": 3029,
+      "line_count": 118,
+      "functions": [
+        "STATE:CalcMainActivity",
+        "STATE:CreateMove",
+        "STATE:Ended",
+        "STATE:GetOpponent",
+        "STATE:ImmuneToAll",
+        "STATE:IsIdle",
+        "STATE:Move",
+        "STATE:NoSuicide",
+        "STATE:Started",
+        "STATE:Think",
+        "STATE:UpdateAnimation"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "knockdown",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/states/preround.lua",
+      "size_bytes": 787,
+      "line_count": 39,
+      "functions": [
+        "STATE:CalcMainActivity",
+        "STATE:CreateMove",
+        "STATE:EntityTakeDamage",
+        "STATE:IsIdle",
+        "STATE:Move"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/states/punch.lua",
+      "size_bytes": 2864,
+      "line_count": 113,
+      "functions": [
+        "STATE:CalcMainActivity",
+        "STATE:CanPickup",
+        "STATE:Ended",
+        "STATE:GoToNextState",
+        "STATE:IsIdle",
+        "STATE:Move",
+        "STATE:OnChargedInto",
+        "STATE:Started",
+        "STATE:Think",
+        "STATE:UpdateAnimation"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "possession",
+        "knockdown",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/states/spinnyknockdown.lua",
+      "size_bytes": 1101,
+      "line_count": 47,
+      "functions": [
+        "STATE:CalcMainActivity",
+        "STATE:Ended",
+        "STATE:GetCameraPos",
+        "STATE:GetCycle",
+        "STATE:GoToNextState",
+        "STATE:IsIdle",
+        "STATE:Started",
+        "STATE:UpdateAnimation"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "knockdown",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/states/throw.lua",
+      "size_bytes": 6831,
+      "line_count": 229,
+      "functions": [
+        "STATE:CalcMainActivity",
+        "STATE:Draw3DHUD",
+        "STATE:Ended",
+        "STATE:GetCameraPos",
+        "STATE:GetThrowForce",
+        "STATE:GetThrowPos",
+        "STATE:GetThrowPower",
+        "STATE:IsIdle",
+        "STATE:Move",
+        "STATE:PreDraw3DHUD",
+        "STATE:ShouldDrawAngleFinder",
+        "STATE:ShouldDrawCrosshair",
+        "STATE:Started",
+        "STATE:Think",
+        "STATE:UpdateAnimation"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "throw",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/states/wave.lua",
+      "size_bytes": 969,
+      "line_count": 48,
+      "functions": [
+        "STATE:CalcMainActivity",
+        "STATE:CanPickup",
+        "STATE:IsIdle",
+        "STATE:Move",
+        "STATE:Started",
+        "STATE:Think",
+        "STATE:UpdateAnimation"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sv_bot_pathfinding.lua",
+      "size_bytes": 8373,
+      "line_count": 232,
+      "functions": [
+        "BotPathfinder.GetNextWaypoint",
+        "BuildHazardCache",
+        "ReconstructPath"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "goal",
+        "trigger",
+        "bot",
+        "round_flow"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sv_bots.lua",
+      "size_bytes": 8813,
+      "line_count": 250,
+      "functions": [
+        "BalanceTeams",
+        "CreateBot",
+        "RemoveBot",
+        "TriggerBotVictory"
+      ],
+      "hooks": [
+        "InitPostEntity",
+        "OnRoundEnd",
+        "OnRoundResult",
+        "PlayerDisconnected",
+        "PlayerInitialSpawn",
+        "SetupMove",
+        "StartCommand",
+        "Think"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "throw",
+        "trigger",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sv_emotes.lua",
+      "size_bytes": 6471,
+      "line_count": 175,
+      "functions": [],
+      "hooks": [
+        "PlayerDisconnected",
+        "PlayerSay"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "throw",
+        "trigger",
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sv_gmchanger.lua",
+      "size_bytes": 10784,
+      "line_count": 380,
+      "functions": [
+        "GM:ChangeGamemode",
+        "GM:ClearPlayerWants",
+        "GM:CountVotesForChange",
+        "GM:FinishGamemodeVote",
+        "GM:FinishMapVote",
+        "GM:GetFractionOfPlayersThatWantChange",
+        "GM:GetVotesNeededForChange",
+        "GM:GetWinningMap",
+        "GM:GetWinningWant",
+        "GM:IsValidGamemode",
+        "GM:StartGamemodeVote",
+        "GM:StartMapVote",
+        "GM:VoteForChange",
+        "GM:VotePlayGamemode",
+        "GM:VotePlayMap",
+        "GM:WorkOutWinningGamemode",
+        "GetNumberOfGamemodeMaps",
+        "GetRandomGamemodeMap",
+        "GetRandomGamemodeName",
+        "SendAvailableGamemodes"
+      ],
+      "hooks": [
+        "PlayerInitialSpawn"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "possession",
+        "bot",
+        "round_flow"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sv_mapvote.lua",
+      "size_bytes": 11395,
+      "line_count": 350,
+      "functions": [
+        "MapVote.Cancel",
+        "MapVote.HasExtraVotePower",
+        "MapVote.Start",
+        "RTV.AddVote",
+        "RTV.CanVote",
+        "RTV.ShouldChange",
+        "RecordCurrentMap"
+      ],
+      "hooks": [
+        "PlayerDisconnected",
+        "PlayerSay"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sv_nav_editor.lua",
+      "size_bytes": 25372,
+      "line_count": 626,
+      "functions": [
+        "BroadcastGraph",
+        "EFTNav.GetToolState",
+        "EFTNav.Load",
+        "EFTNav.Save",
+        "EFTNav.SendToolStatus",
+        "NavFilePath",
+        "NavMsg",
+        "RequireAdmin"
+      ],
+      "hooks": [
+        "InitPostEntity",
+        "PlayerInitialSpawn"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "throw",
+        "trigger",
+        "bot",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sv_obj_player_extend.lua",
+      "size_bytes": 2718,
+      "line_count": 109,
+      "functions": [
+        "GetController",
+        "meta:CanCharge",
+        "meta:ChargeHit",
+        "meta:ChargeLaunch",
+        "meta:CreateRagdoll",
+        "meta:EndState",
+        "meta:FixModelAngles",
+        "meta:GetChargeImmunity",
+        "meta:GetDiveTackleThrowAwayTime",
+        "meta:GetKnockdownImmunity",
+        "meta:GetStatus",
+        "meta:GiveStatus",
+        "meta:KnockDown",
+        "meta:PunchHit",
+        "meta:RemoveAllStatus",
+        "meta:RemoveStatus",
+        "meta:ResetChargeImmunity",
+        "meta:ResetKnockdownImmunity",
+        "meta:SetChargeImmunity",
+        "meta:SetDiveTackleThrowAwayTime",
+        "meta:SetKnockdownImmunity"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "possession",
+        "tackle",
+        "knockdown",
+        "throw",
+        "dive",
+        "bot",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sv_security.lua",
+      "size_bytes": 16060,
+      "line_count": 431,
+      "functions": [
+        "PrintResults",
+        "ScanDirectory",
+        "ScanFile"
+      ],
+      "hooks": [
+        "Initialize"
+      ],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "ball",
+        "throw",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/sv_spectator.lua",
+      "size_bytes": 7636,
+      "line_count": 239,
+      "functions": [
+        "GM:BecomeObserver",
+        "GM:ChangeObserverMode",
+        "GM:FindNextSpectatorTarget",
+        "GM:FindPrevSpectatorTarget",
+        "GM:FindRandomSpectatorTarget",
+        "GM:GetSpectatorTargets",
+        "GM:GetValidSpectatorEntityNames",
+        "GM:GetValidSpectatorModes",
+        "GM:IsValidSpectator",
+        "GM:IsValidSpectatorTarget",
+        "GM:NextEntitySpectate",
+        "GM:PrevEntitySpectate",
+        "GM:StartEntitySpectate",
+        "spec_mode",
+        "spec_next",
+        "spec_prev"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/utility.lua",
+      "size_bytes": 1707,
+      "line_count": 59,
+      "functions": [
+        "UTIL_FreezeAllPlayers",
+        "UTIL_SpawnAllPlayers",
+        "UTIL_StripAllPlayers",
+        "UTIL_UnFreezeAllPlayers"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "bot"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/vgui/dex3dnotification.lua",
+      "size_bytes": 4241,
+      "line_count": 158,
+      "functions": [
+        "PANEL:AddImage",
+        "PANEL:AddKillIcon",
+        "PANEL:AddLabel",
+        "PANEL:Init",
+        "PANEL:Paint",
+        "PANEL:SetNotification"
+      ],
+      "hooks": [],
+      "entity_assignments": [
+        "GM.NotifyFadeTime"
+      ],
+      "tags": [
+        "bot",
+        "hud",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/vgui/vgui_gamenotice.lua",
+      "size_bytes": 2890,
+      "line_count": 115,
+      "functions": [
+        "PANEL:AddEntityText",
+        "PANEL:AddIcon",
+        "PANEL:AddItem",
+        "PANEL:AddText",
+        "PANEL:Init",
+        "PANEL:PerformLayout"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "bot",
+        "hud",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/vgui/vgui_hudbase.lua",
+      "size_bytes": 1161,
+      "line_count": 50,
+      "functions": [
+        "PANEL:ChooseParent",
+        "PANEL:GetDefaultTextColor",
+        "PANEL:GetPadding",
+        "PANEL:GetTextLabelColor",
+        "PANEL:GetTextLabelFont",
+        "PANEL:Init",
+        "PANEL:Paint"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/vgui/vgui_hudcommon.lua",
+      "size_bytes": 2774,
+      "line_count": 109,
+      "functions": [
+        "PANEL:AddItem",
+        "PANEL:GetColorFromFunction",
+        "PANEL:GetTextValueFromFunction",
+        "PANEL:Init",
+        "PANEL:PerformLayout",
+        "PANEL:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/vgui/vgui_hudelement.lua",
+      "size_bytes": 1308,
+      "line_count": 42,
+      "functions": [
+        "PANEL:Init",
+        "PANEL:PerformLayout",
+        "PANEL:SetLabel"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "hud",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/vgui/vgui_hudlayout.lua",
+      "size_bytes": 3932,
+      "line_count": 164,
+      "functions": [
+        "PANEL:AddItem",
+        "PANEL:ChooseParent",
+        "PANEL:Clear",
+        "PANEL:Init",
+        "PANEL:PerformLayout",
+        "PANEL:PositionItem",
+        "PANEL:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    },
+    {
+      "path": "Lua/gamemode/vgui/vgui_vote.lua",
+      "size_bytes": 6760,
+      "line_count": 242,
+      "functions": [
+        "PANEL:ChooseGamemode",
+        "PANEL:ChooseMap",
+        "PANEL:FindWantBar",
+        "PANEL:FlashItem",
+        "PANEL:Init",
+        "PANEL:Paint",
+        "PANEL:PeepThink",
+        "PANEL:PerformLayout",
+        "PANEL:ResetPeeps",
+        "PANEL:Think"
+      ],
+      "hooks": [],
+      "entity_assignments": [],
+      "tags": [
+        "movement",
+        "bot",
+        "hud",
+        "round_flow",
+        "telemetry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Big Metal",
+  "source_vmf": "Maps/Big Metal/Big Metal.vmf",
+  "original_filename": "eft_big_metal03r1_d.vmf",
+  "generated_at": "2026-05-08T15:27:09.349549+00:00",
+  "spatial_clusters": [
+    {
+      "cluster_id": 1,
+      "center": [
+        -0.6399200000000019,
+        0.1768939999999975,
+        813.81424
+      ],
+      "count": 25,
+      "source_entity_ids": [
+        5894,
+        5994,
+        6154,
+        6164,
+        6502,
+        6551,
+        5382,
+        6660,
+        6697,
+        6783,
+        6872,
+        6935,
+        6938,
+        8264,
+        8274,
+        1638,
+        1639,
+        1640,
+        1641,
+        1644,
+        1645,
+        1650,
+        1651,
+        1652,
+        1653
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 2,
+      "center": [
+        -1831.472380952381,
+        0.6666614285714286,
+        266.0938571428572
+      ],
+      "count": 21,
+      "source_entity_ids": [
+        5666,
+        7241,
+        7399,
+        8344,
+        8342,
+        8312,
+        8299,
+        8314,
+        8340,
+        8320,
+        8318,
+        8316,
+        8324,
+        8326,
+        8322,
+        499,
+        6941,
+        8290,
+        1642,
+        1646,
+        1649
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 3,
+      "center": [
+        1832.6799999999998,
+        0.00356498747368253,
+        265.4721578947369
+      ],
+      "count": 19,
+      "source_entity_ids": [
+        6357,
+        7536,
+        7541,
+        8463,
+        8465,
+        8467,
+        8969,
+        8971,
+        8973,
+        9001,
+        8993,
+        8995,
+        8997,
+        8999,
+        9003,
+        6835,
+        1643,
+        1647,
+        1648
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "type": "world_z_level_summary",
+      "sampled_level_count": 11,
+      "sampled_z_levels": [
+        -32.0,
+        60.0,
+        64.0,
+        192.0,
+        252.0,
+        316.0,
+        320.0,
+        636.0,
+        896.0,
+        1404.0,
+        1664.0
+      ],
+      "confidence": 0.35,
+      "reasons": [
+        "World brush AABB z-centers suggest vertical/platform structure candidates."
+      ],
+      "needs_human_review": true
+    }
+  ],
+  "jump_push_regions": [],
+  "rotating_obstructions": []
+}

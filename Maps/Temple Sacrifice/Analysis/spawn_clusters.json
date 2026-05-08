@@ -1,0 +1,127 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Temple Sacrifice",
+  "source_vmf": "Maps/Temple Sacrifice/Temple Sacrifice.vmf",
+  "original_filename": "eft_temple_sacrifice_v2.vmf",
+  "generated_at": "2026-05-08T15:27:16.591994+00:00",
+  "spawn_clusters": {
+    "red": [
+      {
+        "cluster_id": 1,
+        "center": [
+          1600.0,
+          -3522.909090909091,
+          257.0
+        ],
+        "count": 11,
+        "source_entity_ids": [
+          4555,
+          4553,
+          4551,
+          4549,
+          4547,
+          4545,
+          4543,
+          4539,
+          4541,
+          4531,
+          4537
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 11 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          -1600.0,
+          -3490.909090909091,
+          257.0
+        ],
+        "count": 11,
+        "source_entity_ids": [
+          4496,
+          4509,
+          4511,
+          4513,
+          4515,
+          4527,
+          4529,
+          4557,
+          4559,
+          4561,
+          4563
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 11 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "blue": [
+      {
+        "cluster_id": 1,
+        "center": [
+          1600.0,
+          3522.909090909091,
+          257.0
+        ],
+        "count": 11,
+        "source_entity_ids": [
+          4799,
+          4801,
+          4803,
+          4805,
+          4807,
+          4809,
+          4811,
+          4813,
+          4815,
+          4817,
+          4819
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 11 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          -1600.0,
+          3522.909090909091,
+          257.0
+        ],
+        "count": 11,
+        "source_entity_ids": [
+          4900,
+          4902,
+          4904,
+          4906,
+          4908,
+          4910,
+          4912,
+          4914,
+          4916,
+          4918,
+          4920
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 11 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "spectator": []
+  }
+}

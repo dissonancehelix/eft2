@@ -1,0 +1,128 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Big Metal",
+  "source_vmf": "Maps/Big Metal/Big Metal.vmf",
+  "original_filename": "eft_big_metal03r1_d.vmf",
+  "generated_at": "2026-05-08T15:27:09.349549+00:00",
+  "goal_complexes": [
+    {
+      "id": "goal_complex_1",
+      "type": "goal_complex",
+      "center": [
+        -2560.0,
+        0.0,
+        320.0
+      ],
+      "bounds": {
+        "min": [
+          -2688.0,
+          -384.0,
+          256.0
+        ],
+        "max": [
+          -2432.0,
+          384.0,
+          384.0
+        ],
+        "center": [
+          -2560.0,
+          0.0,
+          320.0
+        ],
+        "size": [
+          256.0,
+          768.0,
+          128.0
+        ],
+        "z_range": [
+          256.0,
+          384.0
+        ],
+        "aabb_volume": 25165824.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.72,
+      "reasons": [
+        "Grouped nearby raw trigger_goal entities into a gameplay scoring-complex candidate.",
+        "Raw trigger count is preserved separately and is not treated as final scoring-location count."
+      ],
+      "source_entity_ids": [
+        8361
+      ],
+      "source_classes": [
+        "trigger_goal"
+      ],
+      "raw_trigger_count": 1,
+      "teamids": [
+        "2"
+      ],
+      "scoretypes": [],
+      "semantics_used": [
+        "VMF trigger_goal teamid key",
+        "VMF trigger_goal scoretype key"
+      ],
+      "needs_human_review": true
+    },
+    {
+      "id": "goal_complex_2",
+      "type": "goal_complex",
+      "center": [
+        2560.0,
+        0.0,
+        320.0
+      ],
+      "bounds": {
+        "min": [
+          2432.0,
+          -384.0,
+          256.0
+        ],
+        "max": [
+          2688.0,
+          384.0,
+          384.0
+        ],
+        "center": [
+          2560.0,
+          0.0,
+          320.0
+        ],
+        "size": [
+          256.0,
+          768.0,
+          128.0
+        ],
+        "z_range": [
+          256.0,
+          384.0
+        ],
+        "aabb_volume": 25165824.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.72,
+      "reasons": [
+        "Grouped nearby raw trigger_goal entities into a gameplay scoring-complex candidate.",
+        "Raw trigger count is preserved separately and is not treated as final scoring-location count."
+      ],
+      "source_entity_ids": [
+        8469
+      ],
+      "source_classes": [
+        "trigger_goal"
+      ],
+      "raw_trigger_count": 1,
+      "teamids": [
+        "1"
+      ],
+      "scoretypes": [],
+      "semantics_used": [
+        "VMF trigger_goal teamid key",
+        "VMF trigger_goal scoretype key"
+      ],
+      "needs_human_review": true
+    }
+  ]
+}

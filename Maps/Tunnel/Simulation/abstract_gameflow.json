@@ -1,0 +1,1397 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Tunnel",
+  "source_vmf": "Maps/Tunnel/Tunnel.vmf",
+  "original_filename": "eft_tunnel_v2.vmf",
+  "generated_at": "2026-05-08T15:27:18.618107+00:00",
+  "status": "abstract_core_gameplay_telemetry",
+  "model_scope": [
+    "Uses README movement constants and extracted map landmarks.",
+    "Models possession pressure, carrier exposure, defender intercept opportunity, powerup/jump-route influence, and scoring likelihood.",
+    "Does not model real player input, exact ball physics, ragdolls, prop collision, or s&box Scene.NavMesh yet."
+  ],
+  "constants": {
+    "base_speed_hu_s": 350.0,
+    "carrier_speed_hu_s": 262.5,
+    "pity_carrier_speed_hu_s": 315.0,
+    "strafe_only_speed_hu_s": 160.0,
+    "charge_threshold_hu_s": 300.0,
+    "time_to_charge_s": 1.0,
+    "time_to_max_speed_s": 1.5,
+    "post_hit_charge_immunity_s": 0.45,
+    "dive_extra_speed_hu_s": 100.0,
+    "dive_landing_penalty_multiplier": 0.5
+  },
+  "landmarks": {
+    "ball_spawn": [
+      0.0,
+      0.0,
+      26.0
+    ],
+    "red_spawns": [
+      {
+        "cluster_id": 1,
+        "center": [
+          -3264.0,
+          0.9999999999999943,
+          706.0
+        ],
+        "count": 15,
+        "source_entity_ids": [
+          150293,
+          150265,
+          150251,
+          150263,
+          150283,
+          150295,
+          150257,
+          150236,
+          150259,
+          150281,
+          150287,
+          150267,
+          150249,
+          150269,
+          150291
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 15 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "blue_spawns": [
+      {
+        "cluster_id": 1,
+        "center": [
+          3264.0,
+          0.9999999999999943,
+          706.0
+        ],
+        "count": 15,
+        "source_entity_ids": [
+          165084,
+          165086,
+          165088,
+          165090,
+          165092,
+          165094,
+          165096,
+          165098,
+          165100,
+          165102,
+          165104,
+          165106,
+          165108,
+          165110,
+          165112
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 15 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "goals": [
+      {
+        "id": "goal_complex_1",
+        "type": "goal_complex",
+        "center": [
+          1480.0,
+          0.0,
+          321.5
+        ],
+        "bounds": {
+          "min": [
+            1447.0,
+            -33.0,
+            316.0
+          ],
+          "max": [
+            1513.0,
+            33.0,
+            327.0
+          ],
+          "center": [
+            1480.0,
+            0.0,
+            321.5
+          ],
+          "size": [
+            66.0,
+            66.0,
+            11.0
+          ],
+          "z_range": [
+            316.0,
+            327.0
+          ],
+          "aabb_volume": 47916.0,
+          "source_point_count": 54,
+          "warnings": []
+        },
+        "confidence": 0.72,
+        "reasons": [
+          "Grouped nearby raw trigger_goal entities into a gameplay scoring-complex candidate.",
+          "Raw trigger count is preserved separately and is not treated as final scoring-location count."
+        ],
+        "source_entity_ids": [
+          177139
+        ],
+        "source_classes": [
+          "trigger_goal"
+        ],
+        "raw_trigger_count": 1,
+        "teamids": [
+          "2"
+        ],
+        "scoretypes": [
+          "1"
+        ],
+        "semantics_used": [
+          "VMF trigger_goal teamid key",
+          "VMF trigger_goal scoretype key"
+        ],
+        "needs_human_review": true
+      },
+      {
+        "id": "goal_complex_2",
+        "type": "goal_complex",
+        "center": [
+          -1488.13,
+          0.12519999999999953,
+          321.5
+        ],
+        "bounds": {
+          "min": [
+            -1521.13,
+            -32.875,
+            316.0
+          ],
+          "max": [
+            -1455.13,
+            33.1254,
+            327.0
+          ],
+          "center": [
+            -1488.13,
+            0.12519999999999953,
+            321.5
+          ],
+          "size": [
+            66.0,
+            66.0004,
+            11.0
+          ],
+          "z_range": [
+            316.0,
+            327.0
+          ],
+          "aabb_volume": 47916.2904,
+          "source_point_count": 54,
+          "warnings": []
+        },
+        "confidence": 0.72,
+        "reasons": [
+          "Grouped nearby raw trigger_goal entities into a gameplay scoring-complex candidate.",
+          "Raw trigger count is preserved separately and is not treated as final scoring-location count."
+        ],
+        "source_entity_ids": [
+          177172
+        ],
+        "source_classes": [
+          "trigger_goal"
+        ],
+        "raw_trigger_count": 1,
+        "teamids": [
+          "1"
+        ],
+        "scoretypes": [
+          "1"
+        ],
+        "semantics_used": [
+          "VMF trigger_goal teamid key",
+          "VMF trigger_goal scoretype key"
+        ],
+        "needs_human_review": true
+      }
+    ],
+    "powerups": [],
+    "jump_push_regions": [
+      {
+        "id": "jump_push_region_1",
+        "type": "jump_push_region",
+        "center": [
+          -2688.0,
+          337.0,
+          367.0
+        ],
+        "bounds": {
+          "min": [
+            -2704.0,
+            321.0,
+            351.0
+          ],
+          "max": [
+            -2672.0,
+            353.0,
+            383.0
+          ],
+          "center": [
+            -2688.0,
+            337.0,
+            367.0
+          ],
+          "size": [
+            32.0,
+            32.0,
+            32.0
+          ],
+          "z_range": [
+            351.0,
+            383.0
+          ],
+          "aabb_volume": 32768.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Map-authored movement boost route.",
+          "Source entity class `trigger_abspush` id `175525`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          175525
+        ],
+        "source_classes": [
+          "trigger_abspush"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "jump_push_region_2",
+        "type": "jump_push_region",
+        "center": [
+          -2688.0,
+          -337.0,
+          367.0
+        ],
+        "bounds": {
+          "min": [
+            -2704.0,
+            -353.0,
+            351.0
+          ],
+          "max": [
+            -2672.0,
+            -321.0,
+            383.0
+          ],
+          "center": [
+            -2688.0,
+            -337.0,
+            367.0
+          ],
+          "size": [
+            32.0,
+            32.0,
+            32.0
+          ],
+          "z_range": [
+            351.0,
+            383.0
+          ],
+          "aabb_volume": 32768.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Map-authored movement boost route.",
+          "Source entity class `trigger_abspush` id `175772`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          175772
+        ],
+        "source_classes": [
+          "trigger_abspush"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "jump_push_region_3",
+        "type": "jump_push_region",
+        "center": [
+          2688.0,
+          337.0,
+          367.0
+        ],
+        "bounds": {
+          "min": [
+            2672.0,
+            321.0,
+            351.0
+          ],
+          "max": [
+            2704.0,
+            353.0,
+            383.0
+          ],
+          "center": [
+            2688.0,
+            337.0,
+            367.0
+          ],
+          "size": [
+            32.0,
+            32.0,
+            32.0
+          ],
+          "z_range": [
+            351.0,
+            383.0
+          ],
+          "aabb_volume": 32768.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Map-authored movement boost route.",
+          "Source entity class `trigger_abspush` id `175864`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          175864
+        ],
+        "source_classes": [
+          "trigger_abspush"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "jump_push_region_4",
+        "type": "jump_push_region",
+        "center": [
+          2688.0,
+          -337.0,
+          367.0
+        ],
+        "bounds": {
+          "min": [
+            2672.0,
+            -353.0,
+            351.0
+          ],
+          "max": [
+            2704.0,
+            -321.0,
+            383.0
+          ],
+          "center": [
+            2688.0,
+            -337.0,
+            367.0
+          ],
+          "size": [
+            32.0,
+            32.0,
+            32.0
+          ],
+          "z_range": [
+            351.0,
+            383.0
+          ],
+          "aabb_volume": 32768.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Map-authored movement boost route.",
+          "Source entity class `trigger_abspush` id `175875`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          175875
+        ],
+        "source_classes": [
+          "trigger_abspush"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "jump_push_region_5",
+        "type": "jump_push_region",
+        "center": [
+          -384.0,
+          -640.0,
+          210.63
+        ],
+        "bounds": {
+          "min": [
+            -400.0,
+            -656.0,
+            194.63
+          ],
+          "max": [
+            -368.0,
+            -624.0,
+            226.63
+          ],
+          "center": [
+            -384.0,
+            -640.0,
+            210.63
+          ],
+          "size": [
+            32.0,
+            32.0,
+            32.0
+          ],
+          "z_range": [
+            194.63,
+            226.63
+          ],
+          "aabb_volume": 32768.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Map-authored movement boost route.",
+          "Source entity class `trigger_abspush` id `170854`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          170854
+        ],
+        "source_classes": [
+          "trigger_abspush"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "jump_push_region_6",
+        "type": "jump_push_region",
+        "center": [
+          384.0,
+          -640.0,
+          210.63
+        ],
+        "bounds": {
+          "min": [
+            368.0,
+            -656.0,
+            194.63
+          ],
+          "max": [
+            400.0,
+            -624.0,
+            226.63
+          ],
+          "center": [
+            384.0,
+            -640.0,
+            210.63
+          ],
+          "size": [
+            32.0,
+            32.0,
+            32.0
+          ],
+          "z_range": [
+            194.63,
+            226.63
+          ],
+          "aabb_volume": 32768.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Map-authored movement boost route.",
+          "Source entity class `trigger_abspush` id `171225`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          171225
+        ],
+        "source_classes": [
+          "trigger_abspush"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "jump_push_region_7",
+        "type": "jump_push_region",
+        "center": [
+          384.0,
+          640.0,
+          210.63
+        ],
+        "bounds": {
+          "min": [
+            368.0,
+            624.0,
+            194.63
+          ],
+          "max": [
+            400.0,
+            656.0,
+            226.63
+          ],
+          "center": [
+            384.0,
+            640.0,
+            210.63
+          ],
+          "size": [
+            32.0,
+            32.0,
+            32.0
+          ],
+          "z_range": [
+            194.63,
+            226.63
+          ],
+          "aabb_volume": 32768.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Map-authored movement boost route.",
+          "Source entity class `trigger_abspush` id `171249`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          171249
+        ],
+        "source_classes": [
+          "trigger_abspush"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "jump_push_region_8",
+        "type": "jump_push_region",
+        "center": [
+          -384.0,
+          640.0,
+          210.63
+        ],
+        "bounds": {
+          "min": [
+            -400.0,
+            624.0,
+            194.63
+          ],
+          "max": [
+            -368.0,
+            656.0,
+            226.63
+          ],
+          "center": [
+            -384.0,
+            640.0,
+            210.63
+          ],
+          "size": [
+            32.0,
+            32.0,
+            32.0
+          ],
+          "z_range": [
+            194.63,
+            226.63
+          ],
+          "aabb_volume": 32768.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Map-authored movement boost route.",
+          "Source entity class `trigger_abspush` id `171273`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          171273
+        ],
+        "source_classes": [
+          "trigger_abspush"
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "hazards": [
+      {
+        "id": "hazard_region_1",
+        "type": "hazard_region",
+        "center": [
+          -5784.0,
+          0.0,
+          2032.0
+        ],
+        "bounds": {
+          "min": [
+            -5796.0,
+            -384.0,
+            1720.0
+          ],
+          "max": [
+            -5772.0,
+            384.0,
+            2344.0
+          ],
+          "center": [
+            -5784.0,
+            0.0,
+            2032.0
+          ],
+          "size": [
+            24.0,
+            768.0,
+            624.0
+          ],
+          "z_range": [
+            1720.0,
+            2344.0
+          ],
+          "aabb_volume": 11501568.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Hazard or forced knockdown trigger.",
+          "Source entity class `trigger_hurt` id `174699`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          174699
+        ],
+        "source_classes": [
+          "trigger_hurt"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "hazard_region_2",
+        "type": "hazard_region",
+        "center": [
+          2703.0,
+          0.0,
+          864.002
+        ],
+        "bounds": {
+          "min": [
+            2695.5,
+            -96.0,
+            736.0
+          ],
+          "max": [
+            2710.5,
+            96.0,
+            992.004
+          ],
+          "center": [
+            2703.0,
+            0.0,
+            864.002
+          ],
+          "size": [
+            15.0,
+            192.0,
+            256.004
+          ],
+          "z_range": [
+            736.0,
+            992.004
+          ],
+          "aabb_volume": 737291.52,
+          "source_point_count": 258,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Hazard or forced knockdown trigger.",
+          "Source entity class `trigger_hurt` id `173623`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          173623
+        ],
+        "source_classes": [
+          "trigger_hurt"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "hazard_region_3",
+        "type": "hazard_region",
+        "center": [
+          -2703.0,
+          0.0,
+          864.002
+        ],
+        "bounds": {
+          "min": [
+            -2710.5,
+            -96.0,
+            736.0
+          ],
+          "max": [
+            -2695.5,
+            96.0,
+            992.004
+          ],
+          "center": [
+            -2703.0,
+            0.0,
+            864.002
+          ],
+          "size": [
+            15.0,
+            192.0,
+            256.004
+          ],
+          "z_range": [
+            736.0,
+            992.004
+          ],
+          "aabb_volume": 737291.52,
+          "source_point_count": 258,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Hazard or forced knockdown trigger.",
+          "Source entity class `trigger_hurt` id `173997`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          173997
+        ],
+        "source_classes": [
+          "trigger_hurt"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "hazard_region_4",
+        "type": "hazard_region",
+        "center": [
+          5784.0,
+          0.0,
+          2032.0
+        ],
+        "bounds": {
+          "min": [
+            5772.0,
+            -384.0,
+            1720.0
+          ],
+          "max": [
+            5796.0,
+            384.0,
+            2344.0
+          ],
+          "center": [
+            5784.0,
+            0.0,
+            2032.0
+          ],
+          "size": [
+            24.0,
+            768.0,
+            624.0
+          ],
+          "z_range": [
+            1720.0,
+            2344.0
+          ],
+          "aabb_volume": 11501568.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Hazard or forced knockdown trigger.",
+          "Source entity class `trigger_hurt` id `174460`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          174460
+        ],
+        "source_classes": [
+          "trigger_hurt"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "reset_region_1",
+        "type": "reset_region",
+        "center": [
+          -1352.0,
+          0.0,
+          432.002
+        ],
+        "bounds": {
+          "min": [
+            -1360.0,
+            -96.0,
+            304.0
+          ],
+          "max": [
+            -1344.0,
+            96.0,
+            560.004
+          ],
+          "center": [
+            -1352.0,
+            0.0,
+            432.002
+          ],
+          "size": [
+            16.0,
+            192.0,
+            256.004
+          ],
+          "z_range": [
+            304.0,
+            560.004
+          ],
+          "aabb_volume": 786444.2880000001,
+          "source_point_count": 258,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Ball reset trigger volume.",
+          "Source entity class `trigger_ballreset` id `173814`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          173814
+        ],
+        "source_classes": [
+          "trigger_ballreset"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "reset_region_2",
+        "type": "reset_region",
+        "center": [
+          1352.0,
+          0.0,
+          432.002
+        ],
+        "bounds": {
+          "min": [
+            1344.0,
+            -96.0,
+            304.0
+          ],
+          "max": [
+            1360.0,
+            96.0,
+            560.004
+          ],
+          "center": [
+            1352.0,
+            0.0,
+            432.002
+          ],
+          "size": [
+            16.0,
+            192.0,
+            256.004
+          ],
+          "z_range": [
+            304.0,
+            560.004
+          ],
+          "aabb_volume": 786444.2880000001,
+          "source_point_count": 258,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Ball reset trigger volume.",
+          "Source entity class `trigger_ballreset` id `174328`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          174328
+        ],
+        "source_classes": [
+          "trigger_ballreset"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "reset_region_3",
+        "type": "reset_region",
+        "center": [
+          -3264.0,
+          0.0,
+          960.0
+        ],
+        "bounds": {
+          "min": [
+            -3648.0,
+            -384.0,
+            704.0
+          ],
+          "max": [
+            -2880.0,
+            384.0,
+            1216.0
+          ],
+          "center": [
+            -3264.0,
+            0.0,
+            960.0
+          ],
+          "size": [
+            768.0,
+            768.0,
+            512.0
+          ],
+          "z_range": [
+            704.0,
+            1216.0
+          ],
+          "aabb_volume": 301989888.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Ball reset trigger volume.",
+          "Source entity class `trigger_ballreset` id `174711`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          174711
+        ],
+        "source_classes": [
+          "trigger_ballreset"
+        ],
+        "needs_human_review": false
+      },
+      {
+        "id": "reset_region_4",
+        "type": "reset_region",
+        "center": [
+          3264.0,
+          0.0,
+          1016.0
+        ],
+        "bounds": {
+          "min": [
+            2880.0,
+            -384.0,
+            704.0
+          ],
+          "max": [
+            3648.0,
+            384.0,
+            1328.0
+          ],
+          "center": [
+            3264.0,
+            0.0,
+            1016.0
+          ],
+          "size": [
+            768.0,
+            768.0,
+            624.0
+          ],
+          "z_range": [
+            704.0,
+            1328.0
+          ],
+          "aabb_volume": 368050176.0,
+          "source_point_count": 18,
+          "warnings": []
+        },
+        "confidence": 0.75,
+        "reasons": [
+          "Ball reset trigger volume.",
+          "Source entity class `trigger_ballreset` id `174726`.",
+          "Brush bounds extracted from VMF side plane points."
+        ],
+        "source_entity_ids": [
+          174726
+        ],
+        "source_classes": [
+          "trigger_ballreset"
+        ],
+        "needs_human_review": false
+      }
+    ]
+  },
+  "route_candidates": [
+    {
+      "id": "route_1",
+      "from_spawn": "red_spawn_1",
+      "ball_to_goal": "goal_complex_1",
+      "route_type": "jump_push_route",
+      "support_distance_hu": 3334.08,
+      "carrier_distance_hu": 1177.19,
+      "raw_ball_to_goal_distance_hu": 1509.21,
+      "influence_regions": [
+        "jump_push_region_6"
+      ],
+      "confidence": 0.55
+    },
+    {
+      "id": "route_2",
+      "from_spawn": "red_spawn_1",
+      "ball_to_goal": "goal_complex_2",
+      "route_type": "jump_push_route",
+      "support_distance_hu": 3334.08,
+      "carrier_distance_hu": 1183.4,
+      "raw_ball_to_goal_distance_hu": 1517.19,
+      "influence_regions": [
+        "jump_push_region_8"
+      ],
+      "confidence": 0.55
+    },
+    {
+      "id": "route_3",
+      "from_spawn": "blue_spawn_1",
+      "ball_to_goal": "goal_complex_1",
+      "route_type": "jump_push_route",
+      "support_distance_hu": 3334.08,
+      "carrier_distance_hu": 1177.19,
+      "raw_ball_to_goal_distance_hu": 1509.21,
+      "influence_regions": [
+        "jump_push_region_6"
+      ],
+      "confidence": 0.55
+    },
+    {
+      "id": "route_4",
+      "from_spawn": "blue_spawn_1",
+      "ball_to_goal": "goal_complex_2",
+      "route_type": "jump_push_route",
+      "support_distance_hu": 3334.08,
+      "carrier_distance_hu": 1183.4,
+      "raw_ball_to_goal_distance_hu": 1517.19,
+      "influence_regions": [
+        "jump_push_region_8"
+      ],
+      "confidence": 0.55
+    }
+  ],
+  "trials": 400,
+  "seed": 2,
+  "aggregates": {
+    "score_rate": 0.5775,
+    "intercept_rate": 0.0225,
+    "reset_or_hazard_rate": 0.13,
+    "scrum_continues_rate": 0.27,
+    "mean_carrier_time_s": 4.4973,
+    "mean_defender_time_s": 10.526,
+    "mean_preventability_margin_s": -6.0287,
+    "route_type_counts": {
+      "jump_push_route": 400
+    },
+    "trial_count": 400
+  },
+  "sample_trials": [
+    {
+      "route_id": "route_1",
+      "route_type": "jump_push_route",
+      "outcome": "score",
+      "carrier_time_s": 4.485,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.041,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_3",
+      "route_type": "jump_push_route",
+      "outcome": "scrum_continues",
+      "carrier_time_s": 4.485,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.041,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_3",
+      "route_type": "jump_push_route",
+      "outcome": "score",
+      "carrier_time_s": 4.485,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.041,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_2",
+      "route_type": "jump_push_route",
+      "outcome": "reset_or_hazard",
+      "carrier_time_s": 4.508,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.018,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_2",
+      "route_type": "jump_push_route",
+      "outcome": "scrum_continues",
+      "carrier_time_s": 4.508,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.018,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_4",
+      "route_type": "jump_push_route",
+      "outcome": "scrum_continues",
+      "carrier_time_s": 4.508,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.018,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_3",
+      "route_type": "jump_push_route",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 4.485,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.041,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_4",
+      "route_type": "jump_push_route",
+      "outcome": "score",
+      "carrier_time_s": 4.508,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.018,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_1",
+      "route_type": "jump_push_route",
+      "outcome": "scrum_continues",
+      "carrier_time_s": 4.485,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.041,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_3",
+      "route_type": "jump_push_route",
+      "outcome": "score",
+      "carrier_time_s": 4.485,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.041,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_3",
+      "route_type": "jump_push_route",
+      "outcome": "scrum_continues",
+      "carrier_time_s": 4.485,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.041,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_4",
+      "route_type": "jump_push_route",
+      "outcome": "scrum_continues",
+      "carrier_time_s": 4.508,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.018,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_2",
+      "route_type": "jump_push_route",
+      "outcome": "intercept_or_tackle",
+      "carrier_time_s": 4.508,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.018,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_2",
+      "route_type": "jump_push_route",
+      "outcome": "score",
+      "carrier_time_s": 4.508,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.018,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_2",
+      "route_type": "jump_push_route",
+      "outcome": "score",
+      "carrier_time_s": 4.508,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.018,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_2",
+      "route_type": "jump_push_route",
+      "outcome": "score",
+      "carrier_time_s": 4.508,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.018,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_3",
+      "route_type": "jump_push_route",
+      "outcome": "scrum_continues",
+      "carrier_time_s": 4.485,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.041,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_2",
+      "route_type": "jump_push_route",
+      "outcome": "scrum_continues",
+      "carrier_time_s": 4.508,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.018,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_4",
+      "route_type": "jump_push_route",
+      "outcome": "scrum_continues",
+      "carrier_time_s": 4.508,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.018,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_3",
+      "route_type": "jump_push_route",
+      "outcome": "scrum_continues",
+      "carrier_time_s": 4.485,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.041,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_3",
+      "route_type": "jump_push_route",
+      "outcome": "score",
+      "carrier_time_s": 4.485,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.041,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_4",
+      "route_type": "jump_push_route",
+      "outcome": "score",
+      "carrier_time_s": 4.508,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.018,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_4",
+      "route_type": "jump_push_route",
+      "outcome": "scrum_continues",
+      "carrier_time_s": 4.508,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.018,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_4",
+      "route_type": "jump_push_route",
+      "outcome": "reset_or_hazard",
+      "carrier_time_s": 4.508,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.018,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    },
+    {
+      "route_id": "route_2",
+      "route_type": "jump_push_route",
+      "outcome": "score",
+      "carrier_time_s": 4.508,
+      "defender_intercept_time_s": 10.526,
+      "preventability_margin_s": -6.018,
+      "pressure": 0.038,
+      "hazard_pressure": 0.12,
+      "score_chance": 0.537
+    }
+  ],
+  "interpretation": [
+    "Carrier routes often beat first defender timing in this abstract model; expect fast scoring pressure.",
+    "Scoring pressure outruns interception in the current coarse telemetry.",
+    "Jump/push routes are not decorative; they materially reduce carrier route time in the model and should become s&box NavMeshLink/custom traversal candidates."
+  ]
+}

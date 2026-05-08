@@ -1,0 +1,43 @@
+{
+  "generated_by": "Tools/Indexer",
+  "schema_version": 1,
+  "generated_at": "2026-05-08T16:53:02.299510+00:00",
+  "repo_root": "C:/Users/dissonance/Desktop/EFT2",
+  "warnings": [
+    "custom_eft_fgd_missing",
+    "sbox_scan_truncated_at:4000",
+    "gitignore_missing:garrysmod-master",
+    "gitignore_missing:FFmpeg-Builds-master"
+  ],
+  "detected_path": "FFmpeg-Builds-master",
+  "file_count_approx": 215,
+  "total_bytes_approx": 329987,
+  "walk_truncated": false,
+  "gitignore_covers": false,
+  "top_level": [
+    ".github",
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "addins",
+    "build.sh",
+    "download.sh",
+    "generate.sh",
+    "images",
+    "makeimage.sh",
+    "patches",
+    "scripts.d",
+    "util",
+    "variants"
+  ],
+  "has_variants": true,
+  "has_scripts_d": true,
+  "has_patches": true,
+  "binaries_found": [],
+  "usable_ffmpeg_exe": null,
+  "is_only_build_infrastructure": true,
+  "derived_outputs": [
+    "FFMPEG_REFERENCE_INDEX.json"
+  ],
+  "cleanup_recommendation": "Tree contains only upstream BtbN cross-build infrastructure (variants/, scripts.d/, patches/). No prebuilt ffmpeg binaries detected. EFT2 will not build ffmpeg from this matrix; future Tools/Observer/ should consume a prebuilt ffmpeg.exe placed elsewhere. Recommend deleting the entire FFmpeg-Builds-master/ tree."
+}

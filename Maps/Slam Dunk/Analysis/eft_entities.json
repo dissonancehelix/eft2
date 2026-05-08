@@ -1,0 +1,3419 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Slam Dunk",
+  "source_vmf": "Maps/Slam Dunk/Slam Dunk.vmf",
+  "original_filename": "eft_slamdunk_v6.vmf",
+  "generated_at": "2026-05-08T15:27:14.689573+00:00",
+  "class_counts": {
+    "ambient_generic": 8,
+    "env_cubemap": 19,
+    "env_explosion": 2,
+    "env_smokestack": 6,
+    "filter_activator_name": 1,
+    "func_breakable": 2,
+    "func_brush": 34,
+    "func_detail": 33,
+    "info_overlay": 7,
+    "info_player_blue": 13,
+    "info_player_red": 13,
+    "info_player_start": 2,
+    "infodecal": 1,
+    "light_environment": 1,
+    "light_spot": 9,
+    "logic_auto": 1,
+    "logic_case": 32,
+    "logic_relay": 45,
+    "logic_teamscore": 1,
+    "point_spotlight": 5,
+    "prop_ball": 1,
+    "prop_static": 5,
+    "shadow_control": 1,
+    "sky_camera": 1,
+    "trigger_abspush": 10,
+    "trigger_goal": 4,
+    "trigger_hurt": 2,
+    "trigger_multiple": 20,
+    "trigger_powerup": 2
+  },
+  "eft_class_counts": {
+    "info_player_blue": 13,
+    "info_player_red": 13,
+    "logic_teamscore": 1,
+    "prop_ball": 1,
+    "trigger_abspush": 10,
+    "trigger_goal": 4,
+    "trigger_hurt": 2,
+    "trigger_multiple": 20,
+    "trigger_powerup": 2
+  },
+  "entities": [
+    {
+      "id": 16612,
+      "classname": "prop_ball",
+      "targetname": "eft ball",
+      "origin": [
+        3144.0,
+        2553.0,
+        392.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "16612",
+        "classname": "prop_ball",
+        "angles": "0 270 0",
+        "targetname": "eft ball",
+        "origin": "3144 2553 392"
+      },
+      "outputs": [
+        {
+          "output": "onthrownbyred",
+          "raw": "from downtown trigger blue 1,Enable,,0,-1",
+          "parts": [
+            "from downtown trigger blue 1",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onthrownbyred",
+          "raw": "from downtown trigger blue 2,Enable,,0,-1",
+          "parts": [
+            "from downtown trigger blue 2",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onthrownbyred",
+          "raw": "from downtown trigger blue 1,Disable,,1,-1",
+          "parts": [
+            "from downtown trigger blue 1",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "output": "onthrownbyred",
+          "raw": "from downtown trigger blue 2,Disable,,1,-1",
+          "parts": [
+            "from downtown trigger blue 2",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "output": "onthrownbyred",
+          "raw": "corner shot blue 1,Disable,,1,-1",
+          "parts": [
+            "corner shot blue 1",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "output": "onthrownbyred",
+          "raw": "corner shot blue 1,Enable,,0,-1",
+          "parts": [
+            "corner shot blue 1",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onthrownbyred",
+          "raw": "corner shot blue 2,Disable,,1,-1",
+          "parts": [
+            "corner shot blue 2",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "output": "onthrownbyred",
+          "raw": "corner shot blue 2,Enable,,0,-1",
+          "parts": [
+            "corner shot blue 2",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onthrownbyblue",
+          "raw": "from downtown trigger red 1,Enable,,0,-1",
+          "parts": [
+            "from downtown trigger red 1",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onthrownbyblue",
+          "raw": "from downtown trigger red 2,Enable,,0,-1",
+          "parts": [
+            "from downtown trigger red 2",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onthrownbyblue",
+          "raw": "from downtown trigger red 1,Disable,,1,-1",
+          "parts": [
+            "from downtown trigger red 1",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "output": "onthrownbyblue",
+          "raw": "from downtown trigger red 2,Disable,,1,-1",
+          "parts": [
+            "from downtown trigger red 2",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "output": "onthrownbyblue",
+          "raw": "corner shot red 2,Disable,,1,-1",
+          "parts": [
+            "corner shot red 2",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "output": "onthrownbyblue",
+          "raw": "corner shot red 1,Disable,,1,-1",
+          "parts": [
+            "corner shot red 1",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "output": "onthrownbyblue",
+          "raw": "corner shot red 2,Enable,,0,-1",
+          "parts": [
+            "corner shot red 2",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onthrownbyblue",
+          "raw": "corner shot red 1,Enable,,0,-1",
+          "parts": [
+            "corner shot red 1",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": null
+    },
+    {
+      "id": 19269,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        702.0,
+        3031.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "19269",
+        "classname": "info_player_red",
+        "angles": "0 0 0",
+        "origin": "702 3031 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 19271,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        702.0,
+        2967.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "19271",
+        "classname": "info_player_red",
+        "angles": "0 0 0",
+        "origin": "702 2967 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 19273,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        701.0,
+        2007.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "19273",
+        "classname": "info_player_red",
+        "angles": "0 0 0",
+        "origin": "701 2007 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 19275,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        701.0,
+        2071.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "19275",
+        "classname": "info_player_red",
+        "angles": "0 0 0",
+        "origin": "701 2071 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 19277,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        701.0,
+        2135.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "19277",
+        "classname": "info_player_red",
+        "angles": "0 0 0",
+        "origin": "701 2135 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 19279,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        701.0,
+        2199.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "19279",
+        "classname": "info_player_red",
+        "angles": "0 0 0",
+        "origin": "701 2199 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 21373,
+      "classname": "trigger_goal",
+      "targetname": "Red Goal throw",
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "21373",
+        "classname": "trigger_goal",
+        "points": "1",
+        "scoretype": "2",
+        "targetname": "Red Goal throw",
+        "teamid": "1"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "capture_blue,Trigger,,0,-1",
+          "parts": [
+            "capture_blue",
+            "Trigger",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "red_explode,Explode,,0,-1",
+          "parts": [
+            "red_explode",
+            "Explode",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "Red Hoop,Break,,0,-1",
+          "parts": [
+            "Red Hoop",
+            "Break",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          265.438,
+          2520.64,
+          657.0
+        ],
+        "max": [
+          326.55,
+          2582.25,
+          658.0
+        ],
+        "center": [
+          295.994,
+          2551.4449999999997,
+          657.5
+        ],
+        "size": [
+          61.11200000000002,
+          61.61000000000013,
+          1.0
+        ],
+        "z_range": [
+          657.0,
+          658.0
+        ],
+        "aabb_volume": 3765.1103200000093,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 21381,
+      "classname": "trigger_abspush",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "21381",
+        "classname": "trigger_abspush",
+        "enabled": "1",
+        "knockdown": "0",
+        "overridevelocity": "1",
+        "pushball": "1",
+        "pushfromorigin": "0",
+        "pushphysobjects": "1",
+        "pushplayers": "0",
+        "pushvelocity": "0 -40 0",
+        "starttouchonly": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          264.455,
+          2519.0,
+          625.0
+        ],
+        "max": [
+          325.563,
+          2580.61,
+          626.0
+        ],
+        "center": [
+          295.009,
+          2549.8050000000003,
+          625.5
+        ],
+        "size": [
+          61.108000000000004,
+          61.61000000000013,
+          1.0
+        ],
+        "z_range": [
+          625.0,
+          626.0
+        ],
+        "aabb_volume": 3764.863880000008,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 21553,
+      "classname": "trigger_abspush",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "21553",
+        "classname": "trigger_abspush",
+        "enabled": "1",
+        "knockdown": "1",
+        "overridevelocity": "1",
+        "pushball": "1",
+        "pushfromorigin": "0",
+        "pushphysobjects": "1",
+        "pushplayers": "0",
+        "pushvelocity": "100 0 0",
+        "starttouchonly": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          245.0,
+          2526.0,
+          714.0
+        ],
+        "max": [
+          246.0,
+          2581.0,
+          786.0
+        ],
+        "center": [
+          245.5,
+          2553.5,
+          750.0
+        ],
+        "size": [
+          1.0,
+          55.0,
+          72.0
+        ],
+        "z_range": [
+          714.0,
+          786.0
+        ],
+        "aabb_volume": 3960.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 27415,
+      "classname": "trigger_abspush",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "27415",
+        "classname": "trigger_abspush",
+        "enabled": "1",
+        "knockdown": "0",
+        "overridevelocity": "1",
+        "pushball": "0",
+        "pushfromorigin": "0",
+        "pushphysobjects": "0",
+        "pushplayers": "1",
+        "pushvelocity": "-150 0 775",
+        "starttouchonly": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          549.447,
+          2532.0,
+          354.449
+        ],
+        "max": [
+          589.448,
+          2572.0,
+          359.0
+        ],
+        "center": [
+          569.4475,
+          2552.0,
+          356.72450000000003
+        ],
+        "size": [
+          40.000999999999976,
+          40.0,
+          4.550999999999988
+        ],
+        "z_range": [
+          354.449,
+          359.0
+        ],
+        "aabb_volume": 7281.782039999976,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 27454,
+      "classname": "trigger_hurt",
+      "targetname": null,
+      "origin": [
+        295.0,
+        2551.0,
+        686.5
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "27454",
+        "classname": "trigger_hurt",
+        "damage": "200",
+        "damagecap": "200",
+        "damagemodel": "0",
+        "damagetype": "256",
+        "nodmgforce": "1",
+        "origin": "295 2551 686.5",
+        "spawnflags": "1",
+        "StartDisabled": "0"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          540.0,
+          5052.0,
+          1372.5
+        ],
+        "max": [
+          640.0,
+          5152.0,
+          1373.5
+        ],
+        "center": [
+          590.0,
+          5102.0,
+          1373.0
+        ],
+        "size": [
+          100.0,
+          100.0,
+          1.0
+        ],
+        "z_range": [
+          1372.5,
+          1373.5
+        ],
+        "aabb_volume": 10000.0,
+        "source_point_count": 288,
+        "warnings": []
+      }
+    },
+    {
+      "id": 38278,
+      "classname": "trigger_multiple",
+      "targetname": "from downtown trigger blue 1",
+      "origin": [
+        4556.05,
+        2640.81,
+        418.0
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "38278",
+        "classname": "trigger_multiple",
+        "origin": "4556.05 2640.81 418",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "from downtown trigger blue 1",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger blue 1 next,Disable,,1,-1",
+          "parts": [
+            "from downtown trigger blue 1 next",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger blue 1,Disable,,0.26,-1",
+          "parts": [
+            "from downtown trigger blue 1",
+            "Disable",
+            "",
+            "0.26",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger blue 1 next,Enable,,0,-1",
+          "parts": [
+            "from downtown trigger blue 1 next",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          9090.14,
+          5250.8099999999995,
+          806.4010000000001
+        ],
+        "max": [
+          9134.05,
+          5312.42,
+          865.594
+        ],
+        "center": [
+          9112.095,
+          5281.615,
+          835.9975000000001
+        ],
+        "size": [
+          43.909999999999854,
+          61.61000000000058,
+          59.192999999999984
+        ],
+        "z_range": [
+          806.4010000000001,
+          865.594
+        ],
+        "aabb_volume": 160134.53285430095,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 38330,
+      "classname": "trigger_multiple",
+      "targetname": "from downtown trigger blue 2",
+      "origin": [
+        4553.96,
+        2474.42,
+        416.68
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "38330",
+        "classname": "trigger_multiple",
+        "origin": "4553.96 2474.42 416.68",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "from downtown trigger blue 2",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger blue 2 next,Disable,,1,-1",
+          "parts": [
+            "from downtown trigger blue 2 next",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger blue 2,Disable,,0.26,-1",
+          "parts": [
+            "from downtown trigger blue 2",
+            "Disable",
+            "",
+            "0.26",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger blue 2 next,Enable,,0,-1",
+          "parts": [
+            "from downtown trigger blue 2 next",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          9085.96,
+          4918.030000000001,
+          803.765
+        ],
+        "max": [
+          9129.880000000001,
+          4979.639999999999,
+          862.961
+        ],
+        "center": [
+          9107.92,
+          4948.835,
+          833.363
+        ],
+        "size": [
+          43.92000000000189,
+          61.60999999999876,
+          59.196000000000026
+        ],
+        "z_range": [
+          803.765,
+          862.961
+        ],
+        "aabb_volume": 160179.11939520377,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 38919,
+      "classname": "trigger_goal",
+      "targetname": "Red Goal slam dunk",
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "38919",
+        "classname": "trigger_goal",
+        "points": "1",
+        "scoretype": "1",
+        "targetname": "Red Goal slam dunk",
+        "teamid": "1"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "capture_blue (slam dunk),Trigger,,0,-1",
+          "parts": [
+            "capture_blue (slam dunk)",
+            "Trigger",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "Red Hoop,Break,,0,-1",
+          "parts": [
+            "Red Hoop",
+            "Break",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "red_explode,Explode,,0,-1",
+          "parts": [
+            "red_explode",
+            "Explode",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          265.447,
+          2520.64,
+          658.014
+        ],
+        "max": [
+          326.56,
+          2582.25,
+          659.017
+        ],
+        "center": [
+          296.00350000000003,
+          2551.4449999999997,
+          658.5155
+        ],
+        "size": [
+          61.113,
+          61.61000000000013,
+          1.0030000000000427
+        ],
+        "z_range": [
+          658.014,
+          659.017
+        ],
+        "aabb_volume": 3776.4674457901688,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 38860,
+      "classname": "trigger_multiple",
+      "targetname": "from downtown trigger red 1",
+      "origin": [
+        1732.04,
+        2473.81,
+        418.06
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "38860",
+        "classname": "trigger_multiple",
+        "origin": "1732.04 2473.81 418.06",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "from downtown trigger red 1",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger red 1,Disable,,0.26,-1",
+          "parts": [
+            "from downtown trigger red 1",
+            "Disable",
+            "",
+            "0.26",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger red 1 next,Enable,,0,-1",
+          "parts": [
+            "from downtown trigger red 1 next",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger red 1 next,Disable,,1,-1",
+          "parts": [
+            "from downtown trigger red 1 next",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          3442.13,
+          4916.8099999999995,
+          806.531
+        ],
+        "max": [
+          3486.0699999999997,
+          4978.43,
+          865.716
+        ],
+        "center": [
+          3464.1,
+          4947.62,
+          836.1234999999999
+        ],
+        "size": [
+          43.9399999999996,
+          61.6200000000008,
+          59.18500000000006
+        ],
+        "z_range": [
+          806.531,
+          865.716
+        ],
+        "aabb_volume": 160248.28801800078,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 39225,
+      "classname": "trigger_multiple",
+      "targetname": "from downtown trigger red 2",
+      "origin": [
+        1734.05,
+        2639.19,
+        419.05
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "39225",
+        "classname": "trigger_multiple",
+        "origin": "1734.05 2639.19 419.05",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "from downtown trigger red 2",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger red 2 next,Disable,,1,-1",
+          "parts": [
+            "from downtown trigger red 2 next",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger red 2,Disable,,0.26,-1",
+          "parts": [
+            "from downtown trigger red 2",
+            "Disable",
+            "",
+            "0.26",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger red 2 next,Enable,,0,-1",
+          "parts": [
+            "from downtown trigger red 2 next",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          3446.14,
+          5247.58,
+          808.502
+        ],
+        "max": [
+          3490.05,
+          5309.1900000000005,
+          867.6759999999999
+        ],
+        "center": [
+          3468.0950000000003,
+          5278.385,
+          838.0889999999999
+        ],
+        "size": [
+          43.91000000000031,
+          61.61000000000058,
+          59.17399999999998
+        ],
+        "z_range": [
+          808.502,
+          867.6759999999999
+        ],
+        "aabb_volume": 160083.13224740257,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 41049,
+      "classname": "logic_teamscore",
+      "targetname": "teamscorer",
+      "origin": [
+        6015.0,
+        2720.0,
+        787.299
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "41049",
+        "classname": "logic_teamscore",
+        "enabled": "1",
+        "targetname": "teamscorer",
+        "origin": "6015 2720 787.299"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "teamscorer,getscore,,0,-1",
+          "parts": [
+            "teamscorer",
+            "getscore",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "ongetredscore",
+          "raw": "ssd_case_1,InValue,,0,-1",
+          "parts": [
+            "ssd_case_1",
+            "InValue",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "ongetbluescore",
+          "raw": "ssd_case_2,InValue,,0,-1",
+          "parts": [
+            "ssd_case_2",
+            "InValue",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": null
+    },
+    {
+      "id": 41389,
+      "classname": "trigger_multiple",
+      "targetname": "from downtown trigger red 1 next",
+      "origin": [
+        1656.96,
+        2473.81,
+        485.44
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "41389",
+        "classname": "trigger_multiple",
+        "origin": "1656.96 2473.81 485.44",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "from downtown trigger red 1 next",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown.mp3,PlaySound,,0,-1",
+          "parts": [
+            "from downtown.mp3",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger red 1 next,Disable,,0.01,-1",
+          "parts": [
+            "from downtown trigger red 1 next",
+            "Disable",
+            "",
+            "0.01",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          3291.96,
+          4916.8099999999995,
+          941.294
+        ],
+        "max": [
+          3335.88,
+          4978.42,
+          1000.4369999999999
+        ],
+        "center": [
+          3313.92,
+          4947.615,
+          970.8654999999999
+        ],
+        "size": [
+          43.92000000000007,
+          61.61000000000058,
+          59.142999999999915
+        ],
+        "z_range": [
+          941.294,
+          1000.4369999999999
+        ],
+        "aabb_volume": 160035.70610160154,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 41686,
+      "classname": "trigger_multiple",
+      "targetname": "from downtown trigger red 2 next",
+      "origin": [
+        1656.04,
+        2639.19,
+        485.08
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "41686",
+        "classname": "trigger_multiple",
+        "origin": "1656.04 2639.19 485.08",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "from downtown trigger red 2 next",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown.mp3,PlaySound,,0,-1",
+          "parts": [
+            "from downtown.mp3",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger red 2 next,Disable,,0.01,-1",
+          "parts": [
+            "from downtown trigger red 2 next",
+            "Disable",
+            "",
+            "0.01",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          3290.13,
+          5247.58,
+          940.5740000000001
+        ],
+        "max": [
+          3334.0299999999997,
+          5309.1900000000005,
+          999.732
+        ],
+        "center": [
+          3312.08,
+          5278.385,
+          970.153
+        ],
+        "size": [
+          43.899999999999636,
+          61.61000000000058,
+          59.1579999999999
+        ],
+        "z_range": [
+          940.5740000000001,
+          999.732
+        ],
+        "aabb_volume": 160003.40028199993,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 41991,
+      "classname": "trigger_multiple",
+      "targetname": "from downtown trigger blue 1 next",
+      "origin": [
+        4643.04,
+        2640.19,
+        484.02
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "41991",
+        "classname": "trigger_multiple",
+        "origin": "4643.04 2640.19 484.02",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "from downtown trigger blue 1 next",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown.mp3,PlaySound,,0,-1",
+          "parts": [
+            "from downtown.mp3",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger blue 1 next,Disable,,0.01,-1",
+          "parts": [
+            "from downtown trigger blue 1 next",
+            "Disable",
+            "",
+            "0.01",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          9264.130000000001,
+          5249.58,
+          938.451
+        ],
+        "max": [
+          9308.04,
+          5311.1900000000005,
+          997.622
+        ],
+        "center": [
+          9286.085000000001,
+          5280.385,
+          968.0364999999999
+        ],
+        "size": [
+          43.909999999999854,
+          61.61000000000058,
+          59.170999999999935
+        ],
+        "z_range": [
+          938.451,
+          997.622
+        ],
+        "aabb_volume": 160075.0163621008,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 41994,
+      "classname": "trigger_multiple",
+      "targetname": "from downtown trigger blue 2 next",
+      "origin": [
+        4640.96,
+        2473.81,
+        485.39
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "41994",
+        "classname": "trigger_multiple",
+        "origin": "4640.96 2473.81 485.39",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "from downtown trigger blue 2 next",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown.mp3,PlaySound,,0,-1",
+          "parts": [
+            "from downtown.mp3",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger blue 2 next,Disable,,0.01,-1",
+          "parts": [
+            "from downtown trigger blue 2 next",
+            "Disable",
+            "",
+            "0.01",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          9259.96,
+          4916.8099999999995,
+          941.175
+        ],
+        "max": [
+          9303.880000000001,
+          4978.42,
+          1000.39
+        ],
+        "center": [
+          9281.92,
+          4947.615,
+          970.7825
+        ],
+        "size": [
+          43.92000000000189,
+          61.61000000000058,
+          59.21500000000003
+        ],
+        "z_range": [
+          941.175,
+          1000.39
+        ],
+        "aabb_volume": 160230.5317080085,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 53894,
+      "classname": "trigger_powerup",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "53894",
+        "classname": "trigger_powerup",
+        "enabled": "1",
+        "powerup": "speedball",
+        "poweruptime": "5.5"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          3120.0,
+          735.0,
+          673.0
+        ],
+        "max": [
+          3168.0,
+          924.0,
+          795.0
+        ],
+        "center": [
+          3144.0,
+          829.5,
+          734.0
+        ],
+        "size": [
+          48.0,
+          189.0,
+          122.0
+        ],
+        "z_range": [
+          673.0,
+          795.0
+        ],
+        "aabb_volume": 1106784.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 57209,
+      "classname": "trigger_multiple",
+      "targetname": "corner shot blue 1",
+      "origin": [
+        5957.44,
+        4151.04,
+        491.49
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "57209",
+        "classname": "trigger_multiple",
+        "origin": "5957.44 4151.04 491.49",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "corner shot blue 1",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "corner shot blue 1 next,Disable,,1,-1",
+          "parts": [
+            "corner shot blue 1 next",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "corner shot blue 1,Disable,,0.26,-1",
+          "parts": [
+            "corner shot blue 1",
+            "Disable",
+            "",
+            "0.26",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "corner shot blue 1 next,Enable,,0,-1",
+          "parts": [
+            "corner shot blue 1 next",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          11819.33,
+          8204.04,
+          928.53
+        ],
+        "max": [
+          12010.439999999999,
+          8247.95,
+          1053.489
+        ],
+        "center": [
+          11914.884999999998,
+          8225.995,
+          991.0095
+        ],
+        "size": [
+          191.10999999999876,
+          43.909999999999854,
+          124.95900000000006
+        ],
+        "z_range": [
+          928.53,
+          1053.489
+        ],
+        "aabb_volume": 1048610.9552558903,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 57212,
+      "classname": "trigger_multiple",
+      "targetname": "corner shot blue 1 next",
+      "origin": [
+        5955.55,
+        4064.04,
+        559.49
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "57212",
+        "classname": "trigger_multiple",
+        "origin": "5955.55 4064.04 559.49",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "corner shot blue 1 next",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown.mp3,PlaySound,,0,-1",
+          "parts": [
+            "from downtown.mp3",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger blue 1 next,Disable,,0.01,-1",
+          "parts": [
+            "from downtown trigger blue 1 next",
+            "Disable",
+            "",
+            "0.01",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          11817.45,
+          8030.04,
+          1022.567
+        ],
+        "max": [
+          12008.55,
+          8073.95,
+          1215.49
+        ],
+        "center": [
+          11913.0,
+          8051.995,
+          1119.0285
+        ],
+        "size": [
+          191.09999999999854,
+          43.909999999999854,
+          192.923
+        ],
+        "z_range": [
+          1022.567,
+          1215.49
+        ],
+        "aabb_volume": 1618855.6705229823,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 57300,
+      "classname": "trigger_multiple",
+      "targetname": "corner shot blue 2 next",
+      "origin": [
+        5957.45,
+        1034.96,
+        559.49
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "57300",
+        "classname": "trigger_multiple",
+        "origin": "5957.45 1034.96 559.49",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "corner shot blue 2 next",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown.mp3,PlaySound,,0,-1",
+          "parts": [
+            "from downtown.mp3",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger blue 1 next,Disable,,0.01,-1",
+          "parts": [
+            "from downtown trigger blue 1 next",
+            "Disable",
+            "",
+            "0.01",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          11819.349999999999,
+          2085.96,
+          1022.566
+        ],
+        "max": [
+          12010.45,
+          2129.87,
+          1215.489
+        ],
+        "center": [
+          11914.9,
+          2107.915,
+          1119.0275000000001
+        ],
+        "size": [
+          191.10000000000218,
+          43.909999999999854,
+          192.923
+        ],
+        "z_range": [
+          1022.566,
+          1215.489
+        ],
+        "aabb_volume": 1618855.6705230132,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 57303,
+      "classname": "trigger_multiple",
+      "targetname": "corner shot blue 2",
+      "origin": [
+        5955.56,
+        947.96,
+        495.5
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "57303",
+        "classname": "trigger_multiple",
+        "origin": "5955.56 947.96 495.5",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "corner shot blue 2",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "corner shot blue 2 next,Disable,,1,-1",
+          "parts": [
+            "corner shot blue 2 next",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "corner shot blue 2,Disable,,0.26,-1",
+          "parts": [
+            "corner shot blue 2",
+            "Disable",
+            "",
+            "0.26",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "corner shot blue 2 next,Enable,,0,-1",
+          "parts": [
+            "corner shot blue 2 next",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          11817.45,
+          1911.96,
+          932.5
+        ],
+        "max": [
+          12008.560000000001,
+          1955.87,
+          1057.5
+        ],
+        "center": [
+          11913.005000000001,
+          1933.915,
+          995.0
+        ],
+        "size": [
+          191.11000000000058,
+          43.909999999999854,
+          125.0
+        ],
+        "z_range": [
+          932.5,
+          1057.5
+        ],
+        "aabb_volume": 1048955.0124999997,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 57524,
+      "classname": "trigger_multiple",
+      "targetname": "corner shot red 2 next",
+      "origin": [
+        332.45,
+        996.96,
+        559.47
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "57524",
+        "classname": "trigger_multiple",
+        "origin": "332.45 996.96 559.47",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "corner shot red 2 next",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown.mp3,PlaySound,,0,-1",
+          "parts": [
+            "from downtown.mp3",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger blue 1 next,Disable,,0.01,-1",
+          "parts": [
+            "from downtown trigger blue 1 next",
+            "Disable",
+            "",
+            "0.01",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          569.341,
+          2048.05,
+          1022.5250000000001
+        ],
+        "max": [
+          760.45,
+          2091.96,
+          1215.467
+        ],
+        "center": [
+          664.8955000000001,
+          2070.005,
+          1118.996
+        ],
+        "size": [
+          191.10900000000004,
+          43.909999999999854,
+          192.942
+        ],
+        "z_range": [
+          1022.5250000000001,
+          1215.467
+        ],
+        "aabb_volume": 1619091.3520909748,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 57527,
+      "classname": "trigger_multiple",
+      "targetname": "corner shot red 2",
+      "origin": [
+        330.56,
+        909.96,
+        495.49
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "57527",
+        "classname": "trigger_multiple",
+        "origin": "330.56 909.96 495.49",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "corner shot red 2",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "corner shot red 2 next,Disable,,1,-1",
+          "parts": [
+            "corner shot red 2 next",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "corner shot red 2,Disable,,0.26,-1",
+          "parts": [
+            "corner shot red 2",
+            "Disable",
+            "",
+            "0.26",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "corner shot red 2 next,Enable,,0,-1",
+          "parts": [
+            "corner shot red 2 next",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          565.4490000000001,
+          1874.049,
+          932.505
+        ],
+        "max": [
+          756.56,
+          1917.97,
+          1057.489
+        ],
+        "center": [
+          661.0045,
+          1896.0095000000001,
+          994.9970000000001
+        ],
+        "size": [
+          191.11099999999988,
+          43.92100000000005,
+          124.98400000000004
+        ],
+        "z_range": [
+          932.505,
+          1057.489
+        ],
+        "aabb_volume": 1049088.9782953048,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 57530,
+      "classname": "trigger_multiple",
+      "targetname": "corner shot red 1 next",
+      "origin": [
+        330.56,
+        4026.04,
+        559.5
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "57530",
+        "classname": "trigger_multiple",
+        "origin": "330.56 4026.04 559.5",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "corner shot red 1 next",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown.mp3,PlaySound,,0,-1",
+          "parts": [
+            "from downtown.mp3",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "from downtown trigger blue 1 next,Disable,,0.01,-1",
+          "parts": [
+            "from downtown trigger blue 1 next",
+            "Disable",
+            "",
+            "0.01",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          567.451,
+          7992.13,
+          1022.5799999999999
+        ],
+        "max": [
+          758.559,
+          8036.04,
+          1215.5
+        ],
+        "center": [
+          663.005,
+          8014.085,
+          1119.04
+        ],
+        "size": [
+          191.10799999999995,
+          43.909999999999854,
+          192.92000000000007
+        ],
+        "z_range": [
+          1022.5799999999999,
+          1215.5
+        ],
+        "aabb_volume": 1618898.265857595,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 57533,
+      "classname": "trigger_multiple",
+      "targetname": "corner shot red 1",
+      "origin": [
+        332.44,
+        4113.04,
+        491.5
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "57533",
+        "classname": "trigger_multiple",
+        "origin": "332.44 4113.04 491.5",
+        "spawnflags": "8",
+        "StartDisabled": "1",
+        "targetname": "corner shot red 1",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "corner shot red 1 next,Disable,,1,-1",
+          "parts": [
+            "corner shot red 1 next",
+            "Disable",
+            "",
+            "1",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "corner shot red 1,Disable,,0.26,-1",
+          "parts": [
+            "corner shot red 1",
+            "Disable",
+            "",
+            "0.26",
+            "-1"
+          ]
+        },
+        {
+          "output": "OnTrigger",
+          "raw": "corner shot red 1 next,Enable,,0,-1",
+          "parts": [
+            "corner shot red 1 next",
+            "Enable",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          567.319,
+          8166.13,
+          928.5640000000001
+        ],
+        "max": [
+          758.44,
+          8210.04,
+          1053.531
+        ],
+        "center": [
+          662.8795,
+          8188.085000000001,
+          991.0475
+        ],
+        "size": [
+          191.1210000000001,
+          43.910000000000764,
+          124.96699999999987
+        ],
+        "z_range": [
+          928.5640000000001,
+          1053.531
+        ],
+        "aabb_volume": 1048738.4486873876,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 65850,
+      "classname": "trigger_powerup",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "65850",
+        "classname": "trigger_powerup",
+        "enabled": "1",
+        "powerup": "speedball",
+        "poweruptime": "5.5"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          3120.0,
+          4178.0,
+          673.0
+        ],
+        "max": [
+          3168.0,
+          4367.0,
+          795.0
+        ],
+        "center": [
+          3144.0,
+          4272.5,
+          734.0
+        ],
+        "size": [
+          48.0,
+          189.0,
+          122.0
+        ],
+        "z_range": [
+          673.0,
+          795.0
+        ],
+        "aabb_volume": 1106784.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 72871,
+      "classname": "trigger_abspush",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "72871",
+        "classname": "trigger_abspush",
+        "enabled": "1",
+        "knockdown": "1",
+        "overridevelocity": "1",
+        "pushball": "1",
+        "pushfromorigin": "0",
+        "pushphysobjects": "1",
+        "pushplayers": "0",
+        "pushvelocity": "-100 0 0",
+        "starttouchonly": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          6042.0,
+          2526.0,
+          714.0
+        ],
+        "max": [
+          6043.0,
+          2581.0,
+          786.0
+        ],
+        "center": [
+          6042.5,
+          2553.5,
+          750.0
+        ],
+        "size": [
+          1.0,
+          55.0,
+          72.0
+        ],
+        "z_range": [
+          714.0,
+          786.0
+        ],
+        "aabb_volume": 3960.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 72881,
+      "classname": "trigger_hurt",
+      "targetname": null,
+      "origin": [
+        5993.0,
+        2551.0,
+        686.5
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "72881",
+        "classname": "trigger_hurt",
+        "damage": "200",
+        "damagecap": "200",
+        "damagemodel": "0",
+        "damagetype": "256",
+        "nodmgforce": "1",
+        "origin": "5993 2551 686.5",
+        "spawnflags": "1",
+        "StartDisabled": "0"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          11936.0,
+          5052.0,
+          1372.5
+        ],
+        "max": [
+          12036.0,
+          5152.0,
+          1373.5
+        ],
+        "center": [
+          11986.0,
+          5102.0,
+          1373.0
+        ],
+        "size": [
+          100.0,
+          100.0,
+          1.0
+        ],
+        "z_range": [
+          1372.5,
+          1373.5
+        ],
+        "aabb_volume": 10000.0,
+        "source_point_count": 288,
+        "warnings": []
+      }
+    },
+    {
+      "id": 72967,
+      "classname": "trigger_goal",
+      "targetname": "Blue Goal slam dunk",
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "72967",
+        "classname": "trigger_goal",
+        "points": "1",
+        "scoretype": "1",
+        "targetname": "Blue Goal slam dunk",
+        "teamid": "2"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "capture_red (slam dunk),Trigger,,0,-1",
+          "parts": [
+            "capture_red (slam dunk)",
+            "Trigger",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "Blue Hoop,Break,,0,-1",
+          "parts": [
+            "Blue Hoop",
+            "Break",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "blue_explode,Explode,,0,-1",
+          "parts": [
+            "blue_explode",
+            "Explode",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          5961.44,
+          2520.64,
+          658.014
+        ],
+        "max": [
+          6022.55,
+          2582.25,
+          659.017
+        ],
+        "center": [
+          5991.995,
+          2551.4449999999997,
+          658.5155
+        ],
+        "size": [
+          61.11000000000058,
+          61.61000000000013,
+          1.0030000000000427
+        ],
+        "z_range": [
+          658.014,
+          659.017
+        ],
+        "aabb_volume": 3776.2820613002045,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 72969,
+      "classname": "trigger_abspush",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "72969",
+        "classname": "trigger_abspush",
+        "enabled": "1",
+        "knockdown": "0",
+        "overridevelocity": "1",
+        "pushball": "1",
+        "pushfromorigin": "0",
+        "pushphysobjects": "1",
+        "pushplayers": "0",
+        "pushvelocity": "0 -40 0",
+        "starttouchonly": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          5962.43,
+          2519.0,
+          625.0
+        ],
+        "max": [
+          6023.55,
+          2580.61,
+          626.0
+        ],
+        "center": [
+          5992.99,
+          2549.8050000000003,
+          625.5
+        ],
+        "size": [
+          61.11999999999989,
+          61.61000000000013,
+          1.0
+        ],
+        "z_range": [
+          625.0,
+          626.0
+        ],
+        "aabb_volume": 3765.603200000001,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 72971,
+      "classname": "trigger_goal",
+      "targetname": "Blue Goal throw",
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "72971",
+        "classname": "trigger_goal",
+        "points": "1",
+        "scoretype": "2",
+        "targetname": "Blue Goal throw",
+        "teamid": "2"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "capture_red,Trigger,,0,-1",
+          "parts": [
+            "capture_red",
+            "Trigger",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "blue_explode,Explode,,0,-1",
+          "parts": [
+            "blue_explode",
+            "Explode",
+            "",
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "output": "onscore",
+          "raw": "Blue Hoop,Break,,0,-1",
+          "parts": [
+            "Blue Hoop",
+            "Break",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          5961.45,
+          2520.64,
+          657.0
+        ],
+        "max": [
+          6022.56,
+          2582.25,
+          658.0
+        ],
+        "center": [
+          5992.005,
+          2551.4449999999997,
+          657.5
+        ],
+        "size": [
+          61.11000000000058,
+          61.61000000000013,
+          1.0
+        ],
+        "z_range": [
+          657.0,
+          658.0
+        ],
+        "aabb_volume": 3764.9871000000435,
+        "source_point_count": 30,
+        "warnings": []
+      }
+    },
+    {
+      "id": 73797,
+      "classname": "trigger_multiple",
+      "targetname": null,
+      "origin": [
+        3144.0,
+        4272.5,
+        761.96
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "73797",
+        "classname": "trigger_multiple",
+        "filtername": "eft ball",
+        "origin": "3144 4272.5 761.96",
+        "spawnflags": "1036",
+        "StartDisabled": "0",
+        "wait": "10"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "fire,PlaySound,,0,-1",
+          "parts": [
+            "fire",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          6264.0,
+          8450.5,
+          1434.96
+        ],
+        "max": [
+          6312.0,
+          8639.5,
+          1556.96
+        ],
+        "center": [
+          6288.0,
+          8545.0,
+          1495.96
+        ],
+        "size": [
+          48.0,
+          189.0,
+          122.0
+        ],
+        "z_range": [
+          1434.96,
+          1556.96
+        ],
+        "aabb_volume": 1106784.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 73872,
+      "classname": "trigger_multiple",
+      "targetname": null,
+      "origin": [
+        3144.0,
+        829.5,
+        761.96
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "73872",
+        "classname": "trigger_multiple",
+        "filtername": "eft ball",
+        "origin": "3144 829.5 761.96",
+        "spawnflags": "1036",
+        "StartDisabled": "0",
+        "wait": "10"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "fire,PlaySound,,0,-1",
+          "parts": [
+            "fire",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          6264.0,
+          1564.5,
+          1434.96
+        ],
+        "max": [
+          6312.0,
+          1753.5,
+          1556.96
+        ],
+        "center": [
+          6288.0,
+          1659.0,
+          1495.96
+        ],
+        "size": [
+          48.0,
+          189.0,
+          122.0
+        ],
+        "z_range": [
+          1434.96,
+          1556.96
+        ],
+        "aabb_volume": 1106784.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 75994,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        700.0,
+        1933.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "75994",
+        "classname": "info_player_red",
+        "angles": "0 0 0",
+        "origin": "700 1933 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 76328,
+      "classname": "trigger_multiple",
+      "targetname": null,
+      "origin": [
+        664.0,
+        2550.0,
+        398.5
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "76328",
+        "classname": "trigger_multiple",
+        "filtername": "eft ball",
+        "origin": "664 2550 398.5",
+        "spawnflags": "8",
+        "StartDisabled": "0",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "here it comes,PlaySound,,0,-1",
+          "parts": [
+            "here it comes",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          1213.475,
+          5082.0,
+          795.5
+        ],
+        "max": [
+          1253.475,
+          5122.0,
+          798.5
+        ],
+        "center": [
+          1233.475,
+          5102.0,
+          797.0
+        ],
+        "size": [
+          40.0,
+          40.0,
+          3.0
+        ],
+        "z_range": [
+          795.5,
+          798.5
+        ],
+        "aabb_volume": 4800.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 83155,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        699.0,
+        3241.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "83155",
+        "classname": "info_player_red",
+        "angles": "0 0 0",
+        "origin": "699 3241 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 83147,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        700.0,
+        3171.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "83147",
+        "classname": "info_player_red",
+        "angles": "0 0 0",
+        "origin": "700 3171 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 76000,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        701.0,
+        3101.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "76000",
+        "classname": "info_player_red",
+        "angles": "0 0 0",
+        "origin": "701 3101 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 83153,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        698.0,
+        3311.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "83153",
+        "classname": "info_player_red",
+        "angles": "0 0 0",
+        "origin": "698 3311 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 88170,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        699.0,
+        1795.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "88170",
+        "classname": "info_player_red",
+        "angles": "0 0 0",
+        "origin": "699 1795 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 88172,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        699.0,
+        1859.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "88172",
+        "classname": "info_player_red",
+        "angles": "0 0 0",
+        "origin": "699 1859 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 88182,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        5589.0,
+        1795.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "88182",
+        "classname": "info_player_blue",
+        "angles": "0 180 0",
+        "origin": "5589 1795 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 88184,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        5589.0,
+        1859.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "88184",
+        "classname": "info_player_blue",
+        "angles": "0 180 0",
+        "origin": "5589 1859 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 88186,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        5588.0,
+        1933.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "88186",
+        "classname": "info_player_blue",
+        "angles": "0 180 0",
+        "origin": "5588 1933 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 88188,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        5587.0,
+        2007.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "88188",
+        "classname": "info_player_blue",
+        "angles": "0 180 0",
+        "origin": "5587 2007 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 88190,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        5587.0,
+        2071.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "88190",
+        "classname": "info_player_blue",
+        "angles": "0 180 0",
+        "origin": "5587 2071 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 88192,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        5587.0,
+        2199.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "88192",
+        "classname": "info_player_blue",
+        "angles": "0 180 0",
+        "origin": "5587 2199 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 88194,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        5587.0,
+        2135.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "88194",
+        "classname": "info_player_blue",
+        "angles": "0 180 0",
+        "origin": "5587 2135 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 88196,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        5590.0,
+        3311.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "88196",
+        "classname": "info_player_blue",
+        "angles": "0 180 0",
+        "origin": "5590 3311 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 88198,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        5589.0,
+        3241.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "88198",
+        "classname": "info_player_blue",
+        "angles": "0 180 0",
+        "origin": "5589 3241 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 88200,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        5588.0,
+        3171.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "88200",
+        "classname": "info_player_blue",
+        "angles": "0 180 0",
+        "origin": "5588 3171 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 88202,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        5587.0,
+        3101.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "88202",
+        "classname": "info_player_blue",
+        "angles": "0 180 0",
+        "origin": "5587 3101 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 88204,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        5586.0,
+        3031.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "88204",
+        "classname": "info_player_blue",
+        "angles": "0 180 0",
+        "origin": "5586 3031 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 88206,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        5586.0,
+        2967.0,
+        270.0
+      ],
+      "angles": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "88206",
+        "classname": "info_player_blue",
+        "angles": "0 180 0",
+        "origin": "5586 2967 270"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 99542,
+      "classname": "trigger_abspush",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "99542",
+        "classname": "trigger_abspush",
+        "enabled": "1",
+        "knockdown": "0",
+        "overridevelocity": "1",
+        "pushball": "0",
+        "pushfromorigin": "0",
+        "pushphysobjects": "0",
+        "pushplayers": "1",
+        "pushvelocity": "355 75 400",
+        "starttouchonly": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          805.0,
+          3299.0,
+          266.449
+        ],
+        "max": [
+          845.0,
+          3339.0,
+          271.0
+        ],
+        "center": [
+          825.0,
+          3319.0,
+          268.72450000000003
+        ],
+        "size": [
+          40.0,
+          40.0,
+          4.550999999999988
+        ],
+        "z_range": [
+          266.449,
+          271.0
+        ],
+        "aabb_volume": 7281.59999999998,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 99708,
+      "classname": "trigger_abspush",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "99708",
+        "classname": "trigger_abspush",
+        "enabled": "1",
+        "knockdown": "0",
+        "overridevelocity": "1",
+        "pushball": "0",
+        "pushfromorigin": "0",
+        "pushphysobjects": "0",
+        "pushplayers": "1",
+        "pushvelocity": "355 -75 400",
+        "starttouchonly": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          805.0,
+          1763.0,
+          266.449
+        ],
+        "max": [
+          845.0,
+          1803.0,
+          271.0
+        ],
+        "center": [
+          825.0,
+          1783.0,
+          268.72450000000003
+        ],
+        "size": [
+          40.0,
+          40.0,
+          4.550999999999988
+        ],
+        "z_range": [
+          266.449,
+          271.0
+        ],
+        "aabb_volume": 7281.59999999998,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 103470,
+      "classname": "trigger_abspush",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "103470",
+        "classname": "trigger_abspush",
+        "enabled": "1",
+        "knockdown": "0",
+        "overridevelocity": "1",
+        "pushball": "0",
+        "pushfromorigin": "0",
+        "pushphysobjects": "0",
+        "pushplayers": "1",
+        "pushvelocity": "-355 -75 400",
+        "starttouchonly": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          5443.0,
+          1763.0,
+          266.449
+        ],
+        "max": [
+          5483.0,
+          1803.0,
+          271.0
+        ],
+        "center": [
+          5463.0,
+          1783.0,
+          268.72450000000003
+        ],
+        "size": [
+          40.0,
+          40.0,
+          4.550999999999988
+        ],
+        "z_range": [
+          266.449,
+          271.0
+        ],
+        "aabb_volume": 7281.59999999998,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 103478,
+      "classname": "trigger_abspush",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "103478",
+        "classname": "trigger_abspush",
+        "enabled": "1",
+        "knockdown": "0",
+        "overridevelocity": "1",
+        "pushball": "0",
+        "pushfromorigin": "0",
+        "pushphysobjects": "0",
+        "pushplayers": "1",
+        "pushvelocity": "-355 75 400",
+        "starttouchonly": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          5443.0,
+          3299.0,
+          266.449
+        ],
+        "max": [
+          5483.0,
+          3339.0,
+          271.0
+        ],
+        "center": [
+          5463.0,
+          3319.0,
+          268.72450000000003
+        ],
+        "size": [
+          40.0,
+          40.0,
+          4.550999999999988
+        ],
+        "z_range": [
+          266.449,
+          271.0
+        ],
+        "aabb_volume": 7281.59999999998,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 103839,
+      "classname": "trigger_multiple",
+      "targetname": null,
+      "origin": [
+        5814.0,
+        2550.0,
+        398.58
+      ],
+      "angles": null,
+      "keyvalues": {
+        "id": "103839",
+        "classname": "trigger_multiple",
+        "filtername": "eft ball",
+        "origin": "5814 2550 398.58",
+        "spawnflags": "8",
+        "StartDisabled": "0",
+        "wait": "3"
+      },
+      "outputs": [
+        {
+          "output": "OnTrigger",
+          "raw": "here it comes,PlaySound,,0,-1",
+          "parts": [
+            "here it comes",
+            "PlaySound",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          11513.0,
+          5082.0,
+          795.662
+        ],
+        "max": [
+          11553.0,
+          5122.0,
+          798.662
+        ],
+        "center": [
+          11533.0,
+          5102.0,
+          797.162
+        ],
+        "size": [
+          40.0,
+          40.0,
+          3.0
+        ],
+        "z_range": [
+          795.662,
+          798.662
+        ],
+        "aabb_volume": 4800.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 103834,
+      "classname": "trigger_abspush",
+      "targetname": null,
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "103834",
+        "classname": "trigger_abspush",
+        "enabled": "1",
+        "knockdown": "0",
+        "overridevelocity": "1",
+        "pushball": "0",
+        "pushfromorigin": "0",
+        "pushphysobjects": "0",
+        "pushplayers": "1",
+        "pushvelocity": "150 0 775",
+        "starttouchonly": "1"
+      },
+      "outputs": [],
+      "bounds": {
+        "min": [
+          5698.97,
+          2532.0,
+          354.531
+        ],
+        "max": [
+          5738.97,
+          2572.0,
+          359.082
+        ],
+        "center": [
+          5718.97,
+          2552.0,
+          356.8065
+        ],
+        "size": [
+          40.0,
+          40.0,
+          4.550999999999988
+        ],
+        "z_range": [
+          354.531,
+          359.082
+        ],
+        "aabb_volume": 7281.59999999998,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    }
+  ]
+}

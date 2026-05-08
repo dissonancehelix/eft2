@@ -1,0 +1,112 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Slam Dunk",
+  "source_vmf": "Maps/Slam Dunk/Slam Dunk.vmf",
+  "original_filename": "eft_slamdunk_v6.vmf",
+  "generated_at": "2026-05-08T15:27:14.689573+00:00",
+  "hazard_regions": [
+    {
+      "id": "hazard_region_1",
+      "type": "hazard_region",
+      "center": [
+        590.0,
+        5102.0,
+        1373.0
+      ],
+      "bounds": {
+        "min": [
+          540.0,
+          5052.0,
+          1372.5
+        ],
+        "max": [
+          640.0,
+          5152.0,
+          1373.5
+        ],
+        "center": [
+          590.0,
+          5102.0,
+          1373.0
+        ],
+        "size": [
+          100.0,
+          100.0,
+          1.0
+        ],
+        "z_range": [
+          1372.5,
+          1373.5
+        ],
+        "aabb_volume": 10000.0,
+        "source_point_count": 288,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Hazard or forced knockdown trigger.",
+        "Source entity class `trigger_hurt` id `27454`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        27454
+      ],
+      "source_classes": [
+        "trigger_hurt"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "hazard_region_2",
+      "type": "hazard_region",
+      "center": [
+        11986.0,
+        5102.0,
+        1373.0
+      ],
+      "bounds": {
+        "min": [
+          11936.0,
+          5052.0,
+          1372.5
+        ],
+        "max": [
+          12036.0,
+          5152.0,
+          1373.5
+        ],
+        "center": [
+          11986.0,
+          5102.0,
+          1373.0
+        ],
+        "size": [
+          100.0,
+          100.0,
+          1.0
+        ],
+        "z_range": [
+          1372.5,
+          1373.5
+        ],
+        "aabb_volume": 10000.0,
+        "source_point_count": 288,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Hazard or forced knockdown trigger.",
+        "Source entity class `trigger_hurt` id `72881`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        72881
+      ],
+      "source_classes": [
+        "trigger_hurt"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

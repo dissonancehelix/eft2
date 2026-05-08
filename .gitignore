@@ -1,20 +1,37 @@
-# Local reference media. Keep the path documented in README; do not push this
+# Reference media. Keep the path documented in README; do not push this
 # without Git LFS or a smaller derived clip set.
 /EFT Bloodbowl POV.mp4
-/*.mp4
-/*.mov
-/*.avi
-/*.mkv
+*.mp4
+*.mov
+*.avi
+*.mkv
 
-# The full s&box checkout and docs are local reference only.
-/sbox-src/
+# s&box reference. Keep the path documented in AGENTS.md; do not push the
+# full s&box checkout unless the user deliberately promotes it.
+/SBox/Docs/
+/SBox/Source/
+/SBox/Runtime/
+/SBox/Bootstrap.bat
+/SBox/README.md
 
-# Local evidence/dev captures. Keep paths documented in README, but do not
+# Temporary toolkit source references. These may be inspected to improve
+# project-owned analyzer code, but they are not durable repo domains.
+/blender-main/
+/recastnavigation-main/
+/garrysmod-master/
+/garrysmod-master.zip
+/FFmpeg-Builds-master/
+/FFmpeg-Builds-master.zip
+
+# Prebuilt tool binaries. Tools/ffmpeg.exe is a holding spot until Tools/Observer/
+# is built; commit it only if you want it tracked in the repo.
+/Tools/ffmpeg.exe
+
+# Evidence/dev captures. Keep paths documented in README, but do not
 # upload bulk captures unless they become curated fixtures.
-/lua-src/logs/
-/lua-src/backgrounds/
-/lua-src/screenshots/
-/video-analysis/
+/Lua/game logs/
+/Lua/backgrounds/
+/Lua/screenshots/
 
 # Common build and editor outputs.
 bin/
@@ -28,6 +45,7 @@ obj/
 *.temp
 *.bak
 *.cache
+__pycache__/
 
 # OS files.
 Thumbs.db

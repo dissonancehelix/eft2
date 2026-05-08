@@ -1,0 +1,759 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Cosmic Arena",
+  "source_vmf": "Maps/Cosmic Arena/Cosmic Arena.vmf",
+  "original_filename": "eft_cosmic_arena_v2.vmf",
+  "generated_at": "2026-05-08T15:27:10.885141+00:00",
+  "status": "brush_plane_mesh",
+  "solid_count": 20,
+  "reconstructed_solids": 20,
+  "partial_solids": 0,
+  "failed_solids": 0,
+  "triangle_count": 240,
+  "solids": [
+    {
+      "solid_id": 6,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -6959.0,
+          -3643.0,
+          1610.02
+        ],
+        "max": [
+          6961.0,
+          3625.0,
+          1629.8
+        ],
+        "center": [
+          1.0,
+          -9.0,
+          1619.9099999999999
+        ],
+        "size": [
+          13920.0,
+          7268.0,
+          19.779999999999973
+        ],
+        "z_range": [
+          1610.02,
+          1629.8
+        ],
+        "aabb_volume": 2001153676.7999973,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 8,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -6959.0,
+          -3643.0,
+          -902.8
+        ],
+        "max": [
+          6961.0,
+          3625.0,
+          -883.018
+        ],
+        "center": [
+          1.0,
+          -9.0,
+          -892.909
+        ],
+        "size": [
+          13920.0,
+          7268.0,
+          19.781999999999925
+        ],
+        "z_range": [
+          -902.8,
+          -883.018
+        ],
+        "aabb_volume": 2001356017.9199924,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 14,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -6959.0,
+          3625.0,
+          -883.019
+        ],
+        "max": [
+          6961.0,
+          3743.0,
+          1610.02
+        ],
+        "center": [
+          1.0,
+          3684.0,
+          363.5005
+        ],
+        "size": [
+          13920.0,
+          118.0,
+          2493.0389999999998
+        ],
+        "z_range": [
+          -883.019,
+          1610.02
+        ],
+        "aabb_volume": 4094966139.8399997,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 79522,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -6959.0,
+          2644.13,
+          -202.0
+        ],
+        "max": [
+          6961.0,
+          2695.13,
+          1610.0
+        ],
+        "center": [
+          1.0,
+          2669.63,
+          704.0
+        ],
+        "size": [
+          13920.0,
+          51.0,
+          1812.0
+        ],
+        "z_range": [
+          -202.0,
+          1610.0
+        ],
+        "aabb_volume": 1286375040.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 89541,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -6959.0,
+          -2713.13,
+          -202.0
+        ],
+        "max": [
+          6961.0,
+          -2662.13,
+          1610.0
+        ],
+        "center": [
+          1.0,
+          -2687.63,
+          704.0
+        ],
+        "size": [
+          13920.0,
+          51.0,
+          1812.0
+        ],
+        "z_range": [
+          -202.0,
+          1610.0
+        ],
+        "aabb_volume": 1286375040.0,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 313795,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -6959.0,
+          -3761.0,
+          -883.019
+        ],
+        "max": [
+          6961.0,
+          -3643.0,
+          1610.02
+        ],
+        "center": [
+          1.0,
+          -3702.0,
+          363.5005
+        ],
+        "size": [
+          13920.0,
+          118.0,
+          2493.0389999999998
+        ],
+        "z_range": [
+          -883.019,
+          1610.02
+        ],
+        "aabb_volume": 4094966139.8399997,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 313806,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          8127.0,
+          -538.0,
+          -883.018
+        ],
+        "max": [
+          8276.0,
+          538.0,
+          1610.02
+        ],
+        "center": [
+          8201.5,
+          0.0,
+          363.501
+        ],
+        "size": [
+          149.0,
+          1076.0,
+          2493.038
+        ],
+        "z_range": [
+          -883.018,
+          1610.02
+        ],
+        "aabb_volume": 399693824.312,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 316055,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          6961.0,
+          -688.0,
+          -883.018
+        ],
+        "max": [
+          8127.0,
+          -538.0,
+          1610.02
+        ],
+        "center": [
+          7544.0,
+          -613.0,
+          363.501
+        ],
+        "size": [
+          1166.0,
+          150.0,
+          2493.038
+        ],
+        "z_range": [
+          -883.018,
+          1610.02
+        ],
+        "aabb_volume": 436032346.2,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 316061,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          6961.0,
+          538.0,
+          -883.018
+        ],
+        "max": [
+          8127.0,
+          688.0,
+          1610.02
+        ],
+        "center": [
+          7544.0,
+          613.0,
+          363.501
+        ],
+        "size": [
+          1166.0,
+          150.0,
+          2493.038
+        ],
+        "z_range": [
+          -883.018,
+          1610.02
+        ],
+        "aabb_volume": 436032346.2,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 316070,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          6961.0,
+          -3643.0,
+          -883.018
+        ],
+        "max": [
+          7110.0,
+          -688.0,
+          1610.02
+        ],
+        "center": [
+          7035.5,
+          -2165.5,
+          363.501
+        ],
+        "size": [
+          149.0,
+          2955.0,
+          2493.038
+        ],
+        "z_range": [
+          -883.018,
+          1610.02
+        ],
+        "aabb_volume": 1097672166.21,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 316084,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          6961.0,
+          688.0,
+          -883.018
+        ],
+        "max": [
+          7110.0,
+          3625.0,
+          1610.02
+        ],
+        "center": [
+          7035.5,
+          2156.5,
+          363.501
+        ],
+        "size": [
+          149.0,
+          2937.0,
+          2493.038
+        ],
+        "z_range": [
+          -883.018,
+          1610.02
+        ],
+        "aabb_volume": 1090985838.294,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 316096,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          6961.0,
+          -538.0,
+          1610.02
+        ],
+        "max": [
+          8277.0,
+          538.0,
+          1629.8
+        ],
+        "center": [
+          7619.0,
+          0.0,
+          1619.9099999999999
+        ],
+        "size": [
+          1316.0,
+          1076.0,
+          19.779999999999973
+        ],
+        "z_range": [
+          1610.02,
+          1629.8
+        ],
+        "aabb_volume": 28008796.479999963,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 316113,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          6961.0,
+          -538.0,
+          -883.019
+        ],
+        "max": [
+          8127.0,
+          538.0,
+          567.0
+        ],
+        "center": [
+          7544.0,
+          0.0,
+          -158.0095
+        ],
+        "size": [
+          1166.0,
+          1076.0,
+          1450.019
+        ],
+        "z_range": [
+          -883.019,
+          567.0
+        ],
+        "aabb_volume": 1819217037.704,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 316130,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -7108.0,
+          -3643.0,
+          -883.018
+        ],
+        "max": [
+          -6959.0,
+          -688.0,
+          1610.02
+        ],
+        "center": [
+          -7033.5,
+          -2165.5,
+          363.501
+        ],
+        "size": [
+          149.0,
+          2955.0,
+          2493.038
+        ],
+        "z_range": [
+          -883.018,
+          1610.02
+        ],
+        "aabb_volume": 1097672166.21,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 316131,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -8125.0,
+          -539.0,
+          -883.019
+        ],
+        "max": [
+          -6959.0,
+          538.0,
+          567.0
+        ],
+        "center": [
+          -7542.0,
+          -0.5,
+          -158.0095
+        ],
+        "size": [
+          1166.0,
+          1077.0,
+          1450.019
+        ],
+        "z_range": [
+          -883.019,
+          567.0
+        ],
+        "aabb_volume": 1820907759.858,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 316132,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -7108.0,
+          688.0,
+          -883.018
+        ],
+        "max": [
+          -6959.0,
+          3625.0,
+          1610.02
+        ],
+        "center": [
+          -7033.5,
+          2156.5,
+          363.501
+        ],
+        "size": [
+          149.0,
+          2937.0,
+          2493.038
+        ],
+        "z_range": [
+          -883.018,
+          1610.02
+        ],
+        "aabb_volume": 1090985838.294,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 316133,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -8125.0,
+          538.0,
+          -883.018
+        ],
+        "max": [
+          -6959.0,
+          688.0,
+          1610.02
+        ],
+        "center": [
+          -7542.0,
+          613.0,
+          363.501
+        ],
+        "size": [
+          1166.0,
+          150.0,
+          2493.038
+        ],
+        "z_range": [
+          -883.018,
+          1610.02
+        ],
+        "aabb_volume": 436032346.2,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 316135,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -8125.0,
+          -688.0,
+          -883.018
+        ],
+        "max": [
+          -6959.0,
+          -539.0,
+          1610.02
+        ],
+        "center": [
+          -7542.0,
+          -613.5,
+          363.501
+        ],
+        "size": [
+          1166.0,
+          149.0,
+          2493.038
+        ],
+        "z_range": [
+          -883.018,
+          1610.02
+        ],
+        "aabb_volume": 433125463.892,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 316136,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -8125.0,
+          -539.0,
+          1610.02
+        ],
+        "max": [
+          -6959.0,
+          538.0,
+          1629.8
+        ],
+        "center": [
+          -7542.0,
+          -0.5,
+          1619.9099999999999
+        ],
+        "size": [
+          1166.0,
+          1077.0,
+          19.779999999999973
+        ],
+        "z_range": [
+          1610.02,
+          1629.8
+        ],
+        "aabb_volume": 24839367.959999967,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    },
+    {
+      "solid_id": 316134,
+      "status": "ok",
+      "vertex_count": 8,
+      "face_count": 6,
+      "triangle_count": 12,
+      "bounds": {
+        "min": [
+          -8274.0,
+          -539.0,
+          -883.018
+        ],
+        "max": [
+          -8125.0,
+          538.0,
+          1610.02
+        ],
+        "center": [
+          -8199.5,
+          -0.5,
+          363.501
+        ],
+        "size": [
+          149.0,
+          1077.0,
+          2493.038
+        ],
+        "z_range": [
+          -883.018,
+          1610.02
+        ],
+        "aabb_volume": 400065286.974,
+        "source_point_count": 8,
+        "warnings": []
+      },
+      "warnings": []
+    }
+  ],
+  "warnings": [
+    "Meshes are reconstructed from convex VMF brush planes; displacement and complex prop geometry are not included."
+  ]
+}

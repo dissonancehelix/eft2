@@ -1,0 +1,909 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Soccer",
+  "source_vmf": "Maps/Soccer/Soccer.vmf",
+  "original_filename": "eft_soccer_b2.vmf",
+  "generated_at": "2026-05-08T15:27:14.992384+00:00",
+  "class_counts": {
+    "ambient_generic": 10,
+    "env_cubemap": 9,
+    "env_fog_controller": 1,
+    "func_brush": 26,
+    "func_detail": 63,
+    "func_door": 3,
+    "info_overlay": 38,
+    "info_player_blue": 16,
+    "info_player_red": 16,
+    "info_player_start": 1,
+    "info_player_teamspawn": 1,
+    "light_environment": 1,
+    "light_spot": 45,
+    "logic_auto": 1,
+    "logic_relay": 2,
+    "prop_ball": 1,
+    "prop_dynamic": 4,
+    "trigger_goal": 2
+  },
+  "eft_class_counts": {
+    "info_player_blue": 16,
+    "info_player_red": 16,
+    "prop_ball": 1,
+    "trigger_goal": 2
+  },
+  "entities": [
+    {
+      "id": 4,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        512.0,
+        1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "4",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "512 1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 108,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -640.0,
+        -1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "108",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-640 -1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 158,
+      "classname": "trigger_goal",
+      "targetname": "capturezone_red1",
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "158",
+        "classname": "trigger_goal",
+        "points": "1",
+        "scoretype": "3",
+        "targetname": "capturezone_red1",
+        "teamid": "2"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "capture_red,Trigger,,0,-1",
+          "parts": [
+            "capture_red",
+            "Trigger",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -3008.0,
+          -144.0,
+          0.0
+        ],
+        "max": [
+          -2960.0,
+          144.0,
+          104.0
+        ],
+        "center": [
+          -2984.0,
+          0.0,
+          52.0
+        ],
+        "size": [
+          48.0,
+          288.0,
+          104.0
+        ],
+        "z_range": [
+          0.0,
+          104.0
+        ],
+        "aabb_volume": 1437696.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    },
+    {
+      "id": 6681,
+      "classname": "prop_ball",
+      "targetname": null,
+      "origin": [
+        0.0,
+        0.0,
+        13.0
+      ],
+      "angles": [
+        296.0,
+        0.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "6681",
+        "classname": "prop_ball",
+        "angles": "296 0 0",
+        "origin": "0 0 13"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 12109,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -1696.0,
+        -1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "12109",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-1696 -1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 12111,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -1056.0,
+        -1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "12111",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-1056 -1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 12113,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -576.0,
+        -1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "12113",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-576 -1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 12115,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -1536.0,
+        -1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "12115",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-1536 -1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 12117,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -1216.0,
+        -1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "12117",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-1216 -1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 12119,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -480.0,
+        -1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "12119",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-480 -1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 12121,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -960.0,
+        -1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "12121",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-960 -1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 12123,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -800.0,
+        -1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "12123",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-800 -1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 12125,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -1280.0,
+        -1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "12125",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-1280 -1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 12127,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -736.0,
+        -1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "12127",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-736 -1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 12129,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -896.0,
+        -1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "12129",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-896 -1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 12131,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -1600.0,
+        -1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "12131",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-1600 -1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 14930,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        672.0,
+        1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "14930",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "672 1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 14932,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        608.0,
+        1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "14932",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "608 1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 14934,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        832.0,
+        1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "14934",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "832 1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 14936,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        992.0,
+        1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "14936",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "992 1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 14938,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1152.0,
+        1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "14938",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1152 1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 14940,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1472.0,
+        1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "14940",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1472 1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 14942,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1248.0,
+        1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "14942",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1248 1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 14944,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        928.0,
+        1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "14944",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "928 1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 14946,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1408.0,
+        1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "14946",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1408 1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 14948,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        768.0,
+        1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "14948",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "768 1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 14950,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1728.0,
+        1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "14950",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1728 1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 14952,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1088.0,
+        1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "14952",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1088 1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 52869,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -1376.0,
+        -1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "52869",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-1376 -1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 52871,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -1440.0,
+        -1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "52871",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-1440 -1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 52873,
+      "classname": "info_player_blue",
+      "targetname": null,
+      "origin": [
+        -1120.0,
+        -1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "52873",
+        "classname": "info_player_blue",
+        "angles": "0 90 0",
+        "origin": "-1120 -1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 52927,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1568.0,
+        1600.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "52927",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1568 1600 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 52929,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1632.0,
+        1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "52929",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1632 1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 52931,
+      "classname": "info_player_red",
+      "targetname": null,
+      "origin": [
+        1312.0,
+        1728.0,
+        64.0
+      ],
+      "angles": [
+        0.0,
+        270.0,
+        0.0
+      ],
+      "keyvalues": {
+        "id": "52931",
+        "classname": "info_player_red",
+        "angles": "0 270 0",
+        "origin": "1312 1728 64"
+      },
+      "outputs": [],
+      "bounds": null
+    },
+    {
+      "id": 165,
+      "classname": "trigger_goal",
+      "targetname": "capturezone_blue",
+      "origin": null,
+      "angles": null,
+      "keyvalues": {
+        "id": "165",
+        "classname": "trigger_goal",
+        "points": "1",
+        "scoretype": "3",
+        "targetname": "capturezone_blue",
+        "teamid": "1"
+      },
+      "outputs": [
+        {
+          "output": "onscore",
+          "raw": "capture_blue,Trigger,,0,-1",
+          "parts": [
+            "capture_blue",
+            "Trigger",
+            "",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          2960.0,
+          -144.0,
+          0.0
+        ],
+        "max": [
+          3008.0,
+          144.0,
+          104.0
+        ],
+        "center": [
+          2984.0,
+          0.0,
+          52.0
+        ],
+        "size": [
+          48.0,
+          288.0,
+          104.0
+        ],
+        "z_range": [
+          0.0,
+          104.0
+        ],
+        "aabb_volume": 1437696.0,
+        "source_point_count": 18,
+        "warnings": []
+      }
+    }
+  ]
+}

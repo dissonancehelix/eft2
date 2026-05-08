@@ -1,0 +1,12 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Sky Metal",
+  "source_vmf": "Maps/Sky Metal/Sky Metal.vmf",
+  "original_filename": "eft_sky_metal_v2.vmf",
+  "generated_at": "2026-05-08T15:27:13.673374+00:00",
+  "status": "pending_recast_integration",
+  "nodes": [],
+  "edges": [],
+  "note": "No route metrics faked before Recast integration."
+}

@@ -1,0 +1,61 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Skystep",
+  "source_vmf": "Maps/Skystep/Skystep.vmf",
+  "original_filename": "eft_skystep_v4.vmf",
+  "generated_at": "2026-05-08T15:27:14.172991+00:00",
+  "hazard_regions": [
+    {
+      "id": "hazard_region_1",
+      "type": "hazard_region",
+      "center": [
+        544.0,
+        -224.0,
+        -3746.0
+      ],
+      "bounds": {
+        "min": [
+          -3936.0,
+          -6712.0,
+          -4354.0
+        ],
+        "max": [
+          5024.0,
+          6264.0,
+          -3138.0
+        ],
+        "center": [
+          544.0,
+          -224.0,
+          -3746.0
+        ],
+        "size": [
+          8960.0,
+          12976.0,
+          1216.0
+        ],
+        "z_range": [
+          -4354.0,
+          -3138.0
+        ],
+        "aabb_volume": 141378191360.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Hazard or forced knockdown trigger.",
+        "Source entity class `trigger_hurt` id `22334`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        22334
+      ],
+      "source_classes": [
+        "trigger_hurt"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

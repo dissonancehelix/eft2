@@ -1,0 +1,12 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Tunnel",
+  "source_vmf": "Maps/Tunnel/Tunnel.vmf",
+  "original_filename": "eft_tunnel_v2.vmf",
+  "generated_at": "2026-05-08T15:27:18.618107+00:00",
+  "status": "pending_recast_integration",
+  "nodes": [],
+  "edges": [],
+  "note": "No route metrics faked before Recast integration."
+}

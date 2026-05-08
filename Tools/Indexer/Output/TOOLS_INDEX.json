@@ -1,0 +1,176 @@
+{
+  "generated_by": "Tools/Indexer",
+  "schema_version": 1,
+  "generated_at": "2026-05-08T17:05:07.656288+00:00",
+  "repo_root": "C:/Users/dissonance/Desktop/EFT2",
+  "warnings": [
+    "sbox_scan_truncated_at:4000"
+  ],
+  "tools_root": "Tools",
+  "tool_count": 2,
+  "present_tools": [
+    "Indexer",
+    "Map Analyzer"
+  ],
+  "missing_recommended_tools": [
+    "Observer",
+    "Contract Validator",
+    "Scenario Harness",
+    "Telemetry",
+    "Simulation"
+  ],
+  "recommended_status": [
+    {
+      "name": "Indexer",
+      "status": "present"
+    },
+    {
+      "name": "Map Analyzer",
+      "status": "present"
+    },
+    {
+      "name": "Observer",
+      "status": "pending"
+    },
+    {
+      "name": "Contract Validator",
+      "status": "pending"
+    },
+    {
+      "name": "Scenario Harness",
+      "status": "pending"
+    },
+    {
+      "name": "Telemetry",
+      "status": "pending"
+    },
+    {
+      "name": "Simulation",
+      "status": "pending"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Indexer",
+      "path": "Tools/Indexer",
+      "readme": "Tools/Indexer/README.md",
+      "readme_summary": "# Tools/Indexer\n\nThe Indexer is the first project-wide LLM working-memory tool for EFT2. It reads\nthe repository and emits structured JSON/Markdown summaries that future agents\n(Claude, Codex, and later tools) can use as a fast on-ramp.\n\n> The Indexer is not the game builder. It is the repo memory builder.\n\nEFT2 is not just a code port. Its infrastructure exists to make agents understand\nEFT's rules, feel, maps, evidence, and failure modes deeply enough to implement\nand modernize the game without erasing its identity.\n\nThe named project structure is `Tools/` (infrastructure) and `Game/` (future\nplayable s&box project). Do not introduce \"Engine\" or \"Runtime\" as umbrella names\nfor the infrastructure layer \u2014 \"Engine\" conflicts with s&box/Source 2 terminology,\nand \"Runtime\" implies only shipped game code rather than the full analysis,\nobservation, validation, and simulation pipeline.",
+      "python_module_count": 10,
+      "python_modules": [
+        {
+          "path": "Tools/Indexer/exporters.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "Tools/Indexer/index_assets.py",
+          "first_docstring_line": "OBSERVATION_INDEX.json + MULTIMODAL_CONTEXT.md \u2014 Assets/ inventory."
+        },
+        {
+          "path": "Tools/Indexer/index_external.py",
+          "first_docstring_line": "External-tree indexes: GMod source, Source 1 FGDs, FFmpeg-Builds."
+        },
+        {
+          "path": "Tools/Indexer/index_lua.py",
+          "first_docstring_line": "LUA_INDEX.json \u2014 first-pass classification of Lua/."
+        },
+        {
+          "path": "Tools/Indexer/index_maps.py",
+          "first_docstring_line": "MAPS_INDEX.json \u2014 canonical map domains, FGD discovery, provenance."
+        },
+        {
+          "path": "Tools/Indexer/index_markdown.py",
+          "first_docstring_line": "CONTRACT_INDEX.json \u2014 index Markdown contract files."
+        },
+        {
+          "path": "Tools/Indexer/index_project.py",
+          "first_docstring_line": "EFT2 project-wide Indexer."
+        },
+        {
+          "path": "Tools/Indexer/index_sbox.py",
+          "first_docstring_line": "SBOX_INDEX.json \u2014 shallow s&box reference index, prioritized."
+        },
+        {
+          "path": "Tools/Indexer/index_tools.py",
+          "first_docstring_line": "TOOLS_INDEX.json \u2014 inventory Tools/, flag missing recommended tools."
+        },
+        {
+          "path": "Tools/Indexer/schemas.py",
+          "first_docstring_line": null
+        }
+      ],
+      "has_output_dir": true,
+      "output_dir": "Tools/Indexer/Output"
+    },
+    {
+      "name": "Map Analyzer",
+      "path": "Tools/Map Analyzer",
+      "readme": "Tools/Map Analyzer/README.md",
+      "readme_summary": "# EFT2 Map Analyzer\n\n`Tools/Map Analyzer/` is the first EFT2 map intelligence pipeline.\n\nIt exists to help agents understand maps as played spaces, not merely as entity lists. Raw VMF data is preserved, then reconciled into confidence-scored gameplay structures, Virtual Perception artifacts, and map summaries for later porting/design work.",
+      "python_module_count": 15,
+      "python_modules": [
+        {
+          "path": "Tools/Map Analyzer/__init__.py",
+          "first_docstring_line": "EFT2 map intelligence tools."
+        },
+        {
+          "path": "Tools/Map Analyzer/analyze_all.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "Tools/Map Analyzer/analyze_map.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "Tools/Map Analyzer/compare_logs.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "Tools/Map Analyzer/eft_entities.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "Tools/Map Analyzer/exporters.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "Tools/Map Analyzer/gameflow_sim.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "Tools/Map Analyzer/geometry_backend.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "Tools/Map Analyzer/organize_maps.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "Tools/Map Analyzer/recast_adapter.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "Tools/Map Analyzer/semantic_groups.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "Tools/Map Analyzer/spatial_perception.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "Tools/Map Analyzer/virtual_perception.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "Tools/Map Analyzer/vmf_geometry.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "Tools/Map Analyzer/vmf_parser.py",
+          "first_docstring_line": null
+        }
+      ],
+      "has_output_dir": false,
+      "output_dir": null
+    }
+  ]
+}

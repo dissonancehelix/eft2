@@ -1,0 +1,433 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Skystep",
+  "source_vmf": "Maps/Skystep/Skystep.vmf",
+  "original_filename": "eft_skystep_v4.vmf",
+  "generated_at": "2026-05-08T15:27:14.172991+00:00",
+  "spatial_clusters": [
+    {
+      "cluster_id": 1,
+      "center": [
+        -3448.0,
+        2408.0,
+        -161.0
+      ],
+      "count": 2,
+      "source_entity_ids": [
+        9334,
+        23022
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 2,
+      "center": [
+        3448.0,
+        -2408.0,
+        -161.0
+      ],
+      "count": 2,
+      "source_entity_ids": [
+        11502,
+        22937
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 3,
+      "center": [
+        -2.3164416666666674,
+        4.00708333333334,
+        70.085
+      ],
+      "count": 12,
+      "source_entity_ids": [
+        19354,
+        22426,
+        22406,
+        35536,
+        39043,
+        22909,
+        35528,
+        37830,
+        44986,
+        46329,
+        46458,
+        46985
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 4,
+      "center": [
+        -464.0,
+        4750.736842105263,
+        -241.0
+      ],
+      "count": 19,
+      "source_entity_ids": [
+        20580,
+        20599,
+        20607,
+        20617,
+        20619,
+        20621,
+        20633,
+        20655,
+        20657,
+        20659,
+        20661,
+        20663,
+        20665,
+        20667,
+        20713,
+        20715,
+        20717,
+        20719,
+        20721
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 5,
+      "center": [
+        464.0,
+        -4750.736842105263,
+        -241.0
+      ],
+      "count": 19,
+      "source_entity_ids": [
+        20975,
+        20977,
+        20979,
+        20981,
+        20983,
+        20985,
+        20987,
+        20989,
+        20991,
+        20993,
+        20995,
+        20997,
+        20999,
+        21001,
+        21003,
+        21005,
+        21007,
+        21009,
+        21011
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 6,
+      "center": [
+        -1157.71,
+        1857.39,
+        160.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        21355
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 7,
+      "center": [
+        -62.0,
+        -84.0,
+        4794.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        36941
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "cluster_id": 8,
+      "center": [
+        272.0,
+        -112.0,
+        -1873.0
+      ],
+      "count": 1,
+      "source_entity_ids": [
+        22334
+      ],
+      "type": "entity_spatial_cluster",
+      "confidence": 0.45,
+      "reasons": [
+        "Loose entity-origin cluster; useful as a first-pass landmark grouping, not final gameplay meaning."
+      ],
+      "needs_human_review": true
+    },
+    {
+      "type": "world_z_level_summary",
+      "sampled_level_count": 12,
+      "sampled_z_levels": [
+        -2493.0,
+        -1116.8,
+        -965.0,
+        -797.0,
+        -629.0,
+        -429.0,
+        -413.0,
+        -261.0,
+        -93.0,
+        1115.0,
+        2973.0,
+        5072.8
+      ],
+      "confidence": 0.35,
+      "reasons": [
+        "World brush AABB z-centers suggest vertical/platform structure candidates."
+      ],
+      "needs_human_review": true
+    }
+  ],
+  "jump_push_regions": [],
+  "rotating_obstructions": [
+    {
+      "id": "rotating_obstruction_1",
+      "type": "rotating_obstruction",
+      "center": [
+        -6896.0,
+        4816.0,
+        -321.9995
+      ],
+      "bounds": {
+        "min": [
+          -6912.0,
+          4688.0,
+          -450.0
+        ],
+        "max": [
+          -6880.0,
+          4944.0,
+          -193.999
+        ],
+        "center": [
+          -6896.0,
+          4816.0,
+          -321.9995
+        ],
+        "size": [
+          32.0,
+          256.0,
+          256.001
+        ],
+        "z_range": [
+          -450.0,
+          -193.999
+        ],
+        "aabb_volume": 2097160.192,
+        "source_point_count": 288,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Rotating brush/object that can shape shots or traversal.",
+        "Source entity class `func_rotating` id `9334`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        9334
+      ],
+      "source_classes": [
+        "func_rotating"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "rotating_obstruction_2",
+      "type": "rotating_obstruction",
+      "center": [
+        6896.0,
+        -4816.0,
+        -322.0005
+      ],
+      "bounds": {
+        "min": [
+          6880.0,
+          -4944.0,
+          -450.001
+        ],
+        "max": [
+          6912.0,
+          -4688.0,
+          -194.0
+        ],
+        "center": [
+          6896.0,
+          -4816.0,
+          -322.0005
+        ],
+        "size": [
+          32.0,
+          256.0,
+          256.001
+        ],
+        "z_range": [
+          -450.001,
+          -194.0
+        ],
+        "aabb_volume": 2097160.192,
+        "source_point_count": 288,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Rotating brush/object that can shape shots or traversal.",
+        "Source entity class `func_rotating` id `11502`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        11502
+      ],
+      "source_classes": [
+        "func_rotating"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "rotating_obstruction_3",
+      "type": "rotating_obstruction",
+      "center": [
+        -544.0,
+        -0.0005000000000023874,
+        240.013535
+      ],
+      "bounds": {
+        "min": [
+          -560.0,
+          -128.002,
+          112.00707
+        ],
+        "max": [
+          -528.0,
+          128.001,
+          368.02
+        ],
+        "center": [
+          -544.0,
+          -0.0005000000000023874,
+          240.013535
+        ],
+        "size": [
+          32.0,
+          256.00300000000004,
+          256.01293
+        ],
+        "z_range": [
+          112.00707,
+          368.02
+        ],
+        "aabb_volume": 2097282.4998012804,
+        "source_point_count": 288,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Rotating brush/object that can shape shots or traversal.",
+        "Source entity class `func_rotating` id `46458`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        46458
+      ],
+      "source_classes": [
+        "func_rotating"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "rotating_obstruction_4",
+      "type": "rotating_obstruction",
+      "center": [
+        544.0,
+        -0.0005000000000023874,
+        240.013535
+      ],
+      "bounds": {
+        "min": [
+          528.0,
+          -128.002,
+          112.00707
+        ],
+        "max": [
+          560.0,
+          128.001,
+          368.02
+        ],
+        "center": [
+          544.0,
+          -0.0005000000000023874,
+          240.013535
+        ],
+        "size": [
+          32.0,
+          256.00300000000004,
+          256.01293
+        ],
+        "z_range": [
+          112.00707,
+          368.02
+        ],
+        "aabb_volume": 2097282.4998012804,
+        "source_point_count": 288,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Rotating brush/object that can shape shots or traversal.",
+        "Source entity class `func_rotating` id `46985`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        46985
+      ],
+      "source_classes": [
+        "func_rotating"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

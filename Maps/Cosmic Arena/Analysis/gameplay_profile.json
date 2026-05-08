@@ -1,0 +1,42 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Cosmic Arena",
+  "source_vmf": "Maps/Cosmic Arena/Cosmic Arena.vmf",
+  "original_filename": "eft_cosmic_arena_v2.vmf",
+  "generated_at": "2026-05-08T15:27:10.885141+00:00",
+  "tags": [
+    "flat_swarm",
+    "hazard_regulated",
+    "hybrid_scoring",
+    "jump_pad_route",
+    "open_field_intercept",
+    "powerup_route",
+    "rotating_obstruction_shot",
+    "speedball_tempo",
+    "vertical_platform"
+  ],
+  "raw_counts": {
+    "func_rotating": 1,
+    "info_player_blue": 20,
+    "info_player_red": 20,
+    "logic_teamscore": 1,
+    "prop_ball": 1,
+    "trigger_abspush": 5,
+    "trigger_ballreset": 6,
+    "trigger_goal": 4,
+    "trigger_hurt": 1,
+    "trigger_powerup": 12
+  },
+  "estimated_constants": {
+    "base_speed_hu_s": 350,
+    "carrier_speed_hu_s": 262.5,
+    "charge_threshold_hu_s": 300,
+    "note": "Initial README constants only; route/intercept estimates are pending Recast integration."
+  },
+  "confidence_notes": [
+    "Multiple raw trigger_goal entities require semantic grouping before claiming real scoring structure.",
+    "Vertical/platform claims are approximate until Recast or stronger geometry analysis is active."
+  ],
+  "needs_human_review": true
+}

@@ -1,0 +1,79 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Tunnel",
+  "source_vmf": "Maps/Tunnel/Tunnel.vmf",
+  "original_filename": "eft_tunnel_v2.vmf",
+  "generated_at": "2026-05-08T15:27:18.618107+00:00",
+  "spawn_clusters": {
+    "red": [
+      {
+        "cluster_id": 1,
+        "center": [
+          -3264.0,
+          0.9999999999999943,
+          706.0
+        ],
+        "count": 15,
+        "source_entity_ids": [
+          150293,
+          150265,
+          150251,
+          150263,
+          150283,
+          150295,
+          150257,
+          150236,
+          150259,
+          150281,
+          150287,
+          150267,
+          150249,
+          150269,
+          150291
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 15 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "blue": [
+      {
+        "cluster_id": 1,
+        "center": [
+          3264.0,
+          0.9999999999999943,
+          706.0
+        ],
+        "count": 15,
+        "source_entity_ids": [
+          165084,
+          165086,
+          165088,
+          165090,
+          165092,
+          165094,
+          165096,
+          165098,
+          165100,
+          165102,
+          165104,
+          165106,
+          165108,
+          165110,
+          165112
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 15 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "spectator": []
+  }
+}

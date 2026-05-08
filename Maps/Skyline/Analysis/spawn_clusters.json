@@ -1,0 +1,145 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Skyline",
+  "source_vmf": "Maps/Skyline/Skyline.vmf",
+  "original_filename": "eft_skyline_v3.vmf",
+  "generated_at": "2026-05-08T15:27:13.836608+00:00",
+  "spawn_clusters": {
+    "red": [
+      {
+        "cluster_id": 1,
+        "center": [
+          6.86645833241073e-05,
+          -2400.0,
+          36.0
+        ],
+        "count": 12,
+        "source_entity_ids": [
+          2363,
+          2365,
+          2367,
+          2369,
+          2371,
+          2373,
+          2375,
+          2377,
+          2379,
+          2381,
+          2383,
+          2385
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 12 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          -992.0,
+          -1984.0,
+          64.0
+        ],
+        "count": 1,
+        "source_entity_ids": [
+          2387
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.7,
+        "reasons": [
+          "Clustered 1 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": true
+      },
+      {
+        "cluster_id": 3,
+        "center": [
+          992.0,
+          -1984.0,
+          64.0
+        ],
+        "count": 1,
+        "source_entity_ids": [
+          3731
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.7,
+        "reasons": [
+          "Clustered 1 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": true
+      }
+    ],
+    "blue": [
+      {
+        "cluster_id": 1,
+        "center": [
+          0.0,
+          2400.0,
+          36.0
+        ],
+        "count": 12,
+        "source_entity_ids": [
+          2155,
+          2141,
+          2151,
+          2105,
+          2113,
+          2097,
+          2085,
+          2119,
+          2083,
+          2073,
+          266,
+          2067
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 12 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          992.0,
+          1984.0,
+          64.0
+        ],
+        "count": 1,
+        "source_entity_ids": [
+          2127
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.7,
+        "reasons": [
+          "Clustered 1 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": true
+      },
+      {
+        "cluster_id": 3,
+        "center": [
+          -992.0,
+          1984.0,
+          64.0
+        ],
+        "count": 1,
+        "source_entity_ids": [
+          2133
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.7,
+        "reasons": [
+          "Clustered 1 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": true
+      }
+    ],
+    "spectator": []
+  }
+}

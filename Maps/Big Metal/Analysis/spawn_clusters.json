@@ -1,0 +1,73 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Big Metal",
+  "source_vmf": "Maps/Big Metal/Big Metal.vmf",
+  "original_filename": "eft_big_metal03r1_d.vmf",
+  "generated_at": "2026-05-08T15:27:09.349549+00:00",
+  "spawn_clusters": {
+    "red": [
+      {
+        "cluster_id": 1,
+        "center": [
+          1706.6666666666667,
+          0.0,
+          144.0
+        ],
+        "count": 12,
+        "source_entity_ids": [
+          8463,
+          8465,
+          8467,
+          8969,
+          8971,
+          8973,
+          9001,
+          8993,
+          8995,
+          8997,
+          8999,
+          9003
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 12 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "blue": [
+      {
+        "cluster_id": 1,
+        "center": [
+          -1706.6666666666667,
+          0.0,
+          144.0
+        ],
+        "count": 12,
+        "source_entity_ids": [
+          8344,
+          8342,
+          8312,
+          8299,
+          8314,
+          8340,
+          8320,
+          8318,
+          8316,
+          8324,
+          8326,
+          8322
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 12 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "spectator": []
+  }
+}

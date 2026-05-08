@@ -1,0 +1,61 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Sky Metal",
+  "source_vmf": "Maps/Sky Metal/Sky Metal.vmf",
+  "original_filename": "eft_sky_metal_v2.vmf",
+  "generated_at": "2026-05-08T15:27:13.673374+00:00",
+  "powerup_locations": [
+    {
+      "id": "powerup_location_1",
+      "type": "powerup_location",
+      "center": [
+        0.0,
+        2.0,
+        1056.0
+      ],
+      "bounds": {
+        "min": [
+          -16.0,
+          -94.0,
+          960.0
+        ],
+        "max": [
+          16.0,
+          98.0,
+          1152.0
+        ],
+        "center": [
+          0.0,
+          2.0,
+          1056.0
+        ],
+        "size": [
+          32.0,
+          192.0,
+          192.0
+        ],
+        "z_range": [
+          960.0,
+          1152.0
+        ],
+        "aabb_volume": 1179648.0,
+        "source_point_count": 54,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball/player powerup influence site.",
+        "Source entity class `trigger_powerup` id `22678`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        22678
+      ],
+      "source_classes": [
+        "trigger_powerup"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

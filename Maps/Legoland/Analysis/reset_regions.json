@@ -1,0 +1,112 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Legoland",
+  "source_vmf": "Maps/Legoland/Legoland.vmf",
+  "original_filename": "eft_legoland_v2.vmf",
+  "generated_at": "2026-05-08T15:27:11.508764+00:00",
+  "reset_regions": [
+    {
+      "id": "reset_region_1",
+      "type": "reset_region",
+      "center": [
+        3088.0,
+        512.0,
+        8.0
+      ],
+      "bounds": {
+        "min": [
+          1888.0,
+          -512.0,
+          0.0
+        ],
+        "max": [
+          4288.0,
+          1536.0,
+          16.0
+        ],
+        "center": [
+          3088.0,
+          512.0,
+          8.0
+        ],
+        "size": [
+          2400.0,
+          2048.0,
+          16.0
+        ],
+        "z_range": [
+          0.0,
+          16.0
+        ],
+        "aabb_volume": 78643200.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball reset trigger volume.",
+        "Source entity class `trigger_ballreset` id `8811`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        8811
+      ],
+      "source_classes": [
+        "trigger_ballreset"
+      ],
+      "needs_human_review": false
+    },
+    {
+      "id": "reset_region_2",
+      "type": "reset_region",
+      "center": [
+        -4112.0,
+        512.0,
+        8.0
+      ],
+      "bounds": {
+        "min": [
+          -5312.0,
+          -512.0,
+          0.0
+        ],
+        "max": [
+          -2912.0,
+          1536.0,
+          16.0
+        ],
+        "center": [
+          -4112.0,
+          512.0,
+          8.0
+        ],
+        "size": [
+          2400.0,
+          2048.0,
+          16.0
+        ],
+        "z_range": [
+          0.0,
+          16.0
+        ],
+        "aabb_volume": 78643200.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball reset trigger volume.",
+        "Source entity class `trigger_ballreset` id `28189`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        28189
+      ],
+      "source_classes": [
+        "trigger_ballreset"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

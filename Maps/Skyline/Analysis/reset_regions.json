@@ -1,0 +1,61 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Skyline",
+  "source_vmf": "Maps/Skyline/Skyline.vmf",
+  "original_filename": "eft_skyline_v3.vmf",
+  "generated_at": "2026-05-08T15:27:13.836608+00:00",
+  "reset_regions": [
+    {
+      "id": "reset_region_1",
+      "type": "reset_region",
+      "center": [
+        0.0,
+        0.0,
+        -784.0
+      ],
+      "bounds": {
+        "min": [
+          -4064.0,
+          -4608.0,
+          -1024.0
+        ],
+        "max": [
+          4064.0,
+          4608.0,
+          -544.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          -784.0
+        ],
+        "size": [
+          8128.0,
+          9216.0,
+          480.0
+        ],
+        "z_range": [
+          -1024.0,
+          -544.0
+        ],
+        "aabb_volume": 35955671040.0,
+        "source_point_count": 18,
+        "warnings": []
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "Ball reset trigger volume.",
+        "Source entity class `trigger_ballreset` id `4378`.",
+        "Brush bounds extracted from VMF side plane points."
+      ],
+      "source_entity_ids": [
+        4378
+      ],
+      "source_classes": [
+        "trigger_ballreset"
+      ],
+      "needs_human_review": false
+    }
+  ]
+}

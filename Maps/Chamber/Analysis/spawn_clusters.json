@@ -1,0 +1,107 @@
+{
+  "generated_by": "Tools/Map Analyzer",
+  "schema_version": 1,
+  "map": "Chamber",
+  "source_vmf": "Maps/Chamber/Chamber.vmf",
+  "original_filename": "eft_chamber_v2.vmf",
+  "generated_at": "2026-05-08T15:27:10.640109+00:00",
+  "spawn_clusters": {
+    "red": [
+      {
+        "cluster_id": 1,
+        "center": [
+          871.3333333333334,
+          -2912.6666666666665,
+          -430.0
+        ],
+        "count": 6,
+        "source_entity_ids": [
+          595,
+          603,
+          611,
+          613,
+          663,
+          665
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 6 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          -872.0,
+          -2912.0,
+          -430.0
+        ],
+        "count": 6,
+        "source_entity_ids": [
+          627,
+          629,
+          639,
+          641,
+          651,
+          653
+        ],
+        "type": "red_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 6 red spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "blue": [
+      {
+        "cluster_id": 1,
+        "center": [
+          878.0,
+          2902.0,
+          -430.0
+        ],
+        "count": 6,
+        "source_entity_ids": [
+          695,
+          697,
+          699,
+          701,
+          711,
+          713
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 6 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      },
+      {
+        "cluster_id": 2,
+        "center": [
+          -865.3333333333334,
+          2902.6666666666665,
+          -430.0
+        ],
+        "count": 6,
+        "source_entity_ids": [
+          703,
+          705,
+          707,
+          709,
+          715,
+          717
+        ],
+        "type": "blue_spawn_cluster",
+        "confidence": 0.9,
+        "reasons": [
+          "Clustered 6 blue spawn entities by origin proximity."
+        ],
+        "needs_human_review": false
+      }
+    ],
+    "spectator": []
+  }
+}
