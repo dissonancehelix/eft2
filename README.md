@@ -139,6 +139,7 @@ Local reference/dev-only material stays out of Git unless deliberately promoted:
 | s&box Steam page | `https://store.steampowered.com/app/590830/sbox/` |
 | Facepunch public s&box source | `https://github.com/Facepunch/sbox-public` |
 | GMod EFT repository/server lineage | `https://github.com/dissonancehelix/extremefootballthrowdown` |
+| Extreme Football League historical group | `https://steamcommunity.com/groups/ExtremeFootballLeague` |
 
 The local installed GMod gamemode was the first inspected Lua reference. The source is now copied into `lua-src`; future sessions should prefer `lua-src` for local project work and use the installed GMod path as historical/reference backup.
 
@@ -158,6 +159,7 @@ As of 2026-05-08:
 - The Bloodbowl POV recording has been checked: 20:58, 1280x720, 30 fps, about 359 MB.
 - The Bloodbowl POV recording is from an older version of the game; use it primarily for match rhythm, camera feel, collision density, scoring tempo, and live-match chaos.
 - The May 8, 2026 screenshots show the current, cleaner UI/presentation direction; use them as the primary style target for the port's HUD and visual language.
+- The public Extreme Football League Steam group has been located and is accessible as a historical competitive reference. Its overview says the group was created for Extreme Football Throwdown and contains records, rosters, schedules, announcements, and livestreamed games. It lists Sunrust EFL and the old server `104.192.0.78:27023`.
 
 Already read or lightly inspected:
 
@@ -481,6 +483,36 @@ Map identity is partly scoring mode:
 
 Map conversion must preserve gameplay grammar, not just geometry.
 
+## Competitive / League Evidence
+
+The old Extreme Football League group is historical evidence for how EFT was organized socially and competitively:
+
+`https://steamcommunity.com/groups/ExtremeFootballLeague`
+
+Do not treat league pages as mechanics source code. Treat them as evidence for:
+
+- viable team sizes
+- tournament map choices
+- competitive map bans or preferences
+- player/team culture
+- old server and community lineage
+- streamed-match/video leads
+- records, rosters, and schedule context
+
+Known public facts from first inspection:
+
+- The group was founded July 9, 2015.
+- The group describes itself as Sunrust EFL, created for Extreme Football Throwdown.
+- The page points to records, rosters, schedules, date/time announcements, and livestreamed games.
+- The old listed server was `104.192.0.78:27023`.
+- 2022 tournament rules used 4-player teams and standard 4v4 games.
+- 2022 tournament rules used 3 randomized maps per cycle.
+- The 2022 schedule used Bloodbowl, Tunnel, Handegg, Sky Step, Baseball Dash, Space Jump, Slam Dunk, Skyline, and Temple Sacrifice.
+- The 2022 rules mention that some maps were banned for poor gameplay, poor FPS, or not being suitable for competitive play.
+- The Past Championships thread records a long Red Rhinos / Blue Bulls team history and repeated competitive seasons.
+
+Port implication: EFT2 should support clean 4v4 play as a first-class competitive format, even if larger public-server chaos remains supported later.
+
 ## Golden Vertical Slice: Bloodbowl
 
 Use Bloodbowl as the first vertical slice unless the user redirects.
@@ -545,6 +577,8 @@ Bloodbowl version note:
 - Build a map/source index from the canonical roster and VMFs.
 - Deep-read Bloodbowl VMF.
 - Extract key moments from the Bloodbowl POV video.
+- Perform a second Bloodbowl POV pass around each score/reset/death/round-modifier sequence.
+- Archive or locally summarize public EFL group pages, especially rules, rosters, schedule/maps, rankings, past championships, and announcements.
 - Produce a golden slice spec.
 - Record unresolved conflicts between old contract, Lua behavior, map source, and video feel.
 
