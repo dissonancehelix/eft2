@@ -4,7 +4,7 @@
 
 Factual snapshot — not aspirational.
 
-- [x] Game/eft2/ scaffold present
+- [x] game/eft2/ scaffold present
 - [x] tools/indexer/ present
 - [x] tools/map analyzer/ present
 - [x] tools/observer/ present
@@ -12,9 +12,9 @@ Factual snapshot — not aspirational.
 - [x] tools/scenario harness/ present
 - [x] tools/telemetry/ present
 - [ ] tools/simulation/ present
-- [x] SBox/ reference tree present
+- [x] sbox/ reference tree present
 - [x] lua/ source reference present
-- [x] Assets/ present
+- [x] assets/ present
 - [x] maps/ present
 - [ ] garrysmod-master/ detected
 - [ ] FFmpeg-Builds-master/ detected

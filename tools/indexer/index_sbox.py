@@ -21,7 +21,7 @@ FILE_BUDGET = 4000
 
 
 def build(root: Path, env: IndexEnvelope) -> dict[str, Any]:
-    sbox_root = root / "SBox"
+    sbox_root = root / "sbox"
     if not sbox_root.is_dir():
         env.warn("sbox_dir_missing")
         return env.wrap({"present": False})

@@ -2,7 +2,7 @@
 
 # Multimodal Context
 
-This report summarizes observation material under `Assets/` and what
+This report summarizes observation material under `assets/` and what
 an LLM agent can learn from it without re-inspecting the raw media.
 
 ## Video

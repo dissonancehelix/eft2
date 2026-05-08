@@ -48,7 +48,7 @@ python "tools/contract validator/validate_contract.py" --root . --strict
 
 ## Integration
 
-Run after any significant change to `README.md`, `AGENTS.md`, or `Game/` code. The Indexer does not run the validator — they are separate passes.
+Run after any significant change to `README.md`, `AGENTS.md`, or `game/` code. The Indexer does not run the validator — they are separate passes.
 
 ## Build order context
 

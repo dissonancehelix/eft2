@@ -57,12 +57,12 @@ Original reference material that belongs to EFT2 should live under explicit repo
 EFT2/
   README.md
   AGENTS.md
-  Game/
+  game/
   maps/
   lua/
-  SBox/
+  sbox/
   Tools/
-  Assets/
+  assets/
 ```
 
 Do not rely on machine-specific paths in this README. Use repo-relative paths only. Local paths, toolkit paths, and temporary repo-root source drops belong in live-session notes only, not in the durable game contract.
@@ -82,7 +82,7 @@ When implementing, validating, or resolving conflicts, use this order:
 7. `maps/Shared/eft.fgd`, if present, as Hammer entity grammar reference.
 8. Real gameplay evidence: Bloodbowl POV video, screenshots, future clips, demos, match logs, and replays.
 9. Generated analyzer outputs under `maps/<Map Name>/Analysis/` and `maps/<Map Name>/Virtual Perception/`.
-10. s&box source/docs/examples under `SBox`, as engine reference.
+10. s&box source/docs/examples under `sbox`, as engine reference.
 11. External references listed below.
 
 When sources disagree, do not hide the disagreement. Record it and decide deliberately whether EFT2 follows:
@@ -105,12 +105,12 @@ Preserve weird but predictive behavior unless the user deliberately chooses othe
 |---|---|
 | `README.md` | EFT2 game/remake contract |
 | `AGENTS.md` | agent workflow, source hierarchy, mutation and tooling policy |
-| `Game/` | buildable EFT2 s&box game project when scaffolded; playable code and runtime assets belong here |
+| `game/` | buildable EFT2 s&box game project when scaffolded; playable code and runtime assets belong here |
 | `maps/` | canonical map subdomains, read-only VMF source references, generated map analysis, Virtual Perception, per-map simulation artifacts, Source 2/s&box porting workbench, and new-map design workspace |
 | `lua/` | original GMod lua/source reference for behavior extraction |
-| `SBox/` | s&box docs/source/runtime/sample reference material |
+| `sbox/` | s&box docs/source/runtime/sample reference material |
 | `tools/` | EFT2-owned infrastructure: `Indexer/`, `Map Analyzer/`, `observer`, `contract validator`, `scenario harness`, `telemetry`, and `simulation` |
-| `Assets/` | curated evidence and remake assets: video notes, screenshots, images, audio, references |
+| `assets/` | curated evidence and remake assets: video notes, screenshots, images, audio, references |
 
 `WORKFLOW.md` is not part of the current durable structure unless the user explicitly restores it. Workflow and tooling policy belong in `AGENTS.md`.
 
@@ -1173,7 +1173,7 @@ This means `maps/` has four simultaneous roles:
 1. preserve the original Source 1 VMF and provenance,
 2. hold individual map subdomains with their own README and generated artifacts,
 3. run or store per-map simulation/prediction work when that phase begins,
-4. serve as the workbench for Source 2/s&box porting, remaster decisions, and new EFT2 map design before playable assets are promoted into `Game/`.
+4. serve as the workbench for Source 2/s&box porting, remaster decisions, and new EFT2 map design before playable assets are promoted into `game/`.
 
 The root VMF remains read-only. Porting and new-map work must be derivative and clearly separated from the original VMF.
 
@@ -1212,7 +1212,7 @@ Map-domain folders:
 | `porting/` | Source 1 -> Source 2/s&box conversion notes, remaster risks, scene plans, and map-specific port decisions |
 | `design/` | derivative remake ideas, new-map concepts, layout notes, and future EFT2 map work tied to this map domain |
 
-Final buildable Source 2 / s&box map assets belong under `Game/` according to s&box project rules. This includes the actual `.vmap` files and deployable scene/map outputs used by the playable game. `maps/` remains the source/workbench/history domain, while `Game/` contains the promoted playable copy.
+Final buildable Source 2 / s&box map assets belong under `game/` according to s&box project rules. This includes the actual `.vmap` files and deployable scene/map outputs used by the playable game. `maps/` remains the source/workbench/history domain, while `game/` contains the promoted playable copy.
 
 ## Map Identity By Scoring Mode
 
@@ -1990,7 +1990,7 @@ No archetype should become a fixed class.
 - Preserve Lua source under `lua`.
 - Preserve VMFs under `maps`.
 - Preserve FGD under `maps/Shared/eft.fgd`.
-- Curate gameplay evidence under `Assets`.
+- Curate gameplay evidence under `assets`.
 - Record conflicts between original contract, Lua, maps, evidence, and intended remake behavior.
 
 ## Phase 1 — Map Intelligence Pipeline
@@ -2010,7 +2010,7 @@ Success condition: agents can reason about how a map likely plays from evidence,
 
 ## Phase 2 — s&box Project Scaffold
 
-- Create or maintain a minimal buildable EFT2 project under `Game/`.
+- Create or maintain a minimal buildable EFT2 project under `game/`.
 - Establish `.sbproj`, source structure, startup scene, and assembly globals.
 - Boot in editor/game.
 - Add no fake gameplay placeholders that obscure missing work.

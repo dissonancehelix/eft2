@@ -5,7 +5,7 @@ Run from repo root:
     python "tools/indexer/index_project.py"
 
 The Indexer is read-only except for its own Output/ folder. It does not
-mutate README.md, AGENTS.md, Maps/, Lua/, SBox/, Assets/, Game/, or any
+mutate README.md, AGENTS.md, Maps/, Lua/, sbox/, assets/, game/, or any
 other tool. It reports state, readiness, and blockers — it does not prescribe
 task direction.
 """
@@ -38,10 +38,10 @@ import index_external
 ROOT_DOMAINS: list[tuple[str, str, str, str]] = [
     ("README.md",  "EFT2 game/remake contract",                                "editable_contract",        "patch surgically"),
     ("AGENTS.md",  "agent workflow and source hierarchy contract",             "editable_contract",        "patch surgically"),
-    ("Game/eft2/", "EFT2 s&box game project (eft2.sbproj); initial scaffold exists", "active_project", "implementation guided by infrastructure tools; do not add mechanics until rails are stable"),
+    ("game/eft2/", "EFT2 s&box game project (eft2.sbproj); initial scaffold exists", "active_project", "implementation guided by infrastructure tools; do not add mechanics until rails are stable"),
     ("maps/",      "canonical map domains and map analysis outputs",           "mixed",                    "VMFs read-only; analysis writable by tools"),
     ("lua/",       "original GMod EFT source evidence",                        "read_only_source_reference", "do not mutate unless explicitly instructed"),
-    ("SBox/",      "s&box docs/source/runtime/sample reference",               "external_reference",       "do not mutate or vendor into Game/"),
+    ("sbox/",      "s&box docs/source/runtime/sample reference",               "external_reference",       "do not mutate or vendor into game/"),
     ("tools/",     "EFT2-owned infrastructure",                                "editable_tooling",         "safe to edit tool code for current task"),
     ("assets/",    "curated gameplay/media/visual/reference material",         "curated_asset",            "edit only when curating evidence"),
     ("tools/indexer/output/", "generated LLM-readable working memory",         "generated_output",         "regenerate freely"),
@@ -77,8 +77,8 @@ def render_project_index(root: Path, summary: dict[str, Any]) -> str:
         "and modernize the game without erasing its identity."
     )
     lines.append("")
-    lines.append("Phase: infrastructure rails in place — Contract Validator, Scenario Harness, and Telemetry all exist. Game/eft2/ scaffold is present; mechanics are deferred.")
-    lines.append("Structure: Tools/ (infrastructure) and Game/eft2/ (s&box project, eft2.sbproj — scaffold present, mechanics deferred).")
+    lines.append("Phase: infrastructure rails in place — Contract Validator, Scenario Harness, and Telemetry all exist. game/eft2/ scaffold is present; mechanics are deferred.")
+    lines.append("Structure: Tools/ (infrastructure) and game/eft2/ (s&box project, eft2.sbproj — scaffold present, mechanics deferred).")
     lines.append("Do not introduce Engine/ or Runtime/ folders or umbrella names.")
     lines.append("")
     lines.append("## Major folders")
@@ -114,9 +114,9 @@ def render_project_index(root: Path, summary: dict[str, Any]) -> str:
     lines.append("## SBox reference status")
     sbox = summary.get("sbox", {})
     if sbox.get("present"):
-        lines.append(f"- SBox/ present; sbproj files: {len(sbox.get('sbproj_files', []) or [])}")
+        lines.append(f"- sbox/ present; sbproj files: {len(sbox.get('sbproj_files', []) or [])}")
     else:
-        lines.append("- SBox/ not present")
+        lines.append("- sbox/ not present")
     lines.append("")
     lines.append("## Assets / observation status")
     assets = summary.get("assets", {})
@@ -124,7 +124,7 @@ def render_project_index(root: Path, summary: dict[str, Any]) -> str:
         pending = assets.get("pending_observer_processing") or []
         lines.append(f"- pending Observer processing: {pending if pending else 'none'}")
     else:
-        lines.append("- Assets/ not present")
+        lines.append("- assets/ not present")
     lines.append("")
     lines.append("## External temporary trees")
     ext = summary.get("external", {})
@@ -148,7 +148,7 @@ def render_project_index(root: Path, summary: dict[str, Any]) -> str:
     lines.append(f"- Tools/Observer: {'present' if observer_ready else 'not yet built — media artifacts are unprocessed'}")
     sim_ready = recommended.get("Simulation") == "present"
     lines.append(f"- Tools/Simulation: {'present' if sim_ready else 'not yet built'}")
-    lines.append(f"- Game/eft2/ mechanics: {'scaffold present — mechanics deferred pending direction' if (root / 'Game' / 'eft2' / 'eft2.sbproj').exists() else 'no scaffold found'}")
+    lines.append(f"- game/eft2/ mechanics: {'scaffold present — mechanics deferred pending direction' if (root / 'Game' / 'eft2' / 'eft2.sbproj').exists() else 'no scaffold found'}")
     ext = summary.get("external", {}) or {}
     blockers = []
     for key, label in [("gmod", "garrysmod-master/"), ("ffmpeg", "FFmpeg-Builds-master/"), ("source_sdk", "source-sdk-2013-master/")]:
@@ -168,7 +168,7 @@ def render_project_index(root: Path, summary: dict[str, Any]) -> str:
 def render_current_state(root: Path, summary: dict[str, Any]) -> str:
     lines = ["# EFT2 Current State", "", "Factual snapshot — not aspirational.", ""]
     checks = [
-        ("Game/eft2/ scaffold present", (root / "Game" / "eft2" / "eft2.sbproj").exists()),
+        ("game/eft2/ scaffold present", (root / "game" / "eft2" / "eft2.sbproj").exists()),
         ("tools/indexer/ present", (root / "tools" / "indexer").is_dir()),
         ("tools/map analyzer/ present", (root / "tools" / "map analyzer").is_dir()),
         ("tools/observer/ present", (root / "tools" / "observer").is_dir()),
@@ -176,9 +176,9 @@ def render_current_state(root: Path, summary: dict[str, Any]) -> str:
         ("tools/scenario harness/ present", (root / "tools" / "scenario harness").is_dir()),
         ("tools/telemetry/ present", (root / "tools" / "telemetry").is_dir()),
         ("tools/simulation/ present", (root / "tools" / "simulation").is_dir()),
-        ("SBox/ reference tree present", (root / "SBox").is_dir()),
+        ("sbox/ reference tree present", (root / "sbox").is_dir()),
         ("lua/ source reference present", (root / "lua").is_dir()),
-        ("Assets/ present", (root / "assets").is_dir()),
+        ("assets/ present", (root / "assets").is_dir()),
         ("maps/ present", (root / "maps").is_dir()),
         ("garrysmod-master/ detected", (root / "garrysmod-master").is_dir()),
         ("FFmpeg-Builds-master/ detected", (root / "FFmpeg-Builds-master").is_dir()),

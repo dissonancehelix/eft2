@@ -10,7 +10,7 @@ These scenarios form the behavioural test suite for EFT2. They are input to:
 
 - `tools/telemetry/` — event schemas must be rich enough to detect each scenario
 - `tools/simulation/` — simulation must be able to reproduce each scenario
-- `Game/` — implementation must pass each scenario's expected-outcome check
+- `game/` — implementation must pass each scenario's expected-outcome check
 
 ## Schema
 

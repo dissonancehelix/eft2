@@ -1,7 +1,7 @@
 {
   "generated_by": "tools/indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T18:23:09.442001+00:00",
+  "generated_at": "2026-05-08T18:26:44.433617+00:00",
   "repo_root": ".",
   "warnings": [],
   "files": [
@@ -832,7 +832,7 @@
     },
     {
       "path": "AGENTS.md",
-      "size_bytes": 22266,
+      "size_bytes": 22317,
       "heading_count": 21,
       "headings": [
         {

@@ -92,7 +92,7 @@ SCAN_TARGETS = [
     "README.md",
     "AGENTS.md",
     "tools/",
-    "Game/",
+    "game/",
     "lua/",
 ]
 
@@ -229,7 +229,7 @@ def check_mechanic_anchors(root: Path) -> list[dict[str, Any]]:
                 matched_files.append(rel_path)
 
         if not matched_files:
-            # Missing from stubs → warning (not error) until Game/ is built
+            # Missing from stubs → warning (not error) until game/ is built
             findings.append({
                 "check": "mechanic_anchor",
                 "severity": "warning",
@@ -239,7 +239,7 @@ def check_mechanic_anchors(root: Path) -> list[dict[str, Any]]:
                 "message": (
                     f"Mechanic anchor '{anchor['id']}' (terms: {anchor['terms']}) "
                     f"not found in any scanned file. "
-                    f"Expected once Game/ is implemented."
+                    f"Expected once game/ is implemented."
                 ),
                 "found_in": [],
             })
@@ -263,7 +263,7 @@ def check_mechanic_anchors(root: Path) -> list[dict[str, Any]]:
 def check_bad_states(root: Path) -> list[dict[str, Any]]:
     """Scan code for patterns that suggest P-900 violations.
 
-    Scans Game/ (primary target) and Tools/ but excludes the validator's own
+    Scans game/ (primary target) and Tools/ but excludes the validator's own
     source files to avoid false positives from pattern-definition strings.
     """
     findings: list[dict[str, Any]] = []
@@ -271,7 +271,7 @@ def check_bad_states(root: Path) -> list[dict[str, Any]]:
     # Resolve the validator's own directory so we can skip it.
     validator_dir = HERE.resolve()
 
-    for path, text in _iter_text_files(root, ["Game/", "tools/"]):
+    for path, text in _iter_text_files(root, ["game/", "tools/"]):
         # Skip this tool's own source files — pattern definitions are not violations.
         try:
             path.resolve().relative_to(validator_dir)

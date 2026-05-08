@@ -10,7 +10,7 @@ EFT2 is not just a code port. Its infrastructure exists to make agents understan
 EFT's rules, feel, maps, evidence, and failure modes deeply enough to implement
 and modernize the game without erasing its identity.
 
-The named project structure is `tools/` (infrastructure) and `Game/` (future
+The named project structure is `tools/` (infrastructure) and `game/` (future
 playable s&box project). Do not introduce "Engine" or "Runtime" as umbrella names
 for the infrastructure layer — "Engine" conflicts with s&box/Source 2 terminology,
 and "Runtime" implies only shipped game code rather than the full analysis,
@@ -33,9 +33,9 @@ Source material
 - `README.md`, `AGENTS.md`, `PLAN.md` (if present), `maps/README.md`, `Tools/*/README.md`
 - `lua/` — first-pass keyword classifier (mechanic tags, function names, hooks)
 - `maps/` — canonical map domains, observed analysis output counts, custom EFT FGDs
-- `SBox/` — shallow priority scan (`*.sbproj`, components, networking, triggers, navigation, scenes, player controllers, UI/HUD)
+- `sbox/` — shallow priority scan (`*.sbproj`, components, networking, triggers, navigation, scenes, player controllers, UI/HUD)
 - `tools/` — tool inventory and missing recommended tools
-- `Assets/` — videos, screenshots, observation artifacts; flags raw media as pending Observer
+- `assets/` — videos, screenshots, observation artifacts; flags raw media as pending Observer
 - `garrysmod-master/` — temporary GMod source reference; emits `GMOD_REFERENCE_INDEX.json` + `SOURCE1_FGD_INDEX.json`
 - `FFmpeg-Builds-master/` — temporary upstream FFmpeg cross-build reference; emits `FFMPEG_REFERENCE_INDEX.json` and a deletion recommendation when only build infrastructure is present
 
@@ -78,7 +78,7 @@ It must not edit:
 
 - `README.md`, `AGENTS.md`, `PLAN.md`
 - `.gitignore` (reports status only; does not edit)
-- `Game/`, `maps/`, `lua/`, `SBox/`, `Assets/`, other `Tools/*`
+- `game/`, `maps/`, `lua/`, `sbox/`, `assets/`, other `Tools/*`
 - VMFs, Lua, FGDs, raw media
 
 If a file cannot be read, a warning is recorded and the run continues. Missing

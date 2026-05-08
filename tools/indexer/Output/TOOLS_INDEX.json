@@ -1,7 +1,7 @@
 {
   "generated_by": "tools/indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-08T18:23:10.683945+00:00",
+  "generated_at": "2026-05-08T18:26:45.534805+00:00",
   "repo_root": ".",
   "warnings": [
     "sbox_scan_truncated_at:4000"
@@ -75,7 +75,7 @@
       "name": "indexer",
       "path": "tools/indexer",
       "readme": "tools/indexer/README.md",
-      "readme_summary": "# Tools/Indexer\n\nThe Indexer is the first project-wide LLM working-memory tool for EFT2. It reads\nthe repository and emits structured JSON/Markdown summaries that future agents\n(Claude, Codex, and later tools) can use as a fast on-ramp.\n\n> The Indexer is not the game builder. It is the repo memory builder.\n\nEFT2 is not just a code port. Its infrastructure exists to make agents understand\nEFT's rules, feel, maps, evidence, and failure modes deeply enough to implement\nand modernize the game without erasing its identity.\n\nThe named project structure is `tools/` (infrastructure) and `Game/` (future\nplayable s&box project). Do not introduce \"Engine\" or \"Runtime\" as umbrella names\nfor the infrastructure layer \u2014 \"Engine\" conflicts with s&box/Source 2 terminology,\nand \"Runtime\" implies only shipped game code rather than the full analysis,\nobservation, validation, and simulation pipeline.",
+      "readme_summary": "# Tools/Indexer\n\nThe Indexer is the first project-wide LLM working-memory tool for EFT2. It reads\nthe repository and emits structured JSON/Markdown summaries that future agents\n(Claude, Codex, and later tools) can use as a fast on-ramp.\n\n> The Indexer is not the game builder. It is the repo memory builder.\n\nEFT2 is not just a code port. Its infrastructure exists to make agents understand\nEFT's rules, feel, maps, evidence, and failure modes deeply enough to implement\nand modernize the game without erasing its identity.\n\nThe named project structure is `tools/` (infrastructure) and `game/` (future\nplayable s&box project). Do not introduce \"Engine\" or \"Runtime\" as umbrella names\nfor the infrastructure layer \u2014 \"Engine\" conflicts with s&box/Source 2 terminology,\nand \"Runtime\" implies only shipped game code rather than the full analysis,\nobservation, validation, and simulation pipeline.",
       "python_module_count": 10,
       "python_modules": [
         {
@@ -84,7 +84,7 @@
         },
         {
           "path": "tools/indexer/index_assets.py",
-          "first_docstring_line": "OBSERVATION_INDEX.json + MULTIMODAL_CONTEXT.md \u2014 Assets/ inventory."
+          "first_docstring_line": "OBSERVATION_INDEX.json + MULTIMODAL_CONTEXT.md \u2014 assets/ inventory."
         },
         {
           "path": "tools/indexer/index_external.py",

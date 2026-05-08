@@ -6,17 +6,17 @@ Repo purpose: modern s&box / Source 2 remake of *Extreme Football Throwdown*.
 
 EFT2 is not just a code port. Its infrastructure exists to make agents understand EFT's rules, feel, maps, evidence, and failure modes deeply enough to implement and modernize the game without erasing its identity.
 
-Phase: infrastructure rails in place — Contract Validator, Scenario Harness, and Telemetry all exist. Game/eft2/ scaffold is present; mechanics are deferred.
-Structure: Tools/ (infrastructure) and Game/eft2/ (s&box project, eft2.sbproj — scaffold present, mechanics deferred).
+Phase: infrastructure rails in place — Contract Validator, Scenario Harness, and Telemetry all exist. game/eft2/ scaffold is present; mechanics are deferred.
+Structure: Tools/ (infrastructure) and game/eft2/ (s&box project, eft2.sbproj — scaffold present, mechanics deferred).
 Do not introduce Engine/ or Runtime/ folders or umbrella names.
 
 ## Major folders
 - `README.md` — EFT2 game/remake contract [editable_contract] (OK)
 - `AGENTS.md` — agent workflow and source hierarchy contract [editable_contract] (OK)
-- `Game/eft2/` — EFT2 s&box game project (eft2.sbproj); initial scaffold exists [active_project] (OK)
+- `game/eft2/` — EFT2 s&box game project (eft2.sbproj); initial scaffold exists [active_project] (OK)
 - `maps/` — canonical map domains and map analysis outputs [mixed] (OK)
 - `lua/` — original GMod EFT source evidence [read_only_source_reference] (OK)
-- `SBox/` — s&box docs/source/runtime/sample reference [external_reference] (OK)
+- `sbox/` — s&box docs/source/runtime/sample reference [external_reference] (OK)
 - `tools/` — EFT2-owned infrastructure [editable_tooling] (OK)
 - `assets/` — curated gameplay/media/visual/reference material [curated_asset] (OK)
 - `tools/indexer/output/` — generated LLM-readable working memory [generated_output] (OK)
@@ -44,7 +44,7 @@ Do not introduce Engine/ or Runtime/ folders or umbrella names.
 - Lua files: 157
 
 ## SBox reference status
-- SBox/ present; sbproj files: 4
+- sbox/ present; sbproj files: 4
 
 ## Assets / observation status
 - pending Observer processing: none
@@ -57,7 +57,7 @@ Do not introduce Engine/ or Runtime/ folders or umbrella names.
 - Infrastructure tools (Contract Validator, Scenario Harness, Telemetry): incomplete — see Tools status above
 - Tools/Observer: not yet built — media artifacts are unprocessed
 - Tools/Simulation: not yet built
-- Game/eft2/ mechanics: scaffold present — mechanics deferred pending direction
+- game/eft2/ mechanics: scaffold present — mechanics deferred pending direction
 
 ## Warnings
 - sbox_scan_truncated_at:4000

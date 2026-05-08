@@ -33,8 +33,8 @@ python "tools/observer/observe_video.py" --help
 ## Integration with the pipeline
 
 ```
-Assets/Video/           →  observe_video.py  →  maps/<Map>/Virtual Perception/
-Assets/Screenshots/     →  observe_video.py  →  maps/<Map>/Virtual Perception/
+assets/Video/           →  observe_video.py  →  maps/<Map>/Virtual Perception/
+assets/Screenshots/     →  observe_video.py  →  maps/<Map>/Virtual Perception/
 ```
 
 Indexer reads `virtual perception/` outputs and surfaces them in `OBSERVATION_INDEX.json` and `MULTIMODAL_CONTEXT.md`.
@@ -45,4 +45,4 @@ Indexer reads `virtual perception/` outputs and surfaces them in `OBSERVATION_IN
 
 ## Build order context
 
-Observer is step 1 of the infrastructure rails. Contract Validator, Scenario Harness, and Telemetry follow. Simulation is deferred until those rails exist. `Game/eft2/` scaffold is present but EFT mechanics should not be added until the infrastructure rails are stable.
+Observer is step 1 of the infrastructure rails. Contract Validator, Scenario Harness, and Telemetry follow. Simulation is deferred until those rails exist. `game/eft2/` scaffold is present but EFT mechanics should not be added until the infrastructure rails are stable.

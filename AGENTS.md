@@ -6,7 +6,7 @@ The user is the director and domain expert. The agent is the executor, tool-buil
 
 EFT2 is not just a code port. Its infrastructure exists to externalize the user's internal model of EFT into contracts, source indexes, map analysis, visual observation artifacts, telemetry, scenario tests, simulation, validation, and eventual playable s&box code. The goal is for agents to understand EFT's rules, feel, maps, evidence, and failure modes deeply enough to implement and modernize the game without erasing its identity.
 
-`s&box` / Source 2 is the engine substrate. EFT2's named project spaces are `tools/`, `maps/`, `Game/`, `lua/`, `SBox/`, and `Assets/`.
+`s&box` / Source 2 is the engine substrate. EFT2's named project spaces are `tools/`, `maps/`, `game/`, `lua/`, `sbox/`, and `assets/`.
 
 ---
 
@@ -22,7 +22,7 @@ Before changing files, read in this order:
    - VMFs/maps
    - FGD/entity grammar
    - s&box docs/source/templates
-   - Assets/video/screenshot/observation material
+   - assets/video/screenshot/observation material
    - task-specific reports or notes
 
 `README.md` wins on game identity, rules, feel, map meaning, validation scenarios, telemetry expectations, and remake decisions.
@@ -128,14 +128,14 @@ Current root domains:
 |---|---|
 | `README.md` | Game contract: sport identity, rules, mechanics, map feel, evidence, validation targets, project overview |
 | `AGENTS.md` | Workflow contract: source hierarchy, mutation policy, local toolkit policy, agent behavior, tool boundaries |
-| `Game/` | Future/buildable EFT2 s&box game project; playable code and runtime assets belong here when scaffolded |
+| `game/` | Future/buildable EFT2 s&box game project; playable code and runtime assets belong here when scaffolded |
 | `maps/` | Canonical map domains, read-only VMF references, map analysis, virtual perception, simulation work, porting workbench, and new-map design workspace |
 | `lua/` | Original Garry's Mod EFT source reference and inherited behavior evidence |
-| `SBox/` | Local s&box docs/source/runtime/sample reference material; external engine substrate, not EFT2-owned gameplay |
+| `sbox/` | Local s&box docs/source/runtime/sample reference material; external engine substrate, not EFT2-owned gameplay |
 | `tools/` | EFT2-owned infrastructure tools |
-| `Assets/` | Curated evidence/remaster assets: videos, screenshots, images, audio, references, observation material |
+| `assets/` | Curated evidence/remaster assets: videos, screenshots, images, audio, references, observation material |
 
-Root project space casing: `Game/` and `SBox/` and `Assets/` keep their original casing. `maps/`, `lua/`, and `tools/` are lowercase.
+All root project spaces are lowercase: `game/`, `sbox/`, `assets/`, `maps/`, `lua/`, `tools/`. Subfolders inside `game/eft2/` and `sbox/` follow their own standards and are left as-is.
 
 Use repo-relative paths in durable docs. Do not write full personal filesystem paths into repo documentation, generated outputs, prompts, reports, or indexes.
 
@@ -194,7 +194,7 @@ Preferred near-term order:
 6. Build `tools/scenario harness/`.
 7. Build `tools/telemetry/`.
 8. Build `tools/simulation/` later, after map analysis, scenarios, and telemetry schemas can constrain it.
-9. Scaffold or expand `Game/` only when infrastructure can guide Codex/Claude toward correct EFT behavior.
+9. Scaffold or expand `game/` only when infrastructure can guide Codex/Claude toward correct EFT behavior.
 
 The project may temporarily adjust the order if the user directs it. Do not treat this order as a law; treat it as the current safest path.
 
@@ -238,7 +238,7 @@ It is the canonical map workspace for:
 4. holding future per-map simulation artifacts,
 5. managing Source 1 -> Source 2 / s&box porting notes and derivative work,
 6. designing/remastering existing maps,
-7. incubating new EFT2 maps before promotion into the playable `Game/` project.
+7. incubating new EFT2 maps before promotion into the playable `game/` project.
 
 Map identity is canonical display name, not old Source 1 filename.
 
@@ -281,7 +281,7 @@ The root VMF inside each map domain is a read-only original source reference. Ag
 
 Derivative work belongs in generated analysis, `porting/`, `design/`, s&box scene outputs, Source 2 map outputs, or other clearly labeled derivative files.
 
-Final playable Source 2 / s&box map assets, including `.vmap` files and deployable scene/map outputs, belong under `Game/` according to s&box project requirements. `maps/` remains the source/workbench/domain history for VMFs, analysis, simulation, porting notes, and design work. `Game/` contains the promoted buildable runtime/deployable copy.
+Final playable Source 2 / s&box map assets, including `.vmap` files and deployable scene/map outputs, belong under `game/` according to s&box project requirements. `maps/` remains the source/workbench/domain history for VMFs, analysis, simulation, porting notes, and design work. `game/` contains the promoted buildable runtime/deployable copy.
 
 Old filenames such as `eft_slamdunk_v6.vmf` and `eft_bloodbowl_v5.vmf` are Source 1/BSP-era artifacts. Their provenance should be preserved in `maps/source_manifest.json`, but the map-domain identity should use canonical names.
 
@@ -301,7 +301,7 @@ For project tooling:
 - Place future telemetry schemas/tools under `tools/telemetry/`.
 - Place future simulation tooling under `tools/simulation/`.
 
-Root project/domain spaces use capitals (`Game`, `maps`, `lua`, `SBox`, `Tools`, `Assets`). Named repo domains/tools/subfolders use normalized display names (`map analyzer`, `Analysis`, `Virtual Perception`, `simulation`). Python script/module filenames may stay lower-case for import/CLI sanity.
+Root project/domain spaces use capitals (`game`, `maps`, `lua`, `sbox`, `Tools`, `assets`). Named repo domains/tools/subfolders use normalized display names (`map analyzer`, `Analysis`, `Virtual Perception`, `simulation`). Python script/module filenames may stay lower-case for import/CLI sanity.
 
 MCP is optional future work. s&box editor plugins are optional future work. Do not include either unless the user starts that phase.
 
@@ -369,13 +369,13 @@ Use repo-relative paths in durable docs, generated outputs, prompts, reports, an
 | Active EFT2 workspace | `.` |
 | Game contract | `README.md` |
 | Agent/workflow contract | `AGENTS.md` |
-| s&box reference tree | `SBox/` |
+| s&box reference tree | `sbox/` |
 | lua/source reference | `lua/` |
 | VMF/map workspace | `maps/` |
-| Buildable EFT2 game project | `Game/` |
+| Buildable EFT2 game project | `game/` |
 | Map analyzer | `tools/map analyzer/` |
-| Curated gameplay/video material | `Assets/` |
-| Observer/media material | `Assets/Video/`, `Assets/Screenshots/` |
+| Curated gameplay/video material | `assets/` |
+| Observer/media material | `assets/Video/`, `assets/Screenshots/` |
 
 Do not record full machine-specific user filepaths in durable repo documentation, generated project artifacts, prompts, reports, indexes, or tool outputs.
 
@@ -397,7 +397,7 @@ s&box is a C# scene/GameObject/Component engine, not a Lua gamemode system.
 Important facts already inspected or expected:
 
 - Game projects are described by `.sbproj`.
-- Root project folders are commonly capitalized in samples (`Assets`, `Code`, `ProjectSettings`).
+- Root project folders are commonly capitalized in samples (`assets`, `Code`, `ProjectSettings`).
 - Scenes are JSON files on disk and can be startup entry points.
 - Game worlds are composed of GameObjects, which contain Components.
 - `GameObjectSystem<T>` can provide scene-wide systems.
@@ -406,7 +406,7 @@ Important facts already inspected or expected:
 - Source 2 physics is Jolt-based; triggers are colliders with `IsTrigger = true` and can use `Component.ITriggerListener`.
 - Built-in `PlayerController` may exist, but EFT movement/collision is the sport and should not blindly use stock movement if it erases charge-state economy.
 
-SBox references are evidence, not EFT2-owned project files. `SBox/Docs`, `SBox/Source`, `SBox/Runtime`, samples, and testbeds should stay out of Git unless the user deliberately promotes a small curated piece.
+SBox references are evidence, not EFT2-owned project files. `sbox/Docs`, `sbox/Source`, `sbox/Runtime`, samples, and testbeds should stay out of Git unless the user deliberately promotes a small curated piece.
 
 ---
 
@@ -482,11 +482,11 @@ When cognitive/director docs are used, keep them supplementary and workflow-orie
 
 Do not copy large local reference trees into the repo unless the user explicitly promotes them.
 
-Keep local s&box source/docs/runtime references under `SBox` out of Git unless deliberately promoted.
+Keep local s&box source/docs/runtime references under `sbox` out of Git unless deliberately promoted.
 
 Keep temporary external trees such as `garrysmod-master/`, `FFmpeg-Builds-master/`, `blender/`, or `recastnavigation/` out of durable Git history unless the user deliberately promotes a small curated subset or derived project-owned adapter.
 
-`Editor.lnk` at the repo root is a local Windows shortcut that opens the s&box editor (`sbox-dev.exe`) for the `Game/eft2/` project. It is gitignored and local-only — do not commit it, do not recreate it, do not reference it as a repo artifact.
+`Editor.lnk` at the repo root is a local Windows shortcut that opens the s&box editor (`sbox-dev.exe`) for the `game/eft2/` project. It is gitignored and local-only — do not commit it, do not recreate it, do not reference it as a repo artifact.
 
 The repo should contain durable EFT2 project material, curated map/source references, analysis tooling, generated map-domain outputs, observation artifacts when deliberately generated, validation/scenario/telemetry/simulation tooling, and playable implementation files when those phases begin.
 

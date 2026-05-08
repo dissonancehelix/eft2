@@ -1,4 +1,4 @@
-"""OBSERVATION_INDEX.json + MULTIMODAL_CONTEXT.md — Assets/ inventory."""
+"""OBSERVATION_INDEX.json + MULTIMODAL_CONTEXT.md — assets/ inventory."""
 from __future__ import annotations
 
 from pathlib import Path
@@ -90,9 +90,9 @@ def build(root: Path, env: IndexEnvelope) -> dict[str, Any]:
 
 def render_multimodal_md(payload: dict[str, Any]) -> str:
     if not payload.get("present"):
-        return "# Multimodal Context\n\nNo `Assets/` directory found.\n"
+        return "# Multimodal Context\n\nNo `assets/` directory found.\n"
     lines = ["# Multimodal Context", ""]
-    lines.append("This report summarizes observation material under `Assets/` and what")
+    lines.append("This report summarizes observation material under `assets/` and what")
     lines.append("an LLM agent can learn from it without re-inspecting the raw media.")
     lines.append("")
     sections = payload.get("sections", {})

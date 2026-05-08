@@ -8,11 +8,11 @@
 
 # s&box reference tree. Keep the path documented in AGENTS.md; do not push
 # the full s&box checkout unless the user deliberately promotes it.
-/SBox/Docs/
-/SBox/Source/
-/SBox/Runtime/
-/SBox/Bootstrap.bat
-/SBox/README.md
+/sbox/Docs/
+/sbox/Source/
+/sbox/Runtime/
+/sbox/Bootstrap.bat
+/sbox/README.md
 
 # Prebuilt tool binaries. Tools/ffmpeg.exe is a holding spot until
 # tools/observer/ is built; commit it only if you want it tracked.
@@ -21,8 +21,8 @@
 # Evidence/dev captures. Keep paths documented in README, but do not
 # upload bulk captures unless they become curated fixtures.
 /lua/game logs/
-/Assets/Backgrounds/
-/Assets/Screenshots/
+/assets/Backgrounds/
+/assets/Screenshots/
 
 # s&box compiled/generated outputs. Produced by the editor on open —
 # do not track; they are regenerated automatically.
@@ -38,9 +38,9 @@
 *.vsndevts_c
 
 # s&box local project cache and transient data.
-Game/eft2/.sbox/transient/
-Game/eft2/.sbox/cloud.db
-Game/eft2/.sbox/cloud/
+game/eft2/.sbox/transient/
+game/eft2/.sbox/cloud.db
+game/eft2/.sbox/cloud/
 
 # Claude Code local project data (session state, not repo content).
 .claude/
@@ -65,6 +65,6 @@ Desktop.ini
 .DS_Store
 
 # Local workspace shortcuts (not repo artifacts).
-# Editor.lnk opens sbox-dev.exe for Game/eft2/ — local only.
+# Editor.lnk opens sbox-dev.exe for game/eft2/ — local only.
 Editor.lnk
 *.lnk
