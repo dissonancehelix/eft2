@@ -23,6 +23,6 @@
     "PerMapRanking": false,
     "LeaderboardType": "None",
     "CsProjName": "",
-    "StartupScene": "scenes/basic_example.scene"
+    "StartupScene": "scenes/eft2_core_loop.scene"
   }
 }
