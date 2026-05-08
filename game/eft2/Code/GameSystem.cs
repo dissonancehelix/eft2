@@ -373,6 +373,7 @@ public sealed class GameSystem : GameObjectSystem<GameSystem>, Component.INetwor
 					Ball.FumbleFrom( target, attacker );
 
 				target.KnockDown( attacker );
+				attacker.ApplyChargeRecoil();
 				break;
 			}
 		}

@@ -6,6 +6,7 @@ public sealed class Ball : Component
 	public const float PickupRadius = 58.0f;
 	public const float FumbleHorizontalMultiplier = 1.75f;
 	public const float FumbleVerticalPop = 128.0f;
+	public const float PreviousCarrierPickupImmunity = 1.0f;
 
 	[RequireComponent] public Rigidbody Body { get; set; }
 
@@ -13,7 +14,9 @@ public sealed class Ball : Component
 	[Sync( SyncFlags.FromHost )] public bool IsLoose { get; private set; } = true;
 
 	private ModelRenderer _renderer;
-	private float _pickupBlockUntil;
+	private PlayerMovement _blockedPickupPlayer;
+	private float _blockedPickupUntil;
+	private float _globalPickupBlockUntil;
 	private Vector3 _spawnPosition;
 
 	protected override void OnAwake()
@@ -57,7 +60,9 @@ public sealed class Ball : Component
 		Body.Enabled = true;
 		Body.Velocity = Vector3.Zero;
 		Body.AngularVelocity = Vector3.Zero;
-		_pickupBlockUntil = Time.Now + 0.25f;
+		_blockedPickupPlayer = null;
+		_blockedPickupUntil = 0.0f;
+		_globalPickupBlockUntil = Time.Now + 0.25f;
 
 		GameSystem.Current?.Telemetry.Emit( "BallReset", "E-004", $"reason={reason} pos={FormatVec( position )}" );
 	}
@@ -73,7 +78,7 @@ public sealed class Ball : Component
 		// Concepts: C-001, C-002, C-011
 		ClearCarrier();
 		IsLoose = true;
-		SetParent( null, true );
+		GameObject.SetParent( null, true );
 		WorldPosition = previousCarrier.WorldPosition + Vector3.Up * 42.0f;
 		Body.Enabled = true;
 
@@ -85,7 +90,9 @@ public sealed class Ball : Component
 
 		Body.Velocity = sourceVelocity * FumbleHorizontalMultiplier + Vector3.Up * FumbleVerticalPop;
 		Body.AngularVelocity = Vector3.Random * 120.0f;
-		_pickupBlockUntil = Time.Now + 0.2f;
+		_blockedPickupPlayer = previousCarrier;
+		_blockedPickupUntil = Time.Now + PreviousCarrierPickupImmunity;
+		_globalPickupBlockUntil = 0.0f;
 
 		GameSystem.Current?.Telemetry.Emit( "BallLoose", "E-003", $"from={previousCarrier.DisplayName} attacker={attacker?.DisplayName ?? "unknown"} velocity={FormatVec( Body.Velocity )}" );
 	}
@@ -98,18 +105,20 @@ public sealed class Ball : Component
 		var previousCarrier = Carrier;
 		ClearCarrier();
 		IsLoose = true;
-		SetParent( null, true );
+		GameObject.SetParent( null, true );
 		WorldPosition = previousCarrier.WorldPosition + Vector3.Up * 42.0f;
 		Body.Enabled = true;
 		Body.Velocity = previousCarrier.FlatVelocity + Vector3.Up * 80.0f;
-		_pickupBlockUntil = Time.Now + 0.2f;
+		_blockedPickupPlayer = previousCarrier;
+		_blockedPickupUntil = Time.Now + PreviousCarrierPickupImmunity;
+		_globalPickupBlockUntil = 0.0f;
 
 		GameSystem.Current?.Telemetry.Emit( "BallLoose", "E-003", $"reason={reason} from={previousCarrier.DisplayName}" );
 	}
 
 	private void TryAutomaticPickup()
 	{
-		if ( !IsLoose || Time.Now < _pickupBlockUntil )
+		if ( !IsLoose || Time.Now < _globalPickupBlockUntil )
 			return;
 
 		// EFT2 LINKS:
@@ -118,7 +127,7 @@ public sealed class Ball : Component
 		// Concepts: C-001, C-002, C-011
 		// Anchor: automatic pickup / autograb is contact-driven, never key-driven.
 		var player = GameSystem.Current?.Players
-			.Where( p => p.IsValid() && p.CanPickup )
+			.Where( p => p.IsValid() && p.CanPickup && CanPickupAfterLegacyImmunity( p ) )
 			.OrderBy( p => p.WorldPosition.DistanceSquared( WorldPosition ) )
 			.FirstOrDefault( p => p.WorldPosition.Distance( WorldPosition ) <= PickupRadius );
 
@@ -132,12 +141,23 @@ public sealed class Ball : Component
 	{
 		IsLoose = false;
 		Carrier = player;
+		_blockedPickupPlayer = null;
+		_blockedPickupUntil = 0.0f;
+		_globalPickupBlockUntil = 0.0f;
 		player.SetCarrier( true );
 		Body.Enabled = false;
-		SetParent( player.GameObject, true );
+		GameObject.SetParent( player.GameObject, true );
 		UpdateCarrierPosition();
 
 		GameSystem.Current?.Telemetry.Emit( "PossessionTransfer", "E-002", $"to={player.DisplayName} team={player.Team}" );
+	}
+
+	private bool CanPickupAfterLegacyImmunity( PlayerMovement player )
+	{
+		if ( !_blockedPickupPlayer.IsValid() || Time.Now >= _blockedPickupUntil )
+			return true;
+
+		return player != _blockedPickupPlayer;
 	}
 
 	private void UpdateCarrierPosition()

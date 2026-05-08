@@ -1,7 +1,7 @@
 {
   "generated_by": "tools/contract validator",
   "schema_version": 1,
-  "generated_at": "2026-05-08T19:39:02.865142+00:00",
+  "generated_at": "2026-05-08T19:58:40.645306+00:00",
   "repo_root": ".",
   "contract_ids_defined": [
     "C-001",
@@ -658,7 +658,7 @@
       "check": "id_coverage",
       "severity": "ok",
       "id": "P-060",
-      "message": "Contract ID P-060 referenced in 16 file(s).",
+      "message": "Contract ID P-060 referenced in 17 file(s).",
       "referenced_in": [
         "tools/contract validator/validate_contract.py",
         "tools/scenario harness/scenarios/S-009_head_on_speed_duel.json",
@@ -667,6 +667,7 @@
         "tools/telemetry/metric_guardrails.json",
         "game/eft2/Code/GameSystem.cs",
         "game/eft2/Code/PlayerMovement.cs",
+        "game/eft2/gameplay_model.md",
         "lua/EFT.md",
         "lua/gamemode/cl_manifest_data.lua",
         "lua/gamemode/obj_bot.lua",
@@ -1269,6 +1270,7 @@
         "tools/telemetry/event_schema.md",
         "tools/telemetry/events/E_005_playerknockdown.json",
         "game/eft2/Code/PlayerMovement.cs",
+        "game/eft2/gameplay_model.md",
         "lua/EFT.md",
         "lua/gamemode/cl_manifest_data.lua",
         "lua/gamemode/states/knockdownrecover.lua",

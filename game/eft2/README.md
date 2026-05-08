@@ -1,6 +1,6 @@
 # EFT2 s&box Prototype Notes
 
-This project folder contains the buildable s&box prototype for the EFT2 core loop.
+This project folder contains the buildable s&box prototype for the EFT2 core loop. `gameplay_model.md` maps the first C# implementation back to the old Lua behavior so tuning can stay anchored to inherited EFT feel.
 
 `Assets/scenes/eft2_core_loop.scene` is the first graybox proving ground. It is not a Bloodbowl or Slam Dunk conversion. It exists to test the minimum interaction loop from the root `README.md`: spawn, move, automatic pickup, carrier slowdown, tackle, knockdown, fumble, loose-ball retarget, pickup, score, and reset.
 

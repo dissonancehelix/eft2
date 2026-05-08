@@ -7,8 +7,10 @@ public sealed class PlayerMovement : Component
 	public const float ChargeThreshold = 300.0f;
 	public const float ZeroToChargeSeconds = 1.0f;
 	public const float ZeroToMaxSeconds = 1.5f;
-	public const float JumpVerticalSpeed = 200.0f;
+	public const float JumpVerticalSpeed = 278.0f;
 	public const float KnockdownDuration = 2.75f;
+	public const float ChargeLaunchMultiplier = 1.65f;
+	public const float ChargeRecoilMultiplier = -0.03f;
 
 	private const float RecoveryGraceSeconds = 0.15f;
 
@@ -103,14 +105,17 @@ public sealed class PlayerMovement : Component
 		IsKnockedDown = true;
 		KnockdownRemaining = KnockdownDuration;
 		Controller.WishVelocity = Vector3.Zero;
-
-		var shove = (WorldPosition - attacker.WorldPosition).WithZ( 0 );
-		if ( shove.LengthSquared > 0.01f )
-		{
-			Controller.Body.Velocity = shove.Normal * 160.0f + Vector3.Up * 60.0f;
-		}
+		ApplyChargeLaunchFrom( attacker );
 
 		GameSystem.Current?.Telemetry.Emit( "PlayerKnockdown", "E-005", $"player={DisplayName} attacker={attacker.DisplayName}" );
+	}
+
+	public void ApplyChargeRecoil()
+	{
+		if ( !GameSystem.HasAuthority )
+			return;
+
+		Controller.Body.Velocity *= ChargeRecoilMultiplier;
 	}
 
 	public void RespawnAt( Transform transform )
@@ -171,7 +176,7 @@ public sealed class PlayerMovement : Component
 
 		var flatSpeed = FlatVelocity.Length;
 		ChargeSpeed = flatSpeed;
-		IsCharging = flatSpeed >= ChargeThreshold;
+		IsCharging = !IsCarrier && Controller.IsOnGround && flatSpeed >= ChargeThreshold;
 
 		if ( Controller.WishVelocity.LengthSquared > 0.01f )
 		{
@@ -191,6 +196,22 @@ public sealed class PlayerMovement : Component
 		IsKnockedDown = false;
 		_pickupGrace = RecoveryGraceSeconds;
 		GameSystem.Current?.Telemetry.Emit( "PlayerRecovered", "E-006", $"player={DisplayName}" );
+	}
+
+	private void ApplyChargeLaunchFrom( PlayerMovement attacker )
+	{
+		if ( !attacker.IsValid() )
+			return;
+
+		var shove = (WorldPosition - attacker.WorldPosition).WithZ( 0 );
+		if ( shove.LengthSquared <= 0.01f )
+			return;
+
+		// EFT2 LINKS:
+		// Mechanics: M-120, M-130
+		// Lua source: lua/gamemode/obj_player.lua ChargeLaunch uses attacker speed * 1.65.
+		var launchSpeed = MathF.Max( attacker.FlatVelocity.Length * ChargeLaunchMultiplier, 160.0f );
+		Controller.Body.Velocity = shove.Normal * launchSpeed + Vector3.Up * 60.0f;
 	}
 
 	private void UpdateCamera()
