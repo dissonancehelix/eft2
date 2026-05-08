@@ -43,6 +43,8 @@ This file owns:
 
 The README should describe **what EFT2 must become**. `AGENTS.md` should describe **how agents work on the repository**.
 
+Director/cognitive context files such as `SELF.md` and `DISSONANCE.md` may help workflow and agent ergonomics, but they do not define EFT gameplay canon. Use them to improve how agents work with the project, not to replace evidence from this README, Lua, VMFs, FGD, map analysis, observations, telemetry, or simulations.
+
 ---
 
 ## 1. Absolute Rule
@@ -63,7 +65,7 @@ EFT2/
   Assets/
 ```
 
-Do not rely on machine-specific paths in this README. Local paths, toolkit paths, and temporary repo-root source drops belong in `AGENTS.md` or local notes, not in the game contract.
+Do not rely on machine-specific paths in this README. Use repo-relative paths only. Local paths, toolkit paths, and temporary repo-root source drops belong in live-session notes only, not in the durable game contract.
 
 ---
 
@@ -103,12 +105,12 @@ Preserve weird but predictive behavior unless the user deliberately chooses othe
 |---|---|
 | `README.md` | EFT2 game/remake contract |
 | `AGENTS.md` | agent workflow, source hierarchy, mutation and tooling policy |
-| `Game/eft2/` | EFT2 s&box game project (`eft2.sbproj`); initial scaffold exists — implementation guided by infrastructure tools |
-| `Maps/` | canonical map domains, VMF source references, generated map analysis |
+| `Game/` | buildable EFT2 s&box game project when scaffolded; playable code and runtime assets belong here |
+| `Maps/` | canonical map subdomains, read-only VMF source references, generated map analysis, Virtual Perception, per-map simulation artifacts, Source 2/s&box porting workbench, and new-map design workspace |
 | `Lua/` | original GMod Lua/source reference for behavior extraction |
 | `SBox/` | s&box docs/source/runtime/sample reference material |
-| `Tools/` | EFT2-owned tools: `Tools/Indexer/` (repo working memory), `Tools/Map Analyzer/` (map intelligence), and future Observer, Contract Validator, Scenario Harness, Telemetry, Simulation |
-| `Assets/` | curated evidence and remaster assets: video notes, screenshots, images, audio, references |
+| `Tools/` | EFT2-owned infrastructure: `Tools/Indexer/`, `Tools/Map Analyzer/`, and future `Observer`, `Contract Validator`, `Scenario Harness`, `Telemetry`, and `Simulation` |
+| `Assets/` | curated evidence and remake assets: video notes, screenshots, images, audio, references |
 
 `WORKFLOW.md` is not part of the current durable structure unless the user explicitly restores it. Workflow and tooling policy belong in `AGENTS.md`.
 
@@ -119,12 +121,13 @@ Preserve weird but predictive behavior unless the user deliberately chooses othe
 | Purpose | URL |
 |---|---|
 | Original JetBoom EFT repository/reference lineage | `https://github.com/JetBoom/extremefootballthrowdown` |
-| Current/community EFT source lineage | `https://github.com/dissonancehelix/extremefootballthrowdown` |
-| Extreme Football League (EFL) historical group | `https://steamcommunity.com/groups/ExtremeFootballLeague` |
-| EFL historical VOD channel | `https://www.youtube.com/@ExtremeFootballLeague` |
+| Current/community EFT source lineage if used by this project | `https://github.com/dissonancehelix/extremefootballthrowdown` |
+| Extreme Football League historical group | `https://steamcommunity.com/groups/ExtremeFootballLeague` |
+| Extreme Football League historical VOD channel | `https://www.youtube.com/@ExtremeFootballLeague` |
 | s&box documentation | `https://sbox.game/dev/doc/` |
 | Facepunch s&box docs/source references | `https://github.com/Facepunch/sbox-docs`, `https://github.com/Facepunch/sbox-public` |
 | Recast/Detour reference | `https://github.com/recastnavigation/recastnavigation` |
+| Blender reference, if used as spatial/backend inspiration | `https://github.com/blender/blender` |
 
 External analogies and references are orientation aids. They do not override EFT-specific evidence.
 
@@ -1164,7 +1167,16 @@ Map version suffixes are Source 1/BSP-era provenance, not EFT2 identity. EFT2 ma
 
 ## EFT2 Map Domain Structure
 
-`Maps/` contains canonical map domains.
+`Maps/` contains canonical map domains. Each map domain is both a source-evidence room and a working area for analysis, simulation, porting, and future map design.
+
+This means `Maps/` has four simultaneous roles:
+
+1. preserve the original Source 1 VMF and provenance,
+2. hold individual map subdomains with their own README and generated artifacts,
+3. run or store per-map simulation/prediction work when that phase begins,
+4. serve as the workbench for Source 2/s&box porting, remaster decisions, and new EFT2 map design before playable assets are promoted into `Game/`.
+
+The root VMF remains read-only. Porting and new-map work must be derivative and clearly separated from the original VMF.
 
 ```text
 Maps/
@@ -1176,23 +1188,32 @@ Maps/
     Analysis/
     Virtual Perception/
     Simulation/
+    Porting/
+    Design/
   Bloodbowl/
     README.md
     Bloodbowl.vmf
     Analysis/
     Virtual Perception/
     Simulation/
+    Porting/
+    Design/
 ```
 
 The root VMF in each map domain is a read-only original Source 1 reference. Do not edit, reformat, normalize, or regenerate it. Original filenames and suffixes live in `Maps/source_manifest.json`.
 
-Generated folders:
+Map-domain folders:
 
 | Folder | Role |
 |---|---|
+| map root | canonical map identity, map README, and read-only original VMF reference |
 | `Analysis/` | structured parser output, semantic groups, confidence reports, gameplay profiles |
 | `Virtual Perception/` | LLM-facing spatial/gameplay artifacts |
-| `Simulation/` | future optional gameplay prediction; placeholder until started |
+| `Simulation/` | future per-map gameplay prediction and simulation artifacts; placeholder until started |
+| `Porting/` | Source 1 -> Source 2/s&box conversion notes, remaster risks, scene plans, and map-specific port decisions |
+| `Design/` | derivative remake ideas, new-map concepts, layout notes, and future EFT2 map work tied to this map domain |
+
+Final buildable Source 2 / s&box map assets belong under `Game/` according to s&box project rules. This includes the actual `.vmap` files and deployable scene/map outputs used by the playable game. `Maps/` remains the source/workbench/history domain, while `Game/` contains the promoted playable copy.
 
 ## Map Identity By Scoring Mode
 
@@ -1971,7 +1992,6 @@ No archetype should become a fixed class.
 - Preserve VMFs under `Maps`.
 - Preserve FGD under `Maps/Shared/eft.fgd`.
 - Curate gameplay evidence under `Assets`.
-- Build `Tools/Indexer/` to make the repo LLM-readable working memory.
 - Record conflicts between original contract, Lua, maps, evidence, and intended remake behavior.
 
 ## Phase 1 — Map Intelligence Pipeline
@@ -1982,6 +2002,8 @@ No archetype should become a fixed class.
 - Parse VMF/FGD.
 - Generate map analysis.
 - Generate Virtual Perception artifacts.
+- Create or maintain per-map `Porting/` and `Design/` workspaces when derivative map work begins.
+- Leave `Simulation/` as placeholder until scenario/telemetry constraints exist, then use it for per-map simulation artifacts.
 - Validate first on Slam Dunk.
 - Validate second on Bloodbowl.
 
@@ -1989,7 +2011,7 @@ Success condition: agents can reason about how a map likely plays from evidence,
 
 ## Phase 2 — s&box Project Scaffold
 
-- Create minimal buildable EFT2 project under `Game/`.
+- Create or maintain a minimal buildable EFT2 project under `Game/`.
 - Establish `.sbproj`, source structure, startup scene, and assembly globals.
 - Boot in editor/game.
 - Add no fake gameplay placeholders that obscure missing work.
