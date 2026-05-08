@@ -13,6 +13,7 @@
 # upload bulk captures unless they become curated fixtures.
 /lua-src/logs/
 /lua-src/backgrounds/
+/lua-src/screenshots/
 /video-analysis/
 
 # Common build and editor outputs.

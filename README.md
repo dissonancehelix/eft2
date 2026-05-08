@@ -111,6 +111,9 @@ If a cleaner implementation makes possession safer, tackles rarer, goals less pr
 | Bloodbowl POV recording | `C:\Users\dissonance\Desktop\eft 2\EFT Bloodbowl POV.mp4` |
 | Bloodbowl screenshot 1 | `C:\Users\dissonance\Pictures\Steam\4000\screenshots\20161104051331_1.jpg` |
 | Bloodbowl screenshot 2 | `C:\Users\dissonance\Pictures\Steam\4000\screenshots\20170424014628_1.jpg` |
+| Current UI/style screenshot 1 | `C:\Users\dissonance\Pictures\Screenshots\Screenshot 2026-05-08 004339.png` |
+| Current UI/style screenshot 2 | `C:\Users\dissonance\Pictures\Screenshots\Screenshot 2026-05-08 004356.png` |
+| Current UI/style screenshot 3 | `C:\Users\dissonance\Pictures\Screenshots\Screenshot 2026-05-08 004419.png` |
 
 ## Repository Boundary
 
@@ -127,6 +130,7 @@ Local reference/dev-only material stays out of Git unless deliberately promoted:
 - `EFT Bloodbowl POV.mp4` is local gameplay evidence only.
 - `lua-src\logs` match recorder output is local evidence/dev capture unless a small fixture is intentionally selected.
 - `lua-src\backgrounds` legacy menu/background images are local reference chrome unless needed for the remaster.
+- `lua-src\screenshots` and copied screenshot references are local evidence unless deliberately promoted into curated docs/assets.
 
 ## External References
 
@@ -152,6 +156,8 @@ As of 2026-05-08:
 - `lua-src\content\VMFs` contains a curated in-workspace VMF subset, including Bloodbowl, Slam Dunk, Baseball Dash, Skystep, Space Jump, Tunnel, and other canonical/near-canonical maps.
 - `lua-src\logs` contains match recorder JSON logs from 2026 sessions.
 - The Bloodbowl POV recording has been checked: 20:58, 1280x720, 30 fps, about 359 MB.
+- The Bloodbowl POV recording is from an older version of the game; use it primarily for match rhythm, camera feel, collision density, scoring tempo, and live-match chaos.
+- The May 8, 2026 screenshots show the current, cleaner UI/presentation direction; use them as the primary style target for the port's HUD and visual language.
 
 Already read or lightly inspected:
 
@@ -492,6 +498,18 @@ Screenshot references:
 - `C:\Users\dissonance\Pictures\Steam\4000\screenshots\20161104051331_1.jpg`
 - `C:\Users\dissonance\Pictures\Steam\4000\screenshots\20170424014628_1.jpg`
 
+Current UI/style references:
+
+- `C:\Users\dissonance\Pictures\Screenshots\Screenshot 2026-05-08 004339.png`
+- `C:\Users\dissonance\Pictures\Screenshots\Screenshot 2026-05-08 004356.png`
+- `C:\Users\dissonance\Pictures\Screenshots\Screenshot 2026-05-08 004419.png`
+
+Evidence split:
+
+- Use the 2017 Bloodbowl POV for how the sport feels during real play.
+- Use the current screenshots for the HUD style, team branding, player readability, and cleaned-up presentation direction.
+- Do not regress to the older HUD clutter just because the old video is the strongest live-match footage.
+
 Why Bloodbowl first:
 
 - It is open, readable, and speed-dominant.
@@ -698,6 +716,19 @@ Priorities:
 - HUD must show score, timer, health, team, and key action text without obscuring the field.
 - Minimap is useful and should be preserved or modernized.
 - Camera should support veteran spatial awareness.
+
+Current-version UI/style target:
+
+- Keep the cleaned-up current HUD style as the primary UI target for EFT2.
+- Bottom-center match strip: red team logo, red score, compact timer capsule, blue score, blue team logo.
+- Team logos should remain large, readable, and characterful; the red rhino and blue bull marks are part of the sport's identity, not optional decoration.
+- Normal play HUD should be cleaner than the 2017 POV: fewer floating panels, less top-center clutter, and a stronger single score/timer anchor.
+- The minimap should stay top-left, square, high-contrast, and map-shaped rather than generic radar-only. It should show map geometry, team colors, ball/player indicators, and player clusters.
+- Nameplates should remain bold, team-colored, and readable at action distance, with strong outline/shadow contrast.
+- Bot/player labels are part of readability in crowded scrums. Modernize typography, but do not remove the ability to identify bodies quickly.
+- In-world team branding on walls, ramps, scoreboards, and arena props should stay loud and readable.
+- Preserve the arcade sports tone: saturated team color, exaggerated readability, physical comedy, and blunt score clarity.
+- Modern materials, lighting, animation, and postprocess should improve the current look without making it sterile, generic, or cinematic at the expense of play readability.
 
 Bloodbowl visual targets from screenshots:
 
