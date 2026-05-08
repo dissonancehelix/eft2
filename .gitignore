@@ -8,21 +8,19 @@
 
 # s&box reference tree. Keep the path documented in AGENTS.md; do not push
 # the full s&box checkout unless the user deliberately promotes it.
-/sbox/Docs/
-/sbox/Source/
-/sbox/Runtime/
+/sbox/docs/
+/sbox/source/
+/sbox/runtime/
 /sbox/Bootstrap.bat
 /sbox/README.md
 
 # Prebuilt tool binaries. Tools/ffmpeg.exe is a holding spot until
 # tools/observer/ is built; commit it only if you want it tracked.
-/Tools/ffmpeg.exe
+/tools/ffmpeg.exe
 
 # Evidence/dev captures. Keep paths documented in README, but do not
 # upload bulk captures unless they become curated fixtures.
 /lua/game logs/
-/assets/Backgrounds/
-/assets/Screenshots/
 
 # s&box compiled/generated outputs. Produced by the editor on open —
 # do not track; they are regenerated automatically.
