@@ -29,8 +29,9 @@ This remaster workspace is:
 5. Installed GMod EFT folder, as shipped/reference backup behavior.
 6. Original VMF/map sources in `C:\Users\dissonance\Desktop\EFT\Projects`.
 7. Real gameplay evidence: Bloodbowl POV video, screenshots, future clips, demos, match logs, and replays.
-8. s&box docs and source under `C:\Users\dissonance\Desktop\eft 2\sbox-src`.
-9. External canonical references listed below.
+8. Engine/workflow contract at `C:\Users\dissonance\Desktop\eft 2\WORKFLOW.md`.
+9. Synthesis/context reports, including `C:\Users\dissonance\Desktop\eft 2\eft_report.md`.
+10. External canonical references listed below.
 
 When these sources disagree, do not hide the disagreement. Record the conflict and decide deliberately whether the remaster follows design intent, shipped Lua behavior, later map revisions, or live-match feel.
 
@@ -47,6 +48,8 @@ The sport is not American football. It is closer to:
 - Hockey pressure and turnover rhythm, without offsides or stoppage.
 - Quake/Source movement discipline, but with collision/tackles instead of weapons.
 
+Those analogies are for port-team orientation. Community vocabulary points more natively at Blood Bowl, NFL Blitz, American Gladiators, Tron, basketball/Slam Dunk, mini-golf/Mini Putt, and map-specific folk tech. Do not let external analogies overwrite the game's own vocabulary.
+
 The core loop:
 
 `Engage -> Tackle -> Displacement -> Auto-possession transfer -> Immediate retarget -> Repeat`
@@ -59,19 +62,27 @@ These are port blockers, not polish preferences.
 
 - Possession is volatile and usually short.
 - The carrier is slower than defenders.
+- Carrier penalty includes being slower and, in relevant builds, being unable to rush.
 - Ball pickup is automatic on contact.
+- The ball is also the anchor for many powerups; powerups are often map identity, not cosmetic spice.
 - There is no pickup key, possession confirmation, or safe carry animation gate.
 - Tackles and knockdowns are first-class outcomes.
 - A tackle that stops a breakaway is as important as a goal.
 - Head-on outcomes depend on instantaneous velocity, including tiny player-generated speed differences.
+- Head-on power struggle has a known version/community split: pre-2017 mash-style rhythm versus Publish 429 seeded-key anti-macro fairness. Do not hard-code the final answer before source and player-preference review.
 - Passing is a dangerous commitment, not a safe utility action.
 - Dive tackles extend reach but create vulnerability.
+- Dive-tackle ball interception and landing penalty are first-class mechanics.
 - Knockdown removes upright participation for a meaningful window.
+- Knockdown/immunity is a layered stagger/immunity system, not only a flat duration.
+- Collision state needs normal/pass-through/avoid modes to preserve flow, hit detection, and recovery readability.
+- Downed/ragdolled bodies can remain tactically relevant instead of becoming invisible decoration.
 - Walls and obstacles kill charge by stopping forward progress.
 - Wall contact does not automatically fumble the ball.
 - Wall contact does not automatically knock the player down.
 - Goals must remain preventable until the last moment.
 - Scrums are the sport, not a failure state.
+- Corridor body-blocks, item blocks, and goal-line stands are valid EFT texture when the map is built for them.
 - Bots scaffold population and pressure; they must not become perfect tackle machines.
 
 Do not modernize away tension, contested interactions, reversals, or chaos density.
@@ -100,8 +111,7 @@ If a cleaner implementation makes possession safer, tackles rarer, goals less pr
 |---|---|
 | Active remaster workspace | `C:\Users\dissonance\Desktop\eft 2` |
 | This contract | `C:\Users\dissonance\Desktop\eft 2\README.md` |
-| s&box full source | `C:\Users\dissonance\Desktop\eft 2\sbox-src` |
-| s&box docs | `C:\Users\dissonance\Desktop\eft 2\sbox-src\docs` |
+| Engine/workflow/toolkit contract | `C:\Users\dissonance\Desktop\eft 2\WORKFLOW.md` |
 | In-workspace Lua/source reference | `C:\Users\dissonance\Desktop\eft 2\lua-src` |
 | In-workspace canonical VMF subset | `C:\Users\dissonance\Desktop\eft 2\lua-src\content\VMFs` |
 | In-workspace match logs | `C:\Users\dissonance\Desktop\eft 2\lua-src\logs` |
@@ -114,6 +124,7 @@ If a cleaner implementation makes possession safer, tackles rarer, goals less pr
 | Current UI/style screenshot 1 | `C:\Users\dissonance\Pictures\Screenshots\Screenshot 2026-05-08 004339.png` |
 | Current UI/style screenshot 2 | `C:\Users\dissonance\Pictures\Screenshots\Screenshot 2026-05-08 004356.png` |
 | Current UI/style screenshot 3 | `C:\Users\dissonance\Pictures\Screenshots\Screenshot 2026-05-08 004419.png` |
+| EFT soul/remaster synthesis report | `C:\Users\dissonance\Desktop\eft 2\eft_report.md` |
 
 ## Repository Boundary
 
@@ -136,10 +147,9 @@ Local reference/dev-only material stays out of Git unless deliberately promoted:
 
 | Purpose | URL |
 |---|---|
-| s&box Steam page | `https://store.steampowered.com/app/590830/sbox/` |
-| Facepunch public s&box source | `https://github.com/Facepunch/sbox-public` |
 | GMod EFT repository/server lineage | `https://github.com/dissonancehelix/extremefootballthrowdown` |
 | Extreme Football League historical group | `https://steamcommunity.com/groups/ExtremeFootballLeague` |
+| Extreme Football League historical VOD channel | `https://www.youtube.com/@ExtremeFootballLeague` |
 
 The local installed GMod gamemode was the first inspected Lua reference. The source is now copied into `lua-src`; future sessions should prefer `lua-src` for local project work and use the installed GMod path as historical/reference backup.
 
@@ -150,8 +160,7 @@ As of 2026-05-08:
 - The active workspace root contains `sbox-src` and the Bloodbowl POV recording.
 - The active workspace root now contains `lua-src`, an in-workspace copy of the GMod Lua/source package.
 - No s&box EFT game project has been scaffolded yet.
-- `sbox-src` is the full s&box source tree.
-- `sbox-src\docs` contains the saved local s&box docs.
+- s&box engine/source/sample/workflow ingestion is tracked in `WORKFLOW.md`.
 - The Lua implementation has been identified and key files have been read from the installed GMod path; future reads should use `lua-src` where possible.
 - The original VMF folder has been inventoried: 204 `.vmf` files and 169 `.vmx` autosaves.
 - `lua-src\content\VMFs` contains a curated in-workspace VMF subset, including Bloodbowl, Slam Dunk, Baseball Dash, Skystep, Space Jump, Tunnel, and other canonical/near-canonical maps.
@@ -160,15 +169,10 @@ As of 2026-05-08:
 - The Bloodbowl POV recording is from an older version of the game; use it primarily for match rhythm, camera feel, collision density, scoring tempo, and live-match chaos.
 - The May 8, 2026 screenshots show the current, cleaner UI/presentation direction; use them as the primary style target for the port's HUD and visual language.
 - The public Extreme Football League Steam group has been located and is accessible as a historical competitive reference. Its overview says the group was created for Extreme Football Throwdown and contains records, rosters, schedules, announcements, and livestreamed games. It lists Sunrust EFL and the old server `104.192.0.78:27023`.
+- `eft_report.md` has been read as a soul/remaster synthesis report and its core claims are part of this contract where merged below.
 
-Already read or lightly inspected:
+Game/rules sources already read or lightly inspected:
 
-- `sbox-src\README.md`
-- `sbox-src\docs\getting-started`
-- `sbox-src\game\templates\game.minimal`
-- `sbox-src\game\templates\game.playercontroller`
-- `sbox-src\game\samples\sweeper`
-- s&box `Component`, `GameObject.Network`, `[Sync]`, `[Rpc.*]`, `Rigidbody`, `PlayerController`, `CharacterController`, `ISceneStartup`
 - Original `EFT.md` structure, mechanics, map roster, diagnostics, replay notes
 - `gamemode\obj_player.lua`
 - `gamemode\obj_ball.lua`
@@ -176,44 +180,14 @@ Already read or lightly inspected:
 - `gamemode\states\divetackle.lua`
 - `gamemode\states\throw.lua`
 - `entities\entities\trigger_goal.lua`
-- `docs\engine_differences.md`
-- `docs\porting_diagnostics.md`
-- `docs\known_bad_states.md`
-- `docs\mapping_guide.md`
-- `docs\code_annotation_standard.md`
+- `lua-src\docs\engine_differences.md`
+- `lua-src\docs\porting_diagnostics.md`
+- `lua-src\docs\known_bad_states.md`
+- `lua-src\docs\mapping_guide.md`
+- `lua-src\docs\code_annotation_standard.md`
+- `eft_report.md`
 
-## s&box Architecture Implications
-
-s&box is not a Lua gamemode system. It is a C# scene/GameObject/Component engine.
-
-Important implementation facts:
-
-- Game projects are described by `.sbproj`.
-- Scenes are JSON files on disk.
-- Game worlds are composed of GameObjects.
-- GameObjects contain Components.
-- Components implement behavior.
-- `GameObjectSystem<T>` can provide scene-wide systems.
-- `ISceneStartup` can hook map/scene startup.
-- Networked objects use `GameObject.NetworkSpawn`, `[Sync]`, and `[Rpc.*]`.
-- Built-in `PlayerController` exists, but EFT should not blindly use it.
-
-Likely architecture:
-
-| System | Responsibility |
-|---|---|
-| `EftGameSystem` | Match state, teams, score, round flow, map entity discovery, startup |
-| `EftPlayerController` | Custom movement, charge state, dive, throw, knockdown, camera, animation |
-| `EftBall` | Carrier state, loose physics, pickup, fumble, reset, scoring eligibility |
-| `EftGoalTrigger` | Touch/throw/hybrid scoring and team ownership |
-| `EftSpawnPoint` | Red/blue/spectator spawn positions |
-| `EftBallResetTrigger` | Hazard/stuck/void reset behavior |
-| `EftJumpPad` | Map-authored movement boost |
-| `EftHazard` | Hurt/death/water/lava/void behavior |
-| `EftHud` | Score, timer, team, health, minimap, action text |
-| `EftTelemetry` | Match events, replay data, tuning metrics |
-
-The built-in s&box `PlayerController` is useful reference material, but EFT movement/collision is the sport. A custom controller or heavily constrained controller is expected.
+Engine architecture, sample-project lessons, local toolkit paths, and implementation workflow live in `WORKFLOW.md`. This README stays focused on the game contract, rules, maps, evidence, and feel.
 
 ## Mechanical Constants To Preserve First
 
@@ -231,6 +205,7 @@ These values come from the inherited GMod contract and Lua. They are initial tar
 | Approx time 0 -> charge | about 1.0 s |
 | Approx time 0 -> max speed | about 1.5 s |
 | Knockdown duration | 2.75 s |
+| Anti-stunlock/immunity clocks | per-hit 1s clock, 2.25s cumulative threshold, 3.75s global immunity |
 | Post-hit charge immunity | 0.45 s |
 | Per-attacker anti-stunlock immunity | 2.0 s |
 | Tackle force multiplier | charger velocity x 1.65 |
@@ -240,6 +215,7 @@ These values come from the inherited GMod contract and Lua. They are initial tar
 | Dive extra speed | +100 HU/s |
 | Dive upward boost | 320 HU/s |
 | Dive turn limit | 90 degrees/s |
+| Dive ball-intercept landing penalty | 50% speed reduction |
 | Punch duration | 0.5 s |
 | Cross-counter window | last 0.2 s |
 | Punch force | 360 |
@@ -252,7 +228,7 @@ These values come from the inherited GMod contract and Lua. They are initial tar
 | Fumble vertical pop | 128 HU/s |
 | Ball bounce reduction | 0.75x |
 | Throw max windup | 1.0 s |
-| Throw movement | 0 HU/s target, effectively frozen |
+| Throw movement | target-fork decision needed: old contract freezes windup; later behavior allows beginning throw without stopping |
 | Throw impulse | 1100 along aim vector |
 | Ball untouched reset | 20 s |
 | Goal cap | 10 |
@@ -296,6 +272,8 @@ Requirements:
 - Airborne players cannot tackle.
 - Carriers cannot initiate charge hits.
 - Tackle collision should disqualify players from the next immediate contest by knockdown, recoil, or loss of charge.
+- Head-on power struggle is a deliberate compatibility decision. Preserve room for mash-style, Publish 429 seeded-key style, or a new Source 2-native option.
+- Preserve normal/pass-through/avoid collision states as gameplay rules rather than smoothing them into generic physics.
 
 Head-on collisions are a major veteran skill signal. If veterans cannot tell why they won or lost a head-on, the implementation has drifted.
 
@@ -309,6 +287,8 @@ Requirements:
 - Effective removal should feel closer to 4-5 seconds after re-acceleration.
 - Knocked-down players cannot pick up the ball.
 - Knocked-down players are obstacles.
+- Downed/ragdolled players may still be hit, displaced, pinned, or used as field texture if source behavior supports it.
+- Represent knockdown as a recovery state plus layered per-attacker/global immunity clocks.
 - Multiple attackers can chain pressure, but immunity timers should prevent single-attacker spam from becoming unreadable.
 
 ### Possession
@@ -323,6 +303,7 @@ Requirements:
 - No confirmation window.
 - No "safe receive" smoothing that lowers volatility.
 - Carrier speed penalty applies immediately.
+- Carrying disables rush categorically in relevant builds, in addition to any speed penalty.
 - Carrier becomes the most important target on the field.
 
 Possession stability is a failure condition. The ball should not be safely carried for long under pressure.
@@ -336,6 +317,7 @@ Requirements:
 - Tackling a carrier creates a loose ball.
 - Throwing creates a loose ball.
 - Reset creates a loose ball at the reset point.
+- Dive-tackle contact with the ball is an interception route, not only a whiff/tackle state.
 - Wall contact alone does not fumble.
 - Random physics noise should not dominate the ball.
 - Loose ball movement must be readable and contestable.
@@ -350,7 +332,7 @@ Requirements:
 - Hold RMB to wind up.
 - Release to throw.
 - Full power takes about 1 second.
-- Carrier is effectively frozen during windup.
+- Throw movement is a deliberate fork/design decision: older behavior treats windup as effectively frozen, while later behavior allows beginning a throw without stopping.
 - Early release is allowed but weaker.
 - Most passes under pressure should be dangerous.
 - Running into goal is often safer than throwing on touch/hybrid maps.
@@ -369,6 +351,7 @@ Requirements:
 - Rate-limits turning.
 - Disables crouch abuse.
 - Ends in vulnerability/knockdown.
+- Ball contact during dive can pick up/intercept the ball and then apply a landing penalty.
 - Success may slightly reduce recovery.
 - Whiff should be punishable.
 
@@ -422,6 +405,28 @@ Players should not commonly feel:
 - Like they are waiting for their turn.
 - Like the ball is random noise.
 - Like goals are unstoppable once the carrier is near.
+
+## Soul Vocabulary And Schisms
+
+Vocabulary worth preserving:
+
+| Term | Meaning |
+|---|---|
+| Power struggle | Head-on contested-tackle minigame; split between pre-2017 mash and Publish 429 seeded-key typing |
+| 180-spin ram | Carrier rotates into a defender and wins a charge from a near-walk/readability edge case |
+| Spawn bounce | Map-specific throw/bounce tech, especially associated in the report with Turbines |
+| Ballcamp / body-camp / dog pile | Abuse/pressure patterns around ball control, downed bodies, and repeated knockdowns |
+| Big-pole block | Corridor/body-block defense using item reach and map narrowness |
+| Speed Ball / Ice Ball / Water Ball / Score Ball / Hot Potato / Blitz Ball / Strong Arm / Feather / Gravity Ball | Ball-centered powerup vocabulary; map identity often starts here |
+| Beatdown Stick / Big Pole / Melon Driver / Arcane Wand / Booze Bottle | Item/melee vocabulary; includes cancel windows, ball-hit behavior, and timing depth |
+| Red Rhinos / Blue Bulls | Official team identities |
+
+Schisms and deliberate choices:
+
+- Publish 429 is a real design split, not just an update. The port should not erase the old rhythm without deciding deliberately.
+- Bhop suppression versus sky-route movement is map-sensitive. Some maps were designed around old movement edges.
+- Dog-pile/body-camp prevention is a gameplay system, not only a fairness patch.
+- Casual memory wants cathartic ragdoll chaos; competitive memory wants timing windows, immunity clocks, dive pickup, and head-on readability.
 
 ## Bot Contract
 
@@ -568,6 +573,7 @@ Bloodbowl version note:
 - The 2017 POV likely reflects `v4` or `rmx` era feel.
 - `v6` exists from 2020 and may contain later fixes.
 - Do not assume latest is best. Compare deliberately.
+- Bloodbowl's iconic hazard identity is spike pits with blood. Gas/sewage pits are a rebuild compromise, not the remaster target unless deliberately chosen.
 
 ## Phase Milestones
 
@@ -796,6 +802,7 @@ Telemetry exists to preserve the sport during tuning.
 ## Working Rules For Agents
 
 - Read this README before changing files.
+- Read `WORKFLOW.md` before changing engine, tooling, scaffold, conversion, or validation workflow.
 - Read the original GMod `EFT.md` before changing gameplay behavior.
 - Read the relevant Lua and VMF source before implementing a mechanic.
 - Read relevant s&box docs/source before choosing an engine pattern.
