@@ -6,8 +6,8 @@
 *.avi
 *.mkv
 
-# s&box reference. Keep the path documented in AGENTS.md; do not push the
-# full s&box checkout unless the user deliberately promotes it.
+# s&box reference tree. Keep the path documented in AGENTS.md; do not push
+# the full s&box checkout unless the user deliberately promotes it.
 /SBox/Docs/
 /SBox/Source/
 /SBox/Runtime/
@@ -15,16 +15,16 @@
 /SBox/README.md
 
 # Temporary toolkit source references. These may be inspected to improve
-# project-owned analyzer code, but they are not durable repo domains.
-/blender-main/
-/recastnavigation-main/
+# project-owned analyzer code but are not durable repo domains.
 /garrysmod-master/
 /garrysmod-master.zip
 /FFmpeg-Builds-master/
 /FFmpeg-Builds-master.zip
+/blender-main/
+/recastnavigation-main/
 
-# Prebuilt tool binaries. Tools/ffmpeg.exe is a holding spot until Tools/Observer/
-# is built; commit it only if you want it tracked in the repo.
+# Prebuilt tool binaries. Tools/ffmpeg.exe is a holding spot until
+# Tools/Observer/ is built; commit it only if you want it tracked.
 /Tools/ffmpeg.exe
 
 # Evidence/dev captures. Keep paths documented in README, but do not
@@ -32,6 +32,27 @@
 /Lua/game logs/
 /Lua/backgrounds/
 /Lua/screenshots/
+
+# s&box compiled/generated outputs. Produced by the editor on open —
+# do not track; they are regenerated automatically.
+*.scene_c
+*.scene_d
+*.vtex_c
+*.vmat_c
+*.vmdl_c
+*.vpcf_c
+*.vsnd_c
+*.vjs_c
+*.vcss_c
+*.vsndevts_c
+
+# s&box local project cache and transient data.
+Game/eft2/.sbox/transient/
+Game/eft2/.sbox/cloud.db
+Game/eft2/.sbox/cloud/
+
+# Claude Code local project data (session state, not repo content).
+.claude/
 
 # Common build and editor outputs.
 bin/
@@ -51,3 +72,8 @@ __pycache__/
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Local workspace shortcuts (not repo artifacts).
+# Editor.lnk opens sbox-dev.exe for Game/eft2/ — local only.
+Editor.lnk
+*.lnk

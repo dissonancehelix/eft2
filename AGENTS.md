@@ -486,6 +486,8 @@ Keep local s&box source/docs/runtime references under `SBox` out of Git unless d
 
 Keep temporary external trees such as `garrysmod-master/`, `FFmpeg-Builds-master/`, `blender/`, or `recastnavigation/` out of durable Git history unless the user deliberately promotes a small curated subset or derived project-owned adapter.
 
+`Editor.lnk` at the repo root is a local Windows shortcut that opens the s&box editor (`sbox-dev.exe`) for the `Game/eft2/` project. It is gitignored and local-only — do not commit it, do not recreate it, do not reference it as a repo artifact.
+
 The repo should contain durable EFT2 project material, curated map/source references, analysis tooling, generated map-domain outputs, observation artifacts when deliberately generated, validation/scenario/telemetry/simulation tooling, and playable implementation files when those phases begin.
 
 ---
