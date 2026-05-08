@@ -21,8 +21,8 @@
 # Evidence/dev captures. Keep paths documented in README, but do not
 # upload bulk captures unless they become curated fixtures.
 /Lua/game logs/
-/Lua/backgrounds/
-/Lua/screenshots/
+/Assets/Backgrounds/
+/Assets/Screenshots/
 
 # s&box compiled/generated outputs. Produced by the editor on open —
 # do not track; they are regenerated automatically.
