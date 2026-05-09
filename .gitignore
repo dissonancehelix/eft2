@@ -22,6 +22,10 @@
 # upload bulk captures unless they become curated fixtures.
 /lua/game logs/
 
+# Temporary simulation reference drop. Durable simulation work belongs in
+# tools/simulation/; mine this folder for ideas only.
+/sim/
+
 # s&box compiled/generated outputs. Produced by the editor on open —
 # do not track; they are regenerated automatically.
 *.scene_c

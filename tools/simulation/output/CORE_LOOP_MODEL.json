@@ -1,0 +1,90 @@
+{
+  "score": {
+    "red_rhinos": 0,
+    "blue_bulls": 1
+  },
+  "final_ball_owner": null,
+  "final_ball_position": {
+    "x": 0.0,
+    "y": 0.0
+  },
+  "events": [
+    {
+      "tick": 18,
+      "time_s": 0.36,
+      "event": "PossessionTransfer",
+      "payload": {
+        "player": "red_0",
+        "team": "red_rhinos"
+      }
+    },
+    {
+      "tick": 90,
+      "time_s": 1.8,
+      "event": "TackleResolve",
+      "payload": {
+        "attacker": "blue_0",
+        "target": "red_0",
+        "fumble": true
+      }
+    },
+    {
+      "tick": 90,
+      "time_s": 1.8,
+      "event": "BallLoose",
+      "payload": {
+        "previous_carrier": "red_0",
+        "attacker": "blue_0",
+        "horizontal_multiplier": 1.75,
+        "vertical_pop": 128.0
+      }
+    },
+    {
+      "tick": 90,
+      "time_s": 1.8,
+      "event": "PlayerKnockdown",
+      "payload": {
+        "player": "red_0",
+        "attacker": "blue_0"
+      }
+    },
+    {
+      "tick": 228,
+      "time_s": 4.56,
+      "event": "PlayerRecovered",
+      "payload": {
+        "player": "red_0"
+      }
+    },
+    {
+      "tick": 232,
+      "time_s": 4.64,
+      "event": "PossessionTransfer",
+      "payload": {
+        "player": "blue_0",
+        "team": "blue_bulls"
+      }
+    },
+    {
+      "tick": 282,
+      "time_s": 5.64,
+      "event": "GoalScored",
+      "payload": {
+        "player": "blue_0",
+        "team": "blue_bulls",
+        "score": {
+          "red_rhinos": 0,
+          "blue_bulls": 1
+        }
+      }
+    },
+    {
+      "tick": 282,
+      "time_s": 5.64,
+      "event": "BallReset",
+      "payload": {
+        "reason": "goal_scored"
+      }
+    }
+  ]
+}

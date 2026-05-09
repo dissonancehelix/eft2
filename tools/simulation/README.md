@@ -23,6 +23,8 @@ python "tools/simulation/assess_simulation_readiness.py" --root .
 python "tools/simulation/assess_simulation_readiness.py" --list
 python "tools/simulation/assess_simulation_readiness.py" --map "Slam Dunk"
 python "tools/simulation/assess_simulation_readiness.py" --map "Bloodbowl"
+python "tools/simulation/run_core_loop_model.py"
+python "tools/simulation/run_core_loop_model.py" --json
 ```
 
 ## Outputs
@@ -31,6 +33,8 @@ python "tools/simulation/assess_simulation_readiness.py" --map "Bloodbowl"
 tools/simulation/output/SIMULATION_READINESS.json
 tools/simulation/output/SIMULATION_READINESS.md
 ```
+
+`run_core_loop_model.py` prints a deterministic core-loop event trace. It is a rules sanity check, not a match result and not a real-map simulation.
 
 The report answers:
 

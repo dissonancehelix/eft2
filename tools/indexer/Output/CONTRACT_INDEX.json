@@ -1,7 +1,7 @@
 {
   "generated_by": "tools/indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-09T00:42:09.361943+00:00",
+  "generated_at": "2026-05-09T00:54:04.930105+00:00",
   "repo_root": ".",
   "warnings": [],
   "files": [
@@ -1177,7 +1177,7 @@
     },
     {
       "path": "tools/simulation/README.md",
-      "size_bytes": 2850,
+      "size_bytes": 3105,
       "heading_count": 6,
       "headings": [
         {

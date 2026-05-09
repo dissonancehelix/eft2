@@ -1,7 +1,7 @@
 {
   "generated_by": "tools/contract validator",
   "schema_version": 1,
-  "generated_at": "2026-05-09T00:42:09.554992+00:00",
+  "generated_at": "2026-05-09T00:54:05.206146+00:00",
   "repo_root": ".",
   "contract_ids_defined": [
     "C-001",
@@ -1270,6 +1270,7 @@
         "AGENTS.md",
         "tools/observer/observation_schema.md",
         "tools/scenario harness/scenarios/S-012_respawn_rejoin.json",
+        "tools/simulation/core_loop_model.py",
         "tools/telemetry/event_schema.md",
         "tools/telemetry/events/E_005_playerknockdown.json",
         "game/eft2/Code/PlayerMovement.cs",

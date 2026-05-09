@@ -1,7 +1,7 @@
 {
   "generated_by": "tools/simulation",
   "schema_version": 1,
-  "generated_at": "2026-05-09T00:41:59.106712+00:00",
+  "generated_at": "2026-05-09T00:53:55.399909+00:00",
   "root": ".",
   "map_filter": null,
   "warnings": [
@@ -59,13 +59,13 @@
       "S-015": "tackle/knockdown chain slice"
     },
     "telemetry_events_found": {
+      "BallLoose": "game/eft2/Code/Ball.cs",
       "BallReset": "game/eft2/Code/Ball.cs",
       "PossessionTransfer": "game/eft2/Code/Ball.cs",
-      "BallLoose": "game/eft2/Code/Ball.cs",
-      "GoalScored": "game/eft2/Code/GameSystem.cs",
       "TackleResolve": "game/eft2/Code/GameSystem.cs",
-      "PlayerKnockdown": "game/eft2/Code/PlayerMovement.cs",
-      "PlayerRecovered": "game/eft2/Code/PlayerMovement.cs"
+      "GoalScored": "game/eft2/Code/GameSystem.cs",
+      "PlayerRecovered": "game/eft2/Code/PlayerMovement.cs",
+      "PlayerKnockdown": "game/eft2/Code/PlayerMovement.cs"
     },
     "missing_telemetry_events": [],
     "map_rule_refinement_inputs": [
