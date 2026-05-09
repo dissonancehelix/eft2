@@ -1,16 +1,17 @@
 {
   "generated_by": "tools/indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-09T01:03:55.655246+00:00",
+  "generated_at": "2026-05-09T18:34:47.240311+00:00",
   "repo_root": ".",
   "warnings": [
     "sbox_scan_truncated_at:4000"
   ],
   "tools_root": "tools",
-  "tool_count": 7,
+  "tool_count": 8,
   "present_tools": [
     "contract validator",
     "indexer",
+    "lua audit",
     "map analyzer",
     "observer",
     "scenario harness",
@@ -121,6 +122,21 @@
       ],
       "has_output_dir": true,
       "output_dir": "tools/indexer/Output"
+    },
+    {
+      "name": "lua audit",
+      "path": "tools/lua audit",
+      "readme": "tools/lua audit/README.md",
+      "readme_summary": "# Tools/Lua Audit\n\n`tools/lua audit/` is the **block-level inherited-Lua understanding layer** of\nthe EFT2 iterative resolution loop.\n\nIt reads the read-only `lua/` reference and produces stable, agent-readable\nbehavior blocks, system clusters, and a Lua \u2192 s&box bridge. It is **not** a\ndirect Lua \u2192 C# translator. Its job is to give future agents reviewable\nhandles into the original behavior so that gameplay meaning can be recovered\n*before* C# code is rewritten.",
+      "python_module_count": 1,
+      "python_modules": [
+        {
+          "path": "tools/lua audit/audit_lua.py",
+          "first_docstring_line": "EFT2 Lua Audit."
+        }
+      ],
+      "has_output_dir": true,
+      "output_dir": "tools/lua audit/output"
     },
     {
       "name": "map analyzer",

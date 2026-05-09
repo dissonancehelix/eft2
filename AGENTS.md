@@ -85,6 +85,89 @@ Modernization is valid only when it preserves interaction properties.
 
 ---
 
+## Agent Resolution Goal
+
+EFT2 is not just a code port and not just a playable prototype. It is building an iterative understanding loop so that future agents can understand EFT at increasing resolution and **predict behavior before editing code**.
+
+The agent understanding chain:
+
+```text
+README contract
+  -> inherited Lua behavior
+  -> tacit played meaning
+  -> FGD/map grammar
+  -> map analysis / virtual perception
+  -> s&box engine surface
+  -> current C# implementation
+  -> telemetry / scenarios / simulation validation
+  -> feedback back into the earlier layers
+```
+
+A successful agent does not jump from README straight to C#. It walks the chain, gathers evidence at each layer, and feeds findings back so the next agent enters at a higher resolution.
+
+---
+
+## Iterative Understanding Loop
+
+Lua Audit, Map Analyzer, Simulation, Telemetry, Scenario Harness, Observer, and the C# implementation should sharpen each other:
+
+- A Lua Audit discovery (e.g. an immunity window in `lua/gamemode/states/`) sharpens map analyzer interpretation of spawn clusters and reset zones.
+- A map pattern (e.g. a Slam Dunk speedball corridor) reveals *why* a Lua charge/fumble rule mattered.
+- A simulation blocker (`tools/simulation/`) flags a missing semantic bridge between Lua intent and runtime behavior.
+- A telemetry/scenario mismatch reveals that the C# code preserved syntax but lost played meaning.
+- An Observer artifact (deliberately requested) re-grounds tacit meaning that none of the other rails captured.
+
+Findings at any layer should feed back into earlier layers. The loop is not a one-shot pipeline.
+
+---
+
+## Tacit Gameplay Bridge
+
+EFT's real behavior lives in the gap between:
+
+- documented rules,
+- the original Lua implementation, and
+- actual played veteran experience.
+
+Agents must map code to gameplay meaning **before** rewriting it. A literal Lua → C# port preserves syntax and erases meaning. The point of the resolution loop is to recover meaning first.
+
+Examples:
+
+- charge is not just speed; it is threat state
+- possession is not ownership reward; it paints a target
+- fumble is not cleanup; it creates the next contest
+- knockdown is not cosmetic; it removes a player from the next few seconds
+- map geometry is not decoration; it shapes pressure, routes, hazards, and recovery
+- cleaner behavior is wrong if it lowers tension, carrier danger, contested interaction, or reversal density
+
+If an agent cannot articulate the tacit meaning of a block, that uncertainty must be recorded — never erased by writing confident-sounding code.
+
+---
+
+## Lua Audit Role
+
+`tools/lua audit/` is the **block-level original-behavior understanding layer**. It is not a Lua → C# translator.
+
+For each meaningful Lua block it captures: stable ID, file path, symbol, line range (metadata only), plain-English behavior, gameplay meaning, tacit meaning (only when defensible), state read/written, related Lua / README IDs / FGD entities / map concepts / s&box concepts, candidate C# owner (never claimed as parity), telemetry/scenario hooks, simulation relevance, port risk, confidence, and `needs_human_review` with `missing_evidence`.
+
+The first audit pass is a **draft behavior map**, not final canon. It produces reviewable handles that future passes — and human review — can refine, merge, split, or correct. Inherited `MANIFEST LINKS` headers and embedded contract IDs (P-/M-/C-/S-/E-) are extracted verbatim and preserved on every block.
+
+---
+
+## Simulation Dependency
+
+`tools/simulation/` should consume Lua Audit outputs (`LUA_AUDIT.json`, `LUA_SYSTEM_CLUSTERS.json`, `LUA_TO_SBOX_BRIDGE.json`) when available. **Simulation readiness without Lua Audit grounding is preliminary.** Real simulation/prediction must be grounded in:
+
+1. README rules,
+2. Lua-inferred behavior (from Lua Audit),
+3. tacit gameplay meaning,
+4. FGD/map analysis and virtual perception, and
+5. telemetry/scenario validation.
+
+Simulation reports must distinguish runtime-executable behavior, map-analysis evidence, Lua-inferred behavior, tacit gameplay interpretation, and actual simulated result. They must not collapse those categories into a single confidence claim.
+
+---
+
 ## User / Agent Roles
 
 The user has deep practical knowledge of EFT, including high-level play, mapping, game feel, community context, and map identity. The agent should not overwrite that expertise with generic game-dev assumptions.
@@ -155,6 +238,7 @@ tools/
   contract validator/
   scenario harness/
   telemetry/
+  lua audit/
   simulation/
 ```
 
@@ -166,7 +250,8 @@ Meaning:
 - `contract validator` = whether docs/code/tools/generated outputs still obey the EFT2 contract.
 - `scenario harness` = must-preserve gameplay situations and tests.
 - `telemetry` = numerical events and match metrics.
-- `simulation` = future gameplay/map simulation, prediction, and learning loops.
+- `lua audit` = block-level original-behavior understanding from inherited Lua source; precondition for grounded simulation.
+- `simulation` = future gameplay/map simulation, prediction, and learning loops; should consume Lua Audit outputs before claiming grounded readiness.
 
 Do not use:
 
@@ -193,8 +278,9 @@ Preferred near-term order:
 5. Build `tools/contract validator/`.
 6. Build `tools/scenario harness/`.
 7. Build `tools/telemetry/`.
-8. Keep `tools/simulation/` as a readiness/reporting layer until gameplay runtime and telemetry emitters exist.
-9. Scaffold or expand `game/` only when infrastructure can guide Codex/Claude toward correct EFT behavior.
+8. Build and iterate `tools/lua audit/` — precondition for grounded simulation; feeds rule semantics and tacit gameplay meaning back into the loop.
+9. Keep `tools/simulation/` as a readiness/reporting layer until gameplay runtime, telemetry emitters, and Lua Audit outputs exist; simulation should not claim grounded readiness without consuming Lua Audit outputs.
+10. Scaffold or expand `game/` only when infrastructure can guide Codex/Claude toward correct EFT behavior.
 
 The project may temporarily adjust the order if the user directs it. Do not treat this order as a law; treat it as the current safest path.
 
@@ -299,6 +385,7 @@ For project tooling:
 - Place future validation tooling under `tools/contract validator/`.
 - Place future scenario cases/tests under `tools/scenario harness/`.
 - Place future telemetry schemas/tools under `tools/telemetry/`.
+- Place inherited-Lua behavior auditing under `tools/lua audit/`.
 - Place simulation readiness and future simulation tooling under `tools/simulation/`.
 
 Root project/domain spaces use lowercase names (`game`, `maps`, `lua`, `sbox`, `tools`, `assets`). Named repo domains/tools/subfolders use normalized display names (`map analyzer`, `analysis`, `virtual perception`, `simulation`). Python script/module filenames may stay lower-case for import/CLI sanity.

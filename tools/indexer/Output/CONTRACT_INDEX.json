@@ -1,7 +1,7 @@
 {
   "generated_by": "tools/indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-09T01:03:54.275987+00:00",
+  "generated_at": "2026-05-09T18:34:45.806536+00:00",
   "repo_root": ".",
   "warnings": [],
   "files": [
@@ -832,8 +832,8 @@
     },
     {
       "path": "AGENTS.md",
-      "size_bytes": 22665,
-      "heading_count": 21,
+      "size_bytes": 27455,
+      "heading_count": 26,
       "headings": [
         {
           "level": 1,
@@ -850,6 +850,26 @@
         {
           "level": 2,
           "text": "Project Mission"
+        },
+        {
+          "level": 2,
+          "text": "Agent Resolution Goal"
+        },
+        {
+          "level": 2,
+          "text": "Iterative Understanding Loop"
+        },
+        {
+          "level": 2,
+          "text": "Tacit Gameplay Bridge"
+        },
+        {
+          "level": 2,
+          "text": "Lua Audit Role"
+        },
+        {
+          "level": 2,
+          "text": "Simulation Dependency"
         },
         {
           "level": 2,
@@ -923,7 +943,22 @@
       "contract_ids": [],
       "todo_markers": [
         {
-          "line": 517,
+          "line": 106,
+          "marker": "NEXT",
+          "text": "agent enters at a higher resolution."
+        },
+        {
+          "line": 138,
+          "marker": "NEXT",
+          "text": "contest"
+        },
+        {
+          "line": 139,
+          "marker": "NEXT",
+          "text": "few seconds"
+        },
+        {
+          "line": 604,
           "marker": "NEXT",
           "text": "recommended step"
         }
@@ -1048,6 +1083,43 @@
           "text": "markers in contract docs"
         }
       ]
+    },
+    {
+      "path": "tools/lua audit/README.md",
+      "size_bytes": 3610,
+      "heading_count": 7,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Tools/Lua Audit"
+        },
+        {
+          "level": 2,
+          "text": "Resolution chain it serves"
+        },
+        {
+          "level": 2,
+          "text": "Scope"
+        },
+        {
+          "level": 2,
+          "text": "Run"
+        },
+        {
+          "level": 2,
+          "text": "Outputs"
+        },
+        {
+          "level": 2,
+          "text": "Honesty rules"
+        },
+        {
+          "level": 2,
+          "text": "Connection to the rest of the loop"
+        }
+      ],
+      "contract_ids": [],
+      "todo_markers": []
     },
     {
       "path": "tools/map analyzer/README.md",
@@ -1177,8 +1249,8 @@
     },
     {
       "path": "tools/simulation/README.md",
-      "size_bytes": 3105,
-      "heading_count": 6,
+      "size_bytes": 4032,
+      "heading_count": 7,
       "headings": [
         {
           "level": 1,
@@ -1203,6 +1275,10 @@
         {
           "level": 2,
           "text": "Evidence Limits"
+        },
+        {
+          "level": 2,
+          "text": "Lua Audit Inputs (future)"
         }
       ],
       "contract_ids": [
@@ -1284,5 +1360,5 @@
       "todo_markers": []
     }
   ],
-  "file_count": 10
+  "file_count": 11
 }

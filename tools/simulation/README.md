@@ -73,3 +73,25 @@ The initial future targets are:
 ## Evidence Limits
 
 Existing map analyzer outputs, real `lua/game logs`, and abstract gameflow artifacts are calibration evidence. The core-loop test arena is now the executable local rule target. Real maps remain analysis/virtual-perception refinement inputs until converted into runtime scenes.
+
+## Lua Audit Inputs (future)
+
+`tools/lua audit/` outputs are future inputs to simulation readiness:
+
+- `tools/lua audit/output/LUA_AUDIT.json`
+- `tools/lua audit/output/LUA_SYSTEM_CLUSTERS.json`
+- `tools/lua audit/output/LUA_TO_SBOX_BRIDGE.json`
+
+Simulation should consume these to ground rules from inherited Lua behavior, system clusters, and tacit gameplay meaning *before* attempting map/gameplay prediction. Without Lua Audit grounding, simulation readiness is preliminary.
+
+Simulation reports must distinguish:
+
+- runtime-executable behavior
+- map-analysis evidence
+- Lua-inferred behavior (from Lua Audit)
+- tacit gameplay interpretation (conservative — empty when not defensible)
+- actual simulated result
+
+These categories must not be collapsed into a single confidence claim.
+
+This is a contract note. The current `assess_simulation_readiness.py` does not yet read Lua Audit outputs — that join is a later pass.
