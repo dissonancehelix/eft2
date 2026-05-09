@@ -1,7 +1,7 @@
 {
   "generated_by": "tools/simulation",
   "schema_version": 1,
-  "generated_at": "2026-05-08T19:12:50.127237+00:00",
+  "generated_at": "2026-05-09T00:41:59.106712+00:00",
   "root": ".",
   "map_filter": null,
   "warnings": [
@@ -15,36 +15,83 @@
     "reported_maps": 15,
     "map_analysis_ready": 15,
     "reported_map_analysis_ready": 15,
-    "gameplay_runtime_present": false,
-    "telemetry_emitter_present": false
+    "gameplay_runtime_present": true,
+    "telemetry_emitter_present": true,
+    "core_loop_simulatable": true
   },
   "gameplay_runtime": {
-    "present": false,
+    "present": true,
     "code_dir": "game/eft2/Code",
-    "marker_hits": [],
-    "missing_markers": [
+    "scene": "game/eft2/Assets/scenes/eft2_core_loop.scene",
+    "gameplay_model": "game/eft2/gameplay_model.md",
+    "manual_test": "game/eft2/CORE_LOOP_TEST.md",
+    "marker_hits": [
       "Ball.cs",
-      "GoalTrigger.cs",
-      "PlayerMovement.cs",
+      "BallResetTrigger.cs",
       "GameSystem.cs",
-      "BallResetTrigger.cs"
+      "GoalTrigger.cs",
+      "PlayerMovement.cs"
     ],
-    "rule": "requires at least three core EFT gameplay runtime markers before scenarios can be executable"
+    "missing_markers": [],
+    "rule": "requires core EFT gameplay runtime markers and the core-loop scene before local core-loop scenarios can be simulated"
   },
   "telemetry_emitter": {
-    "present": false,
-    "candidate_files": [],
+    "present": true,
+    "candidate_files": [
+      "game/eft2/Code/Ball.cs",
+      "game/eft2/Code/GameSystem.cs",
+      "game/eft2/Code/PlayerMovement.cs",
+      "game/eft2/Code/TelemetrySink.cs"
+    ],
     "rule": "requires an actual gameplay/runtime emitter, not just telemetry schema validators"
+  },
+  "core_loop_simulation": {
+    "can_simulate_core_loop": true,
+    "scope": "local core-loop rules in the generated test arena; real maps remain analysis/virtual-perception targets until converted into game/eft2 runtime scenes",
+    "supported_scenarios": [
+      "S-001",
+      "S-005",
+      "S-015"
+    ],
+    "scenario_notes": {
+      "S-001": "goal/reset slice",
+      "S-005": "swarm/fumble retarget slice",
+      "S-015": "tackle/knockdown chain slice"
+    },
+    "telemetry_events_found": {
+      "BallReset": "game/eft2/Code/Ball.cs",
+      "PossessionTransfer": "game/eft2/Code/Ball.cs",
+      "BallLoose": "game/eft2/Code/Ball.cs",
+      "GoalScored": "game/eft2/Code/GameSystem.cs",
+      "TackleResolve": "game/eft2/Code/GameSystem.cs",
+      "PlayerKnockdown": "game/eft2/Code/PlayerMovement.cs",
+      "PlayerRecovered": "game/eft2/Code/PlayerMovement.cs"
+    },
+    "missing_telemetry_events": [],
+    "map_rule_refinement_inputs": [
+      "maps/baseball dash",
+      "maps/big metal",
+      "maps/bloodbowl",
+      "maps/chamber",
+      "maps/cosmic arena",
+      "maps/legoland",
+      "maps/mini putt",
+      "maps/sky metal",
+      "maps/skyline",
+      "maps/skystep",
+      "maps/slam dunk",
+      "maps/soccer",
+      "maps/space jump",
+      "maps/temple sacrifice",
+      "maps/tunnel"
+    ],
+    "map_rule_refinement_note": "Analyzed maps with virtual perception can guide rule coding and refinement, but the report must not claim live real-map simulation until a runtime scene/map exists."
   },
   "metric_guardrails_present": true,
   "blockers": [
     {
-      "id": "gameplay_runtime_missing",
-      "message": "No executable EFT gameplay runtime was detected under game/eft2/Code."
-    },
-    {
-      "id": "telemetry_emitter_missing",
-      "message": "Telemetry schemas exist, but no gameplay/runtime emitter was detected."
+      "id": "real_map_runtime_scene_missing",
+      "message": "Core-loop rules can be simulated in the test arena, but analyzed real maps are not converted into runtime scenes yet."
     }
   ],
   "scenario_readiness": [
@@ -56,8 +103,7 @@
       "source_path": "tools/scenario harness/scenarios/S-001_goal_line_stand.json",
       "labels": [
         "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "core_loop_simulatable"
       ],
       "telemetry_events_required": [
         "TackleResolve",
@@ -80,9 +126,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-002_panic_short_pass.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "ThrowAttempt",
@@ -105,9 +149,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-003_long_throw_recovery.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "ThrowAttempt",
@@ -130,9 +172,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-004_jump_flung_fumble.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "BallLoose",
@@ -156,8 +196,7 @@
       "source_path": "tools/scenario harness/scenarios/S-005_swarm_collapse.json",
       "labels": [
         "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "core_loop_simulatable"
       ],
       "telemetry_events_required": [
         "BallLoose",
@@ -182,9 +221,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-006_midfield_collection.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "PossessionTransfer",
@@ -205,9 +242,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-007_escort_clearing.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "TackleResolve",
@@ -228,9 +263,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-008_intentional_hazard_reset.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "BallReset",
@@ -251,9 +284,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-009_head_on_speed_duel.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "TackleResolve",
@@ -276,9 +307,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-010_last_second_touchdown_stop.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "TackleResolve",
@@ -301,9 +330,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-011_loose_ball_bounce.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "BallLoose",
@@ -326,9 +353,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-012_respawn_rejoin.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "PlayerDeath",
@@ -351,9 +376,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-013_choke_corridor_fight.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "TackleResolve",
@@ -376,9 +399,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-014_score_counter_attack.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "GoalScore",
@@ -402,8 +423,7 @@
       "source_path": "tools/scenario harness/scenarios/S-015_tackle_chain.json",
       "labels": [
         "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "core_loop_simulatable"
       ],
       "telemetry_events_required": [
         "TackleResolve",
@@ -426,9 +446,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-016_goal_line_intercept.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "PossessionTransfer",
@@ -449,9 +467,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-017_mid_air_catch.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "PossessionTransfer",
@@ -472,9 +488,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-018_powerup_route.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "PowerupPickup",
@@ -495,9 +509,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-019_carrier_juke.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "TackleResolve",
@@ -518,9 +530,7 @@
       "map_scope": "any",
       "source_path": "tools/scenario harness/scenarios/S-020_bot_positioning.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "BotDecision",
@@ -541,9 +551,7 @@
       "map_scope": "Slam Dunk",
       "source_path": "tools/scenario harness/scenarios/S-021_slam_dunk_hoop_decision.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "GoalScore",
@@ -564,9 +572,7 @@
       "map_scope": "Bloodbowl",
       "source_path": "tools/scenario harness/scenarios/S-022_bloodbowl_flat_swarm.json",
       "labels": [
-        "scenario_defined",
-        "telemetry_schema_ready_emitter_missing",
-        "blocked_by_gameplay_runtime"
+        "scenario_defined"
       ],
       "telemetry_events_required": [
         "BallReset",
@@ -594,7 +600,7 @@
       "labels": [
         "map_analysis_ready",
         "simulation_placeholder_present",
-        "map_ready_but_runtime_missing"
+        "simulation_ready_later"
       ],
       "analysis_dir": "maps/baseball dash/analysis",
       "virtual_perception_dir": "maps/baseball dash/virtual perception",
@@ -640,7 +646,7 @@
       "labels": [
         "map_analysis_ready",
         "simulation_placeholder_present",
-        "map_ready_but_runtime_missing"
+        "simulation_ready_later"
       ],
       "analysis_dir": "maps/big metal/analysis",
       "virtual_perception_dir": "maps/big metal/virtual perception",
@@ -686,7 +692,7 @@
       "labels": [
         "map_analysis_ready",
         "simulation_placeholder_present",
-        "map_ready_but_runtime_missing"
+        "simulation_ready_later"
       ],
       "analysis_dir": "maps/bloodbowl/analysis",
       "virtual_perception_dir": "maps/bloodbowl/virtual perception",
@@ -732,7 +738,7 @@
       "labels": [
         "map_analysis_ready",
         "simulation_placeholder_present",
-        "map_ready_but_runtime_missing"
+        "simulation_ready_later"
       ],
       "analysis_dir": "maps/chamber/analysis",
       "virtual_perception_dir": "maps/chamber/virtual perception",
@@ -778,7 +784,7 @@
       "labels": [
         "map_analysis_ready",
         "simulation_placeholder_present",
-        "map_ready_but_runtime_missing"
+        "simulation_ready_later"
       ],
       "analysis_dir": "maps/cosmic arena/analysis",
       "virtual_perception_dir": "maps/cosmic arena/virtual perception",
@@ -824,7 +830,7 @@
       "labels": [
         "map_analysis_ready",
         "simulation_placeholder_present",
-        "map_ready_but_runtime_missing"
+        "simulation_ready_later"
       ],
       "analysis_dir": "maps/legoland/analysis",
       "virtual_perception_dir": "maps/legoland/virtual perception",
@@ -870,7 +876,7 @@
       "labels": [
         "map_analysis_ready",
         "simulation_placeholder_present",
-        "map_ready_but_runtime_missing"
+        "simulation_ready_later"
       ],
       "analysis_dir": "maps/mini putt/analysis",
       "virtual_perception_dir": "maps/mini putt/virtual perception",
@@ -916,7 +922,7 @@
       "labels": [
         "map_analysis_ready",
         "simulation_placeholder_present",
-        "map_ready_but_runtime_missing"
+        "simulation_ready_later"
       ],
       "analysis_dir": "maps/sky metal/analysis",
       "virtual_perception_dir": "maps/sky metal/virtual perception",
@@ -962,7 +968,7 @@
       "labels": [
         "map_analysis_ready",
         "simulation_placeholder_present",
-        "map_ready_but_runtime_missing"
+        "simulation_ready_later"
       ],
       "analysis_dir": "maps/skyline/analysis",
       "virtual_perception_dir": "maps/skyline/virtual perception",
@@ -1008,7 +1014,7 @@
       "labels": [
         "map_analysis_ready",
         "simulation_placeholder_present",
-        "map_ready_but_runtime_missing"
+        "simulation_ready_later"
       ],
       "analysis_dir": "maps/skystep/analysis",
       "virtual_perception_dir": "maps/skystep/virtual perception",
@@ -1054,7 +1060,7 @@
       "labels": [
         "map_analysis_ready",
         "simulation_placeholder_present",
-        "map_ready_but_runtime_missing"
+        "simulation_ready_later"
       ],
       "analysis_dir": "maps/slam dunk/analysis",
       "virtual_perception_dir": "maps/slam dunk/virtual perception",
@@ -1100,7 +1106,7 @@
       "labels": [
         "map_analysis_ready",
         "simulation_placeholder_present",
-        "map_ready_but_runtime_missing"
+        "simulation_ready_later"
       ],
       "analysis_dir": "maps/soccer/analysis",
       "virtual_perception_dir": "maps/soccer/virtual perception",
@@ -1146,7 +1152,7 @@
       "labels": [
         "map_analysis_ready",
         "simulation_placeholder_present",
-        "map_ready_but_runtime_missing"
+        "simulation_ready_later"
       ],
       "analysis_dir": "maps/space jump/analysis",
       "virtual_perception_dir": "maps/space jump/virtual perception",
@@ -1192,7 +1198,7 @@
       "labels": [
         "map_analysis_ready",
         "simulation_placeholder_present",
-        "map_ready_but_runtime_missing"
+        "simulation_ready_later"
       ],
       "analysis_dir": "maps/temple sacrifice/analysis",
       "virtual_perception_dir": "maps/temple sacrifice/virtual perception",
@@ -1238,7 +1244,7 @@
       "labels": [
         "map_analysis_ready",
         "simulation_placeholder_present",
-        "map_ready_but_runtime_missing"
+        "simulation_ready_later"
       ],
       "analysis_dir": "maps/tunnel/analysis",
       "virtual_perception_dir": "maps/tunnel/virtual perception",
@@ -1284,61 +1290,53 @@
       "scenario_id": "S-021",
       "map": "Slam Dunk",
       "labels": [
-        "blocked_by_gameplay_runtime",
         "map_analysis_ready",
-        "map_ready_but_runtime_missing",
         "scenario_defined",
         "simulation_placeholder_present"
       ],
-      "status": "blocked",
+      "status": "map_rule_refinement_target",
       "reason": "Hoop/throw/slam route pressure needs map intelligence before runtime tests."
     },
     {
       "scenario_id": "S-022",
       "map": "Bloodbowl",
       "labels": [
-        "blocked_by_gameplay_runtime",
         "map_analysis_ready",
-        "map_ready_but_runtime_missing",
         "scenario_defined",
         "simulation_placeholder_present"
       ],
-      "status": "blocked",
+      "status": "map_rule_refinement_target",
       "reason": "Flat open-field swarm is the cleanest full-gameplay feel benchmark."
     },
     {
       "scenario_id": "S-005",
       "map": "Bloodbowl",
       "labels": [
-        "blocked_by_gameplay_runtime",
         "map_analysis_ready",
-        "map_ready_but_runtime_missing",
         "scenario_defined",
         "simulation_placeholder_present"
       ],
-      "status": "blocked",
+      "status": "core_loop_simulatable",
       "reason": "Swarm collapse maps directly to Bloodbowl's open-field convergence."
     },
     {
       "scenario_id": "S-009",
       "map": "any/open map",
       "labels": [
-        "blocked_by_gameplay_runtime",
         "map_selection_needed",
         "scenario_defined"
       ],
-      "status": "blocked",
+      "status": "needs_map_selection",
       "reason": "Head-on speed duel can later validate charge/tackle readability on open layouts."
     },
     {
       "scenario_id": "S-001",
       "map": "any/hybrid map",
       "labels": [
-        "blocked_by_gameplay_runtime",
         "map_selection_needed",
         "scenario_defined"
       ],
-      "status": "blocked",
+      "status": "core_loop_simulatable",
       "reason": "Goal-line stand validates preventability once goals and runtime telemetry exist."
     }
   ],
@@ -1347,61 +1345,53 @@
       "scenario_id": "S-021",
       "map": "Slam Dunk",
       "labels": [
-        "blocked_by_gameplay_runtime",
         "map_analysis_ready",
-        "map_ready_but_runtime_missing",
         "scenario_defined",
         "simulation_placeholder_present"
       ],
-      "status": "blocked",
+      "status": "map_rule_refinement_target",
       "reason": "Hoop/throw/slam route pressure needs map intelligence before runtime tests."
     },
     {
       "scenario_id": "S-022",
       "map": "Bloodbowl",
       "labels": [
-        "blocked_by_gameplay_runtime",
         "map_analysis_ready",
-        "map_ready_but_runtime_missing",
         "scenario_defined",
         "simulation_placeholder_present"
       ],
-      "status": "blocked",
+      "status": "map_rule_refinement_target",
       "reason": "Flat open-field swarm is the cleanest full-gameplay feel benchmark."
     },
     {
       "scenario_id": "S-005",
       "map": "Bloodbowl",
       "labels": [
-        "blocked_by_gameplay_runtime",
         "map_analysis_ready",
-        "map_ready_but_runtime_missing",
         "scenario_defined",
         "simulation_placeholder_present"
       ],
-      "status": "blocked",
+      "status": "core_loop_simulatable",
       "reason": "Swarm collapse maps directly to Bloodbowl's open-field convergence."
     },
     {
       "scenario_id": "S-009",
       "map": "any/open map",
       "labels": [
-        "blocked_by_gameplay_runtime",
         "map_selection_needed",
         "scenario_defined"
       ],
-      "status": "blocked",
+      "status": "needs_map_selection",
       "reason": "Head-on speed duel can later validate charge/tackle readability on open layouts."
     },
     {
       "scenario_id": "S-001",
       "map": "any/hybrid map",
       "labels": [
-        "blocked_by_gameplay_runtime",
         "map_selection_needed",
         "scenario_defined"
       ],
-      "status": "blocked",
+      "status": "core_loop_simulatable",
       "reason": "Goal-line stand validates preventability once goals and runtime telemetry exist."
     }
   ],

@@ -7,6 +7,7 @@ SCHEMA_VERSION = 1
 
 READINESS_LABELS = {
     "blocked_by_gameplay_runtime",
+    "core_loop_simulatable",
     "map_ready_but_runtime_missing",
     "telemetry_schema_ready_emitter_missing",
     "scenario_defined",
@@ -15,6 +16,12 @@ READINESS_LABELS = {
     "map_analysis_missing",
     "simulation_placeholder_present",
     "simulation_ready_later",
+}
+
+CORE_LOOP_SCENARIOS = {
+    "S-001": "goal/reset slice",
+    "S-005": "swarm/fumble retarget slice",
+    "S-015": "tackle/knockdown chain slice",
 }
 
 INITIAL_TARGETS = [

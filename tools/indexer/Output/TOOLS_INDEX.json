@@ -1,7 +1,7 @@
 {
   "generated_by": "tools/indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-09T00:38:34.874718+00:00",
+  "generated_at": "2026-05-09T00:42:10.562202+00:00",
   "repo_root": ".",
   "warnings": [
     "sbox_scan_truncated_at:4000"
@@ -231,7 +231,7 @@
       "name": "simulation",
       "path": "tools/simulation",
       "readme": "tools/simulation/README.md",
-      "readme_summary": "# Tools/Simulation\n\n`tools/simulation/` is a dry-run readiness layer for future EFT2 simulation work.\n\nIt does not run gameplay simulation, reinforcement learning, physics, bots, or a gameplay runtime. It connects the evidence rails that must exist before those systems can be trusted:\n\n- scenario definitions in `tools/scenario harness/scenarios/`\n- telemetry schemas in `tools/telemetry/events/`\n- metric guardrails in `tools/telemetry/metric_guardrails.json`\n- map analyzer outputs in `maps/<map>/analysis/`\n- virtual perception outputs in `maps/<map>/virtual perception/`\n- per-map placeholders or artifacts in `maps/<map>/simulation/`\n- real inherited evidence such as `lua/game logs/`",
+      "readme_summary": "# Tools/Simulation\n\n`tools/simulation/` is a dry-run readiness layer for EFT2 simulation work.\n\nIt does not run reinforcement learning, bots, or full gameplay parity. It connects the evidence rails that must exist before simulation results can be trusted:\n\n- scenario definitions in `tools/scenario harness/scenarios/`\n- telemetry schemas in `tools/telemetry/events/`\n- metric guardrails in `tools/telemetry/metric_guardrails.json`\n- map analyzer outputs in `maps/<map>/analysis/`\n- virtual perception outputs in `maps/<map>/virtual perception/`\n- per-map placeholders or artifacts in `maps/<map>/simulation/`\n- real inherited evidence such as `lua/game logs/`\n- the playable core-loop runtime under `game/eft2/`\n\nThe current core loop can be treated as a local rule simulation target. Analyzed maps plus virtual perception can guide rule coding and refinement, but real maps are not reported as live simulated environments until they exist as runtime scenes under `game/eft2/`.",
       "python_module_count": 3,
       "python_modules": [
         {

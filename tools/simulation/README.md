@@ -1,8 +1,8 @@
 # Tools/Simulation
 
-`tools/simulation/` is a dry-run readiness layer for future EFT2 simulation work.
+`tools/simulation/` is a dry-run readiness layer for EFT2 simulation work.
 
-It does not run gameplay simulation, reinforcement learning, physics, bots, or a gameplay runtime. It connects the evidence rails that must exist before those systems can be trusted:
+It does not run reinforcement learning, bots, or full gameplay parity. It connects the evidence rails that must exist before simulation results can be trusted:
 
 - scenario definitions in `tools/scenario harness/scenarios/`
 - telemetry schemas in `tools/telemetry/events/`
@@ -11,6 +11,9 @@ It does not run gameplay simulation, reinforcement learning, physics, bots, or a
 - virtual perception outputs in `maps/<map>/virtual perception/`
 - per-map placeholders or artifacts in `maps/<map>/simulation/`
 - real inherited evidence such as `lua/game logs/`
+- the playable core-loop runtime under `game/eft2/`
+
+The current core loop can be treated as a local rule simulation target. Analyzed maps plus virtual perception can guide rule coding and refinement, but real maps are not reported as live simulated environments until they exist as runtime scenes under `game/eft2/`.
 
 ## Commands
 
@@ -36,12 +39,14 @@ The report answers:
 - which map analysis and virtual perception artifacts exist
 - which maps have per-map simulation folders or artifacts
 - which scenario/map pairs are blocked by missing gameplay runtime
+- whether the core-loop test arena can simulate the first playable rule slice
 - which telemetry schemas exist but lack a runtime emitter
 - which scenario/map pairs should be attempted first later
 
 ## Readiness Labels
 
 - `blocked_by_gameplay_runtime`
+- `core_loop_simulatable`
 - `map_ready_but_runtime_missing`
 - `telemetry_schema_ready_emitter_missing`
 - `scenario_defined`
@@ -63,4 +68,4 @@ The initial future targets are:
 
 ## Evidence Limits
 
-Existing map analyzer outputs, real `lua/game logs`, and abstract gameflow artifacts are calibration evidence. They are not executable gameplay simulation. The tool must report blockers honestly until a real gameplay runtime and host-side telemetry emitter exist.
+Existing map analyzer outputs, real `lua/game logs`, and abstract gameflow artifacts are calibration evidence. The core-loop test arena is now the executable local rule target. Real maps remain analysis/virtual-perception refinement inputs until converted into runtime scenes.

@@ -1,7 +1,7 @@
 {
   "generated_by": "tools/contract validator",
   "schema_version": 1,
-  "generated_at": "2026-05-09T00:38:30.131395+00:00",
+  "generated_at": "2026-05-09T00:42:09.554992+00:00",
   "repo_root": ".",
   "contract_ids_defined": [
     "C-001",
@@ -1063,10 +1063,11 @@
       "check": "id_coverage",
       "severity": "ok",
       "id": "S-015",
-      "message": "Contract ID S-015 referenced in 7 file(s).",
+      "message": "Contract ID S-015 referenced in 8 file(s).",
       "referenced_in": [
         "tools/scenario harness/run_scenarios.py",
         "tools/scenario harness/scenarios/S-015_tackle_chain.json",
+        "tools/simulation/schemas.py",
         "tools/telemetry/events/E_001_tackleresolve.json",
         "tools/telemetry/events/E_002_possessiontransfer.json",
         "game/eft2/Code/GameSystem.cs",

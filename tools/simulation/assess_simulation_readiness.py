@@ -21,6 +21,7 @@ if str(HERE) not in sys.path:
 
 from exporters import write_json, write_markdown
 from schemas import (
+    CORE_LOOP_SCENARIOS,
     GENERATOR,
     INITIAL_TARGETS,
     REQUIRED_ANALYSIS_ARTIFACTS,
@@ -162,6 +163,8 @@ def scenario_rows(scenarios: list[dict[str, Any]], events: list[dict[str, Any]],
             labels.append("telemetry_schema_ready_emitter_missing")
         if not runtime_present:
             labels.append("blocked_by_gameplay_runtime")
+        elif scenario.get("id") in CORE_LOOP_SCENARIOS and emitter_present and not missing:
+            labels.append("core_loop_simulatable")
         if scenario.get("simulation_ready") is True and runtime_present and emitter_present and not missing:
             labels.append("simulation_ready_later")
         rows.append({
@@ -182,17 +185,23 @@ def scenario_rows(scenarios: list[dict[str, Any]], events: list[dict[str, Any]],
 
 def gameplay_runtime_status(root: Path) -> dict[str, Any]:
     game_code = root / "game" / "eft2" / "Code"
+    scene = root / "game" / "eft2" / "Assets" / "scenes" / "eft2_core_loop.scene"
+    model = root / "game" / "eft2" / "gameplay_model.md"
+    manual_test = root / "game" / "eft2" / "CORE_LOOP_TEST.md"
     marker_hits = []
     if game_code.is_dir():
         files = {p.name for p in game_code.rglob("*.cs")}
         marker_hits = sorted(marker for marker in RUNTIME_MARKERS if marker in files)
-    present = len(marker_hits) >= 3
+    present = len(marker_hits) >= 3 and scene.exists()
     return {
         "present": present,
         "code_dir": rel(game_code, root),
+        "scene": rel(scene, root) if scene.exists() else None,
+        "gameplay_model": rel(model, root) if model.exists() else None,
+        "manual_test": rel(manual_test, root) if manual_test.exists() else None,
         "marker_hits": marker_hits,
         "missing_markers": [marker for marker in RUNTIME_MARKERS if marker not in marker_hits],
-        "rule": "requires at least three core EFT gameplay runtime markers before scenarios can be executable",
+        "rule": "requires core EFT gameplay runtime markers and the core-loop scene before local core-loop scenarios can be simulated",
     }
 
 
@@ -209,12 +218,60 @@ def telemetry_emitter_status(root: Path) -> dict[str, Any]:
                     text = path.read_text(encoding="utf-8", errors="replace")
                 except OSError:
                     continue
-                if "EmitTelemetry" in text or "TelemetryEmitter" in text or "emit_event" in text:
+                if "EmitTelemetry" in text or "TelemetryEmitter" in text or "emit_event" in text or "TelemetrySink" in text or ".Telemetry.Emit(" in text:
                     candidates.append(rel(path, root))
     return {
         "present": bool(candidates),
         "candidate_files": sorted(candidates),
         "rule": "requires an actual gameplay/runtime emitter, not just telemetry schema validators",
+    }
+
+
+def core_loop_simulation_status(root: Path, runtime: dict[str, Any], emitter: dict[str, Any], scenario_readiness: list[dict[str, Any]]) -> dict[str, Any]:
+    code_dir = root / "game" / "eft2" / "Code"
+    required_events = {
+        "PossessionTransfer",
+        "BallLoose",
+        "BallReset",
+        "PlayerKnockdown",
+        "PlayerRecovered",
+        "GoalScored",
+        "TackleResolve",
+    }
+    event_hits: dict[str, str] = {}
+    if code_dir.is_dir():
+        for path in code_dir.rglob("*.cs"):
+            try:
+                text = path.read_text(encoding="utf-8", errors="replace")
+            except OSError:
+                continue
+            for event in required_events:
+                if event in text and event not in event_hits:
+                    event_hits[event] = rel(path, root)
+
+    missing_events = sorted(required_events - set(event_hits))
+    supported = [
+        row["id"]
+        for row in scenario_readiness
+        if row.get("id") in CORE_LOOP_SCENARIOS and "core_loop_simulatable" in row["labels"]
+    ]
+    map_rule_inputs = []
+    for map_dir in actual_map_dirs(root):
+        analysis = find_child_dir(map_dir, "analysis")
+        virtual = find_child_dir(map_dir, "virtual perception")
+        if analysis.is_dir() and virtual.is_dir():
+            map_rule_inputs.append(rel(map_dir, root))
+
+    can_simulate = runtime["present"] and emitter["present"] and not missing_events
+    return {
+        "can_simulate_core_loop": can_simulate,
+        "scope": "local core-loop rules in the generated test arena; real maps remain analysis/virtual-perception targets until converted into game/eft2 runtime scenes",
+        "supported_scenarios": supported,
+        "scenario_notes": CORE_LOOP_SCENARIOS,
+        "telemetry_events_found": event_hits,
+        "missing_telemetry_events": missing_events,
+        "map_rule_refinement_inputs": map_rule_inputs,
+        "map_rule_refinement_note": "Analyzed maps with virtual perception can guide rule coding and refinement, but the report must not claim live real-map simulation until a runtime scene/map exists.",
     }
 
 
@@ -235,7 +292,14 @@ def candidate_matrix(targets: list[dict[str, str]], scenarios: dict[str, dict[st
             labels.append("map_analysis_missing")
         if not runtime_present:
             labels.append("blocked_by_gameplay_runtime")
-        status = "ready_later_after_runtime" if scenario and map_row and "map_analysis_ready" in map_row["labels"] and runtime_present else "blocked"
+        if scenario and scenario.get("id") in CORE_LOOP_SCENARIOS and runtime_present:
+            status = "core_loop_simulatable"
+        elif scenario and map_row and "map_analysis_ready" in map_row["labels"] and runtime_present:
+            status = "map_rule_refinement_target"
+        elif scenario and map_name.startswith("any/") and runtime_present:
+            status = "needs_map_selection"
+        else:
+            status = "blocked"
         rows.append({
             "scenario_id": sid,
             "map": map_name,
@@ -261,6 +325,7 @@ def build_report(root: Path, map_filter: str | None = None) -> dict[str, Any]:
         map_rows = map_rows_all
 
     scenario_readiness = scenario_rows(scenarios, events, runtime["present"], emitter["present"])
+    core_loop_simulation = core_loop_simulation_status(root, runtime, emitter, scenario_readiness)
     scenario_by_id = {row["id"]: row for row in scenario_readiness if row.get("id")}
     map_by_name = {normalize(row["map"]): row for row in map_rows_all}
     matrix = candidate_matrix(INITIAL_TARGETS, scenario_by_id, map_by_name, runtime["present"])
@@ -274,6 +339,8 @@ def build_report(root: Path, map_filter: str | None = None) -> dict[str, Any]:
         blockers.append({"id": "gameplay_runtime_missing", "message": "No executable EFT gameplay runtime was detected under game/eft2/Code."})
     if not emitter["present"]:
         blockers.append({"id": "telemetry_emitter_missing", "message": "Telemetry schemas exist, but no gameplay/runtime emitter was detected."})
+    if runtime["present"] and emitter["present"]:
+        blockers.append({"id": "real_map_runtime_scene_missing", "message": "Core-loop rules can be simulated in the test arena, but analyzed real maps are not converted into runtime scenes yet."})
 
     report = {
         "generated_by": GENERATOR,
@@ -294,9 +361,11 @@ def build_report(root: Path, map_filter: str | None = None) -> dict[str, Any]:
             "reported_map_analysis_ready": sum(1 for row in map_rows if "map_analysis_ready" in row["labels"]),
             "gameplay_runtime_present": runtime["present"],
             "telemetry_emitter_present": emitter["present"],
+            "core_loop_simulatable": core_loop_simulation["can_simulate_core_loop"],
         },
         "gameplay_runtime": runtime,
         "telemetry_emitter": emitter,
+        "core_loop_simulation": core_loop_simulation,
         "metric_guardrails_present": (root / "tools" / "telemetry" / "metric_guardrails.json").exists(),
         "blockers": blockers,
         "scenario_readiness": scenario_readiness,

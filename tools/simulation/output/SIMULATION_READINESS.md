@@ -12,64 +12,72 @@ This is a readiness report, not simulation output. It does not claim any scenari
 - map-analysis-ready maps: 15
 - reported maps in this run: 15
 - reported map-analysis-ready maps: 15
-- runtime present: False
-- telemetry emitter present: False
+- runtime present: True
+- telemetry emitter present: True
+- core loop simulatable: True
 
 ## Blockers
 
-- `gameplay_runtime_missing`: No executable EFT gameplay runtime was detected under game/eft2/Code.
-- `telemetry_emitter_missing`: Telemetry schemas exist, but no gameplay/runtime emitter was detected.
+- `real_map_runtime_scene_missing`: Core-loop rules can be simulated in the test arena, but analyzed real maps are not converted into runtime scenes yet.
+
+## Core Loop Simulation
+
+- can simulate core loop: True
+- scope: local core-loop rules in the generated test arena; real maps remain analysis/virtual-perception targets until converted into game/eft2 runtime scenes
+- supported scenario slices: `S-001`, `S-005`, `S-015`
+- missing core telemetry events: none
+- map/rule refinement note: Analyzed maps with virtual perception can guide rule coding and refinement, but the report must not claim live real-map simulation until a runtime scene/map exists.
 
 ## Scenario Readiness
 
-- `S-001` Goal-Line Stand: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-002` Panic Short Pass: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-003` Long Throw Recovery: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-004` Jump-Flung Fumble: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-005` Swarm Collapse: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-006` Midfield Collection: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-007` Escort Clearing: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-008` Intentional Hazard Reset: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-009` Head-On Speed Duel: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-010` Last-Second Touchdown Stop: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-011` Loose Ball Bounce: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-012` Respawn Rejoin: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-013` Choke Corridor Fight: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-014` Score Counter-Attack: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-015` Tackle Chain: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-016` Goal-Line Intercept: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-017` Mid-Air Catch / Pickup: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-018` Powerup Route: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-019` Carrier Juke: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-020` Bot Positioning: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-021` Slam Dunk Hoop Decision: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
-- `S-022` Bloodbowl Flat Swarm: `scenario_defined`, `telemetry_schema_ready_emitter_missing`, `blocked_by_gameplay_runtime`
+- `S-001` Goal-Line Stand: `scenario_defined`, `core_loop_simulatable`
+- `S-002` Panic Short Pass: `scenario_defined`
+- `S-003` Long Throw Recovery: `scenario_defined`
+- `S-004` Jump-Flung Fumble: `scenario_defined`
+- `S-005` Swarm Collapse: `scenario_defined`, `core_loop_simulatable`
+- `S-006` Midfield Collection: `scenario_defined`
+- `S-007` Escort Clearing: `scenario_defined`
+- `S-008` Intentional Hazard Reset: `scenario_defined`
+- `S-009` Head-On Speed Duel: `scenario_defined`
+- `S-010` Last-Second Touchdown Stop: `scenario_defined`
+- `S-011` Loose Ball Bounce: `scenario_defined`
+- `S-012` Respawn Rejoin: `scenario_defined`
+- `S-013` Choke Corridor Fight: `scenario_defined`
+- `S-014` Score Counter-Attack: `scenario_defined`
+- `S-015` Tackle Chain: `scenario_defined`, `core_loop_simulatable`
+- `S-016` Goal-Line Intercept: `scenario_defined`
+- `S-017` Mid-Air Catch / Pickup: `scenario_defined`
+- `S-018` Powerup Route: `scenario_defined`
+- `S-019` Carrier Juke: `scenario_defined`
+- `S-020` Bot Positioning: `scenario_defined`
+- `S-021` Slam Dunk Hoop Decision: `scenario_defined`
+- `S-022` Bloodbowl Flat Swarm: `scenario_defined`
 
 ## Map Readiness
 
-- `Baseball Dash`: `map_analysis_ready`, `simulation_placeholder_present`, `map_ready_but_runtime_missing`
-- `Big Metal`: `map_analysis_ready`, `simulation_placeholder_present`, `map_ready_but_runtime_missing`
-- `Bloodbowl`: `map_analysis_ready`, `simulation_placeholder_present`, `map_ready_but_runtime_missing`
-- `Chamber`: `map_analysis_ready`, `simulation_placeholder_present`, `map_ready_but_runtime_missing`
-- `Cosmic Arena`: `map_analysis_ready`, `simulation_placeholder_present`, `map_ready_but_runtime_missing`
-- `Legoland`: `map_analysis_ready`, `simulation_placeholder_present`, `map_ready_but_runtime_missing`
-- `Mini Putt`: `map_analysis_ready`, `simulation_placeholder_present`, `map_ready_but_runtime_missing`
-- `Sky Metal`: `map_analysis_ready`, `simulation_placeholder_present`, `map_ready_but_runtime_missing`
-- `Skyline`: `map_analysis_ready`, `simulation_placeholder_present`, `map_ready_but_runtime_missing`
-- `Skystep`: `map_analysis_ready`, `simulation_placeholder_present`, `map_ready_but_runtime_missing`
-- `Slam Dunk`: `map_analysis_ready`, `simulation_placeholder_present`, `map_ready_but_runtime_missing`
-- `Soccer`: `map_analysis_ready`, `simulation_placeholder_present`, `map_ready_but_runtime_missing`
-- `Space Jump`: `map_analysis_ready`, `simulation_placeholder_present`, `map_ready_but_runtime_missing`
-- `Temple Sacrifice`: `map_analysis_ready`, `simulation_placeholder_present`, `map_ready_but_runtime_missing`
-- `Tunnel`: `map_analysis_ready`, `simulation_placeholder_present`, `map_ready_but_runtime_missing`
+- `Baseball Dash`: `map_analysis_ready`, `simulation_placeholder_present`, `simulation_ready_later`
+- `Big Metal`: `map_analysis_ready`, `simulation_placeholder_present`, `simulation_ready_later`
+- `Bloodbowl`: `map_analysis_ready`, `simulation_placeholder_present`, `simulation_ready_later`
+- `Chamber`: `map_analysis_ready`, `simulation_placeholder_present`, `simulation_ready_later`
+- `Cosmic Arena`: `map_analysis_ready`, `simulation_placeholder_present`, `simulation_ready_later`
+- `Legoland`: `map_analysis_ready`, `simulation_placeholder_present`, `simulation_ready_later`
+- `Mini Putt`: `map_analysis_ready`, `simulation_placeholder_present`, `simulation_ready_later`
+- `Sky Metal`: `map_analysis_ready`, `simulation_placeholder_present`, `simulation_ready_later`
+- `Skyline`: `map_analysis_ready`, `simulation_placeholder_present`, `simulation_ready_later`
+- `Skystep`: `map_analysis_ready`, `simulation_placeholder_present`, `simulation_ready_later`
+- `Slam Dunk`: `map_analysis_ready`, `simulation_placeholder_present`, `simulation_ready_later`
+- `Soccer`: `map_analysis_ready`, `simulation_placeholder_present`, `simulation_ready_later`
+- `Space Jump`: `map_analysis_ready`, `simulation_placeholder_present`, `simulation_ready_later`
+- `Temple Sacrifice`: `map_analysis_ready`, `simulation_placeholder_present`, `simulation_ready_later`
+- `Tunnel`: `map_analysis_ready`, `simulation_placeholder_present`, `simulation_ready_later`
 
 ## Recommended First Targets
 
-- `S-021` on `Slam Dunk`: blocked - Hoop/throw/slam route pressure needs map intelligence before runtime tests.
-- `S-022` on `Bloodbowl`: blocked - Flat open-field swarm is the cleanest full-gameplay feel benchmark.
-- `S-005` on `Bloodbowl`: blocked - Swarm collapse maps directly to Bloodbowl's open-field convergence.
-- `S-009` on `any/open map`: blocked - Head-on speed duel can later validate charge/tackle readability on open layouts.
-- `S-001` on `any/hybrid map`: blocked - Goal-line stand validates preventability once goals and runtime telemetry exist.
+- `S-021` on `Slam Dunk`: map_rule_refinement_target - Hoop/throw/slam route pressure needs map intelligence before runtime tests.
+- `S-022` on `Bloodbowl`: map_rule_refinement_target - Flat open-field swarm is the cleanest full-gameplay feel benchmark.
+- `S-005` on `Bloodbowl`: core_loop_simulatable - Swarm collapse maps directly to Bloodbowl's open-field convergence.
+- `S-009` on `any/open map`: needs_map_selection - Head-on speed duel can later validate charge/tackle readability on open layouts.
+- `S-001` on `any/hybrid map`: core_loop_simulatable - Goal-line stand validates preventability once goals and runtime telemetry exist.
 
 ## Evidence Limits
 

@@ -30,6 +30,7 @@ def render_markdown(report: dict[str, Any]) -> str:
         f"- reported map-analysis-ready maps: {summary['reported_map_analysis_ready']}",
         f"- runtime present: {summary['gameplay_runtime_present']}",
         f"- telemetry emitter present: {summary['telemetry_emitter_present']}",
+        f"- core loop simulatable: {summary.get('core_loop_simulatable', False)}",
         "",
         "## Blockers",
         "",
@@ -38,6 +39,16 @@ def render_markdown(report: dict[str, Any]) -> str:
         lines.append(f"- `{blocker['id']}`: {blocker['message']}")
     if not report["blockers"]:
         lines.append("- none")
+
+    core = report.get("core_loop_simulation") or {}
+    lines.extend(["", "## Core Loop Simulation", ""])
+    lines.append(f"- can simulate core loop: {core.get('can_simulate_core_loop', False)}")
+    lines.append(f"- scope: {core.get('scope', 'not assessed')}")
+    supported = core.get("supported_scenarios") or []
+    lines.append(f"- supported scenario slices: {', '.join(f'`{item}`' for item in supported) if supported else 'none'}")
+    missing_events = core.get("missing_telemetry_events") or []
+    lines.append(f"- missing core telemetry events: {', '.join(f'`{item}`' for item in missing_events) if missing_events else 'none'}")
+    lines.append(f"- map/rule refinement note: {core.get('map_rule_refinement_note', 'not assessed')}")
 
     lines.extend(["", "## Scenario Readiness", ""])
     for row in report["scenario_readiness"]:
