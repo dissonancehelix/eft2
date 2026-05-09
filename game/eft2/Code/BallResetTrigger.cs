@@ -8,6 +8,9 @@ public sealed class BallResetTrigger : Component, Component.ITriggerListener
 		var ball = other.GameObject.Components.Get<Ball>( FindMode.InAncestors );
 		if ( ball.IsValid() )
 		{
+			// EFT2 LINKS:
+			// Mechanics: M-160
+			// Concepts: C-011
 			GameSystem.Current?.ResetBall( "fall_trigger" );
 			return;
 		}

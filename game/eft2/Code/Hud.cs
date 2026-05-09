@@ -21,7 +21,9 @@ public sealed class Hud : Component
 		hud.DrawText( $"{game.blue_bulls_score} BULLS", 24.0f, Color.White, new Rect( width * 0.5f + 84.0f, Screen.Height - 82.0f, 132.0f, 40.0f ), TextFlag.Center );
 		hud.DrawText( "EFT2 CORE LOOP", 18.0f, Color.White.WithAlpha( 0.8f ), new Rect( width * 0.5f - 70.0f, Screen.Height - 76.0f, 140.0f, 24.0f ), TextFlag.Center );
 
-		var local = game.Players.FirstOrDefault( p => p.IsValid() && p.Network.Owner == Connection.Local );
+		var local = game.Players.FirstOrDefault( p => p.IsValid() && p.Network.Owner == Connection.Local )
+			?? game.Players.FirstOrDefault( p => p.IsValid() && !p.IsProxy )
+			?? game.Players.FirstOrDefault( p => p.IsValid() );
 		var carrier = game.Ball?.Carrier;
 		var carrierText = carrier.IsValid() ? $"{GameSystem.DisplayTeamName( carrier.Team )} carrier: {carrier.DisplayName}" : "Ball loose";
 		var localText = local.IsValid()

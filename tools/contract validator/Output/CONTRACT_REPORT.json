@@ -1,7 +1,7 @@
 {
   "generated_by": "tools/contract validator",
   "schema_version": 1,
-  "generated_at": "2026-05-08T19:58:40.645306+00:00",
+  "generated_at": "2026-05-09T00:38:30.131395+00:00",
   "repo_root": ".",
   "contract_ids_defined": [
     "C-001",
@@ -285,7 +285,7 @@
       "check": "id_coverage",
       "severity": "ok",
       "id": "C-011",
-      "message": "Contract ID C-011 referenced in 11 file(s).",
+      "message": "Contract ID C-011 referenced in 12 file(s).",
       "referenced_in": [
         "tools/contract validator/validate_contract.py",
         "tools/telemetry/events/E_001_tackleresolve.json",
@@ -294,6 +294,7 @@
         "tools/telemetry/events/E_014_routebreakout.json",
         "tools/telemetry/metric_guardrails.json",
         "game/eft2/Code/Ball.cs",
+        "game/eft2/Code/BallResetTrigger.cs",
         "game/eft2/Code/GameSystem.cs",
         "game/eft2/Code/GoalTrigger.cs",
         "game/eft2/Code/PlayerMovement.cs",
@@ -431,9 +432,10 @@
       "check": "id_coverage",
       "severity": "ok",
       "id": "M-160",
-      "message": "Contract ID M-160 referenced in 5 file(s).",
+      "message": "Contract ID M-160 referenced in 6 file(s).",
       "referenced_in": [
         "game/eft2/Code/Ball.cs",
+        "game/eft2/Code/BallResetTrigger.cs",
         "game/eft2/Code/GameSystem.cs",
         "lua/EFT.md",
         "lua/gamemode/cl_manifest_data.lua",
@@ -1270,6 +1272,7 @@
         "tools/telemetry/event_schema.md",
         "tools/telemetry/events/E_005_playerknockdown.json",
         "game/eft2/Code/PlayerMovement.cs",
+        "game/eft2/CORE_LOOP_TEST.md",
         "game/eft2/gameplay_model.md",
         "lua/EFT.md",
         "lua/gamemode/cl_manifest_data.lua",
