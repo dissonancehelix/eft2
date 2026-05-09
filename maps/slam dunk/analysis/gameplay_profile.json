@@ -1,10 +1,10 @@
 {
-  "generated_by": "Tools/Map Analyzer",
+  "generated_by": "tools/map analyzer",
   "schema_version": 1,
-  "map": "Slam Dunk",
-  "source_vmf": "Maps/Slam Dunk/Slam Dunk.vmf",
-  "original_filename": "eft_slamdunk_v6.vmf",
-  "generated_at": "2026-05-08T15:27:14.689573+00:00",
+  "map": "slam dunk",
+  "source_vmf": "maps/slam dunk/Slam Dunk.vmf",
+  "original_filename": null,
+  "generated_at": "2026-05-09T01:02:55.116028+00:00",
   "tags": [
     "hazard_regulated",
     "jump_pad_route",
@@ -31,7 +31,6 @@
     "note": "Initial README constants only; route/intercept estimates are pending Recast integration."
   },
   "confidence_notes": [
-    "Slam Dunk validation expects basketball/hoop scoring, vertical routes, powerup tempo, and movement-assisted scoring only when supported by extracted data.",
     "Multiple raw trigger_goal entities require semantic grouping before claiming real scoring structure.",
     "Vertical/platform claims are approximate until Recast or stronger geometry analysis is active."
   ],

@@ -1,4 +1,4 @@
-# Recast-friendly brush-plane triangle geometry for Tunnel
+# Recast-friendly brush-plane triangle geometry for tunnel
 v -2048.0 -3072.0 -720.0
 v -2048.0 -3072.0 -752.0
 v -2048.0 -5120.0 -752.0

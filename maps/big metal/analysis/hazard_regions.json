@@ -1,9 +1,9 @@
 {
-  "generated_by": "Tools/Map Analyzer",
+  "generated_by": "tools/map analyzer",
   "schema_version": 1,
-  "map": "Big Metal",
-  "source_vmf": "Maps/Big Metal/Big Metal.vmf",
-  "original_filename": "eft_big_metal03r1_d.vmf",
-  "generated_at": "2026-05-08T15:27:09.349549+00:00",
+  "map": "big metal",
+  "source_vmf": "maps/big metal/Big Metal.vmf",
+  "original_filename": null,
+  "generated_at": "2026-05-09T01:02:44.059283+00:00",
   "hazard_regions": []
 }

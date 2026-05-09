@@ -1,4 +1,4 @@
-# Legoland Abstract Gameflow Simulation
+# legoland Abstract Gameflow Simulation
 
 This is coarse gameplay telemetry, not a physics replay.
 

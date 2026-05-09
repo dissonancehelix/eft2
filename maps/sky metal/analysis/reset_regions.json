@@ -1,10 +1,10 @@
 {
-  "generated_by": "Tools/Map Analyzer",
+  "generated_by": "tools/map analyzer",
   "schema_version": 1,
-  "map": "Sky Metal",
-  "source_vmf": "Maps/Sky Metal/Sky Metal.vmf",
-  "original_filename": "eft_sky_metal_v2.vmf",
-  "generated_at": "2026-05-08T15:27:13.673374+00:00",
+  "map": "sky metal",
+  "source_vmf": "maps/sky metal/Sky Metal.vmf",
+  "original_filename": null,
+  "generated_at": "2026-05-09T01:02:52.638625+00:00",
   "reset_regions": [
     {
       "id": "reset_region_1",

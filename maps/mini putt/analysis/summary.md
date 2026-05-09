@@ -1,4 +1,4 @@
-# Mini Putt Summary
+# mini putt Summary
 
 Generated analysis summary. This is not hand-authored canon.
 

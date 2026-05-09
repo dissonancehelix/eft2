@@ -1,0 +1,190 @@
+# tunnel Brushwork Perception
+
+Generated from VMF world brushes and brush entities. This is a Hammer-like geometry read, not hand-authored canon.
+
+## Summary
+
+- world solids: 548
+- brush entity solids: 1769
+- reconstructed solids: 2317
+- surfaces: 13749
+- floor surfaces: 1951
+- ramp surfaces: 1400
+- wall surfaces: 7055
+- platform candidates: 599
+- brush entity classes: {'func_brush': 21, 'func_detail': 1624, 'func_illusionary': 18, 'func_rotating': 24, 'trigger_abspush': 8, 'trigger_ballreset': 36, 'trigger_goal': 2, 'trigger_hurt': 36}
+
+## Ramp Surfaces
+
+- solid `7120` func_detail center (-1259.0, -4435.4, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `7120` func_detail center (-1252.8, -4418.7, -588.0) slope 36.1 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `7273` func_detail center (844.0, -3694.0, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `7273` func_detail center (836.0, -3678.0, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `7342` func_detail center (-332.0, -4498.0, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `7342` func_detail center (-324.0, -4514.0, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `7557` func_detail center (-996.0, -4498.0, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `7557` func_detail center (-1004.0, -4514.0, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `7646` func_detail center (1252.8, -4418.6, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `7646` func_detail center (1259.0, -4435.4, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `8478` func_detail center (996.0, -3694.0, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `8478` func_detail center (1004.0, -3678.0, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `8697` func_detail center (1356.4, -4307.5, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `8697` func_detail center (1373.6, -4312.5, -588.0) slope 38.6 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `8787` func_detail center (844.0, -4498.0, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `8787` func_detail center (836.0, -4514.0, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `8925` func_detail center (332.0, -4498.0, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `8925` func_detail center (324.0, -4514.0, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `9204` func_detail center (484.0, -3694.0, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `9204` func_detail center (492.0, -3678.0, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `9518` func_detail center (-1259.0, -3756.6, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `9518` func_detail center (-1252.8, -3773.3, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `10479` func_detail center (1004.0, -4514.0, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `10479` func_detail center (996.0, -4498.0, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `10959` func_detail center (-1356.5, -4307.5, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `10959` func_detail center (-1373.6, -4312.5, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `11000` func_detail center (-484.0, -4498.0, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `11000` func_detail center (-492.0, -4514.0, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `11027` func_detail center (492.0, -4514.0, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `11027` func_detail center (484.0, -4498.0, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `11034` func_detail center (-996.0, -3694.0, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `11034` func_detail center (-1004.0, -3678.0, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `11055` func_detail center (-1373.6, -3879.5, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `11055` func_detail center (-1356.5, -3884.5, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `11766` func_detail center (1252.8, -3773.4, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `11766` func_detail center (1259.1, -3756.6, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `11969` func_detail center (-332.0, -3694.0, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `11969` func_detail center (-324.0, -3678.0, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+- solid `12141` func_detail center (-484.0, -3694.0, -588.0) slope 36.0 deg material `MAPS/XFT_TUNNEL/TRIM03`
+- solid `12141` func_detail center (-492.0, -3678.0, -588.0) slope 38.7 deg material `MAPS/XFT_TUNNEL/TRIM02`
+
+## Platform Candidates
+
+- solid `2` worldspawn center (0.0, -4096.0, -736.0) size (4096.0, 2048.0, 32.0) top_z -720.0
+- solid `10055` func_detail center (1320.7, -3813.9, -580.0) size (124.0, 124.8, 56.0) top_z -552.0
+- solid `11532` func_detail center (-1320.7, -3813.9, -580.0) size (124.0, 124.8, 56.0) top_z -552.0
+- solid `9581` func_detail center (1320.7, -4378.1, -580.0) size (124.0, 124.8, 56.0) top_z -552.0
+- solid `10201` func_detail center (-1320.7, -4378.1, -580.0) size (124.0, 124.8, 56.0) top_z -552.0
+- solid `10909` func_detail center (-1358.7, -3778.5, -532.0) size (118.1, 119.3, 72.0) top_z -496.0
+- solid `7981` func_detail center (1358.7, -3778.5, -532.0) size (118.1, 119.3, 72.0) top_z -496.0
+- solid `9427` func_detail center (1358.7, -4413.5, -532.0) size (118.1, 119.3, 72.0) top_z -496.0
+- solid `9280` func_detail center (-1358.7, -4413.5, -532.0) size (118.1, 119.3, 72.0) top_z -496.0
+- solid `7190` func_detail center (0.0, -4752.0, -488.0) size (448.0, 224.0, 160.0) top_z -408.0
+- solid `7836` func_detail center (0.0, -3440.0, -488.0) size (448.0, 224.0, 160.0) top_z -408.0
+- solid `7162` func_detail center (1511.1, -4497.2, -368.0) size (246.2, 234.4, 64.0) top_z -336.0
+- solid `7245` func_detail center (1576.2, -3792.8, -368.0) size (256.4, 214.4, 64.0) top_z -336.0
+- solid `7377` func_detail center (1096.9, -4715.2, -368.0) size (145.8, 230.4, 64.0) top_z -336.0
+- solid `7426` func_detail center (640.0, -3478.0, -368.0) size (768.0, 212.0, 64.0) top_z -336.0
+- solid `7529` func_detail center (-1619.1, -3905.6, -368.0) size (246.2, 180.8, 64.0) top_z -336.0
+- solid `7702` func_detail center (-1214.4, -4691.1, -368.0) size (180.8, 246.2, 64.0) top_z -336.0
+- solid `7822` func_detail center (-1425.2, -3608.9, -368.0) size (234.4, 246.2, 64.0) top_z -336.0
+- solid `7842` func_detail center (1327.2, -3543.8, -368.0) size (214.4, 256.4, 64.0) top_z -336.0
+- solid `7898` func_detail center (1425.2, -3608.9, -368.0) size (234.4, 246.2, 64.0) top_z -336.0
+- solid `7988` func_detail center (-1643.2, -4023.1, -368.0) size (230.4, 145.8, 64.0) top_z -336.0
+- solid `8180` func_detail center (-1576.2, -4399.2, -368.0) size (256.4, 214.4, 64.0) top_z -336.0
+- solid `8360` func_detail center (1643.2, -4023.1, -368.0) size (230.4, 145.8, 64.0) top_z -336.0
+- solid `8395` func_detail center (-1096.9, -4715.2, -368.0) size (145.8, 230.4, 64.0) top_z -336.0
+- solid `8843` func_detail center (-640.0, -4714.0, -368.0) size (768.0, 212.0, 64.0) top_z -336.0
+- solid `9078` func_detail center (-1425.2, -4583.1, -368.0) size (234.4, 246.2, 64.0) top_z -336.0
+- solid `9252` func_detail center (1619.1, -3905.6, -368.0) size (246.2, 180.8, 64.0) top_z -336.0
+- solid `9336` func_detail center (1096.9, -3476.8, -368.0) size (145.8, 230.4, 64.0) top_z -336.0
+- solid `9413` func_detail center (-1619.1, -4286.4, -368.0) size (246.2, 180.8, 64.0) top_z -336.0
+- solid `10187` func_detail center (1619.1, -4286.4, -368.0) size (246.2, 180.8, 64.0) top_z -336.0
+- solid `10337` func_detail center (1511.1, -3694.8, -368.0) size (246.2, 234.4, 64.0) top_z -336.0
+- solid `10539` func_detail center (1214.4, -3500.9, -368.0) size (180.8, 246.2, 64.0) top_z -336.0
+- solid `10765` func_detail center (1643.2, -4168.9, -368.0) size (230.4, 145.8, 64.0) top_z -336.0
+- solid `11185` func_detail center (-1576.2, -3792.8, -368.0) size (256.4, 214.4, 64.0) top_z -336.0
+- solid `11649` func_detail center (1327.2, -4648.2, -368.0) size (214.4, 256.4, 64.0) top_z -336.0
+- solid `11787` func_detail center (-1511.1, -3694.8, -368.0) size (246.2, 234.4, 64.0) top_z -336.0
+- solid `11892` func_detail center (-1643.2, -4168.9, -368.0) size (230.4, 145.8, 64.0) top_z -336.0
+- solid `12148` func_detail center (1425.2, -4583.1, -368.0) size (234.4, 246.2, 64.0) top_z -336.0
+- solid `12217` func_detail center (640.0, -4714.0, -368.0) size (768.0, 212.0, 64.0) top_z -336.0
+- solid `12231` func_detail center (1576.2, -4399.2, -368.0) size (256.4, 214.4, 64.0) top_z -336.0
+
+## Brush Entities
+
+- `trigger_hurt` solid `5238` entity `174699` name `` center (-2892.0, 0.0, 1016.0) mesh `ok`
+- `func_brush` solid `4471` entity `167608` name `` center (-383.6, -639.7, 210.6) mesh `ok`
+- `func_brush` solid `4485` entity `171219` name `` center (383.6, -639.7, 210.6) mesh `ok`
+- `func_brush` solid `4499` entity `171243` name `` center (383.6, 639.7, 210.6) mesh `ok`
+- `func_brush` solid `4513` entity `171267` name `` center (-383.6, 639.7, 210.6) mesh `ok`
+- `func_brush` solid `4520` entity `175449` name `` center (-2687.8, 337.1, 366.6) mesh `ok`
+- `trigger_abspush` solid `4527` entity `175525` name `` center (-2688.0, 337.0, 367.0) mesh `ok`
+- `func_brush` solid `4534` entity `175446` name `` center (-2688.0, 337.0, 367.0) mesh `ok`
+- `trigger_abspush` solid `4548` entity `175772` name `` center (-2688.0, -337.0, 367.0) mesh `ok`
+- `func_brush` solid `4555` entity `175774` name `` center (-2688.0, -337.0, 367.0) mesh `ok`
+- `func_brush` solid `4562` entity `175861` name `` center (2687.8, 337.1, 366.6) mesh `ok`
+- `trigger_abspush` solid `4569` entity `175864` name `` center (2688.0, 337.0, 367.0) mesh `ok`
+- `func_brush` solid `4576` entity `175866` name `` center (2688.0, 337.0, 367.0) mesh `ok`
+- `func_brush` solid `4583` entity `175872` name `` center (2687.8, -337.1, 366.6) mesh `ok`
+- `trigger_abspush` solid `4590` entity `175875` name `` center (2688.0, -337.0, 367.0) mesh `ok`
+- `func_brush` solid `4597` entity `175877` name `` center (2688.0, -337.0, 367.0) mesh `ok`
+- `func_brush` solid `4604` entity `99595` name `` center (1704.0, -4096.0, 0.0) mesh `ok`
+- `func_brush` solid `4611` entity `150702` name `` center (-0.0, 0.0, 1056.0) mesh `ok`
+- `func_brush` solid `4630` entity `151122` name `` center (-1704.0, -4096.0, 0.0) mesh `ok`
+- `func_illusionary` solid `4637` entity `162415` name `side1_spawn_lasers` center (-2895.5, 0.0, 729.0) mesh `ok`
+- `func_illusionary` solid `4644` entity `162415` name `side1_spawn_lasers` center (-2895.5, 0.0, 777.0) mesh `ok`
+- `func_illusionary` solid `4651` entity `162415` name `side1_spawn_lasers` center (-2895.5, 0.0, 825.0) mesh `ok`
+- `func_illusionary` solid `4658` entity `162415` name `side1_spawn_lasers` center (-2895.5, 0.0, 873.0) mesh `ok`
+- `func_illusionary` solid `4665` entity `162415` name `side1_spawn_lasers` center (-2895.5, 0.0, 921.0) mesh `ok`
+- `func_illusionary` solid `4672` entity `164696` name `side1_goal_lasers` center (-1352.5, 0.0, 468.0) mesh `ok`
+- `func_illusionary` solid `4679` entity `164696` name `side1_goal_lasers` center (-1352.5, 0.0, 420.0) mesh `ok`
+- `func_illusionary` solid `4686` entity `164696` name `side1_goal_lasers` center (-1352.5, 0.0, 372.0) mesh `ok`
+- `func_illusionary` solid `4693` entity `164696` name `side1_goal_lasers` center (-1352.5, 0.0, 324.0) mesh `ok`
+- `func_illusionary` solid `4700` entity `165474` name `side2_spawn_lasers` center (2896.5, 0.0, 729.0) mesh `ok`
+- `func_illusionary` solid `4707` entity `165474` name `side2_spawn_lasers` center (2896.5, 0.0, 777.0) mesh `ok`
+- `func_illusionary` solid `4714` entity `165474` name `side2_spawn_lasers` center (2896.5, 0.0, 825.0) mesh `ok`
+- `func_illusionary` solid `4721` entity `165474` name `side2_spawn_lasers` center (2896.5, 0.0, 873.0) mesh `ok`
+- `func_illusionary` solid `4728` entity `165474` name `side2_spawn_lasers` center (2896.5, 0.0, 921.0) mesh `ok`
+- `func_illusionary` solid `4735` entity `165501` name `side2_goal_lasers` center (1352.5, 0.0, 468.0) mesh `ok`
+- `func_illusionary` solid `4742` entity `165501` name `side2_goal_lasers` center (1352.5, 0.0, 420.0) mesh `ok`
+- `func_illusionary` solid `4749` entity `165501` name `side2_goal_lasers` center (1352.5, 0.0, 372.0) mesh `ok`
+- `func_illusionary` solid `4756` entity `165501` name `side2_goal_lasers` center (1352.5, 0.0, 324.0) mesh `ok`
+- `func_brush` solid `4763` entity `167611` name `` center (-384.0, -640.0, 210.6) mesh `ok`
+- `trigger_abspush` solid `4770` entity `170854` name `` center (-384.0, -640.0, 210.6) mesh `ok`
+- `func_brush` solid `4777` entity `171222` name `` center (384.0, -640.0, 210.6) mesh `ok`
+- `trigger_abspush` solid `4784` entity `171225` name `` center (384.0, -640.0, 210.6) mesh `ok`
+- `func_brush` solid `4791` entity `171246` name `` center (384.0, 640.0, 210.6) mesh `ok`
+- `trigger_abspush` solid `4798` entity `171249` name `` center (384.0, 640.0, 210.6) mesh `ok`
+- `func_brush` solid `4805` entity `171270` name `` center (-384.0, 640.0, 210.6) mesh `ok`
+- `trigger_abspush` solid `4812` entity `171273` name `` center (-384.0, 640.0, 210.6) mesh `ok`
+- `trigger_hurt` solid `4819` entity `173623` name `` center (1351.5, -48.0, 473.5) mesh `ok`
+- `trigger_hurt` solid `4825` entity `173623` name `` center (1351.5, -47.0, 482.5) mesh `ok`
+- `trigger_hurt` solid `4831` entity `173623` name `` center (1351.5, -44.5, 490.5) mesh `ok`
+- `trigger_hurt` solid `4837` entity `173623` name `` center (1351.5, -40.0, 498.0) mesh `ok`
+- `trigger_hurt` solid `4843` entity `173623` name `` center (1351.5, -34.0, 504.0) mesh `ok`
+- `trigger_hurt` solid `4849` entity `173623` name `` center (1351.5, -26.5, 508.5) mesh `ok`
+- `trigger_hurt` solid `4855` entity `173623` name `` center (1351.5, -18.5, 511.0) mesh `ok`
+- `trigger_hurt` solid `4861` entity `173623` name `` center (1351.5, -9.5, 512.0) mesh `ok`
+- `trigger_hurt` solid `4867` entity `173623` name `` center (1351.5, 9.5, 512.0) mesh `ok`
+- `trigger_hurt` solid `4873` entity `173623` name `` center (1351.5, 18.5, 511.0) mesh `ok`
+- `trigger_hurt` solid `4879` entity `173623` name `` center (1351.5, 26.5, 508.5) mesh `ok`
+- `trigger_hurt` solid `4885` entity `173623` name `` center (1351.5, 34.0, 504.0) mesh `ok`
+- `trigger_hurt` solid `4891` entity `173623` name `` center (1351.5, 40.0, 498.0) mesh `ok`
+- `trigger_hurt` solid `4897` entity `173623` name `` center (1351.5, 44.5, 490.5) mesh `ok`
+- `trigger_hurt` solid `4903` entity `173623` name `` center (1351.5, 47.0, 482.5) mesh `ok`
+- `trigger_hurt` solid `4909` entity `173623` name `` center (1351.5, 48.0, 473.5) mesh `ok`
+- `trigger_hurt` solid `4915` entity `173623` name `` center (1351.5, 0.0, 384.0) mesh `ok`
+- `trigger_ballreset` solid `4922` entity `173814` name `` center (-1352.0, -48.0, 473.5) mesh `ok`
+- `trigger_ballreset` solid `4928` entity `173814` name `` center (-1352.0, -47.0, 482.5) mesh `ok`
+- `trigger_ballreset` solid `4934` entity `173814` name `` center (-1352.0, -44.5, 490.5) mesh `ok`
+- `trigger_ballreset` solid `4940` entity `173814` name `` center (-1352.0, -40.0, 498.0) mesh `ok`
+- `trigger_ballreset` solid `4946` entity `173814` name `` center (-1352.0, -34.0, 504.0) mesh `ok`
+- `trigger_ballreset` solid `4952` entity `173814` name `` center (-1352.0, -26.5, 508.5) mesh `ok`
+- `trigger_ballreset` solid `4958` entity `173814` name `` center (-1352.0, -18.5, 511.0) mesh `ok`
+- `trigger_ballreset` solid `4964` entity `173814` name `` center (-1352.0, -9.5, 512.0) mesh `ok`
+- `trigger_ballreset` solid `4970` entity `173814` name `` center (-1352.0, 9.5, 512.0) mesh `ok`
+- `trigger_ballreset` solid `4976` entity `173814` name `` center (-1352.0, 18.5, 511.0) mesh `ok`
+- `trigger_ballreset` solid `4982` entity `173814` name `` center (-1352.0, 26.5, 508.5) mesh `ok`
+- `trigger_ballreset` solid `4988` entity `173814` name `` center (-1352.0, 34.0, 504.0) mesh `ok`
+- `trigger_ballreset` solid `4994` entity `173814` name `` center (-1352.0, 40.0, 498.0) mesh `ok`
+- `trigger_ballreset` solid `5000` entity `173814` name `` center (-1352.0, 44.5, 490.5) mesh `ok`
+- `trigger_ballreset` solid `5006` entity `173814` name `` center (-1352.0, 47.0, 482.5) mesh `ok`
+- `trigger_ballreset` solid `5012` entity `173814` name `` center (-1352.0, 48.0, 473.5) mesh `ok`
+- `trigger_ballreset` solid `5018` entity `173814` name `` center (-1352.0, 0.0, 384.0) mesh `ok`
+- `trigger_hurt` solid `5025` entity `173997` name `` center (-1351.5, -48.0, 473.5) mesh `ok`
+
+## Limits
+
+- Brushwork is reconstructed from convex VMF side planes.
+- Displacements, prop collision, dynamic entity state, and final s&box collision are not represented.
+- Brush entity origins/pivots may need Hammer validation where Source stores transformed brush solids.

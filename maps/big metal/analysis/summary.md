@@ -1,4 +1,4 @@
-# Big Metal Summary
+# big metal Summary
 
 Generated analysis summary. This is not hand-authored canon.
 

@@ -1,10 +1,10 @@
 {
-  "generated_by": "Tools/Map Analyzer",
+  "generated_by": "tools/map analyzer",
   "schema_version": 1,
-  "map": "Tunnel",
-  "source_vmf": "Maps/Tunnel/Tunnel.vmf",
-  "original_filename": "eft_tunnel_v2.vmf",
-  "generated_at": "2026-05-08T15:27:18.618107+00:00",
+  "map": "tunnel",
+  "source_vmf": "maps/tunnel/Tunnel.vmf",
+  "original_filename": null,
+  "generated_at": "2026-05-09T01:03:04.092079+00:00",
   "status": "pending_recast_integration",
   "recast": {
     "available": false,
@@ -57,7 +57,7 @@
     ]
   },
   "export": {
-    "geometry_exported": "Maps/Tunnel/Analysis/recast_geometry.obj",
+    "geometry_exported": "maps/tunnel/analysis/recast_geometry.obj",
     "export_format": "obj_brush_plane_triangles",
     "exported_vertices": 17148,
     "exported_faces": 5716,

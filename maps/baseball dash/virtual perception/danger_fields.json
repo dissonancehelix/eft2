@@ -1,10 +1,10 @@
 {
-  "generated_by": "Tools/Map Analyzer",
+  "generated_by": "tools/map analyzer",
   "schema_version": 1,
-  "map": "Baseball Dash",
-  "source_vmf": "Maps/Baseball Dash/Baseball Dash.vmf",
-  "original_filename": "eft_baseballdash_v3.vmf",
-  "generated_at": "2026-05-08T15:27:09.153286+00:00",
+  "map": "baseball dash",
+  "source_vmf": "maps/baseball dash/Baseball Dash.vmf",
+  "original_filename": null,
+  "generated_at": "2026-05-09T01:02:43.499738+00:00",
   "danger_fields": [
     {
       "region": "hazard_region_1",

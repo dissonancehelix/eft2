@@ -1,0 +1,190 @@
+# sky metal Brushwork Perception
+
+Generated from VMF world brushes and brush entities. This is a Hammer-like geometry read, not hand-authored canon.
+
+## Summary
+
+- world solids: 39
+- brush entity solids: 1531
+- reconstructed solids: 1570
+- surfaces: 9212
+- floor surfaces: 1481
+- ramp surfaces: 271
+- wall surfaces: 5654
+- platform candidates: 153
+- brush entity classes: {'func_brush': 25, 'func_detail': 897, 'func_illusionary': 404, 'func_rotating': 144, 'trigger_abspush': 16, 'trigger_ballreset': 1, 'trigger_goal': 2, 'trigger_hurt': 41, 'trigger_powerup': 1}
+
+## Ramp Surfaces
+
+- solid `23815` func_rotating center (-2832.0, 4939.5, 714.0) slope 79.4 deg material `METAL/METALFLOOR003A`
+- solid `23876` func_rotating center (-2832.0, 4892.5, 714.0) slope 79.4 deg material `METAL/METALFLOOR003A`
+- solid `27857` func_rotating center (2832.0, -4939.5, 714.0) slope 79.4 deg material `METAL/METALFLOOR003A`
+- solid `27918` func_rotating center (2832.0, -4892.5, 714.0) slope 79.4 deg material `METAL/METALFLOOR003A`
+- solid `23816` func_rotating center (-2832.0, 4951.0, 717.5) slope 75.1 deg material `METAL/METALFLOOR003A`
+- solid `23875` func_rotating center (-2832.0, 4881.0, 717.5) slope 75.1 deg material `METAL/METALFLOOR003A`
+- solid `27858` func_rotating center (2832.0, -4951.0, 717.5) slope 75.1 deg material `METAL/METALFLOOR003A`
+- solid `27917` func_rotating center (2832.0, -4881.0, 717.5) slope 75.1 deg material `METAL/METALFLOOR003A`
+- solid `23817` func_rotating center (-2832.0, 4962.0, 721.5) slope 68.2 deg material `METAL/METALFLOOR003A`
+- solid `23874` func_rotating center (-2832.0, 4870.0, 721.5) slope 68.2 deg material `METAL/METALFLOOR003A`
+- solid `27859` func_rotating center (2832.0, -4962.0, 721.5) slope 68.2 deg material `METAL/METALFLOOR003A`
+- solid `27916` func_rotating center (2832.0, -4870.0, 721.5) slope 68.2 deg material `METAL/METALFLOOR003A`
+- solid `23818` func_rotating center (-2832.0, 4972.5, 726.0) slope 63.4 deg material `METAL/METALFLOOR003A`
+- solid `23873` func_rotating center (-2832.0, 4859.5, 726.0) slope 63.4 deg material `METAL/METALFLOOR003A`
+- solid `27860` func_rotating center (2832.0, -4972.5, 726.0) slope 63.4 deg material `METAL/METALFLOOR003A`
+- solid `27915` func_rotating center (2832.0, -4859.5, 726.0) slope 63.4 deg material `METAL/METALFLOOR003A`
+- solid `23819` func_rotating center (-2832.0, 4982.5, 732.5) slope 55.3 deg material `METAL/METALFLOOR003A`
+- solid `23872` func_rotating center (-2832.0, 4849.5, 732.5) slope 55.3 deg material `METAL/METALFLOOR003A`
+- solid `27861` func_rotating center (2832.0, -4982.5, 732.5) slope 55.3 deg material `METAL/METALFLOOR003A`
+- solid `27914` func_rotating center (2832.0, -4849.5, 732.5) slope 55.3 deg material `METAL/METALFLOOR003A`
+- solid `23819` func_rotating center (-2832.0, 4973.5, 736.0) slope 33.7 deg material `METAL/METALFLOOR003A`
+- solid `23872` func_rotating center (-2832.0, 4858.5, 736.0) slope 33.7 deg material `METAL/METALFLOOR003A`
+- solid `27861` func_rotating center (2832.0, -4973.5, 736.0) slope 33.7 deg material `METAL/METALFLOOR003A`
+- solid `27914` func_rotating center (2832.0, -4858.5, 736.0) slope 33.7 deg material `METAL/METALFLOOR003A`
+- solid `23820` func_rotating center (-2832.0, 4992.0, 739.0) slope 50.2 deg material `METAL/METALFLOOR003A`
+- solid `23871` func_rotating center (-2832.0, 4840.0, 739.0) slope 50.2 deg material `METAL/METALFLOOR003A`
+- solid `27862` func_rotating center (2832.0, -4992.0, 739.0) slope 50.2 deg material `METAL/METALFLOOR003A`
+- solid `27913` func_rotating center (2832.0, -4840.0, 739.0) slope 50.2 deg material `METAL/METALFLOOR003A`
+- solid `23820` func_rotating center (-2832.0, 4982.5, 742.0) slope 33.7 deg material `METAL/METALFLOOR003A`
+- solid `23871` func_rotating center (-2832.0, 4849.5, 742.0) slope 33.7 deg material `METAL/METALFLOOR003A`
+- solid `27862` func_rotating center (2832.0, -4982.5, 742.0) slope 33.7 deg material `METAL/METALFLOOR003A`
+- solid `27913` func_rotating center (2832.0, -4849.5, 742.0) slope 33.7 deg material `METAL/METALFLOOR003A`
+- solid `23821` func_rotating center (-2832.0, 5001.0, 747.0) slope 45.0 deg material `METAL/METALFLOOR003A`
+- solid `23870` func_rotating center (-2832.0, 4831.0, 747.0) slope 45.0 deg material `METAL/METALFLOOR003A`
+- solid `27863` func_rotating center (2832.0, -5001.0, 747.0) slope 45.0 deg material `METAL/METALFLOOR003A`
+- solid `27912` func_rotating center (2832.0, -4831.0, 747.0) slope 45.0 deg material `METAL/METALFLOOR003A`
+- solid `23821` func_rotating center (-2832.0, 4991.0, 749.0) slope 45.0 deg material `METAL/METALFLOOR003A`
+- solid `23870` func_rotating center (-2832.0, 4841.0, 749.0) slope 45.0 deg material `METAL/METALFLOOR003A`
+- solid `27863` func_rotating center (2832.0, -4991.0, 749.0) slope 45.0 deg material `METAL/METALFLOOR003A`
+- solid `27912` func_rotating center (2832.0, -4841.0, 749.0) slope 45.0 deg material `METAL/METALFLOOR003A`
+
+## Platform Candidates
+
+- solid `23` worldspawn center (0.0, 0.0, -768.0) size (9216.0, 13312.0, 512.0) top_z -512.0
+- solid `282` worldspawn center (0.0, 0.0, -464.0) size (9216.0, 13312.0, 96.0) top_z -416.0
+- solid `2497` trigger_ballreset center (0.0, 0.0, -456.0) size (9216.0, 13312.0, 112.0) top_z -400.0
+- solid `2490` trigger_hurt center (0.0, 0.0, -448.0) size (9216.0, 13312.0, 128.0) top_z -384.0
+- solid `30` worldspawn center (-4864.0, 0.0, -256.0) size (512.0, 13312.0, 512.0) top_z -0.0
+- solid `51` worldspawn center (4864.0, 0.0, -256.0) size (512.0, 13312.0, 512.0) top_z -0.0
+- solid `72` worldspawn center (0.0, -6912.0, -256.0) size (9216.0, 512.0, 512.0) top_z -0.0
+- solid `93` worldspawn center (0.0, 6912.0, -256.0) size (9216.0, 512.0, 512.0) top_z -0.0
+- solid `289` worldspawn center (-3840.0, 5888.0, -256.0) size (1536.0, 1536.0, 512.0) top_z -0.0
+- solid `313` worldspawn center (3840.0, 5888.0, -256.0) size (1536.0, 1536.0, 512.0) top_z -0.0
+- solid `331` worldspawn center (-3840.0, -5888.0, -256.0) size (1536.0, 1536.0, 512.0) top_z -0.0
+- solid `349` worldspawn center (3840.0, -5888.0, -256.0) size (1536.0, 1536.0, 512.0) top_z 0.0
+- solid `121` func_detail center (-4096.0, 3072.0, -256.0) size (1024.0, 3072.0, 512.0) top_z -0.0
+- solid `268` func_detail center (0.0, 6144.0, -256.0) size (4096.0, 1024.0, 512.0) top_z 0.0
+- solid `135` func_detail center (4096.0, 3072.0, -256.0) size (1024.0, 3072.0, 512.0) top_z 0.0
+- solid `149` func_detail center (4096.0, -3072.0, -256.0) size (1024.0, 3072.0, 512.0) top_z 0.0
+- solid `254` func_detail center (0.0, -6144.0, -256.0) size (4096.0, 1024.0, 512.0) top_z -0.0
+- solid `163` func_detail center (-4096.0, -3072.0, -256.0) size (1024.0, 3072.0, 512.0) top_z -0.0
+- solid `5371` func_detail center (0.0, 0.0, -160.0) size (1024.0, 1024.0, 192.0) top_z -64.0
+- solid `5884` func_detail center (0.0, 0.0, -32.0) size (960.0, 960.0, 64.0) top_z -0.0
+- solid `2` worldspawn center (0.0, 0.0, 4.0) size (112.0, 112.0, 8.0) top_z 8.0
+- solid `6850` func_detail center (384.0, -1024.0, 96.0) size (192.0, 1024.0, 320.0) top_z 256.0
+- solid `6207` func_detail center (2048.0, -4096.0, 96.0) size (1024.0, 1024.0, 192.0) top_z 192.0
+- solid `6066` func_detail center (0.0, -2048.0, 96.0) size (1024.0, 1024.0, 192.0) top_z 192.0
+- solid `5801` func_detail center (-2048.0, 4096.0, 96.0) size (1024.0, 1024.0, 192.0) top_z 192.0
+- solid `5213` func_detail center (0.0, 2048.0, 96.0) size (1024.0, 1024.0, 192.0) top_z 192.0
+- solid `4169` func_detail center (-384.0, 1024.0, 96.0) size (192.0, 1024.0, 320.0) top_z 256.0
+- solid `4823` func_detail center (-384.0, -1168.0, 224.0) size (192.0, 736.0, 64.0) top_z 256.0
+- solid `6799` func_detail center (-2048.0, 4096.0, 224.0) size (960.0, 960.0, 64.0) top_z 256.0
+- solid `4713` func_detail center (0.0, 2048.0, 224.0) size (960.0, 960.0, 64.0) top_z 256.0
+- solid `4603` func_detail center (0.0, -2048.0, 224.0) size (960.0, 960.0, 64.0) top_z 256.0
+- solid `4237` func_detail center (384.0, 1168.0, 224.0) size (192.0, 736.0, 64.0) top_z 256.0
+- solid `4224` func_detail center (2048.0, -4096.0, 224.0) size (960.0, 960.0, 64.0) top_z 256.0
+- solid `114` func_detail center (-4096.0, 3072.0, 256.0) size (1024.0, 3072.0, 512.0) top_z 512.0
+- solid `275` func_detail center (0.0, 6144.0, 256.0) size (4096.0, 1024.0, 512.0) top_z 512.0
+- solid `128` func_detail center (4096.0, 3072.0, 256.0) size (1024.0, 3072.0, 512.0) top_z 512.0
+- solid `142` func_detail center (4096.0, -3072.0, 256.0) size (1024.0, 3072.0, 512.0) top_z 512.0
+- solid `261` func_detail center (0.0, -6144.0, 256.0) size (4096.0, 1024.0, 512.0) top_z 512.0
+- solid `156` func_detail center (-4096.0, -3072.0, 256.0) size (1024.0, 3072.0, 512.0) top_z 512.0
+- solid `4942` func_detail center (1024.0, -1664.0, 352.0) size (1024.0, 192.0, 320.0) top_z 512.0
+
+## Brush Entities
+
+- `func_brush` solid `2082` entity `1484` name `` center (0.0, 0.0, 1.0) mesh `ok`
+- `trigger_hurt` solid `2490` entity `1971` name `` center (0.0, 0.0, -448.0) mesh `ok`
+- `trigger_ballreset` solid `2497` entity `1983` name `` center (0.0, 0.0, -456.0) mesh `ok`
+- `func_illusionary` solid `2504` entity `6010` name `` center (-376.0, -3473.0, 525.0) mesh `ok`
+- `func_illusionary` solid `2511` entity `6010` name `` center (-397.0, -3452.0, 525.0) mesh `ok`
+- `func_illusionary` solid `2518` entity `6010` name `` center (-376.0, -3431.0, 525.0) mesh `ok`
+- `func_illusionary` solid `2525` entity `6010` name `` center (-355.0, -3452.0, 525.0) mesh `ok`
+- `func_illusionary` solid `2532` entity `6010` name `` center (-384.0, -3477.0, 517.0) mesh `ok`
+- `func_illusionary` solid `2539` entity `6010` name `` center (-405.0, -3456.0, 517.0) mesh `ok`
+- `func_illusionary` solid `2546` entity `6010` name `` center (-384.0, -3435.0, 517.0) mesh `ok`
+- `func_illusionary` solid `2553` entity `6010` name `` center (-363.0, -3456.0, 517.0) mesh `ok`
+- `func_illusionary` solid `2560` entity `6010` name `` center (-380.0, -3475.0, 521.0) mesh `ok`
+- `func_illusionary` solid `2567` entity `6010` name `` center (-401.0, -3454.0, 521.0) mesh `ok`
+- `func_illusionary` solid `2574` entity `6010` name `` center (-380.0, -3433.0, 521.0) mesh `ok`
+- `func_illusionary` solid `2581` entity `6010` name `` center (-359.0, -3454.0, 521.0) mesh `ok`
+- `func_illusionary` solid `2588` entity `6010` name `` center (-372.0, -3471.0, 529.0) mesh `ok`
+- `func_illusionary` solid `2595` entity `6010` name `` center (-393.0, -3450.0, 529.0) mesh `ok`
+- `func_illusionary` solid `2602` entity `6010` name `` center (-372.0, -3429.0, 529.0) mesh `ok`
+- `func_illusionary` solid `2609` entity `6010` name `` center (-351.0, -3450.0, 529.0) mesh `ok`
+- `func_illusionary` solid `2616` entity `6010` name `` center (-368.0, -3469.0, 533.0) mesh `ok`
+- `func_illusionary` solid `2623` entity `6010` name `` center (-389.0, -3448.0, 533.0) mesh `ok`
+- `func_illusionary` solid `2630` entity `6010` name `` center (-368.0, -3427.0, 533.0) mesh `ok`
+- `func_illusionary` solid `2637` entity `6010` name `` center (-347.0, -3448.0, 533.0) mesh `ok`
+- `func_illusionary` solid `2644` entity `6010` name `` center (-364.0, -3467.0, 537.0) mesh `ok`
+- `func_illusionary` solid `2651` entity `6010` name `` center (-385.0, -3446.0, 537.0) mesh `ok`
+- `func_illusionary` solid `2658` entity `6010` name `` center (-364.0, -3425.0, 537.0) mesh `ok`
+- `func_illusionary` solid `2665` entity `6010` name `` center (-343.0, -3446.0, 537.0) mesh `ok`
+- `trigger_abspush` solid `2672` entity `6154` name `` center (-384.0, -3456.0, 517.0) mesh `ok`
+- `func_brush` solid `2679` entity `6315` name `` center (-407.0, -3456.0, 513.0) mesh `ok`
+- `func_brush` solid `2686` entity `6315` name `` center (-384.0, -3479.0, 513.0) mesh `ok`
+- `func_brush` solid `2693` entity `6315` name `` center (-384.0, -3433.0, 513.0) mesh `ok`
+- `func_brush` solid `2700` entity `6315` name `` center (-361.0, -3456.0, 513.0) mesh `ok`
+- `func_illusionary` solid `2707` entity `6451` name `` center (376.0, 3473.0, 525.0) mesh `ok`
+- `func_illusionary` solid `2714` entity `6451` name `` center (397.0, 3452.0, 525.0) mesh `ok`
+- `func_illusionary` solid `2721` entity `6451` name `` center (376.0, 3431.0, 525.0) mesh `ok`
+- `func_illusionary` solid `2728` entity `6451` name `` center (355.0, 3452.0, 525.0) mesh `ok`
+- `func_illusionary` solid `2735` entity `6451` name `` center (384.0, 3477.0, 517.0) mesh `ok`
+- `func_illusionary` solid `2742` entity `6451` name `` center (405.0, 3456.0, 517.0) mesh `ok`
+- `func_illusionary` solid `2749` entity `6451` name `` center (384.0, 3435.0, 517.0) mesh `ok`
+- `func_illusionary` solid `2756` entity `6451` name `` center (363.0, 3456.0, 517.0) mesh `ok`
+- `func_illusionary` solid `2763` entity `6451` name `` center (380.0, 3475.0, 521.0) mesh `ok`
+- `func_illusionary` solid `2770` entity `6451` name `` center (401.0, 3454.0, 521.0) mesh `ok`
+- `func_illusionary` solid `2777` entity `6451` name `` center (380.0, 3433.0, 521.0) mesh `ok`
+- `func_illusionary` solid `2784` entity `6451` name `` center (359.0, 3454.0, 521.0) mesh `ok`
+- `func_illusionary` solid `2791` entity `6451` name `` center (372.0, 3471.0, 529.0) mesh `ok`
+- `func_illusionary` solid `2798` entity `6451` name `` center (393.0, 3450.0, 529.0) mesh `ok`
+- `func_illusionary` solid `2805` entity `6451` name `` center (372.0, 3429.0, 529.0) mesh `ok`
+- `func_illusionary` solid `2812` entity `6451` name `` center (351.0, 3450.0, 529.0) mesh `ok`
+- `func_illusionary` solid `2819` entity `6451` name `` center (368.0, 3469.0, 533.0) mesh `ok`
+- `func_illusionary` solid `2826` entity `6451` name `` center (389.0, 3448.0, 533.0) mesh `ok`
+- `func_illusionary` solid `2833` entity `6451` name `` center (368.0, 3427.0, 533.0) mesh `ok`
+- `func_illusionary` solid `2840` entity `6451` name `` center (347.0, 3448.0, 533.0) mesh `ok`
+- `func_illusionary` solid `2847` entity `6451` name `` center (364.0, 3467.0, 537.0) mesh `ok`
+- `func_illusionary` solid `2854` entity `6451` name `` center (385.0, 3446.0, 537.0) mesh `ok`
+- `func_illusionary` solid `2861` entity `6451` name `` center (364.0, 3425.0, 537.0) mesh `ok`
+- `func_illusionary` solid `2868` entity `6451` name `` center (343.0, 3446.0, 537.0) mesh `ok`
+- `func_brush` solid `2875` entity `6477` name `` center (407.0, 3456.0, 513.0) mesh `ok`
+- `func_brush` solid `2882` entity `6477` name `` center (384.0, 3479.0, 513.0) mesh `ok`
+- `func_brush` solid `2889` entity `6477` name `` center (384.0, 3433.0, 513.0) mesh `ok`
+- `func_brush` solid `2896` entity `6477` name `` center (361.0, 3456.0, 513.0) mesh `ok`
+- `trigger_abspush` solid `2903` entity `6483` name `` center (384.0, 3456.0, 519.0) mesh `ok`
+- `func_illusionary` solid `2910` entity `6655` name `` center (380.0, 909.0, 269.0) mesh `ok`
+- `func_illusionary` solid `2917` entity `6655` name `` center (401.0, 888.0, 269.0) mesh `ok`
+- `func_illusionary` solid `2924` entity `6655` name `` center (380.0, 867.0, 269.0) mesh `ok`
+- `func_illusionary` solid `2931` entity `6655` name `` center (359.0, 888.0, 269.0) mesh `ok`
+- `func_illusionary` solid `2938` entity `6655` name `` center (384.0, 917.0, 261.0) mesh `ok`
+- `func_illusionary` solid `2945` entity `6655` name `` center (405.0, 896.0, 261.0) mesh `ok`
+- `func_illusionary` solid `2952` entity `6655` name `` center (384.0, 875.0, 261.0) mesh `ok`
+- `func_illusionary` solid `2959` entity `6655` name `` center (363.0, 896.0, 261.0) mesh `ok`
+- `func_illusionary` solid `2966` entity `6655` name `` center (382.0, 913.0, 265.0) mesh `ok`
+- `func_illusionary` solid `2973` entity `6655` name `` center (403.0, 892.0, 265.0) mesh `ok`
+- `func_illusionary` solid `2980` entity `6655` name `` center (382.0, 871.0, 265.0) mesh `ok`
+- `func_illusionary` solid `2987` entity `6655` name `` center (361.0, 892.0, 265.0) mesh `ok`
+- `func_illusionary` solid `2994` entity `6655` name `` center (378.0, 905.0, 273.0) mesh `ok`
+- `func_illusionary` solid `3001` entity `6655` name `` center (399.0, 884.0, 273.0) mesh `ok`
+- `func_illusionary` solid `3008` entity `6655` name `` center (378.0, 863.0, 273.0) mesh `ok`
+- `func_illusionary` solid `3015` entity `6655` name `` center (357.0, 884.0, 273.0) mesh `ok`
+- `func_illusionary` solid `3022` entity `6655` name `` center (376.0, 901.0, 277.0) mesh `ok`
+- `func_illusionary` solid `3029` entity `6655` name `` center (397.0, 880.0, 277.0) mesh `ok`
+- `func_illusionary` solid `3036` entity `6655` name `` center (376.0, 859.0, 277.0) mesh `ok`
+
+## Limits
+
+- Brushwork is reconstructed from convex VMF side planes.
+- Displacements, prop collision, dynamic entity state, and final s&box collision are not represented.
+- Brush entity origins/pivots may need Hammer validation where Source stores transformed brush solids.

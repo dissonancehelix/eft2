@@ -1,4 +1,4 @@
-# Cosmic Arena Abstract Gameflow Simulation
+# cosmic arena Abstract Gameflow Simulation
 
 This is coarse gameplay telemetry, not a physics replay.
 

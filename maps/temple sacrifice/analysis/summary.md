@@ -1,4 +1,4 @@
-# Temple Sacrifice Summary
+# temple sacrifice Summary
 
 Generated analysis summary. This is not hand-authored canon.
 

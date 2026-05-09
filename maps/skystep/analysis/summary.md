@@ -1,4 +1,4 @@
-# Skystep Summary
+# skystep Summary
 
 Generated analysis summary. This is not hand-authored canon.
 

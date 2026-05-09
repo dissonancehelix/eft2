@@ -1,4 +1,4 @@
-# Baseball Dash Summary
+# baseball dash Summary
 
 Generated analysis summary. This is not hand-authored canon.
 

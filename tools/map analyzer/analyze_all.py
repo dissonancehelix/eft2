@@ -14,7 +14,8 @@ def main() -> int:
     args = parser.parse_args()
     root = Path(args.maps_root)
     failures = 0
-    for map_dir in sorted(p for p in root.iterdir() if p.is_dir() and not p.name.startswith("_")):
+    ignored = {"shared", "_unsorted", "__pycache__"}
+    for map_dir in sorted(p for p in root.iterdir() if p.is_dir() and p.name.lower() not in ignored and not p.name.startswith("_")):
         try:
             analyze_map(map_dir)
         except Exception as exc:

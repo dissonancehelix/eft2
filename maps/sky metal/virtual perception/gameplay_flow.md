@@ -1,4 +1,4 @@
-# Sky Metal Gameplay Flow
+# sky metal Gameplay Flow
 
 This is a generated Virtual Perception artifact for LLM map reasoning. It is not hand-authored canon.
 

@@ -1,4 +1,4 @@
-# Soccer Summary
+# soccer Summary
 
 Generated analysis summary. This is not hand-authored canon.
 

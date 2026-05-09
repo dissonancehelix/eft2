@@ -1,0 +1,190 @@
+# chamber Brushwork Perception
+
+Generated from VMF world brushes and brush entities. This is a Hammer-like geometry read, not hand-authored canon.
+
+## Summary
+
+- world solids: 129
+- brush entity solids: 105
+- reconstructed solids: 234
+- surfaces: 1416
+- floor surfaces: 220
+- ramp surfaces: 60
+- wall surfaces: 872
+- platform candidates: 106
+- brush entity classes: {'func_brush': 24, 'func_detail': 69, 'trigger_ballreset': 8, 'trigger_goal': 2, 'trigger_powerup': 2}
+
+## Ramp Surfaces
+
+- solid `7201` worldspawn center (204.0, 1999.0, -226.0) slope 30.0 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `7203` worldspawn center (-204.0, -1999.0, -226.0) slope 30.0 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `1256` func_detail center (-204.0, 1999.0, -226.0) slope 30.0 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `1262` func_detail center (204.0, -1999.0, -226.0) slope 30.0 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12682` func_brush center (2511.5, 0.0, 0.5) slope 52.3 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12999` func_brush center (-2720.5, 0.0, 0.5) slope 52.3 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12694` func_brush center (2726.5, 0.0, 8.3) slope 52.3 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `13008` func_brush center (-2505.5, 0.0, 8.3) slope 52.3 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12681` func_brush center (2489.8, 0.0, 41.3) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12998` func_brush center (-2742.2, 0.0, 41.3) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12693` func_brush center (2744.1, 0.0, 50.4) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `13007` func_brush center (-2487.9, 0.0, 50.4) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12681` func_brush center (2483.0, 0.0, 63.4) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12998` func_brush center (-2749.0, 0.0, 63.4) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12693` func_brush center (2751.0, 0.0, 72.6) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `13007` func_brush center (-2481.0, 0.0, 72.6) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12685` trigger_powerup center (2516.0, 0.0, 85.0) slope 76.8 deg material `TOOLS/TOOLSTRIGGER`
+- solid `12685` trigger_powerup center (2716.0, 0.0, 85.0) slope 76.8 deg material `TOOLS/TOOLSTRIGGER`
+- solid `12996` trigger_powerup center (-2716.0, 0.0, 85.0) slope 76.8 deg material `TOOLS/TOOLSTRIGGER`
+- solid `12996` trigger_powerup center (-2516.0, 0.0, 85.0) slope 76.8 deg material `TOOLS/TOOLSTRIGGER`
+- solid `12680` func_brush center (2484.0, 0.0, 86.6) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12997` func_brush center (-2748.0, 0.0, 86.6) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12692` func_brush center (2746.0, 0.0, 95.6) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `13006` func_brush center (-2486.0, 0.0, 95.6) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12680` func_brush center (2490.9, 0.0, 108.8) slope 52.3 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12997` func_brush center (-2741.1, 0.0, 108.8) slope 52.3 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12679` func_brush center (2489.0, 0.0, 109.6) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `13000` func_brush center (-2743.0, 0.0, 109.6) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12685` trigger_powerup center (2531.0, 0.0, 116.0) slope 51.8 deg material `TOOLS/TOOLSTRIGGER`
+- solid `12685` trigger_powerup center (2701.0, 0.0, 116.0) slope 51.8 deg material `TOOLS/TOOLSTRIGGER`
+- solid `12996` trigger_powerup center (-2701.0, 0.0, 116.0) slope 51.8 deg material `TOOLS/TOOLSTRIGGER`
+- solid `12996` trigger_powerup center (-2531.0, 0.0, 116.0) slope 51.8 deg material `TOOLS/TOOLSTRIGGER`
+- solid `12691` func_brush center (2737.3, 0.0, 116.9) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `13005` func_brush center (-2494.7, 0.0, 116.9) slope 77.7 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12692` func_brush center (2739.2, 0.0, 117.7) slope 52.4 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `13006` func_brush center (-2492.8, 0.0, 117.7) slope 52.4 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12679` func_brush center (2501.8, 0.0, 129.4) slope 52.4 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `13000` func_brush center (-2730.2, 0.0, 129.4) slope 52.4 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `12691` func_brush center (2724.2, 0.0, 137.2) slope 52.4 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+- solid `13005` func_brush center (-2507.8, 0.0, 137.2) slope 52.4 deg material `REALWORLDTEXTURES2/CONCRETE/GROUND/CONCRETE_06`
+
+## Platform Candidates
+
+- solid `9` worldspawn center (-0.5, -1504.0, -450.0) size (5535.1, 3008.0, 24.0) top_z -438.0
+- solid `201` worldspawn center (-0.5, 1504.0, -450.0) size (5535.1, 3008.0, 24.0) top_z -438.0
+- solid `56` worldspawn center (844.0, -1816.0, -334.0) size (1384.0, 1584.0, 208.0) top_z -230.0
+- solid `71` worldspawn center (-620.0, -1646.7, -334.0) size (936.0, 1245.4, 208.0) top_z -230.0
+- solid `85` worldspawn center (-301.3, -1482.8, -334.0) size (298.6, 298.5, 208.0) top_z -230.0
+- solid `91` worldspawn center (301.3, -1482.6, -334.0) size (298.7, 298.8, 208.0) top_z -230.0
+- solid `111` worldspawn center (1257.2, -2438.7, -334.0) size (338.5, 338.6, 208.0) top_z -230.0
+- solid `262` worldspawn center (844.0, 1816.0, -334.0) size (1384.0, 1584.0, 208.0) top_z -230.0
+- solid `277` worldspawn center (-620.1, 1646.7, -334.0) size (936.1, 1245.4, 208.0) top_z -230.0
+- solid `291` worldspawn center (-301.3, 1482.8, -334.0) size (298.6, 298.5, 208.0) top_z -230.0
+- solid `297` worldspawn center (301.3, 1482.6, -334.0) size (298.7, 298.7, 208.0) top_z -230.0
+- solid `324` worldspawn center (1257.2, 2438.7, -334.0) size (338.5, 338.6, 208.0) top_z -230.0
+- solid `1053` func_detail center (-2616.0, 2342.0, -328.0) size (272.0, 724.0, 236.0) top_z -210.0
+- solid `1179` func_detail center (-2616.0, -2342.0, -328.0) size (272.0, 724.0, 236.0) top_z -210.0
+- solid `12665` func_detail center (2616.0, -2342.0, -328.0) size (272.0, 724.0, 236.0) top_z -210.0
+- solid `12651` func_detail center (2616.0, 2342.0, -328.0) size (272.0, 724.0, 236.0) top_z -210.0
+- solid `117` worldspawn center (-1312.0, -1816.0, -226.0) size (448.0, 1584.0, 424.0) top_z -14.0
+- solid `330` worldspawn center (-1312.0, 1816.0, -226.0) size (447.9, 1584.0, 424.0) top_z -14.0
+- solid `7201` worldspawn center (204.0, 1999.0, -226.0) size (104.0, 734.0, 424.0) top_z -14.0
+- solid `7203` worldspawn center (-204.0, -1999.0, -226.0) size (104.0, 734.0, 424.0) top_z -14.0
+- solid `1256` func_detail center (-204.0, 1999.0, -226.0) size (104.0, 734.0, 424.0) top_z -14.0
+- solid `1262` func_detail center (204.0, -1999.0, -226.0) size (104.0, 734.0, 424.0) top_z -14.0
+- solid `828` func_detail center (-2616.0, -2848.0, -214.0) size (272.0, 288.0, 8.0) top_z -210.0
+- solid `14816` func_detail center (-2616.0, 2848.0, -214.0) size (272.0, 288.0, 8.0) top_z -210.0
+- solid `12630` func_detail center (2616.0, -2848.0, -214.0) size (272.0, 288.0, 8.0) top_z -210.0
+- solid `14811` func_detail center (2616.0, 2848.0, -214.0) size (272.0, 288.0, 8.0) top_z -210.0
+- solid `37` worldspawn center (-1312.0, -2800.0, -122.0) size (448.0, 384.0, 216.0) top_z -14.0
+- solid `44` worldspawn center (689.4, -1870.8, -122.0) size (1693.2, 1693.6, 216.0) top_z -14.0
+- solid `64` worldspawn center (-544.0, -1646.7, -122.0) size (1088.3, 1245.4, 216.0) top_z -14.0
+- solid `79` worldspawn center (0.1, -1406.8, -122.0) size (901.3, 450.7, 216.0) top_z -14.0
+- solid `97` worldspawn center (1312.0, -2864.0, -122.0) size (448.0, 288.0, 216.0) top_z -14.0
+- solid `243` worldspawn center (-1312.0, 2800.0, -122.0) size (448.0, 384.0, 216.0) top_z -14.0
+- solid `250` worldspawn center (689.4, 1870.8, -122.0) size (1693.2, 1693.6, 216.0) top_z -14.0
+- solid `270` worldspawn center (-543.9, 1646.7, -122.0) size (1088.2, 1245.4, 216.0) top_z -14.0
+- solid `285` worldspawn center (0.1, 1406.7, -122.0) size (901.2, 450.6, 216.0) top_z -14.0
+- solid `303` worldspawn center (1312.0, 2864.0, -122.0) size (448.0, 288.0, 216.0) top_z -14.0
+- solid `317` worldspawn center (1312.0, 2494.7, -122.0) size (448.1, 450.6, 216.0) top_z -14.0
+- solid `421` worldspawn center (1312.0, -2494.7, -122.0) size (448.1, 450.6, 216.0) top_z -14.0
+- solid `821` func_detail center (-2124.0, -2848.0, -116.0) size (712.0, 288.0, 204.0) top_z -14.0
+- solid `1123` func_detail center (-2124.0, 2848.0, -116.0) size (712.0, 288.0, 204.0) top_z -14.0
+
+## Brush Entities
+
+- `trigger_goal` solid `443` entity `472` name `` center (0.0, -2592.0, 56.0) mesh `ok`
+- `trigger_goal` solid `450` entity `508` name `` center (0.0, 2592.0, 56.0) mesh `ok`
+- `func_detail` solid `821` entity `457` name `` center (-2124.0, -2848.0, -116.0) mesh `ok`
+- `func_detail` solid `828` entity `457` name `` center (-2616.0, -2848.0, -214.0) mesh `ok`
+- `func_detail` solid `835` entity `457` name `` center (-2008.0, -2606.0, -18.0) mesh `ok`
+- `func_detail` solid `849` entity `457` name `` center (-1652.0, -2840.0, -18.0) mesh `ok`
+- `func_detail` solid `863` entity `457` name `` center (-2008.0, -2130.0, -18.0) mesh `ok`
+- `func_detail` solid `884` entity `457` name `` center (-2356.0, -1695.0, -18.0) mesh `ok`
+- `func_detail` solid `920` entity `457` name `` center (-2008.0, -1652.0, -18.0) mesh `ok`
+- `func_detail` solid `927` entity `457` name `` center (-2008.0, -1172.0, -18.0) mesh `ok`
+- `func_detail` solid `948` entity `457` name `` center (-2472.0, -1352.0, 394.0) mesh `ok`
+- `func_detail` solid `955` entity `457` name `` center (-2472.0, 1352.0, 394.0) mesh `ok`
+- `func_detail` solid `962` entity `457` name `` center (-2472.0, -1544.0, -136.0) mesh `ok`
+- `func_detail` solid `969` entity `457` name `` center (-2612.0, 0.0, -18.0) mesh `ok`
+- `func_detail` solid `976` entity `457` name `` center (-2472.0, -543.1, -348.0) mesh `ok`
+- `func_detail` solid `983` entity `457` name `` center (-2472.0, 543.0, -348.0) mesh `ok`
+- `func_detail` solid `990` entity `457` name `` center (-2472.0, 1844.3, -348.0) mesh `ok`
+- `func_detail` solid `1018` entity `457` name `` center (-2472.0, 1544.0, -136.0) mesh `ok`
+- `func_detail` solid `1053` entity `457` name `` center (-2616.0, 2342.0, -328.0) mesh `ok`
+- `func_detail` solid `1067` entity `457` name `` center (-2356.0, 1695.0, -18.0) mesh `ok`
+- `func_detail` solid `1081` entity `457` name `` center (-2008.0, 2130.0, -18.0) mesh `ok`
+- `func_detail` solid `1095` entity `457` name `` center (-2008.0, 2606.0, -18.0) mesh `ok`
+- `func_detail` solid `1102` entity `457` name `` center (-1652.0, 2840.0, -18.0) mesh `ok`
+- `func_detail` solid `1116` entity `457` name `` center (-2008.0, 1652.0, -18.0) mesh `ok`
+- `func_detail` solid `1123` entity `457` name `` center (-2124.0, 2848.0, -116.0) mesh `ok`
+- `func_detail` solid `1130` entity `457` name `` center (-1760.0, 2840.0, -230.0) mesh `ok`
+- `func_detail` solid `1137` entity `457` name `` center (-2008.0, 1172.0, -18.0) mesh `ok`
+- `func_detail` solid `1158` entity `457` name `` center (-2472.0, -1844.3, -348.0) mesh `ok`
+- `func_detail` solid `1179` entity `457` name `` center (-2616.0, -2342.0, -328.0) mesh `ok`
+- `func_detail` solid `1186` entity `457` name `` center (-1776.0, -2848.0, -230.0) mesh `ok`
+- `func_detail` solid `1242` entity `457` name `` center (0.0, -2592.0, -226.0) mesh `ok`
+- `func_detail` solid `1256` entity `457` name `` center (-204.0, 1999.0, -226.0) mesh `ok`
+- `func_detail` solid `1262` entity `457` name `` center (204.0, -1999.0, -226.0) mesh `ok`
+- `func_detail` solid `1268` entity `457` name `` center (-128.0, -2592.0, 57.0) mesh `ok`
+- `func_detail` solid `1275` entity `457` name `` center (128.0, -2592.0, 57.0) mesh `ok`
+- `func_detail` solid `1282` entity `457` name `` center (0.0, -2592.0, 345.0) mesh `ok`
+- `func_detail` solid `1289` entity `457` name `` center (0.0, -2096.0, -18.0) mesh `ok`
+- `func_detail` solid `1296` entity `457` name `` center (0.0, 2096.0, -18.0) mesh `ok`
+- `func_detail` solid `1303` entity `457` name `` center (0.0, 2592.0, -226.0) mesh `ok`
+- `func_detail` solid `1310` entity `457` name `` center (128.0, 2592.0, 57.0) mesh `ok`
+- `func_detail` solid `1317` entity `457` name `` center (-128.0, 2592.0, 57.0) mesh `ok`
+- `func_detail` solid `1324` entity `457` name `` center (0.0, 2592.0, 345.0) mesh `ok`
+- `func_detail` solid `1331` entity `457` name `` center (0.0, 0.0, -18.0) mesh `ok`
+- `func_detail` solid `9648` entity `457` name `` center (-1652.0, -1704.0, -18.0) mesh `ok`
+- `func_detail` solid `9649` entity `457` name `` center (-1652.0, 0.0, -18.0) mesh `ok`
+- `func_detail` solid `9650` entity `457` name `` center (-1652.0, 1704.0, -18.0) mesh `ok`
+- `func_detail` solid `14816` entity `457` name `` center (-2616.0, 2848.0, -214.0) mesh `ok`
+- `trigger_powerup` solid `12685` entity `12882` name `` center (2616.0, 0.0, 68.0) mesh `ok`
+- `trigger_powerup` solid `12996` entity `12995` name `` center (-2616.0, 0.0, 68.0) mesh `ok`
+- `func_brush` solid `12677` entity `13500` name `` center (2591.1, 0.0, 180.7) mesh `ok`
+- `func_brush` solid `12689` entity `13500` name `` center (2641.2, 0.0, 180.6) mesh `ok`
+- `func_brush` solid `12690` entity `13500` name `` center (2683.0, 0.0, 165.5) mesh `ok`
+- `func_brush` solid `12691` entity `13500` name `` center (2720.5, 0.0, 135.5) mesh `ok`
+- `func_brush` solid `12692` entity `13500` name `` center (2743.2, 0.0, 94.7) mesh `ok`
+- `func_brush` solid `12693` entity `13500` name `` center (2745.1, 0.0, 50.4) mesh `ok`
+- `func_brush` solid `12694` entity `13500` name `` center (2726.5, 0.0, 8.3) mesh `ok`
+- `func_brush` solid `12682` entity `13500` name `` center (2511.5, 0.0, 0.5) mesh `ok`
+- `func_brush` solid `12681` entity `13500` name `` center (2488.8, 0.0, 41.3) mesh `ok`
+- `func_brush` solid `12680` entity `13500` name `` center (2486.9, 0.0, 85.6) mesh `ok`
+- `func_brush` solid `12678` entity `13500` name `` center (2539.6, 0.0, 160.0) mesh `ok`
+- `func_brush` solid `12679` entity `13500` name `` center (2505.4, 0.0, 127.7) mesh `ok`
+- `func_brush` solid `13002` entity `13500` name `` center (-2640.9, 0.0, 180.7) mesh `ok`
+- `func_brush` solid `13003` entity `13500` name `` center (-2590.8, 0.0, 180.6) mesh `ok`
+- `func_brush` solid `13004` entity `13500` name `` center (-2549.0, 0.0, 165.5) mesh `ok`
+- `func_brush` solid `13005` entity `13500` name `` center (-2511.5, 0.0, 135.5) mesh `ok`
+- `func_brush` solid `13006` entity `13500` name `` center (-2488.8, 0.0, 94.7) mesh `ok`
+- `func_brush` solid `13007` entity `13500` name `` center (-2486.9, 0.0, 50.4) mesh `ok`
+- `func_brush` solid `13008` entity `13500` name `` center (-2505.5, 0.0, 8.3) mesh `ok`
+- `func_brush` solid `12999` entity `13500` name `` center (-2720.5, 0.0, 0.5) mesh `ok`
+- `func_brush` solid `12998` entity `13500` name `` center (-2743.2, 0.0, 41.3) mesh `ok`
+- `func_brush` solid `12997` entity `13500` name `` center (-2745.1, 0.0, 85.6) mesh `ok`
+- `func_brush` solid `13000` entity `13500` name `` center (-2726.6, 0.0, 127.7) mesh `ok`
+- `func_brush` solid `13001` entity `13500` name `` center (-2692.4, 0.0, 160.0) mesh `ok`
+- `trigger_ballreset` solid `13789` entity `14232` name `` center (0.0, 1120.0, 640.5) mesh `ok`
+- `trigger_ballreset` solid `13812` entity `14232` name `` center (-1448.0, 2032.0, 640.5) mesh `ok`
+- `trigger_ballreset` solid `13820` entity `14232` name `` center (0.0, 2592.0, 562.5) mesh `ok`
+- `trigger_ballreset` solid `13809` entity `14232` name `` center (1448.0, -2032.0, 640.5) mesh `ok`
+- `trigger_ballreset` solid `13790` entity `14232` name `` center (0.0, -1120.0, 640.5) mesh `ok`
+- `trigger_ballreset` solid `13808` entity `14232` name `` center (-1448.0, -2032.0, 640.5) mesh `ok`
+- `trigger_ballreset` solid `13819` entity `14232` name `` center (0.0, -2592.0, 562.5) mesh `ok`
+
+## Limits
+
+- Brushwork is reconstructed from convex VMF side planes.
+- Displacements, prop collision, dynamic entity state, and final s&box collision are not represented.
+- Brush entity origins/pivots may need Hammer validation where Source stores transformed brush solids.

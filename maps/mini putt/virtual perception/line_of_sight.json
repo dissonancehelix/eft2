@@ -1,10 +1,10 @@
 {
-  "generated_by": "Tools/Map Analyzer",
+  "generated_by": "tools/map analyzer",
   "schema_version": 1,
-  "map": "Mini Putt",
-  "source_vmf": "Maps/Mini Putt/Mini Putt.vmf",
-  "original_filename": "eft_miniputt_v1r_d.vmf",
-  "generated_at": "2026-05-08T15:27:13.297951+00:00",
+  "map": "mini putt",
+  "source_vmf": "maps/mini putt/Mini Putt.vmf",
+  "original_filename": null,
+  "generated_at": "2026-05-09T01:02:51.730311+00:00",
   "status": "brush_mesh_visibility_probe",
   "probes": [
     {

@@ -1,4 +1,4 @@
-# Recast-friendly brush-plane triangle geometry for Skyline
+# Recast-friendly brush-plane triangle geometry for skyline
 v 4096.0 4608.0 2048.0
 v 4096.0 -4608.0 2048.0
 v -4096.0 -4608.0 2048.0

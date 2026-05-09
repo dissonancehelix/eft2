@@ -1,4 +1,4 @@
-# Recast-friendly brush-plane triangle geometry for Bloodbowl
+# Recast-friendly brush-plane triangle geometry for bloodbowl
 v -2200.0 2048.0 64.0
 v -2200.0 2048.0 -64.0
 v -2200.0 -1024.0 -64.0

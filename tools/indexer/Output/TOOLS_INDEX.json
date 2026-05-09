@@ -1,7 +1,7 @@
 {
   "generated_by": "tools/indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-09T00:54:06.070003+00:00",
+  "generated_at": "2026-05-09T01:03:55.655246+00:00",
   "repo_root": ".",
   "warnings": [
     "sbox_scan_truncated_at:4000"
@@ -127,7 +127,7 @@
       "path": "tools/map analyzer",
       "readme": "tools/map analyzer/README.md",
       "readme_summary": "# EFT2 Map Analyzer\n\n`tools/map analyzer/` is the first EFT2 map intelligence pipeline.\n\nIt exists to help agents understand maps as played spaces, not merely as entity lists. Raw VMF data is preserved, then reconciled into confidence-scored gameplay structures, Virtual Perception artifacts, and map summaries for later porting/design work.",
-      "python_module_count": 15,
+      "python_module_count": 16,
       "python_modules": [
         {
           "path": "tools/map analyzer/__init__.py",
@@ -139,6 +139,10 @@
         },
         {
           "path": "tools/map analyzer/analyze_map.py",
+          "first_docstring_line": null
+        },
+        {
+          "path": "tools/map analyzer/brushwork_perception.py",
           "first_docstring_line": null
         },
         {

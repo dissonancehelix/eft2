@@ -1,4 +1,4 @@
-# Temple Sacrifice Abstract Gameflow Simulation
+# temple sacrifice Abstract Gameflow Simulation
 
 This is coarse gameplay telemetry, not a physics replay.
 

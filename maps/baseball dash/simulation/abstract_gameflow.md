@@ -1,4 +1,4 @@
-# Baseball Dash Abstract Gameflow Simulation
+# baseball dash Abstract Gameflow Simulation
 
 This is coarse gameplay telemetry, not a physics replay.
 

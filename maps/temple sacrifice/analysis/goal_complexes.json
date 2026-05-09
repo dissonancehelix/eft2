@@ -1,10 +1,10 @@
 {
-  "generated_by": "Tools/Map Analyzer",
+  "generated_by": "tools/map analyzer",
   "schema_version": 1,
-  "map": "Temple Sacrifice",
-  "source_vmf": "Maps/Temple Sacrifice/Temple Sacrifice.vmf",
-  "original_filename": "eft_temple_sacrifice_v2.vmf",
-  "generated_at": "2026-05-08T15:27:16.591994+00:00",
+  "map": "temple sacrifice",
+  "source_vmf": "maps/temple sacrifice/Temple Sacrifice.vmf",
+  "original_filename": null,
+  "generated_at": "2026-05-09T01:02:59.523569+00:00",
   "goal_complexes": [
     {
       "id": "goal_complex_1",

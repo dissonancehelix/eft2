@@ -1,4 +1,4 @@
-# Bloodbowl Summary
+# bloodbowl Summary
 
 Generated analysis summary. This is not hand-authored canon.
 

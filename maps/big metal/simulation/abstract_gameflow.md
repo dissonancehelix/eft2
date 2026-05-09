@@ -1,4 +1,4 @@
-# Big Metal Abstract Gameflow Simulation
+# big metal Abstract Gameflow Simulation
 
 This is coarse gameplay telemetry, not a physics replay.
 

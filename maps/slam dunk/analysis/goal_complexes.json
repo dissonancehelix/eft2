@@ -1,10 +1,10 @@
 {
-  "generated_by": "Tools/Map Analyzer",
+  "generated_by": "tools/map analyzer",
   "schema_version": 1,
-  "map": "Slam Dunk",
-  "source_vmf": "Maps/Slam Dunk/Slam Dunk.vmf",
-  "original_filename": "eft_slamdunk_v6.vmf",
-  "generated_at": "2026-05-08T15:27:14.689573+00:00",
+  "map": "slam dunk",
+  "source_vmf": "maps/slam dunk/Slam Dunk.vmf",
+  "original_filename": null,
+  "generated_at": "2026-05-09T01:02:55.116028+00:00",
   "goal_complexes": [
     {
       "id": "goal_complex_1",

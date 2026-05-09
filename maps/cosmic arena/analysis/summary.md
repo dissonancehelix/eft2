@@ -1,4 +1,4 @@
-# Cosmic Arena Summary
+# cosmic arena Summary
 
 Generated analysis summary. This is not hand-authored canon.
 

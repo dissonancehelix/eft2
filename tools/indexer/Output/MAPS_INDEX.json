@@ -1,7 +1,7 @@
 {
   "generated_by": "tools/indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-09T00:54:05.346997+00:00",
+  "generated_at": "2026-05-09T01:03:54.739501+00:00",
   "repo_root": ".",
   "warnings": [],
   "present": true,
@@ -95,9 +95,10 @@
         "maps/baseball dash/Baseball Dash.vmf"
       ],
       "analysis_present": true,
-      "analysis_output_count": 15,
+      "analysis_output_count": 16,
       "analysis_outputs": [
         "maps/baseball dash/analysis/brush_entities.json",
+        "maps/baseball dash/analysis/brushwork.json",
         "maps/baseball dash/analysis/eft_entities.json",
         "maps/baseball dash/analysis/gameplay_profile.json",
         "maps/baseball dash/analysis/geometry_backend_summary.json",
@@ -115,7 +116,7 @@
       ],
       "confidence_report": "maps/baseball dash/analysis/confidence_report.md",
       "virtual_perception_present": true,
-      "virtual_perception_output_count": 5,
+      "virtual_perception_output_count": 6,
       "simulation_present": true,
       "provenance": null
     },
@@ -127,9 +128,10 @@
         "maps/big metal/Big Metal.vmf"
       ],
       "analysis_present": true,
-      "analysis_output_count": 15,
+      "analysis_output_count": 16,
       "analysis_outputs": [
         "maps/big metal/analysis/brush_entities.json",
+        "maps/big metal/analysis/brushwork.json",
         "maps/big metal/analysis/eft_entities.json",
         "maps/big metal/analysis/gameplay_profile.json",
         "maps/big metal/analysis/geometry_backend_summary.json",
@@ -147,7 +149,7 @@
       ],
       "confidence_report": "maps/big metal/analysis/confidence_report.md",
       "virtual_perception_present": true,
-      "virtual_perception_output_count": 5,
+      "virtual_perception_output_count": 6,
       "simulation_present": true,
       "provenance": null
     },
@@ -159,9 +161,10 @@
         "maps/bloodbowl/Bloodbowl.vmf"
       ],
       "analysis_present": true,
-      "analysis_output_count": 15,
+      "analysis_output_count": 16,
       "analysis_outputs": [
         "maps/bloodbowl/analysis/brush_entities.json",
+        "maps/bloodbowl/analysis/brushwork.json",
         "maps/bloodbowl/analysis/eft_entities.json",
         "maps/bloodbowl/analysis/gameplay_profile.json",
         "maps/bloodbowl/analysis/geometry_backend_summary.json",
@@ -179,7 +182,7 @@
       ],
       "confidence_report": "maps/bloodbowl/analysis/confidence_report.md",
       "virtual_perception_present": true,
-      "virtual_perception_output_count": 5,
+      "virtual_perception_output_count": 6,
       "simulation_present": true,
       "provenance": null
     },
@@ -191,9 +194,10 @@
         "maps/chamber/Chamber.vmf"
       ],
       "analysis_present": true,
-      "analysis_output_count": 15,
+      "analysis_output_count": 16,
       "analysis_outputs": [
         "maps/chamber/analysis/brush_entities.json",
+        "maps/chamber/analysis/brushwork.json",
         "maps/chamber/analysis/eft_entities.json",
         "maps/chamber/analysis/gameplay_profile.json",
         "maps/chamber/analysis/geometry_backend_summary.json",
@@ -211,7 +215,7 @@
       ],
       "confidence_report": "maps/chamber/analysis/confidence_report.md",
       "virtual_perception_present": true,
-      "virtual_perception_output_count": 5,
+      "virtual_perception_output_count": 6,
       "simulation_present": true,
       "provenance": null
     },
@@ -223,9 +227,10 @@
         "maps/cosmic arena/Cosmic Arena.vmf"
       ],
       "analysis_present": true,
-      "analysis_output_count": 15,
+      "analysis_output_count": 16,
       "analysis_outputs": [
         "maps/cosmic arena/analysis/brush_entities.json",
+        "maps/cosmic arena/analysis/brushwork.json",
         "maps/cosmic arena/analysis/eft_entities.json",
         "maps/cosmic arena/analysis/gameplay_profile.json",
         "maps/cosmic arena/analysis/geometry_backend_summary.json",
@@ -243,7 +248,7 @@
       ],
       "confidence_report": "maps/cosmic arena/analysis/confidence_report.md",
       "virtual_perception_present": true,
-      "virtual_perception_output_count": 5,
+      "virtual_perception_output_count": 6,
       "simulation_present": true,
       "provenance": null
     },
@@ -255,9 +260,10 @@
         "maps/legoland/Legoland.vmf"
       ],
       "analysis_present": true,
-      "analysis_output_count": 15,
+      "analysis_output_count": 16,
       "analysis_outputs": [
         "maps/legoland/analysis/brush_entities.json",
+        "maps/legoland/analysis/brushwork.json",
         "maps/legoland/analysis/eft_entities.json",
         "maps/legoland/analysis/gameplay_profile.json",
         "maps/legoland/analysis/geometry_backend_summary.json",
@@ -275,7 +281,7 @@
       ],
       "confidence_report": "maps/legoland/analysis/confidence_report.md",
       "virtual_perception_present": true,
-      "virtual_perception_output_count": 5,
+      "virtual_perception_output_count": 6,
       "simulation_present": true,
       "provenance": null
     },
@@ -287,9 +293,10 @@
         "maps/mini putt/Mini Putt.vmf"
       ],
       "analysis_present": true,
-      "analysis_output_count": 15,
+      "analysis_output_count": 16,
       "analysis_outputs": [
         "maps/mini putt/analysis/brush_entities.json",
+        "maps/mini putt/analysis/brushwork.json",
         "maps/mini putt/analysis/eft_entities.json",
         "maps/mini putt/analysis/gameplay_profile.json",
         "maps/mini putt/analysis/geometry_backend_summary.json",
@@ -307,7 +314,7 @@
       ],
       "confidence_report": "maps/mini putt/analysis/confidence_report.md",
       "virtual_perception_present": true,
-      "virtual_perception_output_count": 5,
+      "virtual_perception_output_count": 6,
       "simulation_present": true,
       "provenance": null
     },
@@ -333,9 +340,10 @@
         "maps/sky metal/Sky Metal.vmf"
       ],
       "analysis_present": true,
-      "analysis_output_count": 15,
+      "analysis_output_count": 16,
       "analysis_outputs": [
         "maps/sky metal/analysis/brush_entities.json",
+        "maps/sky metal/analysis/brushwork.json",
         "maps/sky metal/analysis/eft_entities.json",
         "maps/sky metal/analysis/gameplay_profile.json",
         "maps/sky metal/analysis/geometry_backend_summary.json",
@@ -353,7 +361,7 @@
       ],
       "confidence_report": "maps/sky metal/analysis/confidence_report.md",
       "virtual_perception_present": true,
-      "virtual_perception_output_count": 5,
+      "virtual_perception_output_count": 6,
       "simulation_present": true,
       "provenance": null
     },
@@ -365,9 +373,10 @@
         "maps/skyline/Skyline.vmf"
       ],
       "analysis_present": true,
-      "analysis_output_count": 15,
+      "analysis_output_count": 16,
       "analysis_outputs": [
         "maps/skyline/analysis/brush_entities.json",
+        "maps/skyline/analysis/brushwork.json",
         "maps/skyline/analysis/eft_entities.json",
         "maps/skyline/analysis/gameplay_profile.json",
         "maps/skyline/analysis/geometry_backend_summary.json",
@@ -385,7 +394,7 @@
       ],
       "confidence_report": "maps/skyline/analysis/confidence_report.md",
       "virtual_perception_present": true,
-      "virtual_perception_output_count": 5,
+      "virtual_perception_output_count": 6,
       "simulation_present": true,
       "provenance": null
     },
@@ -397,9 +406,10 @@
         "maps/skystep/Skystep.vmf"
       ],
       "analysis_present": true,
-      "analysis_output_count": 15,
+      "analysis_output_count": 16,
       "analysis_outputs": [
         "maps/skystep/analysis/brush_entities.json",
+        "maps/skystep/analysis/brushwork.json",
         "maps/skystep/analysis/eft_entities.json",
         "maps/skystep/analysis/gameplay_profile.json",
         "maps/skystep/analysis/geometry_backend_summary.json",
@@ -417,7 +427,7 @@
       ],
       "confidence_report": "maps/skystep/analysis/confidence_report.md",
       "virtual_perception_present": true,
-      "virtual_perception_output_count": 5,
+      "virtual_perception_output_count": 6,
       "simulation_present": true,
       "provenance": null
     },
@@ -429,9 +439,10 @@
         "maps/slam dunk/Slam Dunk.vmf"
       ],
       "analysis_present": true,
-      "analysis_output_count": 15,
+      "analysis_output_count": 16,
       "analysis_outputs": [
         "maps/slam dunk/analysis/brush_entities.json",
+        "maps/slam dunk/analysis/brushwork.json",
         "maps/slam dunk/analysis/eft_entities.json",
         "maps/slam dunk/analysis/gameplay_profile.json",
         "maps/slam dunk/analysis/geometry_backend_summary.json",
@@ -449,7 +460,7 @@
       ],
       "confidence_report": "maps/slam dunk/analysis/confidence_report.md",
       "virtual_perception_present": true,
-      "virtual_perception_output_count": 5,
+      "virtual_perception_output_count": 6,
       "simulation_present": true,
       "provenance": null
     },
@@ -461,9 +472,10 @@
         "maps/soccer/Soccer.vmf"
       ],
       "analysis_present": true,
-      "analysis_output_count": 15,
+      "analysis_output_count": 16,
       "analysis_outputs": [
         "maps/soccer/analysis/brush_entities.json",
+        "maps/soccer/analysis/brushwork.json",
         "maps/soccer/analysis/eft_entities.json",
         "maps/soccer/analysis/gameplay_profile.json",
         "maps/soccer/analysis/geometry_backend_summary.json",
@@ -481,7 +493,7 @@
       ],
       "confidence_report": "maps/soccer/analysis/confidence_report.md",
       "virtual_perception_present": true,
-      "virtual_perception_output_count": 5,
+      "virtual_perception_output_count": 6,
       "simulation_present": true,
       "provenance": null
     },
@@ -493,9 +505,10 @@
         "maps/space jump/Space Jump.vmf"
       ],
       "analysis_present": true,
-      "analysis_output_count": 15,
+      "analysis_output_count": 16,
       "analysis_outputs": [
         "maps/space jump/analysis/brush_entities.json",
+        "maps/space jump/analysis/brushwork.json",
         "maps/space jump/analysis/eft_entities.json",
         "maps/space jump/analysis/gameplay_profile.json",
         "maps/space jump/analysis/geometry_backend_summary.json",
@@ -513,7 +526,7 @@
       ],
       "confidence_report": "maps/space jump/analysis/confidence_report.md",
       "virtual_perception_present": true,
-      "virtual_perception_output_count": 5,
+      "virtual_perception_output_count": 6,
       "simulation_present": true,
       "provenance": null
     },
@@ -525,9 +538,10 @@
         "maps/temple sacrifice/Temple Sacrifice.vmf"
       ],
       "analysis_present": true,
-      "analysis_output_count": 15,
+      "analysis_output_count": 16,
       "analysis_outputs": [
         "maps/temple sacrifice/analysis/brush_entities.json",
+        "maps/temple sacrifice/analysis/brushwork.json",
         "maps/temple sacrifice/analysis/eft_entities.json",
         "maps/temple sacrifice/analysis/gameplay_profile.json",
         "maps/temple sacrifice/analysis/geometry_backend_summary.json",
@@ -545,7 +559,7 @@
       ],
       "confidence_report": "maps/temple sacrifice/analysis/confidence_report.md",
       "virtual_perception_present": true,
-      "virtual_perception_output_count": 5,
+      "virtual_perception_output_count": 6,
       "simulation_present": true,
       "provenance": null
     },
@@ -557,9 +571,10 @@
         "maps/tunnel/Tunnel.vmf"
       ],
       "analysis_present": true,
-      "analysis_output_count": 15,
+      "analysis_output_count": 16,
       "analysis_outputs": [
         "maps/tunnel/analysis/brush_entities.json",
+        "maps/tunnel/analysis/brushwork.json",
         "maps/tunnel/analysis/eft_entities.json",
         "maps/tunnel/analysis/gameplay_profile.json",
         "maps/tunnel/analysis/geometry_backend_summary.json",
@@ -577,7 +592,7 @@
       ],
       "confidence_report": "maps/tunnel/analysis/confidence_report.md",
       "virtual_perception_present": true,
-      "virtual_perception_output_count": 5,
+      "virtual_perception_output_count": 6,
       "simulation_present": true,
       "provenance": null
     }

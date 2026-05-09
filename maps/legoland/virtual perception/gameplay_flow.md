@@ -1,4 +1,4 @@
-# Legoland Gameplay Flow
+# legoland Gameplay Flow
 
 This is a generated Virtual Perception artifact for LLM map reasoning. It is not hand-authored canon.
 

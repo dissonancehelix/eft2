@@ -1,7 +1,7 @@
 {
   "generated_by": "tools/indexer",
   "schema_version": 1,
-  "generated_at": "2026-05-09T00:54:04.930105+00:00",
+  "generated_at": "2026-05-09T01:03:54.275987+00:00",
   "repo_root": ".",
   "warnings": [],
   "files": [
@@ -1051,7 +1051,7 @@
     },
     {
       "path": "tools/map analyzer/README.md",
-      "size_bytes": 3340,
+      "size_bytes": 3544,
       "heading_count": 6,
       "headings": [
         {

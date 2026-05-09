@@ -1,10 +1,10 @@
 {
-  "generated_by": "Tools/Map Analyzer",
+  "generated_by": "tools/map analyzer",
   "schema_version": 1,
-  "map": "Cosmic Arena",
-  "source_vmf": "Maps/Cosmic Arena/Cosmic Arena.vmf",
-  "original_filename": "eft_cosmic_arena_v2.vmf",
-  "generated_at": "2026-05-08T15:27:10.885141+00:00",
+  "map": "cosmic arena",
+  "source_vmf": "maps/cosmic arena/Cosmic Arena.vmf",
+  "original_filename": null,
+  "generated_at": "2026-05-09T01:02:48.571309+00:00",
   "spawn_clusters": {
     "red": [
       {

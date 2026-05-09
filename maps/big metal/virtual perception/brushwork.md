@@ -1,0 +1,190 @@
+# big metal Brushwork Perception
+
+Generated from VMF world brushes and brush entities. This is a Hammer-like geometry read, not hand-authored canon.
+
+## Summary
+
+- world solids: 124
+- brush entity solids: 102
+- reconstructed solids: 226
+- surfaces: 1362
+- floor surfaces: 190
+- ramp surfaces: 50
+- wall surfaces: 882
+- platform candidates: 122
+- brush entity classes: {'func_detail': 100, 'trigger_goal': 2}
+
+## Ramp Surfaces
+
+- solid `639` worldspawn center (-160.0, 0.0, 64.0) slope 33.7 deg material `metal/metalgrate014a`
+- solid `646` worldspawn center (160.0, 0.0, 64.0) slope 33.7 deg material `metal/metalgrate014a`
+- solid `30` worldspawn center (1664.0, 0.0, 192.0) slope 26.6 deg material `maps/eft_big_metal03/metal/metalfloor001a_1664_0_336`
+- solid `36` worldspawn center (1280.0, 0.0, 192.0) slope 26.6 deg material `maps/eft_big_metal03/metal/metalfloor001a_1664_0_336`
+- solid `110` worldspawn center (1408.0, 640.0, 192.0) slope 26.6 deg material `maps/eft_big_metal03/metal/metalfloor001a_1664_0_336`
+- solid `116` worldspawn center (1408.0, -640.0, 192.0) slope 26.6 deg material `maps/eft_big_metal03/metal/metalfloor001a_1664_0_336`
+- solid `181` worldspawn center (512.0, 0.0, 192.0) slope 26.6 deg material `maps/eft_big_metal03/metal/metalfloor001a_0_0_192`
+- solid `188` worldspawn center (256.0, -384.0, 192.0) slope 26.6 deg material `maps/eft_big_metal03/metal/metalfloor001a_0_-640_336`
+- solid `194` worldspawn center (256.0, 384.0, 192.0) slope 26.6 deg material `maps/eft_big_metal03/metal/metalfloor001a_0_640_336`
+- solid `248` worldspawn center (-256.0, -384.0, 192.0) slope 26.6 deg material `maps/eft_big_metal03/metal/metalfloor001a_0_-640_336`
+- solid `261` worldspawn center (-512.0, 0.0, 192.0) slope 26.6 deg material `maps/eft_big_metal03/metal/metalfloor001a_0_0_192`
+- solid `275` worldspawn center (-256.0, 384.0, 192.0) slope 26.6 deg material `maps/eft_big_metal03/metal/metalfloor001a_0_640_336`
+- solid `333` worldspawn center (-1280.0, 0.0, 192.0) slope 26.6 deg material `maps/eft_big_metal03/metal/metalfloor001a_-1664_0_336`
+- solid `339` worldspawn center (-1408.0, -640.0, 192.0) slope 26.6 deg material `maps/eft_big_metal03/metal/metalfloor001a_-1664_0_336`
+- solid `345` worldspawn center (-1408.0, 640.0, 192.0) slope 26.6 deg material `maps/eft_big_metal03/metal/metalfloor001a_-1664_0_336`
+- solid `360` worldspawn center (-1664.0, 0.0, 192.0) slope 26.6 deg material `maps/eft_big_metal03/metal/metalfloor001a_-1664_0_336`
+- solid `475` worldspawn center (-2040.0, -300.0, 296.0) slope 63.4 deg material `maps/eft_big_metal03/environment maps/pipemetal004b_0_-640_336`
+- solid `500` worldspawn center (-2040.0, 300.0, 296.0) slope 63.4 deg material `maps/eft_big_metal03/environment maps/pipemetal004b_0_640_336`
+- solid `1597` func_detail center (2040.0, -300.0, 296.0) slope 63.4 deg material `maps/eft_big_metal03/environment maps/pipemetal004b_0_-640_336`
+- solid `1616` func_detail center (2040.0, 300.0, 296.0) slope 63.4 deg material `maps/eft_big_metal03/environment maps/pipemetal004b_0_640_336`
+- solid `590` worldspawn center (-384.0, 0.0, 320.0) slope 26.6 deg material `metal/metalgrate014a`
+- solid `597` worldspawn center (384.0, 0.0, 320.0) slope 26.6 deg material `metal/metalgrate014a`
+- solid `1348` func_detail center (1668.0, 1012.0, 350.0) slope 37.2 deg material `metal/metalwall085a`
+- solid `1356` func_detail center (1668.0, 908.0, 350.0) slope 37.2 deg material `metal/metalwall085a`
+- solid `1364` func_detail center (1668.0, -908.0, 350.0) slope 37.2 deg material `metal/metalwall085a`
+- solid `1372` func_detail center (1668.0, -1012.0, 350.0) slope 37.2 deg material `metal/metalwall085a`
+- solid `1380` func_detail center (-1668.0, 908.0, 350.0) slope 37.2 deg material `metal/metalwall085a`
+- solid `1388` func_detail center (-1668.0, 1012.0, 350.0) slope 37.2 deg material `metal/metalwall085a`
+- solid `1396` func_detail center (-1668.0, -1012.0, 350.0) slope 37.2 deg material `metal/metalwall085a`
+- solid `1404` func_detail center (-1668.0, -908.0, 350.0) slope 37.2 deg material `metal/metalwall085a`
+- solid `1316` func_detail center (508.0, -124.0, 374.0) slope 26.6 deg material `metal/metalwall085a`
+- solid `1324` func_detail center (508.0, 124.0, 374.0) slope 26.6 deg material `metal/metalwall085a`
+- solid `1332` func_detail center (-508.0, 124.0, 374.0) slope 26.6 deg material `metal/metalwall085a`
+- solid `1340` func_detail center (-508.0, -124.0, 374.0) slope 26.6 deg material `metal/metalwall085a`
+- solid `1348` func_detail center (1540.0, 1012.0, 442.0) slope 26.6 deg material `metal/metalwall085a`
+- solid `1356` func_detail center (1540.0, 908.0, 442.0) slope 26.6 deg material `metal/metalwall085a`
+- solid `1364` func_detail center (1540.0, -908.0, 442.0) slope 26.6 deg material `metal/metalwall085a`
+- solid `1372` func_detail center (1540.0, -1012.0, 442.0) slope 26.6 deg material `metal/metalwall085a`
+- solid `1380` func_detail center (-1540.0, 908.0, 442.0) slope 26.6 deg material `metal/metalwall085a`
+- solid `1388` func_detail center (-1540.0, 1012.0, 442.0) slope 26.6 deg material `metal/metalwall085a`
+
+## Platform Candidates
+
+- solid `89` worldspawn center (0.0, 0.0, -32.0) size (512.0, 256.0, 64.0) top_z -0.0
+- solid `174` worldspawn center (0.0, 0.0, 60.0) size (512.0, 256.0, 120.0) top_z 120.0
+- solid `2` worldspawn center (-1152.0, 0.0, 64.0) size (1792.0, 2048.0, 128.0) top_z 128.0
+- solid `68` worldspawn center (1152.0, 0.0, 64.0) size (1792.0, 2048.0, 128.0) top_z 128.0
+- solid `75` worldspawn center (0.0, 576.0, 64.0) size (512.0, 896.0, 128.0) top_z 128.0
+- solid `82` worldspawn center (0.0, -576.0, 64.0) size (512.0, 896.0, 128.0) top_z 128.0
+- solid `639` worldspawn center (-160.0, 0.0, 64.0) size (192.0, 256.0, 128.0) top_z 128.0
+- solid `646` worldspawn center (160.0, 0.0, 64.0) size (192.0, 256.0, 128.0) top_z 128.0
+- solid `30` worldspawn center (1664.0, 0.0, 192.0) size (256.0, 256.0, 128.0) top_z 256.0
+- solid `36` worldspawn center (1280.0, 0.0, 192.0) size (256.0, 256.0, 128.0) top_z 256.0
+- solid `42` worldspawn center (0.0, 192.0, 192.0) size (512.0, 128.0, 128.0) top_z 256.0
+- solid `49` worldspawn center (0.0, -192.0, 192.0) size (512.0, 128.0, 128.0) top_z 256.0
+- solid `56` worldspawn center (1792.0, -768.0, 192.0) size (512.0, 512.0, 128.0) top_z 256.0
+- solid `62` worldspawn center (1792.0, 768.0, 192.0) size (512.0, 512.0, 128.0) top_z 256.0
+- solid `96` worldspawn center (0.0, 640.0, 192.0) size (256.0, 768.0, 128.0) top_z 256.0
+- solid `103` worldspawn center (0.0, -640.0, 192.0) size (256.0, 768.0, 128.0) top_z 256.0
+- solid `110` worldspawn center (1408.0, 640.0, 192.0) size (256.0, 256.0, 128.0) top_z 256.0
+- solid `116` worldspawn center (1408.0, -640.0, 192.0) size (256.0, 256.0, 128.0) top_z 256.0
+- solid `122` worldspawn center (1920.0, 0.0, 192.0) size (256.0, 512.0, 128.0) top_z 256.0
+- solid `131` worldspawn center (1152.0, -256.0, 192.0) size (256.0, 256.0, 128.0) top_z 256.0
+- solid `140` worldspawn center (1152.0, -704.0, 192.0) size (256.0, 384.0, 128.0) top_z 256.0
+- solid `149` worldspawn center (1152.0, 256.0, 192.0) size (256.0, 256.0, 128.0) top_z 256.0
+- solid `158` worldspawn center (1152.0, 704.0, 192.0) size (256.0, 384.0, 128.0) top_z 256.0
+- solid `167` worldspawn center (992.0, 0.0, 192.0) size (320.0, 256.0, 128.0) top_z 256.0
+- solid `181` worldspawn center (544.0, 0.0, 192.0) size (320.0, 256.0, 128.0) top_z 256.0
+- solid `188` worldspawn center (256.0, -384.0, 192.0) size (256.0, 256.0, 128.0) top_z 256.0
+- solid `194` worldspawn center (256.0, 384.0, 192.0) size (256.0, 256.0, 128.0) top_z 256.0
+- solid `200` worldspawn center (768.0, 320.0, 192.0) size (256.0, 128.0, 128.0) top_z 256.0
+- solid `207` worldspawn center (768.0, 768.0, 192.0) size (256.0, 512.0, 128.0) top_z 256.0
+- solid `216` worldspawn center (768.0, -320.0, 192.0) size (256.0, 128.0, 128.0) top_z 256.0
+- solid `223` worldspawn center (768.0, -768.0, 192.0) size (256.0, 512.0, 128.0) top_z 256.0
+- solid `239` worldspawn center (-768.0, -768.0, 192.0) size (256.0, 512.0, 128.0) top_z 256.0
+- solid `248` worldspawn center (-256.0, -384.0, 192.0) size (256.0, 256.0, 128.0) top_z 256.0
+- solid `254` worldspawn center (-768.0, -320.0, 192.0) size (256.0, 128.0, 128.0) top_z 256.0
+- solid `261` worldspawn center (-544.0, 0.0, 192.0) size (320.0, 256.0, 128.0) top_z 256.0
+- solid `268` worldspawn center (-992.0, 0.0, 192.0) size (320.0, 256.0, 128.0) top_z 256.0
+- solid `275` worldspawn center (-256.0, 384.0, 192.0) size (256.0, 256.0, 128.0) top_z 256.0
+- solid `281` worldspawn center (-768.0, 320.0, 192.0) size (256.0, 128.0, 128.0) top_z 256.0
+- solid `288` worldspawn center (-768.0, 768.0, 192.0) size (256.0, 512.0, 128.0) top_z 256.0
+- solid `297` worldspawn center (-1152.0, 704.0, 192.0) size (256.0, 384.0, 128.0) top_z 256.0
+
+## Brush Entities
+
+- `trigger_goal` solid `877` entity `8361` name `` center (-2560.0, 0.0, 320.0) mesh `ok`
+- `trigger_goal` solid `884` entity `8469` name `` center (2560.0, 0.0, 320.0) mesh `ok`
+- `func_detail` solid `893` entity `892` name `` center (1340.0, 188.0, 1084.0) mesh `ok`
+- `func_detail` solid `900` entity `892` name `` center (-1540.0, 188.0, 1084.0) mesh `ok`
+- `func_detail` solid `907` entity `892` name `` center (-1732.0, -188.0, 1084.0) mesh `ok`
+- `func_detail` solid `914` entity `892` name `` center (-1348.0, -188.0, 1084.0) mesh `ok`
+- `func_detail` solid `921` entity `892` name `` center (-1732.0, -156.0, 636.0) mesh `ok`
+- `func_detail` solid `928` entity `892` name `` center (188.0, -156.0, 636.0) mesh `ok`
+- `func_detail` solid `935` entity `892` name `` center (-580.0, 156.0, 636.0) mesh `ok`
+- `func_detail` solid `942` entity `892` name `` center (0.0, -160.0, 768.0) mesh `ok`
+- `func_detail` solid `950` entity `892` name `` center (-196.0, 156.0, 636.0) mesh `ok`
+- `func_detail` solid `957` entity `892` name `` center (1532.0, -188.0, 1084.0) mesh `ok`
+- `func_detail` solid `964` entity `892` name `` center (133.0, 133.0, 384.0) mesh `ok`
+- `func_detail` solid `971` entity `892` name `` center (572.0, -156.0, 636.0) mesh `ok`
+- `func_detail` solid `978` entity `892` name `` center (0.0, 0.0, 1568.0) mesh `ok`
+- `func_detail` solid `985` entity `892` name `` center (1148.0, -188.0, 1084.0) mesh `ok`
+- `func_detail` solid `992` entity `892` name `` center (-133.0, -133.0, 384.0) mesh `ok`
+- `func_detail` solid `999` entity `892` name `` center (764.0, 188.0, 1084.0) mesh `ok`
+- `func_detail` solid `1006` entity `892` name `` center (380.0, 188.0, 1084.0) mesh `ok`
+- `func_detail` solid `1013` entity `892` name `` center (0.0, 0.0, 1280.0) mesh `ok`
+- `func_detail` solid `1024` entity `892` name `` center (1724.0, 156.0, 636.0) mesh `ok`
+- `func_detail` solid `1031` entity `892` name `` center (-1540.0, 156.0, 636.0) mesh `ok`
+- `func_detail` solid `1038` entity `892` name `` center (572.0, -188.0, 1084.0) mesh `ok`
+- `func_detail` solid `1045` entity `892` name `` center (-1348.0, -156.0, 636.0) mesh `ok`
+- `func_detail` solid `1052` entity `892` name `` center (188.0, -188.0, 1084.0) mesh `ok`
+- `func_detail` solid `1059` entity `892` name `` center (764.0, 156.0, 636.0) mesh `ok`
+- `func_detail` solid `1066` entity `892` name `` center (380.0, 156.0, 636.0) mesh `ok`
+- `func_detail` solid `1073` entity `892` name `` center (-772.0, -188.0, 1084.0) mesh `ok`
+- `func_detail` solid `1080` entity `892` name `` center (-133.0, 133.0, 384.0) mesh `ok`
+- `func_detail` solid `1087` entity `892` name `` center (-1156.0, 188.0, 1084.0) mesh `ok`
+- `func_detail` solid `1094` entity `892` name `` center (133.0, -133.0, 384.0) mesh `ok`
+- `func_detail` solid `1101` entity `892` name `` center (0.0, 160.0, 768.0) mesh `ok`
+- `func_detail` solid `1109` entity `892` name `` center (-388.0, -156.0, 636.0) mesh `ok`
+- `func_detail` solid `1116` entity `892` name `` center (-580.0, 188.0, 1084.0) mesh `ok`
+- `func_detail` solid `1123` entity `892` name `` center (-388.0, -188.0, 1084.0) mesh `ok`
+- `func_detail` solid `1130` entity `892` name `` center (1724.0, 188.0, 1084.0) mesh `ok`
+- `func_detail` solid `1137` entity `892` name `` center (1148.0, -156.0, 636.0) mesh `ok`
+- `func_detail` solid `1144` entity `892` name `` center (1532.0, -156.0, 636.0) mesh `ok`
+- `func_detail` solid `1151` entity `892` name `` center (-1156.0, 156.0, 636.0) mesh `ok`
+- `func_detail` solid `1158` entity `892` name `` center (-772.0, -156.0, 636.0) mesh `ok`
+- `func_detail` solid `1165` entity `892` name `` center (1340.0, 156.0, 636.0) mesh `ok`
+- `func_detail` solid `1172` entity `892` name `` center (-196.0, 188.0, 1084.0) mesh `ok`
+- `func_detail` solid `1180` entity `1179` name `` center (1992.0, 324.0, 228.0) mesh `ok`
+- `func_detail` solid `1187` entity `1179` name `` center (1932.0, 324.0, 236.0) mesh `ok`
+- `func_detail` solid `1195` entity `1194` name `` center (1992.0, 444.0, 228.0) mesh `ok`
+- `func_detail` solid `1202` entity `1194` name `` center (1932.0, 444.0, 236.0) mesh `ok`
+- `func_detail` solid `1210` entity `1209` name `` center (1992.0, -444.0, 228.0) mesh `ok`
+- `func_detail` solid `1217` entity `1209` name `` center (1932.0, -444.0, 236.0) mesh `ok`
+- `func_detail` solid `1225` entity `1224` name `` center (1992.0, -324.0, 228.0) mesh `ok`
+- `func_detail` solid `1232` entity `1224` name `` center (1932.0, -324.0, 236.0) mesh `ok`
+- `func_detail` solid `1240` entity `1239` name `` center (-1992.0, 444.0, 228.0) mesh `ok`
+- `func_detail` solid `1247` entity `1239` name `` center (-1932.0, 444.0, 236.0) mesh `ok`
+- `func_detail` solid `1255` entity `1254` name `` center (-1932.0, 324.0, 236.0) mesh `ok`
+- `func_detail` solid `1262` entity `1254` name `` center (-1992.0, 324.0, 228.0) mesh `ok`
+- `func_detail` solid `1270` entity `1269` name `` center (-1932.0, -324.0, 236.0) mesh `ok`
+- `func_detail` solid `1277` entity `1269` name `` center (-1992.0, -324.0, 228.0) mesh `ok`
+- `func_detail` solid `1285` entity `1284` name `` center (-1992.0, -444.0, 228.0) mesh `ok`
+- `func_detail` solid `1292` entity `1284` name `` center (-1932.0, -444.0, 236.0) mesh `ok`
+- `func_detail` solid `1300` entity `1299` name `` center (0.0, 960.0, 480.0) mesh `ok`
+- `func_detail` solid `1308` entity `1307` name `` center (0.0, -960.0, 480.0) mesh `ok`
+- `func_detail` solid `1316` entity `1315` name `` center (508.0, -124.0, 282.0) mesh `ok`
+- `func_detail` solid `1324` entity `1323` name `` center (508.0, 124.0, 282.0) mesh `ok`
+- `func_detail` solid `1332` entity `1331` name `` center (-508.0, 124.0, 282.0) mesh `ok`
+- `func_detail` solid `1340` entity `1339` name `` center (-508.0, -124.0, 282.0) mesh `ok`
+- `func_detail` solid `1348` entity `1347` name `` center (1664.0, 1012.0, 350.0) mesh `ok`
+- `func_detail` solid `1356` entity `1355` name `` center (1664.0, 908.0, 350.0) mesh `ok`
+- `func_detail` solid `1364` entity `1363` name `` center (1664.0, -908.0, 350.0) mesh `ok`
+- `func_detail` solid `1372` entity `1371` name `` center (1664.0, -1012.0, 350.0) mesh `ok`
+- `func_detail` solid `1380` entity `1379` name `` center (-1664.0, 908.0, 350.0) mesh `ok`
+- `func_detail` solid `1388` entity `1387` name `` center (-1664.0, 1012.0, 350.0) mesh `ok`
+- `func_detail` solid `1396` entity `1395` name `` center (-1664.0, -1012.0, 350.0) mesh `ok`
+- `func_detail` solid `1404` entity `1403` name `` center (-1664.0, -908.0, 350.0) mesh `ok`
+- `func_detail` solid `1412` entity `1411` name `` center (-384.0, -772.0, 188.0) mesh `ok`
+- `func_detail` solid `1420` entity `1419` name `` center (-384.0, -892.0, 188.0) mesh `ok`
+- `func_detail` solid `1428` entity `1427` name `` center (-384.0, 892.0, 188.0) mesh `ok`
+- `func_detail` solid `1436` entity `1435` name `` center (-384.0, 772.0, 188.0) mesh `ok`
+- `func_detail` solid `1444` entity `1443` name `` center (384.0, 892.0, 188.0) mesh `ok`
+- `func_detail` solid `1452` entity `1451` name `` center (384.0, 772.0, 188.0) mesh `ok`
+- `func_detail` solid `1460` entity `1459` name `` center (384.0, -772.0, 188.0) mesh `ok`
+- `func_detail` solid `1468` entity `1467` name `` center (384.0, -892.0, 188.0) mesh `ok`
+
+## Limits
+
+- Brushwork is reconstructed from convex VMF side planes.
+- Displacements, prop collision, dynamic entity state, and final s&box collision are not represented.
+- Brush entity origins/pivots may need Hammer validation where Source stores transformed brush solids.

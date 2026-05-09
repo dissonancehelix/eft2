@@ -1,4 +1,4 @@
-# Mini Putt Abstract Gameflow Simulation
+# mini putt Abstract Gameflow Simulation
 
 This is coarse gameplay telemetry, not a physics replay.
 

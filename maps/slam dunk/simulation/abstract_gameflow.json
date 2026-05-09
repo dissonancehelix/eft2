@@ -1,10 +1,10 @@
 {
-  "generated_by": "Tools/Map Analyzer",
+  "generated_by": "tools/map analyzer",
   "schema_version": 1,
-  "map": "Slam Dunk",
-  "source_vmf": "Maps/Slam Dunk/Slam Dunk.vmf",
-  "original_filename": "eft_slamdunk_v6.vmf",
-  "generated_at": "2026-05-08T15:27:14.689573+00:00",
+  "map": "slam dunk",
+  "source_vmf": "maps/slam dunk/Slam Dunk.vmf",
+  "original_filename": null,
+  "generated_at": "2026-05-09T01:02:55.116028+00:00",
   "status": "abstract_core_gameplay_telemetry",
   "model_scope": [
     "Uses README movement constants and extracted map landmarks.",
@@ -1377,7 +1377,6 @@
   "interpretation": [
     "Defenders usually have a timing window before the carrier reaches a scoring route; expect tackles/scrums unless a jump/powerup route changes tempo.",
     "Scoring pressure outruns interception in the current coarse telemetry.",
-    "Jump/push routes are not decorative; they materially reduce carrier route time in the model and should become s&box NavMeshLink/custom traversal candidates.",
-    "Slam Dunk reads as a high-tempo scoring map with route interruption windows, not a simple open-field carry map."
+    "Jump/push routes are not decorative; they materially reduce carrier route time in the model and should become s&box NavMeshLink/custom traversal candidates."
   ]
 }

@@ -1,0 +1,190 @@
+# slam dunk Brushwork Perception
+
+Generated from VMF world brushes and brush entities. This is a Hammer-like geometry read, not hand-authored canon.
+
+## Summary
+
+- world solids: 92
+- brush entity solids: 604
+- reconstructed solids: 696
+- surfaces: 4366
+- floor surfaces: 599
+- ramp surfaces: 218
+- wall surfaces: 2748
+- platform candidates: 212
+- brush entity classes: {'func_breakable': 128, 'func_brush': 34, 'func_detail': 374, 'trigger_abspush': 10, 'trigger_goal': 4, 'trigger_hurt': 32, 'trigger_multiple': 20, 'trigger_powerup': 2}
+
+## Ramp Surfaces
+
+- solid `84911` func_detail center (1517.3, 2648.3, 149.3) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `84911` func_detail center (1550.7, 2681.7, 149.3) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `85246` func_detail center (1550.7, 2420.3, 149.3) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `85246` func_detail center (1517.3, 2453.7, 149.3) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `102578` func_detail center (4770.7, 2648.3, 149.3) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `102578` func_detail center (4737.3, 2681.7, 149.3) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `102579` func_detail center (4737.3, 2420.3, 149.3) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `102579` func_detail center (4770.7, 2453.7, 149.3) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `84338` func_detail center (1648.0, 2665.0, 160.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `84337` func_detail center (1534.0, 2551.0, 160.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `84339` func_detail center (1648.0, 2437.0, 160.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `102575` func_detail center (4640.0, 2665.0, 160.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `102577` func_detail center (4754.0, 2551.0, 160.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `102580` func_detail center (4640.0, 2437.0, 160.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `86275` func_detail center (630.0, 4067.0, 192.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `86275` func_detail center (530.0, 3967.0, 192.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `86612` func_detail center (530.0, 1135.0, 192.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `86612` func_detail center (630.0, 1035.0, 192.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `86260` func_detail center (630.0, 4067.0, 192.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `86260` func_detail center (530.0, 3967.0, 192.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `102533` func_detail center (5758.0, 1135.0, 192.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `102533` func_detail center (5658.0, 1035.0, 192.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `102556` func_detail center (5658.0, 4067.0, 192.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `102556` func_detail center (5758.0, 3967.0, 192.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `86770` func_detail center (1175.0, 1425.0, 196.0) slope 28.4 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `86772` func_detail center (1175.0, 1877.0, 196.0) slope 28.4 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `82817` func_detail center (1175.0, 3225.0, 196.0) slope 28.4 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `82814` func_detail center (1175.0, 3677.0, 196.0) slope 28.4 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `102539` func_detail center (5113.0, 1425.0, 196.0) slope 28.4 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `102540` func_detail center (5113.0, 1877.0, 196.0) slope 28.4 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `102562` func_detail center (5113.0, 3225.0, 196.0) slope 28.4 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `102564` func_detail center (5113.0, 3677.0, 196.0) slope 28.4 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `86276` func_detail center (580.0, 4267.0, 224.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `86278` func_detail center (330.0, 4017.0, 224.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `86613` func_detail center (330.0, 1085.0, 224.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `86615` func_detail center (580.0, 835.0, 224.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `86047` func_detail center (580.0, 4267.0, 224.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `86052` func_detail center (330.0, 4017.0, 224.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_REDWOOD01`
+- solid `102534` func_detail center (5958.0, 1085.0, 224.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+- solid `102536` func_detail center (5708.0, 835.0, 224.0) slope 32.6 deg material `JAPAN/WOOD/JAPANESE_BLUEWOOD01`
+
+## Platform Candidates
+
+- solid `50135` worldspawn center (3144.0, 2551.9, 121.0) size (5768.0, 3573.8, 14.0) top_z 128.0
+- solid `86774` func_detail center (1592.0, 1920.0, 156.5) size (384.0, 180.0, 57.0) top_z 185.0
+- solid `19240` func_detail center (1592.0, 3182.0, 156.5) size (384.0, 180.0, 57.0) top_z 185.0
+- solid `102547` func_detail center (4696.0, 1920.0, 156.5) size (384.0, 180.0, 57.0) top_z 185.0
+- solid `102573` func_detail center (4696.0, 3182.0, 156.5) size (384.0, 180.0, 57.0) top_z 185.0
+- solid `84338` func_detail center (1648.0, 2665.0, 160.0) size (128.0, 100.0, 64.0) top_z 192.0
+- solid `86779` func_detail center (1648.0, 2551.0, 160.0) size (128.0, 128.0, 64.0) top_z 192.0
+- solid `84337` func_detail center (1534.0, 2551.0, 160.0) size (100.0, 128.0, 64.0) top_z 192.0
+- solid `84911` func_detail center (1534.0, 2665.0, 160.0) size (100.0, 100.0, 64.0) top_z 192.0
+- solid `85246` func_detail center (1534.0, 2437.0, 160.0) size (100.0, 100.0, 64.0) top_z 192.0
+- solid `84339` func_detail center (1648.0, 2437.0, 160.0) size (128.0, 100.0, 64.0) top_z 192.0
+- solid `102575` func_detail center (4640.0, 2665.0, 160.0) size (128.0, 100.0, 64.0) top_z 192.0
+- solid `102576` func_detail center (4640.0, 2551.0, 160.0) size (128.0, 128.0, 64.0) top_z 192.0
+- solid `102577` func_detail center (4754.0, 2551.0, 160.0) size (100.0, 128.0, 64.0) top_z 192.0
+- solid `102578` func_detail center (4754.0, 2665.0, 160.0) size (100.0, 100.0, 64.0) top_z 192.0
+- solid `102579` func_detail center (4754.0, 2437.0, 160.0) size (100.0, 100.0, 64.0) top_z 192.0
+- solid `102580` func_detail center (4640.0, 2437.0, 160.0) size (128.0, 100.0, 64.0) top_z 192.0
+- solid `86773` func_detail center (1592.0, 1651.0, 172.0) size (384.0, 200.0, 88.0) top_z 216.0
+- solid `86775` func_detail center (2113.0, 1651.0, 172.0) size (380.0, 200.0, 88.0) top_z 216.0
+- solid `86776` func_detail center (2113.0, 1455.0, 172.0) size (128.0, 192.0, 88.0) top_z 216.0
+- solid `86778` func_detail center (2619.5, 1651.0, 172.0) size (377.0, 200.0, 88.0) top_z 216.0
+- solid `86777` func_detail center (2113.0, 1847.0, 172.0) size (128.0, 192.0, 88.0) top_z 216.0
+- solid `82818` func_detail center (1592.0, 3451.0, 172.0) size (384.0, 200.0, 88.0) top_z 216.0
+- solid `80447` func_detail center (2113.0, 3255.0, 172.0) size (128.0, 192.0, 88.0) top_z 216.0
+- solid `19236` func_detail center (2619.5, 3451.0, 172.0) size (377.0, 200.0, 88.0) top_z 216.0
+- solid `19427` func_detail center (2113.0, 3451.0, 172.0) size (380.0, 200.0, 88.0) top_z 216.0
+- solid `74026` func_detail center (2113.0, 3647.0, 172.0) size (128.0, 192.0, 88.0) top_z 216.0
+- solid `102542` func_detail center (4696.0, 1651.0, 172.0) size (384.0, 200.0, 88.0) top_z 216.0
+- solid `102543` func_detail center (4175.0, 1651.0, 172.0) size (380.0, 200.0, 88.0) top_z 216.0
+- solid `102544` func_detail center (4175.0, 1455.0, 172.0) size (128.0, 192.0, 88.0) top_z 216.0
+- solid `102545` func_detail center (3668.5, 1651.0, 172.0) size (377.0, 200.0, 88.0) top_z 216.0
+- solid `102546` func_detail center (4175.0, 1847.0, 172.0) size (128.0, 192.0, 88.0) top_z 216.0
+- solid `102560` func_detail center (4696.0, 3451.0, 172.0) size (384.0, 200.0, 88.0) top_z 216.0
+- solid `102565` func_detail center (4175.0, 3255.0, 172.0) size (128.0, 192.0, 88.0) top_z 216.0
+- solid `102571` func_detail center (3668.5, 3451.0, 172.0) size (377.0, 200.0, 88.0) top_z 216.0
+- solid `102572` func_detail center (4175.0, 3451.0, 172.0) size (380.0, 200.0, 88.0) top_z 216.0
+- solid `102574` func_detail center (4175.0, 3647.0, 172.0) size (128.0, 192.0, 88.0) top_z 216.0
+- solid `22346` worldspawn center (-1854.9, 2526.1, 177.0) size (2656.0, 2681.0, 16.0) top_z 185.0
+- solid `99614` func_detail center (297.5, 2081.5, 196.0) size (135.0, 391.0, 136.0) top_z 264.0
+- solid `99613` func_detail center (297.5, 1818.5, 196.0) size (135.0, 135.0, 136.0) top_z 264.0
+
+## Brush Entities
+
+- `func_brush` solid `40754` entity `40753` name `ssd_top_light_1` center (6044.0, 2628.5, 1361.0) mesh `ok`
+- `func_brush` solid `40761` entity `40760` name `ssd_topright_light_1` center (6044.0, 2592.5, 1325.0) mesh `ok`
+- `func_brush` solid `40768` entity `40767` name `ssd_topleft_light_1` center (6044.0, 2664.5, 1325.0) mesh `ok`
+- `func_brush` solid `40773` entity `40772` name `ssd_mid_light_1` center (6044.0, 2628.5, 1289.0) mesh `ok`
+- `func_brush` solid `40776` entity `40775` name `ssd_botleft_light_1` center (6044.0, 2664.5, 1253.0) mesh `ok`
+- `func_brush` solid `40781` entity `40780` name `ssd_bot_light_1` center (6044.0, 2628.5, 1217.0) mesh `ok`
+- `func_brush` solid `40786` entity `40785` name `ssd_botright_light_1` center (6044.0, 2592.5, 1253.0) mesh `ok`
+- `func_brush` solid `41242` entity `41241` name `ssd_botright_light_2` center (6044.0, 2433.5, 1253.0) mesh `ok`
+- `func_brush` solid `41237` entity `41236` name `ssd_bot_light_2` center (6044.0, 2469.5, 1217.0) mesh `ok`
+- `func_brush` solid `41232` entity `41231` name `ssd_botleft_light_2` center (6044.0, 2505.5, 1253.0) mesh `ok`
+- `func_brush` solid `41229` entity `41228` name `ssd_mid_light_2` center (6044.0, 2469.5, 1289.0) mesh `ok`
+- `func_brush` solid `41224` entity `41223` name `ssd_topleft_light_2` center (6044.0, 2505.5, 1325.0) mesh `ok`
+- `func_brush` solid `41217` entity `41216` name `ssd_topright_light_2` center (6044.0, 2433.5, 1325.0) mesh `ok`
+- `func_brush` solid `41210` entity `41209` name `ssd_top_light_2` center (6044.0, 2469.5, 1361.0) mesh `ok`
+- `func_brush` solid `47208` entity `47207` name `ssd_top_light_1` center (244.0, 2469.5, 1361.0) mesh `ok`
+- `func_brush` solid `47215` entity `47214` name `ssd_topright_light_1` center (244.0, 2505.5, 1325.0) mesh `ok`
+- `func_brush` solid `47222` entity `47221` name `ssd_topleft_light_1` center (244.0, 2433.5, 1325.0) mesh `ok`
+- `func_brush` solid `47227` entity `47226` name `ssd_mid_light_1` center (244.0, 2469.5, 1289.0) mesh `ok`
+- `func_brush` solid `47230` entity `47229` name `ssd_botleft_light_1` center (244.0, 2433.5, 1253.0) mesh `ok`
+- `func_brush` solid `47235` entity `47234` name `ssd_bot_light_1` center (244.0, 2469.5, 1217.0) mesh `ok`
+- `func_brush` solid `47240` entity `47239` name `ssd_botright_light_1` center (244.0, 2505.5, 1253.0) mesh `ok`
+- `func_brush` solid `47280` entity `47279` name `ssd_botright_light_2` center (244.0, 2664.5, 1253.0) mesh `ok`
+- `func_brush` solid `47306` entity `47304` name `ssd_bot_light_2` center (244.0, 2628.5, 1217.0) mesh `ok`
+- `func_brush` solid `47309` entity `47307` name `ssd_botleft_light_2` center (244.0, 2592.5, 1253.0) mesh `ok`
+- `func_brush` solid `47312` entity `47310` name `ssd_mid_light_2` center (244.0, 2628.5, 1289.0) mesh `ok`
+- `func_brush` solid `47315` entity `47313` name `ssd_topleft_light_2` center (244.0, 2592.5, 1325.0) mesh `ok`
+- `func_brush` solid `47318` entity `47316` name `ssd_topright_light_2` center (244.0, 2664.5, 1325.0) mesh `ok`
+- `func_brush` solid `47321` entity `47319` name `ssd_top_light_2` center (244.0, 2628.5, 1361.0) mesh `ok`
+- `trigger_goal` solid `19411` entity `21373` name `Red Goal throw` center (296.0, 2551.4, 657.5) mesh `ok`
+- `trigger_abspush` solid `19412` entity `21381` name `` center (295.0, 2549.8, 625.5) mesh `ok`
+- `trigger_abspush` solid `19410` entity `21553` name `` center (245.5, 2553.5, 750.0) mesh `ok`
+- `trigger_abspush` solid `19329` entity `27415` name `` center (569.4, 2552.0, 356.7) mesh `ok`
+- `trigger_hurt` solid `19447` entity `27454` name `` center (278.2, 2591.3, 686.5) mesh `ok`
+- `trigger_hurt` solid `19446` entity `27454` name `` center (294.3, 2596.2, 686.5) mesh `ok`
+- `trigger_hurt` solid `19445` entity `27454` name `` center (311.7, 2592.9, 686.5) mesh `ok`
+- `trigger_hurt` solid `19443` entity `27454` name `` center (325.1, 2582.7, 686.5) mesh `ok`
+- `trigger_hurt` solid `19458` entity `27454` name `` center (340.2, 2551.7, 686.5) mesh `ok`
+- `trigger_hurt` solid `19444` entity `27454` name `` center (335.3, 2567.8, 686.5) mesh `ok`
+- `trigger_hurt` solid `19457` entity `27454` name `` center (336.9, 2534.3, 686.5) mesh `ok`
+- `trigger_hurt` solid `19456` entity `27454` name `` center (326.7, 2520.8, 686.5) mesh `ok`
+- `trigger_hurt` solid `19455` entity `27454` name `` center (314.9, 2512.0, 686.5) mesh `ok`
+- `trigger_hurt` solid `19453` entity `27454` name `` center (286.0, 2507.5, 686.5) mesh `ok`
+- `trigger_hurt` solid `19454` entity `27454` name `` center (303.4, 2508.1, 686.5) mesh `ok`
+- `trigger_hurt` solid `19451` entity `27454` name `` center (254.7, 2534.2, 686.5) mesh `ok`
+- `trigger_hurt` solid `19452` entity `27454` name `` center (264.9, 2519.3, 686.5) mesh `ok`
+- `trigger_hurt` solid `19450` entity `27454` name `` center (249.8, 2550.3, 686.5) mesh `ok`
+- `trigger_hurt` solid `19449` entity `27454` name `` center (253.1, 2567.7, 686.5) mesh `ok`
+- `trigger_hurt` solid `19448` entity `27454` name `` center (263.3, 2581.1, 686.5) mesh `ok`
+- `func_detail` solid `19253` entity `28038` name `` center (237.5, 2553.5, 786.5) mesh `ok`
+- `func_detail` solid `19264` entity `28038` name `` center (237.5, 2513.5, 746.5) mesh `ok`
+- `func_detail` solid `19266` entity `28038` name `` center (237.5, 2593.5, 746.5) mesh `ok`
+- `func_detail` solid `19268` entity `28038` name `` center (243.0, 2551.0, 690.0) mesh `ok`
+- `func_detail` solid `19260` entity `28038` name `` center (242.5, 2553.5, 746.5) mesh `ok`
+- `trigger_multiple` solid `37066` entity `38278` name `from downtown trigger blue 1` center (4556.0, 2640.8, 418.0) mesh `ok`
+- `trigger_multiple` solid `38331` entity `38330` name `from downtown trigger blue 2` center (4554.0, 2474.4, 416.7) mesh `ok`
+- `trigger_goal` solid `38920` entity `38919` name `Red Goal slam dunk` center (296.0, 2551.4, 658.5) mesh `ok`
+- `trigger_multiple` solid `38861` entity `38860` name `from downtown trigger red 1` center (1732.1, 2473.8, 418.1) mesh `ok`
+- `trigger_multiple` solid `38858` entity `39225` name `from downtown trigger red 2` center (1734.0, 2639.2, 419.0) mesh `ok`
+- `trigger_multiple` solid `41390` entity `41389` name `from downtown trigger red 1 next` center (1657.0, 2473.8, 485.4) mesh `ok`
+- `trigger_multiple` solid `41687` entity `41686` name `from downtown trigger red 2 next` center (1656.0, 2639.2, 485.1) mesh `ok`
+- `trigger_multiple` solid `41992` entity `41991` name `from downtown trigger blue 1 next` center (4643.0, 2640.2, 484.0) mesh `ok`
+- `trigger_multiple` solid `41995` entity `41994` name `from downtown trigger blue 2 next` center (4641.0, 2473.8, 485.4) mesh `ok`
+- `func_detail` solid `47205` entity `47862` name `` center (243.5, 2548.2, 1289.0) mesh `ok`
+- `func_detail` solid `47091` entity `47871` name `` center (6051.5, 2549.0, 1232.0) mesh `ok`
+- `func_detail` solid `47097` entity `47871` name `` center (6045.4, 2624.8, 1289.0) mesh `ok`
+- `func_detail` solid `47089` entity `47871` name `` center (6051.5, 2549.0, 1346.0) mesh `ok`
+- `func_detail` solid `47099` entity `47871` name `` center (6045.4, 2474.0, 1289.0) mesh `ok`
+- `func_detail` solid `46545` entity `47915` name `` center (6044.5, 2549.8, 1289.0) mesh `ok`
+- `func_detail` solid `47201` entity `47924` name `` center (236.5, 2549.0, 1232.0) mesh `ok`
+- `func_detail` solid `47200` entity `47924` name `` center (236.5, 2549.0, 1346.0) mesh `ok`
+- `func_detail` solid `47203` entity `47924` name `` center (242.6, 2473.2, 1289.0) mesh `ok`
+- `func_detail` solid `47204` entity `47924` name `` center (242.6, 2624.0, 1289.0) mesh `ok`
+- `func_detail` solid `48395` entity `51165` name `` center (236.5, 2408.0, 1289.0) mesh `ok`
+- `func_detail` solid `48398` entity `51165` name `` center (236.5, 2549.0, 1403.0) mesh `ok`
+- `func_detail` solid `47202` entity `51165` name `` center (236.1, 2551.0, 1205.0) mesh `ok`
+- `func_detail` solid `48397` entity `51165` name `` center (236.5, 2690.0, 1289.0) mesh `ok`
+- `func_detail` solid `48396` entity `51165` name `` center (236.5, 2549.0, 1175.0) mesh `ok`
+- `func_detail` solid `48349` entity `51165` name `` center (6051.5, 2549.0, 1403.0) mesh `ok`
+- `func_detail` solid `47095` entity `51165` name `` center (6051.9, 2551.0, 1205.0) mesh `ok`
+- `func_detail` solid `48346` entity `51165` name `` center (6051.5, 2690.0, 1289.0) mesh `ok`
+
+## Limits
+
+- Brushwork is reconstructed from convex VMF side planes.
+- Displacements, prop collision, dynamic entity state, and final s&box collision are not represented.
+- Brush entity origins/pivots may need Hammer validation where Source stores transformed brush solids.

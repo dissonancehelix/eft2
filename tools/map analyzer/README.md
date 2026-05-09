@@ -40,7 +40,7 @@ Each map domain has:
 - `virtual perception/`: LLM-facing spatial/gameplay perception artifacts.
 - `simulation/`: placeholder only; simulation is not implemented in this patch.
 
-Generated analysis includes raw entities, brush entities, trigger volumes, EFT entity classifications, semantic groups, Recast-pending nav files, gameplay profile, confidence report, and `summary.md`.
+Generated analysis includes raw entities, brush entities, brushwork perception, trigger volumes, EFT entity classifications, semantic groups, Recast-pending nav files, gameplay profile, confidence report, and `summary.md`.
 
 `Simulation/abstract_gameflow.json` and `.md` contain coarse gameplay telemetry. They use README movement constants and extracted map landmarks to model route pressure, carrier timing, defender timing, scoring likelihood, and scrum/intercept outcomes. They are not physics replays.
 
@@ -60,6 +60,7 @@ Bloodbowl is second because it validates open-field swarm, spawn-to-ball converg
 
 ## Known Limits
 
+- Brushwork perception reconstructs convex brush-plane meshes from world brushes and brush entities, then classifies floor/ramp/wall/underside/platform candidates for LLM map viewing.
 - Brush bounds are approximate AABBs from VMF side plane points.
 - Semantic grouping is first-pass and confidence-scored.
 - Route graph, preventability, and timing metrics are pending Recast integration.

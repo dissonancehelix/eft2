@@ -1,4 +1,4 @@
-# Recast-friendly brush-plane triangle geometry for Big Metal
+# Recast-friendly brush-plane triangle geometry for big metal
 v -2048.0 1024.0 128.0
 v -2048.0 1024.0 0.0
 v -2048.0 -1024.0 0.0

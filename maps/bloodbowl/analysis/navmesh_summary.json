@@ -1,10 +1,10 @@
 {
-  "generated_by": "Tools/Map Analyzer",
+  "generated_by": "tools/map analyzer",
   "schema_version": 1,
-  "map": "Bloodbowl",
-  "source_vmf": "Maps/Bloodbowl/Bloodbowl.vmf",
-  "original_filename": "eft_bloodbowl_v5.vmf",
-  "generated_at": "2026-05-08T15:27:10.210248+00:00",
+  "map": "bloodbowl",
+  "source_vmf": "maps/bloodbowl/Bloodbowl.vmf",
+  "original_filename": null,
+  "generated_at": "2026-05-09T01:02:46.262976+00:00",
   "status": "pending_recast_integration",
   "recast": {
     "available": false,
@@ -57,7 +57,7 @@
     ]
   },
   "export": {
-    "geometry_exported": "Maps/Bloodbowl/Analysis/recast_geometry.obj",
+    "geometry_exported": "maps/bloodbowl/analysis/recast_geometry.obj",
     "export_format": "obj_brush_plane_triangles",
     "exported_vertices": 6660,
     "exported_faces": 2220,

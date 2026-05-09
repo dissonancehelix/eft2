@@ -20,22 +20,22 @@ Factual snapshot — not aspirational.
 - [ ] FFmpeg-Builds-master/ detected
 
 ## Map analysis snapshot
-- baseball dash: analysis_outputs=15 vp=True sim=True
-- big metal: analysis_outputs=15 vp=True sim=True
-- bloodbowl: analysis_outputs=15 vp=True sim=True
-- chamber: analysis_outputs=15 vp=True sim=True
-- cosmic arena: analysis_outputs=15 vp=True sim=True
-- legoland: analysis_outputs=15 vp=True sim=True
-- mini putt: analysis_outputs=15 vp=True sim=True
+- baseball dash: analysis_outputs=16 vp=True sim=True
+- big metal: analysis_outputs=16 vp=True sim=True
+- bloodbowl: analysis_outputs=16 vp=True sim=True
+- chamber: analysis_outputs=16 vp=True sim=True
+- cosmic arena: analysis_outputs=16 vp=True sim=True
+- legoland: analysis_outputs=16 vp=True sim=True
+- mini putt: analysis_outputs=16 vp=True sim=True
 - shared: analysis_outputs=0 vp=False sim=False
-- sky metal: analysis_outputs=15 vp=True sim=True
-- skyline: analysis_outputs=15 vp=True sim=True
-- skystep: analysis_outputs=15 vp=True sim=True
-- slam dunk: analysis_outputs=15 vp=True sim=True
-- soccer: analysis_outputs=15 vp=True sim=True
-- space jump: analysis_outputs=15 vp=True sim=True
-- temple sacrifice: analysis_outputs=15 vp=True sim=True
-- tunnel: analysis_outputs=15 vp=True sim=True
+- sky metal: analysis_outputs=16 vp=True sim=True
+- skyline: analysis_outputs=16 vp=True sim=True
+- skystep: analysis_outputs=16 vp=True sim=True
+- slam dunk: analysis_outputs=16 vp=True sim=True
+- soccer: analysis_outputs=16 vp=True sim=True
+- space jump: analysis_outputs=16 vp=True sim=True
+- temple sacrifice: analysis_outputs=16 vp=True sim=True
+- tunnel: analysis_outputs=16 vp=True sim=True
 
 ## Warnings
 - sbox_scan_truncated_at:4000

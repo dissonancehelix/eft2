@@ -1,4 +1,4 @@
-# Space Jump Abstract Gameflow Simulation
+# space jump Abstract Gameflow Simulation
 
 This is coarse gameplay telemetry, not a physics replay.
 

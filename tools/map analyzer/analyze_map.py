@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from eft_entities import classify_entities, TRIGGER_CLASSES
+from brushwork_perception import build_brushwork_perception, render_brushwork_markdown
 from exporters import metadata, write_json, write_md
 from geometry_backend import inspect_geometry_backends
 from gameflow_sim import simulate_gameflow, simulation_summary
@@ -47,6 +48,7 @@ def analyze_map(map_dir: Path) -> None:
         ent["bounds"] = bounds_from_solids(ent.get("solids", []), ent.get("origin"))
     world_mesh = build_world_mesh(world_solids)
     brush_entities = [e for e in entities if e.get("solids")]
+    brushwork = build_brushwork_perception(world_solids, brush_entities)
     trigger_volumes = [e for e in entities if e.get("classname") in TRIGGER_CLASSES]
     eft = classify_entities(entities)
     semantics = infer_semantics(map_name, entities, world_solids)
@@ -61,6 +63,7 @@ def analyze_map(map_dir: Path) -> None:
     simulation_dir = map_dir / "simulation"
     write_json(analysis / "raw_entities.json", {**meta, "entities": entities})
     write_json(analysis / "brush_entities.json", {**meta, "brush_entities": brush_entities, "world_solids": world_solids})
+    write_json(analysis / "brushwork.json", {**meta, **brushwork})
     write_json(analysis / "geometry_mesh.json", {**meta, **world_mesh})
     write_json(analysis / "trigger_volumes.json", {**meta, "trigger_volumes": trigger_volumes})
     write_json(analysis / "eft_entities.json", {**meta, **eft})
@@ -82,6 +85,7 @@ def analyze_map(map_dir: Path) -> None:
     write_json(virtual / "route_reads.json", {**meta, "route_reads": vp["route_reads"]})
     write_json(virtual / "danger_fields.json", {**meta, "danger_fields": vp["danger_fields"]})
     write_json(virtual / "line_of_sight.json", {**meta, **vp["line_of_sight"]})
+    write_md(virtual / "brushwork.md", render_brushwork_markdown(map_name, brushwork))
     write_md(virtual / "gameplay_flow.md", vp["gameplay_flow_md"])
     write_json(simulation_dir / "abstract_gameflow.json", {**meta, **sim})
     write_md(simulation_dir / "abstract_gameflow.md", simulation_summary(map_name, sim))
